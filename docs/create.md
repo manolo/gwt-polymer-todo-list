@@ -62,11 +62,11 @@ Created file TodoListApp/src/main/webapp/favicon.ico
 
 To check that all the project components were created, run the starter application.
 
-    *  At the command line, run
+   *  At the command line, run
     
         mvn gwt:run
         
-    *  In opened window press the “Launch Default Browser” button to launch our application using your default browser. Or, you can click “Copy to Clipboard” to copy the launch URL and paste it into the browser of your choice.
+   *  In opened window press the “Launch Default Browser” button to launch our application using your default browser. Or, you can click “Copy to Clipboard” to copy the launch URL and paste it into the browser of your choice.
 
 4.  Add dependencies to pom.xml
 
