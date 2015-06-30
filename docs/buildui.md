@@ -82,7 +82,7 @@ Let's create more complex application. In this tutorial we are going to create t
             RootPanel.get().add(new Main());
         }
     }
-    ``
+    ```
     
 4.  Run the application
 
