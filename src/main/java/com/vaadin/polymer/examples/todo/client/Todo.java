@@ -15,6 +15,7 @@ public class Todo implements EntryPoint {
         // Styles for paper examples
         Polymer.importHref("paper-styles/demo-pages.html");
 
+        // We have to load icon sets before run Application
         Polymer.importHref(Arrays.asList(
                 "iron-icons/iron-icons.html",
                 "iron-icons/communication-icons.html",
@@ -22,9 +23,13 @@ public class Todo implements EntryPoint {
                 ), new Function() {
             public Object call(Object arg) {
                 // The app is executed when all imports succeed.
-                RootPanel.get().add(new Main());
+                startApplication();
                 return null;
             }
         });
+    }
+
+    private void startApplication() {
+        RootPanel.get().add(new Main());
     }
 }
