@@ -17,7 +17,7 @@
             </div>
         </p:PaperDialog>
 
-        <p:PaperDialog ui:field="confirm" entryAnimation="fade-in-animation" addStyleNames="dialog">
+        <p:PaperDialog ui:field="confirm" entryAnimation="fade-in-animation" addStyleNames="dialog" modal="true">
             <h2 ui:field="confirmCaption">Confirm</h2>
             <g:HTMLPanel ui:field="confirmContent"></g:HTMLPanel>
             <div class="buttons">
