@@ -6,4 +6,4 @@ It relies the UI part in Polymer Paper Elements collection, which is wrapped in 
 the vaadin gwt-polymer-elements library.
 
 ## Demo
- Visit our [show case](http://manolo.github.io/gwt-polymer-todo/todo.html) to see the application in action.
+ Visit our [demo](http://manolo.github.io/gwt-polymer-todo/todo.html) to see the application in action.
