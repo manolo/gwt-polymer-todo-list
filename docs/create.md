@@ -13,9 +13,9 @@ For the Todo List project, you will run webAppCreator with the following paramet
 
 | Parameter  | Definition                                                                                                                                                                                                | Example |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| -maven     | Generate pom.xml.                                                                                                                                                               | StockWatcher |
-| -out       | The directory to place the generated files.                                                                                                                                                               | StockWatcher |
-| moduleName | The name of the GWT module you want to create.                                                                                                                                                            | com.google.gwt.sample.stockwatcher.StockWatcher |
+| -maven     | Generate pom.xml.                                                                                                                                                               |  |
+| -out       | The directory to place the generated files.                                                                                                                                                               | TodoList |
+| moduleName | The name of the GWT module you want to create.                                                                                                                                                            | com.example.TodoList |
 
 1.  Create the StockWatcher application.
     *  At the command line, run webAppCreator.
