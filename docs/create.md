@@ -169,7 +169,7 @@ For the Todo List project, you will run webAppCreator with the following paramet
 
    Replace content of TodoList.java with
 
-   ```
+   ```java
    package com.example.client;
    
    import com.google.gwt.core.client.EntryPoint;
