@@ -1,0 +1,29 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
+             xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
+        >
+
+    <g:HTMLPanel addStyleNames="vertical center-justified layout">
+        <style>
+        </style>
+
+        <p:PaperDialog ui:field="alert" entryAnimation="fade-in-animation" addStyleNames="dialog">
+            <h2>Alert</h2>
+            <div ui:field="alertContent">
+            </div>
+            <div class="buttons">
+              <p:PaperButton ui:field="alertClose" attributes="dialog-confirm">OK</p:PaperButton>
+            </div>
+        </p:PaperDialog>
+
+        <p:PaperDialog ui:field="confirm" entryAnimation="fade-in-animation" addStyleNames="dialog">
+            <h2 ui:field="confirmCaption">Confirm</h2>
+            <g:HTMLPanel ui:field="confirmContent"></g:HTMLPanel>
+            <div class="buttons">
+              <p:PaperButton ui:field="confirmCancel" attributes="dialog-dismiss">Cancel</p:PaperButton>
+              <p:PaperButton ui:field="confirmOk" attributes="dialog-confirm">OK</p:PaperButton>
+            </div>
+        </p:PaperDialog>
+    </g:HTMLPanel>
+</ui:UiBinder>
