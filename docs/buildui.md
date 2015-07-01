@@ -129,7 +129,7 @@ Let's create more complex application. In this tutorial we are going to create t
     
 7.  Add ripple effect
 
-    It is nice if user gets feedback when clicking UI elements. Read [material design documentation about that](http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action).
+    It is nice if user gets feedback when clicking on UI elements. Read [material design documentation about that](http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action).
     
     * Add `<p:PaperRipple/>` to each paper icon item.
     * Add styles (TODO: Why?)
