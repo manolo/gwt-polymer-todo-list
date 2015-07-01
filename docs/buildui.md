@@ -1,6 +1,6 @@
 Let's create more complex application. In this tutorial we are going to create the Todo List application.
 
-1.  Create Main.java and Main.ui.xml.
+1.  Create `Main.java` and `Main.ui.xml`.
 
     You can generate these files using your IDE if you have installed GWT plugin. Otherwise you can copy the following snippets.
     
@@ -35,6 +35,8 @@ Let's create more complex application. In this tutorial we are going to create t
     ```
     
 2.  Add menu items
+
+    Update `Main.ui.xml`.
 
     ```java
     <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
