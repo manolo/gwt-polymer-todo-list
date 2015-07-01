@@ -147,10 +147,6 @@ Let's create more complex application. In this tutorial we are going to create t
                 position: relative;
                 overflow: hidden;
             }
-            .header {
-                font-size: 200%;
-                margin-left: 50px;
-            }
         </ui:style>
     
         <g:HTMLPanel>
@@ -195,10 +191,6 @@ Let's create more complex application. In this tutorial we are going to create t
                 position: relative;
                 overflow: hidden;
             }
-            .header {
-                font-size: 200%;
-                margin-left: 50px;
-            }
         </ui:style>
     
         <g:HTMLPanel>
@@ -230,9 +222,9 @@ Let's create more complex application. In this tutorial we are going to create t
                 </div>
                 <div main="">
                     <p:PaperHeaderPanel mode="seamed">
-                        <p:PaperToolbar addStyleNames="toolbar">
+                        <p:PaperToolbar>
                             <p:PaperIconButton ui:field="menu" icon="more-vert" attributes="paper-drawer-toggle"/>
-                            <span class="header">Todo List</span>
+                            <span>Todo List</span>
                         </p:PaperToolbar>
                     </p:PaperHeaderPanel>
                 </div>
@@ -252,16 +244,132 @@ Let's create more complex application. In this tutorial we are going to create t
     
 11. Style toolbars
 
-    TBC
+    * Change color of toolbar
+    Add some CSS to the `ui:style` element
+    ```css
+    .toolbar {
+        background: #4285f4 !important;
+    }
+    ```
+    and add the `addStyleNames` attribute to both toolbars
+    ```xml
+    <p:PaperToolbar addStyleNames="{style.toolbar}">
+    ```
+    
+    * Style the heading text
+    Add CSS
+    ```css
+    .header {
+        font-size: 200%;
+        margin-left: 50px;
+    }
+    ```
+    and add the class attribute to the span element
+    ```xml
+    <span class="{style.header}">Todo List</span>
+    ```
     
 12. Add content panel
 
-    TBC
+    * Add container (HTMLPanel) for our TODO items to the second header panel.
+    ```xml
+    <div main="">
+        <p:PaperHeaderPanel mode="seamed">
+            <p:PaperToolbar addStyleNames="{style.toolbar}">
+                <p:PaperIconButton ui:field="menu" icon="more-vert" attributes="paper-drawer-toggle"/>
+                    <span class="{style.header}">Todo List</span>
+                </p:PaperToolbar>
+                <g:HTMLPanel ui:field="content" addStyleNames="{style.content} vertical center-justified layout"/>
+        </p:PaperHeaderPanel>
+    </div>
+    ```
+    * Set it some margin
+    ```css
+    .content {
+        padding: 15px;
+    }
+    ```
+    
+    Class names `vertical`, `center-justified` and `layout` are provided by Polymer.
 
 13. Add floating action button
 
-    TBC
+    Add floating action button widget next to second header panel
+    ```xml
+    <p:PaperFab ui:field="addButton" icon="add" title="add" addStyleNames="{style.add}"/>
+    ```
+    
+    The `Main.ui.xml` should have the following content now
+    ```xml
+    <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+                 xmlns:g='urn:import:com.google.gwt.user.client.ui'
+                 xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
+                 xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
+    
+        <ui:style>
+            paper-icon-item {
+                position: relative;
+                overflow: hidden;
+            }
+            .toolbar {
+                background: #4285f4 !important;
+            }
+            .header {
+                font-size: 200%;
+                margin-left: 50px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .add {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        </ui:style>
+    
+        <g:HTMLPanel>
+            <p:PaperDrawerPanel ui:field="drawerPanel">
+                <div drawer="">
+                    <p:PaperHeaderPanel mode="seamed">
+                        <p:PaperToolbar addStyleNames="{style.toolbar}"/>
+                        <p:PaperIconItem ui:field="menuClearAll">
+                            <i:IronIcon icon="delete"/>
+                            <div>Clear All</div>
+                            <p:PaperRipple/>
+                        </p:PaperIconItem>
+                        <p:PaperIconItem ui:field="menuClearDone">
+                            <i:IronIcon icon="clear"/>
+                            <div>Clear Done</div>
+                            <p:PaperRipple/>
+                        </p:PaperIconItem>
+                        <p:PaperIconItem ui:field="menuSettings">
+                            <i:IronIcon icon="settings"/>
+                            <div>Settings</div>
+                            <p:PaperRipple/>
+                        </p:PaperIconItem>
+                        <p:PaperIconItem ui:field="menuAbout">
+                            <i:IronIcon icon="help"/>
+                            <div>About</div>
+                            <p:PaperRipple/>
+                        </p:PaperIconItem>
+                    </p:PaperHeaderPanel>
+                </div>
+                <div main="">
+                    <p:PaperHeaderPanel mode="seamed">
+                        <p:PaperToolbar addStyleNames="{style.toolbar}">
+                            <p:PaperIconButton ui:field="menu" icon="more-vert" attributes="paper-drawer-toggle"/>
+                            <span class="{style.header}">Todo List</span>
+                        </p:PaperToolbar>
+                        <g:HTMLPanel ui:field="content" addStyleNames="{style.content} vertical center-justified layout"/>
+                    </p:PaperHeaderPanel>
+                    <p:PaperFab ui:field="addButton" icon="add" title="add" addStyleNames="{style.add}"/>
+                </div>
+            </p:PaperDrawerPanel>
+        </g:HTMLPanel>
+    </ui:UiBinder>
+    ```
     
 14. Run the application.
 
-    TBC
+    If everything is OK your app should look like [this](http://manolo.github.io/gwt-polymer-todo/todo.html).
