@@ -397,4 +397,4 @@ Finally your `Main.gwt.xml` file should look like:
 4. We know how to style elements in `UiBinder` xml files.
 
 
-[Step 3: Add logic to the application](buildui.html)
+[Step 3: Add logic to the application](applogic.html)
