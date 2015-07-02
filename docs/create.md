@@ -76,12 +76,6 @@ For the Todo List project, you will run webAppCreator with the following paramet
      <version>${gwtPolymerVersion}</version>
      <scope>provided</scope>
    </dependency>
-   <dependency>
-     <groupId>com.googlecode.gwtquery</groupId>
-     <artifactId>gwtquery</artifactId>
-     <version>1.4.4-SNAPSHOT</version>
-     <scope>provided</scope>
-   </dependency>
    ```
 
    The gwt-polymer-elements contains set of widgets and the gwtquery provides useful utils (it is necessary until we wait for Java 8 support in GWT at least).
@@ -93,7 +87,6 @@ For the Todo List project, you will run webAppCreator with the following paramet
     
 6.  Update gwt module xml file
     *  Add line `<inherits name="com.vaadin.polymer.Elements"/>`
-    *  Add line `<inherits name="com.google.gwt.query.Query"/>`
 
 7.  Update TodoList.html
 
