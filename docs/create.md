@@ -27,7 +27,7 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
       _**Tip**: If you include the GWT SDK folder in your PATH environment variable, you won't have to invoke them by specifying their full path._
 
 
-2. Run the application.
+2. Run the application in **SuperDevMode**.
 
      To check that all the project components were created start the new created app in SuperDevMode.
      
