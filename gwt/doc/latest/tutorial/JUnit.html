@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/tutorial/JUnit.md"></a>
+                    </span>
+                    <h1>JUnit Testing</h1><p>At this point, you&rsquo;ve created the initial implementation of the StockWatcher application and it seems pretty stable.</p><p>As the code base evolves, how can you ensure that you don&rsquo;t break existing functionality? The solution is unit testing. Creating a battery of good unit test cases is an important part of ensuring the quality of your application over its lifecycle.</p><p>To aid you with your testing efforts, GWT provides integration with the open-source <a href="http://www.junit.org/">JUnit</a> testing framework. You&rsquo;ll be able to create units test that you can run in both development mode and production mode.</p><p>In this section, you&rsquo;ll add a JUnit unit test to the StockWatcher project.</p>
+<ol>
+  <li><a href="#create">Creating a JUnit test class for StockWatcher and the scripts to run it</a></li>
+  <li><a href="#run">Running unit tests</a></li>
+  <li><a href="#write">Writing a unit test</a></li>
+  <li><a href="#resolve">Resolving problems identified with unit tests</a></li>
+</ol><p><strong>Note:</strong> For a broader guide to JUnit testing, see <a href="../DevGuideTesting.html">JUnit Testing</a>.</p><h2>Before you begin</h2><h3>The StockWatcher project</h3><p>This tutorial builds on the GWT concepts and the StockWatcher application created in the <a href="gettingstarted.html">Build a Sample GWT Application</a> tutorial. If you have not completed the Build a Sample GWT Application tutorial and are familiar with basic GWT concepts, you can import the StockWatcher project as coded to this point.</p>
+<ol>
+  <li>Download the <a href="http://code.google.com/p/google-web-toolkit/downloads/detail?name=Tutorial-GettingStarted-2.1.zip">StockWatcher project</a>.</li>
+  <li>Unzip the file.</li>
+  <li><p>Import the project into Eclipse</p>
+  <pre><code>1.  From the `File` menu, select the  `Import...` menu option.
+</code></pre>
+  <ol>
+    <li>Select the import source General &gt; Existing Projects into Workspace. Click the <code>Next</code> button.</li>
+    <li>For the root directory, browse to and select the StockWatcher directory (from the unzipped file). Click the <code>Finish</code> button.</li>
+  </ol></li>
+</ol><p>If you are using ant, edit the <code>gwt.sdk</code> property in StockWatcher/build.xml to point to where you unzipped GWT.</p><p>If you are using ant, replace all references to <code>path_to_the_junit_jar</code> to point to the location of junit on your system.</p><p><strong>Note:</strong> If you just completed the Build a Sample GWT Application tutorial but did not specify the <code>-junit</code> option with webAppCreator, uncomment the <code>javac.tests</code>, <code>test.dev</code>, <code>test.prod</code>, and <code>test</code> targets in StockWatcher/build.xml and replace all references to <code>path_to_the_junit_jar</code> to point to the location of junit on your system before continuing.</p><h2>Creating a JUnit test <a id="create"></a></h2><p>When you specified the <code>-junit</code> option, webAppCreator created all the files you need to begin developing JUnit tests. It generates a starter test class, ant targets to run the tests from the command line, and launch configuration files for Eclipse.</p><p>Starting with GWT 2.0, the former command-line tool junitCreator has been combined into webAppCreator.</p><p>In Eclipse, navigate down to the StockWatcherTest class by expanding the <code>test/</code> directory. If you are adding JUnit testing to an existing application you will need add the <code>test/</code> directory as a source folder within you Eclipse project and update your Build Path to include a reference to an existing JUnit library.</p>
+<ul>
+  <li><img src="images/JUnitcreatetest.png" alt="screenshot: JUnit tests in Package Explorer""/></li>
+</ul><h3>Examining the test class: StockWatcherTest.java</h3><p>Take a look inside StockWatcherTest.java. This test class was generated in the com.google.gwt.sample.stockwatcher.client package under the StockWatcher/test directory. This is where you will write the unit tests for StockWatcher. Currently it contains a single, simple test: the method testSimple.</p>
+<ol>
+  <li>Open the StockWatcherTest.java file.  *</li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+    import com.google.gwt.junit.client.GWTTestCase;
+
+    /**
+     * GWT JUnit tests must extend GWTTestCase.
+ */
+public class StockWatcherTest extends GWTTestCase {                       // &lt;span style=&quot;color:black;&quot;&gt;**(1)**&lt;/span&gt;
+
+      /**
+       * Must refer to a valid module that sources this class.
+   */
+  public String getModuleName() {                                         // &lt;span style=&quot;color:black;&quot;&gt;**(2)**&lt;/span&gt;
+    return &quot;com.google.gwt.sample.stockwatcher.StockWatcher&quot;;
+  }
+
+      /**
+       * Add as many tests as you like.
+   */
+  public void testSimple() {                                              // &lt;span style=&quot;color:black;&quot;&gt;**(3)**&lt;/span&gt;
+    assertTrue(true);
+  }
+
+    }
+</code></pre><h4>Notes</h4><p>(1) Like all GWT JUnit test cases, the StockWatcherTest class extends the <a href="/javadoc/latest/com/google/gwt/junit/client/GWTTestCase.html">GWTTestCase</a> class in the com.google.gwt.junit.client package. You can create additional test cases by extending this class. </p><p>(2) The StockWatcherTest class has an abstract method (getModuleName) that must return the name of the GWT module. For StockWatcher, that is com.google.gwt.sample.stockwatcher.StockWatcher.</p><p>(3) The StockWatcherTest class is generated with one sample test case&mdash;a tautological test, testSimple. This testSimple method uses one of the many assert* functions that it inherits from the JUnit Assert class, which is an ancestor of GWTTestCase. The assertTrue(boolean) function asserts that the boolean argument passed in evaluates to true. If not, the testSimple test will fail when run in JUnit.</p><h2>Running unit tests <a id="run"></a></h2><p>Before you start writing your own unit tests for StockWatcher, make sure the components of the test environment are in place. You can do that by running StockWatcherTest.java which will execute the starter test, testSimple.</p><p>You can run JUnit tests four ways:</p>
+<ul>
+  <li>from the command line&mdash;using the scripts generated by junitCreator</li>
+  <li>in Eclipse&mdash;using the Google Plugin for Eclipse</li>
+  <li>in Eclipse&mdash;using the Eclipse launch configuration files generated by webAppCreator</li>
+  <li>in manual test mode</li>
+</ul><h3>From the command line</h3><p>The build.xml file generated by GWT webAppCreator includes three generated targets used for testing:</p>
+<ul>
+  <li>test.dev
+  <ul>
+    <li>Runs all test classes in development mode.</li>
+  </ul></li>
+  <li>test.prod
+  <ul>
+    <li>Runs all test classes in production mode.</li>
+  </ul></li>
+  <li>test
+  <ul>
+    <li>Runs both test.dev and test.prod</li>
+  </ul></li>
+</ul><p><strong>Note:</strong> In order to run tests from the command-line, you will need to have <a href="http://www.junit.org/">JUnit</a> installed on your system. If you just downloaded the StockWatcher project, you must first open build.xml and replace all references to <code>/path/to/junit-3.8.1.jar</code> with the path to junit on your system.</p>
+<ol>
+  <li>In the command shell, browse to the StockWatcher directory.</li>
+  <li>Run the JUnit test in development mode.
+  <ul>
+    <li>At the command line, enter <code>ant test.dev</code></li>
+  </ul></li>
+  <li>The test runs as Java bytecode in a JVM.
+  <ul>
+    <li>The simpleTest executes without error.</li>
+  </ul></li>
+</ol>
+<pre><code>&amp;#91;junit&amp;#93; Running com.google.gwt.sample.stockwatcher.client.StockWatcherTest
+&amp;#91;junit&amp;#93; Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 15.851 sec
+</code></pre>
+<ol>
+  <li>Run the JUnit test in production mode.
+  <ul>
+    <li>At the command line, enter <code>ant test.prod</code></li>
+  </ul></li>
+  <li>The test runs as compiled JavaScript.
+  <ul>
+    <li>The simpleTest executes without error.</li>
+  </ul></li>
+</ol>
+<pre><code>&amp;#91;junit&amp;#93; Running com.google.gwt.sample.stockwatcher.client.StockWatcherTest
+&amp;#91;junit&amp;#93; Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 37.042 sec
+</code></pre><h3>In Eclipse (using the Google Pluging for Eclipse)</h3><p>The Google Plugin for Eclipse makes it easy to run tests in Eclipse.</p>
+<ol>
+  <li>Run the JUnit test in development mode.
+  <ul>
+    <li>From Package Explorer, right click on the test case you want to run, select <code>Run As &gt; GWT Junit Test</code></li>
+  </ul></li>
+  <li>The simpleTest executes without error.
+  <ul>
+    <li><img src="images/JUnitSimpleTestDev.png" alt="screenshot: JUnit tests in Eclipse""/></li>
+  </ul></li>
+  <li>Run the JUnit test in production mode.
+  <ul>
+    <li>From Package Explorer, right click on the test case you want to run, select <code>Run As &gt; GWT Junit Test (production mode)</code></li>
+  </ul></li>
+  <li>The simpleTest executes without error.</li>
+</ol><h3>In Eclipse (using generated launch configurations)</h3><p>You can run unit tests in Eclipse using the launch configurations generated by webAppCreator for both development mode and production mode.</p>
+<ol>
+  <li>Run the JUnit test in development mode.
+  <ul>
+    <li>From the Eclipse menu bar, select <code>Run &gt; Run Configurations...</code></li>
+  </ul></li>
+  <li>In the Run window, select <code>StockWatcherTest-dev</code></li>
+  <li>If you are using Mac OSX, add the argument to invoke the Java virtual machine.
+  <ul>
+    <li>Display the Arguments tab.</li>
+    <li>At VM argument, enter <code>-XstartOnFirstThread -Xmx256M</code></li>
+    <li>To save the changes to the Arguments, press <code>Apply</code></li>
+    <li>To run the test, press <code>Run</code></li>
+  </ul></li>
+  <li>The simpleTest executes without error.
+  <ul>
+    <li><img src="images/JUnitSimpleTestDev.png" alt="screenshot: JUnit tests in Eclipse""/></li>
+  </ul></li>
+  <li>Run the JUnit test in production mode.
+  <ul>
+    <li>From the Eclipse menu bar, select <code>Run &gt; Run Configurations...</code></li>
+  </ul></li>
+  <li>In the Run window, select <code>StockWatcherTest-prod</code></li>
+  <li>If you are using Mac OSX, add the argument to invoke the Java virtual machine.
+  <ul>
+    <li>Display the Arguments tab.</li>
+    <li>At VM argument, enter <code>-XstartOnFirstThread -Xmx256M</code></li>
+    <li>To save the changes to the Arguments, press <code>Apply</code></li>
+    <li>To run the test, press <code>Run</code></li>
+  </ul></li>
+  <li>The simpleTest executes without error.</li>
+</ol><h3>In manual test mode</h3><p>If you want to select the browser on which to run unit tests, use manual test mode.</p><p>In manual test mode, the JUnitShell main class runs as usual on a specified GWT module, but instead of running the test immediately, it prints out a URL and waits for a browser to connect. You can manually cut and paste this URL into the browser of your choice, and the unit tests will run in that browser.</p>
+<p class="note"><p><strong>In Depth:</strong> To learn how to run unit tests in manual mode, see the Developer&rsquo;s Guide, <a href="../DevGuideTesting.html#DevGuideJUnitCreation">Creating a Test Case</a>.</p><h2>Writing a unit test <a id="write"></a></h2><p>In a real testing scenario, you would want to verify the behavior of as much of StockWatcher as possible. You could add a number of unit tests to the StockWatcherTest class. You would write each test in the form of a public method.</p><p>If you had a large number of test cases, you could organize them by grouping them into different test classes.</p><p>However, to learn the process of setting up JUnit tests in GWT, in this tutorial you&rsquo;ll write just one test and run it.</p>
+<ol>
+  <li>Write a JUnit test to verify that the constructor of the StockPrice class is correctly setting the new object&rsquo;s instance fields.
+  <ul>
+    <li>To the StockWatcherTest class, add the testStockPriceCtor method as shown below.</li>
+  </ul></li>
+</ol>
+<pre><code>/**
+     * Verify that the instance fields in the StockPrice class are set correctly.
+ */
+public void testStockPriceCtor() {
+  String symbol = &quot;XYZ&quot;;
+  double price = 70.0;
+  double change = 2.0;
+  double changePercent = 100.0 * change / price;
+
+      StockPrice sp = new StockPrice(symbol, price, change);
+  assertNotNull(sp);
+  assertEquals(symbol, sp.getSymbol());
+  assertEquals(price, sp.getPrice(), 0.001);
+  assertEquals(change, sp.getChange(), 0.001);
+  assertEquals(changePercent, sp.getChangePercent(), 0.001);
+}
+</code></pre>
+<ol>
+  <li>Rerun StockWatcherTest in development mode.
+  <ul>
+    <li>Both tests should pass.</li>
+  </ul></li>
+</ol>
+<pre><code>&amp;#91;junit&amp;#93; Running com.google.gwt.sample.stockwatcher.client.StockWatcherTest
+&amp;#91;junit&amp;#93; Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 16.601 sec
+</code></pre><h2>Resolving problems identified in unit tests <a id="resolve"></a></h2><p>To see what happens when a unit test fails, you&rsquo;ll reintroduce the arithmetic bug you fixed in the <a href="debug.html">Build a Sample GWT Application</a> tutorial. Originally, the percentage of change was not calculated correctly in the getChangePercent method. To make the unit test fail, you&rsquo;ll break this bit of code again.</p>
+<ol>
+  <li>Introduce a bug into StockWatcher.
+  <ul>
+    <li>In StockPrice.java, make the change highlighted below.</li>
+  </ul></li>
+</ol>
+<pre><code>public double getChangePercent() {
+    return 10.0 * this.change / this.price;
+  }
+
+</code></pre>
+<ol>
+  <li>Run StockWatcherTest in development mode (either in Eclipse of from the command line).
+  <ul>
+    <li>JUnit identifies the failed test case (testStockPriceCtor). (Output if run in Eclipse.)</li>
+    <li><img src="/web-toolkit/doc/latest/tutorial/images/JUnitFailed.png" alt="screenshot: JUnit tests failed""/></li>
+    <li>&hellip;and provides a full-stack trace for the exception that resulted&mdash;an AssertionFailedError. (Output if run from the command line.)</li>
+  </ul></li>
+</ol>
+<pre><code>Testsuite: com.google.gwt.sample.stockwatcher.client.StockWatcherTest
+Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 16.443 sec
+
+    Testcase: testSimple took 16.238 sec
+Testcase: testStockPriceCtor took 0.155 sec
+  FAILED
+Remote test failed at 172.29.212.75 / Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1
+ expected=2.857142857142857 actual=0.2857142857142857 delta=0.0010
+junit.framework.AssertionFailedError: Remote test failed at 172.29.212.75 / Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1
+ expected=2.857142857142857 actual=0.2857142857142857 delta=0.0010
+  at com.google.gwt.sample.stockwatcher.client.StockWatcherTest.testStockPriceCtor(StockWatcherTest.java:38)
+  at com.google.gwt.sample.stockwatcher.client.__StockWatcherTest_unitTestImpl.doRunTest(__StockWatcherTest_unitTestImpl.java:7)
+  ...
+
+</code></pre><p><strong>Note:</strong> When running from the command line, complete test reports (including stack traces) will be located in the <code>reports/htmlunit.dev/</code> directory for development mode tests and <code>reports/htmlunit.prod/</code> directory for production mode tests. 3. Correct the error. 4. Rerun the tests.  * Both the JUnit tests should complete successfully again.</p>
+<pre><code>&amp;#91;junit&amp;#93; Running com.google.gwt.sample.stockwatcher.client.StockWatcherTest
+&amp;#91;junit&amp;#93; Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 16.114 sec
+</code></pre><p><strong>Best Practices:</strong> Because there can be subtle differences between the way GWT applications work when compiled to JavaScript and when running as Java bytecode, make sure you run your unit tests in both development and production modes as you develop your application. Be aware, though, that if your test cases fail when running in production mode, you won&rsquo;t get the full stack trace that you see in development mode.</p><h2>More about testing <a id="more_about_testing"></a></h2><p>At this point, you&rsquo;ve created a JUnit test for StockWatcher and added a simple test case to it.</p><p>To learn more about all kinds of unit testing in GWT, see the Developer&rsquo;s Guide:</p>
+<ul>
+  <li><a href="../DevGuideTesting.html#DevGuideJUnitCreation">Creating a Test Case</a></li>
+  <li><a href="../DevGuideTesting.html#DevGuideJUnitSuites">Creating Test Suites</a></li>
+  <li><a href="../DevGuideTesting.html#DevGuideAsynchronousTesting">Asynchronous testing</a></li>
+  <li><a href="../DevGuideTesting.html#DevGuideJUnitSetUp">Setting up and tearing down JUnit test cases that use GWT code</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

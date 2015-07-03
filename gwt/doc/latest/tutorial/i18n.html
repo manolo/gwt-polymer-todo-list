@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/tutorial/i18n.md"></a>
+                    </span>
+                    <h1>Internationalization</h1><p>At this point, you&rsquo;ve created the initial implementation of the StockWatcher application.</p><p>In this tutorial, you&rsquo;ll learn how to prepare an application to support other languages and data formats by translating the StockWatcher user interface into German. Specifically, you will:</p>
+<ol>
+  <li><a href="#design">Select an internationalization technique.</a></li>
+  <li><a href="#international">Internationalize StockWatcher by creating a translation for each language supported.</a></li>
+  <li><a href="#local">Localize StockWatcher by selecting the appropriate translation for the context (locale).</a></li>
+</ol><p><strong>Note:</strong> For a broader guide to internationalizing a GWT application, see <a href="../DevGuideI18n.html">Internationalization</a>.</p><h2>Design <a id="design"></a></h2><h3>Determining what needs to be translated&hellip;what&rsquo;s localizable</h3><p>If you look at the current English-language interface for StockWatcher, you will see that there are two types of text that can be localized: constants and messages.</p><p><img src="images/i18nEnglish.png" alt="screenshot: StockWatcher English UI""/></p><h3>Selecting an internationalization technique</h3><p>When internationalizing a GWT application, you have several techniques to choose from. Because StockWatcher has only a few constants and parameterized messages in its user interface, you&rsquo;ll use Static String Internationalization.</p><p><a href="../DevGuideI18n.html#DevGuideStaticStringInternationalization">Static String Internationalization</a></p><p>Static string initialization requires very little overhead at runtime and therefore is a very efficient technique for translating both constant and parameterized strings. It is also the simplest technique to implement. Static string internationalization uses standard Java properties files to store translated strings and parameterized messages, then implements strongly-typed Java interfaces to retrieve their values.</p><p><a href="../DevGuideI18n.html#DevGuideDynamicStringInternationalization">Dynamic String Internationalization</a></p><p>Dynamic string internationalization is slower than static string internationalization, but is very flexible. Applications using this technique look up localized strings in the module&rsquo;s host page; therefore, they do not need to be recompiled when you add a new locale. If you need to integrate a GWT application with an existing server-side localization system, dynamic string internationalization is the option to consider.</p><p><a href="/javadoc/latest/com/google/gwt/i18n/client/Localizable.html">Localizable Interface</a></p><p>The most powerful technique is to implement the Localizable interface. Implementing Localizable allows you to go beyond simple string substitution and create localized versions of custom types. It&rsquo;s an advanced internationalization technique that you probably won&rsquo;t have to use very often.</p><h2>Internationalizing StockWatcher: Creating the translation for each language supported <a
+id="international"></a></h2><h3>Process Overview: Static String Internationalization</h3><p>The process you&rsquo;ll follow for Static String Internationalization is straightforward.</p>
+<ol>
+  <li><p>First, you&rsquo;ll implement two Java interfaces:</p>
+  <ul>
+    <li>one for string constants, the GWT Constants interface (StockWatcherConstants.java)</li>
+    <li>one for parameterized messages, the GWT Messages interface (StockWatcherMessages.java) These interfaces use annotations to specify the default translation.</li>
+  </ul></li>
+  <li><p>Then, for each new language you&rsquo;re supporting, you&rsquo;ll create two Java properties files:</p>
+  <ul>
+    <li>one for string constants (StockWatcherConstants_de.properties)</li>
+    <li>one for parameterized messages (StockWatcherMessages_de.properties)</li>
+  </ul></li>
+  <li>Finally, you&rsquo;ll replace all the strings hardcoded in the Java source code with method calls to the appropriate interface.</li>
+</ol><p><strong>Tip:</strong> GWT provides a command-line tool, <a href="../RefCommandLineTools.html#i18nCreator">i18nCreator</a>, that automates the creation of Java interfaces to access strings in properties files. This tool comes in handy, especially if you have existing localized properties files you&rsquo;d like to reuse.</p><h3>Implement the Constants Interface</h3><p>First create the Java interface (StockWatcherConstants) that accesses the properties files which hold each translation. The interface uses annotations to specify the default translation. This interface implements the GWT <a href="/javadoc/latest/com/google/gwt/i18n/client/Constants.html">Constants</a> interface. This interface is bound automatically to any StockWatcherConstants*.properties files you create because of its name.</p><p>The StockWatcherConstants interface contains methods for each of the constants in the properties files. At runtime, when one of these methods is called, the return value comes from whichever properties file that corresponds with the locale. (We&rsquo;ll show you how to set the locale in a minute.) If no locale is set, StockWatcher uses the default translation specified by the annotations. For example, if the locale is set to German, the stockWatcher method will return AktieWatcher; if no locale is set, the stockWatcher method will return StockWatcher.</p><h4>Create StockWatcherConstants</h4>
+<ol>
+  <li><p>In the client subpackage, create an interface and name it StockWatcherConstants.</p>
+  <ul>
+    <li>In Eclipse, in the Package Explorer pane, select the package</li>
+  </ul><p><code>com.google.gwt.sample.stockwatcher.client</code></p>
+  <ul>
+    <li>From the Eclipse menu bar, select <code>File &gt; New &gt; Interface</code></li>
+    <li>Eclipse opens a New Java Interface window.</li>
+  </ul></li>
+  <li>Fill in the New Java Interface window.
+  <ul>
+    <li>At Name enter <code>StockWatcherConstants</code></li>
+    <li>Accept the defaults for the other fields.</li>
+    <li>Press <code>Finish</code></li>
+    <li>Eclipse creates stub code for the StockWatcherConstants interface.</li>
+  </ul></li>
+  <li>Replace the stub with following code.
+  <ul>
+    <li>Notice the use of annotations to set default values.</li>
+  </ul></li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+    import com.google.gwt.i18n.client.Constants;
+
+    public interface StockWatcherConstants extends Constants {
+  @DefaultStringValue(&quot;StockWatcher&quot;)
+  String stockWatcher();
+
+      @DefaultStringValue(&quot;Symbol&quot;)
+  String symbol();
+
+      @DefaultStringValue(&quot;Price&quot;)
+  String price();
+
+      @DefaultStringValue(&quot;Change&quot;)
+  String change();
+
+      @DefaultStringValue(&quot;Remove&quot;)
+  String remove();
+
+      @DefaultStringValue(&quot;Add&quot;)
+  String add();
+}
+</code></pre><p><strong>Implementation Note:</strong> GWT provides another interface (<a href="/javadoc/latest/com/google/gwt/i18n/client/ConstantsWithLookup.html">ConstantsWithLookup</a>) which is similar to Constants except that it also contains methods for looking up a localized string dynamically by name at runtime.</p><h3>Create the German translation of constants</h3><h4>Encoding for international character sets</h4><p>When you internationalize your application&rsquo;s interface, keep in mind that the languages you support may contain characters not in the ASCII character set. Therefore, both in the HTML host page (StockWatcher.html), and the Java properties files that contain the translations, you must set the encoding to UTF-8.</p>
+<ol>
+  <li>Check the encoding for the application host page.
+  <ul>
+    <li>Open StockWatcher.html.</li>
+    <li>If the encoding is not already set to UTF-8, copy this code into the <code>&lt;head&gt;</code> element.</li>
+  </ul></li>
+</ol>
+<pre><code>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+</code></pre><h4>Create StockWatcherConstant_de.properties</h4>
+<ol>
+  <li><p>In the client subpackage, create a Java properties file.</p>
+  <ul>
+    <li>At Enter or select the parent folder, select</li>
+  </ul>
+  <pre><code>    `StockWatcher/src/com/google/gwt/sample/stockwatcher/client`
+</code></pre>
+  <ul>
+    <li>At File name, enter</li>
+  </ul>
+  <pre><code>    `StockWatcherConstants_de.properties`
+</code></pre></li>
+  <li><p>Change the encoding of the file to UTF-8.</p>
+  <ul>
+    <li>Select the file and then from the Eclipse menu bar, select <code>File &gt; Properties</code> or right-click.</li>
+    <li>Eclipse opens the Properties window.</li>
+    <li>At Text file encoding, select Other UTF-8. Apply and Save the change.</li>
+    <li><strong>Note:</strong> Depending on your Eclipse configuration, when you apply the changes, you might get this warning: <code>UTF-8 conflicts with the encoding defined in the content type (ISO-8859-1). Do you wish to set it anyway?</code> You can ignore the warning and apply the change.</li>
+  </ul></li>
+  <li>Add the mappings for the static text in the German user interface.
+  <ul>
+    <li>Copy and paste the following text into the StockWatcherConstant_de.properties file.</li>
+  </ul></li>
+</ol>
+<pre><code>stockWatcher = Aktienbeobachter
+symbol = Symbol
+price = Kurs
+change = &amp;Auml;nderung
+remove = Entfernen
+add = Hinzuf&amp;uuml;gen
+</code></pre><h5>Note: Suffixing a properties file</h5><p>If you&rsquo;ve never dealt with internationalization before, you may be wondering why the _de suffix is appended to German properties file. The suffix _de is the standard language tag for the German language (**De**utsch). Languages tags are abbreviations that indicate a document or application&rsquo;s locale. In addition to specifying the language, they can also contain a subtag indicating the region of a locale. For example, the language tag for French-speaking Canada is fr_CA.</p><p>In GWT, properties files indicate the locale with a language code suffix (just like Java resource bundles). The exception is the properties file for the default locale. When no locale is explicitly set at runtime, the properties file with no language code suffix is used. For StockWatcher, you&rsquo;ve specified the default translation with annotations instead of using a default properties file.</p><h3>Implement the Messages interface</h3><p>First create the Java interface (StockWatcherMessages). It accesses the properties files which hold the translations of each parameterized message. This interface implements the GWT <a href="/javadoc/latest/com/google/gwt/i18n/client/Messages.html">Messages</a> interface. Unlike the StockWatcherConstants interface, the methods in this interface contain parameters. When you call these methods, the arguments you pass will replace the placeholders you left in the strings in the properties files. This interface is bound automatically to any StockWatcherMessages*.properties files you create because of its name.</p><h4>Internationalizing date formats</h4><p>Parameterized messages are not limited to pop-up alerts and error messages. Any place in the application where you set text on a Label widget has the potential to be a parameterized message. For example, in StockWatcher the timestamp is a parameterized message; not only do you pass in the value of the date, but the date format can vary by locale.</p>
+<ol>
+  <li>In the client subpackage, create an interface and name it StockWatcherMessages.</li>
+  <li>Replace the stub with following code.</li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+    import com.google.gwt.i18n.client.Messages;
+
+    import java.util.Date;
+
+    public interface StockWatcherMessages extends Messages {
+  @DefaultMessage(&quot;&#39;&#39;{0}&#39;&#39; is not a valid symbol.&quot;)
+  String invalidSymbol(String symbol);
+
+      @DefaultMessage(&quot;Last update: {0,date,medium} {0,time,medium}&quot;)
+  String lastUpdate(Date timestamp);
+
+    }
+</code></pre><h4>Tips on formatting parameterized messages</h4><h5>Specifying the number of arguments</h5><p>Notice that the message strings all have an {0} embedded in them. These are placeholders that will be replaced at runtime by arguments passed to our StockWatcherMessages interface methods.</p><p>If you have a string that needs more than one argument, number the placeholders sequentially. For example: <code>myString = First parm is {0}, second parm is {1}, third parm is {2}.</code></p><h5>Handling quoted text</h5><p>If your messages contains single quotes (&rsquo;), as many of those in StockWatcher do, you&rsquo;ll need to replace them with two consecutive single quotes in the Java properties files. In general, the formatting rules for GWT messages are the same that apply to Java&rsquo;s <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/text/MessageFormat.html">MessageFormat</a> class.</p><h3>Create the German translation of parameterized messages</h3>
+<ol>
+  <li><p>Create a Java properties file.</p>
+  <ul>
+    <li>At Enter or select the parent folder, select</li>
+  </ul>
+  <pre><code>    `StockWatcher/src/com/google/gwt/sample/stockwatcher/client`
+</code></pre>
+  <ul>
+    <li>At File name, enter</li>
+  </ul>
+  <pre><code>    `StockWatcherMessages_de.properties`
+</code></pre></li>
+  <li><p>Change the encoding of the file to UTF-8.</p></li>
+  <li>Add the mappings for the parameterized text in the English user interface.
+  <ul>
+    <li>Copy and paste the following text into the StockWatcherMessages_de.properties file.</li>
+  </ul></li>
+</ol>
+<pre><code>lastUpdate = Letzte Aktualisierung: {0,date,medium} {0,time,medium}
+invalidSymbol = &#39;&#39;{0}&#39;&#39; ist kein g&amp;uuml;ltiges Aktiensymbol.
+
+</code></pre><h3>Replacing hardcoded strings with generated localized ones</h3><p>The next step in internationalizing StockWatcher is to replace all hardcoded strings within the source code with method calls to one of the two new interfaces.</p><h4>Replacing strings hardcoded in the HTML host page</h4><p>Currently the StockWatcher application has one string that isn&rsquo;t generated programmatically: the title, StockWatcher. It&rsquo;s an HTML <code>&lt;h1&gt;</code> heading in the host page (StockWatcher.html).</p><p>In the Build a Sample GWT Application tutorial we wanted to show you that is possible to mix static HTML elements with those generated by StockWatcher on the same page. It was also a fast and easy way of putting static text around the stock table. However, now that you are internationalizing StockWatcher, you can see that this is not the most flexible strategy.</p><p>An easy way to generate this heading is by replacing the text inside the <code>&lt;h1&gt;</code> element with a GWT Label widget and calling its setText(String) method. Remember, GWT widgets cannot be embedded directly into the HTML host page; so first wrap it with a Root panel.</p>
+<ol>
+  <li>Open StockWatcher.html.
+  <ul>
+    <li>Associate a Root panel with the <code>&lt;h1&gt;</code> heading by assigning it an id of &ldquo;appTitle&rdquo;.</li>
+    <li>Delete the text in the <code>&lt;h1&gt;</code> heading.</li>
+  </ul></li>
+</ol>
+<pre><code>&lt;body&gt;
+
+        &lt;img src=&quot;images/GoogleCode.png&quot;/&gt;
+
+    &lt;h1 id=&quot;appTitle&quot;&gt;&lt;/h1&gt;
+</code></pre><p>Now, you should be able to set all of StockWatcher&rsquo;s localized strings at runtime.</p><h4>Replacing strings set programmatically</h4><p>Go through the StockWatcher class and replace all the strings that are hardcoded text.</p>
+<ol>
+  <li>Create instances of the StockWatcherConstants and StockWatcherMessages interfaces.
+  <ul>
+    <li>In the StockWatcher class, add the following pair of instance fields.</li>
+  </ul></li>
+</ol>
+<pre><code>private ArrayList&lt;String&gt; stocks = new ArrayList&lt;String&gt;();
+  private StockWatcherConstants constants = GWT.create(StockWatcherConstants.class);
+  private StockWatcherMessages messages = GWT.create(StockWatcherMessages.class);
+</code></pre>
+<ul>
+  <li>Because these are interfaces, not classes, you can&rsquo;t instantiate them directly. Instead, you use the GWT.create(Class) method. Then you&rsquo;ll be able to use these interfaces&rsquo; accessor methods to retrieve the appropriate strings.</li>
+</ul>
+<ol>
+  <li>Eclipse flags GWT and suggests you include the import declaration.</li>
+</ol>
+<pre><code>import com.google.gwt.core.client.GWT;
+</code></pre>
+<ol>
+  <li>Replace all the hardcoded strings with method calls to the constants class.
+  <ul>
+    <li>Get the values of the window title, the application title, the Add Stock button, and the column headers of the flex table from the constants properties files.</li>
+  </ul></li>
+</ol>
+<pre><code>public void onModuleLoad() {
+    // Set the window title, the header text, and the Add button text.
+    Window.setTitle(constants.stockWatcher());
+    RootPanel.get(&quot;appTitle&quot;).add(new Label(constants.stockWatcher()));
+    addStockButton = new Button(constants.add());
+
+        // Create table for stock data.
+    stocksFlexTable.setText(0, 0, constants.symbol());
+    stocksFlexTable.setText(0, 1, constants.price());
+    stocksFlexTable.setText(0, 2, constants.change());
+    stocksFlexTable.setText(0, 3, constants.remove());
+
+        ...
+</code></pre>
+<ol>
+  <li>Replace the parameterized error message.
+  <ul>
+    <li>In the addStock method, replace the alert message for an invalid stock code entry.</li>
+    <li>Change:</li>
+  </ul></li>
+</ol>
+<pre><code>private void addStock() {
+    final String symbol = newSymbolTextBox.getText().toUpperCase().trim();
+    newSymbolTextBox.setFocus(true);
+
+        // Stock code must be between 1 and 10 chars that are numbers, letters, or dots.
+    if (!symbol.matches(&quot;^[0-9a-zA-Z\\.]{1,10}$&quot;)) {
+      Window.alert(messages.invalidSymbol(symbol));
+      newSymbolTextBox.selectAll();
+      return;
+    }
+
+        ...
+</code></pre>
+<ol>
+  <li>Move the logic for determining the date format to the Messages interface.
+  <ul>
+    <li>In the updateTable(StockPrice[] prices) method, replace the variable timestamp with a call to its lastUpdate method.</li>
+    <li>Change:</li>
+  </ul></li>
+</ol>
+<pre><code>private void updateTable(StockPrice[] prices) {
+    for (int i = 0; i &lt; prices.length; i++) {
+      updateTable(prices[i]);
+    }
+
+        // Display timestamp showing last refresh.
+    lastUpdatedLabel.setText(messages.lastUpdate(new Date()));
+
+      }
+</code></pre><h2>Localizing StockWatcher <a id="local"></a></h2><p>At this point you have created two localized versions of StockWatcher&rsquo;s user interface. But how does GWT know which one to load at runtime? GWT uses client properties to produce customized JavaScript compilations of your GWT application using a mechanism called deferred binding. To pick the correct localized version of StockWatcher to serve at runtime, GWT evaluates the client property, <em>locale</em>.</p><h3>Internationalization and Deferred Binding</h3><p>You saw in the Build a Sample GWT Application tutorial that GWT uses deferred binding to generate different permutations of your application, each one targeting a different web browser. At runtime, the GWT bootstrap code delivers the appropriate permutation depending on which browser the end-user is using. These browser-specific compilations are created because <em>user agent</em> is a GWT client property. In the same way, GWT represents the locale as a client property. This means that the GWT compiler will generate custom versions of internationalized applications representing each supported locale.</p><p>When there are multiple client properties, GWT generates a unique compilation for every combination of possible client property values. So, for example, if GWT supports 5 web browsers and you translate an application into 4 different languages, the GWT compiler produces a total of 20 different versions of your application. However, each user of your application is served only the code in the permutation matching his or her particular combination of web browser and locale.</p><h3>Identifying StockWatcher&rsquo;s supported locales</h3><p>You tell the GWT compiler that StockWatcher now supports the German (de) locale by extending the set of values of the client property, <em>locale</em>.</p>
+<ol>
+  <li>Identify German as a supported language.
+  <ul>
+    <li>Open StockWatcher.gwt.xml and add the following property.</li>
+  </ul></li>
+</ol>
+<pre><code>&lt;entry-point class=&#39;com.google.gwt.sample.stockwatcher.client.StockWatcher&#39;/&gt;
+
+      &lt;extend-property name=&quot;locale&quot; values=&quot;de&quot;/&gt;
+&lt;/module&gt;
+</code></pre>
+<ol>
+  <li>Refresh StockWatcher in development mode.
+  <ul>
+    <li>The English language version loads by default.</li>
+  </ul></li>
+  <li>Load the German version.
+  <ul>
+    <li>To the end of the URL, append <code>&amp;locale=de</code></li>
+    <li>`<a href="http://localhost:8888/StockWatcher.html?gwt.codesvr=127.0.0.1:9997&locale=de">http://localhost:8888/StockWatcher.html?gwt.codesvr=127.0.0.1:9997&locale=de</a></li>
+    <li>All the constants should display in German.</li>
+  </ul></li>
+  <li>Enter a stock code with an invalid character.
+  <ul>
+    <li>The error message should display in German.</li>
+    <li>Notice, too, that the date and currency formats are localized. * <img src="images/i18nGerman.png" alt="screenshot: StockWatcher German UI""/></li>
+  </ul></li>
+  <li><p>Compile StockWatcher and open it in production mode.</p>
+  <ul>
+    <li>The web browser displays StockWatcher&rsquo;s default interface.</li>
+  </ul></li>
+  <li>Test the German interface.
+  <ul>
+    <li>Append the locale to the URL <code>?locale=de</code></li>
+    <li>The web browser displays StockWatcher&rsquo;s German interface.</li>
+  </ul></li>
+  <li>Look at the files generated.
+  <ul>
+    <li>You should see files for twice as many permutations as you did before you created the German-language interface.</li>
+  </ul></li>
+</ol><h3>Determining the user&rsquo;s locale</h3><p>At runtime, how do you determine the user&rsquo;s locale? You might do as many websites do, and present the user with a list of languages or locales to choose from manually. You could also have the web server check the Accept-Language field in the browser&rsquo;s HTTP request to determine the correct locale. If you do this, however, be sure to provide a way for the user to override the value in the Accept-Language field and select their language preference.</p><h3>Setting the locale</h3><p>Now that StockWatcher is internationalized, how does GWT know which locale to load at runtime? The answer is that it uses the value of the client property, locale. You can set a this client property two ways:</p>
+<ul>
+  <li><p>Add an HTML <code>&lt;meta&gt;</code> tag to the <code>&lt;head&gt;</code> of the application host page, containing the property name and value:</p>
+  <pre><code>`&lt;meta name=&quot;gwt:property&quot; content=&quot;locale=de&quot;&gt;`
+</code></pre></li>
+  <li><p>Append the client property value to the query string of the URL:</p>
+  <pre><code>`http://www.example.org/myapp.html?locale=de`
+</code></pre></li>
+</ul><p>If you specify a client property (such as locale) in both a <code>&lt;meta&gt;</code> tag and the URL, the URL value takes precedence.</p><h3>Preserving the locale across multiple browser pages</h3><p>The locale settings for a GWT module apply only for that particular instance of that particular module. This means that if your application contains links to other GWT host pages or non-GWT web pages on your site, the locale setting does not carry over to those pages. Thus, if you want to preserve the user-specified locale, you&rsquo;ll either need to pass the locale in the query string of all links in your GWT application, or you&rsquo;ll need to store the locale setting somewhere on the server, which can then insert the appropriate <code>&lt;meta&gt;</code> tag into the host pages of any loaded GWT modules.</p><h2>More about internationalization</h2><p>At this point you&rsquo;ve used Static String Internationalization to generate a German-language permutation of your GWT application. You&rsquo;ve implemented localization so that the appropriate permutation loads based on the user&rsquo;s locale.</p><p>To learn more about all three internationalization techniques, the GWT I18N module, or how to use GWT i18nCreator to reuse existing localized properties files, see the Developer&rsquo;s Guide, <a href="../DevGuideI18n.html">Internationalization</a>.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

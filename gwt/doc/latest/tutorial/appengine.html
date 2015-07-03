@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/tutorial/appengine.md"></a>
+                    </span>
+                    <h1>Deploy to GAE</h1><p>At this point, you&rsquo;ve created the initial implementation of the StockWatcher application, simulating stock data in the client-side code.</p><p>In this section, you&rsquo;ll deploy this application on <a href="https://developers.google.com/appengine">Google App Engine</a>. Also, you&rsquo;ll learn about some of the App Engine service APIs and use them to personalize the StockWatcher application so that users can log into their Google Account and retrieve their list of stocks.</p>
+<ol>
+  <li><a href="#intro">Get started with App Engine</a></li>
+  <li><a href="#deploy">Deploy the application to App Engine</a></li>
+  <li><a href="#user">Personalize the application with the User Service</a></li>
+  <li><a href="#data">Store data in the datastore</a></li>
+</ol><p><strong>Note:</strong> For a broader guide to deploying, see <a href="../DevGuideDeploying.html">Deploy a GWT Application</a>.</p><p>This tutorial builds on the GWT concepts and the StockWatcher application created in the <a href="gettingstarted.html">Build a Sample GWT Application</a> tutorial. It also uses techniques covered in the <a href="RPC.html">GWT RPC</a> tutorial. If you have not completed these tutorials and are familiar with basic GWT concepts, you can import the StockWatcher project as coded to this point, as instructed below.</p><h2>Get started with App Engine <a id="intro"></a></h2><h3>Sign up for an App Engine account</h3><p><a href="https://appengine.google.com">Sign up</a> for an App Engine account. After your account is activated, sign in and create an application. Make a note of the application ID you choose because you will need this information when you configure the StockWatcher project. After you&rsquo;ve finished with this tutorial you will be able to reuse this application ID for other applications.</p><h3>Download the App Engine SDK</h3><p>If you plan to use Eclipse, you can download the App Engine SDK with the <a href="https://developers.google.com/appengine/docs/java/tools/eclipse">Google Plugin for Eclipse</a>. Or <a href="https://developers.google.com/appengine/downloads">download</a> the App Engine SDK for Java separately.</p><h3>Set up a project</h3><h4>Set up a project (with Eclipse)</h4><p>If you initially created your StockWatcher Eclipse project using the Google Plugin for Eclipse with both GWT and Google App Engine enabled, your project is already ready to run on App Engine. If not:</p>
+<ol>
+  <li>If you haven&rsquo;t yet, install the <a href="https://developers.google.com/appengine/docs/java/tools/eclipse">Google Plugin for Eclipse</a> with both GWT and App Engine SDK and restart Eclipse.</li>
+  <li><p>Complete the <a href="gettingstarted.html">Build a Sample GWT Application</a> tutorial, making sure to create a project with both GWT and Google App Engine enabled. Alternatively, if you would like to skip the Build a Sample GWT Application tutorial, then <a href="http://code.google.com/p/google-web-toolkit/downloads/detail?name=Tutorial-GettingStartedAppEngine-2.1.zip">download</a>, unzip and import the StockWatcher Eclipse project. To import the project:</p>
+  <ol>
+    <li>In the File menu, select the Import&hellip; menu option.</li>
+    <li>Select the import source General &gt; Existing Projects into Workspace. Click the Next button.</li>
+    <li>At &ldquo;Select root directory&rdquo;, browse to and select the StockWatcher directory (from the unzipped file). Click the Finish button.</li>
+    <li>Add the Google Web Toolkit and App Engine functionality to your newly created project (right-click on your project &gt; Google &gt; Web Toolkit / App Engine Settings&hellip;). This will add Google Plugin functionality to your project as well as copy required libraries to your project <code>WEB-INF/lib</code> directory automatically.</li>
+  </ol></li>
+</ol><h4>Set up a project (without Eclipse)</h4>
+<ol>
+  <li>If you haven&rsquo;t yet, download the <a href="https://developers.google.com/appengine/downloads">App Engine SDK</a> for Java.</li>
+  <li>Complete the <a href="gettingstarted.html">Build a Sample GWT Application</a> tutorial, using webAppCreator to create a GWT application. Alternatively, If you would like to skip the Build a Sample GWT Application tutorial, then download and unzip <a href="http://code.google.com/p/google-web-toolkit/downloads/detail?name=Tutorial-GettingStarted-2.1.zip">this file</a>. Edit the gwt.sdk property in the StockWatcher/build.xml, then proceed with the modifications below.</li>
+  <li><p>App Engine requires its own web application deployment descriptor. Create a file StockWatcher/war/WEB-INF/appengine-web.xml with these contents:</p>
+  <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;appengine-web-app xmlns=&quot;http://appengine.google.com/ns/1.0&quot;&gt;
+  &lt;application&gt;&lt;!-- Your App Engine application ID goes here --&gt;&lt;/application&gt;
+  &lt;version&gt;1&lt;/version&gt;
+&lt;/appengine-web-app&gt;
+</code></pre><p>Substitute your App Engine application ID on the second line. Read more about <a href="https://developers.google.com/appengine/docs/java/config/appconfig">appengine-web.xml</a>.</p></li>
+  <li><p>As we will be using <a href="https://developers.google.com/appengine/docs/java/gettingstarted/usingdatastore">Java Data Objects (JDO)</a> later for storing data, create a file StockWatcher/src/META-INF/jdoconfig.xml with these contents:</p>
+  <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;jdoconfig xmlns=&quot;http://java.sun.com/xml/ns/jdo/jdoconfig&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:noNamespaceSchemaLocation=&quot;http://java.sun.com/xml/ns/jdo/jdoconfig&quot;&gt;
+  &lt;persistence-manager-factory name=&quot;transactions-optional&quot;&gt;
+    &lt;property name=&quot;javax.jdo.PersistenceManagerFactoryClass&quot; value=&quot;org.datanucleus.store.appengine.jdo.DatastoreJDOPersistenceManagerFactory&quot;/&gt;
+    &lt;property name=&quot;javax.jdo.option.ConnectionURL&quot; value=&quot;appengine&quot;/&gt;
+    &lt;property name=&quot;javax.jdo.option.NontransactionalRead&quot; value=&quot;true&quot;/&gt;
+    &lt;property name=&quot;javax.jdo.option.NontransactionalWrite&quot; value=&quot;true&quot;/&gt;
+    &lt;property name=&quot;javax.jdo.option.RetainValues&quot; value=&quot;true&quot;/&gt;
+    &lt;property name=&quot;datanucleus.appengine.autoCreateDatastoreTxns&quot; value=&quot;true&quot;/&gt;
+  &lt;/persistence-manager-factory&gt;
+&lt;/jdoconfig&gt;
+</code></pre><p>You will reference this configuration later by its name &ldquo;transactions-optional&rdquo;. Read more about <a href="https://developers.google.com/appengine/docs/java/datastore/usingjdo">jdoconfig.xml</a>.</p></li>
+  <li><p>The GWT ant build file needs to be modified to support DataNucleus JDO compilation and use of the App Engine development server. Edit StockWatcher/build.xml and add the following:</p></li>
+  <li><p>Add a property for the App Engine SDK directory.</p>
+  <pre><code>&lt;!-- Configure path to GWT SDK --&gt;
+&lt;property name=&quot;gwt.sdk&quot; location=&quot;_Path to GWT_&quot; /&gt;
+&lt;!-- Configure path to App Engine SDK --&gt;
+&lt;property name=&quot;appengine.sdk&quot; location=&quot;_Path to App Engine SDK_&quot; /&gt;
+</code></pre></li>
+  <li><p>Add a property for a App Engine tools class path.</p>
+  <pre><code>&lt;path id=&quot;project.class.path&quot;&gt;
+  &lt;pathelement location=&quot;war/WEB-INF/classes&quot;/&gt;
+  &lt;pathelement location=&quot;${gwt.sdk}/gwt-user.jar&quot;/&gt;
+  &lt;fileset dir=&quot;${gwt.sdk}&quot; includes=&quot;gwt-dev*.jar&quot;/&gt;
+    &lt;!-- Add any additional non-server libs (such as JUnit) --&gt;
+  &lt;fileset dir=&quot;war/WEB-INF/lib&quot; includes=&quot;**/*.jar&quot;/&gt;
+&lt;/path&gt;
+
+&lt;path id=&quot;tools.class.path&quot;&gt;
+  &lt;path refid=&quot;project.class.path&quot;/&gt;
+  &lt;pathelement location=&quot;${appengine.sdk}/lib/appengine-tools-api.jar&quot;/&gt;
+  &lt;fileset dir=&quot;${appengine.sdk}/lib/tools&quot;&gt;
+    &lt;include name=&quot;**/asm-*.jar&quot;/&gt;
+    &lt;include name=&quot;**/datanucleus-enhancer-*.jar&quot;/&gt;
+  &lt;/fileset&gt;
+&lt;/path&gt;
+</code></pre></li>
+  <li><p>Modify the &ldquo;libs&rdquo; ant target so that the required jar files are copied to WEB-INF/lib.</p>
+  <pre><code>&lt;target name=&quot;libs&quot; description=&quot;Copy libs to WEB-INF/lib&quot;&gt;
+  &lt;mkdir dir=&quot;war/WEB-INF/lib&quot; /&gt;
+  &lt;copy todir=&quot;war/WEB-INF/lib&quot; file=&quot;${gwt.sdk}/gwt-servlet.jar&quot; /&gt;
+  &lt;!-- Add any additional server libs that need to be copied --&gt;
+  &lt;copy todir=&quot;war/WEB-INF/lib&quot; flatten=&quot;true&quot;&gt;
+    &lt;fileset dir=&quot;${appengine.sdk}/lib/user&quot; includes=&quot;**/*.jar&quot;/&gt;
+  &lt;/copy&gt;
+&lt;/target&gt;
+</code></pre></li>
+  <li><p>JDO is implemented with DataNucleus Java byte-code enhancement. Modify the &ldquo;javac&rdquo; ant target to add byte-code enhancement.</p>
+  <pre><code>&lt;target name=&quot;javac&quot; depends=&quot;libs&quot; description=&quot;Compile java source&quot;&gt;
+  &lt;mkdir dir=&quot;war/WEB-INF/classes&quot;/&gt;
+  &lt;javac srcdir=&quot;src&quot; includes=&quot;**&quot; encoding=&quot;utf-8&quot;
+      destdir=&quot;war/WEB-INF/classes&quot;
+      source=&quot;1.5&quot; target=&quot;1.5&quot; nowarn=&quot;true&quot;
+      debug=&quot;true&quot; debuglevel=&quot;lines,vars,source&quot;&gt;
+    &lt;classpath refid=&quot;project.class.path&quot;/&gt;
+  &lt;/javac&gt;
+  &lt;copy todir=&quot;war/WEB-INF/classes&quot;&gt;
+    &lt;fileset dir=&quot;src&quot; excludes=&quot;**/*.java&quot;/&gt;
+  &lt;/copy&gt;
+  &lt;taskdef name=&quot;datanucleusenhancer&quot;
+      classpathref=&quot;tools.class.path&quot;
+      classname=&quot;org.datanucleus.enhancer.tools.EnhancerTask&quot; /&gt;
+  &lt;datanucleusenhancer classpathref=&quot;tools.class.path&quot;
+      failonerror=&quot;true&quot;&gt;
+    &lt;fileset dir=&quot;war/WEB-INF/classes&quot; includes=&quot;**/*.class&quot; /&gt;
+  &lt;/datanucleusenhancer&gt;
+&lt;/target&gt;
+</code></pre></li>
+  <li><p>Modify the &ldquo;devmode&rdquo; ant target to use the App Engine development server instead of the servlet container which comes with GWT.</p>
+  <pre><code>&lt;target name=&quot;devmode&quot; depends=&quot;javac&quot; description=&quot;Run development mode&quot;&quot;&gt;
+  &lt;java failonerror=&quot;true&quot; fork=&quot;true&quot; classname=&quot;com.google.gwt.dev.DevMode&quot;&quot;&gt;
+    &lt;classpath&gt;
+      &lt;pathelement location=&quot;src&quot;/&gt;
+      &lt;path refid=&quot;project.class.path&quot;/&gt;
+      &lt;path refid=&quot;tools.class.path&quot;/&gt;
+    &lt;/classpath&gt;
+    &lt;jvmarg value=&quot;-Xmx256M&quot;/&gt;
+    &lt;arg value=&quot;-startupUrl&quot;/&gt;
+    &lt;arg value=&quot;StockWatcher.html&quot;/&gt;
+    &lt;!-- Additional arguments like -style PRETTY or -logLevel DEBUG --&gt;
+    &lt;arg value=&quot;-server&quot;/&gt;
+    &lt;arg value=&quot;com.google.appengine.tools.development.gwt.AppEngineLauncher&quot;/&gt;
+    &lt;arg value=&quot;com.google.gwt.sample.stockwatcher.StockWatcher&quot;/&gt;
+  &lt;/java&gt;
+&lt;/target&gt;
+</code></pre></li>
+</ol><h3>Test locally</h3><p>We will run the application in GWT development mode to verify the project was set up successfully. However, instead of using the servlet container which comes with GWT, the application will run in the App Engine development server, the servlet container which comes with the App Engine SDK. What&rsquo;s the difference? The App Engine development server is configured to mimic the App Engine production environment.</p><h4>Run the application in development mode (with Eclipse)</h4>
+<ol>
+  <li>In the Package Explorer view, select the StockWatcher project.</li>
+  <li>In the toolbar, click the Run button (Run as Web Application).</li>
+</ol><h4>Run the application in development mode (without Eclipse)</h4>
+<ol>
+  <li>From the command-line, change to the StockWatcher directory.</li>
+  <li>Execute:</li>
+</ol>
+<pre><code>ant devmode
+</code></pre><h2>Deploy the application to App Engine <a id="deploy"></a></h2><p>Now that we&rsquo;ve verified the StockWatcher project is running locally in GWT development mode and with the App Engine development server, we can run the application on App Engine.</p><h4>Deploy the application to App Engine (with Eclipse)</h4>
+<ol>
+  <li>In the Package Explorer view, select the StockWatcher project.</li>
+  <li>In the toolbar, click the Deploy App Engine Project button <img src="images/DeployAppEngineProject.png" alt="icon""/>.</li>
+  <li>(First time only) Click the &ldquo;App Engine project settings&hellip;&rdquo; link to specify your application ID. Click the OK button when you&rsquo;re finished.</li>
+  <li>Enter your Google Accounts email and password. Click the Deploy button. You can watch the deployment progress in the Eclipse Console.</li>
+</ol><h4>Deploy the application to App Engine (without Eclipse)</h4>
+<ol>
+  <li>From the command-line, change to the StockWatcher directory.</li>
+  <li>Compile the application by executing:</li>
+</ol>
+<pre><code>ant build
+</code></pre><p><strong>Tip:</strong> Add the ant bin directory to your environment PATH to avoid having to specify the full path to ant.</p>
+<ol>
+  <li>appcfg is a command-line tool which comes with the App Engine SDKs. Upload the application by executing:</li>
+</ol>
+<pre><code>appcfg.sh update war
+</code></pre><p>From the Windows command prompt, the command is <code>appcfg update war</code>. The first parameter is the action to perform. The second parameter is the directory with the update, which in this case is a relative directory containing the static files and output from the GWT compiler. Enter your Google Accounts email and password when prompted.</p><p><strong>Tip:</strong> Add the App Engine SDK bin directory to your environment PATH to avoid having to specify the full path to appcfg.sh.</p><h3>Test on App Engine</h3><p>Test your uploaded application by opening a web browser to <a href="http://_application-id_.appspot.com/">http://_application-id_.appspot.com/</a> where <em>application-id</em> is the App Engine application ID that you created earlier. The StockWatcher application is now running on App Engine under your application ID.</p><h2>Personalize the application with the User Service <a id="user"></a></h2><h3>Overview</h3><p>Now that the StockWatcher is deployed on App Engine, we can start using some of the available services to enrich the application. We&rsquo;ll start by persisting stock quote listings on a per user basis. This is possible due to the datastore service, which allows us to save application data, as well as the User Service, which allows us to have users login and save stock quote listings for each user. For persistence, we&rsquo;ll use the Java Data Objects (JDO) interface provided by the App Engine SDK.</p><p>To implement login functionality we&rsquo;ll use the User Serivce. With this service in place, any user with a Google Account will be able to login using their account to access the StockWatcher application. In this section, you&rsquo;ll use the App Engine User API to add user login to the application.</p><p>The App Engine User Service is very easy to use. First, you need to instantiate the UserService class, as shown in the code snippet below:</p>
+<pre><code>UserService userService = UserServiceFactory.getUserService();
+
+</code></pre><p>Next, you need to get the current user who is accessing the StockWatcher application:</p>
+<pre><code>User user = userService.getCurrentUser();
+
+</code></pre><p>The UserService returns an instantiated User object if the current user who is accessing the application is logged into their Google Account. The User object contains useful information such as the email address associated with the account, as well as the account nickname. If the person accessing the application is not logged into their account, or doesn&rsquo;t have a Google Account, the returned User object will be null. In this case we have a number of options available to us in how we want to handle the situation, but for the purposes of the StockWatcher application, we will point the user to a login URL where they will be able to log into their Google Account.</p><p>The User API offers an easy way to generate the login URL. Simply calling the UserService <code>createLoginURL(String requestUri)</code> method, which gives you the redirect login URL to send the user to the Google Account login screen. Once they log in, the App Engine container will know where to redirect the user based on the <code>requestUri</code> that you provide when making the <code>createLoginURL()</code> call.</p><h3>Define the Login RPC service</h3><p>To make this more concrete, let&rsquo;s create a login RPC service for the StockWatcher application. If you&rsquo;re not familiar with GWT RPC, see the previous <a href="RPC.html">tutorial</a>.</p><p>First, create the LoginInfo object which will contain the login info from the User service.</p><h4>LoginInfo.java:</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import java.io.Serializable;
+
+public class LoginInfo implements Serializable {
+
+  private boolean loggedIn = false;
+  private String loginUrl;
+  private String logoutUrl;
+  private String emailAddress;
+  private String nickname;
+
+  public boolean isLoggedIn() {
+    return loggedIn;
+  }
+
+  public void setLoggedIn(boolean loggedIn) {
+    this.loggedIn = loggedIn;
+  }
+
+  public String getLoginUrl() {
+    return loginUrl;
+  }
+
+  public void setLoginUrl(String loginUrl) {
+    this.loginUrl = loginUrl;
+  }
+
+  public String getLogoutUrl() {
+    return logoutUrl;
+  }
+
+  public void setLogoutUrl(String logoutUrl) {
+    this.logoutUrl = logoutUrl;
+  }
+
+  public String getEmailAddress() {
+    return emailAddress;
+  }
+
+  public void setEmailAddress(String emailAddress) {
+    this.emailAddress = emailAddress;
+  }
+
+  public String getNickname() {
+    return nickname;
+  }
+
+  public void setNickname(String nickname) {
+    this.nickname = nickname;
+  }
+}
+
+</code></pre><p>LoginInfo is serializable since it is the return type of an RPC method.</p><p>Next, create the LoginService and LoginServiceAsync interfaces.</p><h4>LoginService.java:</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+
+@RemoteServiceRelativePath(&quot;login&quot;)
+public interface LoginService extends RemoteService {
+  public LoginInfo login(String requestUri);
+}
+
+</code></pre><p>The path annotation &ldquo;login&rdquo; will be configured below.</p><h4>LoginServiceAsync.java:</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+public interface LoginServiceAsync {
+  public void login(String requestUri, AsyncCallback&lt;LoginInfo&gt; async);
+}
+
+</code></pre><p>Create the LoginServiceImpl class in the com.google.gwt.sample.stockwatcher.server package as follows:</p><h4>LoginServiceImpl.java:</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.server;
+
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserService;
+import com.google.appengine.api.users.UserServiceFactory;
+import com.google.gwt.sample.stockwatcher.client.LoginInfo;
+import com.google.gwt.sample.stockwatcher.client.LoginService;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+public class LoginServiceImpl extends RemoteServiceServlet implements
+    LoginService {
+
+  public LoginInfo login(String requestUri) {
+    UserService userService = UserServiceFactory.getUserService();
+    User user = userService.getCurrentUser();
+    LoginInfo loginInfo = new LoginInfo();
+
+    if (user != null) {
+      loginInfo.setLoggedIn(true);
+      loginInfo.setEmailAddress(user.getEmail());
+      loginInfo.setNickname(user.getNickname());
+      loginInfo.setLogoutUrl(userService.createLogoutURL(requestUri));
+    } else {
+      loginInfo.setLoggedIn(false);
+      loginInfo.setLoginUrl(userService.createLoginURL(requestUri));
+    }
+    return loginInfo;
+  }
+
+}
+
+</code></pre><p>Lastly, configure the servlet in your web.xml file. The mapping is composed of the rename-to attribute in the GWT module definition (stockwatcher) and the RemoteServiceRelativePath annotation(login). Also, because the greetServlet is not needed for this application, its configuration can be deleted.</p><h4>web.xml:</h4>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;web-app&gt;
+
+  &lt;!-- Default page to serve --&gt;
+  &lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;StockWatcher.html&lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+
+  &lt;!-- Servlets --&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;loginService&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;com.google.gwt.sample.stockwatcher.server.LoginServiceImpl&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;loginService&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/stockwatcher/login&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+
+&lt;/web-app&gt;
+</code></pre><h3>Update the StockWatcher UI</h3><p>Now that the login RPC service is in place, the last thing to do is to make the call to the service from the StockWatcher entry point class. However, we must consider how the application flow changes now that we&rsquo;ve added login functionality. In the previous version of the application, you could load the StockWatcher unconditionally because it didn&rsquo;t require any login. Now that we are requiring user login, we have to change the loading logic a bit.</p><p>For one, if the user is already logged in, the application can proceed and load the StockWatcher. If, however, the user is not logged in, we have to redirect them to the login page. Once logged in, they will be redirected back to the StockWatcher host page where we&rsquo;ll need to check once more that they have indeed been authenticated. If the authentication check passes, then we can load the stock watcher.</p><p>The key thing to notice is that loading the stock watcher is contingent on the result of the login. This means the logic that loads the StockWatcher must be called only once login has passed. This will require a bit of refactoring. If you&rsquo;re using Eclipse, this will be easy to do. Simply select the code in the StockWatcher <code>onModuleLoad()</code> method, select the &ldquo;Refactor&rdquo; menu, and click on the &ldquo;Extract Method&hellip;&rdquo; function. From there you can declare the extracted method something suitable, like <code>private void loadStockWatcher()</code>.</p><p>You should end up with something similar to the following:</p><h4>StockWatcher.java:</h4>
+<pre><code>public void onModuleLoad() {
+    loadStockWatcher();
+  }
+
+  private void loadStockWatcher() {
+    // Create table for stock data.
+    stocksFlexTable.setText(0, 0, &quot;Symbol&quot;);
+    stocksFlexTable.setText(0, 1, &quot;Price&quot;);
+    stocksFlexTable.setText(0, 2, &quot;Change&quot;);
+    stocksFlexTable.setText(0, 3, &quot;Remove&quot;);
+    ...
+  }
+</code></pre><p>Now that you&rsquo;ve refactored the StockWatcher loading logic to a callable method, we can make the login RPC service call in the <code>onModuleLoad()</code> method and call the <code>loadStockWatcher()</code> method when login passes. However, if the user isn&rsquo;t logged in, you&rsquo;ll need to give them some kind of indication that they need to log in to proceed. For this, it makes sense to use a Login panel along with accompanying label and button to instruct the user to proceed to login.</p><p>Considering all of these, you should add something similar to the following to your StockWatcher entry point class:</p><h4>StockWatcher.java</h4>
+<pre><code>import com.google.gwt.user.client.ui.Anchor;
+
+...
+
+  private LoginInfo loginInfo = null;
+  private VerticalPanel loginPanel = new VerticalPanel();
+  private Label loginLabel = new Label(
+      &quot;Please sign in to your Google Account to access the StockWatcher application.&quot;);
+  private Anchor signInLink = new Anchor(&quot;Sign In&quot;);
+
+  public void onModuleLoad() {
+    // Check login status using login service.
+    LoginServiceAsync loginService = GWT.create(LoginService.class);
+    loginService.login(GWT.getHostPageBaseURL(), new AsyncCallback&lt;LoginInfo&gt;() {
+      public void onFailure(Throwable error) {
+      }
+
+      public void onSuccess(LoginInfo result) {
+        loginInfo = result;
+        if(loginInfo.isLoggedIn()) {
+          loadStockWatcher();
+        } else {
+          loadLogin();
+        }
+      }
+    });
+  }
+
+  private void loadLogin() {
+    // Assemble login panel.
+    signInLink.setHref(loginInfo.getLoginUrl());
+    loginPanel.add(loginLabel);
+    loginPanel.add(signInLink);
+    RootPanel.get(&quot;stockList&quot;).add(loginPanel);
+  }
+</code></pre><p>Another important point about login functionality is the ability to sign out of the application. This is something you should add to the StockWatcher application as well. Fortunately, the User Service provides us with a logout URL through a similar call as the createLoginURL(String requestUri) method. We can add this to the StockWatcher sample application by adding the following snippets:</p><h4>StockWatcher.java</h4>
+<pre><code>private Anchor signInLink = new Anchor(&quot;Sign In&quot;);
+  private Anchor signOutLink = new Anchor(&quot;Sign Out&quot;);
+
+...
+
+  private void loadStockWatcher() {
+    // Set up sign out hyperlink.
+    signOutLink.setHref(loginInfo.getLogoutUrl());
+
+    // Create table for stock data.
+    stocksFlexTable.setText(0, 0, &quot;Symbol&quot;);
+    stocksFlexTable.setText(0, 1, &quot;Price&quot;);
+    stocksFlexTable.setText(0, 2, &quot;Change&quot;);
+    stocksFlexTable.setText(0, 3, &quot;Remove&quot;);
+
+  ...
+
+    // Assemble Main panel.
+    mainPanel.add(signOutLink);
+    mainPanel.add(stocksFlexTable);
+    mainPanel.add(addPanel);
+    mainPanel.add(lastUpdatedLabel);
+</code></pre><h3>Test User Service features</h3><p>You can repeat the instructions above to run the application <a href="#test">locally</a> or on <a href="#deploy">App Engine</a>.</p><p>If you run the application in development mode with the App Engine development server, the sign in page will allow you to enter any email address (for ease in testing). If you deploy your application to App Engine, the sign in page will require users to sign in to a Google Account in order to access the application.</p><h2>Store data in the datastore<a id="data"></a></h2><h3>Overview</h3><p>The datastore service available to the App Engine Java runtime is the same service available to the Python runtime. To access this service in Java, you may use the low-level <a href="https://developers.google.com/appengine/docs/java/javadoc/com/google/appengine/api/datastore/package-summary">datastore API</a>, <a href="https://developers.google.com/appengine/docs/java/datastore/usingjdo">Java Data Objects (JDO)</a>, or <a href="https://developers.google.com/appengine/docs/java/datastore/usingjpa">Java Persistence API (JPA)</a>. For this sample we will use JDO.</p><h3>Define the Stock RPC service</h3><p>We will create a basic stock service to handle the persistence of users&rsquo; stocks. We will also expose this service as a GWT RPC service.</p><h4>StockService.java</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+
+@RemoteServiceRelativePath(&quot;stock&quot;)
+public interface StockService extends RemoteService {
+  public void addStock(String symbol) throws NotLoggedInException;
+  public void removeStock(String symbol) throws NotLoggedInException;
+  public String[] getStocks() throws NotLoggedInException;
+}
+
+</code></pre><h4>StockServiceAsync.java</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+public interface StockServiceAsync {
+  public void addStock(String symbol, AsyncCallback&lt;Void&gt; async);
+  public void removeStock(String symbol, AsyncCallback&lt;Void&gt; async);
+  public void getStocks(AsyncCallback&lt;String[]&gt; async);
+}
+
+</code></pre><h4>StockWatcher.java</h4>
+<pre><code>public class StockWatcher implements EntryPoint {
+
+  private static final int REFRESH_INTERVAL = 5000; // ms
+  private VerticalPanel mainPanel = new VerticalPanel();
+  private FlexTable stocksFlexTable = new FlexTable();
+  private HorizontalPanel addPanel = new HorizontalPanel();
+  private TextBox newSymbolTextBox = new TextBox();
+  private Button addStockButton = new Button(&quot;Add&quot;);
+  private Label lastUpdatedLabel = new Label();
+  private ArrayList&lt;String&gt; stocks = new ArrayList&lt;String&gt;();
+    private LoginInfo loginInfo = null;
+    private VerticalPanel loginPanel = new VerticalPanel();
+    private Label loginLabel = new Label(&quot;Please sign in to your Google Account to access the StockWatcher application.&quot;);
+    private Anchor signInLink = new Anchor(&quot;Sign In&quot;);
+    private final StockServiceAsync stockService = GWT.create(StockService.class);
+</code></pre><p>A checked exception will indicate that the user is not logged in yet. Such a scenario is possible since a RPC call can be received by the stock service even if there is no current user. The class is serializable so that it may be returned by the RPC call via the AsyncCallback <code>onFailure(Throwable error)</code> method. You could also implement security with a servlet filter or Spring security.</p><h4>NotLoggedInException.java</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import java.io.Serializable;
+
+public class NotLoggedInException extends Exception implements Serializable {
+
+  public NotLoggedInException() {
+    super();
+  }
+
+  public NotLoggedInException(String message) {
+    super(message);
+  }
+
+}
+
+</code></pre><p>The Stock class is what is persisted with JDO. The specifics of how it is persisted are dictated by the JDO annotations. In particular:</p>
+<ul>
+  <li>The PersistenceCapable annotation tells the DataNucleus byte-code enhancer to process this class.</li>
+  <li>The PrimaryKey annotation designates an <code>id</code> attribute for storing its primary key.</li>
+  <li>In this class, every attribute is persisted. However you can designate attributes as not being persisted with the NotPersistent annotation.</li>
+  <li>The User attribute is a special App Engine type which can allow you to identify users across email address changes.</li>
+</ul><h4>Stock.java</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.server;
+
+import java.util.Date;
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+import com.google.appengine.api.users.User;
+
+@PersistenceCapable(identityType = IdentityType.APPLICATION)
+public class Stock {
+
+  @PrimaryKey
+  @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+  private Long id;
+  @Persistent
+  private User user;
+  @Persistent
+  private String symbol;
+  @Persistent
+  private Date createDate;
+
+  public Stock() {
+    this.createDate = new Date();
+  }
+
+  public Stock(User user, String symbol) {
+    this();
+    this.user = user;
+    this.symbol = symbol;
+  }
+
+  public Long getId() {
+    return this.id;
+  }
+
+  public User getUser() {
+    return this.user;
+  }
+
+  public String getSymbol() {
+    return this.symbol;
+  }
+
+  public Date getCreateDate() {
+    return this.createDate;
+  }
+
+  public void setUser(User user) {
+    this.user = user;
+  }
+
+  public void setSymbol(String symbol) {
+    this.symbol = symbol;
+  }
+}
+</code></pre><p>This class implements the stock service and includes calls to the JDO API for persisting stock data. Things to notice:</p>
+<ul>
+  <li>The messages logged by the logger are viewable when you inspect your application in the <a href="https://appengine.google.com/">App Engine Administration Console</a>.</ol></li>
+  <li>The PersistenceManagerFactory singleton is created from the properties named &ldquo;transactions-optional&rdquo; in jdoconfig.xml above.</li>
+  <li>The checkedLoggedIn method is called whenever we want to make sure a user is logged in.</li>
+  <li>The getUser method uses the UserService.</li>
+</ul><h4>StockServiceImpl.java</h4>
+<pre><code>package com.google.gwt.sample.stockwatcher.server;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Query;
+
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserService;
+import com.google.appengine.api.users.UserServiceFactory;
+import com.google.gwt.sample.stockwatcher.client.NotLoggedInException;
+import com.google.gwt.sample.stockwatcher.client.StockService;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+public class StockServiceImpl extends RemoteServiceServlet implements
+StockService {
+
+  private static final Logger LOG = Logger.getLogger(StockServiceImpl.class.getName());
+  private static final PersistenceManagerFactory PMF =
+      JDOHelper.getPersistenceManagerFactory(&quot;transactions-optional&quot;);
+
+  public void addStock(String symbol) throws NotLoggedInException {
+    checkLoggedIn();
+    PersistenceManager pm = getPersistenceManager();
+    try {
+      pm.makePersistent(new Stock(getUser(), symbol));
+    } finally {
+      pm.close();
+    }
+  }
+
+  public void removeStock(String symbol) throws NotLoggedInException {
+    checkLoggedIn();
+    PersistenceManager pm = getPersistenceManager();
+    try {
+      long deleteCount = 0;
+      Query q = pm.newQuery(Stock.class, &quot;user == u&quot;);
+      q.declareParameters(&quot;com.google.appengine.api.users.User u&quot;);
+      List&lt;Stock&gt; stocks = (List&lt;Stock&gt;) q.execute(getUser());
+      for (Stock stock : stocks) {
+        if (symbol.equals(stock.getSymbol())) {
+          deleteCount++;
+          pm.deletePersistent(stock);
+        }
+      }
+      if (deleteCount != 1) {
+        LOG.log(Level.WARNING, &quot;removeStock deleted &quot;+deleteCount+&quot; Stocks&quot;);
+      }
+    } finally {
+      pm.close();
+    }
+  }
+
+  public String[] getStocks() throws NotLoggedInException {
+    checkLoggedIn();
+    PersistenceManager pm = getPersistenceManager();
+    List&lt;String&gt; symbols = new ArrayList&lt;String&gt;();
+    try {
+      Query q = pm.newQuery(Stock.class, &quot;user == u&quot;);
+      q.declareParameters(&quot;com.google.appengine.api.users.User u&quot;);
+      q.setOrdering(&quot;createDate&quot;);
+      List&lt;Stock&gt; stocks = (List&lt;Stock&gt;) q.execute(getUser());
+      for (Stock stock : stocks) {
+        symbols.add(stock.getSymbol());
+      }
+    } finally {
+      pm.close();
+    }
+    return (String[]) symbols.toArray(new String[0]);
+  }
+
+  private void checkLoggedIn() throws NotLoggedInException {
+    if (getUser() == null) {
+      throw new NotLoggedInException(&quot;Not logged in.&quot;);
+    }
+  }
+
+  private User getUser() {
+    UserService userService = UserServiceFactory.getUserService();
+    return userService.getCurrentUser();
+  }
+
+  private PersistenceManager getPersistenceManager() {
+    return PMF.getPersistenceManager();
+  }
+}
+
+</code></pre><p>Now that the GWT RPC service is implemented, we&rsquo;ll make sure the servlet container knows about it. The mapping /stockwatcher/stock is composed of the rename-to attribute in the GWT module definition (stockwatcher) and the RemoteServiceRelativePath annotation (stock).</p><h4>web.xml</h4>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;web-app&gt;
+
+  &lt;!-- Default page to serve --&gt;
+  &lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;StockWatcher.html&lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+
+  &lt;!-- Servlets --&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;loginService&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;com.google.gwt.sample.stockwatcher.server.LoginServiceImpl&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;stockService&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;com.google.gwt.sample.stockwatcher.server.StockServiceImpl&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;loginService&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/stockwatcher/login&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;stockService&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/stockwatcher/stock&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+
+&lt;/web-app&gt;
+</code></pre><h3>Update the StockWatcher UI</h3><h4>Retrieving stocks</h4><p>When the StockWatcher application loads, it should be prepopulated with the user&rsquo;s stocks. In order to reuse the existing code which displays a stock, we will refactor StockWatcher <code>addStock()</code> so that the logic for displaying the new stock is in a new <code>displayStock(String symbol)</code> method.</p>
+<pre><code>private void addStock() {
+    final String symbol = newSymbolTextBox.getText().toUpperCase().trim();
+    newSymbolTextBox.setFocus(true);
+
+    // Stock code must be between 1 and 10 chars that are numbers, letters, or dots.
+    if (!symbol.matches(&quot;^[0-9a-zA-Z\\.]{1,10}$&quot;)) {
+      Window.alert(&quot;&#39;&quot; + symbol + &quot;&#39; is not a valid symbol.&quot;);
+      newSymbolTextBox.selectAll();
+      return;
+    }
+
+    newSymbolTextBox.setText(&quot;&quot;);
+
+    // Don&#39;t add the stock if it&#39;s already in the table.
+    if (stocks.contains(symbol))
+      return;
+
+    displayStock(symbol);
+  }
+
+  private void displayStock(final String symbol) {
+    // Add the stock to the table.
+    int row = stocksFlexTable.getRowCount();
+    stocks.add(symbol);
+    stocksFlexTable.setText(row, 0, symbol);
+    stocksFlexTable.setWidget(row, 2, new Label());
+    stocksFlexTable.getCellFormatter().addStyleName(row, 1, &quot;watchListNumericColumn&quot;);
+    stocksFlexTable.getCellFormatter().addStyleName(row, 2, &quot;watchListNumericColumn&quot;);
+    stocksFlexTable.getCellFormatter().addStyleName(row, 3, &quot;watchListRemoveColumn&quot;);
+
+    // Add a button to remove this stock from the table.
+    Button removeStockButton = new Button(&quot;x&quot;);
+    removeStockButton.addStyleDependentName(&quot;remove&quot;);
+    removeStockButton.addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        int removedIndex = stocks.indexOf(symbol);
+        stocks.remove(removedIndex);
+        stocksFlexTable.removeRow(removedIndex + 1);
+      }
+    });
+    stocksFlexTable.setWidget(row, 3, removeStockButton);
+
+    // Get the stock price.
+    refreshWatchList();
+
+  }
+</code></pre><p>After the stock table is set up is an appropriate time to load the stocks.</p>
+<pre><code>private void loadStockWatcher() {
+
+  ...
+
+    stocksFlexTable.setCellPadding(5);
+    stocksFlexTable.addStyleName(&quot;watchList&quot;);
+    stocksFlexTable.getRowFormatter().addStyleName(0, &quot;watchListHeader&quot;);
+    stocksFlexTable.getCellFormatter().addStyleName(0, 1, &quot;watchListNumericColumn&quot;);
+    stocksFlexTable.getCellFormatter().addStyleName(0, 2, &quot;watchListNumericColumn&quot;);
+    stocksFlexTable.getCellFormatter().addStyleName(0, 3, &quot;watchListRemoveColumn&quot;);
+
+    loadStocks();
+
+  ...
+
+  }
+</code></pre><p>The <code>loadStocks()</code> method calls the StockService defined earlier. The RPC returns an array of stock symbols, which are displayed individually using the method <code>displayStock(String symbol)</code>.</p>
+<pre><code>private void loadStocks() {
+    stockService.getStocks(new AsyncCallback&lt;String[]&gt;() {
+      public void onFailure(Throwable error) {
+      }
+      public void onSuccess(String[] symbols) {
+        displayStocks(symbols);
+      }
+    });
+  }
+
+  private void displayStocks(String[] symbols) {
+    for (String symbol : symbols) {
+      displayStock(symbol);
+    }
+  }
+</code></pre><h4>Adding stocks</h4><p>Instead of just displaying stocks when they are added, we will call the StockService to save the new stock symbol to the datastore.</p>
+<pre><code>private void addStock() {
+    final String symbol = newSymbolTextBox.getText().toUpperCase().trim();
+    newSymbolTextBox.setFocus(true);
+
+    // Stock code must be between 1 and 10 chars that are numbers, letters, or dots.
+    if (!symbol.matches(&quot;^[0-9a-zA-Z\\.]{1,10}$&quot;)) {
+      Window.alert(&quot;&#39;&quot; + symbol + &quot;&#39; is not a valid symbol.&quot;);
+      newSymbolTextBox.selectAll();
+      return;
+    }
+
+    newSymbolTextBox.setText(&quot;&quot;);
+
+    // Don&#39;t add the stock if it&#39;s already in the table.
+    if (stocks.contains(symbol))
+      return;
+
+    addStock(symbol);
+  }
+
+  private void addStock(final String symbol) {
+    stockService.addStock(symbol, new AsyncCallback&lt;Void&gt;() {
+      public void onFailure(Throwable error) {
+      }
+      public void onSuccess(Void ignore) {
+        displayStock(symbol);
+      }
+    });
+  }
+
+  private void displayStock(final String symbol) {
+    // Add the stock to the table.
+    int row = stocksFlexTable.getRowCount();
+    stocks.add(symbol);
+
+...
+
+  }
+</code></pre><h4>Removing stocks</h4><p>And instead of simply removing stocks from display, we will call the StockService to remove the stock symbol from the datastore.</p>
+<pre><code>private void displayStock(final String symbol) {
+
+  ...
+
+    // Add a button to remove this stock from the table.
+    Button removeStock = new Button(&quot;x&quot;);
+    removeStock.addStyleDependentName(&quot;remove&quot;);
+
+    removeStock.addClickHandler(new ClickHandler(){
+      public void onClick(ClickEvent event) {
+        removeStock(symbol);
+      }
+    });
+    stocksFlexTable.setWidget(row, 3, removeStock);
+
+    // Get the stock price.
+    refreshWatchList();
+
+  }
+
+  private void removeStock(final String symbol) {
+    stockService.removeStock(symbol, new AsyncCallback&lt;Void&gt;() {
+      public void onFailure(Throwable error) {
+      }
+      public void onSuccess(Void ignore) {
+        undisplayStock(symbol);
+      }
+    });
+  }
+
+  private void undisplayStock(String symbol) {
+    int removedIndex = stocks.indexOf(symbol);
+    stocks.remove(removedIndex);
+    stocksFlexTable.removeRow(removedIndex+1);
+  }
+</code></pre><h3>Error handling</h3><p>When one of the RPC calls results in an error, we want to display the message to the user.</p><p>Furthermore, recall that the StockService throws a NotLoggedInException if for some reason the user is no longer logged in to his Google Account:</p>
+<pre><code>private void checkLoggedIn() throws NotLoggedInException {
+    if (getUser() == null) {
+      throw new NotLoggedInException(&quot;Not logged in.&quot;);
+    }
+  }
+
+</code></pre><p>If we receive this error, we will redirect the user to the logout URL.</p><p>Here&rsquo;s a helper method to accomplish these two error handling requirements.</p>
+<pre><code>private void handleError(Throwable error) {
+    Window.alert(error.getMessage());
+    if (error instanceof NotLoggedInException) {
+      Window.Location.replace(loginInfo.getLogoutUrl());
+    }
+  }
+</code></pre><p>We can add this to each AsyncCallback <code>onFailure(Throwable error)</code> method.</p>
+<pre><code>loginService.login(GWT.getHostPageBaseURL(), new AsyncCallback&lt;LoginInfo&gt;() {
+      public void onFailure(Throwable error) {
+        handleError(error);
+      }
+
+    ...
+
+    }
+</code></pre>
+<pre><code>stockService.getStocks(new AsyncCallback&lt;String[]&gt;() {
+      public void onFailure(Throwable error) {
+        handleError(error);
+      }
+
+    ...
+
+    });
+</code></pre>
+<pre><code>stockService.addStock(symbol, new AsyncCallback&lt;Void&gt;() {
+      public void onFailure(Throwable error) {
+        handleError(error);
+      }
+
+    ...
+
+    });
+</code></pre>
+<pre><code>stockService.removeStock(symbol, new AsyncCallback&lt;Void&gt;() {
+      public void onFailure(Throwable error) {
+        handleError(error);
+      }
+
+    ...
+
+    });
+</code></pre><h3>Test Datastore features</h3><p>You can repeat the instructions above to run the application <a href="#test">locally</a> or on <a href="#deploy">App Engine</a>.</p><p>If you encounter runtime errors, examine the logs in the <a href="https://appengine.google.com/">App Engine Administration Console</a>.</p><h2>More resources</h2><h3>Further exercises</h3><p>Users can now sign in to Google Account and manage their own stock lists in the StockWatcher application running on App Engine. Here are some suggested enhancements you can try as exercises:</p>
+<ul>
+  <li>Loading the stock list has a noticeable delay. Add a UI element to indicate that the stock list is loading.</li>
+  <li>Add more attributes to the Stock class. What happens to the data which was saved before these attributes were added?</li>
+  <li>The StockService does not detect when one user has signed out and another user has signed in. How would you modify the application to handle this edge case?</li>
+</ul><h3>Learn more about App Engine</h3><p>The App Engine <a href="https://developers.google.com/appengine/docs/java/gettingstarted">Java Getting Started tutorial</a> gives more details on building an App Engine application including topics such as creating a project from scratch, using JSPs, managing different application versions, and more details on the web application descriptor files.</p><p>The App Engine <a href="https://developers.google.com/appengine/docs/java">Java documentation</a> covers the User service and datastore service in greater detail. In particular, it documents how to use JPA to access the datastore service. Other services documented include Memcache, HTTP client, and, Java Mail. The limitations of the App Engine Java runtime are also itemized.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

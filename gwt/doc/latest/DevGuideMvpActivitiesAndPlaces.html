@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../'>GWT homepage</a></li>
+                    <li><a href='./../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/DevGuideMvpActivitiesAndPlaces.md"></a>
+                    </span>
+                    <h1>MVP Activities and Places</h1><p>GWT 2.1 introduced a built-in framework for browser history management. The Activities and Places framework allows you to create bookmarkable URLs within your application, thus allowing the browser&rsquo;s back button and bookmarks to work as users expect. It builds on GWT&rsquo;s <a href="DevGuideCodingBasicsHistory.html">history mechanism</a> and may be used in conjunction with MVP development, though not required.</p><p>Strictly speaking, MVP architecture is not concerned with browser history management, but Activities and Places may be used with MVP development as shown in this article. If you&rsquo;re not familiar with MVP, you may want to read these articles first:</p>
+<ul>
+  <li><a href="../../articles/mvp-architecture.html">Large scale application development and MVP, Part I</a></li>
+  <li><a href="../../articles/mvp-architecture-2.html">Large scale application development and MVP, Part II</a></li>
+</ul><p><strong>Definitions</strong></p><p>An <em>activity</em> simply represents something the user is doing. An Activity contains no Widgets or UI code. Activities typically restore state (&ldquo;wake up&rdquo;), perform initialization (&ldquo;set up&rdquo;), and load a corresponding UI (&ldquo;show up&rdquo;). Activities are started and stopped by an ActivityManager associated with a container Widget. An Activity can automatically display a warning confirmation when the Activity is about to be stopped (such as when the user navigates to a new Place). In addition, the ActivityManager warns the user before the window is about to be closed.</p><p>A <em>place</em> is a Java object representing a particular state of the UI. A Place can be converted to and from a URL history token (see GWT&rsquo;s <a href="DevGuideCodingBasicsHistory.html">History mechanism</a>) by defining a PlaceTokenizer for each Place, and GWT&rsquo;s PlaceHistoryHandler automatically updates the browser URL corresponding to each Place in your app.</p><p>You can download all of the code referenced here in <a href="http://code.google.com/p/google-web-toolkit/downloads/detail?name=Tutorial-hellomvp-2.1.zip">this sample app</a>. The sample app is a simple &ldquo;Hello, World!&rdquo; example demonstrating the use of Activities and Places with MVP.</p><p>Let&rsquo;s take a look at each of the moving parts in a GWT 2.1 app using Places and Activities.</p>
+<ol>
+  <li><a href="#Views">Views</a></li>
+  <li><a href="#ClientFactory">ClientFactory</a></li>
+  <li><a href="#Activities">Activities</a></li>
+  <li><a href="#Places">Places</a></li>
+  <li><a href="#PlaceHistoryMapper">PlaceHistoryMapper</a></li>
+  <li><a href="#ActivityMapper">ActivityMapper</a></li>
+</ol><p>Then we&rsquo;ll take at how you wire it all together and how it works.</p>
+<ol>
+  <li><a href="#Putting_it_all_together">Putting it all together</a></li>
+  <li><a href="#How_it_all_works">How it all works</a></li>
+  <li><a href="#How_to_navigate">How to navigate</a></li>
+  <li><a href="#resources">Related resources</a></li>
+</ol><h2>Views<a id="Views"></a></h2><p>A view is simply the part of the UI associated with an Activity. In MVP development, a view is defined by an interface, which allows multiple view implementations based on client characteristics (such as mobile vs. desktop) and also facilitates lightweight unit testing by avoiding the time-consuming GWTTestCase. There is no View interface or class in GWT which views must implement or extend; however, GWT 2.1 introduces an IsWidget interface that is implemented by most Widgets as well as Composite. It is useful for views to extend IsWidget if they do in fact provide a Widget. Here is a simple view from our sample app.</p>
+<pre><code>public interface GoodbyeView extends IsWidget {
+    void setName(String goodbyeName);
+}
+</code></pre><p>The corresponding view implementation extends Composite, which keeps dependencies on a particular Widget from leaking out.</p>
+<pre><code>public class GoodbyeViewImpl extends Composite implements GoodbyeView {
+    SimplePanel viewPanel = new SimplePanel();
+    Element nameSpan = DOM.createSpan();
+
+    public GoodbyeViewImpl() {
+        viewPanel.getElement().appendChild(nameSpan);
+        initWidget(viewPanel);
+    }
+
+    @Override
+    public void setName(String name) {
+        nameSpan.setInnerText(&quot;Good-bye, &quot; + name);
+    }
+}
+</code></pre><p>Here is a slightly more complicated view that additionally defines an interface for its corresponding presenter (activity).</p>
+<pre><code>public interface HelloView extends IsWidget {
+    void setName(String helloName);
+    void setPresenter(Presenter presenter);
+
+    public interface Presenter {
+        void goTo(Place place);
+    }
+}
+</code></pre><p>The Presenter interface and setPresenter method allow for bi-directional communication between view and presenter, which simplifies interactions involving repeating Widgets and also allows view implementations to use UiBinder with @UiHandler methods that delegate to the presenter interface.</p><p>The HelloView implementation uses <a href="DevGuideUiBinder.html">UiBinder</a> and a template.</p>
+<pre><code>public class HelloViewImpl extends Composite implements HelloView {
+    private static HelloViewImplUiBinder uiBinder = GWT
+            .create(HelloViewImplUiBinder.class);
+
+    interface HelloViewImplUiBinder extends UiBinder&lt;Widget, HelloViewImpl&gt; {
+    }
+
+    @UiField
+    SpanElement nameSpan;
+    @UiField
+    Anchor goodbyeLink;
+    private Presenter presenter;
+    private String name;
+
+    public HelloViewImpl() {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+        nameSpan.setInnerText(name);
+    }
+
+    @UiHandler(&quot;goodbyeLink&quot;)
+    void onClickGoodbye(ClickEvent e) {
+        presenter.goTo(new GoodbyePlace(name));
+    }
+
+    @Override
+    public void setPresenter(Presenter presenter) {
+        this.presenter = presenter;
+    }
+}
+</code></pre><p>Note the use of @UiHandler that delegates to the presenter. Here is the corresponding template:</p>
+<pre><code>&lt;!DOCTYPE ui:UiBinder SYSTEM &quot;http://dl.google.com/gwt/DTD/xhtml.ent&quot;&gt;
+&lt;ui:UiBinder xmlns:ui=&quot;urn:ui:com.google.gwt.uibinder&quot;
+             xmlns:g=&quot;urn:import:com.google.gwt.user.client.ui&quot;&gt;
+    &lt;ui:style&gt;
+        .important {
+            font-weight: bold;
+        }
+    &lt;/ui:style&gt;
+    &lt;g:HTMLPanel&gt;
+        Hello,
+        &lt;span class=&quot;{style.important}&quot; ui:field=&quot;nameSpan&quot; /&gt;
+        &lt;g:Anchor ui:field=&quot;goodbyeLink&quot; text=&quot;Say good-bye&quot;&gt;&lt;/g:Anchor&gt;
+    &lt;/g:HTMLPanel&gt;
+&lt;/ui:UiBinder&gt;
+</code></pre><p>Because Widget creation involves DOM operations, views are relatively expensive to create. It is therefore good practice to make them reusable, and a relatively easy way to do this is via a view factory, which might be part of a larger ClientFactory.</p><h2>ClientFactory<a id="ClientFactory"></a></h2><p>A ClientFactory is not required to use Activities and Places; however, it is helpful to use a factory or dependency injection framework like GIN to obtain references to objects needed throughout your application like the event bus. Our example uses a ClientFactory to provide an EventBus, GWT PlaceController, and view implementations.</p>
+<pre><code>public interface ClientFactory {
+    EventBus getEventBus();
+    PlaceController getPlaceController();
+    HelloView getHelloView();
+    GoodbyeView getGoodbyeView();
+}
+</code></pre><p>Another advantage of using a ClientFactory is that you can use it with GWT deferred binding to use different implementation classes based on user.agent or other properties. For example, you might use a MobileClientFactory to provide different view implementations than the default DesktopClientFactory. To do this, instantiate your ClientFactory with GWT.create in onModuleLoad(), like this:</p>
+<pre><code>ClientFactory clientFactory = GWT.create(ClientFactory.class);
+</code></pre><p>Specify the implementation class in .gwt.xml:</p>
+<pre><code>&lt;!-- Use ClientFactoryImpl by default --&gt;
+    &lt;replace-with class=&quot;com.hellomvp.client.ClientFactoryImpl&quot;&gt;
+    &lt;when-type-is class=&quot;com.hellomvp.client.ClientFactory&quot;/&gt;
+    &lt;/replace-with&gt;
+</code></pre><p>You can use <code>&lt;when-property-is&gt;</code> to specify different implementations based on user.agent, locale, or other properties you define. The <a href="https://gwt.googlesource.com/gwt/+/master/samples/mobilewebapp/">mobilewebapp</a> sample application defines a &ldquo;formfactor&rdquo; property used to select a different view implementations for mobile, tablet, and desktop devices.</p><p>Here is a default implementation of ClientFactory for the sample app:</p>
+<pre><code>public class ClientFactoryImpl implements ClientFactory {
+    private final EventBus eventBus = new SimpleEventBus();
+    private final PlaceController placeController = new PlaceController(eventBus);
+    private final HelloView helloView = new HelloViewImpl();
+    private final GoodbyeView goodbyeView = new GoodbyeViewImpl();
+
+    @Override
+    public EventBus getEventBus() {
+        return eventBus;
+    }
+    ...
+}
+</code></pre><h2>Activities<a id="Activities"></a></h2><p>Activity classes implement com.google.gwt.activity.shared.Activity. For convenience, you can extend AbstractActivity, which provides default (null) implementations of all required methods. Here is a HelloActivity, which simply says hello to a named user:</p>
+<pre><code>public class HelloActivity extends AbstractActivity implements HelloView.Presenter {
+    // Used to obtain views, eventBus, placeController
+    // Alternatively, could be injected via GIN
+    private ClientFactory clientFactory;
+    // Name that will be appended to &quot;Hello,&quot;
+    private String name;
+
+    public HelloActivity(HelloPlace place, ClientFactory clientFactory) {
+        this.name = place.getHelloName();
+        this.clientFactory = clientFactory;
+    }
+
+    /**
+     * Invoked by the ActivityManager to start a new Activity
+     */
+    @Override
+    public void start(AcceptsOneWidget containerWidget, EventBus eventBus) {
+        HelloView helloView = clientFactory.getHelloView();
+        helloView.setName(name);
+        helloView.setPresenter(this);
+        containerWidget.setWidget(helloView.asWidget());
+    }
+
+    /**
+     * Ask user before stopping this activity
+     */
+    @Override
+    public String mayStop() {
+        return &quot;Please hold on. This activity is stopping.&quot;;
+    }
+
+    /**
+     * Navigate to a new Place in the browser
+     */
+    public void goTo(Place place) {
+        clientFactory.getPlaceController().goTo(place);
+    }
+}
+</code></pre><p>The first thing to notice is that HelloActivity makes reference to HelloView, which is a view interface, not an implementation. One style of MVP coding defines the view interface in the presenter. This is perfectly legitimate; however, there is no fundamental reason why an Activity and it&rsquo;s corresponding view interface have to be tightly bound together. Note that HelloActivity also implements the view&rsquo;s Presenter interface. This is used to allow the view to call methods on the Activity, which facilitates the use of UiBinder as we saw above.</p><p>The HelloActivity constructor takes two arguments: a HelloPlace and the ClientFactory. Neither is strictly required for an Activity. The HelloPlace simply makes it easy for HelloActivity to obtain properties of the state represented by HelloPlace (in this case, the name of the user we are greeting). Accepting an instance of a HelloPlace in the constructor implies that a new HelloActivity will be created for each HelloPlace. You could instead obtain an activity from a factory, but it&rsquo;s typically cleaner to use a newly constructed Activity so you don&rsquo;t have to clean up any prior state. Activities are designed to be disposable, whereas views, which are more expensive to create due to the DOM calls required, should be reusable. In keeping with this idea, ClientFactory is used by HelloActivity to obtain a reference to the HelloView as well as the EventBus and PlaceController.</p><p>The start method is invoked by the ActivityManager and sets things in motion. It updates the view and then swaps the view back into the Activity&rsquo;s container widget by calling setWidget.</p><p>The non-null mayStop() method provides a warning that will be shown to the user when the Activity is about to be stopped due to window closing or navigation to another Place. If it returns null, no such warning will be shown.</p><p>Finally, the goTo() method invokes the PlaceController to navigate to a new Place. PlaceController in turn notifies the ActivityManager to stop the current Activity, find and start the Activity associated with the new Place, and update the URL in PlaceHistoryHandler.</p><h2>Places<a id="Places"></a></h2><p>In order to be accessible via a URL, an Activity needs a corresponding Place. A Place extends com.google.gwt.place.shared.Place and must have an associated PlaceTokenizer which knows how to serialize the Place&rsquo;s state to a URL token. By default, the URL consists of the Place&rsquo;s simple class name (like &ldquo;HelloPlace&rdquo;) followed by a colon (:) and the token returned by the PlaceTokenizer.</p>
+<pre><code>public class HelloPlace extends Place {
+    private String helloName;
+
+    public HelloPlace(String token) {
+        this.helloName = token;
+    }
+
+    public String getHelloName() {
+        return helloName;
+    }
+
+    public static class Tokenizer implements PlaceTokenizer&lt;HelloPlace&gt; {
+        @Override
+        public String getToken(HelloPlace place) {
+            return place.getHelloName();
+        }
+
+        @Override
+        public HelloPlace getPlace(String token) {
+            return new HelloPlace(token);
+        }
+    }
+}
+</code></pre><p>It is convenient (though not required) to declare the PlaceTokenizer as a static class inside the corresponding Place. However, you need not have a PlaceTokenizer for each Place. Many Places in your app might not save any state to the URL, so they could just extend a BasicPlace which declares a PlaceTokenizer that returns a null token.</p><h2>PlaceHistoryMapper<a id="PlaceHistoryMapper"></a></h2><p>PlaceHistoryMapper declares all the Places available in your app. You create an interface that extends PlaceHistoryMapper and uses the annotation @WithTokenizers to list each of your tokenizer classes. Here is the PlaceHistoryMapper in our sample:</p>
+<pre><code>@WithTokenizers({HelloPlace.Tokenizer.class, GoodbyePlace.Tokenizer.class})
+public interface AppPlaceHistoryMapper extends PlaceHistoryMapper
+{
+}
+</code></pre><p>At GWT compile time, GWT generates (see PlaceHistoryMapperGenerator) a class based on your interface that extends AbstractPlaceHistoryMapper. PlaceHistoryMapper is the link between your PlaceTokenizers and GWT&rsquo;s PlaceHistoryHandler that synchronizes the browser URL with each Place.</p><p>For more control of the PlaceHistoryMapper, you can use the @Prefix annotation on a PlaceTokenizer to change the first part of the URL associated with the Place. For even more control, you can instead implement PlaceHistoryMapperWithFactory and provide a TokenizerFactory that, in turn, provides individual PlaceTokenizers.</p><h2>ActivityMapper<a id="ActivityMapper"></a></h2><p>Finally, your app&rsquo;s ActivityMapper maps each Place to its corresponding Activity. It must implement ActivityMapper, and will likely have lots of code like &ldquo;if (place instanceof SomePlace) return new SomeActivity(place)&rdquo;. Here is the ActivityMapper for our sample app:</p>
+<pre><code>public class AppActivityMapper implements ActivityMapper {
+    private ClientFactory clientFactory;
+
+    public AppActivityMapper(ClientFactory clientFactory) {
+        super();
+        this.clientFactory = clientFactory;
+    }
+
+    @Override
+    public Activity getActivity(Place place) {
+        if (place instanceof HelloPlace)
+            return new HelloActivity((HelloPlace) place, clientFactory);
+        else if (place instanceof GoodbyePlace)
+            return new GoodbyeActivity((GoodbyePlace) place, clientFactory);
+        return null;
+    }
+}
+</code></pre><p>Note that our ActivityMapper must know about the ClientFactory so it can provide it to activities as needed.</p><h2>Putting it all together<a id="Putting_it_all_together"></a></h2><p>Here&rsquo;s how all the pieces come together in onModuleLoad():</p>
+<pre><code>public class HelloMVP implements EntryPoint {
+    private Place defaultPlace = new HelloPlace(&quot;World!&quot;);
+    private SimplePanel appWidget = new SimplePanel();
+
+    public void onModuleLoad() {
+        ClientFactory clientFactory = GWT.create(ClientFactory.class);
+        EventBus eventBus = clientFactory.getEventBus();
+        PlaceController placeController = clientFactory.getPlaceController();
+
+        // Start ActivityManager for the main widget with our ActivityMapper
+        ActivityMapper activityMapper = new AppActivityMapper(clientFactory);
+        ActivityManager activityManager = new ActivityManager(activityMapper, eventBus);
+        activityManager.setDisplay(appWidget);
+
+        // Start PlaceHistoryHandler with our PlaceHistoryMapper
+        AppPlaceHistoryMapper historyMapper= GWT.create(AppPlaceHistoryMapper.class);
+        PlaceHistoryHandler historyHandler = new PlaceHistoryHandler(historyMapper);
+        historyHandler.register(placeController, eventBus, defaultPlace);
+
+        RootPanel.get().add(appWidget);
+        // Goes to the place represented on URL else default place
+        historyHandler.handleCurrentHistory();
+    }
+}
+</code></pre><h2>How it all works<a id="How_it_all_works"></a></h2><p>The ActivityManager keeps track of all Activities running within the context of one container widget. It listens for PlaceChangeRequestEvents and notifies the current activity when a new Place has been requested. If the current Activity allows the Place change (Activity.onMayStop() returns null) or the user allows it (by clicking OK in the confirmation dialog), the ActivityManager discards the current Activity and starts the new one. In order to find the new one, it uses your app&rsquo;s ActivityMapper to obtain the Activity associated with the requested Place.</p><p>Along with the ActivityManager, two other GWT classes work to keep track of Places in your app. PlaceController initiates navigation to a new Place and is responsible for warning the user before doing so. PlaceHistoryHandler provides bi-directional mapping between Places and the URL. Whenever your app navigates to a new Place, the URL will be updated with the new token representing the Place so it can be bookmarked and saved in browser history. Likewise, when the user clicks the back button or pulls up a bookmark, PlaceHistoryHandler ensures that your application loads the corresponding Place.</p><h2>How to navigate<a id="How_to_navigate"></a></h2><p>To navigate to a new Place in your application, call the goTo() method on your PlaceController. This is illustrated above in the goTo() method of HelloActivity. PlaceController warns the current Activity that it may be stopping (via a PlaceChangeRequest event) and once allowed, fires a PlaceChangeEvent with the new Place. The PlaceHistoryHandler listens for PlaceChangeEvents and updates the URL history token accordingly. The ActivityManager also listens for PlaceChangeEvents and uses your app&rsquo;s ActivityMapper to start the Activity associated with the new Place.</p><p>Rather than using PlaceController.goTo(), you can also create a Hyperlink containing the history token for the new Place obtained by calling your PlaceHistoryMapper.getToken(). When the user navigates to a new URL (via hyperlink, back button, or bookmark), PlaceHistoryHandler catches the ValueChangeEvent from the History object and calls your app&rsquo;s PlaceHistoryMapper to turn the history token into its corresponding Place. It then calls PlaceController.goTo() with the new Place.</p><p>What about apps with multiple panels in the same window whose state should all be saved together in a single URL? You can accomplish this by using an ActivityManager and ActivityMapper for each panel. Using this technique, a Place can be mapped to multiple activities. For further examples, see the resources below.</p><h2>Related resources<a id="resources"></a></h2>
+<ul>
+  <li><a href="http://www.google.com/events/io/2011/sessions/high-performance-gwt-best-practices-for-writing-smaller-faster-apps.html">High-Performance GWT</a>  (starting at 18:12, slides 23-41)</li>
+  <li><a href="http://www.google.com/events/io/2011/sessions/using-gwt-and-eclipse-to-build-great-mobile-web-apps.html">Using GWT and Eclipse to Build Great Mobile Web Apps</a>  (form factor discussion starting at 3:56, slides 6-20)</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

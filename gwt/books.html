@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./assets/build/css/style.css'>
+        <link rel="stylesheet" href='./assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./'>GWT homepage</a></li>
+                    <li><a href='./overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./examples.html'>Resources</a>
+  <ul>
+    <li><a href='./examples.html'>Examples</a></li>
+    <li><a href='./presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./articles/articles.html'>Overview</a></li>
+      <li><a href='./articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./articles/elemental.html'>Elemental</a></li>
+      <li><a href='./articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./books.html' title="GWT Books">Books</a></li>
+    <li><a href='./casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./community.html'>Community &amp; Forums</a></li>
+      <li><a href='./community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./terms.html'>Terms</a>
+  <ul>
+    <li><a href='./terms.html'>GWT License</a></li>
+    <li><a href='./GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./examples.html'>Resources</a>
+  <ul>
+    <li><a href='./examples.html'>Examples</a></li>
+    <li><a href='./presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./articles/articles.html'>Overview</a></li>
+      <li><a href='./articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./articles/elemental.html'>Elemental</a></li>
+      <li><a href='./articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./books.html' title="GWT Books">Books</a></li>
+    <li><a href='./casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./community.html'>Community &amp; Forums</a></li>
+      <li><a href='./community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./terms.html'>Terms</a>
+  <ul>
+    <li><a href='./terms.html'>GWT License</a></li>
+    <li><a href='./GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/books.md"></a>
+                    </span>
+                    <h1>Books</h1><p>Below is a set of books that have been published regarding GWT, including a short description of each.</p><p>Please note that the books linked from this page are provided by third-parties and are not endorsed by Google. Please direct any questions about these resources to the appropriate contact listed below.</p><p>Books are order by release date. You can also jump on <a href="#related">Related frameworks</a> books (GXT, Vaadin, etc.)</p>
+<table class="columns" style="clear: left;">
+  <tbody>
+    <tr>
+      <td>
+        <a href="http://www.manning.com/tacy/">
+          <img src="images/books/gwt_in_action_second_edition.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.manning.com/tacy/">GWT in Action, Second Edition (January, 2013)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            GWT in Action, Second Edition is a completely revised edition of the best-selling GWT book. It covers the new features introduced in GWT 2.4 and 2.5, as well as the best development practices that have emerged in the GWT community. It begins with a rapid-fire introduction to GWT and Ajax to get you up to speed with GWT concepts and tools. Then, you'll explore key concepts like managing events, interacting with the server, creating UI components, building your user interface declaratively using UiBinder ... and more.<br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/google-app-engine-java-and-gwt-application-development/book">
+          <img src="images/books/Google_App_Engine_Java_and_GWT_Application_Development.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/google-app-engine-java-and-gwt-application-development/book">Google App Engine Java and GWT Application Development (November 2010)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Comprehensive coverage of building scalable, modular, and maintainable applications with GWT and GAE using Java. Leverage the Google App Engine services and enhance your app functionality and performance. Integrate your application with Google Accounts, Facebook, and Twitter. Safely deploy, monitor, and maintain your GAE applications. A practical guide with a step-by-step approach that helps you build an application in stages.
+            <br /><br />                        
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/google-web-toolkit-2-application-development-cookbook/book">
+          <img src="images/books/Google_Web_Toolkit_2_Application_Development_Cookbook.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/google-web-toolkit-2-application-development-cookbook/book">Google Web Toolkit 2 Application Development Cookbook (November 2010)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Create impressive, complex browser-based web applications with GWT 2. Learn the most effective ways to create reports with parameters, variables, and subreports using iReport. Create Swing-like web-based GUIs using the Ext GWT class library. Develop applications using browser quirks, Javascript,HTML scriplets from scratch.
+            <br /><br />                        
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.amazon.com/Essential-GWT-Building-Toolkit-Developers/dp/0321705149/ref=sr_1_3?ie=UTF8&qid=1369219185&sr=8-3&keywords=GWT">
+          <img src="images/books/Essential_GWT_Building_for_the_Web_with_Google_Web_Toolkit_2.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.amazon.com/Essential-GWT-Building-Toolkit-Developers/dp/0321705149/ref=sr_1_3?ie=UTF8&qid=1369219185&sr=8-3&keywords=GWT">Essential GWT: Building for the Web with Google Web Toolkit 2 (August 2010)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            With Google Web Toolkit, Java developers can build sophisticated Rich Internet Applications (RIAs) and complete Web sites using the powerful IDEs and tools they already use. Now, with GWT 2, Google Web Toolkit has become even more useful. Essential GWT shows how to use this latest version of GWT to create production solutions that combine superior style, performance, and interactivity with exceptional quality and maintainability.
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.informit.com/store/google-web-toolkit-solutions-more-cool-useful-stuff-9780132345347">
+          <img src="images/books/Google_Web_Toolkit_Solutions_More_Cool_Useful_Stuff.jpeg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.informit.com/store/google-web-toolkit-solutions-more-cool-useful-stuff-9780132345347">Google Web Toolkit Solutions: More Cool & Useful Stuff (October 2008)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            This book focuses on the more advanced aspects of GWT that you need to implement real-world applications with rich user interfaces but without the heavy lifting of JavaScript and other Ajax-related technologies. Each solution in this practical, hands-on book is more than a recipe. The sample programs are carefully explained in detail to help you quickly master advanced GWT techniques, such as implementing drag-and-drop, integrating JavaScript libraries, and using advanced event handling methodologies.
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.manning.com/cooper/">
+          <img src="images/books/GWT_in_Practice.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.manning.com/cooper/">GWT in Practice (May 2008)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            GWT in Practice is an example-driven, code-rich book designed for web developers who have already learned the basics of GWT. After a quick review of GWT fundamentals, GWT in Practice presents scores of handy, reusable solutions to the problems you face when you need to move beyond “Hello World” and “proof of concept” applications. This book skips the theory and looks at the way things really work when you’re building projects in GWT.
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.informit.com/store/google-web-toolkit-applications-9780321501967">
+          <img src="images/books/Google_Web_Toolkit_Applications.jpeg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.informit.com/store/google-web-toolkit-applications-9780321501967">Google Web Toolkit Applications (December 2007)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Get the edge you need to deliver exceptional user experiences with Google™ Web Toolkit Applications, a guidebook that provides web developers with core information and instructions for creating rich web applications. Whether you’re a developer who needs to build a high-performance front end for Java, PHP, or Ruby applications, or to integrate with external web services, this resource from expert Google Web Toolkit (GWT) developer Ryan Dewsbury delivers the in-depth coverage you’ll need.
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <td>
+      <a href="http://www.manning.com/hanson/">
+          <img src="images/books/gwt_in_action.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.manning.com/hanson/">GWT in Action (June, 2007)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            GWT in Action shows you how to set up your development environment, use and create widgets, communicate with the server, and much more. Readers will follow an example running throughout the book and quickly master the basics of GWT: widgets, panels, and event handling. The book covers the full development cycle, from setting up your development environment, to building the application, then deploying it to the web server. The entire core GWT library is discussed, with details and examples on how it can be extended.
+          </div>
+        </div>
+    </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/google-web-toolkit-gwt-java-ajax-programming/book">
+          <img src="images/books/Google_Web_Toolkit_GWT_Java_AJAX_Programming.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/google-web-toolkit-gwt-java-ajax-programming/book">Google Web Toolkit GWT Java AJAX Programming (February 2007)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Create rich Ajax applications in the style of Gmail, Google Maps, and Google Calendar. Interface with Web APIs create GWT applications that consume web services. Completely practical with hands-on examples and complete tutorials right from the first chapter.
+            <br/><br/><br/><br/>                        
+          </div>
+        </div>
+      </td>
+    </tr>    
+    <tr>
+      <td>
+        <a href="http://www.informit.com/store/google-web-toolkit-solutions-digital-short-cut-cool-9780131584655">
+          <img src="images/books/Google_Web_Toolkit_Solutions_Digital_Short_Cut_Cool_Useful_Stuff.jpeg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.informit.com/store/google-web-toolkit-solutions-digital-short-cut-cool-9780131584655">Google Web Toolkit Solutions (Digital Short Cut): Cool & Useful Stuff (January 2007)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            The Google Web Toolkit (GWT) is a cutting-edge UI framework for Java developers, which lets you create rich, interactive user interfaces using familiar idioms from Java’s Abstract Window Toolkit (AWT), Swing, and the Eclipse Foundation’s SWT. If you’ve used any of those frameworks in the past, you’re already halfway up the GWT learning curve.
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://pragprog.com/book/ebgwt/google-web-toolkit">
+          <img src="images/books/Google_Web_Toolkit_Taking_the_Pain_Out_of_Ajax.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://pragprog.com/book/ebgwt/google-web-toolkit">Google Web Toolkit: Taking the Pain Out of Ajax (November 27, 2006)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Google Web Toolkit unifies client and server code into a single application written in one language: Java. GWT lets you create a web application in much the same way as you would create a Swing application — creating visual components, setting up event handlers, debugging, and so forth — all within a familiar IDE.<br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>        
+  </tbody>
+</table><p><a id="related"></a></p><h2>Related frameworks<a id="prereqs"></a></h2>
+<table class="columns" style="clear: left;">
+  <tbody>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/creating-rich-internet-applications-in-vaadin-7/book">
+          <img src="images/books/Vaadin_7_Cookbook.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/creating-rich-internet-applications-in-vaadin-7/book">Vaadin 7 Cookbook (April 2013)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Covers exciting features such as using drag and n anddrop, creating charts, custom components, lazy loading, server-push functionality, and more. Tips for facilitating the development and testing of Vaadin applications. Enhance your applications with Spring, Grails, or Roo integration
+            <br /><br />
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/extgwt-rich-internet-application-cookbook/book">
+          <img src="images/books/ExtGWT_Rich_Internet_Application_Cookbook.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/extgwt-rich-internet-application-cookbook/book">ExtGWT Rich Internet Application Cookbook (September 2012)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Take your ExtGWT web development skills to the next level. Create stunning UIs with several layouts and templates in a fast and simple manner. Enriched with code and screenshots for easy and quick grasp.
+            <br /><br />
+            <br /><br />
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>            
+    <tr>
+      <td>
+        <a href="http://www.amazon.com/Vaadin-Recipes-Casey-Taylor/dp/1478375108">
+          <img src="images/books/Vaadin_Recipes.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.amazon.com/Vaadin-Recipes-Casey-Taylor/dp/1478375108">Vaadin Recipes (August 2012)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Vaadin is an open source Java web framework. It is built on top of GWT and is used to build attractive web applications without all of the tedious JavaScript and AJAX calls. Vaadin will boost your productivity and help deliver a more stable product. Vaadin has a very active community and has over 250 available add-ons. This book contains over 200 recipes for Vaadin 6.8.
+            <br /><br />
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/learning-vaadin-rias/book">
+          <img src="images/books/learning_vaddin.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/learning-vaadin-rias/book">Learning Vaadin (October 2011)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Discover the Vaadin framework in a progressive and structured way. Learn about components, events, layouts, containers, and bindings. Create outstanding new components by yourself. Integrate with your existing frameworks and infrastructure. Pragmatic and no-nonsense approach.
+            <br /><br />
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.packtpub.com/ext-gwt-20-beginners-guide/book">
+          <img src="images/books/Ext_GWT_20_Beginners_Guide.jpg" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.packtpub.com/ext-gwt-20-beginners-guide/book">ExtGWT Rich Internet Application Cookbook (December 2010)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Explore the full range of features of the Ext GWT library through practical, step-by-step examples. Discover how to combine simple building blocks into powerful components. Create powerful Rich Internet Applications with features normally only found in desktop applications. Learn how to structure applications using MVC for maximum reliability and maintainability
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>        
+    <tr>
+      <td>
+        <a href="http://www.apress.com/9781430219408">
+          <img src="images/books/Developing_with_Ext_GWT_Enterprise_RIA_Development.png" style="float: left; margin-left: 0px; border: 0;" width="150" />
+        </a>
+        <div style="margin-left: 155px; margin-bottom: 10px;">
+          <div style="font-size: 120%; font-weight: bold;"><a href="http://www.apress.com/9781430219408">Developing with Ext GWT Enterprise RIA Development (May 2009)</a></div>
+          <div style="padding-top: 5px; line-height: 125%;">
+            Developing in Ext GWT is a fast–paced, practical guide to quickly learning the tasks necessary in building enterprise–class rich Internet applications (RIAs). Based around the exciting new user interface library from Ajax leaders Ext JS and the latest Google Web Toolkit release, this book takes the reader through setup, the available widgets, and advanced custom widgets and templates, and concludes with a functional sample client–server application in less than 150 pages. Not your typical beginner's guide to programming, this book provides a rapid approach to becoming effective with leading commercial RIA tools and libraries.
+            <br /><br />
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table><p>If you believe that a resource should be added or removed, please <a href="mailto:gwt-third-party@google.com">let us know</a>. If you are developing new tools related to the GWT, please review our <a href="http://www.google.com/permissions/guidelines.html">branding guidelines</a>.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

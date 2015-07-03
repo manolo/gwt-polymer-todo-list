@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/tutorial/RPC.md"></a>
+                    </span>
+                    <h1>Using GWT RPC</h1><p>At this point, you&rsquo;ve created the initial implementation of the StockWatcher application, simulating stock data in the client-side code.</p><p>In this section, you&rsquo;ll make a GWT remote procedure call to a server-side method which returns the stock data. The server-side code that gets invoked from the client is also known as a <em>service</em>; the act of making a remote procedure call is referred to as <em>invoking a service</em>. You&rsquo;ll learn to:</p>
+<ol>
+  <li><a href="#services">Create a service on the server.</a></li>
+  <li><a href="#invoke">Invoke the service from the client.</a></li>
+  <li><a href="#serialize">Serialize the data objects.</a></li>
+  <li><a href="#exceptions">Handle exceptions: checked and unexpected.</a></li>
+</ol><p><strong>Note:</strong> For a broader guide to RPC communication in a GWT application, see <a href="../DevGuideServerCommunication.html#DevGuideRemoteProcedureCalls">Communicate with a Server - Remote Procedure Calls</a>.</p><h2>What is GWT RPC?</h2><p>The GWT RPC framework makes it easy for the client and server components of your web application to exchange Java objects over HTTP. The server-side code that gets invoked from the client is often referred to as a <em>service</em>. The implementation of a GWT RPC service is based on the well-known Java servlet architecture. Within the client code, you&rsquo;ll use an automatically-generated proxy class to make calls to the service. GWT will handle serialization of the Java objects passing back and forth&mdash;the arguments in the method calls and the return value.</p><p><strong>Important:</strong> GWT RPC services are not the same as web services based on SOAP or <a href="http://java.sun.com/developer/technicalArticles/WebServices/restful/">REST</a>. They are simply as a lightweight method for transferring data between your server and the GWT application on the client. To compare single and multi-tier deployment options for integrating GWT RPC services into your application, see the Developer&rsquo;s Guide, <a href="../DevGuideServerCommunication.html#DevGuideArchitecturalPerspectives">Architectural Perspectives</a>.</p><h2>Java components of the GWT RPC Mechanism</h2><p>When setting up GWT RPC, you will focus on these three elements involved in calling procedures running on remote servers.</p>
+<ul>
+  <li>the service that runs on the server (the method you are calling)</li>
+  <li>the client code that invokes the service</li>
+  <li>the Java data objects that pass between the client and server</li>
+</ul><p>Both the server and the client have the ability to serialize and deserialize data so the data objects can be passed between them as ordinary text.</p><p><img src="images/AnatomyOfServices.png" alt="GWT RPC Plumbing""/></p><p>In order to define your RPC interface, you need to write three components:</p>
+<ol>
+  <li>Define an interface (StockPriceService) for your service that extends RemoteService and lists all your RPC methods.</li>
+  <li>Create a class (StockPriceServiceImpl) that extends RemoteServiceServlet and implements the interface you created above.</li>
+  <li>Define an asynchronous interface (StockPriceServiceAsync) to your service to be called from the client-side code.</li>
+</ol><p>A service implementation must extend RemoteServiceServlet and must implement the associated service interface. Notice that the service implementation does not implement the asynchronous version of the service interface. Every service implementation is ultimately a servlet, but rather than extending HttpServlet, it extends RemoteServiceServlet instead. RemoteServiceServlet automatically handles serialization of the data being passed between the client and the server and invoking the intended method in your service implementation.</p><h2>Creating a service <a id="services"></a></h2><p>In this tutorial, you are going to take the functionality in the refreshWatchList method and move it from the client to the server. Currently you pass the refreshWatchList method an array of stock symbols and it returns the corresponding stock data. It then calls the updateTable method to populate the FlexTable with the stock data.</p><p>The current client-side implementation:</p>
+<pre><code>  /**
+   * Generate random stock prices.
+   */
+  private void refreshWatchList() {
+    final double MAX_PRICE = 100.0; // $100.00
+    final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
+
+    StockPrice[] prices = new StockPrice[stocks.size()];
+    for (int i = 0; i &lt; stocks.size(); i++) {
+      double price = Random.nextDouble() * MAX_PRICE;
+      double change = price * MAX_PRICE_CHANGE
+          * (Random.nextDouble() * 2.0 - 1.0);
+
+      prices[i] = new StockPrice(stocks.get(i), price, change);
+    }
+
+    updateTable(prices);
+  }
+
+</code></pre><p>To create the service, you will:</p>
+<ol>
+  <li>define the service interface: StockPriceService</li>
+  <li>implement the service: StockPriceServiceImpl</li>
+</ol><h2>Defining the service: the StockPriceService interface</h2><p>In GWT, an RPC service is defined by an interface that extends the GWT <a href="/javadoc/latest/com/google/gwt/user/client/rpc/RemoteService.html">RemoteService</a> interface. For the StockPriceService interface, you need to define only one method: a method that will accept an array of stock symbols and return the data associated with each stock as an array of StockPrice objects.</p>
+<ol>
+  <li>In the client subpackage, create an interface and name it StockPriceService.
+  <ul>
+    <li>In Eclipse, in the Package Explorer pane, select the package <code>com.google.gwt.sample.stockwatcher.client</code></li>
+    <li>From the Eclipse menu bar, select <code>File &gt; New &gt; Interface</code></li>
+    <li>Eclipse opens a New Java Interface window.</li>
+  </ul></li>
+  <li>Fill in the New Java Interface window.
+  <ul>
+    <li>At Name enter <code>StockPriceService</code></li>
+    <li>Accept the defaults for the other fields.</li>
+    <li>Press <code>Finish</code></li>
+    <li>Eclipse creates stub code for the StockPriceService interface.</li>
+  </ul></li>
+  <li>Replace the stub with following code.</li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+
+@RemoteServiceRelativePath(&quot;stockPrices&quot;)
+public interface StockPriceService extends RemoteService {
+
+      StockPrice[] getPrices(String[] symbols);
+}
+</code></pre>
+<ul>
+  <li><strong>Implementation Note:</strong> Notice the @RemoteServiceRelativePath annotation. This associates the service with a default path relative to the module base URL.</li>
+</ul><h2>Implementing the service: the StockPriceServiceImpl class</h2><p>Now create the class (StockPriceServiceImpl) that lives on the server. As defined in the interface, StockPriceServiceImpl will contain only one method, the method that returns the stock price data.</p><p>To do this, implement the service interface by creating a class that also extends the GWT <a href="/javadoc/latest/com/google/gwt/user/server/rpc/RemoteServiceServlet.html">RemoteServiceServlet</a> class. RemoteServiceServlet does the work of deserializing incoming requests from the client and serializing outgoing responses.</p><h3>Packaging server-side code</h3><p>The service implementation runs on the server as Java bytecode; it&rsquo;s not translated into JavaScript. Therefore, the service implementation does not have the same language constraints as the client-side code. To keep the code for the client separate from the code for the server, you&rsquo;ll put it in a separate package (com.google.gwt.sample.stockwatcher.server).</p><h3>Create a new class</h3>
+<ol>
+  <li>Create the service implementation for StockPriceService.
+  <ul>
+    <li>In Eclipse, open the New Java Class wizard (File &gt; New &gt; Class).</li>
+  </ul></li>
+  <li>At Package, change the name from <code>.client</code> to <code>.server</code>
+  <ul>
+    <li>Eclipse will create a package for the server-side code.</li>
+  </ul></li>
+  <li>At Name, enter <code>StockPriceServiceImpl</code>
+  <ul>
+    <li><strong>Implementation Note:</strong> By convention, the service implementation class is named after the service interface with the suffix Impl, so call the new class StockPriceServiceImpl.</li>
+  </ul></li>
+  <li>Extend the RemoteServiceServlet class.
+  <ul>
+    <li>At Superclass, enter <code>com.google.gwt.user.server.rpc.RemoteServiceServlet</code></li>
+  </ul></li>
+  <li>Implement the StockPriceService interface.
+  <ul>
+    <li>At Interfaces, add an interface <code>com.google.gwt.sample.stockwatcher.client.StockPriceService</code></li>
+  </ul></li>
+  <li>Inherit abstract methods.</li>
+  <li><p>Press <code>Finish</code></p>
+  <ul>
+    <li>Eclipse creates the package <code>com.google.gwt.sample.stockwatcher.server</code></li>
+    <li>Eclipse creates a stub StockPriceServiceImpl class.</li>
+  </ul>
+  <pre><code>package com.google.gwt.sample.stockwatcher.server;
+
+import com.google.gwt.sample.stockwatcher.client.StockPrice;
+import com.google.gwt.sample.stockwatcher.client.StockPriceService;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+public class StockPriceServiceImpl extends RemoteServiceServlet implements StockPriceService {
+
+    public StockPrice[] getPrices(String[] symbols) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+}
+</code></pre></li>
+</ol><h3>Write the server-side implementation</h3><p>Replace the client-side implementation that returns random stock prices.</p>
+<ol>
+  <li><p>Create instance variables to initialize the price and change data.</p>
+  <pre><code>private static final double MAX_PRICE = 100.0; // $100.00
+private static final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
+</code></pre></li>
+  <li><p>Replace the TODO with the following code. Return prices rather than null.</p>
+  <pre><code>public StockPrice[] getPrices(String[] symbols) {
+    Random rnd = new Random();
+
+    StockPrice[] prices = new StockPrice[symbols.length];
+    for (int i=0; i&lt;symbols.length; i++) {
+      double price = rnd.nextDouble() * MAX_PRICE;
+      double change = price * MAX_PRICE_CHANGE * (rnd.nextDouble() * 2f - 1f);
+
+      prices[i] = new StockPrice(symbols[i], price, change);
+    }
+
+    return prices;
+}
+</code></pre><p>Eclipse flags Random and suggests you include the import declaration.</p></li>
+  <li><p>Include the import declaration from <code>java.util</code>, not from <code>com.google.gwt.user.client</code>.</p>
+  <pre><code>import java.util.Random;
+</code></pre></li>
+</ol><p><strong>Implementation Note:</strong>  Remember the service implementation runs on the server as Java bytecode, so you can use any Java class or library without worrying about whether it&rsquo;s translatable to JavaScript. In this case, you can use the Random class from the Java runtime library (java.util.Random) instead of the emulated GWT version (com.google.gwt.user.client.Random).</p>
+<ol>
+  <li><p>This listing shows the completed StockPriceServiceImpl class.</p>
+  <pre><code>package com.google.gwt.sample.stockwatcher.server;
+
+import com.google.gwt.sample.stockwatcher.client.StockPrice;
+import com.google.gwt.sample.stockwatcher.client.StockPriceService;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+import java.util.Random;
+
+public class StockPriceServiceImpl extends RemoteServiceServlet implements StockPriceService {
+
+    private static final double MAX_PRICE = 100.0; // $100.00
+    private static final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
+
+    public StockPrice[] getPrices(String[] symbols) {
+        Random rnd = new Random();
+
+        StockPrice[] prices = new StockPrice[symbols.length];
+        for (int i=0; i&lt;symbols.length; i++) {
+            double price = rnd.nextDouble() * MAX_PRICE;
+            double change = price * MAX_PRICE_CHANGE * (rnd.nextDouble() * 2f - 1f);
+
+            prices[i] = new StockPrice(symbols[i], price, change);
+        }
+
+        return prices;
+  }
+
+}
+</code></pre></li>
+</ol><h3>Include the server-side code in the GWT module</h3><p>The embedded servlet container (Jetty) can host the servlets that contain your service implementation. This means you can take advantage of running your application in development mode while testing and debugging the server-side Java code.</p><p>To set this up, add <code>&lt;servlet&gt;</code> and <code>&lt;servlet-mapping&gt;</code> elements to the web application deployment descriptor (web.xml) and point to the implementation class (StockPriceServiceImpl).</p><p>Starting with GWT 1.6, servlets should be defined in the web application deployment descriptor (web.xml) instead of the GWT module (StockWatcher.gwt.xml).</p><p>In the <code>&lt;servlet-mapping&gt;</code> element, the url-pattern can be in the form of an absolute directory path (for example, <code>/spellcheck</code> or <code>/common/login</code>). If you specify a default service path with a @RemoteServiceRelativePath annotation on the service interface (as you did with StockPriceService), then make sure the url-pattern matches the annotation value.</p><p>Because you&rsquo;ve mapped the StockPriceService to &ldquo;stockPrices&rdquo; and the module rename-to attribute in StockWatcher.gwt.xml is &ldquo;stockwatcher&rdquo;, the full URL will be: </p><p><code>http://localhost:8888/stockwatcher/stockPrices</code></p>
+<ol>
+  <li><p>Edit the web application deployment descriptor (StockWatcher/war/WEB-INF/web.xml).</p>
+  <ul>
+    <li>Since the greetServlet is no longer needed, its definition can be removed.</li>
+  </ul>
+  <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE web-app
+PUBLIC &quot;-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN&quot;
+&quot;http://java.sun.com/dtd/web-app_2_3.dtd&quot;&gt;
+
+&lt;web-app&gt;
+
+  &lt;!-- Default page to serve --&gt;
+  &lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;StockWatcher.html&lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+
+  &lt;!-- Servlets --&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;stockPriceServiceImpl&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;com.google.gwt.sample.stockwatcher.server.StockPriceServiceImpl&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;stockPriceServiceImpl&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/stockwatcher/stockPrices&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+
+&lt;/web-app&gt;
+</code></pre></li>
+</ol><h2>Invoking the service from the client <a id="invoke"></a></h2><h3>Making asynchronous calls to the server</h3><p>You need to add an AsyncCallback parameter to all your service methods.</p><p>To add an AsyncCallback parameter to all of our service methods, you must define a new interface as follows:</p>
+<ul>
+  <li>It must have the same name as the service interface, appended with <em>Async</em> (for example, StockPriceServiceAsync).</li>
+  <li>It must be located in the same package as the service interface.</li>
+  <li>Each method must have the same name and signature as in the service interface with an important difference: the method has no return type and the last parameter is an AsyncCallback object.</li>
+</ul>
+<ol>
+  <li>In the client subpackage, create an interface and name it StockPriceServiceAsync.</li>
+  <li>Replace the stub with following code.</li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+public interface StockPriceServiceAsync {
+
+   void getPrices(String[] symbols, AsyncCallback&lt;StockPrice[]&gt; callback);
+
+}
+</code></pre><p><strong>Tip:</strong> The Google Plugin for Eclipse will generate an error when it finds a synchronous remote service without a matching asynchronous interface. You can right click on the error in Eclipse, select Quick Fix, and choose the &ldquo;Create asynchronous RemoteService interface&rdquo; option to automatically generate the asynchronous interface. </p><h3>Making the remote procedure call</h3><h4>Callback methods</h4><p>When you call a remote procedure, you specify a callback method which executes when the call completes.</p><p>You specify the callback method by passing an <a href="/javadoc/latest/com/google/gwt/user/client/rpc/AsyncCallback.html">AsyncCallback</a> object to the service proxy class.</p><p>The AsyncCallback object contains two methods, one of which is called depending on whether the call failed or succeeded: onFailure(Throwable) and onSuccess(T).</p>
+<ol>
+  <li><p>Create the service proxy class.</p><p>In the StockWatcher class, create an instance of the service proxy class by calling GWT.create(Class).</p>
+  <pre><code>private ArrayList&lt;String&gt; stocks = new ArrayList&lt;String&gt;();
+private StockPriceServiceAsync stockPriceSvc = GWT.create(StockPriceService.class);
+</code></pre><p>Eclipse flags GWT.</p></li>
+  <li><p>Initialize the service proxy class, set up the callback object, and make the call to the remote procedure.</p><p>Replace the existing refreshWatchList method with the following code.</p>
+  <pre><code>private void refreshWatchList() {
+    // Initialize the service proxy.
+    if (stockPriceSvc == null) {
+      stockPriceSvc = GWT.create(StockPriceService.class);
+    }
+
+     // Set up the callback object.
+    AsyncCallback&lt;StockPrice[]&gt; callback = new AsyncCallback&lt;StockPrice[]&gt;() {
+      public void onFailure(Throwable caught) {
+        // TODO: Do something with errors.
+      }
+
+      public void onSuccess(StockPrice[] result) {
+        updateTable(result);
+      }
+    };
+
+     // Make the call to the stock price service.
+    stockPriceSvc.getPrices(stocks.toArray(new String[0]), callback);
+}
+</code></pre><p>Eclipse flags AsyncCallback.</p></li>
+  <li><p>Include the import declarations.</p></li>
+</ol>
+<pre><code>import com.google.gwt.core.client.GWT;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+</code></pre><h3>Test the Remote Procedure Call</h3><p>At this point, you&rsquo;ve created a service and pointed to it in the module XML file, set up the mechanism for making asynchronous calls, and generated a service proxy on the client side to call the service. However there&rsquo;s a problem.</p>
+<ol>
+  <li>Launch StockWatcher in development mode using the Eclipse debugger.</li>
+  <li>Examine the error log in the Development Shell window.</li>
+</ol>
+<pre><code>[ERROR] Type &#39;com.google.gwt.sample.stockwatcher.client.StockPrice&#39; was not serializable
+     and has no concrete serializable subtypes
+    
+</code></pre><p>In the service implementation (StockPriceServiceImpl), you inherited the code that serializes and deserializes Java objects by extending the RemoteServiceServlet class. However the problem is that we did not also edit the StockPrice class to indicate it was serializable.</p><h2>Serializing Java objects <a id="serialize"></a></h2><p>Serialization is the process of packaging the contents of an object so that it can moved from one application to another application or stored for later use. Anytime you transfer an object over the network via GWT RPC, it must be serialized. Specifically, GWT RPC requires that all service method parameters and return types be serializable.</p><p>A type is serializable and can be used in a service interface if one of the following is true:</p>
+<ul>
+  <li>All primitive types (int, char, boolean, etc.) and their wrapper objects are serializable by default.</li>
+  <li>An array of serializable types is serializable by extension.</li>
+  <li><p>A class is serializable if it meets these three requirements:</p>
+  <ul>
+    <li>It implements either Java <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/io/Serializable.html">Serializable</a> or GWT <a href="/javadoc/latest/com/google/gwt/user/client/rpc/IsSerializable.html">IsSerializable</a> interface, either directly, or because it derives from a superclass that does.</li>
+    <li>Its non-final, non-transient instance fields are themselves serializable, and</li>
+    <li>It has a default (zero argument) constructor with any access modifier (e.g. private Foo(){} will work)</li>
+  </ul></li>
+</ul><p>GWT honors the <em>transient</em> keyword, so values in those fields are not serialized (and thus, not sent over the wire when used in RPC calls).</p><p><strong>Note:</strong> GWT serialization is not the same as serialization based on the Java Serializable interface.</p><p>For more information on what is and is not serializable in GWT, see the Developer&rsquo;s Guide, <a href="../DevGuideServerCommunication.html#DevGuideSerializableTypes">Serializable Types</a>.</p><h4>Serializing StockPrice</h4><p>Based on the requirements for serialization, what do you need to do to make the StockPrice class ready for GWT RPC? Because all its instance fields are primitive types, all you need to do in this case is implement the Serializable or IsSerializable interface.</p>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+import java.io.Serializable;
+
+public class StockPrice implements Serializable {
+
+  private String symbol;
+  private double price;
+  private double change;
+
+  ...
+</code></pre>
+<ol>
+  <li>Refresh StockWatcher in development mode.</li>
+  <li>Add a stock.</li>
+  <li><p>StockWatcher adds the stock to the table; the Price and Change fields contain data and there are no errors.</p>
+  <ul>
+    <li>Atlhough StockWatcher doesn&rsquo;t look any different on the surface, underneath it is now retrieving its stock price updates from the server-side StockPriceService servlet on the embedded servlet container instead of generating them on the client-side.</li>
+  </ul></li>
+</ol><p>At this point, the basic RPC mechanism is working. However, there is one TODO left. You need to code the error handling in case the callback fails.</p><h2>Handling Exceptions <a id="exceptions"></a></h2><p>When a remote procedure call fails, the cause falls into one of two categories: an unexpected exception or a checked exception. In either case you want to handle the exception and, if necessary, provide feedback to the user.</p><p><strong>Unexpected exceptions:</strong> Any number of unexpected occurrences could cause the call to a remote procedure to fail: the network could be down; the HTTP server on the other end might not be listening; the DNS server could be on fire, and so forth.</p><p>Another type of unexpected exception can occur if GWT is able to invoke the service method, but the service implementation throws an undeclared exception. For example, a bug may cause a NullPointerException.</p><p>When unexpected exceptions occur in the service implementation, you can find the full stack trace in the development mode log. On the client-side, the onFailure(Throwable) callback method will receive an InvocationException with the generic message: The call failed on the server; see server log for details.</p><p><strong>Checked exceptions:</strong> If you know a service method might throw a particular type of exception and you want the client-side code to be able to handle it, you can use checked exceptions. GWT supports the <em>throws</em> keyword so you can add it to your service interface methods as needed. When checked exceptions occur in an RPC service method, GWT will serialize the exception and send it back to the caller on the client for handling.</p><h3>Creating a checked exception</h3><p>To learn how to handle errors in RPC, you will throw an error when the user adds a stock code which you&rsquo;ve defined as &ldquo;delisted&rdquo;&mdash;causing the call to fail. Then you&rsquo;ll handle the failure by displaying an error message to the user.</p><h4>Checking for and throwing the exception</h4><h5>Create a class: DelistedException</h5>
+<ol>
+  <li>Create a class to identify delisted stock codes.
+  <ul>
+    <li>In Eclipse, open the New Java Class wizard (File &gt; New &gt; Class).</li>
+  </ul></li>
+  <li>At Name, enter <code>DelistedException</code></li>
+  <li>Extend the java.lang.Exception class.</li>
+  <li>Implement the java.io.Serializable interface.
+  <ul>
+    <li>This exception is designed to be sent by RPC; therefore, this class must be serializable.</li>
+  </ul></li>
+  <li>Inherit abstract methods.</li>
+  <li>Press <code>Finish</code>
+  <ul>
+    <li>Eclipse creates a stub DelistedException class.</li>
+  </ul></li>
+  <li>Replace the stub with the following code.</li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import java.io.Serializable;
+
+public class DelistedException extends Exception implements Serializable {
+
+    private String symbol;
+
+    public DelistedException() {
+    }
+
+    public DelistedException(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public String getSymbol() {
+        return this.symbol;
+    }
+}
+</code></pre><h5>Update the stock price service interface: StockPriceService</h5>
+<ol>
+  <li><p>In the service interface (StockPriceService), append a <em>throws</em> declaration to the getPrices(String[]) method.</p><p>In StockPriceService.java, make the changes highlighted below.</p></li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+
+@RemoteServiceRelativePath(&quot;stockPrices&quot;)
+public interface StockPriceService extends RemoteService {
+
+   StockPrice[] getPrices(String[] symbols) throws DelistedException;
+}
+</code></pre><h5>Update the stock price service implementation: StockPriceServiceImpl</h5><p>You need to make two changes to the service implementation (StockPriceServiceImpl).</p>
+<ol>
+  <li>Make the corresponding change to the getPrices(String[]) method.
+  <ul>
+    <li>Append a <em>throws</em> declaration.</li>
+    <li>Include the import declaration for DelistedException.</li>
+  </ul></li>
+  <li>Add the code to throw the Delisted Exception.
+  <ul>
+    <li>For the sake of this example, keep it simple and only throw the exception when the stock symbol ERR is added to the watch list.</li>
+  </ul></li>
+  <li>This listing shows the completed StockPriceServiceImpl class.</li>
+</ol>
+<pre><code>import com.google.gwt.sample.stockwatcher.client.DelistedException;
+    
+...
+
+public StockPrice[] getPrices(String[] symbols) throws DelistedException {
+    Random rnd = new Random();
+
+    StockPrice[] prices = new StockPrice[symbols.length];
+
+    for (int i=0; i&lt;symbols.length; i++) {
+        if (symbols[i].equals(&quot;ERR&quot;)) {
+            throw new DelistedException(&quot;ERR&quot;);
+        }
+
+        double price = rnd.nextDouble() * MAX_PRICE;
+        double change = price * MAX_PRICE_CHANGE * (rnd.nextDouble() * 2f - 1f);
+
+        prices[i] = new StockPrice(symbols[i], price, change);
+    }
+
+    return prices;
+}
+</code></pre><p>At this point you&rsquo;ve created the code that will throw the exception. You don&rsquo;t need to add the throws declaration to the service method in StockPriceServiceAsync.java. That method will always return immediately (remember, it&rsquo;s asynchronous). Instead you&rsquo;ll receive any thrown checked exceptions when GWT calls the onFailure(Throwable) callback method.</p><h4>Displaying error messages</h4><p>In order to display the error, you will need a new UI component. First think a moment about how you want to display the error. An obvious solution would be to display a pop-up alert using Window.alert(String). This could work in the case where the user receives the error while entering stock codes. But in a more real-world example, what would you want to happen if stock was delisted after the user had added it to the watch list? or if you need to display multiple errors? In these cases, a pop-up alert is not the best approach.</p><p>So, to display any messages about failing to retrieve stock data, you&rsquo;ll implement a Label widget.</p>
+<ol>
+  <li><p>Define a style for the error message so that it will attract the user&rsquo;s attention.</p><p>Serializing StockPrice</p></li>
+</ol><p>rule that applies to any element with a class attribute of errorMessage.</p>
+<pre><code>    .negativeChange {
+      color: red;
+    }
+
+    .errorMessage {
+      color: red;
+    }
+</code></pre>
+<ol>
+  <li><p>To hold the text of the error message, add a Label widget.</p><p>In StockWatcher.java, add the following instance field.</p>
+  <pre><code>private StockPriceServiceAsync stockPriceSvc = GWT.create(StockPriceService.class);
+private Label errorMsgLabel = new Label();
+</code></pre></li>
+  <li><p>Initialize the errorMsgLabel when StockWatcher launches.</p>
+  <ul>
+    <li>In the onModuleLoad method, add a secondary class attribute to errorMsgLabel and do not display it when StockWatcher loads.</li>
+    <li>Add the error message to the Main panel above the stocksFlexTable.</li>
+  </ul>
+  <pre><code>// Assemble Add Stock panel.
+addPanel.add(newSymbolTextBox);
+addPanel.add(addButton);
+addPanel.addStyleName(&quot;addPanel&quot;);
+
+// Assemble Main panel.
+errorMsgLabel.setStyleName(&quot;errorMessage&quot;);
+errorMsgLabel.setVisible(false);
+
+mainPanel.add(errorMsgLabel);
+mainPanel.add(stocksFlexTable);
+mainPanel.add(addPanel);
+mainPanel.add(lastUpdatedLabel);
+</code></pre></li>
+</ol><h4>Handling the error</h4><p>Now that you&rsquo;ve built a Label widget to display the error, you can finish writing the error handling code.</p><p>You will also want to hide the error message if the error is corrected (for example, if the user removes the ERR code from the stock table).</p>
+<ol>
+  <li><p>Specify the action to take if the callback fails.</p>
+  <ul>
+    <li>In StockWatcher.java, in the refreshWatchList method, fill in the onFailure method as follows.</li>
+  </ul>
+  <pre><code>public void onFailure(Throwable caught) {
+    // If the stock code is in the list of delisted codes, display an error message.
+    String details = caught.getMessage();
+    if (caught instanceof DelistedException) {
+      details = &quot;Company &#39;&quot; + ((DelistedException)caught).getSymbol() + &quot;&#39; was delisted&quot;;
+    }
+
+    errorMsgLabel.setText(&quot;Error: &quot; + details);
+    errorMsgLabel.setVisible(true);
+}
+</code></pre></li>
+  <li><p>If the error is corrected, hide the error message widget.</p>
+  <ul>
+    <li>In the updateTable(StockPrice[] prices) method, clear any errors.</li>
+  </ul>
+  <pre><code>private void updateTable(StockPrice[] prices) {
+    for (int i=0; i &lt; prices.length; i++) {
+      updateTable(prices[i]);
+    }
+
+    // Display timestamp showing last refresh.
+    lastUpdatedLabel.setText(&quot;Last update : &quot; +
+    DateTimeFormat.getMediumDateTimeFormat().format(new Date()));
+
+    // Clear any errors.
+    errorMsgLabel.setVisible(false);
+}
+</code></pre></li>
+</ol><h3>Test Exception Handling in RPC</h3><p>At this point, you&rsquo;ve created and checked for an exception&mdash;the delisted stock code &ldquo;ERR&rdquo;. When StockWatcher makes a remote procedure call to retrieve stock data for the delisted stock code, the call fails, an exception is thrown, and then handled by displaying an error message.</p>
+<ol>
+  <li>Refresh StockWatcher in development mode.</li>
+  <li>Add the stock code, ERR.</li>
+  <li>StockWatcher displays a red error message. Valid stock code data stops being refreshed.
+  <ul>
+    <li><img src="images/RPCerrormessage.png" alt="screenshot: RPC error message""/></li>
+  </ul></li>
+  <li><p>Delete the stock code, ERR.</p></li>
+  <li>The error message is removed. Valid stock code data resumes being refreshed.</li>
+</ol><h2>What&rsquo;s Next</h2><p>At this point, you&rsquo;ve made remote procedure calls to get stock data from the server.</p><p>For more information about GWT RPC, see the Developer&rsquo;s Guide, <a href="../DevGuideServerCommunication.html#DevGuideRemoteProcedureCalls">Remote Procedure Calls</a>.</p><h3>Deploying services into production <a id="deploy"></a></h3><p>During testing, you can use development mode&rsquo;s built-in servlet container to test the server-side code for your RPC services&mdash;just as you did in this tutorial. When you deploy your GWT application, you can use any servlet container to host your services. Make sure your client code invokes the service using the URL the servlet is mapped to in the web.xml configuration file.</p><p>To learn how to deploy GWT RPC servlets to a production server, see the Developer&rsquo;s Guide, <a href="../DevGuideServerCommunication.html#DevGuideRPCDeployment">Deploying RPC</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

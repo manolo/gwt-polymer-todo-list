@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../'>GWT homepage</a></li>
+                    <li><a href='./../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../examples.html'>Examples</a></li>
+    <li><a href='./../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../articles/articles.html'>Overview</a></li>
+      <li><a href='./../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../terms.html'>GWT License</a></li>
+    <li><a href='./../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../examples.html'>Examples</a></li>
+    <li><a href='./../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../articles/articles.html'>Overview</a></li>
+      <li><a href='./../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../terms.html'>GWT License</a></li>
+    <li><a href='./../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/articles/mvp-architecture.md"></a>
+                    </span>
+                    <h1>Building MVP apps: MVP Part I</h1><p><em>Chris Ramsdale, Google Developer Relations</em></p><p><em>Updated March 2010</em></p><p><strong>Also see <a href="mvp-architecture-2.html">Part II</a> of this article.</strong></p><p>Building any large scale application has its hurdles, and GWT apps are no exception. Multiple developers working simultaneously on the same code base, while maintaining legacy features and functionality, can quickly turn into messy code. To help sort things out we introduce design patterns to create compartmentalized areas of responsibility within our project.</p><p>There are various design patterns to choose from; Presentation-abstraction-control, Model-view-controller, Model-view-presenter, etc&hellip; And while each pattern has its benefits, we have found that a Model-view-presenter (MVP) architecture works best when developing GWT apps for two main reasons. First the MVP model, much like other design patterns, decouples development in a way that allows multiple developers to work simultaneously. Secondly, this model allows us to minimize our use of <a href="/javadoc/latest/com/google/gwt/junit/client/GWTTestCase.html">GWTTestCase</a>, which relies on the presence of a browser, and, for the bulk of our code, write lightweight (and fast) JRE tests (which don&rsquo;t require a browser).</p><p>At the heart of this pattern is the separation of functionality into components that logically make sense, but in the case of GWT there is a clear focus on making the <a href="#view">view</a> as simple as possible in order to minimize our reliance on GWTTestCase and reduce the overall time spent running tests.</p><p>Building an MVP-based application can be straightforward and easy once you understand the fundamentals behind this design pattern. To help explain these concepts we will use a simple Contacts application as an example. This application will allow users to view, edit, and add contacts to a list of contacts that are stored on the server.</p><p>To begin we will break our application up into the following components:</p>
+<ul>
+  <li><a href="#model">Model</a></li>
+  <li><a href="#view">View</a></li>
+  <li><a href="#presenter">Presenter</a></li>
+  <li><a href="#app_controller">AppController</a></li>
+</ul><p>We&rsquo;ll then look into how each of these components interact by digging into:</p>
+<ul>
+  <li><a href="#binding">Binding presenters and views</a></li>
+  <li><a href="#events">Events and the event bus</a></li>
+  <li><a href="#history">History and view transitions</a></li>
+  <li><a href="#testing">Testing</a></li>
+</ul><h2>Sample Project <a id="sample"></a></h2><p>The sample project, referenced throughout this tutorial, can be found at <a href="http://code.google.com/p/google-web-toolkit/downloads/detail?name=Tutorial-Contacts.zip">Tutorial-Contacts.zip</a>.</p><p><img src="../images/mvp_diagram.png" alt="diagram""/></p><h2>Model <a id="model"></a></h2><p>A model encompasses business objects, and in the case of our Contacts application we have:</p>
+<ul>
+  <li>Contact: A representation of a contact within the contact list. For  simplicity, this object contains a first name, last name, and email  address. In a more complex application, this object would have more fields.</li>
+  <li>ContactDetails: A light version of the Contact that contains only the  unique identifier and display name. This &ldquo;light&rdquo; version of the Contact  object will make the Contact list retrieval more efficient, as there will be  fewer bits to serialize and transport across the wire. In the case of our  example application, this optimization has less impact than it would in a more  complex app where Contact objects have substantially more fields. The initial  RPC will return a list of ContactDetails, and we&rsquo;ve added a display name field  so that there is some amount of data that can be displayed (within the  ContactsView) without having to making subsequent RPCs.</li>
+</ul><h2>View <a id="view"></a></h2><p>A view contains all of the UI components that make up our application. This includes any tables, labels, buttons, textboxes, etc&hellip; Views are responsible for the layout of the UI components and have no notion of the model. That is to say a view doesn&rsquo;t know that it is displaying a Contact, it simply knows that it has, for example, 3 labels, 3 textboxes, and 2 buttons that are organized in a vertical fashion. Switching between views is tied to the <a href="#history">history management</a> within the <a href="#presenter">presentation</a> layer.</p><p>The views in our Contacts application are:</p>
+<ul>
+  <li>ContactsView</li>
+  <li>EditContactView</li>
+</ul><p>The EditContactView is used to add new contacts as well as editing existing contacts.</p><h2>Presenter <a id="presenter"></a></h2><p>A presenter contains all of the logic for our Contacts application, including <a href="#history">history management</a>, view transition and data sync via RPCs back to the server. As a general rule, for every view you&rsquo;ll want a presenter to drive the view and handle <a href="#events">events</a> that are sourced from the UI widgets within the view.</p><p>For our sample we have the following Presenters:</p>
+<ul>
+  <li>ContactsPresenter</li>
+  <li>EditContactPresenter</li>
+</ul><p>Just as with the view, the EditContactPresenter adds new contacts as well as edits existing contacts.</p><h2>AppController <a id="app_controller"></a></h2><p>To handle logic that is not specific to any presenter and instead resides at the application layer, we&rsquo;ll introduce the AppController component. This component contains the <a href="#history">history management</a> and view transition logic. View transition is directly tied to the history management and is discussed in greater length below.</p><p>At this point the overall hierarchy of our sample project should look like the following:</p>
+<div class="screenshot">
+  ![screenshot](../images/contacts-project-hierarchy.png)
+</div><p>With our component structure in place, and before we jump into wiring it all up, we&rsquo;ll want to take a look at the process that starts everything up. The general flow, as shown in the following code, is:</p>
+<ol>
+  <li>GWT&rsquo;s bootstrap process calls onModuleLoad()</li>
+  <li>onModuleLoad() creates the RPC service, Event Bus, and the AppController</li>
+  <li>The AppController is passed the RootPanel instance and takes over</li>
+  <li>From then on the AppController is in control of creating specific <a href="#presenter">presenters</a> and supplying a <a href="#view">view</a> that the presenter will drive.</li>
+</ol>
+<pre><code>public class Contacts implements EntryPoint {
+
+  public void onModuleLoad() {
+    ContactsServiceAsync rpcService = GWT.create(ContactsService.class);
+    EventBus eventBus = new SimpleEventBus();
+    AppController appViewer = new AppController(rpcService, eventBus);
+    appViewer.go(RootPanel.get());
+  }
+}
+</code></pre><h2>Binding presenters and views <a id="binding"></a></h2><p>In order to bind the <a href="#presenter">presenter</a> and associated <a href="#view">view</a> together we&rsquo;ll rely on Display interfaces that are defined within the presenter. Take for example the ContactsView:</p>
+<div class="screenshot">
+  ![screenshot](../images/contact-list-view.png)
+</div><p>This view has 3 widgets: a table and two buttons. In order for the app to do something meaningful, the <a href="#presenter">presenter</a> is going to need to:</p>
+<ul>
+  <li>Respond to button clicks</li>
+  <li>Populate the list</li>
+  <li>Respond to a user clicking on a contact in the list</li>
+  <li>Query the view for selected contacts</li>
+</ul><p>In the case of our ContactsPresenter, we define the Display interface as such:</p>
+<pre><code><br/>public class ContactsPresenter implements Presenter {
+  ...
+  public interface Display extends HasValue&lt;List&lt;String&gt;&gt; {
+    HasClickHandlers getAddButton();
+    HasClickHandlers getDeleteButton();
+    HasClickHandlers getList();
+    void setData(List&lt;String&gt; data);
+    int getClickedRow(ClickEvent event);
+    List&lt;Integer&gt; getSelectedRows();
+    Widget asWidget();
+  }
+}
+</code></pre><p>While the ContactsView implements the above interface using Buttons and a FlexTable, the ContactsPresenter is none the wiser. In addition, if we wanted to run this application within a mobile browser we could switch out the views without having to change any of the surrounding application code. To be transparent, with methods such as getClickedRow() and getSelectedRows() the presenter is making the assumption that a view is going to display the data in the form of a list. That said, it&rsquo;s at a high enough level that a view is still able to switch out the specific implementation of the list without any side effects. Method setData() is a simple way of getting <a href="#model">model</a> data into the <a href="#view">view</a> without the view having intrinsic knowledge of the model itself. The data being displayed is directly tied to the complexity of our model. A more complex model may lead to more data being displayed in a view. The beauty of using setData() is that changes to the model can be made without updating the view code.</p><p>To show you how this works, let&rsquo;s look at the code that is executed upon receiving the list of Contacts from the server:</p>
+<pre><code>public class ContactsPresenter implements Presenter {
+  ...
+  private void fetchContactDetails() {
+    rpcService.getContactDetails(new AsyncCallback&lt;ArrayList&lt;ContactDetails&gt;&gt;() {
+      public void onSuccess(ArrayList&lt;ContactDetails&gt; result) {
+          contacts = result;
+          List&lt;String&gt; data = new ArrayList&lt;String&gt;();
+
+          for (int i = 0; i &lt; result.size(); ++i) {
+            data.add(contacts.get(i).getDisplayName());
+          }
+
+          display.setData(data);
+      }
+
+      public void onFailure(Throwable caught) {
+        ...
+      }
+    });
+  }
+}
+</code></pre><p>To listen for UI events we have the following:</p>
+<pre><code><br/>public class ContactsPresenter implements Presenter {
+  ...
+  public void bind() {
+    display.getAddButton().addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        eventBus.fireEvent(new AddContactEvent());
+      }
+    });
+
+    display.getDeleteButton().addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        deleteSelectedContacts();
+      }
+    });
+
+    display.getList().addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        int selectedRow = display.getClickedRow(event);
+
+        if (selectedRow &gt;= 0) {
+          String id = contacts.get(selectedRow).getId();
+          eventBus.fireEvent(new EditContactEvent(id));
+        }
+      }
+    });
+  }
+}
+</code></pre><p>To respond to UI events, such as the user deleting a list of selected contacts, we have the following:</p>
+<pre><code>public class ContactsPresenter implements Presenter {
+  ...
+  private void deleteSelectedContacts() {
+    List&lt;Integer&gt; selectedRows = display.getSelectedRows();
+    ArrayList&lt;String&gt; ids = new ArrayList&lt;String&gt;();
+
+    for (int i = 0; i &lt; selectedRows.size(); ++i) {
+      ids.add(contactDetails.get(selectedRows.get(i)).getId());
+    }
+
+    rpcService.deleteContacts(ids, new AsyncCallback&lt;ArrayList&lt;ContactDetails&gt;&gt;() {
+      public void onSuccess(ArrayList&lt;ContactDetails&gt; result) {
+        contactDetails = result;
+        List&lt;String&gt; data = new ArrayList&lt;String&gt;();
+
+        for (int i = 0; i &lt; result.size(); ++i) {
+          data.add(contactDetails.get(i).getDisplayName());
+        }
+
+        display.setData(data);
+      }
+
+      public void onFailure(Throwable caught) {
+        ...
+      }
+    });
+  }
+}
+</code></pre><p>Again, in order to reap the benefits of the MVP model, the <a href="#presenter">presenter</a> should have no knowledge of any widget-based code. So long as we wrap a view in a display interface that can be mocked and our JRE tests never call <code>asWidget()</code>, all is grand. That&rsquo;s how you can have your cake and eat it too: minimize the GWT ties to allow a non-GWTTestCase to be useful, but still have the ability to slap a Display instance into a panel.</p><h2>Events and the Event Bus <a id="events"></a></h2><p>Once you have <a href="#presenter">presenters</a> sinking events that are sourced by widgets within <a href="#view">views</a>, you&rsquo;ll want to take some action on these events. To do so, you&rsquo;ll want to rely on an Event Bus that is built on top of GWT&rsquo;s <a href="/javadoc/latest/com/google/web/bindery/event/shared/SimpleEventBus.html">EventBus</a> such as <a href="/javadoc/latest/com/google/web/bindery/event/shared/EventBus.html">SimpleEventBus</a>. The Event Bus is a mechanism for a) passing events and b) registering to be notified of some subset of these events.</p><p>It&rsquo;s important to keep in mind that not all events should be placed on the Event Bus. Blindly dumping all of the possible events within your app on the Event Bus can lead to chatty applications that get bogged down in event handling. Not to mention, you&rsquo;ll find yourself writing a fair amount of boilerplate code to define, source, sink, and act upon these events.</p><p>App-wide events are really the only events that you want to be passing around on the Event Bus. The app is uninterested in events such as &ldquo;the user clicked enter&rdquo; or &ldquo;an RPC is about to be made&rdquo;. Instead (at least in our example app), we pass around events such as a contact being updated, the user switching to the edit view, or an RPC that deleted a user has successfully returned from the server.</p><p>Below is a list of the events that we have defined.</p>
+<ul>
+  <li>AddContactEvent</li>
+  <li>ContactDeletedEvent</li>
+  <li>ContactUpdatedEvent</li>
+  <li>EditContactCancelledEvent</li>
+  <li>EditContactEvent</li>
+</ul><p>Each of these events will extend GwtEvent and override dispatch() and getAssociatedType(). Method dispatch() takes a single param of type EventHandler, and for our application we have defined handler interfaces for each of our events.</p>
+<ul>
+  <li>AddContactEventHandler</li>
+  <li>ContactDeletedEventHandler</li>
+  <li>ContactUpdatedEventHandler</li>
+  <li>EditContactCancelledEventHandler</li>
+  <li>EditContactEventHandler</li>
+</ul><p>To demonstrate how these pieces fit together let&rsquo;s look at what takes place when a user chooses to edit a contact. First we&rsquo;ll need the AppController to register for the EditContactEvent. To do so, we call <a href="/javadoc/latest/com/google/web/bindery/event/shared/EventBus.html#addHandler(com.google.web.bindery.event.shared.GwtEvent.Type,%20H)">EventBus.addHandler()</a> and pass in the <a href="/javadoc/latest/com/google/web/bindery/event/shared/GwtEvent.Type.html">GwtEvent.Type</a> as well as the handler that should be called when the event is fired. The code below shows how the AppController registers to receive EditContactEvents.</p>
+<pre><code>public class AppController implements ValueChangeHandler {
+  ...
+  eventBus.addHandler(EditContactEvent.TYPE,
+      new EditContactEventHandler() {
+        public void onEditContact(EditContactEvent event) {
+          doEditContact(event.getId());
+        }
+      });
+  ...
+}
+</code></pre><p>Here the AppController has an instance of the <a href="/javadoc/latest/com/google/web/bindery/event/shared/EventBus.html">EventBus</a>, called eventBus, and is registering a new EditContactEventHandler. This handler will grab the id of the contact to be edited, and pass it to the doEditContact() method whenever an event of EditContactEvent.getAssociatedType() is fired. Multiple components can be listening for a single event, so when an event is fired using the <a href="/javadoc/latestcom/google/web/bindery/event/shared/EventBus.html#fireEvent(com.google.web.bindery.shared.GwtEvent)">EventBus.fireEvent()</a>, the EventBus looks for any component that has added a handler for event.getAssociatedType(). For each component that has a handler, the EventBus calls event.dispatch() with that component&rsquo;s EventHandler interface.</p><p>To see how an event is fired, let&rsquo;s take a look at the code that sources the EditContactEvent. As mentioned above, we&rsquo;ve added ourselves as a click handler on the ListContactView&rsquo;s list. Now when a user clicks on the contacts list, we&rsquo;ll notify the rest of the app by calling the EventBus.fireEvent() method with a EditContactEvent() class that is initialized with the id of the contacts to be edited.</p>
+<pre><code><br/>public class ContactsPresenter {
+  ...
+  display.getList().addClickHandler(new ClickHandler() {
+    public void onClick(ClickEvent event) {
+      int selectedRow = display.getClickedRow(event);
+
+      if (selectedRow &gt;= 0) {
+        String id = contactDetails.get(selectedRow).getId();
+        eventBus.fireEvent(new EditContactEvent(id));
+      }
+    }
+  });
+  ...
+}
+</code></pre><p>View transition is a proactive event flow, where the event source lets the rest of the app know, &ldquo;Hey a view transition is about to take place, so if you have some last minute cleanup work to do, I&rsquo;d suggest you do it now&rdquo;. With RPC it&rsquo;s a bit different. The event is fired when the RPC returns rather than before the RPC is made. The reason being is that the app is really only concerned when some state has changed (contact values changed, contact deleted, etc&hellip;), which is the case after the RPC has returned.</p><p>Below is an example of the event that is fired upon successfully updating a contact.</p>
+<pre><code>public class EditContactPresenter {
+  ...
+  private void doSave() {
+    contact.setFirstName(display.getFirstName().getValue());
+    contact.setLastName(display.getLastName().getValue());
+    contact.setEmailAddress(display.getEmailAddress().getValue());
+
+    rpcService.updateContact(contact, new AsyncCallback&lt;Contact&gt;() {
+        public void onSuccess(Contact result) {
+          eventBus.fireEvent(new ContactUpdatedEvent(result));
+        }
+        public void onFailure(Throwable caught) {
+           ... 
+        }
+    });
+  }
+  ...
+}
+</code></pre><h2>History and view transitions <a id="history"></a></h2><p>One of the more integral parts of any web app is the handling of <a href="../doc/latest/DevGuideCodingBasics.html#DevGuideHistory">history</a> events. History events are token strings that represent some new state within your application. Think of them as &ldquo;markers&rdquo; for where you are in the application. Take, for example, a user navigating from the &ldquo;Contact List&rdquo; view to the &ldquo;Add Contact&rdquo; view and then clicking the &ldquo;Back&rdquo; button. The resulting action should land the user back on the &ldquo;Contact List&rdquo; view, and to do so you would push the initial state (the &ldquo;Contact List&rdquo; view) onto the history stack followed by a push of the &ldquo;Add Contact&rdquo; view. Thus when they click the back button the &ldquo;Add Contact&rdquo; token will be popped off of the stack and the current history token will be the &ldquo;Contact List&rdquo; view.</p><p>Now that we have the flow straight, we need to decide where to put the code. Given that history is not specific to a particular view, it makes sense to add it to the AppController class.</p><p>To start with, we&rsquo;ll need to have the AppController implement <a href="/javadoc/latest/com/google/gwt/event/logical/shared/ValueChangeHandler.html">ValueChangeHandler</a> and declare its own <a href="/javadoc/latest/com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)">onValueChange()</a> method. The interface and parameter are of type String because the History events are simply the tokens that are pushed onto the stack.</p>
+<pre><code><br/>public class AppController implements ValueChangeHandler&lt;String&gt; {
+  ...
+  public void onValueChange(ValueChangeEvent&lt;String&gt; event) {
+    String token = event.getValue();
+    ...
+  }
+}
+</code></pre><p>Next we&rsquo;ll need to register to receive History events, much like we registered for events coming off of the EventBus.</p>
+<pre><code>public class AppController implements ValueChangeHandler&lt;String&gt; {
+  ...
+  private void bind() {
+    History.addValueChangeHandler(this);
+    ...
+  }
+}
+</code></pre><p>In the example above, where the user navigates from the &ldquo;Contact List&rdquo; view to the &ldquo;Add Contact&rdquo; view, we mentioned setting an initial state. This is important because it not only gives us some starting point, but it&rsquo;s also the piece of code that will check for an existing history token (for example, if a user bookmarked a specific state within your app) and route the user to the appropriate view. The AppController&rsquo;s go() method, which is called after everything has been wired up, is where we&rsquo;ll add this logic.</p>
+<pre><code><br/>public class AppController implements ValueChangeHandler&lt;String&gt; {
+  ...
+  public void go(final HasWidgets container) {
+    this.container = container;
+
+    if (&quot;&quot;.equals(History.getToken())) {
+      History.newItem(&quot;list&quot;);
+    }
+    else {
+      History.fireCurrentHistoryState();
+    }
+  }
+}
+</code></pre><p>With the above plumbing in place, we need to do something meaningful within the onValueChange() method that is called whenever the user clicks the &ldquo;Back&rdquo; or &ldquo;Forward&rdquo; button. Using the getValue() of the event, we&rsquo;ll decide which view to show next.</p>
+<pre><code>public class AppController implements ValueChangeHandler&lt;String&gt; {
+  ...
+  public void onValueChange(ValueChangeEvent&lt;String&gt; event) {
+    String token = event.getValue();
+
+    if (token != null) {
+      Presenter presenter = null;
+
+      if (token.equals(&quot;list&quot;)) {
+        presenter = new ContactsPresenter(rpcService, eventBus, new ContactView());
+      }
+      else if (token.equals(&quot;add&quot;)) {
+        presenter = new EditContactPresenter(rpcService, eventBus, new EditContactView());
+      }
+      else if (token.equals(&quot;edit&quot;)) {
+        presenter = new EditContactPresenter(rpcService, eventBus, new EditContactView());
+      }
+
+      if (presenter != null) {
+        presenter.go(container);
+      }
+    }
+}
+</code></pre><p>Now when the user clicks the back button from the &ldquo;Add Contact&rdquo; view, GWT&rsquo;s History mechanism will call the onValueChange() method with the previous history token. In our example the previous view was the &ldquo;Contact List&rdquo; view and the previous history token (which was set in the go() method) is &ldquo;list&rdquo;.</p><p>Handling history events in this manner isn&rsquo;t limited to just &ldquo;Back&rdquo; and &ldquo;Forward&rdquo; handling, they can used for all view transitions. Going back to the AppController&rsquo;s go() method, you&rsquo;ll notice that we call fireCurrentHistoryState() if the current History token is not null. Thus if user specifies <a href="http://myapp.com/contacts.html#add">http://myapp.com/contacts.html#add</a>, the initial history token will be &ldquo;add&rdquo; and fireCurrentHistoryState() will in turn call the onValueChange() with this token. This isn&rsquo;t specific to just setting up the initial view with the app; other user interactions that result in a view transition can call History.newItem(), which will push a new history token onto the stack which will in turn trigger a call to onValueChange().</p><p>Below is an example of how you can hook up the ContactsPresenter to the &ldquo;Add Contact&rdquo; button, fire the associated event upon receiving the click, and transition to the &ldquo;Add Contact&rdquo; view as a result.</p>
+<pre><code><br/>public class ContactsPresenter implements Presenter {
+  ...
+  public void bind() {
+    display.getAddButton().addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        eventBus.fireEvent(new AddContactEvent());
+      }
+    });
+  }
+}
+</code></pre>
+<pre><code>public class AppController implements ValueChangeHandler&lt;String&gt; {
+  ...
+  private void bind() {
+    ...
+    eventBus.addHandler(AddContactEvent.TYPE,
+      new AddContactEventHandler() {
+        public void onAddContact(AddContactEvent event) {
+          doAddNewContact();
+        }
+    });
+  }
+
+  private void doAddNewContact() {
+    History.newItem(&quot;add&quot;);
+  }
+}
+</code></pre><p>Since the view transition logic is already built into the onValueChange() method, this provides a centralized, reusable way of navigating within the app.</p><h2>Testing <a id="testing"></a></h2><p>The MVP model takes the pain out of unit testing a GWT app. That&rsquo;s not to say that you can&rsquo;t write unit tests without using the MVP model. In fact you can, but they will often times be slower than the average JRE-based JUnit test. Why? Well, in short, applications that don&rsquo;t utilize the MVP model will require test cases that test components that rely on a DOM being present, a Javascript engine, etc&hellip; Essentially these test cases need to run in a browser.</p><p>GWT&rsquo;s <a href="/javadoc/latest/com/google/gwt/junit/client/GWTTestCase.html">GWTTestCase</a> makes this possible, as it will launch a &ldquo;headless&rdquo; browser to run each of the tests. The launching of the browser coupled with the actual execution of the test case is why these tests typically take longer than standard JRE tests. Within the MVP model, we strive to make a view, the component that encompasses the bulk of our code that relies on the DOM and Javascript engine, as small and as simplistic as possible. Less code equals less testing which means less time that it takes to actually run your tests. If the bulk of the code within your app is encompassed within a presenter, and that presenter relies strictly on JRE-based components, you can build the majority of your test cases as efficient, vanilla JUnit tests.</p><p>To demonstrate the benefits of using the MVP model to drive JRE-based unit tests, rather than those based on GWTTestCase, we&rsquo;ve added the following tests to our Contacts app.</p>
+<div class="screenshot">
+  ![screenshot](../images/contacts-project-hierarchy-testing.png)
+</div><p>Each example is set up to test adding a list of ContactDetails, sorting those ContactDetails, and then verifying that the sorted list is correct. Taking a look at the ExampleJRETest, we have the following code.</p>
+<pre><code><br/>public class ExampleJRETest extends TestCase {
+  private ContactsPresenter contactsPresenter;
+  private ContactsServiceAsync mockRpcService;
+  private EventBus eventBus;
+  private ContactsPresenter.Display mockDisplay;
+
+  protected void setUp() {
+    mockRpcService = createStrictMock(ContactsServiceAsync.class);
+    eventBus = new SimpleEventBus();
+    mockDisplay = createStrictMock(ContactsPresenter.Display.class);
+    contactsPresenter = new ContactsPresenter(mockRpcService, eventBus, mockDisplay);
+  }
+
+  public void testContactSort(){
+    List&lt;ContactDetails&gt; contactDetails = new ArrayList&lt;ContactDetails&gt;();
+    contactDetails.add(new ContactDetails(&quot;0&quot;, &quot;c_contact&quot;));
+    contactDetails.add(new ContactDetails(&quot;1&quot;, &quot;b_contact&quot;));
+    contactDetails.add(new ContactDetails(&quot;2&quot;, &quot;a_contact&quot;));
+    contactsPresenter.setContactDetails(contactDetails);
+    contactsPresenter.sortContactDetails();
+    assertTrue(contactsPresenter.getContactDetail(0).getDisplayName().equals(&quot;a_contact&quot;));
+    assertTrue(contactsPresenter.getContactDetail(1).getDisplayName().equals(&quot;b_contact&quot;));
+    assertTrue(contactsPresenter.getContactDetail(2).getDisplayName().equals(&quot;c_contact&quot;));
+  }
+}
+</code></pre><p>Because we have structured the view behind a Display interface, we&rsquo;re able to mock it out (using EasyMock in this example), remove the need for access to the browser&rsquo;s resources (DOM, Javascript engine, etc&hellip;), and avoid having to base our tests on GWTTestCase.</p><p>We then created the same test using GWTTestCase.</p>
+<pre><code>public class ExampleGWTTest extends GWTTestCase {
+  private ContactsPresenter contactsPresenter;
+  private ContactsServiceAsync rpcService;
+  private EventBus eventBus;
+  private ContactsPresenter.Display display;
+
+  public String getModuleName() {
+    return &quot;com.google.gwt.sample.contacts.Contacts&quot;;
+  }
+
+  public void gwtSetUp() {
+    rpcService = GWT.create(ContactsService.class);
+    eventBus = new SimpleEventBus();
+    display = new ContactsView();
+    contactsPresenter = new ContactsPresenter(rpcService, eventBus, display);
+  }
+
+  public void testContactSort(){
+    List&lt;ContactDetails&gt; contactDetails = new ArrayList&lt;ContactDetails&gt;();
+    contactDetails.add(new ContactDetails(&quot;0&quot;, &quot;c_contact&quot;));
+    contactDetails.add(new ContactDetails(&quot;1&quot;, &quot;b_contact&quot;));
+    contactDetails.add(new ContactDetails(&quot;2&quot;, &quot;a_contact&quot;));
+    contactsPresenter.setContactDetails(contactDetails);
+    contactsPresenter.sortContactDetails();
+    assertTrue(contactsPresenter.getContactDetail(0).getDisplayName().equals(&quot;a_contact&quot;));
+    assertTrue(contactsPresenter.getContactDetail(1).getDisplayName().equals(&quot;b_contact&quot;));
+    assertTrue(contactsPresenter.getContactDetail(2).getDisplayName().equals(&quot;c_contact&quot;));
+  }
+}
+</code></pre><p>Given that our app was designed using the MVP model, it realistically makes no sense to structure your tests like this. But that&rsquo;s not the point. The point is that ExampleGWTTest takes <strong>15.23 secs</strong> to run, whereas the lightweight ExampleJRETest takes <strong>0.01 secs</strong>. If you can manage to decouple app logic from widget-based code, your unit tests will be much more efficient. Imagine these numbers applied across the board to the hundreds of automated tests that are run on each build.</p><p>For more information on testing and the MVP model, checkout the article, <a href="testing_methodologies_using_gwt.html">Testing Methodologies Using GWT</a>.</p><h2>Follow-up topics <a id="follow-up"></a></h2><p>The MVP architecture is expansive; in future articles we look to discuss the following concepts:</p>
+<ul>
+  <li><a href="mvp-architecture-2.html">UI Binder and MVP</a></li>
+  <li><a href="mvp-architecture-2.html">Code splitting an MVP-based app</a></li>
+  <li>Using Gin to reduce code and facilitate testing</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

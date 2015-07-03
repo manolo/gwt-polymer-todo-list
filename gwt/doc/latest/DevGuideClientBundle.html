@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../'>GWT homepage</a></li>
+                    <li><a href='./../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/DevGuideClientBundle.md"></a>
+                    </span>
+                    <h1>Client Bundle</h1><p>The resources in a deployed GWT application can be roughly categorized into resources to never cache (<code>.nocache.js</code>), to cache forever (<code>.cache.html</code>), and everything else (<code>myapp.css</code>). The <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/ClientBundle.html">ClientBundle</a> interface moves entries from the everything-else category into the cache-forever category.</p>
+<ol>
+  <li><a href="#ClientBundle">Overview</a></li>
+  <li><a href="#DataResource">DataResource</a></li>
+  <li><a href="#TextResource">TextResource and ExternalTextResource</a></li>
+  <li><a href="#ImageResource">ImageResource</a></li>
+  <li><a href="#GwtCreateResource">GwtCreateResource</a></li>
+  <li><a href="#CssResource">CssResource</a></li>
+  <li><a href="#CssResourceCookbook">CssResourceCookbook</a></li>
+</ol><h2>Overview<a id="ClientBundle"></a></h2>
+<ul>
+  <li><a href="#ClientBundle_Goals">Goals</a></li>
+  <li><a href="#ClientBundleExamples">Examples</a></li>
+  <li><a href="#I18N">I18N</a></li>
+  <li><a href="#Pluggable_Resource_Generation">Pluggable Resource Generation</a></li>
+  <li><a href="#Levers_and_knobs">Levers and knobs</a></li>
+  <li><a href="#Resource_types">Resource types</a></li>
+</ul><h3>Goals<a id="ClientBundle_Goals"></a></h3>
+<ul>
+  <li>No more uncertainty about whether your application is getting the right contents for program resources.</li>
+  <li>Decrease non-determinism caused by intermediate proxy servers.</li>
+  <li>Enable more aggressive caching headers for program resources.</li>
+  <li>Eliminate mismatches between physical filenames and constants in Java code by performing consistency checks during the compile.</li>
+  <li>Use &lsquo;data:&rsquo; URLs, JSON bundles, or other means of embedding resources in compiled JS when browser- and size-appropriate to eliminate unneeded round trips.</li>
+  <li>Provide an extensible design for adding new resource types.</li>
+  <li>Ensure there is no penalty for having multiple <code>ClientBundle</code> resource functions refer to the same content.</li>
+</ul><h4>Non-Goals</h4>
+<ul>
+  <li>To provide a file-system abstraction</li>
+</ul><h3>Examples<a id="ClientBundleExamples"></a></h3><p>To use <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/ClientBundle.html">ClientBundle</a>, add an <code>inherits</code> tag to your <code>gwt.xml</code> file:</p>
+<pre><code>&lt;inherits name=&quot;com.google.gwt.resources.Resources&quot; /&gt;
+</code></pre><p>If you write this interface:</p>
+<pre><code><br/>public interface MyResources extends ClientBundle {
+  public static final MyResources INSTANCE =  GWT.create(MyResources.class);
+
+  @Source(&quot;my.css&quot;)
+  public CssResource css();
+
+  @Source(&quot;config.xml&quot;)
+  public TextResource initialConfiguration();
+
+  @Source(&quot;manual.pdf&quot;)
+  public DataResource ownersManual();
+}
+</code></pre><p>You can then say:</p>
+<pre><code class="// Inject the contents of the CSS file">  MyResources.INSTANCE.css().ensureInjected();
+
+  // Display the manual file in an iframe
+  new Frame(MyResources.INSTANCE.ownersManual().getSafeUri().asString());
+</code></pre><h3>I18N<a id="I18N"></a></h3><p><code>ClientBundle</code> is compatible with GWT&rsquo;s I18N module.</p><p>Suppose you defined a resource:</p>
+<pre><code>@Source(&quot;default.txt&quot;)
+public TextResource defaultText();
+</code></pre><p>For each possible value of the <code>locale</code> deferred-binding property, the <code>ClientBundle</code> generator will look for variations of the specified filename in a manner similar to that of Java&rsquo;s <code>ResourceBundle</code>.</p><p>Suppose the <code>locale</code> were set to <code>fr_FR</code>. The generator would look for files in the following order:</p>
+<ol>
+  <li>default_fr_FR.txt</li>
+  <li>default_fr.txt</li>
+  <li>default.txt</li>
+</ol><p>This will work equally well with all resource types, which can allow you to provide localized versions of other resources, say <code>ownersManual_en.pdf</code> versus <code>ownersManual_fr.pdf</code>.</p><h3>Pluggable Resource Generation<a id="Pluggable_Resource_Generation"></a></h3><p>Each subtype of <code>[ResourcePrototype](/javadoc/latest/index.html?com/google/gwt/resources/client/ResourcePrototype.html)</code> must define a <code>[@ResourceGeneratorType](/javadoc/latest/index.html?com/google/gwt/resources/ext/ResourceGeneratorType.html)</code> annotation whose value is a concrete Java class that extends <code>[ResourceGenerator](/javadoc/latest/index.html?com/google/gwt/resources/ext/ResourceGenerator.html)</code>. The instance of the <code>ResourceGenerator</code> is responsible for accumulation (or bundling) of incoming resource data as well as a small degree of code generation to assemble the concrete implementation of the <code>ClientBundle</code> class. Implementors of <code>ResourceGenerator</code> subclasses can expect that only one <code>ResourceGenerator</code> will be created for a given type of resource within a <code>ClientBundle</code> interface.</p><p>The methods on a <code>ResourceGenerator</code> are called in the following order</p>
+<ol>
+  <li><code>init</code> to provide the <code>ResourceGenerator</code> with a <code>[ResourceContext](/javadoc/latest/index.html?com/google/gwt/resources/ext/ResourceContext.html)</code></li>
+  <li><code>prepare</code> is called for each <code>JMethod</code> the <code>ResourceGenerator</code> is expected to handle</li>
+  <li><code>createFields</code> allows the <code>ResourceGenerator</code> to add code at the class level</li>
+  <li><code>createAssignment</code> is called for each <code>JMethod</code>. The generated code should be suitable for use as the right-hand side of an assignment expression.</li>
+  <li><code>finish</code> is called after all assignments should have been written.</li>
+</ol><p><code>ResourceGenerators</code> are expected to make use of the <code>[ResourceGeneratorUtil](/javadoc/latest/index.html?com/google/gwt/resources/ext/ResourceGeneratorUtil.html)</code> class.</p><h3>Levers and knobs<a id="Levers_and_knobs"></a></h3>
+<ul>
+  <li><code>ClientBundle.enableInlining</code> is a deferred-binding property that can be used to disable the use of <code>data:</code> URLs in browsers that would otherwise support inlining resource data into the compiled JS.* <code>ClientBundle.enableRenaming</code> is a configuration property that will disable the use of strongly-named cache files.</li>
+</ul><h3>Resource types<a id="Resource_types"></a></h3><p>These resource types are valid return types for methods defined in a ClientBundle:</p>
+<ul>
+  <li><a href="#ImageResource">ImageResource</a></li>
+  <li><a href="#CssResource">CssResource</a></li>
+  <li><a href="#DataResource">DataResource</a></li>
+  <li><a href="#TextResource">ExternalTextResource</a></li>
+  <li><a href="#GwtCreateResource">GwtCreateResource</a></li>
+  <li><a href="#TextResource">TextResource</a></li>
+  <li>Subclasses of ClientBundle (for nested bundles)</li>
+</ul><h2>DataResource<a id="DataResource"></a></h2><p>A <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/DataResource.html">DataResource</a> is the simplest of the resource types, offering a URL by which the contents of a file can be retrieved at runtime. The main optimization offered is to automatically rename files based on their contents in order to make the resulting URL strongly-cacheable by the browser. Very small files may be converted into <code>data:</code> URLs on those browsers that support them.</p>
+<pre><code>interface Resources extends ClientBundle {
+  Resources INSTANCE = GWT.create(Resources.class);
+
+  @Source(&quot;mycursor.cur&quot;)
+  DataResource customCursor();
+}
+
+// Elsewhere
+someDiv.getStyle().setProperty(&quot;cursor&quot;, &quot;url(&quot; + Resources.INSTANCE.customCursor().getUrl() + &quot;)&quot;);
+</code></pre><p>Resources that are not appropriate for being inlined into the compiled JavaScript as <code>data:</code> URLs will be emitted into the compilation output with strong names, based on the contents of the file. For example, <code>foo.pdf</code> will be given a name similar to <code>ABC1234.cache.pdf</code>. The webserver should be configured to serve any files matching the <code>*.cache.*</code> glob with publicly-cacheable headers and a far-future <code>Expires</code> header.</p><h2>TextResource and ExternalTextResource<a id="TextResource"></a></h2><p>The related resource types <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/TextResource.html">TextResource</a> and <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/ExternalTextResource.html">ExternalTextResource</a> provide access to static text content. The main difference between these two types is that the former interns the text into the compiled JavaScript, while the latter bundles related text resources into a single file, which is accessed asynchronously.</p>
+<pre><code>interface Resources extends ClientBundle {
+  Resources INSTANCE = GWT.create(Resources.class);
+
+  @Source(&quot;a.txt&quot;)
+  TextResource synchronous();
+
+  @Source(&quot;b.txt&quot;)
+  ExternalTextResource asynchronous();
+}
+
+// Using a TextResource
+myTextArea.setInnerText(Resources.INSTANCE.synchronous().getText());
+
+// Using an ExternalTextResource
+Resources.INSTANCE.asynchronous().getText(new ResourceCallback&lt;TextResource&gt;() {
+  public void onError(ResourceException e) { ... }
+  public void onSuccess(TextResource r) {
+    myTextArea.setInnerText(r.getText());
+  }
+});
+</code></pre><h2>ImageResource<a id="ImageResource"></a></h2><p>This section describes how <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/ImageResource.html">ImageResource</a> can tune the compile-time processing of image data and provide efficient access to image data at runtime. </p>
+<ul>
+  <li><a href="#ImageResourceGoal">Goal</a></li>
+  <li><a href="#ImageResourceOverview">Overview</a>
+  <ul>
+    <li><a href="#ImageOptions">ImageOptions</a></li>
+    <li><a href="#Supported_formats">Supported formats</a></li>
+  </ul></li>
+  <li><a href="#Converting_from_ImageBundle">Converting from ImageBundle</a></li>
+</ul><h3>Goal<a id="ImageResourceGoal"></a></h3>
+<ul>
+  <li>Provide access to image data at runtime in the most efficient way possible* Do not bind the <code>ImageResource</code> API to a particular widget framework</li>
+</ul><h4>Non-Goals</h4>
+<ul>
+  <li>To provide a general-purpose image manipulation framework.</li>
+</ul><h3>Overview<a id="ImageResourceOverview"></h3>
+<ol>
+  <li>Define a ClientBundle with one or more <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/ImageResource.html">ImageResource</a> accessors. For each accessor method, add an @Source annotation with the path of the new image you want to add to your program. The ClientBundle generator combines all of the images defined in your interface into a single, optimized image.</li>
+</ol>
+<pre><code>interface Resources extends ClientBundle {
+  @Source(&quot;logo.png&quot;)
+  ImageResource logo();
+
+  @Source(&quot;arrow.png&quot;)
+  @ImageOptions(flipRtl = true)
+  ImageResource pointer();
+}
+</code></pre>
+<ol>
+  <li>Instantiate the <code>ClientBundle</code> via a call to <code>GWT.create()</code>. </li></li>
+  <li>Instantiate one or more Image widget or use with the <a href="#Image_Sprites">CssResource @sprite</a> directive.</li>
+</ol><p>For example, the code:</p>
+<pre><code>Resources resources = GWT.create(Resources.class);
+Image img = new Image(resources.logo());
+</code></pre><p>causes GWT to load the composite image generated for Resources and then creates an Image that is the correct subregion for just the logo image.</li></p><h4><code>ImageOptions</code><a id="ImageOptions"></a></h4><p>The <code>@ImageOptions</code> annotation can be applied to the <code>ImageResource</code> accessor method in order to tune the compile-time processing of the image data:</p>
+<ul>
+  <li><code>flipRtl</code> is a boolean value that will cause the image to be mirrored about its Y-axis when <code>LocaleInfo.isRTL()</code> returns <code>true</code>.</li>
+  <li><code>repeatStyle</code> is an enumerated value that is used in combination with the<code>@sprite</code> directive to indicate that the image is intended to be tiled.</li>
+</ul><h4>Supported formats<a id="Supported_formats"></a></h4><p><code>ImageBundleBuilder</code> uses the Java <a href="http://java.sun.com/javase/6/docs/api/javax/imageio/package-summary.html">ImageIO</a> framework to read image data. This includes support for all common web image formats.</p><p>Animated GIF files are supported by <code>ImageResource</code>. While the image data will not be incorporated into an image strip, the resource is still served in a browser-optimal fashion by the larger <code>ClientBundle</code> framework.</p><h3>Converting from ImageBundle<a id="Converting_from_ImageBundle"></a></h3><p>Only minimal changes are required to convert existing code to use <code>ImageResource</code>.</p>
+<ul>
+  <li><code>ImageBundle</code> becomes <code>ClientBundle</code></li>
+  <li><code>AbstractImageProtoype</code> becomes <code>ImageResource</code></li>
+  <li><code>AbstractImagePrototype.createImage()</code> becomes <code>new Image(imageResource)</code></li>
+  <li>Other methods on <code>AbstractImagePrototype</code> can continue to be used by calling <code>AbstractImagePrototype.create(imageResource)</code> to provide an API wrapper.</li>
+</ul><h2>GwtCreateResource<a id="GwtCreateResource"></a></h2><p>The <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/GwtCreateResource.html">GwtCreateResource</a> is a bridge type between <code>ClientBundle</code> and any other (resource) type that is default-instantiable. The instance of the <code>GwtCreateResource</code> acts as a factory for some other type.</p>
+<pre><code>interface Resources extends ClientBundle {
+  Resources INSTANCE = GWT.create(Resources.class);
+
+  @ClassType(SomeClass.class)
+  GwtCreateResource&lt;ReturnType&gt; factory();
+}
+
+// Elsewhere
+ReturnType obj = Resources.INSTANCE.factory().create();
+</code></pre><p>While the above is equivalent to</p>
+<pre><code>ReturnType obj = GWT.&lt;ReturnType&gt; create(SomeClass.class);
+</code></pre><p>it allows the consuming classes to be ignorant of the specific class literal passed into <code>GWT.create()</code>. It is not necessary for there to be a specific deferred-binding rule in place for <code>SomeClass</code> as long as that type is default-instantiable.</p><h2>CssResource<a id="CssResource"></a></h2><p>This section describes <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/CssResource.html">CssResource</a> and the compile-time processing of CSS. </p>
+<ol>
+  <li><a href="#CssResource_Goals">Goals</a></li>
+  <li><a href="#CssResource_Overview">Overview</a></li>
+  <li><a href="#Features">Features</a>
+  <ul>
+    <li><a href="#Constants">Constants</a></li>
+    <li><a href="#Runtime_substitution">Runtime substitution</a></li>
+    <li><a href="#Value_function">Value function</a></li>
+    <li><a href="#Literal_function">Literal function</a></li>
+    <li><a href="#Conditional_CSS">Conditional CSS</a></li>
+    <li><a href="#Image_Sprites">Image Sprites</a></li>
+    <li><a href="#References_to_Data_Resources">References to Data Resources</a></li>
+    <li><a href="#RTL_support">RTL support</a></li>
+    <li><a href="#Selector_obfuscation">Selector obfuscation</a></li>
+  </ul></li>
+  <li><a href="#Optimizations">Optimizations</a>
+  <ul>
+    <li><a href="#Basic_minification">Basic minification</a></li>
+    <li><a href="#Selector_merging">Selector merging</a></li>
+    <li><a href="#Property_merging">Property merging</a></li>
+  </ul></li>
+  <li><a href="#Levers_and_Knobs">Levers and Knobs</a></li>
+  <li><a href="#Selector_obfuscation_details">Selector obfuscation details</a>
+  <ul>
+    <li><a href="#Strict_scoping">Strict scoping</a></li>
+    <li><a href="#Scope">Scope</a></li>
+    <li><a href="#Shared_scopes">Shared scopes</a></li>
+    <li><a href="#Imported_scopes">Imported scopes</a></li>
+    <li><a href="#External_and_legacy_scopes">External and legacy scopes</a></li>
+    <li><a href="#Automatically_generating_interfaces">Automatically generating interfaces</a></li>
+  </ul></li>
+</ol><p>See also the <a href="#CssResourceCookbook">CssResourceCookbook</a> and <a href="/javadoc/latest/index.html?com/google/gwt/dom/client/StyleInjector.html">StyleInjector</a>. </p><h3>Goals<a id="CssResource_Goals"></a></h3>
+<ul>
+  <li>Primary
+  <ul>
+    <li>Compatibility with non-GWT-aware CSS parsers (i.e. any extensions should be valid CSS syntax)</li>
+    <li>This does not imply that the stylesheet would necessarily make sense if you just displayed it in a browser</li>
+    <li>Syntax validation</li>
+    <li>Minification</li>
+    <li>Leverage GWT compiler
+    <ul>
+      <li>Different CSS for different browsers, automatically</li>
+      <li>Static evaluation of content</li>
+    </ul></li>
+  </ul></li>
+  <li>Secondary
+  <ul>
+    <li>Basic CSS Modularization
+    <ul>
+      <li>Via dependency-injection API style</li>
+      <li>Widgets can inject their own CSS only when it&rsquo;s needed</li>
+    </ul></li>
+    <li>BiDi (Janus-style?)</li>
+    <li>CSS image strips</li>
+    <li>&ldquo;Improve CSS&rdquo;
+    <ul>
+      <li>Constants</li>
+      <li>Simple expressions</li>
+    </ul></li>
+  </ul></li>
+  <li>Tertiary
+  <ul>
+    <li>Runtime manipulation (StyleElement.setEnabled() handles many cases)</li>
+    <li>Compile-time class-name checking (Java/CSS)</li>
+    <li>Obfuscation</li>
+  </ul></li>
+</ul><h4>Non-Goals</h4>
+<ul>
+  <li>Server-side manipulation
+  <ul>
+    <li>All features in CssResource must be implemented with compile-time and runtime code only. No features may depend on runtime support from server-side code.</li>
+  </ul></li>
+</ul><h3>Overview<a id="CssResource_Overview"></a></h3>
+<ol>
+  <li>Write a CSS file, with or without GWT-specific extensions</li>
+  <li>If GWT-specific extensions are used, define a custom subtype of CssResource</li>
+  <li>Declare a method that returns CssResource or a subtype in an ClientBundle</li>
+  <li>When the bundle type is generated with <code>GWT.create()</code> a Java expression that evaluates to the contents of the stylesheets will be created
+  <ul>
+    <li>Except in the simplest case where the Java expression is a string literal, it is generally not the case that a CSS file could be generated into the module output</li>
+  </ul></li>
+  <li>At runtime, call <code>CssResource.ensureInjected()</code> to inject the contents of the stylesheet
+  <ul>
+    <li>This method is safe to call multiple times, as subsequent invocations will be a no-op</li>
+    <li>The recommended pattern is to call <code>ensureInjected()</code> in the static initializer of your various widget types</li>
+  </ul></li>
+</ol><h3>Features<a id="Features"></a></h3><h4>Constants<a id="Constants"></a></h4>
+<pre><code>@def small 1px;
+@def black #000;
+border: small solid black;
+</code></pre>
+<ul>
+  <li>The parse rules make it difficult to use delimiting tokens for substitutions</li>
+  <li>Redefining built-in sizes allows users to write plain CSS to draft a style and then tweak it.</li>
+  <li>Suggest that users use upper-case names, similar to static final members.</li>
+  <li>Any legal property value or expression may be used with <code>@def</code></li>
+  <li><code>@def</code> rules that define a single numeric value may be accessed in a manner similar to obfuscated class names by defining an accessor method on the CssResource type that returns a primitive numeric value.</li>
+</ul>
+<pre><code>interface MyResources extends CssResource {
+  int small();
+}
+</code></pre>
+<ul>
+  <li><p>Calling <code>small()</code> would return the value <code>1</code>.</p></li>
+  <li><p>@def` rules can be accessed as a String as well. You can retrieve the two definitions above with:</p></li>
+</ul>
+<pre><code>interface MyResources extends CssResource {
+  String small();
+  String black();
+}
+</code></pre>
+<ul>
+  <li>Calling <code>small()</code> returns &ldquo;1px&rdquo;</li>
+  <li>Calling <code>black()</code> returns &ldquo;#000&rdquo;</li>
+  <li>The Generator will not allow you to declare an <code>@def</code> rule with the same name as a class, unless you annotate method to retrieve the class with the <code>@ClassName</code> annotation.</li>
+</ul>
+<pre><code>@def myIdent 10px;
+.myIdent {
+  ...
+}
+
+interface MyResources extends CssResource {
+  String myIdent();
+
+  @ClassName(&quot;myIdent&quot;)
+  String myIdentClass();
+}
+</code></pre>
+<ul>
+  <li>Calling <code>myIdent()</code> returns @def value &ldquo;10px&rdquo;</li>
+  <li>Calling <code>myIdentClass()</code> returns the obfuscated class name for .myIdent</li>
+</ul><h4>Runtime substitution<a id="Runtime_substitution"></a></h4>
+<pre><code>@eval userBackground com.module.UserPreferences.getUserBackground();
+div {
+  background: userBackground;
+}
+</code></pre>
+<ul>
+  <li><p>Provides runtime support for evaluating static methods when the stylesheet is injected. Triggered / dynamic updates could be added in the future if we allow programmatic manipulation of the style elements.</p></li>
+  <li><p>If the user-defined function can be statically evaluated by the compiler, then the implementation of the specific CssResource should collapse to just a string literal.</p></li>
+  <li>This allows easy support for non-structural skinning changes.</li>
+</ul><h4>Value function<a id="Value_function"></a></h4>
+<pre><code><br/>.myDiv {
+  offset-left: value(&#39;imageResource.getWidth&#39;, &#39;px&#39;);
+}
+</code></pre>
+<ul>
+  <li>The <code>value()</code> function takes a sequence of dot-separated identifiers and an optional suffix. The identifiers are interpreted as zero-arg method invocations, using the interface passed to GWT.create() as the root namespace. By only allowing zero-arg methods, there&rsquo;s no need to attempt to perform type checking in the Generator. The only validation necessary is to ensure that the sequence of methods exists. There may be arbitrarily many identifiers in the chain.</li>
+  <li>The <code>value()</code> function may be combined with <code>@def</code></li>
+</ul>
+<pre><code>@def SPRITE_WIDTH value(&#39;imageResource.getWidth&#39;, &#39;px&#39;)
+
+.selector {
+  width: SPRITE_WIDTH;
+}
+</code></pre><h4>Literal function<a id="Literal_function"></a></h4><p>Some user agents make use of property values that do not conform to the CSS grammar. The <code>literal()</code> function exists to allow these non-standard property values to be used.</p>
+<pre><code>div-with-literal {
+  top: literal(&quot;expression(document.compatMode==\&quot;CSS1Compat\&quot; ? documentElement.scrollTop : document.body.scrollTop \\ 2)&quot;);
+}
+</code></pre><p>Note that it is necessary to escape the backslash (<code>\</code>) and double-quote (<code>&quot;</code>) characters.</p><h4>Conditional CSS<a id="Conditional_CSS"></a></h4>
+<pre><code>/* Runtime evaluation in a static context */
+@if (com.module.Foo.staticBooleanFunction()) {
+  ... css rules ...
+}
+
+/* Compile-time evaluation */
+@if &lt;deferred-binding-property&gt; &lt;space-separated list of values&gt; {
+  ... css rules ...
+}
+@if user.agent safari gecko1_8 { ... }
+@if locale en { ... }
+
+/* Negation is supported */
+@if !user.agent ie6 opera {
+  ...
+}
+
+/* Chaining is also supported */
+@if (true) {
+} @elif (false) {
+} @else {
+}
+</code></pre>
+<ul>
+  <li>This allows for more advanced skinning / theming / browser quirk handling by allowing for structural changes in the CSS.</li>
+  <li>The contents of an @if block can be anything that would be a top-level rule in a CSS stylesheet.</li>
+  <li>@if blocks can be arbitrarily nested.</li>
+  <li>What does it mean to have an @def or @eval in an @if block? Easy to make this work for property-based @if statements; would have to generate pretty gnarly runtime code to handle the expression-based @if statement. Could have block-level scoping; but this seems like a dubious use-case.</li>
+  <li>If the function in the first form can be statically evaluated by the compiler in a permutation, there is no runtime cost. The second form will never have a runtime cost because it is evaluated during compilation.</li>
+</ul><h4>Image Sprites<a id="Image_Sprites"></a></h4>
+<pre><code><br/>@sprite .mySpriteClass {gwt-image: &quot;imageAccessor&quot;; other: property;} =&gt; generates =&gt;
+
+  .mySpriteClass {
+    background-image: url(gen.png);
+    clip: ...;
+    width: 27px;
+    height: 42px;
+    other: property;
+  }
+</code></pre>
+<pre><code>interface MyCssResource extends CssResource {
+  String mySpriteClass();
+}
+
+class MyResources extends ClientBundle {
+  @Source(&quot;my.css&quot;)
+  MyCssResource css();
+
+  @Source(&quot;some.png&quot;)
+  ImageResource imageAccessor();
+
+  @Source(&quot;some.png&quot;)
+  @ImageOptions(repeatStyle=RepeatStyle.Horizontal)
+  ImageResource repeatingImage();
+}
+</code></pre>
+<ul>
+  <li>@sprite is sensitive to the FooBundle in which the CSSResource is declared; a sibling <a href="/javadoc/latest/index.html?com/google/gwt/resources/client/ImageResource.html">ImageResource</a> method named in the @sprite declaration will be used to compose the background sprite.</li>
+  <li>@sprite entries will be expanded to static CSS rules, possibly with data: urls.</li>
+  <li>The expansion is sensitive to any RepeatStyle value defined on the <code>ImageResource</code> accessor function. The appropriate <code>repeat-x</code> or <code>repeat-y</code> properties will be added to the @sprite selector.</li>
+  <li>Any CSS selector can be specified for @sprite.</li>
+  <li>Support for IE6 isn&rsquo;t feasible in this format, because structural changes to the DOM are necessary to implement a &ldquo;windowing&rdquo; effect. Once it&rsquo;s possible to distinguish ie6 and ie7 in user.agent, we could revisit support for ie6. In the current implementation, the ie6 code won&rsquo;t render correctly, although is a purely cosmetic issue.</li>
+</ul><h4>References to Data Resources<a id="References_to_Data_Resources"></a></h4>
+<pre><code>/* @url &lt;constant name&gt; &lt;DataResource method name&gt; */
+@url myCursorUrl fancyCursorResource;
+
+.myClass {
+  cursor: myCursorUrl, pointer;
+}
+</code></pre>
+<pre><code>interface MyResources extends ClientBundle {
+  @Source(&quot;myCursor.cur&quot;)
+  DataResource fancyCursorResource();
+
+  @Source(&quot;my.css&quot;)
+  CssResource css();
+}
+</code></pre>
+<ul>
+  <li>The identifier will be expanded to <code>url(&#39;some_url&#39;)</code> based on the return value of <code>DataResource.getUrl()</code>.</li>
+</ul><h4>RTL support<a id="RTL_support"></a></h4>
+<ul>
+  <li>CssResource supports automatic transformations of CSS code into a right-to-left variant at compile time.</li>
+  <li>The use of the RTL variant is keyed by <code>com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL()</code></li>
+  <li>Transformations applied:
+  <ul>
+    <li>The <code>left</code> and <code>right</code> properties are flipped. </li></li>
+    <li>Any properties that have values <code>left</code> or <code>right</code> are flipped: <code>clear float text-align page-break-before page-break-after</code></li>
+    <li>The <code>background</code>/<code>background-position</code> property is flipped. Attachments expressed in percentage points are mirrored: 40% becomes 60%</li>
+    <li><code>margin padding border-color border-style</code> and <code>border-width</code> four-valued properties are flipped: <code>1px 2px 3px 4px</code> becomes <code>1px 4px 3px 2px</code></li>
+    <li>Any <code>xyz-right</code> or <code>xzy-right-abc</code> property is flipped to <code>xzy-left</code> or <code>xzy-left-abc</code></li>
+    <li>The <code>direction</code> property on a <code>body</code> selector will be flipped from <code>ltr</code> to <code>rtl</code>; on any other selectors, the <code>direction</code> property is unchanged</li>
+    <li>When the cursor property has an <code>resize</code> value, it will be flipped: <code>ne-resize</code> becomes <code>nw-resize</code></li>
+  </ul></li>
+  <li>Sections of CSS can be exempted from automatic flipping by enclosing it in a <code>@noflip</code> block:</li>
+</ul>
+<pre><code>@noflip {
+  .selector {
+    left: 10;
+  }
+}
+</code></pre>
+<ul>
+  <li>A <code>background</code> property value that uses pixel-based offsets, such as <code>background-position: 4px 10px;</code> will not be transformed automatically.
+  <ul>
+    <li>The four-valued CSS3 <code>background-position</code> property will be automatically flipped by the RTL support</li>
+  </ul></li>
+</ul>
+<pre><code>background-position: left 4px top 10px;
+</code></pre>
+<pre><code>*   For CSS2 browsers, it will be necessary to use an `@sprite` rule:
+</code></pre>
+<pre><code>@sprite .bgImage {
+        gwt-image: &#39;background-image&#39;;
+        position: absolute;
+        left: 4px;
+        top: 10px;
+    }
+</code></pre>
+<ul>
+  <li><code>ImageResources</code> can be automatically flipped in RTL contexts via the use of the <code>@ImageOptions</code> annotation:</li>
+</ul>
+<pre><code>@Source(&quot;icon128.png&quot;)
+@ImageOptions(flipRtl = true)
+ImageResource logo();
+</code></pre>
+<ul>
+  <li><a href="https://gwt.googlesource.com/gwt/+/master/user/test/com/google/gwt/resources/rg">Current auto-RTL test cases</a></li>
+</ul><h4>Selector obfuscation<a id="Selector_obfuscation"></a></h4>
+<pre><code><br/>java:
+    class Resources {
+      MyCSSResource myCSSResource();
+    }
+    class MyCSSResource extends CSSResource {
+      Sprite mySpriteClass();
+      String someOtherClass();
+      String hookClass();
+    }
+    myWidget.addStyleName(resource.mySpriteClass());
+
+css:
+    @sprite mySpriteClass mySpriteImage;
+    .someOtherClass {
+      /* ... */
+    }
+    .hookClass{} /* Empty and stripped, but left for future expansion */
+</code></pre>
+<ul>
+  <li>The function just returns the CSS class name, but verifies that the CSS class exists in the stylesheet.</li>
+  <li>Accessing class names through the interface ensures that there can be no typos in code that consumes the <code>CssResource</code>.</li>
+  <li>For obfuscation, we&rsquo;ll use a Adler32 checksum of the source css file expressed in base36 as a prefix (7 chars). The developer can override this with the <code>CssResource.obfuscationPrefix</code> deferred-binding property.</li>
+  <li><p><code>&lt;set-configuration-property name=&quot;CssResource.obfuscationPrefix&quot; value=&quot;empty&quot; /&gt;</code> can be used for minimal-length selector names, but this is only recommended when the GWT module has total control over the page.</p></li>
+  <li>The <code>@external</code> at-rule can be used to selectively disable obfuscation for named selectors; see <a href="#External_and_legacy_scopes">external and legacy scopes</a> for additional detail.</li>
+</ul><h3>Optimizations<a id="Optimizations"></a></h3><h4>Basic minification<a id="Basic_minification"></a></h4><p>Basic minification of the CSS input results in the minimum number of bytes required to retain the original structure of the input. In general, this means that comments, unnecessary whitespace, and empty rules are removed.</p>
+<pre><code>.div {
+  /* This is the default background color */
+  background: blue;
+}
+.empty {}
+</code></pre><p>would be transformed into</p>
+<pre><code><br/>.div{background:blue;}
+</code></pre><h4>Selector merging<a id="Selector_merging"></a></h4><p>Rules with identical selectors can be merged together.</p>
+<pre><code>.div {prop: value;}
+.div {foo: bar;}
+</code></pre><p>becomes</p>
+<pre><code><br/>.div {prop:value;foo:bar;}
+</code></pre><p>However, it is necessary that the original semantic ordering of the properties within the CSS is preserved. To ensure that all selector merges are correct, we impose the restriction that <strong>no rule can be promoted over another if the two rules define a common property</strong>. We consider <code>border</code> and <code>border-top</code> to be equivalent properties, however <code>padding-left</code> and <code>padding-right</code> are not equivalent.</p><p>Thus</p>
+<pre><code>.a {background: green;}
+.b {border: thin solid blue;}
+.a {border-top: thin solid red;}
+</code></pre><p>cannot be merged because an element whose CSS class matches both <code>.a</code> and <code>.b</code> would be rendered differently based on the exactly order of the CSS rules.</p><p>When working with <code>@if</code> statements, it is preferable to work with the form that operates on deferred-binding properties because the CSS compiler can evaluate these rules statically, before the merge optimizations. Consider the following:</p>
+<pre><code>.a {
+  background: red;
+}
+
+@if user.agent safari {
+  .a {
+    \-webkit-border-radius: 5px;
+  }
+} @else {
+  .a {
+    background: url(&#39;picture_of_border.png&#39;);
+  }
+}
+</code></pre><p>In the safari permutation, the rule becomes <code>.a{background:red;\-webkit-border-radius:5px;}</code> while in other permutations, the <code>background</code> property is merged.</p><h4>Property merging<a id="Property_merging"></a></h4><p>Rules with identical properties can be merged together.</p>
+<pre><code>.a {background: blue;}
+.b {background: blue;}
+</code></pre><p>can be transformed into</p>
+<pre><code>.a,.b{background:blue;}
+</code></pre><p>Promotion of rules follows the previously-established rule of not promoting a rule over other rules with common properties.</p><h3>Levers and Knobs<a id="Levers_and_Knobs"></a></h3>
+<ul>
+  <li>The configuration property <code>CssResource.style</code> may be set to <code>pretty</code> which will disable class-name obfuscation as well as pretty-print the CSS content. Combine this with a <code>ClientBundle.enableInlining</code> value of <code>false</code> to produce a CSS expression which is amenable to client-side editing.</li>
+  <li>The configuration property <code>CssResource.mergeEnabled</code> can be set to <code>false</code> to disable modifications that re-order rules. This should be considered a temporary measure until the merge logic has been fully vetted.</li>
+  <li>To allow for client-side tweaking of the effective (i.e. permutation-specific) style rules, you can store the value of <code>CssResource</code>.getText() into a TextArea. Wire some UI action to pass the contents of the TextArea into <code>StyleInjector.setContents()</code> to overwrite the original, injected stylesheet.</li>
+</ul><h3>Selector obfuscation details<a id="Selector_obfuscation_details"></a></h3><h4>Strict scoping<a id="Strict_scoping"></a></h4><p>In the normal case, any class selectors that do not match String accessor functions is an error. This behavior can be disabled by adding a <code>@NotStrict</code> annotation to the CSS accessor method. Enabling <code>@NotStrict</code> behavior is only recommended for applications that are transitioning from external CSS files to <code>CssResource</code>.</p>
+<pre><code>interface MyCssResource extends CssResource {
+  String foo();
+}
+
+interface Resources {
+  @Source(&quot;my.css&quot;)
+  @CssResource.NotStrict
+  MyCssResource css();
+}
+</code></pre>
+<pre><code>/* This is ok */
+.foo {}
+
+/* This would normally generate a compile error in strict mode */
+.other {}
+</code></pre><h4>Scope<a id="Scope"></a></h4><p>Scoping of obfuscated class names is defined by the return type of the <code>CssResource</code> accessor method in the resource bundle. Each distinct return type will return a wholly separate collection of values for String accessor methods.</p>
+<pre><code>interface A extends CssResource {
+  String foo();
+}
+
+interface B extends A {
+  String foo();
+}
+
+interface C extends A {
+  String foo();
+}
+
+interface D extends C {
+  // Intentionally not defining foo()
+}
+
+interface Resources {
+  A a();
+  A a2();
+  B b();
+  C c();
+  D d();
+  D d2();
+</code></pre><p>It will be true that a().foo() != b().foo() != c().foo() != d().foo(). However, a().foo() == a2().foo() and d().foo() == d2().foo(). </p><h4>Shared scopes<a id="Shared_scopes"></a></h4><p>In the case of &ldquo;stateful&rdquo; CSS classes like <code>focused</code> or <code>enabled</code>, it is convenient to allow for certain String accessor functions to return the same value, regardless of the <code>CssResource</code> type returned from the accessor method.</p>
+<pre><code>@Shared
+interface FocusCss extends CssResource {
+  String focused();
+  String unfocused();
+}
+
+interface A extends FocusCss {
+  String widget();
+}
+
+interface B extends FocusCss {
+  String widget();
+}
+
+interface C extends B {
+  // Intentionally empty
+}
+
+interface Resources {
+  A a();
+  B b();
+  C c();
+  FocusCss f();
+}
+</code></pre><p>In this example, a().focused() == b().focused() == c().focused == f().focused(). However, a().widget() != b().widget != c.widget(), as in the previous example.</p><p>The short version is that if distinct CSS types need to share obfuscated class names, the <code>CssResource</code> subtypes to which they are attached must share a common supertype that defines accessors for those names and has the <code>@Shared</code> annotation.</p><h4>Imported scopes<a id="Imported_scopes"></a></h4><p>The Java type system can be somewhat ambiguous when it comes to multiple inheritance of interfaces that define methods with identical signatures, although there exist a number of cases where it is necessary to refer to multiple, unrelated <code>CssResource</code> types. Consider the case of a Tree that contains Checkboxes.</p>
+<pre><code>@ImportedWithPrefix(&quot;tree&quot;)
+interface TreeCss extends CssResource {
+  String widget();
+}
+
+@ImportedWithPrefix(&quot;checkbox&quot;)
+interface CbCss extends CssResource {
+  String widget();
+}
+
+interface MyCss extends CssResource {
+  String other();
+}
+
+interface Resources extends ClientBundle {
+  @Import({TreeCss.class, CbCss.class})
+  MyCss css();
+}
+</code></pre>
+<pre><code>/* Now we can write a descendant selector using the prefixes defined on the CssResource types */
+.tree-widget .checkbox-widget {
+  color: red;
+}
+
+.other {
+  something: else;
+}
+</code></pre><p>Composing a &ldquo;TreeCbCss&rdquo; interface would be insufficient because consumers of the TreeCss interface and CbCss interface would receive the same value from the widget method. Moreover, the use of just <code>.widget</code> in the associated CSS file would also be insufficient without the use of some kind of class selector prefix. The prefix is defined on the <code>CssResource</code> type (instead of on the <code>CssResource</code> accessor method) In the interest of uniformity across all CSS files that import a given scope. It is a compile-time error to import multiple classes that have the same prefix or simple name.</p><p>The case of shared scopes could be handled solely with importing scopes, however this form is somewhat more verbose and relationships between unrelated scopes is less common than the use of stateful selectors.</p><h5>Example: StackPanel inside a StackPanel<a id="Example_StackPanel"></a></h5><p>This is a use-case that is currently impossible to style correctly in GWT.</p>
+<pre><code>// Assume this interface is provided by the UI library
+interface StackPanelCss extends CssResource {
+  String widget();
+  // and many more class names
+}
+
+// App code defines the following interfaces:
+
+@ImportedWithPrefix(&quot;inner&quot;)
+interface StackPanelInner extends StackPanelCss {
+  // Empty interface
+}
+
+interface StackPanelOuter extends StackPanelCss {
+  // Empty interface
+}
+
+interface Resources {
+  @Source(&quot;stackPanel.css&quot;)
+  StackPanelInner inner();
+
+  @Import(StackPanelInner.class)
+  @Source(&quot;stackPanel.css&quot;, &quot;outer.css&quot;)
+  StackPanelOuter outer();
+}
+</code></pre><p>The file <code>stackPanel.css</code> defines the basic structure of any given stackPanel:</p>
+<pre><code>.widget .title {}
+.widget .content {}
+/* Other stuff to make a StackPanel work */
+</code></pre><p>The <code>outer()</code> method can continue to use the base <code>stackPanel.css</code> file, because the accessor methods defined in <code>StackPanelCss</code> are mapped into the default (no-prefix) namespace. The inner StackPanel&rsquo;s style members are also available, but in the <code>inner</code> prefix. Here&rsquo;s what <code>outer.css</code> might contain:</p>
+<pre><code>.widget {color: red;}
+
+.inner-widget {
+  color: blue;
+  font-size: smaller;
+}
+</code></pre><p>External and legacy scopes<a id="External_and_legacy_scopes"></a></p><p>In many cases, newly-developed CSS will need to be combined with external or legacy CSS. The <code>@external</code> at-rule can be used to suppress selector obfuscation while still allowing programmatic access to the selector name.</p>
+<pre><code>interface MyCssResource extends CssResource {
+  String obfuscated();
+  String legacySelectorA();
+}
+
+interface Resource extends ClientBundle {
+  @Source(&quot;my.css&quot;)
+  MyCssResource css();
+}
+</code></pre>
+<pre><code>@external legacySelectorA, legacySelectorB;
+.obfuscated .legacySelectorA { .... }
+.obfuscated .legacySelectorB { .... }
+</code></pre><p>In the above example, the <code>.obfuscated</code> class selector will be obfuscated, and the <code>obfuscated()</code> method will return the replaced name. Neither of the legacy selectors will be obfuscated and the <code>legacySelectorA()</code> method will return the unobfuscated value. Furthermore, because the <code>legacySelectorB</code> is explicitly defined in the <code>@external</code> declaration, the inaccessible class name will not trigger an error.</p><h3>Automatically generating <code>CssResource</code> interfaces<a id="Automatically_generating_interfaces"></a></h3><p>A utility is included in the GWT distribution which will analyze a <code>CssResource</code>-compatible CSS file and create a corresponding Java interface for accessing the classnames used in the file.</p>
+<pre><code>java -cp gwt-dev.jar:gwt-user.jar com.google.gwt.resources.css.InterfaceGenerator \
+  -standalone -typeName some.package.MyCssResource -css input.css
+</code></pre><p>The generated interface will be emitted to <code>System.out</code>. The <code>-standalone</code> option will add the necessary <code>package</code> and <code>import</code> statements to the output so that it can be used as part of a build process.</p><h2>CssResourceCookbook<a id="CssResourceCookbook"></a></h2><p>This section contains examples showing how to use <a href="#CssResource">CssResource</a>.</p><h3>Browser-specific css<a id="Browser-specific_css"></a></h3>
+<pre><code>.foo {
+  background: green;
+}
+
+@if user.agent ie6 {
+  /* Rendering fix */
+  .foo {
+    position: relative;
+  }
+} @elif user.agent safari {
+  .foo {
+    \-webkit-border-radius: 4px;
+  }
+} @else {
+  .foo {
+    font-size: x-large;
+  }
+}
+</code></pre><h3>Obfuscated CSS class names<a id="Obfuscated_CSS_class_names"></a></h3><p><code>CssResource</code> will use method names as CSS class names to obfuscate at runtime.</p>
+<pre><code>interface MyCss extends CssResource {
+  String className();
+}
+
+interface MyResources extends ClientBundle {
+  @Source(&quot;my.css&quot;)
+  MyCss css();
+}
+</code></pre><p>All instances of a selector with <code>.className</code> will be replaced with an obfuscated symbol when the CSS is compiled. To use the obfuscated name:</p>
+<pre><code>MyResources resources = GWT.create(MyResources.class);
+Label l = new Label(&quot;Some text&quot;);
+l.addStyleName(resources.css().className());
+</code></pre><p>If you have class names in your css file that are not legal Java identifiers, you can use the <code>@ClassName</code> annotation on the accessor method:</p>
+<pre><code>interface MyCss extends CssResource {
+  @ClassName(&quot;some-other-name&quot;)
+  String someOtherName();
+}
+</code></pre><h3>Background images / Sprites<a id="Background_images_/_Sprites"></a></h3><p><code>CssResource</code> reuses the <code>ImageResource</code> bundling techniques and applies them to CSS background images. This is generally known as &ldquo;spriting&rdquo; and a special <code>@sprite</code> rule is used in <code>CssResource</code>.</p>
+<pre><code>interface MyResources extends ClientBundle {
+  @Source(&quot;image.png&quot;)
+  ImageResource image();
+
+  @Source(&quot;my.css&quot;);
+  CssResource css();
+}
+</code></pre><p>In <code>my.css</code>, sprites are defined using the <code>@sprite</code> keyword, followed by an arbitrary CSS selector, and the rule block must include a <code>gwt-image</code> property. The <code>gwt-image</code> property should name the <code>ImageResource</code> accessor function.</p>
+<pre><code>@sprite .myImage {
+  gwt-image: &#39;image&#39;;
+}
+</code></pre><p>The elements that match the given selection will display the named image and have their heights and widths automatically set to that of the image.</p><h4>Tiled images<a id="Tiled_images"></a></h4><p>If the <code>ImageResource</code> is decorated with an <code>@ImageOptions</code> annotation, the source image can be tiled along the X- or Y-axis. This allows you to use 1-pixel wide (or tall) images to define borders, while still taking advantage of the image bundling optimizations afforded by <code>ImageResource</code>.</p>
+<pre><code>interface MyResources extends ClientBundle {
+  @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+  @Source(&quot;image.png&quot;)
+  ImageResource image();
+}
+</code></pre><p>The elements that match the <code>@sprite</code>&rsquo;s selector will only have their height or width set, based on the direction in which the image is to be repeated.</p><h4>9-boxes<a id="9-boxes"></a></h4><p>In order to make the content area of a 9-box have the correct size, the height and widths of the border images must be taken into account. Instead of hard-coding the image widths into your CSS file, you can use the <code>value()</code> CSS function to insert the height or width from the associated <code>ImageResource</code>.</p>
+<pre><code>public interface Resources extends ClientBundle {
+    Resources INSTANCE = GWT.create(Resources.class);
+
+    @Source(&quot;bt.png&quot;)
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource bottomBorder();
+
+    @Source(&quot;btl.png&quot;)
+    ImageResource bottomLeftBorder();
+
+    @Source(&quot;btr.png&quot;)
+    ImageResource bottomRightBorder();
+
+    @Source(&quot;StyleInjectorDemo.css&quot;)
+    CssResource css();
+
+    @Source(&quot;lr.png&quot;)
+    @ImageOptions(repeatStyle = RepeatStyle.Vertical)
+    ImageResource leftBorder();
+
+    @Source(&quot;rl.png&quot;)
+    @ImageOptions(repeatStyle = RepeatStyle.Vertical)
+    ImageResource rightBorder();
+
+    @Source(&quot;tb.png&quot;)
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource topBorder();
+
+    @Source(&quot;tbl.png&quot;)
+    ImageResource topLeftBorder();
+
+    @Source(&quot;tbr.png&quot;)
+    ImageResource topRightBorder();
+  }
+</code></pre>
+<pre><code>.contentArea {
+  padding: value(&#39;topBorder.getHeight&#39;, &#39;px&#39;) value(&#39;rightBorder.getWidth&#39;, &#39;px&#39;)
+      value(&#39;bottomBorder.getHeight&#39;, &#39;px&#39;) value(&#39;leftBorder.getWidth&#39;, &#39;px&#39;);
+}
+
+@sprite .contentAreaTopLeftBorder {
+  gwt-image: &#39;topLeftBorder&#39;;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+@sprite .contentAreaTopBorder {
+  gwt-image: &#39;topBorder&#39;;
+  position: absolute;
+  top: 0;
+  left: value(&#39;topLeftBorder.getWidth&#39;, &#39;px&#39;);
+  right: value(&#39;topRightBorder.getWidth&#39;, &#39;px&#39;);
+}
+
+@sprite .contentAreaTopRightBorder {
+  gwt-image: &#39;topRightBorder&#39;;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+@sprite .contentAreaBottomLeftBorder {
+  gwt-image: &#39;bottomLeftBorder&#39;;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@sprite .contentAreaBottomBorder {
+  gwt-image: &#39;bottomBorder&#39;;
+  position: absolute;
+  bottom: 0;
+  left: value(&#39;bottomLeftBorder.getWidth&#39;, &#39;px&#39;);
+  right: value(&#39;bottomRightBorder.getWidth&#39;, &#39;px&#39;);
+}
+
+@sprite .contentAreaBottomRightBorder {
+  gwt-image: &#39;bottomRightBorder&#39;;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@sprite .contentAreaLeftBorder {
+  gwt-image: &#39;leftBorder&#39;;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+@sprite .contentAreaRightBorder {
+  gwt-image: &#39;rightBorder&#39;;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+</code></pre>
+<pre><code>&lt;div class=&quot;contentArea&quot;&gt;
+
+&lt;div class=&quot;contentAreaTopLeftBorder&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;contentAreaTopBorder&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;contentAreaTopRightBorder&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;contentAreaBottomLeftBorder&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;contentAreaBottomBorder&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;contentAreaBottomRightBorder&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;contentAreaLeftBorder&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;contentAreaRightBorder&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

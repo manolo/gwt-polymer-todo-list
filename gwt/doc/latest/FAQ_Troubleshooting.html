@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../'>GWT homepage</a></li>
+                    <li><a href='./../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/FAQ_Troubleshooting.md"></a>
+                    </span>
+                    <h1>FAQ - Troubleshooting</h1>
+<ol>
+  <li><a href="#Compiler">Compiler</a>
+  <ol>
+    <li><a href="#AssertionError_:_Element_may_only_be_set_once">AssertionError: Element may only be set once</a></li>
+    <li><a href="#The_import_cannot_be_resolved">The import cannot be resolved</a></li>
+    <li><a href="#InternalError_:_Can">InternalError: Can&rsquo;t connect to X11 window</a></li>
+    <li><a href="#OutOfMemoryError_:_Java_heap_space">OutOfMemoryError: Java heap space</a></li>
+    <li><a href="#Undefined_DISPLAY_errors">Undefined DISPLAY errors</a></li>
+  </ol></li>
+  <li><a href="#RPC">RPC</a>
+  <ol>
+    <li><a href="#Resource_not_found">Resource not found</a></li>
+    <li><a href="#ServletException_:_Content-Type_must_be_">ServletException: Content-Type must be &lsquo;text/plain&rsquo;</a></li>
+  </ol></li>
+  <li><a href="#History">History</a>
+  <ol>
+    <li><a href="#GWT_History_feature_is_broken_in_Safari_2.0">GWT History feature is broken in Safari 2.0</a></li>
+  </ol></li>
+  <li><a href="#Hosted_Mode">Development Mode</a>
+  <ol>
+    <li><a href="#Failed_to_getGlobalExecState">Failed to getGlobalExecState</a></li>
+    <li><a href="#Resource_not_found">Resource not found</a></li>
+    <li><a href="#RuntimeException_:_Installation_problem_detected,_please_reinsta">RuntimeException: Installation problem detected, please reinstall GWT</a></li>
+    <li><a href="#Unable_to_find_type_">Unable to find type &lsquo;com.foo.client.MyApp&rsquo;</a></li>
+    <li><a href="#Invalid_memory_access_of_location">Invalid memory access of location 00000000 rip=01160767, or similar</a></li>
+    <li><a href="#Navigation_to_the_page_was_canceled">Navigation to the page was canceled</a></li>
+    <li><a href="#AccessControlException_access_denied">java.security.AccessControlException: access denied</a></li>
+  </ol></li>
+  <li><a href="#Image_Bundles">Image Bundles</a>
+  <ol>
+    <li><a href="#ImageBundle_images_not_showing_in_Internet_Explorer">ImageBundle images not showing in Internet Explorer</a></li>
+  </ol></li>
+  <li><a href="#Internationalization">Internationalization</a>
+  <ol>
+    <li><a href="#International_characters_don">International characters don&rsquo;t display correctly</a></li>
+  </ol></li>
+  <li><a href="#JUnit_Testing">JUnit Testing</a>
+  <ol>
+    <li><a href="#JUnit_tests_fail_on_Mac">JUnit tests fail on Mac</a></li>
+  </ol></li>
+</ol><h2>Compiler<a id="Compiler"></a></h2><h3>AssertionError: Element may only be set once<a id="AssertionError_:_Element_may_only_be_set_once"></a></h3><p>After upgrading to GWT 1.5, you might see this exception:</p>
+<pre><code>[ERROR] Uncaught exception escaped
+java.lang.AssertionError: Element may only be set once
+</code></pre><p>The message indicates that some widget is calling the setElement() method more than once. Trying to call the setElement() method on a widget after it&rsquo;s already been initialized is illegal.</p><p>This assertion was loosened in GWT 1.4 but is back in GWT 1.5. Setting a widget&rsquo;s element to an arbitrary new element would break all sorts of assumptions made by most widgets; that is, it makes it impossible for a widget to make any assumptions about the stability of its underlying element. If the element can change arbitrarily, all kinds of things can go wrong.</p><p>Calling the setElement() method more than once almost always happens unintentionally (for example, extending a widget that calls setElement() in its constructor then calling it again from the subclass constructor). Thus the message generally reveals an actual problem that was going unnoticed.</p><h4>Workaround</h4><p>Rather than write a new widget from scratch, here&rsquo;s a shortcut for constructing a widget from an existing DOM element.</p><p>First subclass <a href="/javadoc/latest/com/google/gwt/user/client/ui/AbsolutePanel.html">AbsolutePanel</a>. Then use the protected <a href="/javadoc/latest/com/google/gwt/user/client/ui/AbsolutePanel.html#AbsolutePanel(com.google.gwt.user.client.Element)">AbsolutePanel(Element)</a> constructor to change the underlying element.</p><h3>The import cannot be resolved<a id="The_import_cannot_be_resolved"></a></h3><p>Although you have successfully compiled the project class files in an IDE, when invoking the GWT compiler for the first time on a new project using one of the APIs provided with the GWT Google API, you come across an error similar to the following:</p>
+<pre><code>$ ./gearsTest-compile
+Analyzing source in module &#39;com.example.gearsTest&#39;
+   [ERROR] Errors in &#39;/Users/zundel/Documents/workspace2/galgwt-issue3/src/com/example/client/gearsTest.java&#39;
+      [ERROR] Line 9:  The import com.google.gwt.gears cannot be resolved
+      [ERROR] Line 26:  Gears cannot be resolved
+</code></pre><p>The problem is that there is no package <code>com.google.gwt.gears</code> on the module source path.</p><h4>Workaround</h4><p>This can be resolved by updating the module XML file (.gwt.xml) in either of two ways.</p>
+<ul>
+  <li>Add a <code>&lt;</code>source<code>&gt;</code> tag that adds the package to the module source path.</li>
+  <li>If your third party library provides one, add an <code>&lt;</code>inherits<code>&gt;</code> tag.</li>
+</ul><p>For using the Gears package in GWT Google API, the appropriate line is:</p>
+<pre><code>&lt;inherits name=&#39;com.google.gwt.gears.Gears&#39;&gt;
+</code></pre><h3>InternalError: Can&rsquo;t connect to X11 window<a id="InternalError_:_Can't_connect_to_X11_window"></a></h3><p>Does the GWT compiler need an X11 Window in Linux? No, the GWT compiler can run &ldquo;headless&rdquo; (that is, accessing the AWT library without needing to load a Graphics Environment Window).</p><p>You might run into the problem in the first place because the <a href="DevGuideUiImageBundles.html">ImageBundle</a> feature triggers the GWT compiler to connect to an X11 Graphics Environment Window at compile time. If you don&rsquo;t have a DISPLAY environment variable set, it will issue the following error message:</p>
+<pre><code>java.lang.InternalError: Can&#39;t connect to X11 window server using &#39;:0.0&#39; as the value of the DISPLAY variable.
+</code></pre><p>Even if you are not using the ImageBundle explicitly in your client code, you may still encounter this error message because GWT uses the ImageBundle internally for widgets (like the Tree widget) to further optimize the number of HTTP roundtrips for images and speed up your web application. This means if you&rsquo;re using any widgets that use ImageBundle in their underlying implementations, the GWT compiler will search for the DISPLAY environment variable and try to connect to an X11 Graphics Window. </p><h4>Workaround</h4><p>To avoid this error message, run the GWT compiler with the headless AWT option.</p>
+<pre><code>-Djava.awt.headless=true
+</code></pre><h5>Examples</h5><p><strong>Ant.</strong> To the GWT compilation build target, add the element: <code>&lt;jvmarg value=&quot;-Djava.awt.headless=true&quot;/&gt;</code></p><p><strong>Command-line.</strong> Pass in the argument: <code>-Djava.awt.headless=true</code></p><p><strong>Eclipse.</strong> In your Run Configuration window, select the Arguments tab and in the VM arguments section, enter: <code>-Djava.awt.headless=true</code></p><p>If you use a custom build process, you can also set the AWT headless option there.</p><h3>OutOfMemoryError: Java heap space<a id="OutOfMemoryError_:_Java_heap_space"></a></h3><p>When compiling a project in GWT 1.5 or later, you may encounter problems with running out of memory.</p>
+<pre><code>Compiling permutations
+   Analyzing permutation #1
+      [ERROR] An internal compiler exception occurred
+com.google.gwt.dev.jjs.InternalCompilerException: Unexpected error during visit.
+        at ...
+Caused by: java.lang.OutOfMemoryError: Java heap space
+</code></pre><p>GWT 1.5 provides a larger library (in gwt-user.jar) that must be analyzed during compilation and a number of compiler optimizations that require more memory and processing power. Thus, the GWT compiler and development mode use more memory internally. This can cause the compiler to exceed the default JVM heap size.</p><p>Some projects need to increase JVM max memory to successfully compile; others may see improved compile times by increasing the limit.</p><h4>Workaround</h4><p>Increase the Java heap limit using the Java VM argument -Xmx and specifying the amount of memory in megabytes. For example, <code>java -Xmx512M -cp [args...]</code> would set the heap max to 512 megabytes.</p><h3>Undefined DISPLAY errors<a id="Undefined_DISPLAY_errors"></a></h3><p>You might receive undefined DISPLAY errors when compiling or testing in a console or headless environment.</p><p>In a UNIX environment, GWT tests (and in some cases the GWT compiler) require an X display. If the continuous build is being run from a cron job, the running process may not have access to a &ldquo;real&rdquo; display.</p><h4>Workaround</h4><p>You can provide a virtual display by using a program named Xvfb. (Xvfb stands for X11 Virtual FrameBuffer.)</p><p>To provide a virtual display:</p>
+<ol>
+  <li>Install Xvfb.</li>
+  <li>Start the Xvfb server and set the environment variable DISPLAY to use it.</li>
+</ol>
+<pre><code>export DISPLAY=:2
+</code></pre><h1>Run Xvfb without access control on display :2</h1><h1>This command will only start Xvfb if it is not already started.</h1><h1>Any GWT compiles and tests should set DISPLAY=:2 to use the virtual frame buffer.</h1><p>`` ps -ef | grep Xvfb | grep -v grep &gt;&gt; /dev/null || Xvfb :2 -ac &amp; ```</p><h2>RPC<a id="RPC"></a></h2><h3>Resource not found<a id="Resource_not_found"></a></h3><p>When testing a new RPC interface in development mode, receive a &ldquo;resource not found&rdquo; error.</p>
+<pre><code>The development shell servlet received a request for &#39;rpcs/myService&#39; in module &#39;com.example.RPCExample&#39; 
+   Resource not found: rpcs/myService
+</code></pre><p>The servlet engine could not find the server-side definition of your RPC method.</p><h4>Troubleshooting checklist</h4>
+<ul>
+  <li>Is the server-side code defined and in the appropriate directory?</li>
+</ul>
+<blockquote><p>By convention, services are located in the <em>server</em> directory in the <a href="DevGuideOrganizingProjects.html#DevGuideDirectoriesPackageConventions">standard project structure.</a></p>
+</blockquote>
+<ul>
+  <li>Is the server code path listed in the module XML file (_myApp_.gwt.xml)? *</li>
+</ul>
+<pre><code>&lt;!-- Example servlet loaded into development mode web server       --&gt;
+&lt;servlet path=&quot;/myService&quot; class=&quot;com.example.server.MyServiceImpl&quot; /&gt;
+</code></pre>
+<ul>
+  <li>Have you compiled the server-side code?</li>
+</ul>
+<blockquote><p>The ant build scripts created by the <a href="RefCommandLineTools.html#webAppCreator">webAppCreator tool</a> should by default compile all your source files into bytecode, but it&rsquo;s a good idea to double-check.</p>
+</blockquote>
+<ul>
+  <li>Are the compiled server classes are available to development mode?</li>
+</ul>
+<blockquote><p>If your server classes are in a separate jar file or directory tree, when launching the development mode shell you may need to modify the classpath (for example, by editing the ant build file).</p>
+</blockquote><h3>ServletException: Content-Type must be &lsquo;text/plain&rsquo;<a id="ServletException_:_Content-Type_must_be_'text/plain'"></a></h3><p>If you are using GWT RPC and upgrading from GWT 1.4 to GWT 1.5, you may see a stack trace similar to the following:</p>
+<pre><code>javax.servlet.ServletException: Content-Type must be &#39;text/plain&#39; with &#39;charset=utf-8&#39; (or unspecified charset)
+        at com.google.gwt.user.server.rpc.RemoteServiceServlet.readPayloadAsUtf8(RemoteServiceServlet.java: 119)
+        at com.google.gwt.user.server.rpc.RemoteServiceServlet.doPost(RemoteServiceServlet.java: 178)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java: 738)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java: 831)
+        ...
+</code></pre><p>In GWT 1.5, the RPC content type was switched from &ldquo;text/plain&rdquo; to &ldquo;text/x-gwt-rpc&rdquo;.</p><p>If you receive this exception, then your server is still using a GWT 1.4 gwt-servlet.jar.</p><h4>Workaround</h4><p>Update your server to use the GWT 1.5 gwt-servlet.jar.</p><h2>History<a id="History"></a></h2><h3>GWT History feature is broken in Safari 2.0<a id="GWT_History_feature_is_broken_in_Safari_2.0"></a></h3>
+<ul>
+  <li>Q: The GWT History feature is great, but it has been driving me bananas on Safari 2.0. What&rsquo;s the history between GWT and Safari 2.0?</li>
+  <li>A: Unfortunately, the GWT History system does not play well with Safari 2.0.</li>
+</ul><p>A number of strange bugs in Safari 2, which are particularly difficult to work around, make it hard to use the same tricks GWT uses for history support in IE and Firefox. Some messy solutions do exist but these fail in a number of significant edge cases and are not likely to be good long-term solutions.</p><p>The current implementation provides fall-back functionality for Safari 2 so that the library works but no history entries are generated.</p><p>Although the current GWT solution for history support doesn&rsquo;t completely work on Safari 3 beta, it has been tested on the latest nightly WebKit builds and is looking good.</p><p>So, hold on to your hats! History support for Safari will work properly when Safari 3 is officially released.</p><h2>Development Mode<a id="Hosted_Mode"></a></h2><h3>Failed to getGlobalExecState<a id="Failed_to_getGlobalExecState"></a></h3><p>On Mac when launching development mode, receive the error &ldquo;Failed to getGlobalExecState&rdquo;.</p><p>This problem is related to the Google Gears enabler.</p><h4>Workaround</h4><p>Check the /Library/InputManagers folder. If there is a file named GearsEnabler.bundle, removing it should fix this issue.</p><h3>RuntimeException: Installation problem detected, please reinstall GWT<a id="RuntimeException_:_Installation_problem_detected,_please_reinsta"></a></h3><p>When launching the GWT compiler or development mode, you may see the following exception.</p>
+<pre><code>Exception in thread &quot;main&quot; java.lang.ExceptionInInitializerError
+Caused by: java.lang.RuntimeException: Installation problem detected, please reinstall GWT
+    at com.google.gwt.util.tools.Utility.computeInstallationPath(Utility.java:322)
+    at com.google.gwt.util.tools.Utility.getInstallPath(Utility.java:223)
+    at com.google.gwt.util.tools.ToolBase.&lt;clinit&gt;(ToolBase.java:55)
+Caused by: java.io.IOException: Cannot determine installation directory; apparently not running from a jar
+    at com.google.gwt.util.tools.Utility.computeInstallationPath(Utility.java:307)
+  ...
+</code></pre><p>This message occurs when the runtime binary installation of GWT cannot be located. In general, the runtime binary installation path is expected to be in the same directory where the gwt-dev-<code>&lt;</code>platform<code>&gt;</code>.jar file is located.</p><p>The GWT installation path is embedded in the scripts (created from applicationCreator and projectCreator) as the path specified to the gwt-dev-<code>&lt;</code>platform<code>&gt;</code>.jar file. If you look in this directory, it should contain not only the gwt-user.jar and gwt-dev-<code>&lt;</code>platform<code>&gt;</code>.jar files, but also the platform-specific shared library files, such as libgwt_ll.so or libgwt_ll.jnilib.</p><h4>Workaround</h4><p>Make sure that the path specified to the gwt-dev-<code>&lt;</code>platform<code>&gt;</code>.jar file on the Java classpath still contains the shared libraries. If not, you may need to re-download and unpack the GWT distribution, making sure your download is complete.</p><h5>Note to contributors<a id="Note_to_contributors"></a></h5><p>If you are a contributor and checked out the source code via svn, you might encounter this problem if you are running GWT from source.</p><p>Make sure you have:</p>
+<ul>
+  <li>a binary distribution unpacked or a compiled distribution ready</li>
+  <li>set the system property <em>gwt.devjar</em> configured in your launch configurations as specified in the eclipse/README.txt file.</li>
+</ul><h3>Unable to find type &lsquo;com.foo.client.MyApp&rsquo;<a id="Unable_to_find_type_'com.foo.client._MyApp_'"></a></h3><p>When running in development mode, receive the error: Unable to find type &lsquo;com.foo.client.MyApp&rsquo;.</p>
+<pre><code>Starting HTTP on port 8888
+Finding entry point classes
+  Unable to find type &#39;com.google.gwt.sample.stockwatcher.client.StockWatcher&#39;
+    Hint: Check that the type name &#39;com.google.gwt.sample.stockwatcher.client.StockWatcher&#39; is really what you meant
+    Hint: Check that your classpath includes all required source roots
+Failure to load module &#39;com.google.gwt.sample.stockwatcher.StockWatcher&#39;
+</code></pre><p>This problem is most often seen when creating a launch configuration manually. The <a href="https://developers.google.com/eclipse">Google Plugin for Eclipse</a> handles adding source roots to the classpath automatically.</p><p>One of the most common problems when creating launch configurations manually in GWT is to omit the application source code path from the Java classpath. The <a href="DevGuideCompilingAndDebugging.html#DevGuideJavaToJavaScriptCompiler">GWT compiler</a> and <a href="DevGuideCompilingAndDebugging.html#DevGuideDevMode">development mode</a> shell rely on the module source code to build your application, and both use the Java classpath to find the .java source files.</p><h4>Workaround</h4><p>If you are using Eclipse, open the launch configuration, navigate to the Classpath tab, and use the Advanced button to add the <code>src</code> folders to the classpath.</p><p>If you are launching from the command line, add the <code>src</code> folders to the list of paths following the <code>-cp</code> argument to the Java command.</p><h3>Invalid memory access of location 00000000 rip=01160767, or similar<a id="Invalid_memory_access_of_location"></a></h3><p>If you&rsquo;re using a version of GWT prior to 2.0 on the Mac platform along with Java 6, you&rsquo;re likely seeing this error message when you try running hosted mode. This problem no longer exists in GWT 2.0&rsquo;s <a href="DevGuideCompilingAndDebugging.html#DevGuideDevMode">Development Mode</a>.</p><p>The reason why this is occurring is because hosted mode uses 32-bit SWT bindings, which are tightly coupled with Carbon on the Mac platform.. Unfortunately, Java 6 on the Mac uses a 64-bit JVM, and 64-bit support for Carbon is currently unavailable. This means that in order to use GWT hosted mode on the Mac, you&rsquo;ll need to stick to Java 5 for 32-bit JVM support.</p><h4>Workaround</h4><p>For any other platform, using a 64-bit JVM will result in a similar error message when trying to start hosted mode. Fortunately, Java 6 comes in 32-bit flavors for these platforms, and so you can continue using the 64-bit JVM for GWT compilation and use the 32-bit JVM for hosted mode.</p><h3>Navigation to the page was canceled<a id="Navigation_to_the_page_was_canceled"></a></h3><p>Some developers have experienced this issue running GWT 1.6 hosted mode on Windows Vista. The reason why this is occurring is because for many applications and services running on Windows Vista, the IPv6 convention is used, including the endpoint IP address defined for localhost.</p><h4>Workaround</h4><p>If you take a peek at your <code>C:\Windows\System32\drivers\etc\hosts</code> file, you will notice the endpoint <code>::1 localhost</code> defined in the hosts file. To have localhost working in the IPv4 case, which is used in hosted mode, simply change this line to read <code>127.0.0.1 localhost</code>.</p><h3>java.security.AccessControlException: access denied<a id="AccessControlException_access_denied"></a></h3><p>If you created your application using the <a href="https://developers.google.com/eclipse">Google Plugin for Eclipse</a>, you may have encountered the following stack trace:</p>
+<pre><code>WARNING: Nested in java.lang.ExceptionInInitializerError:
+java.security.AccessControlException: access denied
+(java.lang.RuntimePermission modifyThreadGroup)
+       at java.security.AccessControlContext.checkPermission(AccessControlContext.java:323)
+       at java.security.AccessController.checkPermission(AccessController.java:546)
+       at java.lang.SecurityManager.checkPermission(SecurityManager.java:532)
+       at com.google.appengine.tools.development.DevAppServerFactory
+
+</code></pre><p>The problem occurs if you mistakenly enabled the <a href="https://developers.google.com/appengine">Google App Engine</a> feature for your project when you created the project, or at a later time during development, and have server-side libraries or classes packaged with your GWT application war folder that violate the <a href="https://developers.google.com/appengine/docs/whatisgoogleappengine">Java App Engine sandbox</a>.</p><h4>Workaround</h4><p>If you don&rsquo;t intend on using Google App Engine for your project, simply remove the Google App Engine functionality from it following the steps below:</p>
+<ol>
+  <li>In Eclipse, right-click on your project and select <strong>Google &gt; App Engine Settings&hellip;</strong></li>
+  <li>In the App Engine property menu, deselect the <strong>Use Google App Engine</strong> checkbox.</li>
+  <li>Click <strong>OK</strong>.</li>
+</ol><p>If you intend to use Google App Engine, you will need to remove any use of server-side libraries that are violating the security constraints of the App Engine sandbox from your project. For more information on the support available in the App Engine sandbox, check out the <a href="https://developers.google.com/appengine/docs">App Engine documentation.</a></p><h2>Image Bundles<a id="Image_Bundles"></a></h2><h3>ImageBundle images not showing in Internet Explorer<a id="ImageBundle_images_not_showing_in_Internet_Explorer"></a></h3><p>ImageBundle images show up in Firefox, Opera and Safari, but aren&rsquo;t showing up in Internet Explorer.</p><h4>Security<a id="Security"></a></h4><p>The first thing to verify is whether or not your web application uses HTTPS, or if any of the images included in the generated image bundle file are under a security constraint.</p><p>If that is the case, you may be running into a problem rooted in your web server setting certain response headers (such <code>Pragma: No-cache, Expires: Thu, 1 Jan 1970
+00:00:00,</code> &hellip;) and Internet Explorer respecting those headers when when using the HTTPS protocol.</p><h5>Workaround</h5><p>You can read more details about this security issue and how to work around it in the API Reference, <a href="/javadoc/latest/com/google/gwt/user/client/ui/ImageBundle.html">Image Bundles and the HTTPS Protocol</a>.</p><h4>Size<a id="Size"></a></h4><p>On the other hand, if you&rsquo;re not using HTTPS but are still running into this problem, check out the size of your image bundle file.</p><p>A number of developers have run into the problem of Internet Explorer consuming large amounts of memory when extracting images out of a larger image bundle, and subsequently failing to properly display the images.</p><h5>Workaround</h5><p>You might want to consider splitting up one large image bundle into several smaller bundles. This technique has worked for most developers who have experienced this problem.</p><h2>Internationalization<a id="Internationalization"></a></h2><h3>International characters don&rsquo;t display correctly<a id="International_characters_don't_display_correctly"></a></h3><p>If you&rsquo;ve embedded international characters into Java source files, these characters might not display correctly when you run the application and view it in a web browser.</p><p>Java requires UTF-8 for source code files containing international characters. Frequently the editor used to generate the files (such as an IDE) is not configured to save the files as UTF-8. Thus your source files are not properly encoded in UTF-8.</p><h4>Troubleshooting checklist</h4>
+<ul>
+  <li>Check your editor to see if it is capable of saving files as UTF-8 and that it is currently configured to do so.</li>
+  <li>If you have embedded international characters directly into your Java source files, check to see if they are saved in UTF-8 format.</li>
+  <li>Check any associated Java properties files (or other files where you&rsquo;ve stored translations) to see if they are saved in UTF-8 format.</li>
+  <li>Check the HTML host page. If your web page content contains localized data, encode it as UTF-8 by adding the following tag to the <code>&lt;</code>head<code>&gt;</code> element.</li>
+</ul>
+<pre><code>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;`
+</code></pre><h2>JUnit Testing<a id="JUnit_Testing"></a></h2><h3>JUnit tests fail on Mac<a id="JUnit_tests_fail_on_Mac"></a></h3><p>Some JUnit tests fail on the Mac platform.</p><p>When the Safari/Webkit web browser runs in headless mode it is able to optimize some rendering operations. One result of these optimizations is that the position or size of some elements may be different when running a unit test than when running an actual application. A common symptom is to see the position or size of an widget set to <em>(0,0)</em>.</p><h4>Workaround</h4><p>To work around this problem, pass the <code>-notHeadless</code> argument in the <code>-Dgwt.args=</code> system property setting. Note: When using the ant build, this argument is enabled by default as of the GWT 1.5 release.</p><p>When <code>-notHeadless</code> is specified for running unit tests, the log window and hosted mode browser will pop up on the screen while the test is running. Dismissing or manipulating the elements in these windows may cause the unit tests to fail.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

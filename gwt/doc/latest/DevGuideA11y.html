@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../'>GWT homepage</a></li>
+                    <li><a href='./../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/DevGuideA11y.md"></a>
+                    </span>
+                    <h1>Accessibility</h1>
+<ol>
+  <li><a href="#DevGuideAccessibility">Overview</a></li>
+  <li><a href="#DevGuideAccessibilityHowTo">Making Widgets Accessible</a></li>
+  <li><a href="#ariaRoles">Adding ARIA Roles</a></li>
+  <li><a href="#ariaPropertiesAndStates">Adding ARIA Properties and States</a></li>
+  <li><a href="#kbdA11y">Adding Keyboard Accessibility</a></li>
+  <li><a href="#selectionChanges">Indicating Selection Changes</a></li>
+  <li><a href="#labels">Associating Meaningful Labels</a></li>
+  <li><a href="#speaking">Automatically Speaking Highlighted Content</a></li>
+  <li><a href="#widgets">General Advice For Widget Developers</a></li>
+</ol><h2>Overview<a id="DevGuideAccessibility"></a></h2><h3>Screen Readers</h3><p>A screen reader is an assistive application that interprets what is displayed on the screen for a blind or visually impaired user. Screen readers can interact with the user in a variety of ways, including speaking out loud or even producing a braille output.</p><h4>Who uses screen readers?</h4><p>Many people find it helpful to be able to interact with their computers in multiple ways. Though Google does not keep statistics on how many of our users are using screen readers, as the population ages, more people will require assistive technology. It is important to make sure that our applications are accessible for everybody.</p><h4>How do screen readers work?</h4><p>Screen readers listen for a standard set of events that are raised by platform-specific APIs. For example, when an alert window pops up on your screen, Microsoft Windows would expose this event using the Microsoft Active Accessibility API, while a Linux machine would use the Linux Access Toolkit. <a href="https://chrome.google.com/webstore/detail/kgejglhpjiefppelpmljglcjbhoiplfn">ChromeVox</a> for Chrome and <a href="http://www.firevox.clcworld.net/">FireVox</a> for Firefox are screen reader browser extensions that are built on top of the latest web technologies.</p><h3>GWT and Screen Readers</h3><p>Ajax applications are often written in ways that screen readers have difficulty interpreting correctly. A GWT developer writing a tree widget, for example, might use a list element that has been altered to behave like a tree control. But a screen reader would present the control as a list - an incorrect description that renders the tree unusable. Screen readers will also treat HTML span or div elements as regular static text elements, regardless of the presence of JavaScript event handlers for user interaction; you can easily imagine how this causes problems.</p><h3>ARIA</h3><p><a href="http://www.w3.org/WAI/intro/aria">ARIA</a> is a W3C specification for making rich Internet applications accessible via a standard set of DOM properties. It is still new but there exist helpful resources on the web. More information can be found at <a href="http://www.google.com/accessibility/">Google accessibility site</a>, <a href="http://code.google.com/p/google-axs-chrome/">Chrome accessibility extensions page</a>, and codetalks.org.</p><p>Adding accessibility support to GWT widgets involves adding the relevant properties to DOM elements that can be used by browsers to raise events during user interaction. Screen readers can react to these events to represent the function of GWT widgets. The DOM properties specified by ARIA are classified into Roles with their Properties and States.</p><p>An ARIA <code>role</code> attribute is added to HTML elements to define widgets and page structure elements that can be interpreted by a reader application/device, and therefore describes the way the widget should behave. A role is static and does not change over the lifetime of a widget. Some examples of ARIA roles: <code>tree</code>, <code>menubar</code>, <code>menuitem</code>, and <code>tab</code>. The ARIA role of a widget is expressed as a DOM attribute named <code>role</code> with its value set to one of the ARIA role strings.</p><p>There are also ARIA properties and states. ARIA states supply information about the changes in the web page that can be used for alerts, notification, navigation assistance. The state is changed as a result of an user interaction and developers should consider changing the widget state when handling user actions. For example, a checkbox widget could be in the states &ldquo;checked&rdquo; or &ldquo;unchecked&rdquo;. A state is dynamic and should be updated during user interaction. Some examples of ARIA states: <code>aria-disabled</code>, <code>aria-pressed</code> and <code>aria-expanded</code>. An ARIA property is a characteristic feature of a widget that can change over time but more rarely than the ARIA state, and is often not changed as a result of user action. Examples of properties are <code>aria-haspopup</code>, <code>aria-label</code> and <code>aria-level</code>, which are semantic information about the interactivity between the page layout and a particular widget. ARIA states and properties are DOM attributes themselves &mdash; for example, to express that a toggle button widget has been pressed, we need to add the attribute <code>aria-pressed = &#39;true&#39;</code> to the widgets HTML element. As another example, a textarea widget that has a popup attached when in focus will have the attribute <code>aria-haspopup = &#39;true&#39;</code>.</p><p>The role of a widget determines the set of states and properties that it supports. A widget with the role of <code>list</code>, for example, would not expose the <code>aria-pressed</code> state but will have the <code>aria-expanded</code> state.</p><p>Also, accessible widgets require keyboard support. Screen readers will speak the element that has keyboard focus, so keyboard accessibility can be accomplished by moving focus to different elements in response to keyboard commands.</p><h3>GWT and ARIA</h3><p>Once ARIA roles, properties and states are added to the DOM of a GWT widget, browsers will raise the appropriate events to the screen reader. As ARIA is still a work in progress, browsers may not raise an event for every ARIA property, and screen readers may not recognize all of the events being raised.</p><p>Recently, we upgraded the accessibility support in GWT and deprecated the <a href="/javadoc/latest/com/google/gwt/user/client/ui/Accessibility.html">Accessibility</a> class which contained a subset of the ARIA roles and states. We added a GWT ARIA library that contains all the roles, states and properties defined in the ARIA standard. The roles are organized in a hierarchy of interfaces. For each role there is a set of states and properties that are supported. There is a getter for each role in the <a href="/javadoc/latest/com/google/gwt/aria/client/Roles.html">Roles factory</a>. For each role there exist accessors for getting, setting and removing states and properties, or an extra attribute like <code>tabindex</code>.</p><p>The ARIA standard specifies the HTML attribute type for the state and property values. These attribute types are supported in the new library with compile-time checks. Enumerations have been added for HTML attributes of type token like &lsquo;aria-dropeffect&rsquo; property type, &lsquo;aria-checked&rsquo; type etc. There is a common type added for IDREF(S) in the class. All the states and properties are defined in the <a href="/javadoc/latest/com/google/gwt/aria/client/State.html">State</a> and <a href="/javadoc/latest/com/google/gwt/aria/client/Property.html">Property</a> classes. The <code>tabIndex</code> attribute has also been added as an extra attribute in the ARIA standard and we have <a href="/javadoc/latest/com/google/gwt/aria/client/ExtraAttribute.html">added it to the library</a>. We encourage users to get access to states and properties through the role by getting it from the <a href="/javadoc/latest/com/google/gwt/aria/client/Roles.html">Roles factory</a> because the factory checks that the state or property is supported for the role.</p><p>Many GWT widgets now have keyboard accessibility and ARIA properties. These include <a href="/javadoc/latest/com/google/gwt/user/client/ui/CustomButton.html">CustomButton</a>,  <a href="/javadoc/latest/com/google/gwt/user/client/ui/Tree.html">Tree</a>, <a href="/javadoc/latest/com/google/gwt/user/client/ui/TreeItem.html">TreeItem</a>,  <a href="/javadoc/latest/com/google/gwt/user/client/ui/MenuBar.html">MenuBar</a>, <a href="/javadoc/latest/com/google/gwt/user/client/ui/MenuItem.html">MenuItem</a>,  <a href="/javadoc/latest/com/google/gwt/user/client/ui/TabBar.html">TabBar</a>, and <a href="/javadoc/latest/com/google/gwt/user/client/ui/TabPanel.html">TabPanel</a>.  Also, all widgets that inherit from FocusWidget now have a tabindex by default, allowing for better keyboard navigation.</p><h2>Making Widgets Accessible<a id="DevGuideAccessibilityHowTo"></a></h2><p>The remainder of this page describes how to add accessibility support to your GWT application and widgets with the new ARIA library. A variety of different techniques are discussed; there is not yet a standard and generally-applicable approach for making AJAX applications accessible, but we provide some suggestions.</p><h2>Adding ARIA Roles<a id="ariaRoles"></a></h2><p>The ARIA attribute <code>role</code> is an indication of the widget type; it describes the way the widget should behave. Roles are static and should not change during the lifetime of a widget. Widget authors should:</p>
+<ul>
+  <li>Pick the right role for the widget from the <a href="/javadoc/latest/com/google/gwt/aria/client/Roles.html">Roles factory</a> class.</li>
+  <li>Set this attribute at construction time.</li>
+</ul><p>The following is an example taken from the <a href="/javadoc/latest/com/google/gwt/user/client/ui/CustomButton.html">CustomButton</a> widget. Adding the <code>button</code> role indicates to an assistive technology that the widget will behave like a button.</p>
+<pre><code>protected CustomButton() {
+    ...
+    // Add a11y role &quot;button&quot;
+    Roles.getButtonRole().set(getElement());
+    ...
+  }
+</code></pre><h2>Adding ARIA Properties and States<a id="ariaPropertiesAndStates"></a></h2><p>An ARIA state is an additional attribute that reflects the current state of a widget which is a result of a user action; for example, whether a checkbox is checked or unchecked. A state should be initialized at the time a widget is constructed and updated during user interaction.</p><p>An ARIA property is an additional attribute that provides additional information about the widget; for example, a label of a widget is a property and is set once when constructing the widget. An example of a property that changes its value is <code>aria-activedescendant</code> and is used to supply information about the currently selected child element for a composite widget like a tree or menu.</p><p>Note that:</p>
+<ul>
+  <li>A widget can have numerous state attributes, one or more property attributes, and only one role attribute.</li>
+  <li>State attributes are dynamic and change during the widget&rsquo;s lifetime. A role once set does not change.</li>
+  <li>Property attributes reflect additional widget features that make the applications more interactive and may or may not change over time.</li>
+</ul><h4>Initializing States and Properties</h4><p>Once a specific ARIA role has been associated with a widget, it is important to check which states and properties are associated with that role. For example, the <code>button</code> role has two state attributes:</p>
+<dl>
+<dt>`aria-disabled`</dt>
+<dd>Indicates that the widget is present, but is not allowed for user actions.</dd>
+
+<dt>`aria-pressed`</dt>
+<dd>Used for buttons that are toggleable to indicate their current pressed state.</dd>
+</dl><p>In the CustomButton widget, the <code>aria-pressed</code> and <code>aria-disabled</code> ARIA state is initialized as follows:</p>
+<pre><code>protected CustomButton() {
+    ...
+    // Add a11y state &quot;aria-pressed&quot; and &quot;aria-disabled&quot;
+    Roles.getButtonRole().setAriaPressedState(getElement(), PressedValue.of(false));
+    Roles.getButtonRole().setAriaDiabledState(getElement(), false);
+  }
+</code></pre><h4>Updating States During User Interaction</h4><p>The <a href="/javadoc/latest/com/google/gwt/user/client/ui/CustomButton.html">CustomButton</a> widget has support for multiple button faces, giving developers more stylistic control. Also, unlike the <a href="/javadoc/latest/com/google/gwt/user/client/ui/Button.html">Button</a> widget, a CustomButton can be toggleable, as is the case with the CustomButton subclass <a href="/javadoc/latest/com/google/gwt/user/client/ui/ToggleButton.html">ToggleButton</a>. Event handlers attached to the underlying DOM element update the button faces when the button is pressed. We need to toggle the ARIA state <code>aria-pressed</code> as shown below.</p>
+<pre><code>void toggleDown() {
+    // Update a11y state &quot;aria-pressed&quot;
+    Roles.getButtonRole().setAriaPressedState(getElement(), PressedValue.of(true));
+  }
+
+  void toggleUp() {
+    // Update a11y state &quot;aria-pressed&quot;
+    Roles.getButtonRole().setAriaPressedState(getElement(), PressedValue.of(false));
+  }
+
+  void setInactive() {
+    // Update a11y state &quot;aria-disabled&quot;
+    Roles.getButtonRole().setAriaDiabledState(getElement(), false);
+  }
+
+  void setActive() {
+    // Update a11y state &quot;aria-disabled&quot;
+    Roles.getButtonRole().setAriaDiabledState(getElement(), true);
+  }
+</code></pre><p>It is important to make sure that all event handlers that change the state of the widget also change the ARIA state.</p><h2>Adding Keyboard Accessibility<a id="kbdA11y"></a></h2><p>Keyboard accessibility is a key requirement when access-enabling GWT widgets. When developing a new widget, ensure that it is keyboard accessible from the outset; adding keyboard accessibility later can be difficult. Screen readers will speak the element that has keyboard focus, so keyboard accessibility can be accomplished by moving focus to different elements in response to keyboard commands.</p><p>Proper keyboard accessibility affords the following end-user behavior:</p>
+<ul>
+  <li>Users can tab to move focus to the widget.</li>
+  <li>When the widget receives focus, the screen reader will interpret the ARIA roles and states that are set on the widget.</li>
+  <li>The screen reader will speak a description of the widget, and its textual content.</li>
+</ul><p>By default, the only elements in the HTML DOM that can receive keyboard focus are anchor and form fields. However, setting the DOM property <code>tabIndex</code> (note that this corresponds to HTML attribute <code>tabindex</code>) to 0 will place such elements in the default tab sequence and thereby enable them to receive keyboard focus. Setting <code>tabIndex = -1</code>, while removing the element from the tab sequence, still allows the element to receive keyboard focus programmatically. Tabindex support can be added for any role by setting the <code>tabindex</code> ARIA attribute. The code below shows how to add the heading element to the natural tab order of the page. You might want to do this if you want to allow further interaction with the heading (e.g. for some type of clickable heading).</p>
+<pre><code>// Set tab index for a heading element
+  Roles.getHeadingRole().setTabindexExtraAttribute(heading.getElement(), 0);
+</code></pre><p>In GWT, any widget that extends the <a href="/javadoc/latest/com/google/gwt/user/client/ui/FocusWidget.html">FocusWidget</a> abstract class will be keyboard focusable by default. The FocusWidget abstract class includes a <a href="/javadoc/latest/com/google/gwt/user/client/ui/FocusWidget.html#setFocus(boolean)">setFocus(boolean)</a> method that can be used to programmatically set the focus or remove focus on the widget. FocusWidget also includes a <a href="/javadoc/latest/com/google/gwt/user/client/ui/FocusWidget.html##setTabIndex(int)">setTabIndex(int)</a> method that allows the user to set the DOM property <code>tabIndex</code> for the widget.</p><p>Keep in mind that extending FocusWidget does not guarantee focusability for your widget. The base element of the FocusWidget (passed to the superclass constructor) must be a naturally focusable HTML element.</p><p>For widgets that don&rsquo;t extend the FocusWidget abstract class, ensuring keyboard accessibility can be more difficult. Different browsers set focus in different ways, and focus on arbitrary elements is not supported everywhere. You can use <a href="/javadoc/latest/com/google/gwt/user/client/ui/FocusPanel.html">FocusPanel</a> to enclose elements that need to receive keyboard focus; just be sure to test your widget on different browsers.</p><p>For an example of using the <code>tabIndex</code> property, see the MenuBar widget. The root menu is the only one that should be in the tab sequence; its sub-menus are not. To achieve this, the tab index is set to 0 in the MenuBar&rsquo;s constructor, and as new MenuBars are added as sub-menus, their tab index attribute is reset to -1.</p><h2>Indicating Selection Changes<a id="selectionChanges"></a></h2><p>Some widgets, such as GWT&rsquo;s <a href="/javadoc/latest/com/google/gwt/user/client/ui/Tree.html">Tree</a> and <a href="/javadoc/latest/com/google/gwt/user/client/ui/MenuBar.html">MenuBar</a> widgets, consist of a container with a set of items. The container has a naturally focusable DOM element, but the items themselves do not. The focusable element receives all keyboard input, and causes visual changes in the contained items to indicate a change in item selection. For example, GWT&rsquo;s Tree widget contains <a href="/javadoc/latest/com/google/gwt/user/client/ui/TreeItem.html">TreeItems</a>; both of these elements are made up of <code>div</code> elements. However, the Tree also has a naturally focusable hidden element which receives keyboard events. Whenever the user hits the arrow keys, this element handles the event and causes the appropriate TreeItem to be highlighted.</p><p>While this technique works for sighted users, it plays havoc with screen readers. Since the TreeItems themselves never get natural focus when selected, there is no way for the screen reader to know that the item selection has changed. One possible way to remedy this would be to have each TreeItem be naturally focusable. Unfortunately, TreeItems can contain more than just text &ndash; they can contain other widgets, which themselves can be focusable. Here, delegating focus properly would be fairly complex &ndash; each TreeItem would have to handle all of the key events for its child widget, and decide whether or not to delegate key events to its child (for user interaction with the child widget), or to handle the key events itself (for Tree navigation). Keep in mind that hooking up keyboard event handlers for each item would become unwieldy, as Trees may become very large. One can avoid doing this by relying on the natural event bubbling of key events, and having an element at the root of the Tree widget be responsible for receiving events.</p><p>Another way to remedy the situation is to use the ARIA <code>aria-activedescendant</code> property. This property is set on an element that is naturally focusable, and its value is the HTML id of the currently-selected item. Whenever the item changes, the <code>aria-activedescendant</code> value should be updated to the id of the newly-selected item. The screen reader will notice the change in the value and read the element corresponding to the id. Below is an example of how this technique is used on the GWT Tree and TreeItem widgets.</p><p>First, we set roles on the Tree&rsquo;s root element and its focusable element:</p>
+<pre><code>// Called from Tree(...) constructor
+  private void init(TreeImages images, boolean useLeafImages) {
+
+    ...
+
+    // Root element of Tree is a div
+    setElement(DOM.createDiv());
+
+    ...
+
+    // Create naturally-focusable element
+    focusable = FocusPanel.impl.createFocusable();
+
+    ...
+
+    // Hide element and append it to root div
+    DOM.setIntStyleAttribute(focusable, &quot;zIndex&quot;, -1);
+    DOM.appendChild(getElement(), focusable);
+
+    // Listen for key events on the root element
+    sinkEvents(Event.MOUSEEVENTS | Event.ONCLICK | Event.KEYEVENTS);
+
+    ...
+
+    // Add a11y role &quot;tree&quot; to the focusable element
+    Roles.getTreeRole().set(focusable);
+ }
+</code></pre><p>Whenever an item selection changes, the value of the <code>aria-activedescendant</code> property is set on the focusable element, and the ARIA states and properties of the currently-selected item are set:</p>
+<pre><code>// Called after a new item has been selected
+  private void updateAriaAttributes() {
+
+    // Get the element which contains the text (or widget) content within
+    // the currently-selected TreeItem
+    Element curSelectionContentElem = curSelection.getContentElem();
+
+    ...
+
+    // Set the &#39;aria-level&#39; state. To do this, we need to compute the level of
+    // the currently selected item.
+    Roles.getTreeitemRole().setAriaLevelProperty(curSelectionContentElem, curSelectionLevel + 1);
+
+    // Set other ARIA states
+    ...
+
+    / Update the &#39;aria-activedescendant&#39; state for the focusable element to
+    // match the id of the currently selected item
+
+    Roles.getTreeRole().setAriaActivedescendantProperty(focusable,
+        IdReference.of(DOM.getElementAttribute(curSelectionContentElem, &quot;id&quot;)));
+  }
+</code></pre><p>Though it is not shown in this code snippet, when TreeItems are created, they are constructed out of several divs, only one of which contains the content that we wish to be interpreted by the screen reader. This div is assigned a unique DOM id (which is generated using the <a href="/javadoc/latest/com/google/gwt/user/client/DOM.html#createUniqueId()">DOM.createUniqueId()</a> method), and a role of <code>treeitem</code>. These attributes are not set on the root TreeItem div because it contains a child image, which we do not want to be read.</p><h4>Caveats with this Approach</h4><p>The obvious problem with this approach is that unique DOM ids need to be assigned to all of the possible items that could be selected. While this is easy enough to implement, it seems unwieldy to assign a DOM id to each item.</p><p>Also, there is a subtle problem with using the <code>aria-activedescendant</code> state. Originally, the intended use-case for this state was the implementation of a listbox with divs. Whenever the <code>aria-activedescendant</code> value of the parent div (which was the one with natural focus) would change, the screen reader would read out the text of the list item with the corresponding id, ignoring any roles or states set on the selected item. This is fine for widgets as simple as a listbox; the selected item has enough text for the user to understand what is selected. However, in the case of a Tree, the selected item&rsquo;s text may not be enough. For example, which level of the tree is the selected item on?</p><p>Some screen readers have started to do more than just read the text of items selected with <code>aria-activedescendant</code>, interpreting the item just as they would any other element that received keyboard focus. However, not all screen readers do this yet.</p><h2>Associating Meaningful Labels<a id="labels"></a></h2><p>A web page will often include human-readable descriptive elements (such as <a href="/javadoc/latest/com/google/gwt/user/client/ui/Label.html">Label</a> and <a href="/javadoc/latest/com/google/gwt/user/client/ui/HTML.html">HTML</a> widgets) that explain the purpose of a particular widget. However, the association between a widget and its description may not be obvious to a browser or a screen reader. ARIA defines the <code>aria-labelledby</code> property which can be used to explicitly associate a widget with one or more descriptive elements.</p><p>In order to associate a label with a widget, ensure that descriptive elements all have a unique id. The assigned id can later be used with to set the <code>aria-labelledby</code> state of a widget to refer to the id values of any descriptive elements, thereby associating those descriptive elements with the widget.</p><h2>Automatically Speaking Highlighted Content<a id="speaking"></a></h2><p>AJAX components often highlight an item of interest without moving keyboard focus to that item. This creates a good end-user experience when using components such as autocomplete widgets; the user can continue to type and obtain further refinements to the available set of choices. Because screen readers traditionally attempt to speak the item that has keyboard focus, they will not read highlighted items. ARIA live regions help make widgets such as autocomplete boxes usable for visually impaired users.</p><h4>How It Works</h4><p>The ARIA role <code>region</code> is used to declare areas that hold such live content, i.e., content that updates dynamically without having keyboard focus. The ARIA state <code>aria-live</code> on such regions specifies the priority of such updates; think of this as a politeness setting. Here is a code example that should provide the general idea of how to implement this technique for an auto-complete widget:</p><h4>Initialize Live Region</h4><p>The ARIA role <code>region</code> is added when instantiating the relevant DOM nodes in the AutoCompleteWidget constructor:</p>
+<pre><code>public AutoCompleteWidget() {
+    ...
+    // Create a hidden div where we store the current item text for a
+    // screen reader to speak
+    ariaElement = DOM.createDiv();
+    DOM.setStyleAttribute(ariaElement, &quot;display&quot;, &quot;none&quot;);
+    Roles.getRegionRole(ariaElement);
+    Roles.getRegionRole().getAriaLiveProperty(ariaElement, LiveValue.ASSERTIVE);
+    DOM.appendChild(getElement(), ariaElement);
+  }
+</code></pre><p>Here, we have created a hidden div element that holds the content to be spoken. We&rsquo;ve declared it to have <code>role = &#39;region&#39;</code> and <code>live = &#39;assertive&#39;</code>; the latter setting specifies that updates to this content have the highest priority. Next, we set up the needed associations so that the set of suggestions returned as the user types into the AutoCompleteWidget&rsquo;s text box are put in hidden div:</p>
+<pre><code>// This method is called via a keyboard event handler
+    private void showSuggestions(Collection suggestions) {
+      if (suggestions.size() &gt; 0) {
+
+        // Popupulate the visible suggestion pop-up widget with the new selections
+        // and show them
+        ....
+        // Generate the hidden div content based on the suggestions
+        String hiddenDivText = &quot;Suggestions &quot;;
+
+        for (Suggestion curSuggestion : suggestions) {
+          hiddenDivText += &quot; &quot; + curSuggestion.getDisplayString();
+        }
+
+        DOM.setInnerText(ariaElement, hiddenDivText);
+      }
+    }
+</code></pre><h4>Problems with this Approach</h4><p>With this technique, the developer has complete control over the text that is spoken by the screen reader. While this seems like a good thing for the developer, it&rsquo;s not great for users of screen readers. Taking this approach, developers of AutoComplete widgets may decide on different text that the screen reader should read. For example, another screen reader might prefix each suggestion with the &ldquo;Suggestion x&rdquo;, where x is the index of the suggestion in the list. This leads to an inconsistent experience across applications. If both developers were able to make use of ARIA roles, properties and states, then a more consistent experience would result, in accordance with the ARIA specification.</p><p>A more direct problem with this approach is internationalization. Most developers would realize that the list of suggestions needs to be translated into different languages; this list is directly displayed on the screen. However, the word &lsquo;Suggestions&rsquo;, which is the first word on the live region, could easily be missed, since it is never visually displayed to the user. These sorts of descriptive terms must also be translated. If ARIA roles and states could be used, then translation of the spoken terms associated with the roles and states would be the screen reader&rsquo;s job; developers would only need to be responsible for translating their content.</p><h2>General Advice For Widget Developers<a id="widgets"></a></h2><p>First and foremost, use native HTML controls whenever possible. Native HTML controls are well understood by screen readers. They do not require ARIA roles and states, which has two main benefits:</p>
+<ul>
+  <li>ARIA is not yet supported by all major browsers. Screen reader and browser developers have already done the work to make HTML controls accessible.</li>
+  <li>Reimplementing native HTML controls using divs (for example) can cause poor performance. For example, suppose a developer were to re-implement a listbox using divs. One of the ARIA properties that applies to the <code>listitem</code> role is <code>aria-posinset</code>. This value indicates the position of the item within its parent container, which corresponds to the item&rsquo;s index in the listbox. The problem is that every time an item is added or removed from the listbox, one has to iterate through all of the items in the list, adjusting their <code>aria-posinset</code> values. Though there are some optimizations that can be done, this is still much slower than native HTML select elements.</li>
+</ul><p>If native HTML controls cannot be used and a custom widget has to be built, keep in mind that it is much easier to develop an accessible widget from the beginning than to go back and add accessibility support to an existing widget. While adding ARIA roles, properties and states is relatively easy, ensuring that the appropriate elements receive keyboard focus during user interaction can be more complicated.</p><p>Make sure to test that a new widget is accessible! There are three basic steps in the translation between the DOM and the screen reader:</p>
+<ul>
+  <li><p><strong>DOM</strong></p><p>Since ARIA attributes are being added directly to the DOM, an easy way to check that the attributes are in the right location is to use a DOM inspector like  <a href="http://getfirebug.com/">Firebug</a> or the <a href="https://developers.google.com/chrome-developer-tools/">Chrome developer tools</a>.</p></li>
+  <li><p><strong>Events</strong></p><p>It is important to make sure that the browser raises the appropriate events in response to ARIA attributes, changes in focus, and changes in the widget itself. A Microsoft tool called the <a href="http://msdn.microsoft.com/en-us/library/dd317979(VS.85).aspx">Accessible Event Watcher</a>, or AccEvent, can allow you to check which events are being raised.</p></li>
+  <li><p><strong>Screen Reader</strong></p><p>In the end, the best way to verify that your GWT widgets are accessible is by using a screen reader. Some screen readers may not be listening for all of the  events raised by the browser, or they might expect the ARIA attributes to be added to the DOM in certain locations. The most widely used screen readers with some support for ARIA are  <a href="http://www.freedomscientific.com/products/fs/jaws-product-page.asp">JAWS</a>, <a href="http://www.gwmicro.com/Window-Eyes/">Window-Eyes</a>. New browser screen readers are the  <a href="http://www.firevox.clcworld.net/">FireVox</a> text-to-speech add-on for Firefox and the <a href="https://chrome.google.com/webstore/detail/kgejglhpjiefppelpmljglcjbhoiplfn">ChromeVox</a> extension for Chrome and Chrome OS.</p></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

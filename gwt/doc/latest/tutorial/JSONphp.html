@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/tutorial/JSONphp.md"></a>
+                    </span>
+                    <h1>JSON php</h1><p>If you have a web server (Apache, IIS, etc.) installed locally and PHP installed, you can write a PHP script to generate stock data and make the call to your local server. What&rsquo;s important for this example is that the stock data is JSON-encoded and that the server is local.</p>
+<ol>
+  <li>Create a PHP script.
+  <ul>
+    <li>In the Eclipse Package Explorer, select the <code>StockWatcher/war</code> folder.</li>
+    <li>From the Eclipse menu bar, select File &gt; New &gt; File.</li>
+    <li>In the New File window, enter the file name <code>stockPrices.php</code></li>
+  </ul></li>
+</ol>
+<pre><code>&lt;?php
+
+  header(&#39;Content-Type: text/javascript&#39;);
+  header(&#39;Cache-Control: no-cache&#39;);
+  header(&#39;Pragma: no-cache&#39;);
+
+  define(&quot;MAX_PRICE&quot;, 100.0); // $100.00
+  define(&quot;MAX_PRICE_CHANGE&quot;, 0.02); // +/- 2%
+
+  echo &#39;[&#39;;
+
+  $q = trim($_GET[&#39;q&#39;]);
+  if ($q) {
+    $symbols = explode(&#39; &#39;, $q);
+
+    for ($i=0; $i&lt;count($symbols); $i++) {
+      $price = lcg_value() * MAX_PRICE;
+      $change = $price * MAX_PRICE_CHANGE * (lcg_value() * 2.0 - 1.0);
+
+      echo &#39;{&#39;;
+      echo &quot;\&quot;symbol\&quot;:\&quot;$symbols[$i]\&quot;,&quot;;
+      echo &quot;\&quot;price\&quot;:$price,&quot;;
+      echo &quot;\&quot;change\&quot;:$change&quot;;
+      echo &#39;}&#39;;
+
+      if ($i &lt; (count($symbols) - 1)) {
+        echo &#39;,&#39;;
+      }
+    }
+  }
+
+  echo &#39;]&#39;;
+?&gt;
+</code></pre>
+<ol>
+  <li><p>Compile StockWatcher.</p>
+  <ul>
+    <li>Click the GWT Compile Project button in the toolbar <img src="images/GWTCompileProject.png" alt="icon""/> or run the <code>ant build</code> script to create the production mode files for the application (which will now include stockPrices.php).</li>
+    <li><img src="images/JSONstockPricesphp.png" alt="screenshot: Package Explorer php file""/></li>
+  </ul></li>
+  <li><p>Move the compiled StockWatcher files in the StockWatcher/war directory to a /StockWatcher  directory in whatever web server (Apache, IIS, etc.) you have installed locally which supports PHP. If you are not using Java servlets (e.g. GWT RPC), you will not have to move over the files in StockWatcher/war/WEB-INF</p></li>
+  <li>Test the stock quote server.
+  <ul>
+    <li>In a web browser, navigate to <code>http://localhost/StockWatcher/stockPrices.php?q=ABC+DEF</code></li>
+    <li>StockPrice data is returned in JSON format</li>
+  </ul></li>
+</ol>
+<pre><code>[{&quot;symbol&quot;:&quot;ABC&quot;,&quot;price&quot;:40.485578668179,&quot;change&quot;:-0.53944918844604},
+    {&quot;symbol&quot;:&quot;DEF&quot;,&quot;price&quot;:1.3606576154209,&quot;change&quot;:0.0051755221198266}]
+</code></pre><p>Now that you can retrieve JSON-encoded stock data from the server, continue with the next step in the JSON tutorial, <a href="JSON.html#client">Manipulating JSON data in the client-side code.</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

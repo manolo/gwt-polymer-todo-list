@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../'>GWT homepage</a></li>
+                    <li><a href='./../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../examples.html'>Examples</a></li>
+    <li><a href='./../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../terms.html'>GWT License</a></li>
+    <li><a href='./../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/FAQ_DebuggingAndCompiling.md"></a>
+                    </span>
+                    <h1>FAQ - Debugging and Compiling</h1>
+<ol>
+  <li><a href="#What">What&rsquo;s with all the cache/nocache stuff and weird filenames?</a></li>
+  <li><a href="#How_do_I_change_the_location_of_my_cache/nocache_HTML_files?">How do I change the location of my cache/nocache HTML files?</a></li>
+  <li><a href="#Why_is_my_GWT-generated_JavaScript_gibberish?">Why is my GWT-generated JavaScript gibberish?</a></li>
+  <li><a href="#Can_I_speed_up_the_GWT_compiler?">Can I speed up the GWT compiler?</a></li>
+  <li><a href="#Is_the_war_directory_used_by_GWT_compiler_for_both_input_and_output">Is the war directory used by the GWT compiler as both an input and output directory to the compiler process?</a></li>
+  <li><a href="#Does_the_new_war_output_directory_layout_require_java_on_the_server">Does the new WAR output directory layout require me to use Java on the server-side?</a></li>
+  <li><a href="#What_options_can_be_passed_to_the_compiler">What options can be passed to the Compiler process?</a></li>
+</ol><p>Note: &ldquo;Hosted mode&rdquo; and &ldquo;web mode&rdquo; have been renamed <em>development mode</em> and <em>production mode</em>, respectively.</p><h2>What&rsquo;s with all the cache/nocache stuff and weird filenames?<a id="What's_with_all_the_cache/nocache_stuff_and_weird_filenames"></a></h2><p>During its bootstrap process, a GWT application goes through a series of sometimes cryptically-named files. These files, generated by the GWT Compiler, usually seem strange to developers new to GWT. To effectively deploy a GWT application, however, it is necessary to understand these files so that they can be placed appropriately on the web server.</p><p>The important files produced by the GWT Compiler are:</p>
+<ul>
+  <li><code>_&lt;Module Name&gt;_.nocache.js</code></li>
+  <li><code>_&lt;alphanumeric&gt;_.gwt.rpc</code></li>
+</ul><p>Each of the items listed above is described below. However, first it&rsquo;s important to understand the concept of deferred binding since that notion is at the heart of the bootstrap process injected into the <code>&lt;Module Name&gt;</code>nocache.js` file, so you might want to read a bit about <a href="DevGuideCodingBasics.html#DevGuideDeferredBinding">deferred binding</a> before continuing.</p><p>Before explaining what each file does, it&rsquo;s also useful to summarize the overall bootstrap procedure for a GWT application:</p>
+<ol>
+  <li>The browser loads and processes the host HTML page.</li>
+  <li>When the browser encounters the page&rsquo;s <code>&lt;script src=&quot;&lt;Module Name&gt;.nocache.js&quot;&gt;</code> tag, it immediately downloads and executes the JavaScript code in the file.</li>
+  <li>The <code>.nocache.js</code> file contains JavaScript code that resolves the Deferred Binding configurations (such as browser detection, for instance) and then uses a lookup table generated by the GWT Compiler to locate one of the <code>.cache.html</code> files to use.</li>
+  <li>The JavaScript code in <code>.nocache.js</code> then creates a hidden <code>&lt;iframe&gt;</code>, inserts it to the host page&rsquo;s DOM, and loads the <code>.cache.html</code> file into that iframe.</li>
+  <li>The <code>.cache.html</code> file contains the actual program logic of the GWT application.</li>
+</ol><p>That&rsquo;s the process in a nutshell. For an example the bootstrap process for a complete GWT application, check out the <a href="DevGuideOrganizingProjects.html#DevGuideBootstrap">Developer Guide example</a>. The sections below describe each of the GWT application files in detail.</p><h3>The .cache.html Files<a id="The_.cache.html_Files"></a></h3><p>The &ldquo;cache&rdquo; files contain your application&rsquo;s logic. If you were to look inside a <code>.cache.html</code> file, you would see that it is JavaScript code wrapped in a thin HTML wrapper. You might wonder why the GWT Compiler doesn&rsquo;t simply emit it as a JavaScript .js file. The reason for this is that certain browsers do not correctly handle compression of pure-JavaScript files in some circumstances. This would effectively mean that users unfortunate enough to be using such a browser would download the .js file uncompressed. Since the GWT mantra is no-compromise, high-performance AJAX code, the GWT Compiler wraps the JavaScript in an HTML file to wiggle around this browser quirk.</p><p>They are named according to the MD5 sum of their contents. This guarantees deterministic behavior by the GWT Compiler: if you recompile your application without changing code, the contents of the output will not change, and so the MD5 sums will remain the same. Conversely, if you do change your source code, the output JavaScript code will likewise change, and so the MD5 sums and thus the filenames will change.</p><p>Because of this uniqueness guarantee, it is safe (and indeed preferable) for browsers to cache these files, which is reflected in their <code>.cache.html</code> file extension.</p><h3>The .nocache.js File<a id="The_.nocache.js_File"></a></h3><p>The &ldquo;nocache&rdquo; file is where <a href="DevGuideCodingBasics.html#DevGuideDeferredBinding">Deferred Binding</a> occurs. Before the application can run, any dynamically-bound code must be resolved. This might include browser-specific versions of classes, the specific set of string constants appropriate to the user&rsquo;s selected language, and so on. In Java, this would be handled by simply loading an appropriate service-provider class that implements a particular interface. To maximize performance and minimize download size, however, GWT does this selection up-front in the &ldquo;nocache&rdquo; file.</p><p>The reason the file is named &ldquo;.nocache.html&rdquo; is to indicate that the file should never be cached. That is, it must be downloaded and executed again each time the browser starts the GWT application. The reason it must be re-downloaded each time is that the GWT Compiler regenerates it each time, but under the same file name. If the browsers were allowed to cache the file, they might not download the new version of the file, when the GWT application was recompiled and redeployed on the server. To help prevent caching, the code in <code>gwt.js</code> actually appends an HTTP GET parameter on the end of file name containing a unique timestamp. The browser interprets this as a dynamic HTTP request, and thus should not load the file from cache.</p><h3>The .gwt.rpc File<a id="The_.gwt.rpc_File"></a></h3><p>In previous versions of GWT, if your application used GWT RPC, the types that you wanted to serialize across the wire had to implement the <code>IsSerializable</code> interface. As of GWT 1.4, types that implement the <code>java.io.Serializable</code> interface now also qualify for serialization over RPC, with some conditions.</p><p>One of these conditions is that the types that you would like to serialize over the wire must be included in the .gwt.rpc file generated by the GWT compiler. The .gwt.rpc file serves as a serialization policy to indicate which types implementing <code>java.io.Serializable</code> are allowed to be serialized over the wire. For more details on this and other conditions to use <code>Serializable</code> types in GWT RPC, check out this FAQ.</p><h3>Summary<a id="Summary"></a></h3><p>That is the story behind the somewhat strange GWT file names. The <code>&lt;module&gt;.nocache.js</code> performs the deferred binding resolution and selects a cache file based on the execution context</p><h2>How do I change the location of my cache/nocache HTML files?<a id="How_do_I_change_the_location_of_my_cache/nocache_HTML_files?"></a></h2><p>The bootstrap process of a GWT application involves a <code>&lt;</code>Module Name<code>&gt;</code>.nocache.js file, and a number of .cache.html files. In the development mode environment, these applications are automatically placed in a war style directory based on the output directory specified in the -out argument. For instance, if the -out argument specified in your build.xml development target reads <code>myapp</code>, then the development mode process will read your host HTML page at <code>/test/war/MyApp.html</code>.</p>
+<ul>
+  <li>The application&rsquo;s host HTML file (that is, the file containing the <code>&lt;</code>script<code>&gt;</code> tag referencing the <code>&lt;</code>module<code>&gt;</code>.nocache.js file) may exist anywhere on a web site. There are no constraints on this URL.</li>
+  <li>The location of the <code>&lt;module&gt;.nocache.js</code> file relative to the host HTML page is not significant; the <code>.nocache.js</code> file attempts to locate files <em>relative to the URL from which it was loaded</em>, not relative to the URL of the host HTML page.</li>
+  <li>The <code>.cache.html</code> and other files generated by the GWT compiler must be located at the same path as the .nocache.js file.When a GWT application is deployed, however, it must coexist with the rest of the web site. To correctly integrate a GWT application into a web site&rsquo;s file structure, the site administrator must understand how GWT applications bootstrap. Otherwise, the files may not be at the locations where the GWT infrastructure expects to find them, and the application will not load. The details below describe each of these principle components, as well as where they should be located to properly load up your GWT application</li>
+</ul><h3>Example download sequence using the GWT bootstrap model<a id="Example_download_sequence"></a></h3><p>In the GWT 1.4 bootstrap model, GWT expects to find all its files in the same path as the <code>&lt;module&gt;.nocache.js</code> file. For example, let&rsquo;s suppose your GWT Module&rsquo;s name is <code>com.company.app
+.MyApp</code>, and that the host HTML file is at <code>http://host.domain.tld/myApp/index.html</code>. Further suppose that the <code>&lt;module&gt;.nocache.js</code> and other files generated by the GWT compiler are in the same path as the host HTML file. With this setup, the following sequence of requests will occur:</p>
+<ol>
+  <li><code>http://host.domain.tld/myApp/index.html</code></li>
+  <li><code>http://host.domain.tld/myApp/MyApp.nocache.js</code></li>
+  <li><code>http://host.domain.tld/myApp/CAFEBABE12345678DEADBEEF87654321.cache.html</code></li>
+</ol><p>For an example of the bootstrap sequence for a complete GWT application, check out the <a href="DevGuideOrganizingProjects.html#DevGuideBootstrap">Developer Guide docs</a>.</p><h3>Relocating the files<a id="Relocating_the_files"></a></h3><p>The configuration above may not work in your own case. For example, for organizational reasons you might want to place the host HTML page at the root path, but place the GWT-related files at a different location, such as <code>/gwt-files</code>.</p><p>To relocate the GWT application files to the <code>/gwt-files</code> path, all you need to do is update the <code>&lt;</code>script<code>&gt;</code> tag referencing the <code>&lt;</code>module<code>&gt;</code>.nocache.js file to include the relative (or absolute) path to the file. The files generated by the GWT compiler, including the .cache.html files, must also reside at the same path as the <code>&lt;</code>module<code>&gt;</code>.nocache.js file.</p><p>In this case if your GWT Module is <code>com.company.app.MyApp</code>, the <code>&lt;</code>script<code>&gt;</code> tag in the host page (index.html) would be:</p>
+<pre><code>&lt;script language=&quot;JavaScript&quot; src=&quot;/gwt-files/MyApp.nocache.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>The example above would result in the following file download sequence:</p>
+<ol>
+  <li><code>http://host.domain.tld/index.html</code></li>
+  <li><code>http://host.domain.tld/gwt-files/MyApp.nocache.js</code></li>
+  <li><code>http://host.domain.tld/gwt-files/CAFEBABE12345678DEADBEEF87654321.cache.html</code></li>
+</ol><h3>Additional considerations<a id="Additional_considerations"></a></h3><p>Usually applications will need additional content, such as images and CSS files, and of course dynamic resources such as RPC or JSON URLs. The techniques described above will change not only the path used to fetch GWT&rsquo;s application files, but also the value returned by the GWT.getModuleBaseURL() and GWT.getModuleBaseForStaticFiles() methods. If your application uses that method to construct URLs to additional resources, be sure that the resources are located in the appropriate directory. For example, if you remap your GWT files to &lsquo;/gwt-files/&rsquo;, but your host page is <code>/index.html</code>, then the code <code>GWT.getModuleBaseForStaticFiles() + &quot;myImage.png&quot;</code> will result in the URL <code>/gwt-files/myImage.png</code>.</p><p>It&rsquo;s important to take care if your code refers to resources using GWT.getModuleBaseURL() or GWT.getModuleBaseForStaticFiles(). This is an especially common concern for those using Java Servlets, because the Servlet mapping must be set appropriately in the module XML file (.gwt.xml).</p><h2>Why is my GWT-generated JavaScript gibberish?<a id="Why_is_my_GWT-generated_JavaScript_gibberish?"></a></h2><p>By default, GWT obfuscates the JavaScript it produces. This is partly done to protect the intellectual property of the application you develop, but also because obfuscation reduces the size of the generated JavaScript files, making them faster to download and parse.</p><p>If you prefer not to have GWT obfuscate its output, then you can use the <code>-style</code> flag on the GWT Compiler. This flag has one of three possible values:</p>
+<ul>
+  <li><code>OBF</code> (for obfuscated), the default</li>
+  <li><code>PRETTY</code>, which makes the output readable to a human</li>
+  <li><code>DETAILED</code>, which improves on <code>PRETTY</code> with even more detail (such as very verbose variable names)</li>
+</ul><p>If you are curious about what GWT&rsquo;s generated JavaScript is doing, then you can use <code>-style PRETTY</code>. On the rare occasion where you are debugging GWT&rsquo;s output, then <code>-style DETAILED</code> might be helpful.</p><p>It&rsquo;s important to take care if your code refers to resources using GWT.getModuleBaseURL() or GWT.getModuleBaseForStaticFiles(). This is an especially common concern for those using Java Servlets, because the Servlet mapping must be set appropriately in the module XML file (.gwt.xml).</p><h2>Can I speed up the GWT compiler?<a id="Can_I_speed_up_the_GWT_compiler?"></a></h2><p>If you are compiling a large application, you may find that compiling to production mode takes a long time. One issue is that the compiler actually builds several versions of your application based on client properties for locale and browser. For deployment, this is crucial, but for everyday development, you are probably only using a single browser and locale. If that is the case, then you can take a shortcut and compile only a single permutation during the development cycle.</p><p>Creating this shortcut setup requires creating a new module and manipulating the client properties. What you need to do is to create a module that inherits from your existing module that specifies exact values for client properties that you want to nail down. Let&rsquo;s use <code>Hello</code> as an example&hellip;</p>
+<ol>
+  <li>Create a module called <code>HelloFirefox</code> that inherits Hello</li>
+  <li>Use <code>&lt;set-property&gt;</code> in the <code>HelloFirefox</code> module that explicitly sets a value for the <code>user.agent</code> client property. (See <code>&lt;define-property&gt;</code> in <code>UserAgent.gwt.xml</code> for the possible values.)
+  <ul>
+    <li>Use <code>rename-to</code> in the <code>HelloFirefox</code> with the same value as in the <code>Hello</code> module so the generated <code>.nocache.js</code> file will have the same name (see <a href="DevGuideOrganizingProjects.html#DevGuideModuleXml">Renaming modules</a>.)</li>
+  </ul></li>
+  <li>Compile the <code>HelloFirefox</code> module instead of the <code>Hello</code> module.</li>
+  <li>Look in the <code>war/&lt;modulename&gt;/</code> directory: there should be only one permutation compiled.</li>
+</ol><p>You can do the same thing for <code>locale</code> or any other client property. The subsystem that generates all those permutations is completely extensible, so this technique is a general one. You can thus keep two module XML files in parallel, one for solid development to be tested on all browsers, and another working copy with most permutations suppressed for draft code.</p><p>Hopefully this example also starts to show that the idea of a module isn&rsquo;t as trivial as it might seem at first. Modules play an important role letting you determine what exactly you&rsquo;re trying to build. You can have as many modules as you want for different configurations for the same code base. You can imagine module variations like &ldquo;MySuperBigModuleWithDebuggingAndLoggingTurnedOn.gwt.xml&rdquo;.</p><h2>Is the war directory used by the GWT compiler as both an input and output directory to the compiler process?<a id="Is_the_war_directory_used_by_GWT_compiler_for_both_input_and_output"></a></h2><p>Starting with GWT 1.6, the compiler generates output in a directory structure following the Web Application Archive (WAR) standard layout. This feature makes it easier to deploy your application on any servlet container, like Jetty, Tomcat, or the Google App Engine Java runtime. See <a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr154/index2.html">Chapter 9 of the Servlet 2.5 API specification</a> for more details on the WAR standard layout.</p><p>Following the convention, developers may place their static resources, including their host HTML page, in the <code>war/&lt;appname&gt;</code>directory, where <code>&lt;appname&gt;</code>is the name you specify in your module XML file via the rename-to attribute (i.e. <code>&lt;module rename-to=&quot;myapp&quot;&gt;</code>. The question has come up as to whether the GWT compiler requires this resources to be present in the same war directory structure that will be used for output, or if it is possible to specify a separate input source that could be used to read in required resources. The answer: it is indeed possible to use a totally independent input source and only use the WAR directory uniquely for the compiler&rsquo;s generated output. Since the GWT build process now uses the <a href="http://ant.apache.org/">Apache Ant build tool</a>, all you would need to do is add a copy target in your project build script (build.xml) that will copy and place the required static resources in the final war output directory.</p><p>For example, here is the build.xml file generated by the GWT webAppCreator script:</p>
+<pre><code>&lt;target name=&quot;gwtc&quot; depends=&quot;javac&quot; description=&quot;GWT compile to JavaScript&quot;&gt;
+    &lt;java failonerror=&quot;true&quot; fork=&quot;true&quot; classname=&quot;com.google.gwt.dev.Compiler&quot;&gt;
+      &lt;classpath&gt;
+        &lt;pathelement location=&quot;src&quot;/&gt;
+        &lt;path refid=&quot;project.class.path&quot;/&gt;
+      &lt;/classpath&gt;
+      &lt;!-- add jvmarg -Xss16M or similar if you see a StackOverflowError --&gt;
+      &lt;jvmarg value=&quot;-Xmx256M&quot;/&gt;
+      &lt;!-- Additional arguments like -style PRETTY or -logLevel DEBUG --&gt;
+      &lt;arg value=&quot;com.google.gwt.sample.hello.Hello&quot;/&gt;
+    &lt;/java&gt;
+  &lt;/target&gt;
+
+</code></pre><p>Let&rsquo;s suppose that the static resources that you want to copy over are located in the src/com/myapp/resources folder. You could define a copy target that takes these resources and copies them over to the war output directory like so:</p>
+<pre><code>&lt;target name=&quot;copyresources&quot; description=&quot;Copy static resources to war output directory&quot;&gt;
+    &lt;copy todir=&quot;war/myapp&quot;&gt;
+      &lt;fileset dir=&quot;src/com/myapp/resources&quot;&gt;
+        &lt;include name=&quot;**/*&quot;/&gt;
+      &lt;/fileset&gt;
+    &lt;/copy&gt;
+  &lt;/target&gt;
+
+</code></pre><p>Lastly, update the gwtc target to depend on the newly created copyresources target:</p>
+<pre><code>&lt;target name=&quot;gwtc&quot; depends=&quot;javac,copyresources&quot; description=&quot;GWT compile to JavaScript&quot;&gt;
+
+</code></pre><p>At this point, you should be ready to go. That is, of course, if you&rsquo;re planning on using Java on the server-side. If you&rsquo;re deploying on a different server-side technology, the new WAR style directory probably isn&rsquo;t very interesting to you, but you can nonetheless treat the input and output directories separately, as well as extract what you need from the WAR output directory for whatever server-side your application uses.</p><h2>Does the new WAR output directory layout require me to use Java on the server-side?<a id="Does_the_new_war_output_directory_layout_require_java_on_the_server"></a></h2><p>Like in previous versions of GWT, you can always use the server-side of your choice to deploy your GWT application. The new WAR output directory structure that the GWT compiler uses to generate output was introduced in GWT 1.6 to make it easier for developers who use Java on the server-side to deploy their applications directly from the generated output, as is the case for the <a href="https://developers.google.com/eclipse/">Google Plugin for Eclipse.</a></p><p>All you need to do to deploy your GWT application your custom web server is to extract the important files generated during the GWT compilation and place them on your web server. These files are the <code>&lt;appname&gt;nocache.js</code> and other <code>&lt;md5&gt;cache.html</code> files. For more information on the generated files, check out this <a href="#What">FAQ</a> which describes them in more detail. The generated JS and HTML files are placed in the <code>war/&lt;appname&gt;</code>folder during compilation. All you need to do is copy these files to your web server&rsquo;s active directory, as well as any other static resources required by your application like images or stylesheets, and you&rsquo;re done.</p><h2>What options can be passed to the Compiler process?<a id="What_options_can_be_passed_to_the_compiler"></a></h2><p>See <a href="DevGuideCompilingAndDebugging.html#compiler_options">GWT Compiler Options</a>.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/Tutorials.html'>Tutorials</a>
+  <ul>
+    <li><a href="#">Modern GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/todos-tutorial/introduction.html'>Overview</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/todos-tutorial/functional.html'>Functional</a></li>
+    </ul></li>
+    <li><a href="#">Classic GWT</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+      <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+        <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+        <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+        <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+        <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+        <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+        <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+      </ul></li>
+      <li><a href="#">AJAX Communication</a>
+      <ul>
+        <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+        <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+        <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+        <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+      <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/tutorial/JSON.md"></a>
+                    </span>
+                    <h1>Retrieving JSON</h1><p>At this point, you&rsquo;ve created the initial implementation of the StockWatcher application, simulating stock data in the client-side code.</p><p>On this page, you&rsquo;ll make a call to your local server to retrieve JSON-formatted stock data instead:</p>
+<ol>
+  <li><a href="#server">Creating a source of JSON data on your local server</a></li>
+  <li><a href="#client">Manipulating JSON data in the client-side code</a></li>
+  <li><a href="#http">Making HTTP requests to retrieve data from the server</a></li>
+  <li><a href="#errors">Handling GET errors</a></li>
+</ol><p>Additional information follows:</p>
+<ol>
+  <li><a href="#more">More about JSON, JSNI, Overlay types, and HTTP</a></li>
+</ol><p><strong>Note:</strong> For a broader guide to client-server communication in a GWT application, see <a href="../DevGuideServerCommunication.html">Communicate with a Server</a>.</p><h3>What is JSON?</h3><p>JSON is a universal, language-independent format for data. In this way, it&rsquo;s similar to XML. Whereas XML uses tags, JSON is based on the object-literal notation of JavaScript. Therefore the format is simpler than XML. In general, JSON-encoded data is less verbose than the equivalent data in XML and so JSON data downloads more quickly than XML data.</p><p>When you encode the stock data for StockWatcher in JSON format, it will look something like this (but the whitespace will be stripped out).</p>
+<pre><code>[
+  {
+    &quot;symbol&quot;: &quot;ABC&quot;,
+    &quot;price&quot;: 87.86,
+    &quot;change&quot;: -0.41
+  },
+  {
+    &quot;symbol&quot;: &quot;DEF&quot;,
+    &quot;price&quot;: 62.79,
+    &quot;change&quot;: 0.49
+  },
+  {
+    &quot;symbol&quot;: &quot;GHI&quot;,
+    &quot;price&quot;: 67.64,
+    &quot;change&quot;: 0.05
+  }
+]
+
+</code></pre><h2>Creating a source of JSON data on your local server <a id="server"></a></h2><h3>Reviewing the existing implementation</h3><p>In the original StockWatcher implementation, you created a StockPrice class and used the refreshWatchList method to generate random stock data and then call the updateTable method to populate StockWatcher&rsquo;s flex table.</p>
+<pre><code>/**
+   * Generate random stock prices.
+   */
+  private void refreshWatchList() {
+    final double MAX_PRICE = 100.0; // $100.00
+    final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
+
+    StockPrice[] prices = new StockPrice[stocks.size()];
+    for (int i = 0; i &lt; stocks.size(); i++) {
+      double price = Random.nextDouble() * MAX_PRICE;
+      double change = price * MAX_PRICE_CHANGE
+          * (Random.nextDouble() * 2.0 - 1.0);
+
+      prices[i] = new StockPrice(stocks.get(i), price, change);
+    }
+
+    updateTable(prices);
+  }
+
+</code></pre><p>In this tutorial, you&rsquo;ll create a servlet to generate the stock data in JSON format. Then you&rsquo;ll make an HTTP call to retrieve the JSON data from the server. You&rsquo;ll use JSNI and GWT overlay types to work with the JSON data while writing the client-side code.</p><h3>Writing the servlet</h3><p>To serve up hypothetical stock quotes in JSON format, you&rsquo;ll create a servlet. To use the embedded servlet container (Jetty) to serve the data, add the JsonStockData class to the server directory of your StockWatcher project and reference the servlet in the web application deployment descriptor (web.xml).</p><p><strong>Note</strong>: If you have a web server (Apache, IIS, etc) installed locally and PHP installed, you could instead <a href="JSONphp.html">write a PHP script to generate the stock data</a> and make the call to your local server. What&rsquo;s important for this example is that the stock data is JSON-encoded and that the server is local.</p>
+<ol>
+  <li>Create a servlet.
+  <ul>
+    <li>In the Package Explorer, select the client package:<code>com.google.gwt.sample.stockwatcher.client</code></li>
+    <li>In Eclipse, open the New Java Class wizard (File &gt; New &gt; Class).</li>
+  </ul></li>
+  <li>At Package, change the name from <code>.client</code> to <code>.server</code>
+  <ul>
+    <li>At name, enter <code>JsonStockData</code>.</li>
+    <li>Eclipse will create a package for the server-side code and a stub for the JsonStockData class.</li>
+  </ul></li>
+  <li>Replace the stub with the following code.</li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.server;
+
+    import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Random;
+
+    import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+    public class JsonStockData extends HttpServlet {
+
+      private static final double MAX_PRICE = 100.0; // $100.00
+  private static final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
+
+      @Override
+  protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+      throws ServletException, IOException {
+
+        Random rnd = new Random();
+
+        PrintWriter out = resp.getWriter();
+    out.println(&#39;[&#39;);
+    String[] stockSymbols = req.getParameter(&quot;q&quot;).split(&quot; &quot;);
+    boolean firstSymbol = true;
+    for (String stockSymbol : stockSymbols) {
+
+          double price = rnd.nextDouble() * MAX_PRICE;
+      double change = price * MAX_PRICE_CHANGE * (rnd.nextDouble() * 2f - 1f);
+
+          if (firstSymbol) {
+        firstSymbol = false;
+      } else {
+        out.println(&quot;  ,&quot;);
+      }
+      out.println(&quot;  {&quot;);
+      out.print(&quot;    \&quot;symbol\&quot;: \&quot;&quot;);
+      out.print(stockSymbol);
+      out.println(&quot;\&quot;,&quot;);
+      out.print(&quot;    \&quot;price\&quot;: &quot;);
+      out.print(price);
+      out.println(&#39;,&#39;);
+      out.print(&quot;    \&quot;change\&quot;: &quot;);
+      out.println(change);
+      out.println(&quot;  }&quot;);
+    }
+    out.println(&#39;]&#39;);
+    out.flush();
+  }
+
+    }
+
+</code></pre><h3>Including the server-side code in the GWT module</h3><p>The embedded servlet container (Jetty) can host the servlet that generates the stock data in JSON format.</p><p>To set this up, add <code>&lt;servlet&gt;</code> and <code>&lt;servlet-mapping&gt;</code> elements to the web application deployment descriptor (web.xml) and point to JsonStockData.</p><p>Starting with GWT 1.6, servlets should be defined in the web application deployment descriptor (web.xml) instead of the GWT module (StockWatcher.gwt.xml).</p><p>In the <code>&lt;servlet-mapping&gt;</code> element, the url-pattern can be in the form of an absolute directory path (for example, <code>/spellcheck</code> or <code>/common/login</code>). If you specify a default service path with a @RemoteServiceRelativePath annotation on the service interface (as you did with StockPriceService), then make sure the path attribute matches the annotation value.</p><p>Because you&rsquo;ve mapped the StockPriceService to &ldquo;stockPrices&rdquo; and the module rename-to attribute in StockWatcher.gwt.xml is &ldquo;stockwatcher&rdquo;, the full URL will be: </p><p><code>http://localhost:8888/stockwatcher/stockPrices</code></p>
+<ol>
+  <li>Edit the web application deployment descriptor (StockWatcher/war/WEB-INF/web.xml).
+  <ul>
+    <li>Since the greetServlet is no longer needed, its definition can be removed.</li>
+  </ul></li>
+</ol>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE web-app
+    PUBLIC &quot;-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN&quot;
+    &quot;http://java.sun.com/dtd/web-app_2_3.dtd&quot;&gt;
+
+    &lt;web-app&gt;
+
+      &lt;!-- Default page to serve --&gt;
+  &lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;StockWatcher.html&lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+
+      &lt;!-- Servlets --&gt;
+ &lt;servlet&gt;
+    &lt;servlet-name&gt;jsonStockData&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;com.google.gwt.sample.stockwatcher.server.JsonStockData&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+
+      &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;jsonStockData&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/stockwatcher/stockPrices&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+
+    &lt;/web-app&gt;
+</code></pre><h3>Testing your ability to retrieve JSON data from the server</h3>
+<ol>
+  <li>Debug StockWatcher in development mode.
+  <ul>
+    <li>At this point, the stock data is still coming from the client-side code.</li>
+  </ul></li>
+  <li>Test the stock quote server.
+  <ul>
+    <li>Ensure that the development mode code server is running and pass stock codes to the servlet URL <code>http://localhost:8888/stockwatcher/stockPrices?q=ABC+DEF</code></li>
+  </ul></li>
+  <li>The servlet generates an array of simulated stock data encoded in JSON format.
+  <ul>
+    <li><img src="images/JSONdata.png" alt="JSON formatted stock data""/></li>
+  </ul></li>
+</ol><h2>Manipulating JSON data in the client-side code <a id="client"></a></h2><h3>Overview</h3><p>At this point, you&rsquo;ve verified that you are able to get JSON data from a server. Later in this section, you&rsquo;ll code the HTTP GET request to the server. First, focus on working with the JSON-encoded text that&rsquo;s returned to the client-side code. Two techiques you&rsquo;ll use are JSNI (JavaScript Native Interface) and GWT overlay types.</p><p>This is the JSON data coming back from the server.</p>
+<pre><code>[
+  {
+    &quot;symbol&quot;: &quot;ABC&quot;,
+    &quot;price&quot;: 47.65563005127077,
+    &quot;change&quot;: -0.4426563818062567
+  },
+]
+</code></pre><p>First, you&rsquo;ll use <a href="/javadoc/latest/com/google/gwt/core/client/JsonUtils.html">JsonUtils.safeEval()</a> to convert the JSON string into JavaScript objects. Then, you&rsquo;ll be able to write methods to access those objects.</p>
+<pre><code>// JSNI methods to get stock data.
+  public final native String getSymbol() /*-{ return this.symbol; }-*/;
+  public final native double getPrice() /*-{ return this.price; }-*/;
+  public final native double getChange() /*-{ return this.change; }-*/;
+
+</code></pre><p>For the latter, you&rsquo;ll use JSNI. When the client-side code is compiled to JavaScript, the Java methods are replaced with the JavaScript exactly as you write it inside the tokens.</p><h4>Coding with JSNI</h4><p>As you see in the examples above, using JSNI you can call handwritten (as opposed to GWT-generated) JavaScript methods from within the GWT module.</p><p>JSNI methods are declared native and contain JavaScript code in a specially formatted comment block between the end of the parameter list and the trailing semicolon. A JSNI comment block begins with the exact token /*-{ and ends with the exact token }-*/. JSNI methods are called just like any normal Java method. They can be static or instance methods.</p><p><strong>In Depth:</strong> For tips, tricks, and caveats about mixing handwritten JavaScript into your Java source code, see the Developer&rsquo;s Guide, <a href="../DevGuideCodingBasics.html#DevGuideJavaScriptNativeInterface">JavaScript Native Interface (JSNI)</a>.</p><h3>Converting JSON into JavaScript objects</h3><p>First you need to convert the JSON text from the server into JavaScript objects. This can be easily done using the static <code>JsonUtils.safeEval()</code> method. We&rsquo;ll see later how to use it.</p><h4>JSON data types</h4><p>As you might expect, JSON data types correspond to the built-in types of JavaScript. JSON can encode strings, numbers, booleans, and null values, as well as objects and arrays composed of those types. As in JavaScript, an object is actually just an unordered set of name/value pairs. In JSON objects, however, the values can only be other JSON types (never functions containing executable JavaScript code).</p><p>Another technique for a converting a JSON string into something you can work with is to use the static <a href="/javadoc/latest/com/google/gwt/json/client/JSONParser.html">JSONParser.parse(String)</a> method. GWT contains a full set of JSON types for manipulating JSON data in the com.google.gwt.json.client package. If you prefer to parse the JSON data, see the Developer&rsquo;s Guide, <a href="../DevGuideCodingBasics.html#DevGuideJSON">Working with JSON</a>.</p><h3>Creating an overlay type</h3><p>Your next task is to replace the existing StockPrice type with a StockData type.</p><p>Not only do you want to access the array of JSON objects, but you want to be able to work with them as if they were Java objects while you&rsquo;re coding. GWT <em>overlay types</em> let you do this.</p><p>The new StockData class will be an overlay type which overlays the existing JavaScript object.</p>
+<ol>
+  <li><p>Create the StockData class.</p><p><strong>Note:</strong> The commented numbers refer to the implementation notes below. You can delete them.</p></li>
+</ol>
+<pre><code>package com.google.gwt.sample.stockwatcher.client;
+
+    import com.google.gwt.core.client.JavaScriptObject;
+
+    class StockData extends JavaScriptObject {                              // &lt;span style=&quot;color:black;&quot;&gt;**(1)**&lt;/span&gt;
+  // Overlay types always have protected, zero argument constructors.
+  protected StockData() {}                                              // &lt;span style=&quot;color:black;&quot;&gt;**(2)**&lt;/span&gt;
+
+      // JSNI methods to get stock data.
+  public final native String getSymbol() /*-{ return this.symbol; }-*/; // &lt;span style=&quot;color:black;&quot;&gt;**(3)**&lt;/span&gt;
+  public final native double getPrice() /*-{ return this.price; }-*/;
+  public final native double getChange() /*-{ return this.change; }-*/;
+
+      // Non-JSNI method to return change percentage.                       // &lt;span style=&quot;color:black;&quot;&gt;**(4)**&lt;/span&gt;
+  public final double getChangePercent() {
+    return 100.0 * getChange() / getPrice();
+  }
+}
+</code></pre><h4>Implementation Notes</h4><p>(1) StockData is a subclass of JavaScriptObject, a marker type that GWT uses to denote JavaScript objects.</p><p>JavaScriptObject gets special treatment from the GWT compiler and development mode code server. Its purpose is to provide an opaque representation of native JavaScript objects to Java code.</p><p>(2) Overlay types always have protected, zero-argument constructors.</p><p>(3) Typically methods on overlay types are JSNI.</p><p>These getters directly access the JSON fields you know exist.</p><p>By design, all methods on overlay types are final and private; thus every method is statically resolvable by the compiler, so there is no need for dynamic dispatch at runtime.</p><p>(4) However, methods on overlay types are not required to be JSNI.</p><p>Just as you did in the StockPrice class, you calculate the change percentage based on the price and change values.</p><h4>Benefits of using overlay types</h4><p>Using an overlay type creates a normal looking Java type that you can interact with using code completion, refactoring, and compile-time checking. Yet, you also have the flexibility of interacting with arbitrary JavaScript objects, which makes it simpler to access JSON services using RequestBuilder (which you&rsquo;ll do in the next section).</p><p>GWT now understands that any instance of StockData is a true JavaScript object that comes from outside this GWT module. You can interact with it exactly as it exists in JavaScript. In this example, you can access directly the JSON fields you know exist: this.Price and this.Change.</p><p>Because the methods on overlay types can be statically resolved by the GWT compiler, they are candidates for automatic inlining. Inlined code runs significantly faster. This makes it possible for the GWT compiler to create highly-optimized JavaScript for your application&rsquo;s client-side code.</p><h2>Making HTTP requests to retrieve data from the server <a id="http"></a></h2><p>Now that you have the mechanism for working with the JSON data in place, you&rsquo;ll write the HTTP request that gets the data from the server.</p><p>In this example, you&rsquo;re going to replace the current refreshWatchList method with a new implementation that uses HTTP.</p><h3>Specifying the URL</h3><p>First, specify the URL where the servlet lives, that is: <code>http://localhost:8888/stockwatcher/stockPrices?q=ABC+DFD</code></p><p><strong>Note:</strong> If you are doing the php example, substitute the corresponding URL.</p><p>Then, append the stock codes in the watch list to the base module URL. Rather than hardcoding the URL for the JSON server, add a constant to the StockWatcher class.</p>
+<ol>
+  <li>Add a constant to the StockWatcher class that specifies the URL of the JSON data.
+  <ul>
+    <li><strong>Note:</strong> Earlier you specified a path to /stockPrices in the module XML file.</li>
+  </ul></li>
+</ol>
+<pre><code>private static final String JSON_URL = GWT.getModuleBaseURL() + &quot;stockPrices?q=&quot;;
+</code></pre>
+<ul>
+  <li>Eclipse flags GWT.</li>
+</ul>
+<ol>
+  <li>Include the import declarations.</li>
+</ol>
+<pre><code>import com.google.gwt.core.client.GWT;
+</code></pre>
+<ol>
+  <li>Append the stock codes to the query URL and encode it.
+  <ul>
+    <li>Replace the existing refreshWatchList method with the following code. *</li>
+  </ul></li>
+</ol>
+<pre><code>private void refreshWatchList() {
+    if (stocks.size() == 0) {
+      return;
+    }
+
+        String url = JSON_URL;
+
+        // Append watch list stock symbols to query URL.
+    Iterator&lt;String&gt; iter = stocks.iterator();
+    while (iter.hasNext()) {
+      url += iter.next();
+      if (iter.hasNext()) {
+        url += &quot;+&quot;;
+      }
+    }
+
+        url = URL.encode(url);
+
+        // TODO Send request to server and handle errors.
+
+      }
+</code></pre>
+<ul>
+  <li>Eclipse flags Iterator and URL.</li>
+</ul>
+<ol>
+  <li>Include the import declarations.</li>
+</ol>
+<pre><code>import com.google.gwt.http.client.URL;
+import java.util.Iterator;
+
+</code></pre><h3>Asynchronous HTTP</h3><p>To get the JSON text from the server, you&rsquo;ll use the HTTP client classes in the com.google.gwt.http.client package. These classes contain the functionality for making asynchronous HTTP requests.</p><p>The HTTP types are contained within separate GWT modules that StockWatcher needs to inherit.</p>
+<ol>
+  <li>To inherit other GWT modules, edit the module XML file.
+  <ul>
+    <li>In StockWatcher.gwt.xml, add <code>&lt;inherits&gt;</code> tags and specify the HTTP module.</li>
+  </ul></li>
+</ol>
+<pre><code>&lt;!-- Other module inherits --&gt;
+  &lt;inherits name=&quot;com.google.gwt.http.HTTP&quot; /&gt;
+
+</code></pre><p>2.  * Open StockWatcher.java and include the following import declarations. Declare the imports for the following Java types.</p>
+<pre><code><br/>import com.google.gwt.http.client.Request;
+import com.google.gwt.http.client.RequestBuilder;
+import com.google.gwt.http.client.RequestCallback;
+import com.google.gwt.http.client.RequestException;
+import com.google.gwt.http.client.Response;
+
+</code></pre><h3>Building a custom HTTP request</h3><p>To send a request, you&rsquo;ll create an instance of the RequestBuilder object. You specify the HTTP method (GET, POST, etc.) and URL in the constructor. If necessary, you can also set the username, password, timeout, and headers to be used in the HTTP request. In this example, you don&rsquo;t need to do this.</p><p>When you&rsquo;re ready to make the request, you call sendRequest(String, RequestCallback).</p><p>The RequestCallback argument you pass will handle the response in its onResponseReceived(Request, Response) method, which is called when and if the HTTP call completes successfully. If the call fails (for example, if the HTTP server is not responding), the onError(Request, Throwable) method is called instead. The RequestCallback interface is analogous to the AsyncCallback interface in GWT remote procedure calls.</p>
+<ol>
+  <li><p>Make the HTTP request and parse the JSON response.</p>
+  <ul>
+    <li>In the refreshWatchList method, replace the TODO comments with the following code .</li>
+  </ul><p>``` // Send request to server and catch any errors.  RequestBuilder builder = new RequestBuilder(RequestBuilder.GET, url);</p>
+  <pre><code>    try {
+  Request request = builder.sendRequest(null, new RequestCallback() {
+    public void onError(Request request, Throwable exception) {
+      displayError(&quot;Couldn&#39;t retrieve JSON&quot;);
+    }
+
+        public void onResponseReceived(Request request, Response response) {
+      if (200 == response.getStatusCode()) {
+        updateTable(JsonUtils.&lt;JsArray&lt;StockData&gt;&gt;safeEval(response.getText()));
+      } else {
+        displayError(&quot;Couldn&#39;t retrieve JSON (&quot; + response.getStatusText()
+            + &quot;)&quot;);
+      }
+    }
+  });
+} catch (RequestException e) {
+  displayError(&quot;Couldn&#39;t retrieve JSON&quot;);
+}
+</code></pre>``<code>
+  *  This is where we use</code>JsonUtils.safeEval()` to convert the JSON string into JavaScript objects.</li>
+  <li>You receive two compile errors which you will resolve in a minute.</li>
+</ol><h4>Modify the updateTable method</h4><p>To fix the compile errors, modify the updateTable method.</p>
+<pre><code>&lt;li&gt;Change: StockPrice[] prices
+</code></pre><p>To: JsArray<StockData> prices</li>  <li>Change: prices.length  To: prices.length()</li>  <li>Change: prices[i]  To: prices.get(i)</li> </ul></p><p>1.  * Replace the existing update updateTable(StockPrice[]) method with the following code.</p>
+<pre><code>updateTable(JsArray&lt;StockData&gt; prices)
+</code></pre>
+<ul>
+  <li>Eclipse flags JsArray.</li>
+</ul>
+<ol>
+  <li>Declare the import.</li>
+</ol>
+<pre><code>import com.google.gwt.core.client.JsArray;
+</code></pre>
+<ol>
+  <li>Make a corresponding change in the updateTable(StockPrice price) method.
+  <ul>
+    <li>Change the reference to the StockPrice class to StockData class.</li>
+  </ul></li>
+</ol>
+<pre><code>private void updateTable(StockData price) {
+    // Make sure the stock is still in the stock table.
+    if (!stocks.contains(price.getSymbol())) {
+      return;
+    }
+
+        ...
+
+      }
+
+</code></pre><h2>Handling GET errors <a id="errors"></a></h2><p>If something breaks along the way (for example, if the server is offline, or the JSON is malformed), you&rsquo;ll trap the error and display a message to the user. To do this you&rsquo;ll create a Label widget and write a new method, displayError(String).</p>
+<ol>
+  <li>Clear the compiler error by creating a stub method in the StockWatcher class.
+  <ul>
+    <li>Set the text for the error message and make the Label widget visible.</li>
+  </ul></li>
+</ol>
+<pre><code>/**
+       * If can&#39;t get JSON, display error message.
+       * @param error
+   */
+  private void displayError(String error) {
+    errorMsgLabel.setText(&quot;Error: &quot; + error);
+    errorMsgLabel.setVisible(true);
+  }
+
+</code></pre>
+<ol>
+  <li>Eclipse flags errorMsgLabel.
+  <ul>
+    <li>Ignore the compile errors for a moment; you&rsquo;ll implement a Label widget to display the error text in the next step.</li>
+  </ul></li>
+  <li>If the error is corrected, hide the Label widget.
+  <ul>
+    <li>In the updateTable(JsArray<StockData> prices) method, clear any error messages.</li>
+  </ul></li>
+</ol>
+<pre><code>private void updateTable(JsArray&lt;StockData&gt; prices) {
+    for (int i=0; i &lt; prices.length(); i++) {
+      updateTable(prices.get(i));
+    }
+
+        // Display timestamp showing last refresh.
+    lastUpdatedLabel.setText(&quot;Last update : &quot; +
+        DateTimeFormat.getMediumDateTimeFormat().format(new Date()));
+
+        // Clear any errors.
+    errorMsgLabel.setVisible(false);
+  }
+
+</code></pre><h4>Displaying error messages</h4><p>In order to display the error, you will need a new UI component; you&rsquo;ll implement a Label widget.</p>
+<ol>
+  <li>Define a style for the error message so that it will attract the user&rsquo;s attention.
+  <ul>
+    <li>In StockWatcher.css, create a style rule that applies to any element with a class attribute of errorMessage.</li>
+  </ul></li>
+</ol>
+<pre><code>.negativeChange {
+  color: red;
+}
+
+    .errorMessage {
+  color: red;
+}
+</code></pre>
+<ol>
+  <li>To hold the text of the error message, add a Label widget.
+  <ul>
+    <li>In StockWatcher.java, add the following instance field.</li>
+  </ul></li>
+</ol>
+<pre><code>private ArrayList&lt;String&gt; stocks = new ArrayList&lt;String&gt;();
+  private Label errorMsgLabel = new Label();
+</code></pre>
+<ol>
+  <li>Initialize the errorMsgLabel when StockWatcher launches.
+  <ul>
+    <li>In the onModuleLoad method, add a secondary class attribute to errorMsgLabel and do not display it when StockWatcher loads.</li>
+    <li>Add the error message to the Main panel above the stocksFlexTable.</li>
+  </ul></li>
+</ol>
+<pre><code>// Assemble Add Stock panel.
+    addPanel.add(newSymbolTextBox);
+    addPanel.add(addButton);
+    addPanel.addStyleName(&quot;addPanel&quot;);
+
+        // Assemble Main panel.
+    errorMsgLabel.setStyleName(&quot;errorMessage&quot;);
+    errorMsgLabel.setVisible(false);
+
+        mainPanel.add(errorMsgLabel);
+    mainPanel.add(stocksFlexTable);
+    mainPanel.add(addPanel);
+    mainPanel.add(lastUpdatedLabel);
+
+</code></pre><h3>Test the HTTP request and error handling</h3>
+<ol>
+  <li>Refresh StockWatcher in development mode.</li>
+  <li>Enter several stock codes.  <div class="client">StockWatcher should display Price and Change data for each stock. Rather than being generated from within the program the stock data is coming from you local server in JSON format.</li>
+  <li><p>Test the HTTP error messages by calling an invalid URL.</p>
+  <ul>
+    <li>In StockWatcher,java, edit the URL. * Change: `private static final String JSON_URL = GWT.getModuleBaseURL()</li>
+    <li>&ldquo;stockPrices?q=&rdquo;;`</li>
+  </ul>
+  <pre><code>  To: `private static final String JSON_URL = GWT.getModuleBaseURL()
+</code></pre>
+  <ul>
+    <li>&ldquo;BADURL?q=&rdquo;;`</li>
+  </ul></li>
+  <li>Refresh StockWatcher in development mode.</li>
+  <li>Enter a stock code.
+  <ul>
+    <li>StockWatcher displays a red error message. Valid stock code data stops being refreshed.</li>
+    <li><img src="images/JSONerrormessage.png" alt="screenshot: JSON error message""/></li>
+  </ul></li>
+  <li>In StockWatcher,java, correct the URL.</li>
+  <li>Refresh StockWatcher in development mode.
+  <ul>
+    <li>Enter several stock codes.</li>
+    <li>StockWatcher should display Price and Change data for each stock again.</li>
+  </ul></li>
+</ol><h2>More about JSON, JSNI, Overlay types, and HTTP <a id="more"></a></h2><p>At this point you&rsquo;ve retrieved JSON-encoded stock data from a local server and used it to update the Price and Change fields for the stocks in your watch list. If you&rsquo;d like to see how to retrieve JSON from web server on another domain, see <a href="Xsite.html">Making cross-site requests</a>.</p><p>To learn more about client-server communication, see the Developer&rsquo;s Guide, Communicating with the Server. Topics include:</p>
+<ul>
+  <li><a href="../DevGuideServerCommunication.html#DevGuideHttpRequests">Making HTTP Requests</a></li>
+  <li><a href="../DevGuideCodingBasics.html#DevGuideJSON">Working with JSON</a></li>
+</ul><p>To learn more about JSNI, see the Developer&rsquo;s Guide, <a href="../DevGuideCodingBasics.html#DevGuideJavaScriptNativeInterface">JavaScript Native Interface (JSNI)</a>. Topics include:</p>
+<ul>
+  <li>Writing Native JavaScript Method</li>
+  <li>Accessing Java Methods and Fields from JavaScript</li>
+  <li>Sharing objects between Java source and JavaScript</li>
+  <li>Exceptions and JSNI</li>
+  <li>JavaScript Overlay Types</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>
