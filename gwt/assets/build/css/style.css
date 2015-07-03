@@ -946,8 +946,8 @@ ol {
   margin-left: 1.3em;
   padding-left: 0;
 }
-ul > p:first-child,
-ol > p:first-child {
+ul > li > p:first-child,
+ol > li > p:first-child {
   display: inline;
 }
 ul {
