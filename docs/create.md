@@ -1,6 +1,6 @@
 # Create
 
-In this section, you'll create the Todo List project using the GWT command-line utility [webAppCreator](http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator).
+In this section, you'll create the **TodoList** project using the GWT command-line utility [webAppCreator](http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator).
 
 We assume that you've already downloaded the most recent distribution of GWT, and you have [maven](https://maven.apache.org/) installed in your system.
 
@@ -8,7 +8,7 @@ We assume that you've already downloaded the most recent distribution of GWT, an
 
 The `webAppCreator` is a command-line tool included in the GWT SDK that generates the project subdirectories and files you need to get started. It creates a starter application, which you can run to ensure that all the components have been created and are hooked together correctly. As you develop your application, you'll replace the code for the starter application with your code.
 
-For the **Todo List** project, you have to run `webAppCreator` with the following parameters.
+For the **TodoList** project, you have to run `webAppCreator` with the following parameters.
 
 | Parameter  | Definition                                     | Example  |
 | ---------- | -----------------------------------------------| -------- |
@@ -19,9 +19,9 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
 
 ## Setting up a new project.
 
-1. Create the **Todo List** application.
+1. Create the **TodoList** application.
 
-      GWT webAppCreator generates the project subdirectories and files you need to get 
+      GWT webAppCreator generates the project subdirectories and files you need to get
 
         $ /full_path_to_gwt_sdk/webAppCreator -maven -out TodoListApp com.example.TodoList
       _**Tip**: If you include the GWT SDK folder in your PATH environment variable, you won't have to invoke them by specifying their full path._
@@ -30,7 +30,7 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
 2. Run the application in **SuperDevMode**.
 
      To check that all the project components were created start the new created app in SuperDevMode.
-     
+
         $ mvn gwt:run
 
       _**Tip**: You might import the maven project in your IDE and use GWT plugin to run_
@@ -38,7 +38,7 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
 3. Launch your Browser.
 
      In opened window press the “Launch Default Browser” button to launch our application using your default browser. Or, you can click “Copy to Clipboard” to copy the launch URL and paste it into the browser of your choice.
-     
+
      If you change something in the code you can recompile the application just reloading the page in your browser. Otherwise if you change some configuration files like `pom.xml`, `webapp` static content, etc, you would have to stop SuperDevMode pushing `Ctrl-C` and running again `mvn gwt:run`.
 
 4. Add vaadin polymer elements dependency to your pom.xml
@@ -71,7 +71,7 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
           ...
         </module>
 
-7. Update `TodoList.html` 
+7. Update `TodoList.html`
     * Configure `<meta>` viewport to deal with mobile screens.
     * Import the polyfill `<script>` for non web-component capable browsers.
     * Remove all the content from `<body>`.
@@ -79,7 +79,7 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
             <!doctype html>
             <html>
             <head>
-             <meta name="viewport" 
+             <meta name="viewport"
                  content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
              <script src="todo/bower_components/webcomponentsjs/webcomponents.js"></script>
              <script type="text/javascript" src="todo/todo.nocache.js"></script>
@@ -117,19 +117,21 @@ For the **Todo List** project, you have to run `webAppCreator` with the followin
     _**Note**: that we use have added the PaperButton widget here._
 
 11. Run the application again.
-   
+
     You should see a page with a material design button in your browser.
 
     _**Tip**: If you get ClassCastException in browser console, ensure that you use `-XjsInteropMode JS` parameter_
 
-## Summary
+## What's next
 
 In this lesson we have learnt
 
-1. How to create a new maven project
-2. Running our project in SuperDevMode
-3. Adding external dependencies to our application
-4. Configure our project to use experimental `JsInterop` mode.
-5. Replacing starter code by our own.
+- How to create a new maven project
+- Running our project in SuperDevMode
+- Adding external dependencies to our application
+- Configure our project to use experimental `JsInterop` mode.
+- Replacing starter code by our own.
+
+Now you are prepared to create the UI of the application.
 
 [Step 2: Building the User Interface](buildui.html)
