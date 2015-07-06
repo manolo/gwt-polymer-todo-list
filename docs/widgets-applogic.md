@@ -28,7 +28,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
      _**Tip**: You can use widget attributes to quick define certain actions like `entryAnimation='fade-in-animation'`._
 
-     _**Note**: When there are attributes in the component no mapped to a java method, you can use the `attributes` key, like we do in the `Cancel` and `OK` buttons. Visit [paper-dialog page](https://elements.polymer-project.org/elements/paper-dialog) and pay attention to behaviors in the API Reference section_
+     _**Note**: When there are attributes in the component no mapped to a java method, you can use the `attributes` key, like we do in the `Cancel` and `OK` buttons. Visit [paper-dialog page](https://elements.polymer-project.org/elements/paper-dialog) and pay attention to behaviors in the API Reference section for additional details_
 
 2.  Add all fields defined in the `Main.ui.xml` file to the `Main.java` class.
 
