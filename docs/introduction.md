@@ -1,16 +1,20 @@
-# Build a modern GWT app using Polymer elements: 
+# Build a modern GWT app using Polymer elements:
 
 ## Introduction
 
-In this tutorial, you'll write a **Todo List** application using web components. 
+In this tutorial, you'll write a **TodoList** application using web components.
 
-Our application will fulfill the Material Design specification, so we will use Polymer Iron and Paper components using Vaadin gwt-polymer-elements library.
+Web Components are a collection of standards which allow us to bundle markup and styles into custom HTML elements.
 
-Gwt-Polymer-Elements is a `JsInterop` wrapper for Iron and Paper elements which has been produced using Vaadin gwt-api-generator.
+In our case we want to fulfill the [Material Design](http://www.google.es/design/spec/material-design/introduction.html) specification, thus we will use Polymer [Iron and Paper](https://elements.polymer-project.org/) collections through the Vaadin [gwt-polymer-elements](https://github.com/vaadin/gwt-polymer-elements) library.
 
-Try the [Todo List](http://manolo.github.io/gwt-polymer-todo/todo.html) application to check how your application should look like when you finish the tutorial.
+Gwt-Polymer-Elements is a `JsInterop` wrapper for Iron and Paper elements which has been produced using the Vaadin [gwt-api-generator](https://github.com/vaadin/gwt-api-generator).
 
-In the process of building the **Todo List** app, you'll learn:
+Before starting the tutorial try the [TodoList](http://manolo.github.io/gwt-polymer-todo/todo.html) application to check how your application should look when you finish.
+
+## The Learning process
+
+In the process of building the **TodoList** app, you'll learn:
 
 * To create a new maven project.
 * Running our project in SuperDevMode
@@ -20,9 +24,10 @@ In the process of building the **Todo List** app, you'll learn:
 * Import and use Polymer elements
 * How to can deal with responsive layouts
 * Style elements in `UiBinder`
-* Add events handlers to UiBinder components 
+* Add events handlers to UiBinder components
 * How to use a Basic Data Model.
 
+## What's next
 
 [Step 1: Create and prepare a new Project](create.html)
 
