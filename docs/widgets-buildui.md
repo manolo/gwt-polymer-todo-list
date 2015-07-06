@@ -238,14 +238,14 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
                ...
                 <div main="">
                     <p:PaperHeaderPanel mode="seamed">
-                        <p:PaperToolbar addStyleNames="{style.toolbar}">
+                        <p:PaperToolbar>
                             <p:PaperIconButton ui:field="menu" icon="more-vert"
                                 attributes="paper-drawer-toggle"/>
-                            <span class="{style.header}">Todo List</span>
+                            <span>Todo List</span>
                         </p:PaperToolbar>
 
                         <g:HTMLPanel ui:field="content"
-                           addStyleNames="{style.content} vertical center-justified layout" />
+                           addStyleNames="vertical center-justified layout" />
 
                     </p:PaperHeaderPanel>
                 </div>
