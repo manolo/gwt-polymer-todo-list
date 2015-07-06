@@ -243,6 +243,10 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
                                 attributes="paper-drawer-toggle"/>
                             <span class="{style.header}">Todo List</span>
                         </p:PaperToolbar>
+
+                        <g:HTMLPanel ui:field="content"
+                           addStyleNames="{style.content} vertical center-justified layout" />
+
                     </p:PaperHeaderPanel>
                 </div>
                ...
