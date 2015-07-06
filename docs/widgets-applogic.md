@@ -1,7 +1,7 @@
 Adding the Application Logic.
 ===
 
-At this point we have almost the UI or our **TodoList** application designed using `UiBinders`.
+At this point we have almost the UI of our **TodoList** application designed using `UiBinders`.
 
 In this lesson we will learn how to add some logic our UI and deal with events and data.
 
