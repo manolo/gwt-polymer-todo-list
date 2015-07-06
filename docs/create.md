@@ -114,7 +114,7 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
          }
         }
 
-    _**Note**: that we use have added the PaperButton widget here._
+    _**Note** that we have added the PaperButton widget here._
 
 11. Run the application again.
 
