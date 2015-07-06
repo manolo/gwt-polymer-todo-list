@@ -4,26 +4,38 @@
              xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
         >
 
-    <g:HTMLPanel addStyleNames="vertical center-justified layout">
+    <ui:style>
+      @external .done;
+      .item .done {
+        text-decoration: line-through;
+      }
+
+      .item > div {
+        padding: 8px 15px 8px 15px !important;
+        margin-bottom: 10px !important;
+      }
+      .item h4 {
+        margin: 0px;
+      }
+      .title {
+        padding-left: 20px;
+        font-size: 150%;
+        font-weight: normal;
+      }
+      .description {
+        margin-top: 15px;
+        padding-left: 40px;
+      }
+    </ui:style>
+    <g:HTMLPanel addStyleNames="vertical center-justified layout {style.item}">
         <style>
-	        .title {
-	          padding-left: 20px;
-	          font-size: 150%;
-	          font-weight: normal;
-	        }
-	        .done {
-	          text-decoration: line-through;
-	        }
-	        .paper-checkbox {
-	          top: -2px;
-	        }
         </style>
 		<div class="vertical-section">
 			<h4>
 				<p:PaperCheckbox ui:field="check"></p:PaperCheckbox>
-				<span ui:field="title" class='title'>Go to Google</span>
+				<span ui:field="title" class='{style.title}'>Go to Google</span>
 			</h4>
-			<div ui:field="description"></div>
+			<div ui:field="description" class='{style.description}'></div>
 		</div>
     </g:HTMLPanel>
 </ui:UiBinder>
