@@ -103,18 +103,20 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
     Replace the content of `TodoList.java` with
 
         package com.example.client;
+
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;
         import com.vaadin.polymer.paper.widget.PaperButton;
+
         public class TodoList implements EntryPoint {
-        public void onModuleLoad() {
-           PaperButton button = new PaperButton("Press me!");
-           button.setRaised(true);
-           RootPanel.get().add(button);
-         }
+          public void onModuleLoad() {
+            PaperButton button = new PaperButton("Press me!");
+            button.setRaised(true);
+            RootPanel.get().add(button);
+          }
         }
 
-    _**Note**: that we use have added the PaperButton widget here._
+    _**Note**: that we have added the PaperButton widget here._
 
 11. Run the application again.
 
