@@ -1,89 +1,98 @@
-<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'
-             xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
-             xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
-             xmlns:a='urn:import:com.vaadin.polymer.examples.todo.client'
-        >
 
-    <g:HTMLPanel>
-        <style>
-	        .toolbar {
-	            background: #4285f4 !important;
-	        }
-	        .content {
-	            padding: 15px;
-	        }
-	        .item {
-	            font-size: 15px;
-	        }
-	        .add {
-	        	position: absolute;
-	        	bottom: 20px;
-	        	right: 20px;
-	        }
-	        .header {
-	            font-size: 200%;
-	            margin-left: 50px;
-	        }
-	        .item {
-	          padding-left: 20px;
-	        }
-	        .dialog {
-	          min-width: 70%;
-	        }
-	        paper-icon-item {
-	          position: relative;
-	          overflow: hidden;
-	        }
-        </style>
-        <p:PaperDrawerPanel ui:field="drawerPanel">
-            <div drawer="">
-                <p:PaperHeaderPanel mode="seamed">
-                    <p:PaperToolbar addStyleNames="toolbar">
-                    </p:PaperToolbar>
-	                <p:PaperIconItem ui:field="menuClearAll">
-	                    <i:IronIcon icon="delete"/>
-	                    <div>Clear All</div>
-	                    <p:PaperRipple/>
-	                </p:PaperIconItem>
-	                <p:PaperIconItem ui:field="menuClearDone">
-	                    <i:IronIcon icon="clear"/>
-	                    <div>Clear Done</div>
-	                    <p:PaperRipple/>
-	                </p:PaperIconItem>
-	                <p:PaperIconItem ui:field="menuSettings">
-	                    <i:IronIcon icon="settings"/>
-	                    <div>Settings</div>
-	                    <p:PaperRipple/>
-	                </p:PaperIconItem>
-	                <p:PaperIconItem ui:field="menuAbout">
-	                    <i:IronIcon icon="help"/>
-	                    <div>About</div>
-	                    <p:PaperRipple/>
-	                </p:PaperIconItem>
-                </p:PaperHeaderPanel>
-            </div>
-            <div main="">
-                <p:PaperHeaderPanel mode="seamed">
-                    <p:PaperToolbar addStyleNames="toolbar">
-                        <p:PaperIconButton ui:field="menu" icon="more-vert" attributes="paper-drawer-toggle"/>
-                        <span class="header">Todo List</span>
-                    </p:PaperToolbar>
-                    <g:HTMLPanel ui:field="content" addStyleNames="content vertical center-justified layout">
-                    </g:HTMLPanel>
-                </p:PaperHeaderPanel>
-                <p:PaperFab ui:field="addButton" icon="add" title="add" addStyleNames="add"></p:PaperFab>
-            </div>
-        </p:PaperDrawerPanel>
-        
-        <a:Dialogs ui:field="dialogs"/>
-        
-        <g:HTMLPanel ui:field="form">
-            <p:PaperInput ui:field="editorTitle" label="Title"/>
-            <div class="textarea-container iron-autogrow-textarea">
-              <p:PaperTextarea ui:field="editorDescription" label="Notes"/>
-            </div>
-        </g:HTMLPanel>
-        
-    </g:HTMLPanel>
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
+  xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
+  xmlns:a='urn:import:com.vaadin.polymer.examples.todo.client'
+  >
+  <ui:style>
+  paper-icon-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .toolbar {
+    background: #4285f4 !important;
+  }
+  .header {
+    font-size: 200%;
+    margin-left: 50px;
+  }
+  .content {
+    padding: 15px;
+  }
+  .dialog {
+    min-width: 40%;
+  }
+  </ui:style>
+  <g:HTMLPanel>
+    <style is="custom-style">
+      .add {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        --paper-fab-background: var(--paper-red-500);
+      }
+    </style>
+    <p:PaperDrawerPanel ui:field="drawerPanel">
+      <div drawer="">
+        <p:PaperHeaderPanel mode="seamed">
+          <p:PaperToolbar addStyleNames="{style.toolbar}" />
+          <p:PaperIconItem ui:field="menuClearAll">
+            <i:IronIcon icon="delete" />
+            <div>Clear All</div>
+            <p:PaperRipple />
+          </p:PaperIconItem>
+          <p:PaperIconItem ui:field="menuClearDone">
+            <i:IronIcon icon="clear" />
+            <div>Clear Done</div>
+            <p:PaperRipple />
+          </p:PaperIconItem>
+          <p:PaperIconItem ui:field="menuSettings">
+            <i:IronIcon icon="settings" />
+            <div>Settings</div>
+            <p:PaperRipple />
+          </p:PaperIconItem>
+          <p:PaperIconItem ui:field="menuAbout">
+            <i:IronIcon icon="help" />
+            <div>About</div>
+            <p:PaperRipple />
+          </p:PaperIconItem>
+        </p:PaperHeaderPanel>
+      </div>
+      <div main="">
+        <p:PaperHeaderPanel mode="seamed">
+          <p:PaperToolbar addStyleNames="{style.toolbar}">
+            <p:PaperIconButton ui:field="menu"
+              icon="more-vert" attributes="paper-drawer-toggle" />
+            <span class="{style.header}">Todo List</span>
+          </p:PaperToolbar>
+          <g:HTMLPanel ui:field="content"
+            addStyleNames="{style.content} vertical center-justified layout" />
+        </p:PaperHeaderPanel>
+        <p:PaperFab ui:field="addButton" icon="add"
+            addStyleNames="add" />
+      </div>
+    </p:PaperDrawerPanel>
+
+    <p:PaperDialog ui:field="addItemDialog"
+      entryAnimation="fade-in-animation" addStyleNames="{style.dialog}"
+      modal="true">
+      <h2>Add Item</h2>
+      <p:PaperInput ui:field="titleInput"
+        label="Title" required="true" autoValidate="true"
+        errorMessage="required input!" />
+      <div class="textarea-container iron-autogrow-textarea">
+        <p:PaperTextarea ui:field="descriptionInput"
+          label="Notes" />
+      </div>
+      <div class="buttons">
+        <p:PaperButton attributes="dialog-dismiss">Cancel</p:PaperButton>
+        <p:PaperButton ui:field="confirmAddButton"
+          attributes="dialog-confirm">OK</p:PaperButton>
+      </div>
+    </p:PaperDialog>
+
+    <a:Dialogs ui:field="dialogs"/>
+
+  </g:HTMLPanel>
 </ui:UiBinder>
