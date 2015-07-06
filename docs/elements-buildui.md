@@ -264,7 +264,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 ## Styling the app
 
 ### Styling with CssResource
-When using polymer elements you can use GWT [GSS](http://www.gwtproject.org/doc/latest/DevGuideGssVsCss.html) parser as usual, and add styles to widgets or elements using the `{}` operator.
+When using polymer elements you cannot use GWT [GSS](http://www.gwtproject.org/doc/latest/DevGuideGssVsCss.html) parser as usual, and add styles to widgets or elements using the `{}` operator. Use regular `style` tag instead.
 
 -  Change color of toolbar, style the heading text and the content panel:
 
