@@ -490,7 +490,7 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/todos-tutorial/create.md"></a>
                     </span>
-                    <h1> Create</h1><p>In this section, you&rsquo;ll create the Todo List project using the GWT command-line utility <a href="http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator">webAppCreator</a>.</p><p>We assume that you&rsquo;ve already downloaded the most recent distribution of GWT, and you have <a href="https://maven.apache.org/">maven</a> installed in your system.</p><h2>Using webAppCreator</h2><p>The <code>webAppCreator</code> is a command-line tool included in the GWT SDK that generates the project subdirectories and files you need to get started. It creates a starter application, which you can run to ensure that all the components have been created and are hooked together correctly. As you develop your application, you&rsquo;ll replace the code for the starter application with your code.</p><p>For the <strong>Todo List</strong> project, you have to run <code>webAppCreator</code> with the following parameters.</p>
+                    <h1> Create</h1><p>In this section, you&rsquo;ll create the <strong>TodoList</strong> project using the GWT command-line utility <a href="http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator">webAppCreator</a>.</p><p>We assume that you&rsquo;ve already downloaded the most recent distribution of GWT, and you have <a href="https://maven.apache.org/">maven</a> installed in your system.</p><h2>Using webAppCreator</h2><p>The <code>webAppCreator</code> is a command-line tool included in the GWT SDK that generates the project subdirectories and files you need to get started. It creates a starter application, which you can run to ensure that all the components have been created and are hooked together correctly. As you develop your application, you&rsquo;ll replace the code for the starter application with your code.</p><p>For the <strong>TodoList</strong> project, you have to run <code>webAppCreator</code> with the following parameters.</p>
 <table>
   <thead>
     <tr>
@@ -518,7 +518,7 @@
   </tbody>
 </table><h2>Setting up a new project.</h2>
 <ol>
-  <li><p>Create the <strong>Todo List</strong> application.</p><p>GWT webAppCreator generates the project subdirectories and files you need to get </p>
+  <li><p>Create the <strong>TodoList</strong> application.</p><p>GWT webAppCreator generates the project subdirectories and files you need to get </p>
   <pre><code>$ /full_path_to_gwt_sdk/webAppCreator -maven -out TodoListApp com.example.TodoList
 </code></pre> <em><strong>Tip</strong>: If you include the GWT SDK folder in your PATH environment variable, you won&rsquo;t have to invoke them by specifying their full path.</em></li>
 </ol>
@@ -594,14 +594,14 @@ public void onModuleLoad() {
 }
 </code></pre><p><em><strong>Note</strong>: that we use have added the PaperButton widget here.</em></p></li>
   <li><p>Run the application again.</p><p>You should see a page with a material design button in your browser.</p><p><em><strong>Tip</strong>: If you get ClassCastException in browser console, ensure that you use <code>-XjsInteropMode JS</code> parameter</em></p></li>
-</ol><h2>Summary</h2><p>In this lesson we have learnt</p>
-<ol>
+</ol><h2>What&rsquo;s next</h2><p>In this lesson we have learnt</p>
+<ul>
   <li>How to create a new maven project</li>
   <li>Running our project in SuperDevMode</li>
   <li>Adding external dependencies to our application</li>
   <li>Configure our project to use experimental <code>JsInterop</code> mode.</li>
   <li>Replacing starter code by our own.</li>
-</ol><p><a href="buildui.html">Step 2: Building the User Interface</a></p>
+</ul><p>Now you are prepared to create the UI of the application.</p><p><a href="buildui.html">Step 2: Building the User Interface</a></p>
 
                 </div>
             </div>

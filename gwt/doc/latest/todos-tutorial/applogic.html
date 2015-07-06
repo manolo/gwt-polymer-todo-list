@@ -490,28 +490,29 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/todos-tutorial/applogic.md"></a>
                     </span>
-                    <h1>Adding Application Logic.</h1><p>In this part we will learn how to add some logic to our <strong>Todo List</strong> and how to deal with events.</p>
+                    <h1>Adding Application Logic.</h1><p>At this point we have almost the UI or our <strong>Todo List</strong> application designed using <code>UiBinders</code>.</p><p>In this lesson we will learn how to add some logic our UI and deal with events and data.</p>
 <ol>
-  <li><p>Create the <em>Add Item dialog</em></p>
-  <ul>
-    <li>Add the following markup to the Main.ui.xml file</li>
-  </ul>
-  <pre><code>    &lt;p:PaperDialog ui:field=&quot;addItemDialog&quot; entryAnimation=&quot;fade-in-animation&quot; 
-                   addStyleNames=&quot;{style.dialog}&quot; modal=&quot;true&quot;&gt;
-      &lt;h2&gt;Add Item&lt;/h2&gt;
-      &lt;p:PaperInput ui:field=&quot;titleInput&quot; label=&quot;Title&quot; required=&quot;true&quot; 
-                    autoValidate=&quot;true&quot; errorMessage=&quot;required input!&quot;/&gt;
-      &lt;div class=&quot;textarea-container iron-autogrow-textarea&quot;&gt;
-         &lt;p:PaperTextarea ui:field=&quot;descriptionInput&quot; label=&quot;Notes&quot;/&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;buttons&quot;&gt;
-         &lt;p:PaperButton attributes=&quot;dialog-dismiss&quot;&gt;Cancel&lt;/p:PaperButton&gt;
-         &lt;p:PaperButton ui:field=&quot;confirmAddButton&quot;
-                        attributes=&quot;dialog-confirm&quot;&gt;OK&lt;/p:PaperButton&gt;
-      &lt;/div&gt;
-    &lt;/p:PaperDialog&gt;
-</code></pre></li>
-  <li><p>Add all fields in <code>Main.ui.xml</code> file to the <code>Main.java</code> class.</p>
+  <li><p>Create the <em>Add Item dialog</em> adding the following markup to the Main.ui.xml file:</p>
+  <pre><code>&lt;g:HTMLPanel&gt;
+  ...
+  &lt;p:PaperDialog ui:field=&quot;addItemDialog&quot;
+                 entryAnimation=&quot;fade-in-animation&quot; 
+                 addStyleNames=&quot;{style.dialog}&quot; modal=&quot;true&quot;&gt;
+    &lt;h2&gt;Add Item&lt;/h2&gt;
+    &lt;p:PaperInput ui:field=&quot;titleInput&quot; label=&quot;Title&quot; required=&quot;true&quot; 
+                  autoValidate=&quot;true&quot; errorMessage=&quot;required input!&quot;/&gt;
+    &lt;div class=&quot;textarea-container iron-autogrow-textarea&quot;&gt;
+      &lt;p:PaperTextarea ui:field=&quot;descriptionInput&quot; label=&quot;Notes&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;buttons&quot;&gt;
+       &lt;p:PaperButton attributes=&quot;dialog-dismiss&quot;&gt;Cancel&lt;/p:PaperButton&gt;
+       &lt;p:PaperButton ui:field=&quot;confirmAddButton&quot;
+                      attributes=&quot;dialog-confirm&quot;&gt;OK&lt;/p:PaperButton&gt;
+    &lt;/div&gt;
+  &lt;/p:PaperDialog&gt;
+&lt;/g:HTMLPanel&gt;
+</code></pre><p><em><strong>Tip</strong>: You can use widget attributes to quick define certains actions like <code>entryAnimation=&#39;fade-in-animation&#39;</code>.</em></p><p><em><strong>Note</strong>: When there are attributes in the component no mapped to a java method, you can use the <code>attributes</code> key, like we do in the <code>Cancel</code> button.</em></p></li>
+  <li><p>Add all fields defined in the <code>Main.ui.xml</code> file to the <code>Main.java</code> class.</p>
   <pre><code>@UiField PaperDrawerPanel drawerPanel;
 @UiField HTMLPanel content;
 
@@ -526,7 +527,7 @@ protected void onAddButtonClick(ClickEvent e) {
 }
 </code></pre></li>
   <li><p>Reload the application</p><p>Now you can open dialog by clicking on the round action button at the bottom right corner.</p></li>
-  <li><p>Create a widget for displaying items: <code>Item.java</code> and <code>Item.ui.xml</code></p>
+  <li><p>Create a widget for displaying items: <code>Item.ui.xml</code> and <code>Item.java</code></p>
   <ul>
     <li><code>Item.ui.xml</code></li>
   </ul>
@@ -778,10 +779,10 @@ protected void menuClearDone(ClickEvent e) {
   </ul></li>
 </ol><h2>Summary</h2><p>In this chapter we learnt:</p>
 <ol>
-  <li>How to create more widgets to our Application.</li>
-  <li>Add events handlers to UiBinder components</li>
-  <li>Usage of advanced Polymer components like dialog and buttons</li>
-  <li>How to use a Basic Data Model.</li>
+  <li>How to add more widgets to our Application.</li>
+  <li>Add events handlers to UiBinder components.</li>
+  <li>Usage of advanced Polymer components like dialog and buttons.</li>
+  <li>How to use a very basic Data Model in GWT.</li>
 </ol>
 
                 </div>
