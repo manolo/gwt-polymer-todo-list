@@ -75,7 +75,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <runTarget>demo.html</runTarget>
+                    <runTarget>todo.html</runTarget>
                     <draftCompile>false</draftCompile>
                     <optimizationLevel>9</optimizationLevel>
                     <jsInteropMode>JS</jsInteropMode>
