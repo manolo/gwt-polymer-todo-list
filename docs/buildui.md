@@ -11,20 +11,20 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
     You can generate these files either copying the following snippets or using the Eclipse GWT plugin
 
      * `Main.java`
-    
+
             package com.example.client;
-            
+
             import com.google.gwt.core.client.GWT;
             import com.google.gwt.uibinder.client.UiBinder;
             import com.google.gwt.user.client.ui.Composite;
             import com.google.gwt.user.client.ui.HTMLPanel;
-    
+
             public class Main extends Composite {
               interface MainUiBinder extends UiBinder<HTMLPanel, Main> {
               }
-    
+
               private static MainUiBinder ourUiBinder = GWT.create(MainUiBinder.class);
-    
+
               public Main() {
                 initWidget(ourUiBinder.createAndBindUi(this));
               }
@@ -34,21 +34,21 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
 
             <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                      xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-    
+
               <g:HTMLPanel>
-              
+
               </g:HTMLPanel>
             </ui:UiBinder>
-    
+
 2.  Add **menu items**.
-    
+
     Now we can update the `Main.ui.xml` file adding some menu items.
 
         <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                  xmlns:g='urn:import:com.google.gwt.user.client.ui'
                  xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
                  xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
-    
+
           <g:HTMLPanel>
             <p:PaperIconItem ui:field="menuClearAll">
                 <i:IronIcon icon="delete"/>
@@ -68,43 +68,43 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
             </p:PaperIconItem>
           </g:HTMLPanel>
         </ui:UiBinder>
-    
+
     _**Note** that in this step we have added the necessary imports for Paper and Iron packages.
     [Here](https://elements.polymer-project.org/elements/paper-item?view=demo:demo/index.html) you can find demos and documentation if you are interested in details._
-    
+
 3.  Update the **entry point** to use our new screen.
 
         package com.example.client;
-    
+
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;
-    
+
         public class TodoList implements EntryPoint {
-    
+
           public void onModuleLoad() {
             RootPanel.get().add(new Main());
           }
         }
-    
+
 4.  Run the application.
 
     Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.
-    
+
 ## Icons and Effects
-    
+
 1.  Import **icon collections**.
 
     Because Polymer comes with several icon collections, we have to import the appropriate set before we use it, hence we must wait until they are ready:
-    
+
         package com.example.client;
-    
+
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;
         import com.vaadin.polymer.Polymer;
         import com.vaadin.polymer.elemental.Function;
-    
+
         public class TodoList implements EntryPoint {
-    
+
           public void onModuleLoad() {
             // We have to load icon sets before run application
             Polymer.importHref("iron-icons/iron-icons.html", new Function() {
@@ -115,35 +115,35 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
                 }
             });
           }
-    
+
           private void startApplication() {
             RootPanel.get().add(new Main());
           }
         }
-        
+
 2.  Reload the application
 
     You should see all icons in the browser now.
-    
+
 3.  Add a **Ripple** effect
 
     It is nice when the user gets some feedback when interacting with UI elements. Read the material design [documentation](http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action) about that.
-    
+
     * Add `<p:PaperRipple/>` to each item in the `Main.ui.xml` file.
     * We need to add some styles to items, so as the ripple effect is constrained into the item area.
-    
+
             <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                  xmlns:g='urn:import:com.google.gwt.user.client.ui'
                  xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
                  xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
-    
+
                 <ui:style>
                   paper-icon-item {
                     position: relative;
                     overflow: hidden;
                   }
                 </ui:style>
-    
+
                 <g:HTMLPanel>
                   <p:PaperIconItem ui:field="menuClearAll">
                     <i:IronIcon icon="delete"/>
@@ -167,29 +167,29 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
                   </p:PaperIconItem>
                 </g:HTMLPanel>
             </ui:UiBinder>
-    
+
 4.  Reload the application
 
     Compare click reactions after adding the PaperRipple effects.
-    
-## Responsive Layout
-    
-1.  Layout the application in a Paper **Draw Panel**.
 
-    Paper elements collection comes with a responsive drawer component to layout modern applications so as they behaves nice in both desktop and mobile. If you are interested in details or see a demo visit the [paper-drawer-panel page](https://elements.polymer-project.org/elements/paper-drawer-panel?view=demo:demo/index.html)
+## Responsive Layout
+
+1.  Layout the application with a Paper **Draw Panel**.
+
+    Paper elements collection comes with a responsive drawer component to layout modern applications so as they behaves nice in both desktop and mobile. If you are interested in details and you want to see a demo visit the [paper-drawer-panel page](https://elements.polymer-project.org/elements/paper-drawer-panel?view=demo:demo/index.html)
 
         <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                  xmlns:g='urn:import:com.google.gwt.user.client.ui'
                  xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
                  xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
-    
+
           <ui:style>
              paper-icon-item {
                position: relative;
                overflow: hidden;
              }
           </ui:style>
-    
+
           <g:HTMLPanel>
             <p:PaperDrawerPanel ui:field="drawerPanel">
                 <div drawer="">
@@ -220,7 +220,7 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
                 <div main="">
                     <p:PaperHeaderPanel mode="seamed">
                         <p:PaperToolbar>
-                            <p:PaperIconButton ui:field="menu" icon="more-vert" 
+                            <p:PaperIconButton ui:field="menu" icon="more-vert"
                                 attributes="paper-drawer-toggle"/>
                             <span>Todo List</span>
                         </p:PaperToolbar>
@@ -229,7 +229,7 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
             </p:PaperDrawerPanel>
           </g:HTMLPanel>
         </ui:UiBinder>
-        
+
 2. Add the *content panel*
 
     * Add a container for our Todo Items.
@@ -239,7 +239,7 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
                 <div main="">
                     <p:PaperHeaderPanel mode="seamed">
                         <p:PaperToolbar addStyleNames="{style.toolbar}">
-                            <p:PaperIconButton ui:field="menu" icon="more-vert" 
+                            <p:PaperIconButton ui:field="menu" icon="more-vert"
                                 attributes="paper-drawer-toggle"/>
                             <span class="{style.header}">Todo List</span>
                         </p:PaperToolbar>
@@ -247,17 +247,18 @@ In this chapter we will build a modern and good looking UI for the **Todo List**
                 </div>
                ...
             </g:HTMLPanel>
-    
+
 3. Reload the application
 
     Now the application should look modern and responsive. Try to resize browser window. If you make it narrower than 640 pixels you can see that draw panel hides the menu.
-    
+
 ## Styling the app
 
+### Styling with CssResource
 When using polymer elements you can use GWT [GSS](http://www.gwtproject.org/doc/latest/DevGuideGssVsCss.html) parser as usual, and add styles to widgets or elements using the `{}` operator.
-    
-1.  Change color of toolbar, style the heading text and the content panel:
-   
+
+-  Change color of toolbar, style the heading text and the content panel:
+
             <ui:style>
               .toolbar {
                 background: #4285f4 !important;
@@ -271,105 +272,9 @@ When using polymer elements you can use GWT [GSS](http://www.gwtproject.org/doc/
                 padding: 15px;
                }
                ...
-            <ui:style>
+            </ui:style>
             <g:HTMLPanel>
                ...
-                <div main="">
-                    <p:PaperHeaderPanel mode="seamed">
-                        <p:PaperToolbar addStyleNames="{style.toolbar}">
-                            <p:PaperIconButton ui:field="menu" icon="more-vert" 
-                                attributes="paper-drawer-toggle"/>
-                            <span class="{style.header}">Todo List</span>
-                        </p:PaperToolbar>
-                        <g:HTMLPanel ui:field="content" 
-                               addStyleNames="{style.content} vertical center-justified layout"/>
-                    </p:PaperHeaderPanel>
-                </div>
-               ...
-            </g:HTMLPanel>
-
-    _**Note**: Class names `vertical`, `center-justified` and `layout` are provided by Polymer._
-
-2. Add and stylize the **floating action button**
-
-    Material Design applications use the characteristic floating button for the main action. In paper elements this button is called [paper-fab]().
-    
-          <ui:style>
-            .add {
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-            }
-          </ui:style>
-               ...
-                    <p:PaperFab ui:field="addButton" icon="add" title="add" 
-                           addStyleNames="{style.add}"/>
-               ...
-        </ui:UiBinder>
-
-3. Reload the application.
-
-    If everything is OK your app should look like [this](http://manolo.github.io/gwt-polymer-todo/todo.html).
-
-
-## Summary
-
-Finally your `Main.gwt.xml` file should look like:
-
-        <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-                 xmlns:g='urn:import:com.google.gwt.user.client.ui'
-                 xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
-                 xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
-    
-          <ui:style>
-            paper-icon-item {
-                position: relative;
-                overflow: hidden;
-            }
-            .toolbar {
-                background: #4285f4 !important;
-            }
-            .header {
-                font-size: 200%;
-                margin-left: 50px;
-            }
-            .content {
-                padding: 15px;
-            }
-            .add {
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-            }
-          </ui:style>
-    
-          <g:HTMLPanel>
-            <p:PaperDrawerPanel ui:field="drawerPanel">
-                <div drawer="">
-                    <p:PaperHeaderPanel mode="seamed">
-                        <p:PaperToolbar addStyleNames="{style.toolbar}"/>
-                        <p:PaperIconItem ui:field="menuClearAll">
-                            <i:IronIcon icon="delete"/>
-                            <div>Clear All</div>
-                            <p:PaperRipple/>
-                        </p:PaperIconItem>
-                        <p:PaperIconItem ui:field="menuClearDone">
-                            <i:IronIcon icon="clear"/>
-                            <div>Clear Done</div>
-                            <p:PaperRipple/>
-                        </p:PaperIconItem>
-                        <p:PaperIconItem ui:field="menuSettings">
-                            <i:IronIcon icon="settings"/>
-                            <div>Settings</div>
-                            <p:PaperRipple/>
-                        </p:PaperIconItem>
-                        <p:PaperIconItem ui:field="menuAbout">
-                            <i:IronIcon icon="help"/>
-                            <div>About</div>
-                            <p:PaperRipple/>
-                        </p:PaperIconItem>
-                    </p:PaperHeaderPanel>
-                </div>
                 <div main="">
                     <p:PaperHeaderPanel mode="seamed">
                         <p:PaperToolbar addStyleNames="{style.toolbar}">
@@ -377,24 +282,136 @@ Finally your `Main.gwt.xml` file should look like:
                                 attributes="paper-drawer-toggle"/>
                             <span class="{style.header}">Todo List</span>
                         </p:PaperToolbar>
-                        <g:HTMLPanel ui:field="content" 
-                           addStyleNames="{style.content} vertical center-justified layout"/>
+                        <g:HTMLPanel ui:field="content"
+                               addStyleNames="{style.content} vertical center-justified layout"/>
                     </p:PaperHeaderPanel>
-                    <p:PaperFab ui:field="addButton" icon="add" title="add" 
-                           addStyleNames="{style.add}"/>
                 </div>
-            </p:PaperDrawerPanel>
-          </g:HTMLPanel>
-        </ui:UiBinder>
-    
+               ...
+            </g:HTMLPanel>
 
-### Lesons we have learnt:
+_**Note**: that names `vertical`, `center-justified` and `layout` are provided by Polymer._
 
-1. We know how to create new widgets using `UiBinder`
+_**Tip**: GWT deferres `CssResource` loading, so when you use `Elements` instead of `Widgets` you might use `<style>` tags instead of `<ui:style>`_
+
+### Styling with Polymer
+Web Components use [Shadow DOM styling](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/) rules for providing scoped styling of the element. Additionally Polymer provides [Shady DOM](https://www.polymer-project.org/1.0/articles/shadydom.html) to deal with browsers not implementing native shadow. Hence Polymer monitors and parses each `<style>` block rewriting rules on the fly.
+
+The GSS processor, and the way how GWT loads css resources make impossible to use `shadow` and `polymer` selectors and properties inside `<ui:style>` blocks. Thus you have to use normal `<style>` in your `UiBinder` file.
+
+* Add and stylize the **floating action button**
+
+    Material Design applications use the characteristic floating button for the main action. In paper elements this button is called [paper-fab]().
+
+        <ui:style>
+        ...
+        </ui:style>
+        <g:HTMLPanel>
+          <style is='custom-style'>
+            .add {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                --paper-fab-background: var(--paper-red-500);
+            }
+          </style>
+          <div main="">
+            ...
+            <p:PaperFab ui:field="addButton" icon="add"
+                        addStyleNames="add"/>
+          </div>
+        </g:HTMLPanel>
+
+_**Tip**: In order to make Polymer process your style block add the `is="custom-style"` attribute_
+
+_**Tip**: Use polymer element custom properties and mixins to improve your css_
+
+## Summary
+
+Finally your `Main.gwt.xml` file should look like:
+
+    <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
+             xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
+
+      <ui:style>
+        paper-icon-item {
+          position: relative;
+          overflow: hidden;
+        }
+        .toolbar {
+           background: #4285f4 !important;
+        }
+        .header {
+           font-size: 200%;
+           margin-left: 50px;
+        }
+        .content {
+           padding: 15px;
+        }
+      </ui:style>
+
+      <g:HTMLPanel>
+        <style is='custom-style'>
+          .add {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            --paper-fab-background: var(--paper-red-500);
+          }
+        </style>
+        <p:PaperDrawerPanel ui:field="drawerPanel">
+           <div drawer="">
+              <p:PaperHeaderPanel mode="seamed">
+                 <p:PaperToolbar addStyleNames="{style.toolbar}"/>
+                 <p:PaperIconItem ui:field="menuClearAll">
+                   <i:IronIcon icon="delete"/>
+                   <div>Clear All</div>
+                   <p:PaperRipple/>
+                 </p:PaperIconItem>
+                 <p:PaperIconItem ui:field="menuClearDone">
+                   <i:IronIcon icon="clear"/>
+                   <div>Clear Done</div>
+                   <p:PaperRipple/>
+                 </p:PaperIconItem>
+                 <p:PaperIconItem ui:field="menuSettings">
+                   <i:IronIcon icon="settings"/>
+                   <div>Settings</div>
+                   <p:PaperRipple/>
+                 </p:PaperIconItem>
+                 <p:PaperIconItem ui:field="menuAbout">
+                   <i:IronIcon icon="help"/>
+                   <div>About</div>
+                   <p:PaperRipple/>
+                 </p:PaperIconItem>
+              </p:PaperHeaderPanel>
+           </div>
+           <div main="">
+              <p:PaperHeaderPanel mode="seamed">
+                <p:PaperToolbar addStyleNames="{style.toolbar}">
+                  <p:PaperIconButton ui:field="menu" icon="more-vert"
+                                     attributes="paper-drawer-toggle"/>
+                  <span class="{style.header}">Todo List</span>
+                </p:PaperToolbar>
+                <g:HTMLPanel ui:field="content"
+                             addStyleNames="{style.content} vertical center-justified layout"/>
+              </p:PaperHeaderPanel>
+              <p:PaperFab ui:field="addButton" icon="add"
+                          addStyleNames="add"/>
+           </div>
+        </p:PaperDrawerPanel>
+      </g:HTMLPanel>
+    </ui:UiBinder>
+
+If everything is OK, after reloading your app should look like [this](http://manolo.github.io/gwt-polymer-todo/todo.html).
+
+## What's next
+
+1. We have learnt how to create new widgets using `UiBinder`
 2. We can add 3rd party widgets to our UI
 3. We know the mechanism to import polymer elements like icon collections and use special components like effects.
 3. We can deal with responsive layouts using paper panels and mixing them with conventional GWT widgets
-4. We know how to style elements in `UiBinder` xml files.
+4. We know how to style elements in `UiBinder` xml files using GSS or Polymer parsers.
 
 
 [Step 3: Add logic to the application](applogic.html)
