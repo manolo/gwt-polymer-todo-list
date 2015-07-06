@@ -170,7 +170,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
 4.  Reload the application
 
-    Compare click reactions after adding the PaperRipple effects.
+    Compare click reactions before and after adding the PaperRipple effects.
 
 ## Responsive Layout
 
