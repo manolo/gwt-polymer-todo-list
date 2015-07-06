@@ -259,42 +259,42 @@ In this lesson we will learn how to add some logic our UI and deal with events a
             initWidget(ourUiBinder.createAndBindUi(this));
           }
 
-        @UiHandler("addButton")
-        protected void onAddButtonClick(ClickEvent e) {
+          @UiHandler("addButton")
+          protected void onAddButtonClick(ClickEvent e) {
             addItemDialog.open();
-        }
+          }
 
-        @UiHandler("confirmAddButton")
-        protected void onConfirmAddButtonClick(ClickEvent e) {
+          @UiHandler("confirmAddButton")
+          protected void onConfirmAddButtonClick(ClickEvent e) {
             if (!titleInput.getValue().isEmpty()) {
-                addItem(titleInput.getValue(), descriptionInput.getValue());
-                // clear text fields
-                titleInput.setValue("");
-                descriptionInput.setValue("");
+              addItem(titleInput.getValue(), descriptionInput.getValue());
+              // clear text fields
+              titleInput.setValue("");
+              descriptionInput.setValue("");
             }
-        }
+          }
 
-        private void addItem(String title, String description) {
+          private void addItem(String title, String description) {
             Item item = new Item();
             item.setTitle(title);
             item.setDescription(description);
             content.add(item);
-        }
+          }
 
-        @UiHandler("menuClearAll")
-        protected void menuClearAll(ClickEvent e) {
+          @UiHandler("menuClearAll")
+          protected void menuClearAll(ClickEvent e) {
             closeMenu();
             content.clear();
-        }
+          }
 
-        private void closeMenu() {
+          private void closeMenu() {
             if (drawerPanel.getNarrow()) {
                 drawerPanel.closeDrawer();
             }
-        }
+          }
 
-        @UiHandler("menuClearDone")
-        protected void menuClearDone(ClickEvent e) {
+          @UiHandler("menuClearDone")
+          protected void menuClearDone(ClickEvent e) {
             closeMenu();
             for (int i = content.getWidgetCount() - 1; i > -1; i--) {
                 Item item = (Item)content.getWidget(i);
@@ -302,8 +302,8 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                     content.remove(item);
                 }
             }
+          }
         }
-    }
 
 11. Reload the application
 
