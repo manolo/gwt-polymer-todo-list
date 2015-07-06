@@ -327,7 +327,7 @@ The GSS processor, and the way how GWT loads css resources make impossible to us
 
 _**Tip**: In order to make Polymer process your style block add the `is="custom-style"` attribute_
 
-_**Tip**: Use polymer element custom properties and mixins to improve your css_
+_**Tip**: Take a look at custom properties and mixins are available for styling on [paper-fab page](https://elements.polymer-project.org/elements/paper-fab)_
 
 ## Summary
 
