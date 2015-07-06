@@ -96,7 +96,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
           }
         }
         
-        TODO: describe why we load *Element.SRC stuff
+    TODO: describe why we load *Element.SRC stuff
 
 4.  Run the application.
 
