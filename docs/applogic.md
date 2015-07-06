@@ -1,28 +1,36 @@
-Adding Application Logic.
+Adding the Application Logic.
 ===
 
-In this part we will learn how to add some logic to our **Todo List** and how to deal with events.
+At this point we have almost the UI or our **Todo List** application designed using `UiBinders`.
 
-1.  Create the *Add Item dialog*
-    
-    * Add the following markup to the Main.ui.xml file
-    
-            <p:PaperDialog ui:field="addItemDialog" entryAnimation="fade-in-animation" 
-                           addStyleNames="{style.dialog}" modal="true">
-              <h2>Add Item</h2>
-              <p:PaperInput ui:field="titleInput" label="Title" required="true" 
-                            autoValidate="true" errorMessage="required input!"/>
-              <div class="textarea-container iron-autogrow-textarea">
-                 <p:PaperTextarea ui:field="descriptionInput" label="Notes"/>
-              </div>
-              <div class="buttons">
-                 <p:PaperButton attributes="dialog-dismiss">Cancel</p:PaperButton>
-                 <p:PaperButton ui:field="confirmAddButton"
-                                attributes="dialog-confirm">OK</p:PaperButton>
-              </div>
-            </p:PaperDialog>
-    
-2.  Add all fields in `Main.ui.xml` file to the `Main.java` class.
+In this lesson we will learn how to add some logic our UI and deal with events and data.
+
+1.  Create the *Add Item dialog* adding the following markup to the Main.ui.xml file:
+
+        <g:HTMLPanel>
+          ...
+          <p:PaperDialog ui:field="addItemDialog"
+                         entryAnimation="fade-in-animation"
+                         addStyleNames="{style.dialog}" modal="true">
+            <h2>Add Item</h2>
+            <p:PaperInput ui:field="titleInput" label="Title" required="true"
+                          autoValidate="true" errorMessage="required input!"/>
+            <div class="textarea-container iron-autogrow-textarea">
+              <p:PaperTextarea ui:field="descriptionInput" label="Notes"/>
+            </div>
+            <div class="buttons">
+               <p:PaperButton attributes="dialog-dismiss">Cancel</p:PaperButton>
+               <p:PaperButton ui:field="confirmAddButton"
+                              attributes="dialog-confirm">OK</p:PaperButton>
+            </div>
+          </p:PaperDialog>
+        </g:HTMLPanel>
+
+     _**Tip**: You can use widget attributes to quick define certains actions like `entryAnimation='fade-in-animation'`._
+
+     _**Note**: When there are attributes in the component no mapped to a java method, you can use the `attributes` key, like we do in the `Cancel` button._
+
+2.  Add all fields defined in the `Main.ui.xml` file to the `Main.java` class.
 
         @UiField PaperDrawerPanel drawerPanel;
         @UiField HTMLPanel content;
@@ -30,7 +38,7 @@ In this part we will learn how to add some logic to our **Todo List** and how to
         @UiField PaperDialog addItemDialog;
         @UiField PaperInput titleInput;
         @UiField PaperTextarea descriptionInput;
-    
+
 3.  Add the click handler to the floating action button in the `Main.java`
 
         @UiHandler("addButton")
@@ -41,43 +49,44 @@ In this part we will learn how to add some logic to our **Todo List** and how to
 4.  Reload the application
 
     Now you can open dialog by clicking on the round action button at the bottom right corner.
-    
-6.  Create a widget for displaying items: `Item.java` and `Item.ui.xml`
+
+6.  Create a widget for displaying items: `Item.ui.xml` and `Item.java`
 
      * `Item.ui.xml`
-    
+
             <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-                 xmlns:g='urn:import:com.google.gwt.user.client.ui'
-                 xmlns:p='urn:import:com.vaadin.polymer.paper.widget'>
-    
-              <g:HTMLPanel addStyleNames="vertical center-justified layout">
+              xmlns:g='urn:import:com.google.gwt.user.client.ui'
+              xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
+              xmlns:i='urn:import:com.vaadin.polymer.iron.widget'>
+              <ui:style>
+                @external .done;
+                .item .done {
+                  text-decoration: line-through;
+                }
+                .title {
+                  padding-left: 20px;
+                  font-size: 150%;
+                  font-weight: normal;
+                }
+              </ui:style>
+              <g:HTMLPanel
+                addStyleNames="vertical center-justified layout {style.item}">
                 <style>
-                    .title {
-                      padding-left: 20px;
-                      font-size: 150%;
-                      font-weight: normal;
-                    }
-                    .done {
-                      text-decoration: line-through;
-                    }
-                    .paper-checkbox {
-                      top: -2px;
-                    }
                 </style>
                 <div class="vertical-section">
                   <h4>
-                    <p:PaperCheckbox ui:field="done"/>
-                    <span ui:field="title" class='title'>Go to Google</span>
+                    <p:PaperCheckbox ui:field="check"></p:PaperCheckbox>
+                    <span ui:field="title" class='{style.title}'>Go to Google</span>
                   </h4>
-                  <div ui:field="description"/>
+                  <div ui:field="description" class='{style.description}'></div>
                 </div>
               </g:HTMLPanel>
             </ui:UiBinder>
 
      * `Item.java`: For simplicity, we will use this class as the Item POJO
-    
+
             package com.example.client;
-    
+
             import com.google.gwt.core.shared.GWT;
             import com.google.gwt.dom.client.Element;
             import com.google.gwt.uibinder.client.UiBinder;
@@ -87,22 +96,22 @@ In this part we will learn how to add some logic to our **Todo List** and how to
             import com.google.gwt.user.client.ui.HTMLPanel;
             import com.vaadin.polymer.iron.widget.event.IronChangeEvent;
             import com.vaadin.polymer.paper.widget.PaperCheckbox;
-    
+
             public class Item extends Composite {
-        
+
               interface ItemUiBinder extends UiBinder<HTMLPanel, Item> {
               }
-    
+
               private static ItemUiBinder ourUiBinder = GWT.create(ItemUiBinder.class);
-        
+
               @UiField Element title;
               @UiField Element description;
               @UiField PaperCheckbox done;
-    
+
               public Item() {
                 initWidget(ourUiBinder.createAndBindUi(this));
               }
-        
+
               @UiHandler("done")
               protected void change(IronChangeEvent ev) {
                 if (done.getActive()) {
@@ -131,13 +140,13 @@ In this part we will learn how to add some logic to our **Todo List** and how to
               }
             }
 
-    
+
 7.  Add the logic to create items when we click the save button.
 
     At this point your Main.java should be like this:
-    
+
         package com.example.client;
-    
+
         import com.google.gwt.core.client.GWT;
         import com.google.gwt.event.dom.client.ClickEvent;
         import com.google.gwt.uibinder.client.UiBinder;
@@ -146,28 +155,28 @@ In this part we will learn how to add some logic to our **Todo List** and how to
         import com.google.gwt.user.client.ui.Composite;
         import com.google.gwt.user.client.ui.HTMLPanel;
         import com.vaadin.polymer.paper.widget.*;
-    
+
         public class Main extends Composite {
           interface MainUiBinder extends UiBinder<HTMLPanel, Main> {
           }
-    
+
           private static MainUiBinder ourUiBinder = GWT.create(MainUiBinder.class);
-    
+
           @UiField HTMLPanel content;
-    
+
           @UiField PaperDialog addItemDialog;
           @UiField PaperInput titleInput;
           @UiField PaperTextarea descriptionInput;
-    
+
           public Main() {
             initWidget(ourUiBinder.createAndBindUi(this));
           }
-    
+
           @UiHandler("addButton")
           protected void onAddButtonClick(ClickEvent e) {
             addItemDialog.open();
           }
-    
+
           @UiHandler("confirmAddButton")
           protected void onConfirmAddButtonClick(ClickEvent e) {
             if (!titleInput.getValue().isEmpty()) {
@@ -177,7 +186,7 @@ In this part we will learn how to add some logic to our **Todo List** and how to
               descriptionInput.setValue("");
             }
           }
-    
+
           private void addItem(String title, String description) {
             Item item = new Item();
             item.setTitle(title);
@@ -185,11 +194,11 @@ In this part we will learn how to add some logic to our **Todo List** and how to
             content.add(item);
           }
         }
-    
+
 8.  Reload the application
 
     Now you can add Todo items and mark them as done using checkboxes.
-    
+
 9.  Add the **Clear All** and **Clear Done** menu item handlers
 
         @UiHandler("menuClearAll")
@@ -197,7 +206,7 @@ In this part we will learn how to add some logic to our **Todo List** and how to
           closeMenu();
           content.clear();
         }
-    
+
         @UiHandler("menuClearDone")
         protected void menuClearDone(ClickEvent e) {
           closeMenu();
@@ -214,13 +223,13 @@ In this part we will learn how to add some logic to our **Todo List** and how to
             drawerPanel.closeDrawer();
           }
         }
-    
+
     _**Note**: that the closeMenu() method is only useful if you open the application on a mobile device or make your browser window narrow enough to collapse the side menu. We have to hide menu after click._
-    
+
 10. The final `Main.java` should look like this
-    
+
         package com.example.client;
-    
+
         import com.google.gwt.core.client.GWT;
         import com.google.gwt.event.dom.client.ClickEvent;
         import com.google.gwt.uibinder.client.UiBinder;
@@ -232,29 +241,29 @@ In this part we will learn how to add some logic to our **Todo List** and how to
         import com.vaadin.polymer.paper.widget.PaperDrawerPanel;
         import com.vaadin.polymer.paper.widget.PaperInput;
         import com.vaadin.polymer.paper.widget.PaperTextarea;
-    
+
         public class Main extends Composite {
           interface MainUiBinder extends UiBinder<HTMLPanel, Main> {
           }
-    
+
           private static MainUiBinder ourUiBinder = GWT.create(MainUiBinder.class);
-    
+
           @UiField PaperDrawerPanel drawerPanel;
           @UiField HTMLPanel content;
-    
+
           @UiField PaperDialog addItemDialog;
           @UiField PaperInput titleInput;
           @UiField PaperTextarea descriptionInput;
-    
+
           public Main() {
             initWidget(ourUiBinder.createAndBindUi(this));
           }
-    
+
         @UiHandler("addButton")
         protected void onAddButtonClick(ClickEvent e) {
             addItemDialog.open();
         }
-    
+
         @UiHandler("confirmAddButton")
         protected void onConfirmAddButtonClick(ClickEvent e) {
             if (!titleInput.getValue().isEmpty()) {
@@ -264,26 +273,26 @@ In this part we will learn how to add some logic to our **Todo List** and how to
                 descriptionInput.setValue("");
             }
         }
-    
+
         private void addItem(String title, String description) {
             Item item = new Item();
             item.setTitle(title);
             item.setDescription(description);
             content.add(item);
         }
-    
+
         @UiHandler("menuClearAll")
         protected void menuClearAll(ClickEvent e) {
             closeMenu();
             content.clear();
         }
-        
+
         private void closeMenu() {
             if (drawerPanel.getNarrow()) {
                 drawerPanel.closeDrawer();
             }
         }
-    
+
         @UiHandler("menuClearDone")
         protected void menuClearDone(ClickEvent e) {
             closeMenu();
@@ -295,7 +304,7 @@ In this part we will learn how to add some logic to our **Todo List** and how to
             }
         }
     }
-    
+
 11. Reload the application
 
     * Add several items
@@ -307,7 +316,7 @@ In this part we will learn how to add some logic to our **Todo List** and how to
 
 In this chapter we learnt:
 
-1. How to create more widgets to our Application.
-2. Add events handlers to UiBinder components 
-3. Usage of advanced Polymer components like dialog and buttons
-4. How to use a Basic Data Model.
+1. How to add more widgets to our Application.
+2. Add events handlers to UiBinder components.
+3. Usage of advanced Polymer components like dialog and buttons.
+4. How to use a very basic Data Model in GWT.
