@@ -29,5 +29,5 @@ In the process of building the **TodoList** app, you'll learn:
 
 ## What's next
 
-[Step 1: Create and prepare a new Project](create.html)
+[Step 1: Create and prepare a new Project](widgets-create.html)
 

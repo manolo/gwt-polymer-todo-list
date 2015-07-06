@@ -414,4 +414,4 @@ If everything is OK, after reloading your app should look like [this](http://man
 4. We know how to style elements in `UiBinder` xml files using GSS or Polymer parsers.
 
 
-[Step 3: Add logic to the application](applogic.html)
+[Step 3: Add logic to the application](wodgets-applogic.html)

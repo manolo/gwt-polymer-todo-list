@@ -136,4 +136,4 @@ In this lesson we have learnt
 
 Now you are prepared to create the UI of the application.
 
-[Step 2: Building the User Interface](buildui.html)
+[Step 2: Building the User Interface](widgets-buildui.html)
