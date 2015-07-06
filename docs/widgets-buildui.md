@@ -327,7 +327,7 @@ The GSS processor, and the way how GWT loads css resources make impossible to us
 
 _**Tip**: In order to make Polymer process your style block add the `is="custom-style"` attribute_
 
-_**Tip**: Use polymer element custom properties and mixins to improve your css_
+_**Tip**: Take a look at custom properties and mixins are available for styling on [paper-fab page](https://elements.polymer-project.org/elements/paper-fab)_
 
 ## Summary
 
@@ -418,4 +418,4 @@ If everything is OK, after reloading your app should look like [this](http://man
 4. We know how to style elements in `UiBinder` xml files using GSS or Polymer parsers.
 
 
-[Step 3: Add logic to the application](wodgets-applogic.html)
+[Step 3: Add logic to the application](widgets-applogic.html)
