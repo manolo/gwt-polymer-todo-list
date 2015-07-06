@@ -98,7 +98,7 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
     *  Remove folders `server` and `shared` under `src/main/java/com/example` folder
     *  Remove `GreetingService.java` and `GreetingServiceAsync.java` classes fron the client package as well.
 
-10. Update the **entry point**
+10. Update the **EntryPoint**
 
     Replace the content of `TodoList.java` with
 
@@ -110,13 +110,21 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
 
         public class TodoList implements EntryPoint {
           public void onModuleLoad() {
+            // Use Widget API to Create a <paper-button>
             PaperButton button = new PaperButton("Press me!");
             button.setRaised(true);
             RootPanel.get().add(button);
+        
+        
+            // Use the Element API to create a <paper-button>
+            PaperButtonElement buttonElement = 
+               Polymer.createElement(PaperButtonElement.TAG);
+            buttonElement.setTextContent("Click me!");
+            Document.get().getBody().appendChild((Element)buttonElement);            
           }
         }
 
-    _**Note**: that we have added the PaperButton widget here._
+    _**Note**: that we have added the PaperButton element here, but using different API's: the classic GWT Widget approach and Elements._
 
 11. Run the application again.
 
@@ -136,4 +144,8 @@ In this lesson we have learnt
 
 Now you are prepared to create the UI of the application.
 
-[Step 2: Building the User Interface](widgets-buildui.html)
+But you have two options, you can continue the Tutorial using Classic GWT widgets or the Elements API, which is the modern tendency in GWT.
+
+[Step 2a: Building the User Interface using Widgets](widgets-buildui.html)
+
+[Step 2b: Building the User Interface using Elements](elements-buildui.html)
