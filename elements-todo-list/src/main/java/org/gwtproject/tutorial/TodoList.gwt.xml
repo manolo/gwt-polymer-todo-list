@@ -1,5 +1,5 @@
 
-<module rename-to='todolist'>
+<module rename-to='todolistelements'>
   <inherits name='com.google.gwt.user.User'/>
 
   <inherits name="com.vaadin.polymer.Elements"/>
