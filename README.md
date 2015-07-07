@@ -10,9 +10,9 @@ with JsInterop Elements.
 
 ## Demos
  Visit our 
-   [demo-widgets](http://manolo.github.io/gwt-polymer-todo/www/TodoListWidgets.html)
+   [demo-widgets](http://manolo.github.io/gwt-polymer-todo-list/www/TodoListWidgets.html)
  or
-   [demo-elements](http://manolo.github.io/gwt-polymer-todo/www/TodoListElements.html)
+   [demo-elements](http://manolo.github.io/gwt-polymer-todo-list/www/TodoListElements.html)
 
 to see the application in action.
 
