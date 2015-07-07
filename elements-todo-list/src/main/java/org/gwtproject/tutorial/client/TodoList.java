@@ -1,12 +1,10 @@
-package com.example.client;
+package org.gwtproject.tutorial.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Function;
 import com.vaadin.polymer.paper.element.*;
-import com.vaadin.polymer.paper.widget.PaperIconItem;
-import com.vaadin.polymer.paper.widget.PaperToolbar;
 
 import java.util.Arrays;
 
@@ -15,8 +13,11 @@ public class TodoList implements EntryPoint {
     public void onModuleLoad() {
         Polymer.importHref("paper-styles/demo-pages.html");
 
-        // We have to load icon sets before run application
-        Polymer.importHref(Arrays.asList("iron-icons/iron-icons.html",
+        Polymer.importHref(Arrays.asList(
+                // We have to load icon sets
+                "iron-icons/iron-icons.html",
+                // And we have to load all web components in our application
+                // before using them as custom elements.
                 PaperDrawerPanelElement.SRC,
                 PaperHeaderPanelElement.SRC,
                 PaperToolbarElement.SRC,

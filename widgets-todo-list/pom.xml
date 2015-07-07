@@ -8,6 +8,8 @@
     <artifactId>gwt-polymer-widgets-todo</artifactId>
     <packaging>war</packaging>
     <version>1.0.2.0-alpha2-SNAPSHOT</version>
+    <name>GWT Polymer TodoList tutorial App (widgets version).</name>
+
     <properties>
       <gwtVersion>2.8.0-SNAPSHOT</gwtVersion>
       <gwtPolymerVersion>${project.version}</gwtPolymerVersion>

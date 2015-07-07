@@ -4,11 +4,11 @@
 
   <!-- POM file generated with GWT webAppCreator -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>TodoList</artifactId>
+  <groupId>org.gwtproject.tutorial</groupId>
+  <artifactId>gwt-polymer-elements-todo</artifactId>
   <packaging>war</packaging>
   <version>1.0.2.0-alpha2-SNAPSHOT</version>
-  <name>gwt-polymer-elements-todo</name>
+  <name>GWT Polymer TodoList tutorial App (elements version).</name>
   
   <properties>
     <gwtVersion>2.7.0</gwtVersion>

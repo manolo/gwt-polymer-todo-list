@@ -5,5 +5,8 @@
     <inherits name="com.vaadin.polymer.Elements"/>
 
     <entry-point class="org.gwtproject.tutorial.client.TodoList"/>
+
+    <add-linker name="xsiframe"/>
+
     <collapse-all-properties value="true" />
 </module>

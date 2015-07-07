@@ -1,4 +1,4 @@
-package com.example.client;
+package org.gwtproject.tutorial.client;
 
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.dom.client.DivElement;
