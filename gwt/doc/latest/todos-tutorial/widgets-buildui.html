@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>GWT Project</title>
+
+        <link rel="stylesheet" href='./../../../assets/build/css/style.css'>
+        <link rel="stylesheet" href='./../../../assets/build/fonts/icons/icons.css'>
+        <link rel="shortcut icon" type="image/x-icon" href='./../../../images/favicon.png'>
+
+        <script type="text/javascript" src="https://use.typekit.net/wwv3dxt.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src='./../../../gwtproject/gwtproject.nocache.js'></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40673139-1']);
+            _gaq.push(['_setDomainName', 'gwtproject.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            (function () {
+                var cx = '008698606704604874043:or32ypbnrfu';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav role="navigation" id="nav" class="closed">
+            <div class="wrapper">
+                <ul>
+                    <li class="logo"><a href='./../../../'>GWT homepage</a></li>
+                    <li><a href='./../../../overview.html'><i class="icon_overview"></i>Overview</a></li>
+                    <li class="sep"><a href='./../../../gettingstarted.html'><i class="icon_getstarted"></i>Get started</a></li>
+                    <li><a href='./../../../doc/latest/tutorial/index.html' class="active"><i class="icon_tutorials"></i>Tutorials</a></li>
+                    <li><a href='./../../../doc/latest/DevGuide.html'><i class="icon_doc"></i>Docs</a></li>
+                    <li><a href='./../../../examples.html'><i class="icon_ressources"></i>Resources</a></li>
+                    <li><a href='./../../../makinggwtbetter.html'><i class="icon_makeGWTBetter"></i>Make GWT Better</a></li>
+                    <li class="sep"><a href='./../../../terms.html'><i class="icon_terms"></i>Terms</a></li>
+                    <li class="btn"><a href='./../../../download.html'><i class="icon_download"></i>Download</a></li>
+                    <li class="btn"><a href="http://www.gwtproject.org/javadoc/latest/"><i class="icon_jd"></i>Java Doc</a></li>
+                </ul>
+                <div id="social">
+                    <a class="googleplus" href="https://plus.google.com/communities/116543000751323604177" target="_blank">
+                        <i class="icon_google"></i><span>Access our Google+ community</span>
+                    </a>
+                </div>
+                <a id="cc" href="#">Creative Commons Attribution 3.0 License.</a>
+            </div>
+        </nav>
+
+        <div class="holder" style="display:none">
+            <aside id="submenu">
+                <nav>
+                    <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/tutorial/index.html'>Tutorials</a>
+  <ul>
+    <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+    <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+      <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+      <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+      <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+      <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+      <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+    </ul></li>
+    <li><a href="#">AJAX Communication</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+      <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+    <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+    <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>Building a GWT Polymer App.</a>
+    <ul>
+      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create a maven Project</a></li>
+      <li><a href="#">Classic Widgets App</a>
+      <ul>
+        <li><a href='./../../../doc/latest/polymer-tutorial/widgets-buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/polymer-tutorial/widgets-applogic.html'>Events &amp; Logic</a></li>
+      </ul></li>
+      <li><a href="#">Elements App</a>
+      <ul>
+        <li><a href='./../../../doc/latest/polymer-tutorial/elements-buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/polymer-tutorial/elements-applogic.html'>Events &amp; Logic</a> (doc/latest/todos-tutorial/JUnit.html)</li>
+      </ul></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+                </nav>
+            </aside>
+
+            <a id="logo-mobile" href="#"><span>>Back to GWT homepage</span></a>
+
+            <div class="menu-button">Menu</div>
+
+            <nav id="nav-mobile" class="flexnav">
+                <ul>
+  <li><a href='./../../../gettingstarted.html'>Get Started</a>
+  <ul>
+    <li><a href='./../../../gettingstarted.html' title="Getting Started with GWT SDK">Overview</a></li>
+    <li><a href='./../../../learnmore-sdk.html' title="Learn more about the GWT SDK">SDK Learn More</a></li>
+    <li><a href='./../../../usingeclipse.html'>Configure Eclipse</a></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/tutorial/index.html'>Tutorials</a>
+  <ul>
+    <li><a href='./../../../doc/latest/tutorial/index.html'>Overview</a></li>
+    <li><a href="#" title="Create, build and run a GWT application">Build a GWT App.</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/gettingstarted.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/tutorial/create.html'>Create</a></li>
+      <li><a href='./../../../doc/latest/tutorial/design.html'>Design</a></li>
+      <li><a href='./../../../doc/latest/tutorial/buildui.html'>Build the UI</a></li>
+      <li><a href='./../../../doc/latest/tutorial/manageevents.html'>Manage Events</a></li>
+      <li><a href='./../../../doc/latest/tutorial/codeclient.html'>Coding Client side</a></li>
+      <li><a href='./../../../doc/latest/tutorial/debug.html'>Debugging</a></li>
+      <li><a href='./../../../doc/latest/tutorial/style.html'>Styling</a></li>
+      <li><a href='./../../../doc/latest/tutorial/compile.html'>Compilation</a></li>
+    </ul></li>
+    <li><a href="#">AJAX Communication</a>
+    <ul>
+      <li><a href='./../../../doc/latest/tutorial/clientserver.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/tutorial/RPC.html'>Using GWT RPC</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JSON.html'>Retrieving JSON</a></li>
+      <li><a href='./../../../doc/latest/tutorial/Xsite.html'>Cross-site Requests</a></li>
+      <li><a href='./../../../doc/latest/tutorial/JSONphp.html'>JSON php</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
+    <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
+    <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
+    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>Building a GWT Polymer App.</a>
+    <ul>
+      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create a maven Project</a></li>
+      <li><a href="#">Classic Widgets App</a>
+      <ul>
+        <li><a href='./../../../doc/latest/polymer-tutorial/widgets-buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/polymer-tutorial/widgets-applogic.html'>Events &amp; Logic</a></li>
+      </ul></li>
+      <li><a href="#">Elements App</a>
+      <ul>
+        <li><a href='./../../../doc/latest/polymer-tutorial/elements-buildui.html'>Build the UI</a></li>
+        <li><a href='./../../../doc/latest/polymer-tutorial/elements-applogic.html'>Events &amp; Logic</a> (doc/latest/todos-tutorial/JUnit.html)</li>
+      </ul></li>
+    </ul></li>
+  </ul></li>
+  <li><a href='./../../../doc/latest/DevGuide.html'>Documentation</a>
+  <ul>
+    <li><a href='./../../../doc/latest/DevGuide.html'>Overview</a></li>
+    <li><a href="#">Coding Basics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasics.html'>Introduction</a></li>
+      <li><a href='./../../../doc/latest/DevGuideOrganizingProjects.html'>Organize Projects</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCompilingAndDebugging.html'>Compile &amp; Debug</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsClient.html'>Client-side</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsCompatibility.html'>JRE Compatibility</a></li>
+      <li><a href='./../../../doc/latest/DevGuideServerCommunication.html' title="Communicate with a server">Ajax Communication</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsHistory.html'>History Mechanism</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsFormatting.html' title="Number and Date Formating">Formatting</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDelayed.html'>Delayed Logic</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
+      <li><a href='./../../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
+    </ul></li>
+    <li><a href="#">Build User Interfaces</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideUi.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBrowser.html'>Cross-Browser Support</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiPanels.html'>Layout with Panels</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiWidgets.html'>Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomWidgets.html'>Custom Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellWidgets.html'>Cell Widgets</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCellTable.html'>Cell Tables</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCustomCells.html'>Custom Cells</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiEditors.html'>Editors</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiDom.html'>Using the DOM</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiHandlers.html'>Events &amp; Handlers</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiCss.html'>Css Styling</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiBinder.html'>UIBinder</a></li>
+      <li><a href='./../../../doc/latest/DevGuideUiImageBundles.html'>Image Bundles</a></li>
+    </ul></li>
+    <li><a href="#">Html5 Support</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideHtml5.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/DevGuideHtml5Storage.html'>Html5 Storage</a></li>
+    </ul></li>
+    <li><a href="#">Test with JUnit</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideTesting.html'>Guide</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingHtmlUnit.html'>HtmlUnit</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingRemoteTesting.html'>Remote Testing</a></li>
+      <li><a href='./../../../doc/latest/DevGuideTestingCoverage.html'>Code Coverage</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideDeploying.html'>Deploy</a></li>
+    <li><a href="#">Advanced Topics</a>
+    <ul>
+      <li><a href='./../../../doc/latest/DevGuideLogging.html'>Logging</a></li>
+      <li><a href="#">Security</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideSecurity.html'>Contents</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecuritySafeHtml.html'>Using SafeHtml</a></li>
+        <li><a href='./../../../doc/latest/DevGuideSecurityRpcXsrf.html'>XSRF Protection</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideAutoBeans.html'>AutoBeans</a></li>
+      <li><a href='./../../../doc/latest/DevGuideRequestFactory.html'>Request Factory</a></li>
+      <li><a href='./../../../doc/latest/DevGuideMvpActivitiesAndPlaces.html'>Activities And Places</a></li>
+      <li><a href='./../../../doc/latest/DevGuideValidation.html'>Validation</a></li>
+      <li><a href="#">Internationalization</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideI18n.html' title="I18N">Introduction</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nLocale.html'>Locale</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nConstants.html'>Constants</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nMessages.html'>Messages</a></li>
+        <li><a href='./../../../doc/latest/DevGuideI18nPluralForms.html'>Plural Forms</a></li>
+        <li><a href='./../../../doc/latest/DevGuideUiBinderI18n.html'>UI Binder</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideA11y.html'>Accessibility</a></li>
+      <li><a href="#">Optimize</a>
+      <ul>
+        <li><a href='./../../../doc/latest/DevGuideOptimizing.html'>Overview</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCodeSplitting.html'>Code Splitting</a></li>
+        <li><a href='./../../../doc/latest/DevGuideCompileReport.html'>Compile Report</a></li>
+        <li><a href='./../../../doc/latest/DevGuideClientBundle.html'>Client Bundle</a></li>
+        <li><a href='./../../../doc/latest/DevGuideGssVsCss.html'>GSS vs CSS Syntax</a></li>
+        <li><a href='./../../../doc/latest/DevGuideLightweightMetrics.html'>Lightweight Metrics</a></li>
+      </ul></li>
+      <li><a href='./../../../doc/latest/DevGuideLinkers.html'>Linkers</a></li>
+    </ul></li>
+    <li><a href="#">Reference</a>
+    <ul>
+      <li><a href='./../../../doc/latest/RefCommandLineTools.html'>Command Line Tools</a></li>
+      <li><a href='./../../../doc/latest/RefGWTClassAPI.html'>GWT Class API</a></li>
+      <li><a href='./../../../doc/latest/RefJreEmulation.html'>Jre Emulation</a></li>
+      <li><a href='./../../../doc/latest/RefWidgetGallery.html'>Widgets Gallery</a></li>
+    </ul></li>
+    <li><a href="#">FAQ</a>
+    <ul>
+      <li><a href='./../../../doc/latest/FAQ.html'>Contents</a></li>
+      <li><a href='./../../../doc/latest/FAQ_GettingStarted.html'>Getting Started</a></li>
+      <li><a href='./../../../doc/latest/FAQ_DebuggingAndCompiling.html'>Debug &amp; Compile</a></li>
+      <li><a href='./../../../doc/latest/FAQ_UI.html'>Build UI</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Client.html'>Client</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Server.html'>Server</a></li>
+      <li><a href='./../../../doc/latest/FAQ_Troubleshooting.html'>Troubleshooting</a></li>
+    </ul></li>
+    <li><a href='./../../../doc/latest/DevGuideGlossary.html'>Glossary</a></li>
+  </ul></li>
+  <li><a href='./../../../examples.html'>Resources</a>
+  <ul>
+    <li><a href='./../../../examples.html'>Examples</a></li>
+    <li><a href='./../../../presentations.html' title="Different Presentations on GWT">Presentations</a></li>
+    <li><a href="#">Articles</a>
+    <ul>
+      <li><a href='./../../../articles/articles.html'>Overview</a></li>
+      <li><a href='./../../../articles/fragment_merging.html'>Fragment Merging</a></li>
+      <li><a href='./../../../articles/superdevmode.html'>Super Dev Mode</a></li>
+      <li><a href='./../../../articles/elemental.html'>Elemental</a></li>
+      <li><a href='./../../../articles/dynamic_host_page.html' title="Running GWT in dynamic host pages">Dynamic Host Page</a></li>
+      <li><a href="#">Building MVP apps</a>
+      <ul>
+        <li><a href='./../../../articles/mvp-architecture.html'>MVP Part I</a></li>
+        <li><a href='./../../../articles/mvp-architecture-2.html'>MVP Part II</a></li>
+      </ul></li>
+      <li><a href='./../../../articles/using_gwt_with_hibernate.html'>GWT &amp; Hibernate</a></li>
+      <li><a href='./../../../articles/testing_methodologies_using_gwt.html' title="Best practices on Testing GWT applications">Testing</a></li>
+      <li><a href='./../../../articles/dom_events_memory_leaks_and_you.html' title="How GWT tackles memory leaks">DOM Memory Leaks</a></li>
+      <li><a href='./../../../articles/security_for_gwt_applications.html' title="Security for GWT applications">Security</a></li>
+      <li><a href='./../../../articles/using_gwt_for_json_mashups.html' title="Using GWT for JSON Mashups">JSON &amp; Mashups</a></li>
+      <li><a href='./../../../articles/gwt-iphone.html'>GWT iPhone</a></li>
+    </ul></li>
+    <li><a href='./../../../books.html' title="GWT Books">Books</a></li>
+    <li><a href='./../../../casestudies.html' title="Case Studies for using GWT">Case Studies</a></li>
+    <li><a href="#">Community</a>
+    <ul>
+      <li><a href='./../../../community.html'>Community &amp; Forums</a></li>
+      <li><a href='./../../../community-group-charter.html' title="Community Group Charter">Community Group</a></li>
+      <li><a href='./../../../developer_spotlight.html'>Developer Spotlight</a></li>
+    </ul></li>
+    <li><a href='./../../../gwt_surveys.html'>GWT surveys</a></li>
+  </ul></li>
+  <li><a href='./../../../makinggwtbetter.html'>Making GWT Better</a>
+  <ul>
+    <li><a href='./../../../makinggwtbetter.html' title="Learn how to contribute to GWT">Contributing</a></li>
+    <li><a href='./../../../lifeofanissue.html' title="Learn about GWT and the issue tracker">Life of an Issue</a></li>
+    <li><a href='./../../../steering.html' title="The GWT Steering Committee">Steering Committee</a></li>
+  </ul></li>
+  <li><a href='./../../../terms.html'>Terms</a>
+  <ul>
+    <li><a href='./../../../terms.html'>GWT License</a></li>
+    <li><a href='./../../../GWTPolicy.html'>GWT Name Use Policy</a></li>
+    <li><a href='./../../../privacy.html'>Privacy</a></li>
+  </ul></li>
+</ul>
+            </nav>
+
+            <div id="search">
+                <form onsubmit="javascript:void(0)">
+                    <input type="text"/>
+                    <button type="submit"><i class="icon_search"></i> <span>Search</span></button>
+                </form>
+            </div>
+
+            <div style="visibility:hidden">
+                <gcse:searchresults-only gname="searchresults"></gcse:searchresults-only>
+            </div>
+
+            <div id="content" role="main">
+                <div class="container">
+                    <span id="editLink" title="Edit this page on GitHub">
+                        <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/todos-tutorial/widgets-buildui.md"></a>
+                    </span>
+                    <h1> Building the UI</h1><p>In this chapter we will build a modern and good looking UI for the <strong>TodoList</strong> application using the <a href="http://www.google.es/design/spec/material-design/introduction.html">Material Design</a> specifications. We will work with the Polymer Paper elements collection wrapped through the Vaadin gwt-polymer-elements library.</p><h2>Main Screen</h2>
+<ol>
+  <li><p>Create the <strong>main screen</strong> of the application.</p><p>We are going to create an <a href="DevGuideUiBinder.html">UiBinder</a> screen composed by a java file <code>Main.java</code> and its visual descriptor <code>Main.ui.xml</code>.</p><p>You can generate these files either copying the following snippets or using the Eclipse GWT plugin</p>
+  <ul>
+    <li><code>Main.java</code></li>
+  </ul>
+  <pre><code>    package com.example.client;
+
+    import com.google.gwt.core.client.GWT;
+    import com.google.gwt.uibinder.client.UiBinder;
+    import com.google.gwt.user.client.ui.Composite;
+    import com.google.gwt.user.client.ui.HTMLPanel;
+
+    public class Main extends Composite {
+      interface MainUiBinder extends UiBinder&lt;HTMLPanel, Main&gt; {
+      }
+
+      private static MainUiBinder ourUiBinder = GWT.create(MainUiBinder.class);
+
+      public Main() {
+        initWidget(ourUiBinder.createAndBindUi(this));
+      }
+    }
+</code></pre>
+  <ul>
+    <li><code>Main.ui.xml</code></li>
+  </ul>
+  <pre><code>    &lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
+             xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;&gt;
+
+      &lt;g:HTMLPanel&gt;
+
+      &lt;/g:HTMLPanel&gt;
+    &lt;/ui:UiBinder&gt;
+</code></pre></li>
+  <li><p>Add <strong>menu items</strong>.</p><p>Now we can update the <code>Main.ui.xml</code> file adding some menu items.</p>
+  <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
+         xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;
+         xmlns:p=&#39;urn:import:com.vaadin.polymer.paper.widget&#39;
+         xmlns:i=&#39;urn:import:com.vaadin.polymer.iron.widget&#39;&gt;
+
+  &lt;g:HTMLPanel&gt;
+    &lt;p:PaperIconItem ui:field=&quot;menuClearAll&quot;&gt;
+        &lt;i:IronIcon icon=&quot;delete&quot;/&gt;
+        &lt;div&gt;Clear All&lt;/div&gt;
+    &lt;/p:PaperIconItem&gt;
+    &lt;p:PaperIconItem ui:field=&quot;menuClearDone&quot;&gt;
+        &lt;i:IronIcon icon=&quot;clear&quot;/&gt;
+        &lt;div&gt;Clear Done&lt;/div&gt;
+    &lt;/p:PaperIconItem&gt;
+    &lt;p:PaperIconItem ui:field=&quot;menuSettings&quot;&gt;
+        &lt;i:IronIcon icon=&quot;settings&quot;/&gt;
+        &lt;div&gt;Settings&lt;/div&gt;
+    &lt;/p:PaperIconItem&gt;
+    &lt;p:PaperIconItem ui:field=&quot;menuAbout&quot;&gt;
+        &lt;i:IronIcon icon=&quot;help&quot;/&gt;
+        &lt;div&gt;About&lt;/div&gt;
+    &lt;/p:PaperIconItem&gt;
+  &lt;/g:HTMLPanel&gt;
+&lt;/ui:UiBinder&gt;
+</code></pre><p><em><strong>Note</strong> that in this step we have added the necessary imports for Paper and Iron packages. <a href="https://elements.polymer-project.org/elements/paper-item?view=demo:demo/index.html">Here</a> you can find demos and documentation if you are interested in details.</em></p></li>
+  <li><p>Update the <strong>entry point</strong> to use our new screen.</p>
+  <pre><code>package com.example.client;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.user.client.ui.RootPanel;
+
+public class TodoList implements EntryPoint {
+
+  public void onModuleLoad() {
+    RootPanel.get().add(new Main());
+  }
+}
+</code></pre></li>
+  <li><p>Run the application.</p><p>Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.</p></li>
+</ol><h2>Icons and Effects</h2>
+<ol>
+  <li><p>Import <strong>icon collections</strong>.</p><p>Because Polymer comes with several icon collections, we have to import the appropriate set before we use it, hence we must wait until they are ready:</p>
+  <pre><code>package com.example.client;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.user.client.ui.RootPanel;
+import com.vaadin.polymer.Polymer;
+import com.vaadin.polymer.elemental.Function;
+
+public class TodoList implements EntryPoint {
+
+  public void onModuleLoad() {
+    // We have to load icon sets before run application
+    Polymer.importHref(&quot;iron-icons/iron-icons.html&quot;, new Function() {
+        public Object call(Object arg) {
+            // The app is executed when all imports succeed.
+            startApplication();
+            return null;
+        }
+    });
+  }
+
+  private void startApplication() {
+    RootPanel.get().add(new Main());
+  }
+}
+</code></pre></li>
+  <li><p>Reload the application</p><p>You should see all icons in the browser now.</p></li>
+  <li><p>Add a <strong>Ripple</strong> effect</p><p>It is nice when the user gets some feedback when interacting with UI elements. Read the material design <a href="http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action">documentation</a> about that.</p>
+  <ul>
+    <li>Add <code>&lt;p:PaperRipple/&gt;</code> to each item in the <code>Main.ui.xml</code> file.</li>
+    <li>We need to add some styles to items, so as the ripple effect is constrained into the item area.</li>
+  </ul>
+  <pre><code>    &lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
+         xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;
+         xmlns:p=&#39;urn:import:com.vaadin.polymer.paper.widget&#39;
+         xmlns:i=&#39;urn:import:com.vaadin.polymer.iron.widget&#39;&gt;
+
+        &lt;ui:style&gt;
+          paper-icon-item {
+            position: relative;
+            overflow: hidden;
+          }
+        &lt;/ui:style&gt;
+
+        &lt;g:HTMLPanel&gt;
+          &lt;p:PaperIconItem ui:field=&quot;menuClearAll&quot;&gt;
+            &lt;i:IronIcon icon=&quot;delete&quot;/&gt;
+            &lt;div&gt;Clear All&lt;/div&gt;
+            &lt;p:PaperRipple/&gt;
+          &lt;/p:PaperIconItem&gt;
+          &lt;p:PaperIconItem ui:field=&quot;menuClearDone&quot;&gt;
+            &lt;i:IronIcon icon=&quot;clear&quot;/&gt;
+            &lt;div&gt;Clear Done&lt;/div&gt;
+            &lt;p:PaperRipple/&gt;
+          &lt;/p:PaperIconItem&gt;
+          &lt;p:PaperIconItem ui:field=&quot;menuSettings&quot;&gt;
+            &lt;i:IronIcon icon=&quot;settings&quot;/&gt;
+            &lt;div&gt;Settings&lt;/div&gt;
+            &lt;p:PaperRipple/&gt;
+          &lt;/p:PaperIconItem&gt;
+          &lt;p:PaperIconItem ui:field=&quot;menuAbout&quot;&gt;
+            &lt;i:IronIcon icon=&quot;help&quot;/&gt;
+            &lt;div&gt;About&lt;/div&gt;
+            &lt;p:PaperRipple/&gt;
+          &lt;/p:PaperIconItem&gt;
+        &lt;/g:HTMLPanel&gt;
+    &lt;/ui:UiBinder&gt;
+</code></pre></li>
+  <li><p>Reload the application</p><p>Compare click reactions after adding the PaperRipple effects.</p></li>
+</ol><h2>Responsive Layout</h2>
+<ol>
+  <li><p>Layout the application with a Paper <strong>Draw Panel</strong>.</p><p>Paper elements collection comes with a responsive drawer component to layout modern applications so as they behaves nice in both desktop and mobile. If you are interested in details and you want to see a demo visit the <a href="https://elements.polymer-project.org/elements/paper-drawer-panel?view=demo:demo/index.html">paper-drawer-panel page</a></p>
+  <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
+         xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;
+         xmlns:p=&#39;urn:import:com.vaadin.polymer.paper.widget&#39;
+         xmlns:i=&#39;urn:import:com.vaadin.polymer.iron.widget&#39;&gt;
+
+  &lt;ui:style&gt;
+     paper-icon-item {
+       position: relative;
+       overflow: hidden;
+     }
+  &lt;/ui:style&gt;
+
+  &lt;g:HTMLPanel&gt;
+    &lt;p:PaperDrawerPanel ui:field=&quot;drawerPanel&quot;&gt;
+        &lt;div drawer=&quot;&quot;&gt;
+            &lt;p:PaperHeaderPanel mode=&quot;seamed&quot;&gt;
+                &lt;p:PaperToolbar/&gt;
+                &lt;p:PaperIconItem ui:field=&quot;menuClearAll&quot;&gt;
+                    &lt;i:IronIcon icon=&quot;delete&quot;/&gt;
+                    &lt;div&gt;Clear All&lt;/div&gt;
+                    &lt;p:PaperRipple/&gt;
+                &lt;/p:PaperIconItem&gt;
+                &lt;p:PaperIconItem ui:field=&quot;menuClearDone&quot;&gt;
+                    &lt;i:IronIcon icon=&quot;clear&quot;/&gt;
+                    &lt;div&gt;Clear Done&lt;/div&gt;
+                    &lt;p:PaperRipple/&gt;
+                &lt;/p:PaperIconItem&gt;
+                &lt;p:PaperIconItem ui:field=&quot;menuSettings&quot;&gt;
+                    &lt;i:IronIcon icon=&quot;settings&quot;/&gt;
+                    &lt;div&gt;Settings&lt;/div&gt;
+                    &lt;p:PaperRipple/&gt;
+                &lt;/p:PaperIconItem&gt;
+                &lt;p:PaperIconItem ui:field=&quot;menuAbout&quot;&gt;
+                    &lt;i:IronIcon icon=&quot;help&quot;/&gt;
+                    &lt;div&gt;About&lt;/div&gt;
+                    &lt;p:PaperRipple/&gt;
+                &lt;/p:PaperIconItem&gt;
+            &lt;/p:PaperHeaderPanel&gt;
+        &lt;/div&gt;
+        &lt;div main=&quot;&quot;&gt;
+            &lt;p:PaperHeaderPanel mode=&quot;seamed&quot;&gt;
+                &lt;p:PaperToolbar&gt;
+                    &lt;p:PaperIconButton ui:field=&quot;menu&quot; icon=&quot;more-vert&quot;
+                        attributes=&quot;paper-drawer-toggle&quot;/&gt;
+                    &lt;span&gt;Todo List&lt;/span&gt;
+                &lt;/p:PaperToolbar&gt;
+            &lt;/p:PaperHeaderPanel&gt;
+        &lt;/div&gt;
+    &lt;/p:PaperDrawerPanel&gt;
+  &lt;/g:HTMLPanel&gt;
+&lt;/ui:UiBinder&gt;
+</code></pre></li>
+  <li><p>Add the <em>content panel</em></p>
+  <ul>
+    <li>Add a container for our Todo Items.</li>
+  </ul>
+  <pre><code>    &lt;g:HTMLPanel&gt;
+       ...
+        &lt;div main=&quot;&quot;&gt;
+            &lt;p:PaperHeaderPanel mode=&quot;seamed&quot;&gt;
+                &lt;p:PaperToolbar addStyleNames=&quot;{style.toolbar}&quot;&gt;
+                    &lt;p:PaperIconButton ui:field=&quot;menu&quot; icon=&quot;more-vert&quot;
+                        attributes=&quot;paper-drawer-toggle&quot;/&gt;
+                    &lt;span class=&quot;{style.header}&quot;&gt;Todo List&lt;/span&gt;
+                &lt;/p:PaperToolbar&gt;
+
+                &lt;g:HTMLPanel ui:field=&quot;content&quot;
+                   addStyleNames=&quot;{style.content} vertical center-justified layout&quot; /&gt;
+
+            &lt;/p:PaperHeaderPanel&gt;
+        &lt;/div&gt;
+       ...
+    &lt;/g:HTMLPanel&gt;
+</code></pre></li>
+  <li><p>Reload the application</p><p>Now the application should look modern and responsive. Try to resize browser window. If you make it narrower than 640 pixels you can see that draw panel hides the menu.</p></li>
+</ol><h2> Styling the app</h2><h3>Styling with CssResource</h3><p>When using polymer elements you can use GWT <a href="http://www.gwtproject.org/doc/latest/DevGuideGssVsCss.html">GSS</a> parser as usual, and add styles to widgets or elements using the <code>{}</code> operator.</p>
+<ul>
+  <li><p>Change color of toolbar, style the heading text and the content panel:</p>
+  <pre><code>    &lt;ui:style&gt;
+      .toolbar {
+        background: #4285f4 !important;
+       }
+      .header {
+        font-size: 200%;
+        margin-left: 50px;
+        background: #4285f4 !important;
+       }
+      .content {
+        padding: 15px;
+       }
+       ...
+    &lt;/ui:style&gt;
+    &lt;g:HTMLPanel&gt;
+       ...
+        &lt;div main=&quot;&quot;&gt;
+            &lt;p:PaperHeaderPanel mode=&quot;seamed&quot;&gt;
+                &lt;p:PaperToolbar addStyleNames=&quot;{style.toolbar}&quot;&gt;
+                    &lt;p:PaperIconButton ui:field=&quot;menu&quot; icon=&quot;more-vert&quot;
+                        attributes=&quot;paper-drawer-toggle&quot;/&gt;
+                    &lt;span class=&quot;{style.header}&quot;&gt;Todo List&lt;/span&gt;
+                &lt;/p:PaperToolbar&gt;
+                &lt;g:HTMLPanel ui:field=&quot;content&quot;
+                       addStyleNames=&quot;{style.content} vertical center-justified layout&quot;/&gt;
+            &lt;/p:PaperHeaderPanel&gt;
+        &lt;/div&gt;
+       ...
+    &lt;/g:HTMLPanel&gt;
+</code></pre></li>
+</ul><p><em><strong>Note</strong>: that names <code>vertical</code>, <code>center-justified</code> and <code>layout</code> are provided by Polymer.</em></p><p><em><strong>Tip</strong>: GWT deferres <code>CssResource</code> loading, so when you use <code>Elements</code> instead of <code>Widgets</code> you might use <code>&lt;style&gt;</code> tags instead of <code>&lt;ui:style&gt;</code></em></p><h3>Styling with Polymer</h3><p>Web Components use <a href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/">Shadow DOM styling</a> rules for providing scoped styling of the element. Additionally Polymer provides <a href="https://www.polymer-project.org/1.0/articles/shadydom.html">Shady DOM</a> to deal with browsers not implementing native shadow. Hence Polymer monitors and parses each <code>&lt;style&gt;</code> block rewriting rules on the fly.</p><p>The GSS processor, and the way how GWT loads css resources make impossible to use <code>shadow</code> and <code>polymer</code> selectors and properties inside <code>&lt;ui:style&gt;</code> blocks. Thus you have to use normal <code>&lt;style&gt;</code> in your <code>UiBinder</code> file.</p>
+<ul>
+  <li><p>Add and stylize the <strong>floating action button</strong></p><p>Material Design applications use the characteristic floating button for the main action. In paper elements this button is called <a href="">paper-fab</a>.</p>
+  <pre><code>&lt;ui:style&gt;
+...
+&lt;/ui:style&gt;
+&lt;g:HTMLPanel&gt;
+  &lt;style is=&#39;custom-style&#39;&gt;
+    .add {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        --paper-fab-background: var(--paper-red-500);
+    }
+  &lt;/style&gt;
+  &lt;div main=&quot;&quot;&gt;
+    ...
+    &lt;p:PaperFab ui:field=&quot;addButton&quot; icon=&quot;add&quot;
+                addStyleNames=&quot;add&quot;/&gt;
+  &lt;/div&gt;
+&lt;/g:HTMLPanel&gt;
+</code></pre></li>
+</ul><p><em><strong>Tip</strong>: In order to make Polymer process your style block add the <code>is=&quot;custom-style&quot;</code> attribute</em></p><p><em><strong>Tip</strong>: Use polymer element custom properties and mixins to improve your css</em></p><h2>Summary</h2><p>Finally your <code>Main.gwt.xml</code> file should look like:</p>
+<pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
+         xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;
+         xmlns:p=&#39;urn:import:com.vaadin.polymer.paper.widget&#39;
+         xmlns:i=&#39;urn:import:com.vaadin.polymer.iron.widget&#39;&gt;
+
+  &lt;ui:style&gt;
+    paper-icon-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .toolbar {
+       background: #4285f4 !important;
+    }
+    .header {
+       font-size: 200%;
+       margin-left: 50px;
+    }
+    .content {
+       padding: 15px;
+    }
+  &lt;/ui:style&gt;
+
+  &lt;g:HTMLPanel&gt;
+    &lt;style is=&#39;custom-style&#39;&gt;
+      .add {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        --paper-fab-background: var(--paper-red-500);
+      }
+    &lt;/style&gt;
+    &lt;p:PaperDrawerPanel ui:field=&quot;drawerPanel&quot;&gt;
+       &lt;div drawer=&quot;&quot;&gt;
+          &lt;p:PaperHeaderPanel mode=&quot;seamed&quot;&gt;
+             &lt;p:PaperToolbar addStyleNames=&quot;{style.toolbar}&quot;/&gt;
+             &lt;p:PaperIconItem ui:field=&quot;menuClearAll&quot;&gt;
+               &lt;i:IronIcon icon=&quot;delete&quot;/&gt;
+               &lt;div&gt;Clear All&lt;/div&gt;
+               &lt;p:PaperRipple/&gt;
+             &lt;/p:PaperIconItem&gt;
+             &lt;p:PaperIconItem ui:field=&quot;menuClearDone&quot;&gt;
+               &lt;i:IronIcon icon=&quot;clear&quot;/&gt;
+               &lt;div&gt;Clear Done&lt;/div&gt;
+               &lt;p:PaperRipple/&gt;
+             &lt;/p:PaperIconItem&gt;
+             &lt;p:PaperIconItem ui:field=&quot;menuSettings&quot;&gt;
+               &lt;i:IronIcon icon=&quot;settings&quot;/&gt;
+               &lt;div&gt;Settings&lt;/div&gt;
+               &lt;p:PaperRipple/&gt;
+             &lt;/p:PaperIconItem&gt;
+             &lt;p:PaperIconItem ui:field=&quot;menuAbout&quot;&gt;
+               &lt;i:IronIcon icon=&quot;help&quot;/&gt;
+               &lt;div&gt;About&lt;/div&gt;
+               &lt;p:PaperRipple/&gt;
+             &lt;/p:PaperIconItem&gt;
+          &lt;/p:PaperHeaderPanel&gt;
+       &lt;/div&gt;
+       &lt;div main=&quot;&quot;&gt;
+          &lt;p:PaperHeaderPanel mode=&quot;seamed&quot;&gt;
+            &lt;p:PaperToolbar addStyleNames=&quot;{style.toolbar}&quot;&gt;
+              &lt;p:PaperIconButton ui:field=&quot;menu&quot; icon=&quot;more-vert&quot;
+                                 attributes=&quot;paper-drawer-toggle&quot;/&gt;
+              &lt;span class=&quot;{style.header}&quot;&gt;Todo List&lt;/span&gt;
+            &lt;/p:PaperToolbar&gt;
+            &lt;g:HTMLPanel ui:field=&quot;content&quot;
+                         addStyleNames=&quot;{style.content} vertical center-justified layout&quot;/&gt;
+          &lt;/p:PaperHeaderPanel&gt;
+          &lt;p:PaperFab ui:field=&quot;addButton&quot; icon=&quot;add&quot;
+                      addStyleNames=&quot;add&quot;/&gt;
+       &lt;/div&gt;
+    &lt;/p:PaperDrawerPanel&gt;
+  &lt;/g:HTMLPanel&gt;
+&lt;/ui:UiBinder&gt;
+</code></pre><p>If everything is OK, after reloading your app should look like <a href="http://manolo.github.io/gwt-polymer-todo/todo.html">this</a>.</p><h2>What&rsquo;s next</h2>
+<ol>
+  <li>We have learnt how to create new widgets using <code>UiBinder</code></li>
+  <li>We can add 3rd party widgets to our UI</li>
+  <li>We know the mechanism to import polymer elements like icon collections and use special components like effects.</li>
+  <li>We can deal with responsive layouts using paper panels and mixing them with conventional GWT widgets</li>
+  <li>We know how to style elements in <code>UiBinder</code> xml files using GSS or Polymer parsers.</li>
+</ol><p><a href="wodgets-applogic.html">Step 3: Add logic to the application</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src='./../../../assets/build/js/vendor/jquery-1.11.0.min.js'><\/script>")</script>
+
+        <script src='./../../../assets/build/js/vendor/jquery.flexnav.js'></script>
+        <script src='./../../../assets/build/js/global.min.js'></script>
+
+    </body>
+</html>
