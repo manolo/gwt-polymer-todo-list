@@ -1,0 +1,27 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+			 xmlns:g='urn:import:com.google.gwt.user.client.ui'
+			 xmlns:p='urn:import:com.vaadin.polymer.paper.widget'>
+
+    <div class="item vertical center-justified layout">
+        <style>
+	        .title {
+	          padding-left: 20px;
+	          font-size: 150%;
+	          font-weight: normal;
+	        }
+	        .done {
+	          text-decoration: line-through;
+	        }
+	        .paper-checkbox {
+	          top: -2px;
+	        }
+        </style>
+		<div class="vertical-section">
+			<h4>
+				<paper-checkbox ui:field="done"/>
+				<span ui:field="title" class='title'>Go to Google</span>
+			</h4>
+			<div ui:field="description"/>
+		</div>
+    </div>
+</ui:UiBinder>

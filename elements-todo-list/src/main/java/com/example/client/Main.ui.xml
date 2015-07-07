@@ -1,0 +1,84 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <g:HTMLPanel>
+        <style>
+            paper-icon-item {
+                position: relative;
+                overflow: hidden;
+            }
+            .toolbar {
+                background: #4285f4 !important;
+            }
+            .header {
+                font-size: 200%;
+                margin-left: 50px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .add {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+            .dialog {
+                min-width: 70%;
+            }
+            .item {
+                font-size: 15px;
+                padding-left: 20px;
+            }
+        </style>
+        <paper-drawer-panel ui:field="drawerPanel">
+            <div drawer="">
+                <paper-header-panel mode="seamed">
+                    <paper-toolbar class="toolbar"/>
+                    <paper-icon-item ui:field="menuClearAll">
+                        <iron-icon icon="delete"/>
+                        <div>Clear All</div>
+                        <paper-ripple/>
+                    </paper-icon-item>
+                    <paper-icon-item ui:field="menuClearDone">
+                        <iron-icon icon="clear"/>
+                        <div>Clear Done</div>
+                        <paper-ripple/>
+                    </paper-icon-item>
+                    <paper-icon-item ui:field="menuSettings">
+                        <iron-icon icon="settings"/>
+                        <div>Settings</div>
+                        <paper-ripple/>
+                    </paper-icon-item>
+                    <paper-icon-item ui:field="menuAbout">
+                        <iron-icon icon="help"/>
+                        <div>About</div>
+                        <paper-ripple/>
+                    </paper-icon-item>
+                </paper-header-panel>
+            </div>
+            <div main="">
+                <paper-header-panel mode="seamed">
+                    <paper-toolbar class="toolbar">
+                        <paper-icon-button ui:field="menu" icon="more-vert" paper-drawer-toggle=""/>
+                        <span class="header">Todo List</span>
+                    </paper-toolbar>
+                    <div ui:field="content" class="content vertical center-justified layout"/>
+                </paper-header-panel>
+                <paper-fab ui:field="addButton" icon="add" title="add" class="add"/>
+            </div>
+        </paper-drawer-panel>
+
+        <paper-dialog ui:field="addItemDialog" entry-animation="fade-in-animation" class="dialog" modal="">
+            <h2>Add Item</h2>
+            <paper-input ui:field="titleInput" label="Title" required="" auto-validate="" error-message="required input!"/>
+            <div class="textarea-container iron-autogrow-textarea">
+                <paper-textarea ui:field="descriptionInput" label="Notes"/>
+            </div>
+            <div class="buttons">
+                <paper-button dialog-dismiss="">Cancel</paper-button>
+                <paper-button ui:field="confirmAddButton" dialog-confirm="">OK</paper-button>
+            </div>
+        </paper-dialog>
+
+    </g:HTMLPanel>
+</ui:UiBinder>
