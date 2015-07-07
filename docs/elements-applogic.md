@@ -89,7 +89,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
      * `Item.java`: For simplicity, we will use this class as the Item POJO
 
-            package com.example.client;
+            package org.gwtproject.tutorial.client;
             
             import com.google.gwt.core.shared.GWT;
             import com.google.gwt.dom.client.DivElement;
@@ -228,7 +228,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
 10. The final `Main.java` should look like this
 
-        package com.example.client;
+        package org.gwtproject.tutorial.client;
         
         import com.google.gwt.core.client.GWT;
         import com.google.gwt.uibinder.client.UiBinder;

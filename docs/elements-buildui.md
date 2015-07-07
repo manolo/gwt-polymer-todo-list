@@ -12,7 +12,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
      * `Main.java`
 
-            package com.example.client;
+            package org.gwtproject.tutorial.client;
 
             import com.google.gwt.core.client.GWT;
             import com.google.gwt.uibinder.client.UiBinder;
@@ -71,7 +71,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
 3.  Update the **entry point** to use our new screen.
 
-        package com.example.client;
+        package org.gwtproject.tutorial.client;
         
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;
@@ -108,7 +108,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
     Because Polymer comes with several icon collections, we have to import the appropriate set before we use it, hence we must wait until they are ready:
 
-        package com.example.client;
+        package org.gwtproject.tutorial.client;
 
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;

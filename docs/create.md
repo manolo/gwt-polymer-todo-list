@@ -10,11 +10,11 @@ The `webAppCreator` is a command-line tool included in the GWT SDK that generate
 
 For the **TodoList** project, you have to run `webAppCreator` with the following parameters.
 
-| Parameter  | Definition                                     | Example  |
-| ---------- | -----------------------------------------------| -------- |
-| -maven     | Generate pom.xml.                              |          |
-| -out       | The directory to place the generated files.    | TodoList |
-| moduleName | The name of the GWT module you want to create. | com.example.TodoList |
+| Parameter  | Definition                                     | Example      |
+| ---------- | -----------------------------------------------| ------------ |
+| -templates | Comma separated templates to use               | maven,sample |
+| -out       | The directory to place the generated files.    | TodoList     |
+| moduleName | The name of the GWT module you want to create. | org.gwtproject.tutorial.TodoList |
 
 
 ## Setting up a new project.
@@ -23,7 +23,11 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
 
       GWT webAppCreator generates the project subdirectories and files you need to get
 
-        $ /full_path_to_gwt_sdk/webAppCreator -maven -out TodoListApp com.example.TodoList
+        $ /full_path_to_gwt_sdk/webAppCreator \
+            -templates maven,sample \
+            -out TodoListApp \
+            org.gwtproject.tutorial.TodoList
+
       _**Tip**: If you include the GWT SDK folder in your PATH environment variable, you won't have to invoke them by specifying their full path._
 
 
@@ -95,14 +99,15 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
 
 9. Remove all unnecessary files.
 
-    *  Remove folders `server` and `shared` under `src/main/java/com/example` folder
+    *  Remove folders `server` and `shared` under `src/main/java/org/gwtproject/tutorial` folder
     *  Remove `GreetingService.java` and `GreetingServiceAsync.java` classes fron the client package as well.
+    *  Remove example tests `src/main/test`
 
 10. Update the **EntryPoint**
 
     Replace the content of `TodoList.java` with
 
-        package com.example.client;
+        package org.gwtproject.tutorial;
 
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;
