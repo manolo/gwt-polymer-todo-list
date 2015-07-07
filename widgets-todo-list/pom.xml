@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vaadin.polymer</groupId>
-    <artifactId>gwt-polymer-elements-todo</artifactId>
+    <groupId>org.gwtproject.tutorial</groupId>
+    <artifactId>gwt-polymer-widgets-todo</artifactId>
     <packaging>war</packaging>
     <version>1.0.2.0-alpha2-SNAPSHOT</version>
     <properties>
@@ -75,7 +75,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <runTarget>todo.html</runTarget>
+                    <runTarget>TodoList.html</runTarget>
                     <draftCompile>false</draftCompile>
                     <optimizationLevel>9</optimizationLevel>
                     <jsInteropMode>JS</jsInteropMode>

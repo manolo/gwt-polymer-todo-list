@@ -1,4 +1,4 @@
-package com.vaadin.polymer.examples.todo.client;
+package org.gwtproject.tutorial.client;
 
 import static com.google.gwt.query.client.GQuery.$$;
 

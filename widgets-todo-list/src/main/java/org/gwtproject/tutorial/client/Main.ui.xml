@@ -3,7 +3,7 @@
   xmlns:g='urn:import:com.google.gwt.user.client.ui'
   xmlns:p='urn:import:com.vaadin.polymer.paper.widget'
   xmlns:i='urn:import:com.vaadin.polymer.iron.widget'
-  xmlns:a='urn:import:com.vaadin.polymer.examples.todo.client'
+  xmlns:a='urn:import:org.gwtproject.tutorial.client'
   >
   <ui:style>
   paper-icon-item {
