@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.gwtproject.tutorial</groupId>
+  <artifactId>gwt-polymer-todo-list</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0.2.0-alpha2-SNAPSHOT</version>
+
+  <modules>
+    <module>widgets-todo-list</module>
+    <module>elements-todo-list</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>process-resources</phase>
+            <configuration>
+              <tasks>
+                <delete dir="www" />
+                <mkdir dir="www" />
+                <copy todir="www">
+                  <fileset dir="widgets-todo-list/target/gwt-polymer-widgets-todo-${project.version}" includes="**/*" />
+                  <fileset dir="elements-todo-list/target/gwt-polymer-elements-todo-${project.version}" includes="**/*" />
+                </copy>
+                <delete dir="www/WEB-INF" />
+                <delete dir="www/META-INF" />
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>  
+    </plugins>
+  </build>
+</project>
