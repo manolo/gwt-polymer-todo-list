@@ -90,6 +90,8 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
     Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.
 
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-03.png'>
+
 ## Icons and Effects
 
 1.  Import **icon collections**.
@@ -124,6 +126,8 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 2.  Reload the application
 
     You should see all icons in the browser now.
+
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-04.png'>
 
 3.  Add a **Ripple** effect
 
@@ -255,6 +259,8 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 3. Reload the application
 
     Now the application should look modern and responsive. Try to resize browser window. If you make it narrower than 640 pixels you can see that draw panel hides the menu.
+
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-05.png'>
 
 ## Styling the app
 
@@ -407,7 +413,10 @@ Finally your `Main.gwt.xml` file should look like:
       </g:HTMLPanel>
     </ui:UiBinder>
 
-If everything is OK, after reloading your app should look like [this](http://manolo.github.io/gwt-polymer-todo/todo.html).
+If everything is OK, after reloading your app should look like this:
+
+  <img class='polymer-tutorial-screenshot' src='images/todo-list-06.png'>
+
 
 ## What's next
 

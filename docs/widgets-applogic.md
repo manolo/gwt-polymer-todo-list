@@ -50,6 +50,9 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
     Now you can open dialog by clicking on the round action button at the bottom right corner.
 
+    <img class='todo-list-img-ui' src='images/todo-list-07.png'>
+
+
 6.  Create a widget for displaying items: `Item.ui.xml` and `Item.java`
 
      * `Item.ui.xml`

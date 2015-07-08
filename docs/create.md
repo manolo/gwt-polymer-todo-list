@@ -119,13 +119,13 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
             PaperButton button = new PaperButton("Press me!");
             button.setRaised(true);
             RootPanel.get().add(button);
-        
-        
+
+
             // Use the Element API to create a <paper-button>
-            PaperButtonElement buttonElement = 
+            PaperButtonElement buttonElement =
                Polymer.createElement(PaperButtonElement.TAG);
             buttonElement.setTextContent("Click me!");
-            Document.get().getBody().appendChild((Element)buttonElement);            
+            Document.get().getBody().appendChild((Element)buttonElement);
           }
         }
 
@@ -133,7 +133,7 @@ For the **TodoList** project, you have to run `webAppCreator` with the following
 
 11. Run the application again.
 
-    You should see a page with a material design button in your browser.
+    You should see a page with a couple of material design buttons in your browser.
 
     _**Tip**: If you get ClassCastException in browser console, ensure that you use `-XjsInteropMode JS` parameter_
 
