@@ -417,7 +417,6 @@ If everything is OK, after reloading your app should look like this:
 
   <img class='polymer-tutorial-screenshot' src='images/todo-list-06.png'>
 
-
 ## What's next
 
 1. We have learnt how to create new widgets using `UiBinder`

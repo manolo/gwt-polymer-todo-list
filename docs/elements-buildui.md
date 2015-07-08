@@ -46,7 +46,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
         <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                      xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-        
+
             <g:HTMLPanel>
                 <paper-icon-item ui:field="menuClearAll">
                     <iron-icon icon="delete"/>
@@ -72,7 +72,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 3.  Update the **entry point** to use our new screen.
 
         package org.gwtproject.tutorial.client;
-        
+
         import com.google.gwt.core.client.EntryPoint;
         import com.google.gwt.user.client.ui.RootPanel;
         import com.vaadin.polymer.Polymer;
@@ -95,12 +95,14 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
             RootPanel.get().add(new Main());
           }
         }
-        
+
     TODO: describe why we load *Element.SRC stuff
 
 4.  Run the application.
 
     Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.
+
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-03.png'>
 
 ## Icons and Effects
 
@@ -139,6 +141,8 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
     You should see all icons in the browser now.
 
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-04.png'>
+
 3.  Add a **Ripple** effect
 
     It is nice when the user gets some feedback when interacting with UI elements. Read the material design [documentation](http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action) about that.
@@ -148,7 +152,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
         <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                      xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-        
+
             <g:HTMLPanel>
                 <style>
                     paper-icon-item {
@@ -183,6 +187,8 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
     Compare click reactions before and after adding the PaperRipple effects.
 
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-05.png'>
+
 ## Responsive Layout
 
 1.  Layout the application with a Paper **Draw Panel**.
@@ -191,7 +197,7 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
         <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                      xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-        
+
             <g:HTMLPanel>
                 <style>
                     paper-icon-item {
@@ -263,8 +269,16 @@ In this chapter we will build a modern and good looking UI for the **TodoList** 
 
 ## Styling the app
 
-### Styling with CssResource
-When using polymer elements you cannot use GWT [GSS](http://www.gwtproject.org/doc/latest/DevGuideGssVsCss.html) parser as usual, and add styles to widgets or elements using the `{}` operator. Use regular `style` tag instead.
+Web Components use [Shadow DOM styling](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/) rules for providing scoped styling of the element. Additionally Polymer provides [Shady DOM](https://www.polymer-project.org/1.0/articles/shadydom.html) to deal with browsers not implementing native shadow. Hence Polymer monitors and parses each `<style>` block rewriting rules on the fly.
+
+The GSS processor, and the way how GWT loads css resources asynchronously make impossible to use `shadow` and `polymer` selectors and properties inside `<ui:style>` blocks because first GSS will complain about certain syntaxes and second Polymer will ignore `CssResource` injected blocks. Thus you have to use normal `<style>` in your `UiBinder` file.
+
+So we have two options are:
+
+1.  Include your css in your hosting page.
+2.  Utilize normal `<style>` tags in your `UiBinder` files.
+
+In our example we will use the second way, but be aware that it would include a new `<style>` element each time you might create a new widget. In our case we only have an instance of `Main.ui.xml` in our application.
 
 -  Change color of toolbar, style the heading text and the content panel:
 
@@ -296,12 +310,7 @@ When using polymer elements you cannot use GWT [GSS](http://www.gwtproject.org/d
                ...
             </g:HTMLPanel>
 
-_**Note**: that names `vertical`, `center-justified` and `layout` are provided by Polymer._
-
-### Styling with Polymer
-Web Components use [Shadow DOM styling](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/) rules for providing scoped styling of the element. Additionally Polymer provides [Shady DOM](https://www.polymer-project.org/1.0/articles/shadydom.html) to deal with browsers not implementing native shadow. Hence Polymer monitors and parses each `<style>` block rewriting rules on the fly.
-
-The GSS processor, and the way how GWT loads css resources make impossible to use `shadow` and `polymer` selectors and properties inside `<ui:style>` blocks. Thus you have to use normal `<style>` in your `UiBinder` file.
+     _**Note**: that names `vertical`, `center-justified` and `layout` are provided by Polymer._
 
 * Add and stylize the **floating action button**
 
@@ -323,9 +332,9 @@ The GSS processor, and the way how GWT loads css resources make impossible to us
           </div>
         </g:HTMLPanel>
 
-_**Tip**: In order to make Polymer process your style block add the `is="custom-style"` attribute_
+    _**Tip**: In order to make Polymer process your style block add the `is="custom-style"` attribute_
 
-_**Tip**: Take a look at custom properties and mixins are available for styling on [paper-fab page](https://elements.polymer-project.org/elements/paper-fab)_
+   _**Tip**: Take a look at custom properties and mixins are available for styling on [paper-fab](https://elements.polymer-project.org/elements/paper-fab) page_
 
 ## Summary
 
@@ -333,7 +342,7 @@ Finally your `Main.gwt.xml` file should look like:
 
     <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
                  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-    
+
         <g:HTMLPanel>
             <style is="custom-style">
                 paper-icon-item {
@@ -397,16 +406,18 @@ Finally your `Main.gwt.xml` file should look like:
         </g:HTMLPanel>
     </ui:UiBinder>
 
-If everything is OK, after reloading your app should look like [this](http://manolo.github.io/gwt-polymer-todo/todo.html).
+If everything is OK, after reloading your app should look like this screenshot.
+
+  <img class='polymer-tutorial-screenshot' src='images/todo-list-06.png'>
+
 
 ## What's next
 
-TODO: rewrite this for elements
-1. We have learnt how to create new widgets using `UiBinder`
-2. We can add 3rd party widgets to our UI
-3. We know the mechanism to import polymer elements like icon collections and use special components like effects.
-3. We can deal with responsive layouts using paper panels and mixing them with conventional GWT widgets
-4. We know how to style elements in `UiBinder` xml files using GSS or Polymer parsers.
+1. We have learnt how to use `UiBinder` with pure `Elements` instead of `Widgets`
+2. We also know how we can add 3rd party web components to our UI.
+3. We understand the mechanism to import polymer elements like icon collections and use special components like effects.
+3. We can deal with responsive layouts using paper panels and mixing them with conventional html elements in GWT.
+4. We know how to style elements in `UiBinder` xml files using Polymer parsers.
 
 
 [Step 3: Add logic to the application](elements-applogic.html)
