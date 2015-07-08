@@ -538,6 +538,8 @@
   <pre><code>$ mvn gwt:run
 </code></pre><p><em><strong>Tip</strong>: At this point you might want to import project in your favorite IDE. Since the created project is built with maven you can import it directly in Eclipse, Idea, etc.</em></p></li>
   <li><p>Launch your Browser.</p><p>In the GWT developer window press the “Launch Default Browser” button to launch our application using your default browser. Or, you can click “Copy to Clipboard” to copy the launch URL and paste it into the browser of your choice.</p><p>If you change something in the code you can recompile the application just reloading the page in your browser. Otherwise if you change some configuration files like <code>pom.xml</code>, <code>webapp</code> static content, etc, you would have to stop SuperDevMode pushing <code>Ctrl-C</code> and running again <code>mvn gwt:run</code>.</p><p>If you are running chrome, you will be able to inspect and debug java code opening the developer tools and enabling the support for super sources.</p></li>
+</ol><h2>Customizing your project</h2><p>Once we have our base project, we will add the external dependencies we need in our application, and remove all unneeded example stuff.</p>
+<ol>
   <li><p>Add the vaadin <code>gwt-polymer-elements</code> dependency to your project editing the <code>pom.xml</code> file.</p>
   <pre><code>&lt;dependency&gt;
  &lt;groupId&gt;com.vaadin.polymer&lt;/groupId&gt;
@@ -592,7 +594,7 @@
     <li>Remove <code>GreetingService.java</code> and <code>GreetingServiceAsync.java</code> classes fron the client package.</li>
     <li>Remove example tests <code>src/main/test</code></li>
   </ul></li>
-  <li><p>Update the <strong>EntryPoint</strong></p><p>Replace the content of <code>TodoList.java</code> with</p>
+  <li><p>Update the <strong>EntryPoint</strong> method.</p><p>Replace the content of <code>TodoList.java</code> with</p>
   <pre><code>package org.gwtproject.tutorial;
 
 import com.google.gwt.core.client.EntryPoint;
