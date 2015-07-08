@@ -202,6 +202,8 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
     Now you can add Todo items and mark them as done using checkboxes.
 
+    <img class='todo-list-img-ui' src='images/todo-list-08.png'>
+
 9.  Add the **Clear All** and **Clear Done** menu item handlers
 
         @UiHandler("menuClearAll")
