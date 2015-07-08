@@ -498,7 +498,7 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/polymer-tutorial/elements-applogic.md"></a>
                     </span>
-                    <h1>Adding the Application Logic.</h1><p>At this point we have almost the UI of our <strong>TodoList</strong> application designed using <code>UiBinders</code> and Elements.</p><p>In this lesson we will learn how to add some logic our UI and deal with events and data.</p>
+                    <h1>Adding the Application Logic.</h1><p>At this point we have almost the UI of our <strong>TodoList</strong> application designed using <code>UiBinders</code> and Elements.</p><p>In this lesson we will learn how to add some logic to our UI and deal with native events in elements, and data.</p>
 <ol>
   <li><p>Create the <em>Add Item dialog</em> adding the following markup to the Main.ui.xml file:</p>
   <pre><code>&lt;g:HTMLPanel&gt;
@@ -514,10 +514,10 @@
     &lt;/div&gt;
     &lt;div class=&quot;buttons&quot;&gt;
         &lt;paper-button dialog-dismiss=&quot;&quot;&gt;Cancel&lt;/paper-button&gt;
-        &lt;paper-button ui:field=&quot;confirmAddButton&quot; 
+        &lt;paper-button ui:field=&quot;confirmAddButton&quot;
                       dialog-confirm=&quot;&quot;&gt;OK&lt;/paper-button&gt;
     &lt;/div&gt;
-  &lt;/paper-dialog&gt;          
+  &lt;/paper-dialog&gt;
 &lt;/g:HTMLPanel&gt;
 </code></pre><p><em><strong>Tip</strong>: You can use attributes to quick define certain polymer actions like <code>entry-animation=&#39;fade-in-animation&#39;</code>.</em></p></li>
   <li><p>Add all fields defined in the <code>Main.ui.xml</code> file to the <code>Main.java</code> class.</p>
@@ -540,8 +540,8 @@
     }
   });
 }
-</code></pre></li>
-  <li><p>Reload the application</p><p>Now you can open dialog by clicking on the round action button at the bottom right corner.</p></li>
+</code></pre><p><em><strong>Note</strong> that when using elements we cannot use <code>@UiHandler</code> annotations because elements don&rsquo;t have methods to handle GWT events. Thus we have to configure events in the constructor.</em></p></li>
+  <li><p>Reload the application</p><p>Now you can open dialog by clicking on the round action button at the bottom right corner.</p><p><img class='todo-list-img-ui' src='images/todo-list-07.png'></p></li>
   <li><p>Create a <code>UiBinder</code> widget for displaying items: <code>Item.ui.xml</code> and <code>Item.java</code></p>
   <ul>
     <li><code>Item.ui.xml</code></li>
@@ -567,7 +567,7 @@
         &lt;div class=&quot;vertical-section&quot;&gt;
           &lt;h4&gt;
             &lt;paper-checkbox ui:field=&quot;done&quot;/&gt;
-            &lt;span ui:field=&quot;title&quot; class=&#39;title&#39;&gt;Go to Google&lt;/span&gt; 
+            &lt;span ui:field=&quot;title&quot; class=&#39;title&#39;&gt;Go to Google&lt;/span&gt;
           &lt;/h4&gt;
           &lt;div ui:field=&quot;description&quot;/&gt;
         &lt;/div&gt;
@@ -630,7 +630,7 @@
       }
       public boolean isDone() {
         return done.getActive();
-      }            
+      }
       public void setDone(boolean b) {
         done.setActive(b);
       }
@@ -642,7 +642,7 @@
 </ol>
 <ol>
   <li><p>Add the logic to create items when we click the save button.</p>
-  <pre><code>  ...        
+  <pre><code>  ...
   private List&lt;Item&gt; items = new ArrayList&lt;&gt;();
 
   public Main() {
@@ -674,8 +674,8 @@
   }
   ...
 </code></pre></li>
-  <li><p>Reload the application</p><p>Now you can add Todo items and mark them as done using checkboxes.</p></li>
-  <li><p>Add the <strong>Clear All</strong> and <strong>Clear Done</strong> menu item handlers</p>
+  <li><p>Reload the application</p><p>Now you can add Todo items and mark them as done using checkboxes.</p><p><img class='todo-list-img-ui' src='images/todo-list-08.png'></p></li>
+  <li><p>Add the <strong>Clear All</strong> and <strong>Clear Done</strong> menu item handlers in the constructor.</p>
   <pre><code>  public Main() {
     ...
     menuClearAll.addEventListener(&quot;click&quot;, new EventListener() {
@@ -809,12 +809,12 @@ public class Main extends Composite {
     <li>Click on &ldquo;Clear Done&rdquo; menu item</li>
     <li>Click on &ldquo;Clear All&rdquo; menu item</li>
   </ul></li>
-</ol><h2>Summary</h2><p>In this chapter we learnt:</p>
+</ol><h2>Summary</h2><p>In this chapter we have learnt:</p>
 <ol>
-  <li>How to add more widgets to our Application.</li>
+  <li>How to add more element based <code>UiBinder</code> widgets to our Application.</li>
   <li>Add events handlers to Elements.</li>
   <li>Usage of advanced Polymer components like dialog and buttons.</li>
-  <li>How to use a very basic Data Model in GWT.</li>
+  <li>How to deal with a very basic Data Model in GWT.</li>
 </ol>
 
                 </div>

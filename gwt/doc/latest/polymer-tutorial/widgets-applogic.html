@@ -498,7 +498,7 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/polymer-tutorial/widgets-applogic.md"></a>
                     </span>
-                    <h1>Adding the Application Logic.</h1><p>At this point we have almost the UI of our <strong>TodoList</strong> application designed using <code>UiBinders</code>.</p><p>In this lesson we will learn how to add some logic our UI and deal with events and data.</p>
+                    <h1>Adding the Application Logic.</h1><p>At this point we have almost the UI of our <strong>TodoList</strong> application designed using <code>UiBinders</code>.</p><p>In this lesson we will learn how to add some logic to our UI and deal with widget events and data.</p>
 <ol>
   <li><p>Create the <em>Add Item dialog</em> adding the following markup to the Main.ui.xml file:</p>
   <pre><code>&lt;g:HTMLPanel&gt;
@@ -535,8 +535,6 @@ protected void onAddButtonClick(ClickEvent e) {
 }
 </code></pre></li>
   <li><p>Reload the application</p><p>Now you can open dialog by clicking on the round action button at the bottom right corner.</p><p><img class='todo-list-img-ui' src='images/todo-list-07.png'></p></li>
-</ol>
-<ol>
   <li><p>Create a widget for displaying items: <code>Item.ui.xml</code> and <code>Item.java</code></p>
   <ul>
     <li><code>Item.ui.xml</code></li>
@@ -681,7 +679,7 @@ public class Main extends Composite {
   }
 }
 </code></pre></li>
-  <li><p>Reload the application</p><p>Now you can add Todo items and mark them as done using checkboxes.</p></li>
+  <li><p>Reload the application</p><p>Now you can add Todo items and mark them as done using checkboxes.</p><p><img class='todo-list-img-ui' src='images/todo-list-08.png'></p></li>
   <li><p>Add the <strong>Clear All</strong> and <strong>Clear Done</strong> menu item handlers</p>
   <pre><code>@UiHandler(&quot;menuClearAll&quot;)
 protected void menuClearAll(ClickEvent e) {
