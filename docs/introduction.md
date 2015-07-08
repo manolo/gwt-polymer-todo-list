@@ -1,16 +1,12 @@
-# Build a modern GWT app using Polymer elements:
+# Building a modern GWT app using Polymer Elements:
 
 ## Introduction
 
-In this tutorial, you'll write a **TodoList** application using web components.
+In this tutorial, you'll write a **TodoList** application using [Web Components](https://en.wikipedia.org/wiki/Web_Components) which defines collection of standards which allow us to bundle markup and styles into custom HTML elements.
 
-Web Components are a collection of standards which allow us to bundle markup and styles into custom HTML elements.
+In our case we want to fulfill the [Material Design](http://www.google.es/design/spec/material-design/introduction.html) specification, thus we will use Polymer [Iron and Paper](https://elements.polymer-project.org/) element collections through the Vaadin [gwt-polymer-elements](https://github.com/vaadin/gwt-polymer-elements) library, which is a `JsInterop` wrapper for Iron and Paper elements and has been produced using the Vaadin [gwt-api-generator](https://github.com/vaadin/gwt-api-generator).
 
-In our case we want to fulfill the [Material Design](http://www.google.es/design/spec/material-design/introduction.html) specification, thus we will use Polymer [Iron and Paper](https://elements.polymer-project.org/) collections through the Vaadin [gwt-polymer-elements](https://github.com/vaadin/gwt-polymer-elements) library.
-
-Gwt-Polymer-Elements is a `JsInterop` wrapper for Iron and Paper elements which has been produced using the Vaadin [gwt-api-generator](https://github.com/vaadin/gwt-api-generator).
-
-Before starting the tutorial try the [TodoList][1] application to check how your application should look when you finish.
+Before starting the tutorial you might try the live [TodoList][1] application to check how the application should look like when you finish.
 
 [<img class='polymer-tutorial-mobile' src='images/todo-list-01.png'>
  <img class='polymer-tutorial-mobile' src='images/todo-list-02.png'>][1]
