@@ -57,7 +57,7 @@ In this lesson we will learn how to add some logic to our UI and deal with nativ
 
     Now you can open dialog by clicking on the round action button at the bottom right corner.
 
-    <img class='todo-list-img-ui' src='images/todo-list-07.png'>
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-07.png'>
 
 6.  Create a `UiBinder` widget for displaying items: `Item.ui.xml` and `Item.java`
 
@@ -194,7 +194,7 @@ In this lesson we will learn how to add some logic to our UI and deal with nativ
 
     Now you can add Todo items and mark them as done using checkboxes.
 
-    <img class='todo-list-img-ui' src='images/todo-list-08.png'>
+    <img class='polymer-tutorial-screenshot' src='images/todo-list-08.png'>
 
 9.  Add the **Clear All** and **Clear Done** menu item handlers in the constructor.
 
