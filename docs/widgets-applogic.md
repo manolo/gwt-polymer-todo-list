@@ -3,9 +3,9 @@ Adding the Application Logic.
 
 At this point we have almost the UI of our **TodoList** application designed using `UiBinders`.
 
-In this lesson we will learn how to add some logic to our UI and deal with widget events and data.
+In this lesson we will learn how to add the logic to our UI and deal with widget events and data.
 
-1.  Create the *Add Item dialog* adding the following markup to the Main.ui.xml file:
+1.  Create the **Add Item dialog** adding the following markup to the Main.ui.xml file:
 
         <g:HTMLPanel>
           ...
@@ -30,7 +30,7 @@ In this lesson we will learn how to add some logic to our UI and deal with widge
 
      _**Note**: When there are attributes in the component no mapped to a java method, you can use the `attributes` key, like we do in the `Cancel` and `OK` buttons. Visit [paper-dialog page](https://elements.polymer-project.org/elements/paper-dialog) and pay attention to behaviors in the API Reference section for additional details_
 
-2.  Add all fields defined in the `Main.ui.xml` file to the `Main.java` class.
+2.  Add all fields we already defined in the `Main.ui.xml` file to the `Main.java` class.
 
         @UiField PaperDrawerPanel drawerPanel;
         @UiField HTMLPanel content;
@@ -39,7 +39,7 @@ In this lesson we will learn how to add some logic to our UI and deal with widge
         @UiField PaperInput titleInput;
         @UiField PaperTextarea descriptionInput;
 
-3.  Add the click handler to the floating action button in the `Main.java`
+3.  Bind the click handler method to the floating action button in the `Main.java`
 
         @UiHandler("addButton")
         protected void onAddButtonClick(ClickEvent e) {
@@ -145,7 +145,7 @@ In this lesson we will learn how to add some logic to our UI and deal with widge
 
 7.  Add the logic to create items when we click the save button.
 
-    At this point your Main.java should be like this:
+    At this point your `Main.java` should be like this:
 
         package org.gwtproject.tutorial.client;
 
