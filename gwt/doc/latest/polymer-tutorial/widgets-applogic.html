@@ -498,9 +498,9 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/polymer-tutorial/widgets-applogic.md"></a>
                     </span>
-                    <h1>Adding the Application Logic.</h1><p>At this point we have almost the UI of our <strong>TodoList</strong> application designed using <code>UiBinders</code>.</p><p>In this lesson we will learn how to add some logic to our UI and deal with widget events and data.</p>
+                    <h1>Adding the Application Logic.</h1><p>At this point we have almost the UI of our <strong>TodoList</strong> application designed using <code>UiBinders</code>.</p><p>In this lesson we will learn how to add the logic to our UI and deal with widget events and data.</p>
 <ol>
-  <li><p>Create the <em>Add Item dialog</em> adding the following markup to the Main.ui.xml file:</p>
+  <li><p>Create the <strong>Add Item dialog</strong> adding the following markup to the Main.ui.xml file:</p>
   <pre><code>&lt;g:HTMLPanel&gt;
   ...
   &lt;p:PaperDialog ui:field=&quot;addItemDialog&quot;
@@ -520,7 +520,7 @@
   &lt;/p:PaperDialog&gt;
 &lt;/g:HTMLPanel&gt;
 </code></pre><p><em><strong>Tip</strong>: You can use widget attributes to quick define certain actions like <code>entryAnimation=&#39;fade-in-animation&#39;</code>.</em></p><p><em><strong>Note</strong>: When there are attributes in the component no mapped to a java method, you can use the <code>attributes</code> key, like we do in the <code>Cancel</code> and <code>OK</code> buttons. Visit <a href="https://elements.polymer-project.org/elements/paper-dialog">paper-dialog page</a> and pay attention to behaviors in the API Reference section for additional details</em></p></li>
-  <li><p>Add all fields defined in the <code>Main.ui.xml</code> file to the <code>Main.java</code> class.</p>
+  <li><p>Add all fields we already defined in the <code>Main.ui.xml</code> file to the <code>Main.java</code> class.</p>
   <pre><code>@UiField PaperDrawerPanel drawerPanel;
 @UiField HTMLPanel content;
 
@@ -528,7 +528,7 @@
 @UiField PaperInput titleInput;
 @UiField PaperTextarea descriptionInput;
 </code></pre></li>
-  <li><p>Add the click handler to the floating action button in the <code>Main.java</code></p>
+  <li><p>Bind the click handler method to the floating action button in the <code>Main.java</code></p>
   <pre><code>@UiHandler(&quot;addButton&quot;)
 protected void onAddButtonClick(ClickEvent e) {
   addItemDialog.open();
@@ -628,7 +628,7 @@ protected void onAddButtonClick(ClickEvent e) {
 </code></pre></li>
 </ol>
 <ol>
-  <li><p>Add the logic to create items when we click the save button.</p><p>At this point your Main.java should be like this:</p>
+  <li><p>Add the logic to create items when we click the save button.</p><p>At this point your <code>Main.java</code> should be like this:</p>
   <pre><code>package org.gwtproject.tutorial.client;
 
 import com.google.gwt.core.client.GWT;
