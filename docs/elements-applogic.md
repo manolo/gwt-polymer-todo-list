@@ -3,7 +3,7 @@ Adding the Application Logic.
 
 At this point we have almost the UI of our **TodoList** application designed using `UiBinders` and Elements.
 
-In this lesson we will learn how to add some logic our UI and deal with events and data.
+In this lesson we will learn how to add some logic to our UI and deal with native events in elements, and data.
 
 1.  Create the *Add Item dialog* adding the following markup to the Main.ui.xml file:
 
@@ -20,10 +20,10 @@ In this lesson we will learn how to add some logic our UI and deal with events a
             </div>
             <div class="buttons">
                 <paper-button dialog-dismiss="">Cancel</paper-button>
-                <paper-button ui:field="confirmAddButton" 
+                <paper-button ui:field="confirmAddButton"
                               dialog-confirm="">OK</paper-button>
             </div>
-          </paper-dialog>          
+          </paper-dialog>
         </g:HTMLPanel>
 
      _**Tip**: You can use attributes to quick define certain polymer actions like `entry-animation='fade-in-animation'`._
@@ -51,9 +51,13 @@ In this lesson we will learn how to add some logic our UI and deal with events a
           });
         }
 
+      _**Note** that when using elements we cannot use `@UiHandler` annotations because elements don't have methods to handle GWT events. Thus we have to configure events in the constructor._
+
 4.  Reload the application
 
     Now you can open dialog by clicking on the round action button at the bottom right corner.
+
+    <img class='todo-list-img-ui' src='images/todo-list-07.png'>
 
 6.  Create a `UiBinder` widget for displaying items: `Item.ui.xml` and `Item.java`
 
@@ -80,7 +84,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                 <div class="vertical-section">
                   <h4>
                     <paper-checkbox ui:field="done"/>
-                    <span ui:field="title" class='title'>Go to Google</span> 
+                    <span ui:field="title" class='title'>Go to Google</span>
                   </h4>
                   <div ui:field="description"/>
                 </div>
@@ -90,7 +94,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
      * `Item.java`: For simplicity, we will use this class as the Item POJO
 
             package org.gwtproject.tutorial.client;
-            
+
             import com.google.gwt.core.shared.GWT;
             import com.google.gwt.dom.client.DivElement;
             import com.google.gwt.dom.client.Element;
@@ -99,23 +103,23 @@ In this lesson we will learn how to add some logic our UI and deal with events a
             import com.vaadin.polymer.elemental.Event;
             import com.vaadin.polymer.elemental.EventListener;
             import com.vaadin.polymer.paper.element.PaperCheckboxElement;
-            
+
             public class Item {
-            
+
               private final DivElement element;
-            
+
               interface ItemUiBinder extends UiBinder<DivElement, Item> {
               }
-            
+
               private static ItemUiBinder ourUiBinder = GWT.create(ItemUiBinder.class);
-            
+
               @UiField Element title;
               @UiField Element description;
               @UiField PaperCheckboxElement done;
-            
+
               public Item() {
                 element = ourUiBinder.createAndBindUi(this);
-            
+
                 done.addEventListener("iron-change", new EventListener() {
                   @Override
                   public void handleEvent(Event event) {
@@ -127,7 +131,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                   }
                 });
               }
-            
+
               public String getTitle() {
                 return title.getInnerText();
               }
@@ -142,7 +146,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
               }
               public boolean isDone() {
                 return done.getActive();
-              }            
+              }
               public void setDone(boolean b) {
                 done.setActive(b);
               }
@@ -154,9 +158,9 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
 7.  Add the logic to create items when we click the save button.
 
-          ...        
+          ...
           private List<Item> items = new ArrayList<>();
-        
+
           public Main() {
             ...
             addButton.addEventListener("click", new EventListener() {
@@ -164,7 +168,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                 addItemDialog.open();
               }
             });
-        
+
             confirmAddButton.addEventListener("click", new EventListener() {
               public void handleEvent(Event event) {
                 if (!titleInput.getValue().isEmpty()) {
@@ -176,7 +180,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
               }
             });
           }
-        
+
           private void addItem(String title, String description) {
             Item item = new Item();
             item.setTitle(title);
@@ -190,7 +194,9 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
     Now you can add Todo items and mark them as done using checkboxes.
 
-9.  Add the **Clear All** and **Clear Done** menu item handlers
+    <img class='todo-list-img-ui' src='images/todo-list-08.png'>
+
+9.  Add the **Clear All** and **Clear Done** menu item handlers in the constructor.
 
           public Main() {
             ...
@@ -203,11 +209,11 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                 }
               }
             });
-        
+
             menuClearDone.addEventListener("click", new EventListener() {
               public void handleEvent(Event event) {
                 closeMenu();
-        
+
                 for (Item item : items) {
                   if (item.isDone()) {
                     content.removeChild(item.getElement());
@@ -217,7 +223,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
               }
             });
           }
-        
+
           private void closeMenu() {
             if (drawerPanel.getNarrow()) {
               drawerPanel.closeDrawer();
@@ -229,7 +235,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 10. The final `Main.java` should look like this
 
         package org.gwtproject.tutorial.client;
-        
+
         import com.google.gwt.core.client.GWT;
         import com.google.gwt.uibinder.client.UiBinder;
         import com.google.gwt.uibinder.client.UiField;
@@ -237,40 +243,40 @@ In this lesson we will learn how to add some logic our UI and deal with events a
         import com.google.gwt.user.client.ui.HTMLPanel;
         import com.vaadin.polymer.elemental.*;
         import com.vaadin.polymer.paper.element.*;
-        
+
         import java.util.ArrayList;
         import java.util.List;
-        
+
         public class Main extends Composite {
           interface MainUiBinder extends UiBinder<HTMLPanel, Main> {
           }
-        
+
           private static MainUiBinder ourUiBinder = GWT.create(MainUiBinder.class);
-        
+
           @UiField PaperDrawerPanelElement drawerPanel;
-        
+
           @UiField PaperIconItemElement menuClearAll;
           @UiField PaperIconItemElement menuClearDone;
-        
+
           @UiField HTMLElement content;
           @UiField PaperFabElement addButton;
-        
+
           @UiField PaperDialogElement addItemDialog;
           @UiField PaperInputElement titleInput;
           @UiField PaperTextareaElement descriptionInput;
           @UiField PaperButtonElement confirmAddButton;
-        
+
           private List<Item> items = new ArrayList<>();
-        
+
           public Main() {
             initWidget(ourUiBinder.createAndBindUi(this));
-        
+
             addButton.addEventListener("click", new EventListener() {
               public void handleEvent(Event event) {
                 addItemDialog.open();
               }
             });
-        
+
             confirmAddButton.addEventListener("click", new EventListener() {
               public void handleEvent(Event event) {
                 if (!titleInput.getValue().isEmpty()) {
@@ -281,7 +287,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                 }
               }
             });
-        
+
             menuClearAll.addEventListener("click", new EventListener() {
               public void handleEvent(Event event) {
                 closeMenu();
@@ -291,11 +297,11 @@ In this lesson we will learn how to add some logic our UI and deal with events a
                 }
               }
             });
-        
+
             menuClearDone.addEventListener("click", new EventListener() {
               public void handleEvent(Event event) {
                 closeMenu();
-        
+
                 for (Item item : items) {
                   if (item.isDone()) {
                     content.removeChild(item.getElement());
@@ -305,7 +311,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
               }
             });
           }
-        
+
           private void addItem(String title, String description) {
             Item item = new Item();
             item.setTitle(title);
@@ -313,7 +319,7 @@ In this lesson we will learn how to add some logic our UI and deal with events a
             content.appendChild(item.getElement());
             items.add(item);
           }
-        
+
           private void closeMenu() {
             if (drawerPanel.getNarrow()) {
               drawerPanel.closeDrawer();
@@ -330,9 +336,9 @@ In this lesson we will learn how to add some logic our UI and deal with events a
 
 ## Summary
 
-In this chapter we learnt:
+In this chapter we have learnt:
 
-1. How to add more widgets to our Application.
+1. How to add more element based `UiBinder` widgets to our Application.
 2. Add events handlers to Elements.
 3. Usage of advanced Polymer components like dialog and buttons.
-4. How to use a very basic Data Model in GWT.
+4. How to deal with a very basic Data Model in GWT.

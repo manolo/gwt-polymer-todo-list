@@ -3,7 +3,7 @@ Adding the Application Logic.
 
 At this point we have almost the UI of our **TodoList** application designed using `UiBinders`.
 
-In this lesson we will learn how to add some logic our UI and deal with events and data.
+In this lesson we will learn how to add some logic to our UI and deal with widget events and data.
 
 1.  Create the *Add Item dialog* adding the following markup to the Main.ui.xml file:
 
@@ -51,7 +51,6 @@ In this lesson we will learn how to add some logic our UI and deal with events a
     Now you can open dialog by clicking on the round action button at the bottom right corner.
 
     <img class='todo-list-img-ui' src='images/todo-list-07.png'>
-
 
 6.  Create a widget for displaying items: `Item.ui.xml` and `Item.java`
 
