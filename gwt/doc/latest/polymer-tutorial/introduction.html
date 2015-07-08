@@ -111,15 +111,15 @@
     <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
     <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
     <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
-    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>Building a GWT Polymer App.</a>
+    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>GWT &amp; Polymer</a>
     <ul>
-      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create a maven Project</a></li>
-      <li><a href="#">Widgets UI</a>
+      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create Project</a></li>
+      <li><a href="#">UI with Widgets</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-applogic.html'>Events &amp; Logic</a></li>
       </ul></li>
-      <li><a href="#">Elements UI</a>
+      <li><a href="#">UI with Elements</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-applogic.html'>Events &amp; Logic</a></li>
@@ -316,15 +316,15 @@
     <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
     <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
     <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
-    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>Building a GWT Polymer App.</a>
+    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>GWT &amp; Polymer</a>
     <ul>
-      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create a maven Project</a></li>
-      <li><a href="#">Widgets UI</a>
+      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create Project</a></li>
+      <li><a href="#">UI with Widgets</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-applogic.html'>Events &amp; Logic</a></li>
       </ul></li>
-      <li><a href="#">Elements UI</a>
+      <li><a href="#">UI with Elements</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-applogic.html'>Events &amp; Logic</a></li>
@@ -498,15 +498,17 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/polymer-tutorial/introduction.md"></a>
                     </span>
-                    <h1>Build a modern GWT app using Polymer elements:</h1><h2>Introduction</h2><p>In this tutorial, you&rsquo;ll write a <strong>TodoList</strong> application using web components.</p><p>Web Components are a collection of standards which allow us to bundle markup and styles into custom HTML elements.</p><p>In our case we want to fulfill the <a href="http://www.google.es/design/spec/material-design/introduction.html">Material Design</a> specification, thus we will use Polymer <a href="https://elements.polymer-project.org/">Iron and Paper</a> collections through the Vaadin <a href="https://github.com/vaadin/gwt-polymer-elements">gwt-polymer-elements</a> library.</p><p>Gwt-Polymer-Elements is a <code>JsInterop</code> wrapper for Iron and Paper elements which has been produced using the Vaadin <a href="https://github.com/vaadin/gwt-api-generator">gwt-api-generator</a>.</p><p>Before starting the tutorial try the <a href="http://manolo.github.io/gwt-polymer-todo/todo.html">TodoList</a> application to check how your application should look when you finish.</p><h2>The Learning process</h2><p>In the process of building the <strong>TodoList</strong> app, you&rsquo;ll learn:</p>
+                    <h1>Build a modern GWT app using Polymer elements:</h1><h2>Introduction</h2><p>In this tutorial, you&rsquo;ll write a <strong>TodoList</strong> application using web components.</p><p>Web Components are a collection of standards which allow us to bundle markup and styles into custom HTML elements.</p><p>In our case we want to fulfill the <a href="http://www.google.es/design/spec/material-design/introduction.html">Material Design</a> specification, thus we will use Polymer <a href="https://elements.polymer-project.org/">Iron and Paper</a> collections through the Vaadin <a href="https://github.com/vaadin/gwt-polymer-elements">gwt-polymer-elements</a> library.</p><p>Gwt-Polymer-Elements is a <code>JsInterop</code> wrapper for Iron and Paper elements which has been produced using the Vaadin <a href="https://github.com/vaadin/gwt-api-generator">gwt-api-generator</a>.</p><p>Before starting the tutorial try the <a href="http://manolo.github.io/gwt-polymer-todo-list/demo/TodoListWidgets.html">TodoList</a> application to check how your application should look when you finish.</p><p><a href="http://manolo.github.io/gwt-polymer-todo-list/demo/TodoListWidgets.html"><img class='polymer-tutorial-mobile' src='images/todo-list-01.png'>  <img class='polymer-tutorial-mobile' src='images/todo-list-02.png'></a></p><h2>The Learning process</h2><p>In the process of building the <strong>TodoList</strong> app, you&rsquo;ll learn:</p>
 <ul>
   <li>To create a new maven project.</li>
-  <li>Running our project in SuperDevMode</li>
-  <li>How to add external libraries.</li>
-  <li>To Configure the project to use experimental <code>JsInterop</code> mode.</li>
-  <li>Create new widgets using <code>UiBinder</code></li>
-  <li>Import and use Polymer elements</li>
-  <li>How to can deal with responsive layouts</li>
+  <li>To run your project in SuperDevMode</li>
+  <li>How to add external libraries to your application.</li>
+  <li>To configure the project to use the experimental <code>JsInterop</code> mode.</li>
+</ul><p>Then you have to select a way to continue with your development: using classic <strong>Widgets</strong> or <code>JsInterop</code> <strong>Elements</strong> which is the new tendency.</p><p>Either option you select will teach you:</p>
+<ul>
+  <li>To create new widgets using <code>UiBinder</code></li>
+  <li>To import and use Polymer web components.</li>
+  <li>How to deal with responsive layouts.</li>
   <li>Style elements in <code>UiBinder</code></li>
   <li>Add events handlers to UiBinder components</li>
   <li>How to use a Basic Data Model.</li>

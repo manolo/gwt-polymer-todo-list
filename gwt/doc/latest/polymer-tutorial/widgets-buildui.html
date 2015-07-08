@@ -111,15 +111,15 @@
     <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
     <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
     <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
-    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>Building a GWT Polymer App.</a>
+    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>GWT &amp; Polymer</a>
     <ul>
-      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create a maven Project</a></li>
-      <li><a href="#">Widgets UI</a>
+      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create Project</a></li>
+      <li><a href="#">UI with Widgets</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-applogic.html'>Events &amp; Logic</a></li>
       </ul></li>
-      <li><a href="#">Elements UI</a>
+      <li><a href="#">UI with Elements</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-applogic.html'>Events &amp; Logic</a></li>
@@ -316,15 +316,15 @@
     <li><a href='./../../../doc/latest/tutorial/i18n.html'>Internationalization</a></li>
     <li><a href='./../../../doc/latest/tutorial/JUnit.html'>JUnit Testing</a></li>
     <li><a href='./../../../doc/latest/tutorial/appengine.html' title="Deploy to Google App Engine">Deploy to GAE</a></li>
-    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>Building a GWT Polymer App.</a>
+    <li><a href='./../../../doc/latest/polymer-tutorial/introduction.html'>GWT &amp; Polymer</a>
     <ul>
-      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create a maven Project</a></li>
-      <li><a href="#">Widgets UI</a>
+      <li><a href='./../../../doc/latest/polymer-tutorial/create.html'>Create Project</a></li>
+      <li><a href="#">UI with Widgets</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/widgets-applogic.html'>Events &amp; Logic</a></li>
       </ul></li>
-      <li><a href="#">Elements UI</a>
+      <li><a href="#">UI with Elements</a>
       <ul>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-buildui.html'>Build the UI</a></li>
         <li><a href='./../../../doc/latest/polymer-tutorial/elements-applogic.html'>Events &amp; Logic</a></li>
@@ -572,7 +572,7 @@ public class TodoList implements EntryPoint {
   }
 }
 </code></pre></li>
-  <li><p>Run the application.</p><p>Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.</p></li>
+  <li><p>Run the application.</p><p>Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-03.png'></p></li>
 </ol><h2>Icons and Effects</h2>
 <ol>
   <li><p>Import <strong>icon collections</strong>.</p><p>Because Polymer comes with several icon collections, we have to import the appropriate set before we use it, hence we must wait until they are ready:</p>
@@ -601,7 +601,7 @@ public class TodoList implements EntryPoint {
   }
 }
 </code></pre></li>
-  <li><p>Reload the application</p><p>You should see all icons in the browser now.</p></li>
+  <li><p>Reload the application</p><p>You should see all icons in the browser now.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-04.png'></p></li>
   <li><p>Add a <strong>Ripple</strong> effect</p><p>It is nice when the user gets some feedback when interacting with UI elements. Read the material design <a href="http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action">documentation</a> about that.</p>
   <ul>
     <li>Add <code>&lt;p:PaperRipple/&gt;</code> to each item in the <code>Main.ui.xml</code> file.</li>
@@ -721,7 +721,7 @@ public class TodoList implements EntryPoint {
        ...
     &lt;/g:HTMLPanel&gt;
 </code></pre></li>
-  <li><p>Reload the application</p><p>Now the application should look modern and responsive. Try to resize browser window. If you make it narrower than 640 pixels you can see that draw panel hides the menu.</p></li>
+  <li><p>Reload the application</p><p>Now the application should look modern and responsive. Try to resize browser window. If you make it narrower than 640 pixels you can see that draw panel hides the menu.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-05.png'></p></li>
 </ol><h2> Styling the app</h2><h3>Styling with CssResource</h3><p>When using polymer elements you can use GWT <a href="http://www.gwtproject.org/doc/latest/DevGuideGssVsCss.html">GSS</a> parser as usual, and add styles to widgets or elements using the <code>{}</code> operator.</p>
 <ul>
   <li><p>Change color of toolbar, style the heading text and the content panel:</p>
@@ -851,7 +851,7 @@ public class TodoList implements EntryPoint {
     &lt;/p:PaperDrawerPanel&gt;
   &lt;/g:HTMLPanel&gt;
 &lt;/ui:UiBinder&gt;
-</code></pre><p>If everything is OK, after reloading your app should look like <a href="http://manolo.github.io/gwt-polymer-todo/todo.html">this</a>.</p><h2>What&rsquo;s next</h2>
+</code></pre><p>If everything is OK, after reloading your app should look like this:</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-06.png'></p><h2>What&rsquo;s next</h2>
 <ol>
   <li>We have learnt how to create new widgets using <code>UiBinder</code></li>
   <li>We can add 3rd party widgets to our UI</li>
