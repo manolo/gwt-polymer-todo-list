@@ -10,9 +10,12 @@ import com.vaadin.polymer.elemental.Function;
 public class TodoList implements EntryPoint {
 
     public void onModuleLoad() {
+        // Show a loading message
+        Polymer.startLoading();
+
         // Paper applications must always import paper-styles
         Polymer.importHref("paper-styles");
-        // Styles for paper examples
+        // Styles for paper examples, we use it for this app as well
         Polymer.importHref("paper-styles/demo-pages.html");
 
         // We have to load icon sets before run Application

@@ -80,7 +80,7 @@
       <h2>Add Item</h2>
       <p:PaperInput ui:field="titleInput"
         label="Title" required="true" autoValidate="true"
-        errorMessage="required input!" />
+        errorMessage="required input!" focused="true"/>
       <div class="textarea-container iron-autogrow-textarea">
         <p:PaperTextarea ui:field="descriptionInput"
           label="Notes" />

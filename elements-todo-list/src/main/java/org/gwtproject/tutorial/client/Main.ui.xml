@@ -70,7 +70,7 @@
 
         <paper-dialog ui:field="addItemDialog" entry-animation="fade-in-animation" class="dialog" modal="">
             <h2>Add Item</h2>
-            <paper-input ui:field="titleInput" label="Title" required="" auto-validate="" error-message="required input!"/>
+            <paper-input ui:field="titleInput" label="Title" focused="" required="" auto-validate="" error-message="required input!"/>
             <div class="textarea-container iron-autogrow-textarea">
                 <paper-textarea ui:field="descriptionInput" label="Notes"/>
             </div>

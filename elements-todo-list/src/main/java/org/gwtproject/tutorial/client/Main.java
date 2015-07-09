@@ -1,15 +1,25 @@
 package org.gwtproject.tutorial.client;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.vaadin.polymer.elemental.*;
-import com.vaadin.polymer.paper.element.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.vaadin.polymer.Polymer;
+import com.vaadin.polymer.elemental.Event;
+import com.vaadin.polymer.elemental.EventListener;
+import com.vaadin.polymer.elemental.HTMLElement;
+import com.vaadin.polymer.paper.element.PaperButtonElement;
+import com.vaadin.polymer.paper.element.PaperDialogElement;
+import com.vaadin.polymer.paper.element.PaperDrawerPanelElement;
+import com.vaadin.polymer.paper.element.PaperFabElement;
+import com.vaadin.polymer.paper.element.PaperIconItemElement;
+import com.vaadin.polymer.paper.element.PaperInputElement;
+import com.vaadin.polymer.paper.element.PaperTextareaElement;
 
 public class Main extends Composite {
     interface MainUiBinder extends UiBinder<HTMLPanel, Main> {
@@ -17,32 +27,25 @@ public class Main extends Composite {
 
     private static MainUiBinder ourUiBinder = GWT.create(MainUiBinder.class);
 
-    @UiField
-    PaperDrawerPanelElement drawerPanel;
+    @UiField PaperDrawerPanelElement drawerPanel;
 
-    @UiField
-    PaperIconItemElement menuClearAll;
-    @UiField
-    PaperIconItemElement menuClearDone;
+    @UiField PaperIconItemElement menuClearAll;
+    @UiField PaperIconItemElement menuClearDone;
 
-    @UiField
-    HTMLElement content;
-    @UiField
-    PaperFabElement addButton;
+    @UiField HTMLElement content;
+    @UiField PaperFabElement addButton;
 
-    @UiField
-    PaperDialogElement addItemDialog;
-    @UiField
-    PaperInputElement titleInput;
-    @UiField
-    PaperTextareaElement descriptionInput;
-    @UiField
-    PaperButtonElement confirmAddButton;
+    @UiField PaperDialogElement addItemDialog;
+    @UiField PaperInputElement titleInput;
+    @UiField PaperTextareaElement descriptionInput;
+    @UiField PaperButtonElement confirmAddButton;
 
+    // Our data base is just an array of items in memory
     private List<Item> items = new ArrayList<>();
 
     public Main() {
         initWidget(ourUiBinder.createAndBindUi(this));
+        Polymer.endLoading(this.getElement(), (Element)addButton);
 
         addButton.addEventListener("click", new EventListener() {
             @Override

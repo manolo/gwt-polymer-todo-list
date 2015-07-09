@@ -11,6 +11,8 @@ import java.util.Arrays;
 public class TodoList implements EntryPoint {
 
     public void onModuleLoad() {
+        Polymer.startLoading();
+
         Polymer.importHref("paper-styles/demo-pages.html");
 
         Polymer.importHref(Arrays.asList(

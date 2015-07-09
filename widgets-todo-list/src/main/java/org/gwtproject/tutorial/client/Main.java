@@ -5,6 +5,7 @@ import static com.google.gwt.query.client.GQuery.$$;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.shared.GWT;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.query.client.Properties;
 import com.google.gwt.query.client.js.JsUtils;
@@ -12,12 +13,14 @@ import com.google.gwt.storage.client.Storage;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.google.gwt.user.client.ui.Widget;
+import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Function;
 import com.vaadin.polymer.paper.widget.PaperDialog;
 import com.vaadin.polymer.paper.widget.PaperDrawerPanel;
+import com.vaadin.polymer.paper.widget.PaperFab;
 import com.vaadin.polymer.paper.widget.PaperIconButton;
 import com.vaadin.polymer.paper.widget.PaperIconItem;
 import com.vaadin.polymer.paper.widget.PaperInput;
@@ -37,10 +40,11 @@ public class Main extends Composite {
 
     public Main() {
         initWidget(uiBinder.createAndBindUi(this));
+        Polymer.endLoading(this.getElement(), addButton.getElement());
         restoreItems();
     }
 
-    @UiField Widget addButton;
+    @UiField PaperFab addButton;
     @UiHandler("addButton")
     protected void onAddButtonClick(ClickEvent e) {
         addItemDialog.open();
@@ -128,4 +132,5 @@ public class Main extends Composite {
             }
         }
     }
+
 }

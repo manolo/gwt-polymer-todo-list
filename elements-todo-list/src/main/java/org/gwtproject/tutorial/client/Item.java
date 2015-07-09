@@ -18,12 +18,9 @@ public class Item {
 
     private static ItemUiBinder ourUiBinder = GWT.create(ItemUiBinder.class);
 
-    @UiField
-    Element title;
-    @UiField
-    Element description;
-    @UiField
-    PaperCheckboxElement done;
+    @UiField Element title;
+    @UiField Element description;
+    @UiField PaperCheckboxElement done;
 
     public Item() {
         element = ourUiBinder.createAndBindUi(this);
