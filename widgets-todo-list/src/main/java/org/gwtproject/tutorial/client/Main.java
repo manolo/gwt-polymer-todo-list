@@ -64,13 +64,15 @@ public class Main extends Composite {
     @UiHandler("menuClearAll")
     protected void menuClearAll(ClickEvent e) {
         closeMenu();
-        dialogs.confirm("Do you really want to remove all Items in the list?", new Function() {
-            public Object call(Object arg) {
-                content.clear();
-                saveItems();
-                return null;
-            }
-        });
+        if (content.getWidgetCount() > 0) {
+            dialogs.confirm("Do you really want to remove all Items in the list?", new Function() {
+                public Object call(Object arg) {
+                    content.clear();
+                    saveItems();
+                    return null;
+                }
+            });
+        }
     }
 
     @UiField PaperIconItem menuClearDone;
@@ -126,5 +128,4 @@ public class Main extends Composite {
             }
         }
     }
-
 }
