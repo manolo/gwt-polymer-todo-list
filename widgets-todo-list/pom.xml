@@ -76,7 +76,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <runTarget>TodoList.html</runTarget>
+                    <runTarget>TodoListWidgets.html</runTarget>
                     <draftCompile>false</draftCompile>
                     <optimizationLevel>9</optimizationLevel>
                     <jsInteropMode>JS</jsInteropMode>
