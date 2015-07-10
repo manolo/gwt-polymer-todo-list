@@ -7,7 +7,7 @@
   <groupId>org.gwtproject.tutorial</groupId>
   <artifactId>gwt-polymer-todo-list</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.2.0-alpha2-SNAPSHOT</version>
+  <version>1.0.2.0-alpha3-SNAPSHOT</version>
 
   <modules>
     <module>widgets-todo-list</module>
