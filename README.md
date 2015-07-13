@@ -1,18 +1,23 @@
 ## GWT-Polymer-TODO
 
-A 'TodoList' GWT application for mobile and desktop using material design.
+[0]: https://www.polymer-project.org/1.0/
+[2]: http://www.google.es/design/spec/material-design/introduction.html
+[3]: https://github.com/vaadin/gwt-polymer-elements
+[4]: https://github.com/vaadin/gwt-api-generator
+[5]: http://manolo.github.io/gwt-polymer-todo-list/demo/TodoListWidgets.html
+[6]: http://manolo.github.io/gwt-polymer-todo-list/demo/TodoListElements.html
 
-It relies the UI part in Polymer Paper Elements collection, which is wrapped in java using 
-the vaadin gwt-polymer-elements library.
+A **TodoList** GWT application for mobile and desktop using [Material Design][2] specification.
 
-There are two versions of the application, one buils with classic GWT widgets and another
-with JsInterop Elements.
+It relies the UI part on [Polymer][0], Paper Elements [collectios][5], and a the [gwt-polymer-elements][3] wrapper.
+
+In this repository, you have two versions of the **TodoList** application, one is built using classic GWT widgets, and another with modern JsInterop Elements.
 
 ## Demos
- Visit our 
-   [demo-widgets](http://manolo.github.io/gwt-polymer-todo-list/demo/TodoListWidgets.html)
+ Try our 
+   [demo-widgets][5]
  or
-   [demo-elements](http://manolo.github.io/gwt-polymer-todo-list/demo/TodoListElements.html)
+   [demo-elements][6]
 
 to see the application in action.
 
