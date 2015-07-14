@@ -2181,16 +2181,6 @@ nav#nav-mobile {
   margin-left: 2px;
   white-space: nowrap;
 }
-.polymer-tutorial-mobile {
-  border: solid 1px grey;
-  width: 40%;
-  max-width: 250px;
-  margin: 2%;
-}
-.polymer-tutorial-screenshot {
-  max-height: 350px;
-  border: solid 1px grey;
-}
 /* ==========================================================================
    Print styles
    ========================================================================== */
