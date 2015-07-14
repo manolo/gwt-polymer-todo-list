@@ -498,7 +498,7 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/polymer-tutorial/create.md"></a>
                     </span>
-                    <h1> Creating the <em>TodoList</em> Project</h1><p>In this section, you&rsquo;ll create from scratch the <strong>TodoList</strong> project using the GWT command-line utility <a href="http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator">webAppCreator</a>.</p><p>We assume that you&rsquo;ve already downloaded the most recent distribution of GWT, and you have <a href="https://maven.apache.org/">maven</a> installed in your system.</p><h2>Using webAppCreator</h2><p>The <code>webAppCreator</code> is a command-line tool included in the GWT SDK that generates all the project structure you need to get started. It creates a starter application, which you can run to ensure that all the components have been created and are hooked together correctly. As you develop your application, you&rsquo;ll replace the code for the starter application with your code.</p><p>For the <strong>TodoList</strong> project, you have to run <code>webAppCreator</code> with the following parameters.</p>
+                    <h1> Creating the <em>TodoList</em> Project</h1><p>In this section, we’ll create the <strong>TodoList</strong> project from scratch using GWT’s <a href="http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator">webAppCreator</a>, a command-line utility.</p><p>Before we start, make sure to download the most recent GWT distribution and install <a href="https://maven.apache.org/">Maven</a>.</p><h2>Using webAppCreator</h2><p>The <code>webAppCreator</code> is a command-line tool included in the GWT SDK. It generates the project structure necessary to get started. It also creates a starter application, which you can run to ensure that the components are created and linked successfully.</p><p>As you develop your software, you’ll replace the code in the starter application with yours.</p><p>For the <strong>TodoList</strong> project, we’ll need to run <code>webAppCreator</code> with the following parameters:</p>
 <table>
   <thead>
     <tr>
@@ -526,28 +526,28 @@
   </tbody>
 </table><h2>Setting up a new project.</h2>
 <ol>
-  <li><p>Create the <strong>TodoList</strong> application.</p><p>GWT webAppCreator will generate all the project structure and builder.</p>
+  <li><p>Create the <strong>TodoList</strong> application.</p><p>GWT webAppCreator will generate the project structure and the build script (maven pom.xml).</p>
   <pre><code>$ /full_path_to_gwt_sdk/webAppCreator \
     -templates maven,sample \
     -out TodoListApp \
     org.gwtproject.tutorial.TodoList
-</code></pre><p><em><strong>Tip</strong>: If you include the GWT SDK folder in your PATH environment variable, you won&rsquo;t have to invoke them by specifying their full path.</em></p></li>
+</code></pre><p><em><strong>Tip</strong>: If you include the GWT SDK folder in your PATH environment variable, you won’t have to specify the full path.</em></p></li>
 </ol>
 <ol>
   <li><p>Run the application in <a href="articles/superdevmode.html">SuperDevMode</a>.</p><p>To check that the project was created correctly start the new app in SuperDevMode.</p>
   <pre><code>$ mvn gwt:run
-</code></pre><p><em><strong>Tip</strong>: At this point you might want to import project in your favorite IDE. Since the created project is built with maven you can import it directly in Eclipse, Idea, etc.</em></p></li>
-  <li><p>Launch your Browser.</p><p>In the GWT developer window press the “Launch Default Browser” button to launch our application using your default browser. Or, you can click “Copy to Clipboard” to copy the launch URL and paste it into the browser of your choice.</p><p>If you change something in the code you can recompile the application just reloading the page in your browser. Otherwise if you change some configuration files like <code>pom.xml</code>, <code>webapp</code> static content, etc, you would have to stop SuperDevMode pushing <code>Ctrl-C</code> and running again <code>mvn gwt:run</code>.</p><p>If you are running chrome, you will be able to inspect and debug java code opening the developer tools and enabling the support for super sources.</p></li>
-</ol><h2>Customizing your project</h2><p>Once we have our base project, we will add the external dependencies we need in our application, and remove all unneeded example stuff.</p>
+</code></pre><p><em><strong>Tip</strong>: Since the created project is built with Maven, you can import it in Eclipse, IDEA, etc.</em></p></li>
+  <li><p>Launch your Browser.</p><p>In the GWT developer window, press “Launch Default Browser” to launch the application. Alternatively, you can click “Copy to Clipboard” and paste the URL into any browser.</p><p>If you change something in the code, you can recompile the application by simply reloading the web page. If you change configuration files, e.g. pom.xml or static content in webapp, you might have to restart SuperDevMode. Ctrl+C and mvn gwt:run stops and starts the execution, respectively.</p></li>
+</ol><h2>Customizing your project</h2><p>With the base project set up, we’ll now add the necessary external dependencies. At the same time, we’ll also remove some of the files and dependencies that are set up and generated by default when the starter application was built.</p>
 <ol>
-  <li><p>Add the vaadin <code>gwt-polymer-elements</code> dependency to your project editing the <code>pom.xml</code> file.</p>
+  <li><p>Add the vaadin <code>gwt-polymer-elements</code> dependency to your project by editing the <code>pom.xml</code> file.</p>
   <pre><code>&lt;dependency&gt;
  &lt;groupId&gt;com.vaadin.polymer&lt;/groupId&gt;
  &lt;artifactId&gt;gwt-polymer-elements&lt;/artifactId&gt;
  &lt;version&gt;${gwtPolymerVersion}&lt;/version&gt;
  &lt;scope&gt;provided&lt;/scope&gt;
 &lt;/dependency&gt;
-</code></pre><p><em><strong>Note</strong>: Replace the <code>${gwtPolymerVersion}</code> placeholder with current version or add the correspondent property in your pom.xml</em></p></li>
+</code></pre><p><em><strong>Note</strong>: Replace the <code>${gwtPolymerVersion}</code> placeholder with the current version or add the corresponding property in your pom.xml</em></p></li>
   <li><p>Update the gwt-maven-plugin configuration to support the experimental <code>JsInterop</code> feature.</p>
   <pre><code>&lt;plugin&gt;
   &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
@@ -558,8 +558,8 @@
     ...
   &lt;/configuration&gt;
 &lt;/plugin&gt;
-</code></pre><p><em><strong>Note</strong>: JsInterop is an experimental flag in GWT-2.7.0 and you need to enable it explicitely. In future versions of GWT it will be enabled by default though.</em></p></li>
-  <li><p>Update <code>Todo.gwt.xml</code> module file so as we can use the new gwt library.</p>
+</code></pre><p><em><strong>Note</strong>: JsInterop is an experimental flag in GWT-2.7.0 and you need to enable it explicitely. In future versions of GWT it will be enabled by default.</em></p></li>
+  <li><p>Update <code>Todo.gwt.xml</code> module file so that we can use the new gwt library.</p>
   <pre><code>&lt;module rename-to=&quot;todolist&quot;&gt;
   ...
   &lt;inherits name=&quot;com.vaadin.polymer.Elements&quot;/&gt;
@@ -568,9 +568,9 @@
 </code></pre></li>
   <li><p>Update <code>TodoList.html</code></p>
   <ul>
-    <li>Configure <code>&lt;meta&gt;</code> viewport to deal with mobile screens.</li>
+    <li>Configure the <code>&lt;meta&gt;</code> viewport to handle mobile layouting.</li>
     <li>Import the polyfill <code>&lt;script&gt;</code> for non web-component capable browsers.</li>
-    <li>Remove all the content from <code>&lt;body&gt;</code>.</li>
+    <li>Remove the content inside the <body> tag.</li>
   </ul>
   <pre><code>    &lt;!doctype html&gt;
     &lt;html&gt;
@@ -584,15 +584,15 @@
     &lt;/body&gt;
     &lt;/html&gt;
 </code></pre></li>
-  <li><p>Remove <code>greetServlet</code> and it&rsquo;s mapping from <code>WEB-INF/web-xml</code></p>
+  <li><p>Remove <code>greetServlet</code> and its mapping in <code>WEB-INF/web-xml</code></p>
   <pre><code>&lt;web-app&gt;
 &lt;/web-app&gt;
 </code></pre></li>
   <li><p>Remove all unnecessary files.</p>
   <ul>
-    <li>Remove folders <code>server</code> and <code>shared</code> under the <code>src/main/java/org/gwtproject/tutorial</code> folder.</li>
-    <li>Remove <code>GreetingService.java</code> and <code>GreetingServiceAsync.java</code> classes fron the client package.</li>
-    <li>Remove example tests <code>src/main/test</code></li>
+    <li>Remove the folder and shared folders located in <code>src/main/java/org/gwtproject/tutorial</code>.</li>
+    <li>Remove <code>GreetingService.java</code> and <code>GreetingServiceAsync.java</code> from the client package.</li>
+    <li>Remove the example tests in <code>src/main/test</code>.</li>
   </ul></li>
   <li><p>Update the <strong>EntryPoint</strong> method.</p><p>Replace the content of <code>TodoList.java</code> with</p>
   <pre><code>package org.gwtproject.tutorial;
@@ -615,16 +615,16 @@ public class TodoList implements EntryPoint {
     Document.get().getBody().appendChild((Element)buttonElement);
   }
 }
-</code></pre><p><em><strong>Note</strong>: that we have added the PaperButton element here, but using different API&rsquo;s: the classic GWT Widget approach and Elements.</em></p></li>
-  <li><p>Run the application again.</p><p>You should see a page with a couple of material design buttons in your browser.</p><p><em><strong>Tip</strong>: If you get ClassCastException in browser console, ensure that you use <code>-XjsInteropMode JS</code> parameter</em></p></li>
-</ol><h2>What&rsquo;s next</h2><p>In this lesson we have learnt</p>
+</code></pre><p><em><strong>Note</strong>: Note: The example above shows how to add a <code>PaperButton</code> element using both the Widgets and Elements API.</em></p></li>
+  <li><p>Run the application again.</p><p>You should see a web page containing a few Material Design buttons.</p><p><em><strong>Tip</strong>: if you get a ClassCastException in the browser’s console, make sure that you’re using the <code>-XjsInteropMode JS</code> parameter</em>.</p></li>
+</ol><h2>What&rsquo;s next</h2><p>In this lesson we learned how to:</p>
 <ul>
-  <li>How to create a new GWT maven project fron scratch.</li>
-  <li>To run and debug our application in SuperDevMode</li>
-  <li>Adding external dependencies to our application</li>
-  <li>Configure our project to use experimental <code>JsInterop</code> mode.</li>
-  <li>Replacing starter code by our own.</li>
-</ul><p>Now you are prepared to design the UI of the <strong>TodoList</strong> application, ther are two options though, you can continue the Tutorial using Classic GWT widgets or the Elements API approach which is the tendency in modern GWT.</p><p><a href="widgets-buildui.html">Step 2a: Building the User Interface using Widgets</a></p><p><a href="elements-buildui.html">Step 2b: Building the User Interface using Elements</a></p>
+  <li>Create a new GWT maven project fron scratch.</li>
+  <li>Run and debug our application in SuperDevMode</li>
+  <li>Add external dependencies to our project.</li>
+  <li>Configure our project to use the experimental <code>JsInterop</code> mode.</li>
+  <li>Replace the starter application code with our own.</li>
+</ul><p>We’re now prepared to design the UI of the <strong>TodoList</strong> application. There are two ways we can go about it: using GWT widgets (classic) or the Elements API (modern).</p><p><a href="widgets-buildui.html">Step 2a: Building the User Interface using Widgets</a></p><p><a href="elements-buildui.html">Step 2b: Building the User Interface using Elements</a></p>
 
                 </div>
             </div>

@@ -498,9 +498,9 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/doc/latest/polymer-tutorial/elements-buildui.md"></a>
                     </span>
-                    <h1> Building the UI</h1><p>In this chapter we will build a modern and good looking UI for the <strong>TodoList</strong> application using the <a href="http://www.google.es/design/spec/material-design/introduction.html">Material Design</a> specifications. We will work with the Polymer Paper elements collection wrapped through the Vaadin gwt-polymer-elements library.</p><h2>Main Screen</h2>
+                    <h1> Building the UI</h1><p>In this chapter we’ll build a modern looking UI for the <strong>TodoList</strong> application using the <a href="http://www.google.es/design/spec/material-design/introduction.html">Material Design</a> specifications. We’ll be working with the Vaadin gwt-polymer-elements library, a wrapper for the Polymer Paper Elements collection.</p><h2>Main screen</h2>
 <ol>
-  <li><p>Create the <strong>main screen</strong> of the application.</p><p>We are going to create an <a href="DevGuideUiBinder.html">UiBinder</a> screen composed by a java file <code>Main.java</code> and its visual descriptor <code>Main.ui.xml</code>.</p><p>You can generate these files either copying the following snippets or using the Eclipse GWT plugin</p>
+  <li><p>Create the <strong>main screen</strong> of the application.</p><p>We will create a <a href="DevGuideUiBinder.html">UiBinder</a> screen composed of a java file (<code>Main.java</code>) and its visual descriptor (<code>Main.ui.xml</code>).</p><p>You can generate these files either by copying the following snippets, or by using the Eclipse GWT plugin.</p>
   <ul>
     <li><code>Main.java</code></li>
   </ul>
@@ -533,7 +533,7 @@
       &lt;/g:HTMLPanel&gt;
     &lt;/ui:UiBinder&gt;
 </code></pre></li>
-  <li><p>Add <strong>menu items</strong>.</p><p>Now we can update the <code>Main.ui.xml</code> file adding some menu items.</p>
+  <li><p>Add <strong>menu items</strong>.</p><p>Now we can update the <code>Main.ui.xml</code> file by adding menu items.</p>
   <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
              xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;&gt;
 
@@ -556,7 +556,7 @@
         &lt;/paper-icon-item&gt;
     &lt;/g:HTMLPanel&gt;
 &lt;/ui:UiBinder&gt;
-</code></pre><p><em><strong>Note:</strong> Visit original <a href="https://elements.polymer-project.org/browse?package=paper-elements">polymer elements</a> documentation to know details about each component and play with demos.</em></p></li>
+</code></pre><p><em><strong>Note:</strong> Visit the original <a href="https://elements.polymer-project.org/browse?package=paper-elements">polymer elements</a> documentation to learn and demo each component.</em></p></li>
   <li><p>Update the <strong>entry point</strong> to use our new screen.</p>
   <pre><code>package org.gwtproject.tutorial.client;
 
@@ -569,7 +569,9 @@ public class TodoList implements EntryPoint {
 
   public void onModuleLoad() {
     // We have to load icon sets before run application
-    Polymer.importHref(Arrays.asList(PaperIconItemElement.SRC, IronIconElement.SRC), new Function() {
+    Polymer.importHref(Arrays.asList(
+           PaperIconItemElement.SRC,
+           IronIconElement.SRC), new Function() {
       public Object call(Object arg) {
         // The app is executed when all imports succeed.
         startApplication();
@@ -582,11 +584,11 @@ public class TodoList implements EntryPoint {
     RootPanel.get().add(new Main());
   }
 }
-</code></pre><p>TODO: describe why we load *Element.SRC stuff</p></li>
-  <li><p>Run the application.</p><p>Reload the page in your browser and you should see four menu items, you can notice that icons are missing though.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-03.png'></p></li>
-</ol><h2>Icons and Effects</h2>
+</code></pre><p>_<strong>Tip</strong>: to facilitate the usage of webcomponents gwt-polymer-elements maintains a couple of static constants: <code>Element.TAG</code> and <code>Element.SRC</code>, to avoid memorizing tag names and import paths respectively.</p></li>
+  <li><p>Run the application.</p><p>Reload the page in your browser, and you should see the four menu items. You&rsquo;ll probably notice that icons are missing. We’ll fix that in the next step.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-03.png'></p></li>
+</ol><h2>Icons and effects</h2>
 <ol>
-  <li><p>Import <strong>icon collections</strong>.</p><p>Because Polymer comes with several icon collections, we have to import the appropriate set before we use it, hence we must wait until they are ready:</p>
+  <li><p>Import <strong>icon collections</strong>.</p><p>Polymer comes with several icon collections. Before a collection can be used, it has to be imported. In this example we’ll be using the Iron set. In the code below, we use the <code>Polymer.importHref</code> utility method, and wait for the set to load before we run the application.</p>
   <pre><code>package org.gwtproject.tutorial.client;
 
 import com.google.gwt.core.client.EntryPoint;
@@ -598,7 +600,8 @@ public class TodoList implements EntryPoint {
 
   public void onModuleLoad() {
     // We have to load icon sets before run application
-    Polymer.importHref(Arrays.asList(&quot;iron-icons/iron-icons.html&quot;,
+    Polymer.importHref(Arrays.asList(
+          &quot;iron-icons/iron-icons.html&quot;,
            PaperIconItemElement.SRC,
            IronIconElement.SRC), new Function() {
       public Object call(Object arg) {
@@ -615,10 +618,10 @@ public class TodoList implements EntryPoint {
 }
 </code></pre></li>
   <li><p>Reload the application</p><p>You should see all icons in the browser now.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-04.png'></p></li>
-  <li><p>Add a <strong>Ripple</strong> effect</p><p>It is nice when the user gets some feedback when interacting with UI elements. Read the material design <a href="http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action">documentation</a> about that.</p>
+  <li><p>Add a <strong>Ripple</strong> effect</p><p>Feedback when interacting with UI elements is generally considered a positive. If you want, you can read more about Material Design’s philosophy regarding <a href="http://www.google.com.ua/design/spec/animation/responsive-interaction.html#responsive-interaction-radial-action">responsive interaction</a>.</p>
   <ul>
     <li>Add <code>&lt;paper-ripple/&gt;</code> to each item in the <code>Main.ui.xml</code> file.</li>
-    <li>We need to add some styles to items, so as the ripple effect is constrained into the item area.</li>
+    <li>We need to add a few CSS style properties to the items, so that the ripple effect is constrained within the item area.</li>
   </ul>
   <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
              xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;&gt;
@@ -653,10 +656,10 @@ public class TodoList implements EntryPoint {
     &lt;/g:HTMLPanel&gt;
 &lt;/ui:UiBinder&gt;
 </code></pre></li>
-  <li><p>Reload the application</p><p>Compare click reactions before and after adding the PaperRipple effects.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-05.png'></p></li>
+  <li><p>Reload the application to see the ripple effect in action.</p><p>Compare click reactions before and after adding <code>PaperRipple</code> effects.</p></li>
 </ol><h2>Responsive Layout</h2>
 <ol>
-  <li><p>Layout the application with a Paper <strong>Draw Panel</strong>.</p><p>Paper elements collection comes with a responsive drawer component to layout modern applications so as they behaves nice in both desktop and mobile. If you are interested in details and you want to see a demo visit the <a href="https://elements.polymer-project.org/elements/paper-drawer-panel?view=demo:demo/index.html">paper-drawer-panel page</a></p>
+  <li><p>Layout the application with a Paper <strong>Draw Panel</strong>.</p><p>The Paper elements collection includes a responsive drawer panel. It’s a layout component that can be used in modern applications to make sure they behave nicely on both desktop and mobile devices. For more information, check out the paper-drawer-panel <a href="https://elements.polymer-project.org/elements/paper-drawer-panel?view=demo:demo/index.html">demo</a>.</p>
   <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
              xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;&gt;
 
@@ -707,7 +710,7 @@ public class TodoList implements EntryPoint {
 </code></pre></li>
   <li><p>Add the <em>content panel</em></p>
   <ul>
-    <li>Add a container for our Todo Items.</li>
+    <li>Add a container for our todo items.</li>
   </ul>
   <pre><code>    &lt;g:HTMLPanel&gt;
        ...
@@ -725,14 +728,14 @@ public class TodoList implements EntryPoint {
        ...
     &lt;/g:HTMLPanel&gt;
 </code></pre></li>
-  <li><p>Reload the application</p><p>Now the application should look modern and responsive. Try to resize browser window. If you make it narrower than 640 pixels you can see that draw panel hides the menu.</p></li>
-</ol><h2> Styling the app</h2><p>Web Components use <a href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/">Shadow DOM styling</a> rules for providing scoped styling of the element. Additionally Polymer provides <a href="https://www.polymer-project.org/1.0/articles/shadydom.html">Shady DOM</a> to deal with browsers not implementing native shadow. Hence Polymer monitors and parses each <code>&lt;style&gt;</code> block rewriting rules on the fly.</p><p>The GSS processor, and the way how GWT loads css resources asynchronously make impossible to use <code>shadow</code> and <code>polymer</code> selectors and properties inside <code>&lt;ui:style&gt;</code> blocks because first GSS will complain about certain syntaxes and second Polymer will ignore <code>CssResource</code> injected blocks. Thus you have to use normal <code>&lt;style&gt;</code> in your <code>UiBinder</code> file.</p><p>So we have two options are:</p>
+  <li><p>Reload the application</p><p>The application should now sport a modern look and be responsive. If you resize the browser window so that its width is below 640px the drawer panel should hide the menu.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-05.png'></p></li>
+</ol><h2> Styling the App</h2><p>Web Components use <a href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/">Shadow DOM styling</a> rules for providing scoped styling of the element. Additionally Polymer provides <a href="https://www.polymer-project.org/1.0/articles/shadydom.html">Shady DOM</a> to deal with browsers not implementing native shadow. Hence Polymer monitors and parses each <code>&lt;style&gt;</code> block rewriting rules on the fly.</p><p>The GSS processor, and the way how GWT loads css resources asynchronously make impossible to use <code>shadow</code> and <code>polymer</code> selectors and properties inside <code>&lt;ui:style&gt;</code> blocks because first GSS will complain about certain syntaxes and second Polymer will ignore <code>CssResource</code> injected blocks. Thus you have to use normal <code>&lt;style&gt;</code> in your <code>UiBinder</code> file.</p><p>We have two options:</p>
 <ol>
-  <li>Include your css in your hosting page.</li>
+  <li>Include your CSS in your hosting page (HTML file).</li>
   <li>Utilize normal <code>&lt;style&gt;</code> tags in your <code>UiBinder</code> files.</li>
-</ol><p>In our example we will use the second way, but be aware that it would include a new <code>&lt;style&gt;</code> element each time you might create a new widget. In our case we only have an instance of <code>Main.ui.xml</code> in our application.</p>
+</ol><p>We’ll use the 2nd approach, but be aware that it will include a new <code>&lt;style&gt;</code> element in the DOM tree each time you create a new widget. In our case, we only have one instance of <code>Main.ui.xml</code> in our application, so this is not a problem.</p>
 <ul>
-  <li><p>Change color of toolbar, style the heading text and the content panel:</p>
+  <li><p>Change color of the toolbar, style the header text and the content panel:</p>
   <pre><code>    &lt;g:HTMLPanel&gt;
         &lt;style&gt;
           .toolbar {
@@ -760,8 +763,10 @@ public class TodoList implements EntryPoint {
         &lt;/div&gt;
        ...
     &lt;/g:HTMLPanel&gt;
-</code></pre><p><em><strong>Note</strong>: that names <code>vertical</code>, <code>center-justified</code> and <code>layout</code> are provided by Polymer.</em></p></li>
-  <li><p>Add and stylize the <strong>floating action button</strong></p><p>Material Design applications use the characteristic floating button for the main action. In paper elements this button is called <a href="">paper-fab</a>.</p>
+</code></pre></li>
+</ul><p><em><strong>Note</strong>: the <code>vertical</code>, <code>center-justified</code> and <code>layout</code> classes are provided by Polymer.</em></p>
+<ul>
+  <li><p>Add and stylize the <strong>floating action button</strong></p><p>Material Design applications use the characteristic floating button for the main action. In the Paper elements collection, this button is called <a href="https://elements.polymer-project.org/elements/paper-fab">paper-fab</a>.</p>
   <pre><code>&lt;g:HTMLPanel&gt;
   &lt;style is=&#39;custom-style&#39;&gt;
     ...
@@ -777,8 +782,8 @@ public class TodoList implements EntryPoint {
     &lt;paper-fab ui:field=&quot;addButton&quot; icon=&quot;add&quot; title=&quot;add&quot; class=&quot;add&quot;/&gt;
   &lt;/div&gt;
 &lt;/g:HTMLPanel&gt;
-</code></pre><p><em><strong>Tip</strong>: In order to make Polymer process your style block add the <code>is=&quot;custom-style&quot;</code> attribute</em></p></li>
-</ul><p><em><strong>Tip</strong>: Take a look at custom properties and mixins are available for styling on <a href="https://elements.polymer-project.org/elements/paper-fab">paper-fab</a> page</em></p><h2>Summary</h2><p>Finally your <code>Main.gwt.xml</code> file should look like:</p>
+</code></pre></li>
+</ul><p><em><strong>Tip</strong>: In order to make Polymer process your style block add the <code>is=&quot;custom-style&quot;</code> attribute.</em></p><p><em><strong>Tip</strong>: Take a look at <a href="https://elements.polymer-project.org/elements/paper-fab">paper-fab</a> documentation for available custom styling properties and mixins.</em></p><h2>Summary</h2><p>Finally your <code>Main.gwt.xml</code> file should look like:</p>
 <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
              xmlns:g=&#39;urn:import:com.google.gwt.user.client.ui&#39;&gt;
 
@@ -844,13 +849,13 @@ public class TodoList implements EntryPoint {
         &lt;/paper-drawer-panel&gt;
     &lt;/g:HTMLPanel&gt;
 &lt;/ui:UiBinder&gt;
-</code></pre><p>If everything is OK, after reloading your app should look like this screenshot.</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-06.png'></p><h2>What&rsquo;s next</h2>
+</code></pre><p>If everything is OK, after reloading your app should look like this:</p><p><img class='polymer-tutorial-screenshot' src='images/todo-list-06.png'></p><h2>What&rsquo;s next</h2>
 <ol>
-  <li>We have learnt how to use <code>UiBinder</code> with pure <code>Elements</code> instead of <code>Widgets</code></li>
-  <li>We also know how we can add 3rd party web components to our UI.</li>
+  <li>We have learnt how to use <code>UiBinder</code> with <code>Elements</code>.</li>
+  <li>We also know how to add 3rd party Web Components to our UI.</li>
   <li>We understand the mechanism to import polymer elements like icon collections and use special components like effects.</li>
   <li>We can deal with responsive layouts using paper panels and mixing them with conventional html elements in GWT.</li>
-  <li>We know how to style elements in <code>UiBinder</code> xml files using Polymer parsers.</li>
+  <li>We know how to style elements in UiBinder XML files, using Polymer parsers.</li>
 </ol><p><a href="elements-applogic.html">Step 3: Add logic to the application</a></p>
 
                 </div>
