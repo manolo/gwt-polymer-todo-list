@@ -72,7 +72,7 @@ In this chapter we’ll build a modern looking UI for the **TodoList** applicati
 
     _**Note**: in this step we have added the necessary imports for Paper and Iron packages._
 
-    _**Tip**: If you are interested widget details, visit the [Iron](http://vaadin.github.io/gwt-polymer-elements/api/com/vaadin/polymer/iron/widget/package-summary.html) and [Paper](http://vaadin.github.io/gwt-polymer-elements/api/com/vaadin/polymer/paper/widget/package-summary.html) widgets Javadoc_
+    _**Tip**: If you are interested on widget details, visit the [Iron](http://vaadin.github.io/gwt-polymer-elements/api/com/vaadin/polymer/iron/widget/package-summary.html) and [Paper](http://vaadin.github.io/gwt-polymer-elements/api/com/vaadin/polymer/paper/widget/package-summary.html) widgets Javadoc_
 
 3.  Update the **entry point** to use our new screen.
 
@@ -433,3 +433,5 @@ If everything is OK, after reloading your app should look like this:
 4. We know how to style elements in UiBinder XML files, using GSS or Polymer parsers.
 
 [Step 3a: Add the event logic to the application](widgets-applogic.html)
+
+[**DISCLAIMER**](introduction.html#pol-disclaimer)
