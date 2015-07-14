@@ -2,7 +2,7 @@
 
 In this section, we’ll create the **TodoList** project from scratch using GWT’s [webAppCreator](http://www.gwtproject.org/doc/latest/RefCommandLineTools.html#webAppCreator), a command-line utility.
 
-Before we start, make sure to download the most recent GWT distribution and install [Maven](https://maven.apache.org/).
+Before we start, make sure to download the most recent [GWT distribution](../../../download.html) and install [Maven](https://maven.apache.org/).
 
 ## Using webAppCreator
 
