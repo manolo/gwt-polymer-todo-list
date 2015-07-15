@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtproject;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '55D4DB1B3E615C503361AD17FDD56DFB';
+var $strongName = '1A99914B21B194E417686087AE6B894F';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = {1:1}, $intern_1 = 2147483647, $intern_2 = {3:1, 1:1, 4:1, 8:1}, $intern_3 = 65536, $intern_4 = 3.141592653589793, $intern_5 = {3:1, 1:1, 12:1}, $intern_6 = {3:1, 1:1, 4:1}, $intern_7 = {3:1, 9:1, 1:1, 12:1}, $intern_8 = {3:1, 9:1, 1:1, 11:1, 12:1}, $intern_9 = {3:1, 6:1, 5:1, 1:1}, $intern_10 = {10:1, 3:1, 1:1}, $intern_11 = {3:1, 1:1}, $intern_12 = {128:1, 1:1}, $intern_13 = {157:1, 1:1}, $intern_14 = {3:1, 1:1, 4:1, 367:1}, $intern_15 = {73:1, 74:1, 1:1}, $intern_16 = {15:1, 3:1, 6:1, 5:1, 1:1}, $intern_17 = {18:1, 3:1, 6:1, 5:1, 1:1}, $intern_18 = {62:1, 3:1, 9:1, 1:1, 11:1, 12:1}, $intern_19 = {84:1, 1:1}, $intern_20 = 32768, $intern_21 = 4194304, $intern_22 = 4294967296, $intern_23 = 4194303, $intern_24 = 1048575, $intern_25 = 524288, $intern_26 = 17592186044416, $intern_27 = {7:1, 1:1}, $intern_28 = 16384, $intern_29 = {19:1, 1:1}, $intern_30 = {28:1, 1:1}, $intern_31 = {68:1, 1:1}, $intern_32 = {14:1, 25:1, 1:1}, $intern_33 = {87:1, 1:1}, $intern_34 = 4096, $intern_35 = 131072, $intern_36 = {66:1, 1:1}, $intern_37 = {26:1, 1:1}, $intern_38 = {13:1, 3:1, 6:1, 5:1, 1:1}, $intern_39 = 1048576, $intern_40 = 2097152, $intern_41 = 8388608, $intern_42 = 16777216, $intern_43 = 33554432, $intern_44 = 67108864, $intern_45 = 262144, $intern_46 = {104:1, 1:1}, $intern_47 = {365:1, 65:1, 1:1}, $intern_48 = {65:1, 1:1}, $intern_49 = {49:1, 1:1}, $intern_50 = {67:1, 89:1, 52:1, 41:1, 1:1}, $intern_51 = {100:1, 1:1}, $intern_52 = {369:1, 1:1}, $intern_53 = {366:1, 1:1}, $intern_54 = 1.3407807929942597E154, $intern_55 = 1.157920892373162E77, $intern_56 = 3.4028236692093846E38, $intern_57 = 1.8446744073709552E19, $intern_58 = 7.458340731200207E-155, $intern_59 = 8.636168555094445E-78, $intern_60 = 2.9387358770557188E-39, $intern_61 = 5.421010862427522E-20, $intern_62 = 2.3283064365386963E-10, $intern_63 = 1.52587890625E-5, $intern_64 = 2.2250738585072014E-308, $intern_65 = {1:1, 36:1}, $intern_66 = {1:1, 37:1}, $intern_67 = {1:1, 17:1}, $intern_68 = {1:1, 16:1}, $intern_69 = {3:1, 1:1, 17:1}, $intern_70 = {3:1, 1:1, 36:1}, $intern_71 = {3:1, 1:1, 37:1};
+var $intern_0 = {1:1}, $intern_1 = 2147483647, $intern_2 = {3:1, 1:1, 4:1, 8:1}, $intern_3 = 65536, $intern_4 = 3.141592653589793, $intern_5 = {3:1, 1:1, 12:1}, $intern_6 = {3:1, 1:1, 4:1}, $intern_7 = {3:1, 9:1, 1:1, 12:1}, $intern_8 = {3:1, 9:1, 1:1, 11:1, 12:1}, $intern_9 = {3:1, 6:1, 5:1, 1:1}, $intern_10 = {10:1, 3:1, 1:1}, $intern_11 = {3:1, 1:1}, $intern_12 = {131:1, 1:1}, $intern_13 = {158:1, 1:1}, $intern_14 = {3:1, 1:1, 4:1, 368:1}, $intern_15 = {14:1, 3:1, 6:1, 5:1, 1:1}, $intern_16 = {18:1, 3:1, 6:1, 5:1, 1:1}, $intern_17 = {66:1, 3:1, 9:1, 1:1, 11:1, 12:1}, $intern_18 = {82:1, 1:1}, $intern_19 = 32768, $intern_20 = 4194304, $intern_21 = 4294967296, $intern_22 = 4194303, $intern_23 = 1048575, $intern_24 = 524288, $intern_25 = 17592186044416, $intern_26 = {7:1, 1:1}, $intern_27 = 16384, $intern_28 = {16:1, 1:1}, $intern_29 = {44:1, 1:1}, $intern_30 = {42:1, 56:1, 68:1, 1:1}, $intern_31 = {31:1, 1:1}, $intern_32 = {71:1, 1:1}, $intern_33 = {15:1, 26:1, 1:1}, $intern_34 = {88:1, 1:1}, $intern_35 = 4096, $intern_36 = 131072, $intern_37 = {25:1, 1:1}, $intern_38 = {13:1, 3:1, 6:1, 5:1, 1:1}, $intern_39 = {130:1, 1:1}, $intern_40 = 1048576, $intern_41 = 2097152, $intern_42 = 8388608, $intern_43 = 16777216, $intern_44 = 33554432, $intern_45 = 67108864, $intern_46 = 262144, $intern_47 = {108:1, 1:1}, $intern_48 = {366:1, 69:1, 1:1}, $intern_49 = {69:1, 1:1}, $intern_50 = {70:1, 90:1, 57:1, 43:1, 1:1}, $intern_51 = {100:1, 1:1}, $intern_52 = {47:1, 1:1}, $intern_53 = {370:1, 1:1}, $intern_54 = {367:1, 1:1}, $intern_55 = 1.3407807929942597E154, $intern_56 = 1.157920892373162E77, $intern_57 = 3.4028236692093846E38, $intern_58 = 1.8446744073709552E19, $intern_59 = 7.458340731200207E-155, $intern_60 = 8.636168555094445E-78, $intern_61 = 2.9387358770557188E-39, $intern_62 = 5.421010862427522E-20, $intern_63 = 2.3283064365386963E-10, $intern_64 = 1.52587890625E-5, $intern_65 = 2.2250738585072014E-308, $intern_66 = {1:1, 34:1}, $intern_67 = {1:1, 35:1}, $intern_68 = {1:1, 19:1}, $intern_69 = {1:1, 17:1}, $intern_70 = {3:1, 1:1, 19:1}, $intern_71 = {3:1, 1:1, 34:1}, $intern_72 = {3:1, 1:1, 35:1};
 var cggl = {};
 var jl = {};
 var cggcc = {};
@@ -46,17 +46,18 @@ var cggic = {};
 var cggici = {};
 var cggjc = {};
 var cggqc = {};
+var cggqcpd = {};
 var cggqcb = {};
 var cggqcc = {};
 var cggqci = {};
 var cggqcj = {};
 var cggqcp = {};
 var cggqcpa = {};
-var cggqcpd = {};
 var cggqcpe = {};
 var cggqcpe2 = {};
 var cggrs = {};
 var cggrc = {};
+var cggss = {};
 var cggswc = {};
 var cggtc = {};
 var cggts = {};
@@ -366,7 +367,7 @@ _.toString = function(){
   return this.toString$();
 }
 ;
-cggl.stringCastMap = {3:1, 366:1, 6:1, 1:1, 2:1};
+cggl.stringCastMap = {3:1, 367:1, 6:1, 1:1, 2:1};
 modernizeBrowser();
 cggcc.$clinit_JavaScriptObject = function $clinit_JavaScriptObject(){
   cggcc.$clinit_JavaScriptObject = emptyMethod;
@@ -817,8 +818,8 @@ jl.initializeNames = function initializeNames(clazz){
   var packageName = clazz.packageName;
   var compoundName = clazz.compoundName;
   compoundName = compoundName.split('/');
-  clazz.typeName = jl.join_0('.', [packageName, jl.join_0('$', compoundName)]);
-  clazz.canonicalName = jl.join_0('.', [packageName, jl.join_0('.', compoundName)]);
+  clazz.typeName = jl.join_1('.', [packageName, jl.join_1('$', compoundName)]);
+  clazz.canonicalName = jl.join_1('.', [packageName, jl.join_1('.', compoundName)]);
   clazz.simpleName = compoundName[compoundName.length - 1];
 }
 ;
@@ -826,7 +827,7 @@ function isClassMetadataEnabled(){
   return true;
 }
 
-jl.join_0 = function join_0(separator, strings){
+jl.join_1 = function join_1(separator, strings){
   var i_0 = 0;
   while (!strings[i_0] || strings[i_0] == '') {
     i_0++;
@@ -861,7 +862,7 @@ function synthesizeClassNamesFromTypeId(clazz, typeId){
   clazz.simpleName = clazz.typeName;
 }
 
-defineClass(130, 1, $intern_0, Class);
+defineClass(133, 1, $intern_0, Class);
 _.$init_306 = function $init_306(){
   this.sequentialId = jl.nextSequentialId++;
 }
@@ -1372,7 +1373,7 @@ jl.String$1 = function String$1(){
   this.$init_319();
 }
 ;
-defineClass(190, 1, $intern_0, jl.String$1);
+defineClass(191, 1, $intern_0, jl.String$1);
 _.$init_319 = function $init_319(){
 }
 ;
@@ -1388,9 +1389,9 @@ cggl.Ljava_lang_Object_2_classLit = createForClass('java.lang', 'Object', 1, nul
 cggl.Lcom_google_gwt_core_client_JavaScriptObject_2_classLit = createForClass('com.google.gwt.core.client', 'JavaScriptObject$', 0, cggl.Ljava_lang_Object_2_classLit);
 cggl.Lcom_google_gwt_lang_Cast_2_classLit = createForClass('com.google.gwt.lang', 'Cast', 372, cggl.Ljava_lang_Object_2_classLit);
 cggl.Lcom_google_gwt_lang_Util_2_classLit = createForClass('com.google.gwt.lang', 'Util', 380, cggl.Ljava_lang_Object_2_classLit);
-cggl.Ljava_lang_Class_2_classLit = createForClass('java.lang', 'Class', 130, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_lang_Class_2_classLit = createForClass('java.lang', 'Class', 133, cggl.Ljava_lang_Object_2_classLit);
 cggl.Ljava_lang_String_2_classLit = createForClass('java.lang', 'String', 2, cggl.Ljava_lang_Object_2_classLit);
-cggl.Ljava_lang_String$1_2_classLit = createForClass('java.lang', 'String/1', 190, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_lang_String$1_2_classLit = createForClass('java.lang', 'String/1', 191, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_Animation = function $clinit_Animation(){
   cggac.$clinit_Animation = emptyMethod;
   jl.$clinit_Object();
@@ -1407,7 +1408,7 @@ cggac.Animation_0 = function Animation_0(scheduler){
   this.scheduler = scheduler;
 }
 ;
-defineClass(48, 1, $intern_0);
+defineClass(51, 1, $intern_0);
 _.$init_0 = function $init_0(){
   this.callback = new cggac.Animation$1(this);
   this.duration = -1;
@@ -1510,7 +1511,7 @@ _.isStarted = false;
 _.runId = 0;
 _.startTime = 0;
 _.wasStarted = false;
-cggl.Lcom_google_gwt_animation_client_Animation_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation', 48, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_animation_client_Animation_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation', 51, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_Animation$1 = function $clinit_Animation$1(){
   cggac.$clinit_Animation$1 = emptyMethod;
   jl.$clinit_Object();
@@ -1523,7 +1524,7 @@ cggac.Animation$1 = function Animation$1(this$0){
   this.$init_1();
 }
 ;
-defineClass(236, 1, $intern_0, cggac.Animation$1);
+defineClass(245, 1, $intern_0, cggac.Animation$1);
 _.$init_1 = function $init_1(){
 }
 ;
@@ -1536,7 +1537,7 @@ _.execute_0 = function execute(timestamp){
   }
 }
 ;
-cggl.Lcom_google_gwt_animation_client_Animation$1_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation/1', 236, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_animation_client_Animation$1_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation/1', 245, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_AnimationScheduler = function $clinit_AnimationScheduler(){
   cggac.$clinit_AnimationScheduler = emptyMethod;
   jl.$clinit_Object();
@@ -1552,17 +1553,17 @@ cggac.get_0 = function get_0(){
   cggac.$clinit_AnimationScheduler();
   var supportDetector;
   if (isNull(cggac.instance_0)) {
-    supportDetector = dynamicCast(new cggac.AnimationScheduler$AnimationSupportDetector, 112);
+    supportDetector = dynamicCast(new cggac.AnimationScheduler$AnimationSupportDetector, 116);
     cggac.instance_0 = isNotNull(supportDetector) && supportDetector.isNativelySupported()?new cggac.AnimationSchedulerImplStandard:new cggac.AnimationSchedulerImplTimer;
   }
   return cggac.instance_0;
 }
 ;
-defineClass(139, 1, $intern_0);
+defineClass(142, 1, $intern_0);
 _.$init_2 = function $init_2(){
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler', 139, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler', 142, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_AnimationScheduler$AnimationCallback = function $clinit_AnimationScheduler$AnimationCallback(){
   cggac.$clinit_AnimationScheduler$AnimationCallback = emptyMethod;
 }
@@ -1578,11 +1579,11 @@ cggac.AnimationScheduler$AnimationHandle = function AnimationScheduler$Animation
   this.$init_3();
 }
 ;
-defineClass(140, 1, $intern_0);
+defineClass(143, 1, $intern_0);
 _.$init_3 = function $init_3(){
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler/AnimationHandle', 140, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler/AnimationHandle', 143, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_AnimationScheduler$AnimationSupportDetector = function $clinit_AnimationScheduler$AnimationSupportDetector(){
   cggac.$clinit_AnimationScheduler$AnimationSupportDetector = emptyMethod;
   jl.$clinit_Object();
@@ -1594,7 +1595,7 @@ cggac.AnimationScheduler$AnimationSupportDetector = function AnimationScheduler$
   this.$init_4();
 }
 ;
-defineClass(112, 1, {112:1, 1:1}, cggac.AnimationScheduler$AnimationSupportDetector);
+defineClass(116, 1, {116:1, 1:1}, cggac.AnimationScheduler$AnimationSupportDetector);
 _.$init_4 = function $init_4(){
 }
 ;
@@ -1602,7 +1603,7 @@ _.isNativelySupported = function isNativelySupported(){
   return !!$wnd.requestAnimationFrame && !!$wnd.cancelAnimationFrame;
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationSupportDetector_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler/AnimationSupportDetector', 112, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationSupportDetector_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler/AnimationSupportDetector', 116, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_AnimationSchedulerImplStandard = function $clinit_AnimationSchedulerImplStandard(){
   cggac.$clinit_AnimationSchedulerImplStandard = emptyMethod;
   cggac.$clinit_AnimationScheduler();
@@ -1629,7 +1630,7 @@ cggac.requestImpl = function requestImpl(cb, element){
   return {id:handle};
 }
 ;
-defineClass(358, 139, $intern_0, cggac.AnimationSchedulerImplStandard);
+defineClass(359, 142, $intern_0, cggac.AnimationSchedulerImplStandard);
 _.$init_5 = function $init_5(){
 }
 ;
@@ -1639,7 +1640,7 @@ _.requestAnimationFrame_0 = function requestAnimationFrame(callback, element){
   return new cggac.AnimationSchedulerImplStandard$1(this, handle);
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard', 358, cggl.Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard', 359, cggl.Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit);
 cggac.$clinit_AnimationSchedulerImplStandard$1 = function $clinit_AnimationSchedulerImplStandard$1(){
   cggac.$clinit_AnimationSchedulerImplStandard$1 = emptyMethod;
   cggac.$clinit_AnimationScheduler$AnimationHandle();
@@ -1653,7 +1654,7 @@ cggac.AnimationSchedulerImplStandard$1 = function AnimationSchedulerImplStandard
   this.$init_6();
 }
 ;
-defineClass(359, 140, $intern_0, cggac.AnimationSchedulerImplStandard$1);
+defineClass(360, 143, $intern_0, cggac.AnimationSchedulerImplStandard$1);
 _.$init_6 = function $init_6(){
 }
 ;
@@ -1661,7 +1662,7 @@ _.cancel = function cancel_0(){
   cggac.cancelImpl(this.val$handle2);
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard/1', 359, cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard/1', 360, cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit);
 cggac.$clinit_AnimationSchedulerImplTimer = function $clinit_AnimationSchedulerImplTimer(){
   cggac.$clinit_AnimationSchedulerImplTimer = emptyMethod;
   cggac.$clinit_AnimationScheduler();
@@ -1673,7 +1674,7 @@ cggac.AnimationSchedulerImplTimer = function AnimationSchedulerImplTimer(){
   this.$init_7();
 }
 ;
-defineClass(360, 139, $intern_0, cggac.AnimationSchedulerImplTimer);
+defineClass(361, 142, $intern_0, cggac.AnimationSchedulerImplTimer);
 _.$init_7 = function $init_7(){
   this.animationRequests = new ju.ArrayList;
   this.timer = new cggac.AnimationSchedulerImplTimer$1(this);
@@ -1681,7 +1682,7 @@ _.$init_7 = function $init_7(){
 ;
 _.cancelAnimationFrame_0 = function cancelAnimationFrame(requestId){
   cggac.$clinit_AnimationSchedulerImplTimer();
-  this.animationRequests.remove_5(requestId);
+  this.animationRequests.remove_6(requestId);
   if (this.animationRequests.size_1() == 0) {
     this.timer.cancel();
   }
@@ -1690,7 +1691,7 @@ _.cancelAnimationFrame_0 = function cancelAnimationFrame(requestId){
 _.requestAnimationFrame_0 = function requestAnimationFrame_0(callback, element){
   var requestId;
   requestId = new cggac.AnimationSchedulerImplTimer$AnimationHandleImpl(this, callback);
-  this.animationRequests.add_3(requestId);
+  this.animationRequests.add_4(requestId);
   if (this.animationRequests.size_1() == 1) {
     this.timer.schedule(16);
   }
@@ -1700,12 +1701,12 @@ _.requestAnimationFrame_0 = function requestAnimationFrame_0(callback, element){
 _.updateAnimations = function updateAnimations(){
   cggac.$clinit_AnimationSchedulerImplTimer();
   var curAnimations, duration, requestId, requestId$array, requestId$index, requestId$max;
-  curAnimations = initDim(cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$AnimationHandleImpl_2_classLit, {415:1, 3:1, 1:1, 4:1}, 126, this.animationRequests.size_1(), 0, 1);
+  curAnimations = initDim(cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$AnimationHandleImpl_2_classLit, {415:1, 3:1, 1:1, 4:1}, 129, this.animationRequests.size_1(), 0, 1);
   curAnimations = dynamicCast(this.animationRequests.toArray_0(curAnimations), 415);
   duration = new cggcc.Duration;
   for (requestId$array = curAnimations , requestId$index = 0 , requestId$max = requestId$array.length; requestId$index < requestId$max; ++requestId$index) {
     requestId = requestId$array[requestId$index];
-    this.animationRequests.remove_5(requestId);
+    this.animationRequests.remove_6(requestId);
     requestId.getCallback().execute_0(duration.getStartMillis());
   }
   if (this.animationRequests.size_1() > 0) {
@@ -1715,7 +1716,7 @@ _.updateAnimations = function updateAnimations(){
 ;
 cggac.DEFAULT_FRAME_DELAY = 16;
 cggac.MIN_FRAME_DELAY = 5;
-cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer', 360, cggl.Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer', 361, cggl.Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit);
 cgguc.$clinit_Timer = function $clinit_Timer(){
   cgguc.$clinit_Timer = emptyMethod;
   jl.$clinit_Object();
@@ -1746,7 +1747,7 @@ cgguc.setTimeout_0 = function setTimeout_0(func, time){
   return $wnd.setTimeout(func, time);
 }
 ;
-defineClass(78, 1, $intern_0);
+defineClass(80, 1, $intern_0);
 _.$init_8 = function $init_8(){
   this.timerId = null;
   this.cancelCounter = 0;
@@ -1793,7 +1794,7 @@ _.schedule = function schedule(delayMillis){
 ;
 _.cancelCounter = 0;
 _.isRepeating = false;
-cggl.Lcom_google_gwt_user_client_Timer_2_classLit = createForClass('com.google.gwt.user.client', 'Timer', 78, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_Timer_2_classLit = createForClass('com.google.gwt.user.client', 'Timer', 80, cggl.Ljava_lang_Object_2_classLit);
 cggac.$clinit_AnimationSchedulerImplTimer$1 = function $clinit_AnimationSchedulerImplTimer$1(){
   cggac.$clinit_AnimationSchedulerImplTimer$1 = emptyMethod;
   cgguc.$clinit_Timer();
@@ -1806,7 +1807,7 @@ cggac.AnimationSchedulerImplTimer$1 = function AnimationSchedulerImplTimer$1(thi
   this.$init_9();
 }
 ;
-defineClass(361, 78, $intern_0, cggac.AnimationSchedulerImplTimer$1);
+defineClass(362, 80, $intern_0, cggac.AnimationSchedulerImplTimer$1);
 _.$init_9 = function $init_9(){
 }
 ;
@@ -1814,7 +1815,7 @@ _.run_2 = function run_2(){
   this.this$01.updateAnimations();
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/1', 361, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/1', 362, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
 cggac.$clinit_AnimationSchedulerImplTimer$AnimationHandleImpl = function $clinit_AnimationSchedulerImplTimer$AnimationHandleImpl(){
   cggac.$clinit_AnimationSchedulerImplTimer$AnimationHandleImpl = emptyMethod;
   cggac.$clinit_AnimationScheduler$AnimationHandle();
@@ -1828,7 +1829,7 @@ cggac.AnimationSchedulerImplTimer$AnimationHandleImpl = function AnimationSchedu
   this.callback = callback;
 }
 ;
-defineClass(126, 140, {126:1, 1:1}, cggac.AnimationSchedulerImplTimer$AnimationHandleImpl);
+defineClass(129, 143, {129:1, 1:1}, cggac.AnimationSchedulerImplTimer$AnimationHandleImpl);
 _.$init_10 = function $init_10(){
 }
 ;
@@ -1840,7 +1841,7 @@ _.getCallback = function getCallback(){
   return this.callback;
 }
 ;
-cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$AnimationHandleImpl_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/AnimationHandleImpl', 126, cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit);
+cggl.Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$AnimationHandleImpl_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/AnimationHandleImpl', 129, cggl.Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit);
 cggcc.$clinit_Callback = function $clinit_Callback(){
   cggcc.$clinit_Callback = emptyMethod;
 }
@@ -2044,11 +2045,11 @@ cggcc.CodeDownloadException = function CodeDownloadException(message){
   this.reason = (cggcc.$clinit_CodeDownloadException$Reason() , cggcc.TERMINATED);
 }
 ;
-defineClass(403, 11, $intern_8, cggcc.CodeDownloadException);
+defineClass(402, 11, $intern_8, cggcc.CodeDownloadException);
 _.$init_14 = function $init_14(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_CodeDownloadException_2_classLit = createForClass('com.google.gwt.core.client', 'CodeDownloadException', 403, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Lcom_google_gwt_core_client_CodeDownloadException_2_classLit = createForClass('com.google.gwt.core.client', 'CodeDownloadException', 402, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_Enum = function $clinit_Enum(){
   jl.$clinit_Enum = emptyMethod;
   jl.$clinit_Object();
@@ -2134,20 +2135,20 @@ cggcc.valueOf_0 = function valueOf_0(name_0){
 ;
 cggcc.values_0 = function values_0(){
   cggcc.$clinit_CodeDownloadException$Reason();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_core_client_CodeDownloadException$Reason_2_classLit, 1), $intern_6, 124, 0, [cggcc.TERMINATED]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_core_client_CodeDownloadException$Reason_2_classLit, 1), $intern_6, 125, 0, [cggcc.TERMINATED]);
 }
 ;
-defineClass(124, 5, {124:1, 3:1, 6:1, 5:1, 1:1}, cggcc.CodeDownloadException$Reason);
+defineClass(125, 5, {125:1, 3:1, 6:1, 5:1, 1:1}, cggcc.CodeDownloadException$Reason);
 _.$init_16 = function $init_16(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_CodeDownloadException$Reason_2_classLit = createForEnum('com.google.gwt.core.client', 'CodeDownloadException/Reason', 124, cggl.Ljava_lang_Enum_2_classLit, cggcc.values_0, cggcc.valueOf_0);
+cggl.Lcom_google_gwt_core_client_CodeDownloadException$Reason_2_classLit = createForEnum('com.google.gwt.core.client', 'CodeDownloadException/Reason', 125, cggl.Ljava_lang_Enum_2_classLit, cggcc.values_0, cggcc.valueOf_0);
 cggcc.$clinit_CodeDownloadException$Reason$Map = function $clinit_CodeDownloadException$Reason$Map(){
   cggcc.$clinit_CodeDownloadException$Reason$Map = emptyMethod;
   cggcc.$MAP = createValueOfMap(cggcc.values_0());
 }
 ;
-defineClass(776, 1, $intern_0);
+defineClass(781, 1, $intern_0);
 cggcc.$clinit_Duration = function $clinit_Duration(){
   cggcc.$clinit_Duration = emptyMethod;
   jl.$clinit_Object();
@@ -2168,7 +2169,7 @@ cggcc.uncheckedConversion = function uncheckedConversion(elapsed){
   return elapsed;
 }
 ;
-defineClass(143, 1, $intern_0, cggcc.Duration);
+defineClass(146, 1, $intern_0, cggcc.Duration);
 _.$init_17 = function $init_17(){
   this.start_0 = cggcc.currentTimeMillis();
 }
@@ -2182,7 +2183,7 @@ _.getStartMillis = function getStartMillis(){
 }
 ;
 _.start_0 = 0;
-cggl.Lcom_google_gwt_core_client_Duration_2_classLit = createForClass('com.google.gwt.core.client', 'Duration', 143, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_Duration_2_classLit = createForClass('com.google.gwt.core.client', 'Duration', 146, cggl.Ljava_lang_Object_2_classLit);
 cggcc.$clinit_EntryPoint = function $clinit_EntryPoint(){
   cggcc.$clinit_EntryPoint = emptyMethod;
 }
@@ -2260,11 +2261,11 @@ cggcci.JavaScriptExceptionBase = function JavaScriptExceptionBase(){
   this.$init_18();
 }
 ;
-defineClass(191, 11, $intern_8);
+defineClass(192, 11, $intern_8);
 _.$init_18 = function $init_18(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_JavaScriptExceptionBase_2_classLit = createForClass('com.google.gwt.core.client.impl', 'JavaScriptExceptionBase', 191, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_JavaScriptExceptionBase_2_classLit = createForClass('com.google.gwt.core.client.impl', 'JavaScriptExceptionBase', 192, cggl.Ljava_lang_RuntimeException_2_classLit);
 cggcc.$clinit_JavaScriptException = function $clinit_JavaScriptException(){
   cggcc.$clinit_JavaScriptException = emptyMethod;
   cggcci.$clinit_JavaScriptExceptionBase();
@@ -2315,7 +2316,7 @@ cggcc.getExceptionName0 = function getExceptionName0(e){
   return e == null?null:e.name;
 }
 ;
-defineClass(34, 191, {34:1, 3:1, 9:1, 1:1, 11:1, 12:1}, cggcc.JavaScriptException);
+defineClass(32, 192, {32:1, 3:1, 9:1, 1:1, 11:1, 12:1}, cggcc.JavaScriptException);
 _.$init_19 = function $init_19(){
   this.description = '';
 }
@@ -2348,7 +2349,7 @@ _.isThrownSet = function isThrownSet(){
   return maskUndefined(this.e) !== maskUndefined(cggcc.NOT_SET);
 }
 ;
-cggl.Lcom_google_gwt_core_client_JavaScriptException_2_classLit = createForClass('com.google.gwt.core.client', 'JavaScriptException', 34, cggl.Lcom_google_gwt_core_client_impl_JavaScriptExceptionBase_2_classLit);
+cggl.Lcom_google_gwt_core_client_JavaScriptException_2_classLit = createForClass('com.google.gwt.core.client', 'JavaScriptException', 32, cggl.Lcom_google_gwt_core_client_impl_JavaScriptExceptionBase_2_classLit);
 cggcc.$clinit_JsArray = function $clinit_JsArray(){
   cggcc.$clinit_JsArray = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -2425,11 +2426,31 @@ cggcc.now_1 = function now_1(){
   return (new Date).getTime();
 }
 ;
+cggcc.$clinit_JsonUtils = function $clinit_JsonUtils(){
+  cggcc.$clinit_JsonUtils = emptyMethod;
+  jl.$clinit_Object();
+}
+;
+cggcc.safeEval = function safeEval(json){
+  cggcc.$clinit_JsonUtils();
+  try {
+    return JSON.parse(json);
+  }
+   catch (e) {
+    return cggcc.throwIllegalArgumentException('Error parsing JSON: ' + e, json);
+  }
+}
+;
+cggcc.throwIllegalArgumentException = function throwIllegalArgumentException(message, data_0){
+  throw new jl.IllegalArgumentException_0(message + '\n' + data_0);
+}
+;
+defineClass(784, 1, $intern_0);
 cggcc.$clinit_RunAsyncCallback = function $clinit_RunAsyncCallback(){
   cggcc.$clinit_RunAsyncCallback = emptyMethod;
 }
 ;
-cggl.Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback', 105, null);
+cggl.Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback', 109, null);
 cggcc.$clinit_Scheduler = function $clinit_Scheduler(){
   cggcc.$clinit_Scheduler = emptyMethod;
   jl.$clinit_Object();
@@ -2446,11 +2467,11 @@ cggcc.get_1 = function get_1(){
   return cggcci.$clinit_SchedulerImpl() , cggcci.INSTANCE;
 }
 ;
-defineClass(158, 1, $intern_0);
+defineClass(159, 1, $intern_0);
 _.$init_20 = function $init_20(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 158, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 159, cggl.Ljava_lang_Object_2_classLit);
 cggcc.$clinit_Scheduler$RepeatingCommand = function $clinit_Scheduler$RepeatingCommand(){
   cggcc.$clinit_Scheduler$RepeatingCommand = emptyMethod;
 }
@@ -2546,7 +2567,7 @@ cggcc.nativeTopWindow = function nativeTopWindow(){
   return $wnd;
 }
 ;
-defineClass(541, 1, $intern_0);
+defineClass(550, 1, $intern_0);
 cggcc.$clinit_ScriptInjector$FromString = function $clinit_ScriptInjector$FromString(){
   cggcc.$clinit_ScriptInjector$FromString = emptyMethod;
   jl.$clinit_Object();
@@ -2559,7 +2580,7 @@ cggcc.ScriptInjector$FromString = function ScriptInjector$FromString(scriptBody)
   this.scriptBody = scriptBody;
 }
 ;
-defineClass(241, 1, $intern_0, cggcc.ScriptInjector$FromString);
+defineClass(250, 1, $intern_0, cggcc.ScriptInjector$FromString);
 _.$init_21 = function $init_21(){
   this.removeTag = true;
 }
@@ -2583,7 +2604,7 @@ _.setWindow = function setWindow(window_0){
 }
 ;
 _.removeTag = false;
-cggl.Lcom_google_gwt_core_client_ScriptInjector$FromString_2_classLit = createForClass('com.google.gwt.core.client', 'ScriptInjector/FromString', 241, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_ScriptInjector$FromString_2_classLit = createForClass('com.google.gwt.core.client', 'ScriptInjector/FromString', 250, cggl.Ljava_lang_Object_2_classLit);
 cggcc.$clinit_ScriptInjector$FromUrl = function $clinit_ScriptInjector$FromUrl(){
   cggcc.$clinit_ScriptInjector$FromUrl = emptyMethod;
   jl.$clinit_Object();
@@ -2596,7 +2617,7 @@ cggcc.ScriptInjector$FromUrl = function ScriptInjector$FromUrl(scriptUrl){
   this.scriptUrl = scriptUrl;
 }
 ;
-defineClass(242, 1, $intern_0, cggcc.ScriptInjector$FromUrl);
+defineClass(251, 1, $intern_0, cggcc.ScriptInjector$FromUrl);
 _.$init_22 = function $init_22(){
   this.removeTag = false;
 }
@@ -2630,7 +2651,7 @@ _.setWindow_0 = function setWindow_0(window_0){
 }
 ;
 _.removeTag = false;
-cggl.Lcom_google_gwt_core_client_ScriptInjector$FromUrl_2_classLit = createForClass('com.google.gwt.core.client', 'ScriptInjector/FromUrl', 242, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_ScriptInjector$FromUrl_2_classLit = createForClass('com.google.gwt.core.client', 'ScriptInjector/FromUrl', 251, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader = function $clinit_AsyncFragmentLoader(){
   cggcci.$clinit_AsyncFragmentLoader = emptyMethod;
   jl.$clinit_Object();
@@ -2650,12 +2671,12 @@ function AsyncFragmentLoader(numEntries, initialLoadSequence, loadingStrategy, l
   this.allCallbacks = initDim(cggl.Ljava_lang_Object_2_classLit, $intern_6, 4, numEntriesPlusOne, 0, 2);
   this.requestedExclusives = new cggcci.AsyncFragmentLoader$BoundedIntQueue(numEntriesPlusOne);
   this.isLoaded = initDim(cggl.Z_classLit, $intern_11, 0, numEntriesPlusOne, 8, 1);
-  this.pendingDownloadErrorHandlers = initDim(cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit, $intern_6, 91, numEntriesPlusOne, 0, 1);
+  this.pendingDownloadErrorHandlers = initDim(cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit, $intern_6, 92, numEntriesPlusOne, 0, 1);
 }
 
 cggcci.makeBrowserLoader = function makeBrowserLoader(numFragments, initialLoad){
   if (isClient()) {
-    return new AsyncFragmentLoader(numFragments, initialLoad, dynamicCast(dynamicCast(new cggcci.ScriptTagLoadingStrategy, 128), 128), dynamicCast(dynamicCast(new cggcci.AsyncFragmentLoader$StandardLogger, 161), 161), dynamicCast(dynamicCast(new cggcci.OnSuccessExecutor, 90), 90));
+    return new AsyncFragmentLoader(numFragments, initialLoad, dynamicCast(dynamicCast(new cggcci.ScriptTagLoadingStrategy, 131), 131), dynamicCast(dynamicCast(new cggcci.AsyncFragmentLoader$StandardLogger, 162), 162), dynamicCast(dynamicCast(new cggcci.OnSuccessExecutor, 91), 91));
   }
    else {
     return null;
@@ -2670,7 +2691,7 @@ function runAsync(fragment, callback){
   cggcci.BROWSER_LOADER.runAsyncImpl(fragment, callback);
 }
 
-defineClass(162, 1, $intern_0, AsyncFragmentLoader);
+defineClass(163, 1, $intern_0, AsyncFragmentLoader);
 _.$init_23 = function $init_23(){
   this.fragmentLoading = -1;
   this.prefetching = false;
@@ -2802,7 +2823,7 @@ _.onLoadImpl = function onLoadImpl(fragment){
     for (callback$array = callbacks , callback$index = 0 , callback$max = callback$array.length; callback$index < callback$max; ++callback$index) {
       callback = callback$array[callback$index];
       try {
-        dynamicCast(callback, 105).onSuccess_1();
+        dynamicCast(callback, 109).onSuccess_1();
       }
        catch ($e0) {
         $e0 = wrap($e0);
@@ -2826,7 +2847,7 @@ _.runAsyncImpl = function runAsyncImpl(fragment, callback){
   }
   callbacks = this.allCallbacks[fragment];
   if (jsEquals(callbacks, null)) {
-    callbacks = setCheck(this.allCallbacks, fragment, initDim(cggl.Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit, $intern_6, 105, 0, 0, 1));
+    callbacks = setCheck(this.allCallbacks, fragment, initDim(cggl.Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit, $intern_6, 109, 0, 0, 1));
   }
   setCheck(callbacks, callbacks.length, callback);
   if (!this.isLoading(fragment)) {
@@ -2866,7 +2887,7 @@ _.startLoadingNextFragment = function startLoadingNextFragment(){
 _.fragmentLoading = 0;
 _.numEntries = 0;
 _.prefetching = false;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader', 162, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader', 163, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader$1 = function $clinit_AsyncFragmentLoader$1(){
   cggcci.$clinit_AsyncFragmentLoader$1 = emptyMethod;
   jl.$clinit_Object();
@@ -2880,7 +2901,7 @@ cggcci.AsyncFragmentLoader$1 = function AsyncFragmentLoader$1(this$0, val$fragme
   this.$init_24();
 }
 ;
-defineClass(163, 1, {91:1, 1:1}, cggcci.AsyncFragmentLoader$1);
+defineClass(164, 1, {92:1, 1:1}, cggcci.AsyncFragmentLoader$1);
 _.$init_24 = function $init_24(){
 }
 ;
@@ -2891,13 +2912,13 @@ _.loadTerminated = function loadTerminated(reason){
     setCheck(this.this$01.allCallbacks, this.val$fragment2, null);
     for (callback$array = callbacks , callback$index = 0 , callback$max = callback$array.length; callback$index < callback$max; ++callback$index) {
       callback = callback$array[callback$index];
-      dynamicCast(callback, 105).onFailure_1(reason);
+      dynamicCast(callback, 109).onFailure_1(reason);
     }
   }
 }
 ;
 _.val$fragment2 = 0;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$1_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/1', 163, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$1_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/1', 164, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader$BoundedIntQueue = function $clinit_AsyncFragmentLoader$BoundedIntQueue(){
   cggcci.$clinit_AsyncFragmentLoader$BoundedIntQueue = emptyMethod;
   jl.$clinit_Object();
@@ -2910,7 +2931,7 @@ cggcci.AsyncFragmentLoader$BoundedIntQueue = function AsyncFragmentLoader$Bounde
   this.array = initDim(cggl.I_classLit, $intern_10, 0, maxPuts, 7, 1);
 }
 ;
-defineClass(129, 1, $intern_0, cggcci.AsyncFragmentLoader$BoundedIntQueue);
+defineClass(132, 1, $intern_0, cggcci.AsyncFragmentLoader$BoundedIntQueue);
 _.$init_25 = function $init_25(){
   this.read = 0;
   this.write_0 = 0;
@@ -2939,7 +2960,7 @@ _.size_1 = function size_1(){
 ;
 _.read = 0;
 _.write_0 = 0;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$BoundedIntQueue_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/BoundedIntQueue', 129, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$BoundedIntQueue_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/BoundedIntQueue', 132, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader$HttpDownloadFailure = function $clinit_AsyncFragmentLoader$HttpDownloadFailure(){
   cggcci.$clinit_AsyncFragmentLoader$HttpDownloadFailure = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -2952,7 +2973,7 @@ cggcci.AsyncFragmentLoader$HttpDownloadFailure = function AsyncFragmentLoader$Ht
   this.statusCode = statusCode;
 }
 ;
-defineClass(165, 11, $intern_8, cggcci.AsyncFragmentLoader$HttpDownloadFailure);
+defineClass(166, 11, $intern_8, cggcci.AsyncFragmentLoader$HttpDownloadFailure);
 _.$init_26 = function $init_26(){
 }
 ;
@@ -2961,7 +2982,7 @@ _.getStatusCode = function getStatusCode(){
 }
 ;
 _.statusCode = 0;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$HttpDownloadFailure_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/HttpDownloadFailure', 165, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$HttpDownloadFailure_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/HttpDownloadFailure', 166, cggl.Ljava_lang_RuntimeException_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader$HttpInstallFailure = function $clinit_AsyncFragmentLoader$HttpInstallFailure(){
   cggcci.$clinit_AsyncFragmentLoader$HttpInstallFailure = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -2973,16 +2994,16 @@ cggcci.AsyncFragmentLoader$HttpInstallFailure = function AsyncFragmentLoader$Htt
   this.$init_27();
 }
 ;
-defineClass(166, 11, $intern_8, cggcci.AsyncFragmentLoader$HttpInstallFailure);
+defineClass(167, 11, $intern_8, cggcci.AsyncFragmentLoader$HttpInstallFailure);
 _.$init_27 = function $init_27(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$HttpInstallFailure_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/HttpInstallFailure', 166, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$HttpInstallFailure_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/HttpInstallFailure', 167, cggl.Ljava_lang_RuntimeException_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader$LoadTerminatedHandler = function $clinit_AsyncFragmentLoader$LoadTerminatedHandler(){
   cggcci.$clinit_AsyncFragmentLoader$LoadTerminatedHandler = emptyMethod;
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler', 91, null);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler', 92, null);
 cggcci.$clinit_AsyncFragmentLoader$LoadingStrategy = function $clinit_AsyncFragmentLoader$LoadingStrategy(){
   cggcci.$clinit_AsyncFragmentLoader$LoadingStrategy = emptyMethod;
 }
@@ -3018,7 +3039,7 @@ cggcci.AsyncFragmentLoader$ResetAfterDownloadFailure = function AsyncFragmentLoa
   this.fragment_0 = myFragment;
 }
 ;
-defineClass(164, 1, {91:1, 1:1}, cggcci.AsyncFragmentLoader$ResetAfterDownloadFailure);
+defineClass(165, 1, {92:1, 1:1}, cggcci.AsyncFragmentLoader$ResetAfterDownloadFailure);
 _.$init_28 = function $init_28(){
 }
 ;
@@ -3028,7 +3049,7 @@ _.loadTerminated = function loadTerminated_0(reason){
     return;
   }
   handlersToRun = this.this$01.pendingDownloadErrorHandlers;
-  this.this$01.pendingDownloadErrorHandlers = initDim(cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit, $intern_6, 91, this.this$01.numEntries + 1, 0, 1);
+  this.this$01.pendingDownloadErrorHandlers = initDim(cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit, $intern_6, 92, this.this$01.numEntries + 1, 0, 1);
   this.this$01.requestedExclusives.clear_0();
   this.this$01.fragmentLoading = -1;
   lastException = null;
@@ -3055,7 +3076,7 @@ _.loadTerminated = function loadTerminated_0(reason){
 }
 ;
 _.fragment_0 = 0;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$ResetAfterDownloadFailure_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/ResetAfterDownloadFailure', 164, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$ResetAfterDownloadFailure_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/ResetAfterDownloadFailure', 165, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_AsyncFragmentLoader$StandardLogger = function $clinit_AsyncFragmentLoader$StandardLogger(){
   cggcci.$clinit_AsyncFragmentLoader$StandardLogger = emptyMethod;
   jl.$clinit_Object();
@@ -3071,7 +3092,7 @@ cggcci.stats = function stats(data_0){
   return $stats(data_0);
 }
 ;
-defineClass(160, 1, {161:1, 1:1}, cggcci.AsyncFragmentLoader$StandardLogger);
+defineClass(161, 1, {162:1, 1:1}, cggcci.AsyncFragmentLoader$StandardLogger);
 _.$init_29 = function $init_29(){
 }
 ;
@@ -3095,7 +3116,7 @@ _.logEventProgress_1 = function logEventProgress_1(eventGroup, type_0, fragment,
   toss = this.isStatsAvailable() && cggcci.stats(this.createStatsEvent(eventGroup, type_0, fragment, size_0));
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$StandardLogger_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/StandardLogger', 160, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$StandardLogger_2_classLit = createForClass('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/StandardLogger', 161, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_Coercions = function $clinit_Coercions(){
   cggcci.$clinit_Coercions = emptyMethod;
   jl.$clinit_Object();
@@ -3106,7 +3127,7 @@ cggcci.ensureInt = function ensureInt(value_0){
   return ~~value_0;
 }
 ;
-defineClass(511, 1, $intern_0);
+defineClass(520, 1, $intern_0);
 cggcci.$clinit_Impl = function $clinit_Impl(){
   cggcci.$clinit_Impl = emptyMethod;
   jl.$clinit_Object();
@@ -3236,7 +3257,7 @@ cggcci.reportToBrowser = function reportToBrowser(e){
 }
 ;
 cggcci.reportToBrowser_0 = function reportToBrowser_0(e){
-  cggcci.reportToBrowser(instanceOf(e, 34)?dynamicCast(e, 34).getThrown():e);
+  cggcci.reportToBrowser(instanceOf(e, 32)?dynamicCast(e, 32).getThrown():e);
 }
 ;
 function reportUncaughtException_0(e){
@@ -3312,7 +3333,7 @@ cggcci.gwtStartLoadingFragment = function gwtStartLoadingFragment(fragment, load
   return __gwtStartLoadingFragment(fragment, $entry(loadFailed));
 }
 ;
-defineClass(200, 1, $intern_12);
+defineClass(202, 1, $intern_12);
 _.$init_30 = function $init_30(){
   this.manualRetryNumbers = cggcci.create_0();
 }
@@ -3344,7 +3365,7 @@ _.startLoadingFragment_0 = function startLoadingFragment_0(fragment, loadErrorHa
 }
 ;
 cggcci.MAX_AUTO_RETRY_COUNT = 3;
-cggl.Lcom_google_gwt_core_client_impl_LoadingStrategyBase_2_classLit = createForClass('com.google.gwt.core.client.impl', 'LoadingStrategyBase', 200, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_LoadingStrategyBase_2_classLit = createForClass('com.google.gwt.core.client.impl', 'LoadingStrategyBase', 202, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_LoadingStrategyBase$DownloadStrategy = function $clinit_LoadingStrategyBase$DownloadStrategy(){
   cggcci.$clinit_LoadingStrategyBase$DownloadStrategy = emptyMethod;
 }
@@ -3387,7 +3408,7 @@ cggcci.LoadingStrategyBase$RequestData = function LoadingStrategyBase$RequestDat
   this.downloadStrategy = downloadStrategy;
 }
 ;
-defineClass(203, 1, $intern_0, cggcci.LoadingStrategyBase$RequestData);
+defineClass(205, 1, $intern_0, cggcci.LoadingStrategyBase$RequestData);
 _.$init_31 = function $init_31(){
   this.errorHandler = null;
 }
@@ -3442,7 +3463,7 @@ _.fragment_0 = 0;
 _.maxRetryCount = 0;
 _.retryCount = 0;
 cggcci.MAX_LOG_LENGTH = 200;
-cggl.Lcom_google_gwt_core_client_impl_LoadingStrategyBase$RequestData_2_classLit = createForClass('com.google.gwt.core.client.impl', 'LoadingStrategyBase/RequestData', 203, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_LoadingStrategyBase$RequestData_2_classLit = createForClass('com.google.gwt.core.client.impl', 'LoadingStrategyBase/RequestData', 205, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_OnSuccessExecutor = function $clinit_OnSuccessExecutor(){
   cggcci.$clinit_OnSuccessExecutor = emptyMethod;
   jl.$clinit_Object();
@@ -3454,7 +3475,7 @@ cggcci.OnSuccessExecutor = function OnSuccessExecutor(){
   this.$init_32();
 }
 ;
-defineClass(90, 1, {90:1, 1:1}, cggcci.OnSuccessExecutor);
+defineClass(91, 1, {91:1, 1:1}, cggcci.OnSuccessExecutor);
 _.$init_32 = function $init_32(){
 }
 ;
@@ -3462,7 +3483,7 @@ _.execute_3 = function execute_0(fragmentLoader, callback){
   cggcc.get_1().scheduleDeferred(new cggcci.OnSuccessExecutor$1(this, fragmentLoader, callback));
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_OnSuccessExecutor_2_classLit = createForClass('com.google.gwt.core.client.impl', 'OnSuccessExecutor', 90, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_OnSuccessExecutor_2_classLit = createForClass('com.google.gwt.core.client.impl', 'OnSuccessExecutor', 91, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_OnSuccessExecutor$1 = function $clinit_OnSuccessExecutor$1(){
   cggcci.$clinit_OnSuccessExecutor$1 = emptyMethod;
   jl.$clinit_Object();
@@ -3477,7 +3498,7 @@ cggcci.OnSuccessExecutor$1 = function OnSuccessExecutor$1(this$0, val$fragmentLo
   this.$init_33();
 }
 ;
-defineClass(204, 1, $intern_0, cggcci.OnSuccessExecutor$1);
+defineClass(206, 1, $intern_0, cggcci.OnSuccessExecutor$1);
 _.$init_33 = function $init_33(){
 }
 ;
@@ -3485,11 +3506,11 @@ _.execute_2 = function execute_1(){
   this.val$fragmentLoader2.executeOnSuccess0(this.val$callback3);
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_OnSuccessExecutor$1_2_classLit = createForClass('com.google.gwt.core.client.impl', 'OnSuccessExecutor/1', 204, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_OnSuccessExecutor$1_2_classLit = createForClass('com.google.gwt.core.client.impl', 'OnSuccessExecutor/1', 206, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_SchedulerImpl = function $clinit_SchedulerImpl(){
   cggcci.$clinit_SchedulerImpl = emptyMethod;
   cggcc.$clinit_Scheduler();
-  cggcci.INSTANCE = dynamicCast(new cggcci.SchedulerImpl, 113);
+  cggcci.INSTANCE = dynamicCast(new cggcci.SchedulerImpl, 117);
 }
 ;
 cggcci.SchedulerImpl = function SchedulerImpl(){
@@ -3554,7 +3575,7 @@ cggcci.scheduleFixedDelayImpl = function scheduleFixedDelayImpl(cmd, delayMs){
   $wnd.setTimeout(callback, delayMs);
 }
 ;
-defineClass(113, 158, {113:1, 1:1}, cggcci.SchedulerImpl);
+defineClass(117, 159, {117:1, 1:1}, cggcci.SchedulerImpl);
 _.$init_34 = function $init_34(){
   this.flushRunning = false;
   this.shouldBeRunning = false;
@@ -3678,7 +3699,7 @@ _.shouldBeRunning = false;
 cggcci.FLUSHER_DELAY = 1;
 cggcci.RESCUE_DELAY = 50;
 cggcci.TIME_SLICE = 16;
-cggl.Lcom_google_gwt_core_client_impl_SchedulerImpl_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl', 113, cggl.Lcom_google_gwt_core_client_Scheduler_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_SchedulerImpl_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl', 117, cggl.Lcom_google_gwt_core_client_Scheduler_2_classLit);
 cggcci.$clinit_SchedulerImpl$Flusher = function $clinit_SchedulerImpl$Flusher(){
   cggcci.$clinit_SchedulerImpl$Flusher = emptyMethod;
   jl.$clinit_Object();
@@ -3691,7 +3712,7 @@ cggcci.SchedulerImpl$Flusher = function SchedulerImpl$Flusher(this$0){
   this.$init_35();
 }
 ;
-defineClass(277, 1, $intern_0, cggcci.SchedulerImpl$Flusher);
+defineClass(286, 1, $intern_0, cggcci.SchedulerImpl$Flusher);
 _.$init_35 = function $init_35(){
 }
 ;
@@ -3702,7 +3723,7 @@ _.execute_1 = function execute_3(){
   return this.this$01.shouldBeRunning = this.this$01.isWorkQueued();
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_SchedulerImpl$Flusher_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl/Flusher', 277, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_SchedulerImpl$Flusher_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl/Flusher', 286, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_SchedulerImpl$Rescuer = function $clinit_SchedulerImpl$Rescuer(){
   cggcci.$clinit_SchedulerImpl$Rescuer = emptyMethod;
   jl.$clinit_Object();
@@ -3715,7 +3736,7 @@ cggcci.SchedulerImpl$Rescuer = function SchedulerImpl$Rescuer(this$0){
   this.$init_36();
 }
 ;
-defineClass(278, 1, $intern_0, cggcci.SchedulerImpl$Rescuer);
+defineClass(287, 1, $intern_0, cggcci.SchedulerImpl$Rescuer);
 _.$init_36 = function $init_36(){
 }
 ;
@@ -3726,7 +3747,7 @@ _.execute_1 = function execute_4(){
   return this.this$01.shouldBeRunning;
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_SchedulerImpl$Rescuer_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl/Rescuer', 278, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_SchedulerImpl$Rescuer_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl/Rescuer', 287, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_SchedulerImpl$Task = function $clinit_SchedulerImpl$Task(){
   cggcci.$clinit_SchedulerImpl$Task = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -3804,11 +3825,11 @@ cggcci.setAsyncCallback = function setAsyncCallback(fragment, request){
   );
 }
 ;
-defineClass(159, 200, $intern_12, cggcci.ScriptTagLoadingStrategy);
+defineClass(160, 202, $intern_12, cggcci.ScriptTagLoadingStrategy);
 _.$init_37 = function $init_37(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_ScriptTagLoadingStrategy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'ScriptTagLoadingStrategy', 159, cggl.Lcom_google_gwt_core_client_impl_LoadingStrategyBase_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_ScriptTagLoadingStrategy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'ScriptTagLoadingStrategy', 160, cggl.Lcom_google_gwt_core_client_impl_LoadingStrategyBase_2_classLit);
 cggcci.$clinit_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy = function $clinit_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy(){
   cggcci.$clinit_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy = emptyMethod;
   jl.$clinit_Object();
@@ -3820,7 +3841,7 @@ cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy = function ScriptTagLo
   this.$init_38();
 }
 ;
-defineClass(201, 1, $intern_0, cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy);
+defineClass(203, 1, $intern_0, cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy);
 _.$init_38 = function $init_38(){
 }
 ;
@@ -3829,7 +3850,7 @@ _.tryDownload = function tryDownload_0(request){
   cggcc.fromUrl(request.getUrl()).setRemoveTag(true).setCallback(new cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1(this, request)).inject();
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'ScriptTagLoadingStrategy/ScriptTagDownloadStrategy', 201, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'ScriptTagLoadingStrategy/ScriptTagDownloadStrategy', 203, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1 = function $clinit_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1(){
   cggcci.$clinit_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1 = emptyMethod;
   jl.$clinit_Object();
@@ -3843,7 +3864,7 @@ cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1 = function ScriptTag
   this.$init_39();
 }
 ;
-defineClass(202, 1, $intern_13, cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1);
+defineClass(204, 1, $intern_13, cggcci.ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1);
 _.$init_39 = function $init_39(){
 }
 ;
@@ -3856,14 +3877,14 @@ _.onFailure_0 = function onFailure_0(reason){
 }
 ;
 _.onSuccess_0 = function onSuccess_0(result){
-  this.onSuccess_2(dynamicCast(result, 368));
+  this.onSuccess_2(dynamicCast(result, 369));
 }
 ;
 _.onSuccess_2 = function onSuccess_1(result){
   cggcci.cleanup(this.val$request2);
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1_2_classLit = createForClass('com.google.gwt.core.client.impl', 'ScriptTagLoadingStrategy/ScriptTagDownloadStrategy/1', 202, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1_2_classLit = createForClass('com.google.gwt.core.client.impl', 'ScriptTagLoadingStrategy/ScriptTagDownloadStrategy/1', 204, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_StackTraceCreator = function $clinit_StackTraceCreator(){
   cggcci.$clinit_StackTraceCreator = emptyMethod;
   var c, enforceLegacy;
@@ -3871,8 +3892,8 @@ cggcci.$clinit_StackTraceCreator = function $clinit_StackTraceCreator(){
   cggcci.LINE_NUMBER_UNKNOWN = -1;
   {
     enforceLegacy = !cggcci.supportsErrorStack();
-    c = dynamicCast(new cggcci.StackTraceCreator$CollectorModern, 73);
-    cggcci.collector = instanceOf(c, 74) && enforceLegacy?new cggcci.StackTraceCreator$CollectorLegacy:c;
+    c = dynamicCast(new cggcci.StackTraceCreator$CollectorModernNoSourceMap, 93);
+    cggcci.collector = instanceOf(c, 94) && enforceLegacy?new cggcci.StackTraceCreator$CollectorLegacy:c;
   }
 }
 ;
@@ -3894,7 +3915,7 @@ cggcci.dropInternalFrames = function dropInternalFrames(stackTrace){
   numberOfFrameToSearch = jl.min_0(stackTrace.length, 5);
   for (i_0 = 0; i_0 < numberOfFrameToSearch; i_0++) {
     if (jl.equals_Ljava_lang_Object__Z__devirtual$_0(stackTrace[i_0].getMethodName(), dropFrameUntilFnName)) {
-      return dynamicCast(cggcci.splice(stackTrace, i_0 + 1), 367);
+      return dynamicCast(cggcci.splice(stackTrace, i_0 + 1), 368);
     }
   }
   return stackTrace;
@@ -3952,16 +3973,16 @@ cggcci.StackTraceCreator$Collector = function StackTraceCreator$Collector(){
   this.$init_40();
 }
 ;
-defineClass(73, 1, $intern_0);
+defineClass(93, 1, $intern_0);
 _.$init_40 = function $init_40(){
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 73, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 93, cggl.Ljava_lang_Object_2_classLit);
 cggcci.$clinit_StackTraceCreator$CollectorEmulated = function $clinit_StackTraceCreator$CollectorEmulated(){
   cggcci.$clinit_StackTraceCreator$CollectorEmulated = emptyMethod;
 }
 ;
-defineClass(481, 73, $intern_0);
+defineClass(481, 93, $intern_0);
 cggcci.$clinit_StackTraceCreator$CollectorLegacy = function $clinit_StackTraceCreator$CollectorLegacy(){
   cggcci.$clinit_StackTraceCreator$CollectorLegacy = emptyMethod;
   cggcci.$clinit_StackTraceCreator$Collector();
@@ -3973,7 +3994,7 @@ cggcci.StackTraceCreator$CollectorLegacy = function StackTraceCreator$CollectorL
   this.$init_41();
 }
 ;
-defineClass(192, 73, $intern_0, cggcci.StackTraceCreator$CollectorLegacy);
+defineClass(193, 93, $intern_0, cggcci.StackTraceCreator$CollectorLegacy);
 _.$init_41 = function $init_41(){
 }
 ;
@@ -4003,14 +4024,14 @@ _.getStackTrace_0 = function getStackTrace_0(t){
   var i_0, length_0, stack_0, stackTrace;
   stack_0 = cggcci.getFnStack(t);
   length_0 = cggcc.$length_1(stack_0);
-  stackTrace = initDim(cggl.Ljava_lang_StackTraceElement_2_classLit, $intern_14, 39, length_0, 0, 1);
+  stackTrace = initDim(cggl.Ljava_lang_StackTraceElement_2_classLit, $intern_14, 37, length_0, 0, 1);
   for (i_0 = 0; i_0 < length_0; i_0++) {
     stackTrace[i_0] = new jl.StackTraceElement('Unknown', cggcc.$get_0(stack_0, i_0), null, -1);
   }
   return stackTrace;
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorLegacy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorLegacy', 192, cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorLegacy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorLegacy', 193, cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit);
 cggcci.$clinit_StackTraceCreator$CollectorModern = function $clinit_StackTraceCreator$CollectorModern(){
   cggcci.$clinit_StackTraceCreator$CollectorModern = emptyMethod;
   cggcci.$clinit_StackTraceCreator$Collector();
@@ -4029,7 +4050,7 @@ cggcci.increaseStackTraceLimit = function increaseStackTraceLimit(){
   Error.stackTraceLimit = 64;
 }
 ;
-defineClass(74, 73, $intern_15, cggcci.StackTraceCreator$CollectorModern);
+defineClass(94, 93, {94:1, 1:1});
 _.$init_42 = function $init_42(){
 }
 ;
@@ -4065,7 +4086,7 @@ _.createSte = function createSte(fileName, method, line, col){
 _.getStackTrace_0 = function getStackTrace_1(t){
   var addIndex, i_0, length_0, stack_0, stackTrace, ste;
   stack_0 = cggcci.split_0(t);
-  stackTrace = initDim(cggl.Ljava_lang_StackTraceElement_2_classLit, $intern_14, 39, 0, 0, 1);
+  stackTrace = initDim(cggl.Ljava_lang_StackTraceElement_2_classLit, $intern_14, 37, 0, 0, 1);
   addIndex = 0;
   length_0 = cggcc.$length_1(stack_0);
   if (length_0 == 0) {
@@ -4134,18 +4155,19 @@ _.stripSquareBrackets = function stripSquareBrackets(toReturn){
   return toReturn.replace(/\[.*?\]/g, '');
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 74, cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 94, cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit);
 cggcci.$clinit_StackTraceCreator$CollectorModernNoSourceMap = function $clinit_StackTraceCreator$CollectorModernNoSourceMap(){
   cggcci.$clinit_StackTraceCreator$CollectorModernNoSourceMap = emptyMethod;
   cggcci.$clinit_StackTraceCreator$CollectorModern();
 }
 ;
 cggcci.StackTraceCreator$CollectorModernNoSourceMap = function StackTraceCreator$CollectorModernNoSourceMap(){
+  cggcci.$clinit_StackTraceCreator$CollectorModernNoSourceMap();
   cggcci.StackTraceCreator$CollectorModern.call(this);
   this.$init_43();
 }
 ;
-defineClass(381, 74, $intern_15);
+defineClass(194, 94, {93:1, 94:1, 1:1}, cggcci.StackTraceCreator$CollectorModernNoSourceMap);
 _.$init_43 = function $init_43(){
 }
 ;
@@ -4153,12 +4175,12 @@ _.createSte = function createSte_0(fileName, method, line, col){
   return new jl.StackTraceElement('Unknown', method, fileName, -1);
 }
 ;
-cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModernNoSourceMap_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModernNoSourceMap', 381, cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit);
+cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModernNoSourceMap_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModernNoSourceMap', 194, cggl.Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit);
 cggcci.$clinit_StackTraceCreator$CollectorNull = function $clinit_StackTraceCreator$CollectorNull(){
   cggcci.$clinit_StackTraceCreator$CollectorNull = emptyMethod;
 }
 ;
-defineClass(482, 73, $intern_0);
+defineClass(482, 93, $intern_0);
 cggccp.$clinit_PrefetchableResource = function $clinit_PrefetchableResource(){
   cggccp.$clinit_PrefetchableResource = emptyMethod;
 }
@@ -4173,7 +4195,7 @@ cggcs.$clinit_GWT_0 = function $clinit_GWT_0(){
   jl.$clinit_Object();
   {
     if (cggcs.isScript_0()) {
-      cggcs.logger_0 = dynamicCast(new cggcsi.JsLogger, 114);
+      cggcs.logger_0 = dynamicCast(new cggcsi.JsLogger, 118);
     }
      else {
       cggcs.logger_0 = null;
@@ -4199,13 +4221,13 @@ cggcs.log_2 = function log_2(message, e){
   }
 }
 ;
-defineClass(537, 1, $intern_0);
+defineClass(546, 1, $intern_0);
 cggcs.sGWTBridge = null;
 cggcs.$clinit_GWTBridge = function $clinit_GWTBridge(){
   cggcs.$clinit_GWTBridge = emptyMethod;
 }
 ;
-defineClass(690, 1, $intern_0);
+defineClass(699, 1, $intern_0);
 cggcsi.$clinit_InternalPreconditions = function $clinit_InternalPreconditions(){
   cggcsi.$clinit_InternalPreconditions = emptyMethod;
   jl.$clinit_Object();
@@ -4343,14 +4365,14 @@ cggcsi.JsLogger = function JsLogger(){
   this.$init_44();
 }
 ;
-defineClass(114, 1, {114:1, 1:1}, cggcsi.JsLogger);
+defineClass(118, 1, {118:1, 1:1}, cggcsi.JsLogger);
 _.$init_44 = function $init_44(){
 }
 ;
 _.log_0 = function log_3(message, e){
 }
 ;
-cggl.Lcom_google_gwt_core_shared_impl_JsLogger_2_classLit = createForClass('com.google.gwt.core.shared.impl', 'JsLogger', 114, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_core_shared_impl_JsLogger_2_classLit = createForClass('com.google.gwt.core.shared.impl', 'JsLogger', 118, cggl.Ljava_lang_Object_2_classLit);
 cggdc.$clinit_Node = function $clinit_Node(){
   cggdc.$clinit_Node = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -4743,7 +4765,7 @@ cggdc.TAG = 'body';
 cggdc.$clinit_DOMImpl = function $clinit_DOMImpl(){
   cggdc.$clinit_DOMImpl = emptyMethod;
   jl.$clinit_Object();
-  cggdc.impl_0 = dynamicCast(new cggdc.DOMImplWebkit, 32);
+  cggdc.impl_0 = dynamicCast(new cggdc.DOMImplMozilla, 30);
 }
 ;
 cggdc.DOMImpl = function DOMImpl(){
@@ -4757,7 +4779,7 @@ cggdc.toInt32_0 = function toInt32_0(val){
   return val | 0;
 }
 ;
-defineClass(32, 1, $intern_0);
+defineClass(30, 1, $intern_0);
 _.$init_45 = function $init_45(){
 }
 ;
@@ -4921,7 +4943,7 @@ _.toString_0 = function toString_4(elem){
   return elem.outerHTML;
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImpl_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImpl', 32, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImpl_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImpl', 30, cggl.Ljava_lang_Object_2_classLit);
 cggdc.$clinit_DOMImplTrident = function $clinit_DOMImplTrident(){
   cggdc.$clinit_DOMImplTrident = emptyMethod;
   cggdc.$clinit_DOMImpl();
@@ -4952,7 +4974,7 @@ cggdc.isOrHasChildImpl = function isOrHasChildImpl(parent_0, child){
   }
 }
 ;
-defineClass(313, 32, $intern_0);
+defineClass(307, 30, $intern_0);
 _.$init_46 = function $init_46(){
 }
 ;
@@ -5106,7 +5128,7 @@ _.setInnerText = function setInnerText_0(elem, text_0){
   elem.innerText = text_0 || '';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplTrident_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplTrident', 313, cggl.Lcom_google_gwt_dom_client_DOMImpl_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplTrident_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplTrident', 307, cggl.Lcom_google_gwt_dom_client_DOMImpl_2_classLit);
 cggdc.$clinit_DOMImplIE8 = function $clinit_DOMImplIE8(){
   cggdc.$clinit_DOMImplIE8 = emptyMethod;
   cggdc.$clinit_DOMImplTrident();
@@ -5117,7 +5139,7 @@ cggdc.DOMImplIE8 = function DOMImplIE8(){
   this.$init_47();
 }
 ;
-defineClass(397, 313, $intern_0);
+defineClass(395, 307, $intern_0);
 _.$init_47 = function $init_47(){
 }
 ;
@@ -5135,12 +5157,12 @@ _.getAbsoluteTop = function getAbsoluteTop_0(elem){
 ;
 _.getScrollLeft_0 = function getScrollLeft_1(elem){
   if (this.isRTL(elem)) {
-    return -getClassPrototype(32).getScrollLeft_0.call(this, elem);
+    return -getClassPrototype(30).getScrollLeft_0.call(this, elem);
   }
-  return getClassPrototype(32).getScrollLeft_0.call(this, elem);
+  return getClassPrototype(30).getScrollLeft_0.call(this, elem);
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplIE8_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplIE8', 397, cggl.Lcom_google_gwt_dom_client_DOMImplTrident_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplIE8_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplIE8', 395, cggl.Lcom_google_gwt_dom_client_DOMImplTrident_2_classLit);
 cggdc.$clinit_DOMImplStandard = function $clinit_DOMImplStandard(){
   cggdc.$clinit_DOMImplStandard = emptyMethod;
   cggdc.$clinit_DOMImpl();
@@ -5152,7 +5174,7 @@ cggdc.DOMImplStandard = function DOMImplStandard(){
   this.$init_48();
 }
 ;
-defineClass(147, 32, $intern_0);
+defineClass(150, 30, $intern_0);
 _.$init_48 = function $init_48(){
 }
 ;
@@ -5220,7 +5242,7 @@ _.setInnerText = function setInnerText_1(elem, text_0){
   elem.textContent = text_0 || '';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplStandard_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplStandard', 147, cggl.Lcom_google_gwt_dom_client_DOMImpl_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplStandard_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplStandard', 150, cggl.Lcom_google_gwt_dom_client_DOMImpl_2_classLit);
 cggdc.$clinit_DOMImplStandardBase = function $clinit_DOMImplStandardBase(){
   cggdc.$clinit_DOMImplStandardBase = emptyMethod;
   cggdc.$clinit_DOMImplStandard();
@@ -5301,7 +5323,7 @@ cggdc.getBoundingClientRect = function getBoundingClientRect(element){
   return element.getBoundingClientRect && element.getBoundingClientRect();
 }
 ;
-defineClass(148, 147, $intern_0);
+defineClass(151, 150, $intern_0);
 _.$init_49 = function $init_49(){
 }
 ;
@@ -5359,9 +5381,9 @@ _.getScrollLeft = function getScrollLeft_2(doc){
 ;
 _.getScrollLeft_0 = function getScrollLeft_3(elem){
   if (!cggdc.$hasTagName(elem, 'body') && this.isRTL(elem)) {
-    return getClassPrototype(32).getScrollLeft_0.call(this, elem) - (cggdc.$getScrollWidth(elem) - cggdc.$getClientWidth(elem));
+    return getClassPrototype(30).getScrollLeft_0.call(this, elem) - (cggdc.$getScrollWidth(elem) - cggdc.$getClientWidth(elem));
   }
-  return getClassPrototype(32).getScrollLeft_0.call(this, elem);
+  return getClassPrototype(30).getScrollLeft_0.call(this, elem);
 }
 ;
 _.getScrollTop = function getScrollTop_0(doc){
@@ -5377,7 +5399,7 @@ _.setScrollTop = function setScrollTop_0(doc, top_0){
   doc.body.scrollTop = top_0;
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplStandardBase_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplStandardBase', 148, cggl.Lcom_google_gwt_dom_client_DOMImplStandard_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplStandardBase_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplStandardBase', 151, cggl.Lcom_google_gwt_dom_client_DOMImplStandard_2_classLit);
 cggdc.$clinit_DOMImplIE9 = function $clinit_DOMImplIE9(){
   cggdc.$clinit_DOMImplIE9 = emptyMethod;
   cggdc.$clinit_DOMImplStandardBase();
@@ -5388,7 +5410,7 @@ cggdc.DOMImplIE9 = function DOMImplIE9(){
   this.$init_50();
 }
 ;
-defineClass(399, 148, $intern_0);
+defineClass(396, 151, $intern_0);
 _.$init_50 = function $init_50(){
 }
 ;
@@ -5464,13 +5486,14 @@ _.isOrHasChild = function isOrHasChild_1(parent_0, child){
   return cggdc.isOrHasChildImpl(parent_0, child);
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplIE9_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplIE9', 399, cggl.Lcom_google_gwt_dom_client_DOMImplStandardBase_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplIE9_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplIE9', 396, cggl.Lcom_google_gwt_dom_client_DOMImplStandardBase_2_classLit);
 cggdc.$clinit_DOMImplMozilla = function $clinit_DOMImplMozilla(){
   cggdc.$clinit_DOMImplMozilla = emptyMethod;
   cggdc.$clinit_DOMImplStandard();
 }
 ;
 cggdc.DOMImplMozilla = function DOMImplMozilla(){
+  cggdc.$clinit_DOMImplMozilla();
   cggdc.DOMImplStandard.call(this);
   this.$init_51();
 }
@@ -5490,7 +5513,7 @@ cggdc.isGecko19 = function isGecko19(){
   return geckoVersion != -1 && geckoVersion >= 1009000;
 }
 ;
-defineClass(398, 147, $intern_0);
+defineClass(308, 150, {30:1, 1:1}, cggdc.DOMImplMozilla);
 _.$init_51 = function $init_51(){
 }
 ;
@@ -5559,9 +5582,9 @@ _.getAbsoluteTopImpl = function getAbsoluteTopImpl(viewport, elem){
 ;
 _.getScrollLeft_0 = function getScrollLeft_6(elem){
   if (!cggdc.isGecko19() && this.isRTL_0(elem)) {
-    return getClassPrototype(32).getScrollLeft_0.call(this, elem) - (cggdc.$getScrollWidth(elem) - cggdc.$getClientWidth(elem));
+    return getClassPrototype(30).getScrollLeft_0.call(this, elem) - (cggdc.$getScrollWidth(elem) - cggdc.$getClientWidth(elem));
   }
-  return getClassPrototype(32).getScrollLeft_0.call(this, elem);
+  return getClassPrototype(30).getScrollLeft_0.call(this, elem);
 }
 ;
 _.isOrHasChild = function isOrHasChild_2(parent_0, child){
@@ -5583,7 +5606,7 @@ _.toString_0 = function toString_5(elem){
   return outer;
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplMozilla_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplMozilla', 398, cggl.Lcom_google_gwt_dom_client_DOMImplStandard_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplMozilla_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplMozilla', 308, cggl.Lcom_google_gwt_dom_client_DOMImplStandard_2_classLit);
 cggdc.$clinit_DOMImplStandardBase$ClientRect = function $clinit_DOMImplStandardBase$ClientRect(){
   cggdc.$clinit_DOMImplStandardBase$ClientRect = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -5605,12 +5628,11 @@ cggdc.$clinit_DOMImplWebkit = function $clinit_DOMImplWebkit(){
 }
 ;
 cggdc.DOMImplWebkit = function DOMImplWebkit(){
-  cggdc.$clinit_DOMImplWebkit();
   cggdc.DOMImplStandardBase.call(this);
   this.$init_52();
 }
 ;
-defineClass(314, 148, {32:1, 1:1}, cggdc.DOMImplWebkit);
+defineClass(397, 151, $intern_0);
 _.$init_52 = function $init_52(){
 }
 ;
@@ -5622,7 +5644,7 @@ _.eventGetTarget = function eventGetTarget_1(evt){
   return target;
 }
 ;
-cggl.Lcom_google_gwt_dom_client_DOMImplWebkit_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplWebkit', 314, cggl.Lcom_google_gwt_dom_client_DOMImplStandardBase_2_classLit);
+cggl.Lcom_google_gwt_dom_client_DOMImplWebkit_2_classLit = createForClass('com.google.gwt.dom.client', 'DOMImplWebkit', 397, cggl.Lcom_google_gwt_dom_client_DOMImplStandardBase_2_classLit);
 cggdc.$clinit_DivElement = function $clinit_DivElement(){
   cggdc.$clinit_DivElement = emptyMethod;
   cggdc.$clinit_Element();
@@ -6236,167 +6258,167 @@ cggdc.$clinit_Style$BorderStyle = function $clinit_Style$BorderStyle(){
   cggdc.$clinit_Style$BorderStyle = emptyMethod;
 }
 ;
-defineClass(544, 5, $intern_9);
+defineClass(553, 5, $intern_9);
 cggdc.$clinit_Style$BorderStyle$1 = function $clinit_Style$BorderStyle$1(){
   cggdc.$clinit_Style$BorderStyle$1 = emptyMethod;
 }
 ;
-defineClass(564, 544, $intern_9);
+defineClass(573, 553, $intern_9);
 cggdc.$clinit_Style$BorderStyle$2 = function $clinit_Style$BorderStyle$2(){
   cggdc.$clinit_Style$BorderStyle$2 = emptyMethod;
 }
 ;
-defineClass(565, 544, $intern_9);
+defineClass(574, 553, $intern_9);
 cggdc.$clinit_Style$BorderStyle$3 = function $clinit_Style$BorderStyle$3(){
   cggdc.$clinit_Style$BorderStyle$3 = emptyMethod;
 }
 ;
-defineClass(566, 544, $intern_9);
+defineClass(575, 553, $intern_9);
 cggdc.$clinit_Style$BorderStyle$4 = function $clinit_Style$BorderStyle$4(){
   cggdc.$clinit_Style$BorderStyle$4 = emptyMethod;
 }
 ;
-defineClass(567, 544, $intern_9);
+defineClass(576, 553, $intern_9);
 cggdc.$clinit_Style$BorderStyle$5 = function $clinit_Style$BorderStyle$5(){
   cggdc.$clinit_Style$BorderStyle$5 = emptyMethod;
 }
 ;
-defineClass(568, 544, $intern_9);
+defineClass(577, 553, $intern_9);
 cggdc.$clinit_Style$BorderStyle$Map = function $clinit_Style$BorderStyle$Map(){
   cggdc.$clinit_Style$BorderStyle$Map = emptyMethod;
 }
 ;
-defineClass(569, 1, $intern_0);
+defineClass(578, 1, $intern_0);
 cggdc.$clinit_Style$Clear = function $clinit_Style$Clear(){
   cggdc.$clinit_Style$Clear = emptyMethod;
 }
 ;
-defineClass(545, 5, $intern_9);
+defineClass(554, 5, $intern_9);
 cggdc.$clinit_Style$Clear$1 = function $clinit_Style$Clear$1(){
   cggdc.$clinit_Style$Clear$1 = emptyMethod;
 }
 ;
-defineClass(570, 545, $intern_9);
+defineClass(579, 554, $intern_9);
 cggdc.$clinit_Style$Clear$2 = function $clinit_Style$Clear$2(){
   cggdc.$clinit_Style$Clear$2 = emptyMethod;
 }
 ;
-defineClass(571, 545, $intern_9);
+defineClass(580, 554, $intern_9);
 cggdc.$clinit_Style$Clear$3 = function $clinit_Style$Clear$3(){
   cggdc.$clinit_Style$Clear$3 = emptyMethod;
 }
 ;
-defineClass(572, 545, $intern_9);
+defineClass(581, 554, $intern_9);
 cggdc.$clinit_Style$Clear$4 = function $clinit_Style$Clear$4(){
   cggdc.$clinit_Style$Clear$4 = emptyMethod;
 }
 ;
-defineClass(573, 545, $intern_9);
+defineClass(582, 554, $intern_9);
 cggdc.$clinit_Style$Clear$Map = function $clinit_Style$Clear$Map(){
   cggdc.$clinit_Style$Clear$Map = emptyMethod;
 }
 ;
-defineClass(574, 1, $intern_0);
+defineClass(583, 1, $intern_0);
 cggdc.$clinit_Style$Cursor = function $clinit_Style$Cursor(){
   cggdc.$clinit_Style$Cursor = emptyMethod;
 }
 ;
-defineClass(546, 5, $intern_9);
+defineClass(555, 5, $intern_9);
 cggdc.$clinit_Style$Cursor$1 = function $clinit_Style$Cursor$1(){
   cggdc.$clinit_Style$Cursor$1 = emptyMethod;
 }
 ;
-defineClass(575, 546, $intern_9);
+defineClass(584, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$10 = function $clinit_Style$Cursor$10(){
   cggdc.$clinit_Style$Cursor$10 = emptyMethod;
 }
 ;
-defineClass(584, 546, $intern_9);
+defineClass(593, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$11 = function $clinit_Style$Cursor$11(){
   cggdc.$clinit_Style$Cursor$11 = emptyMethod;
 }
 ;
-defineClass(585, 546, $intern_9);
+defineClass(594, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$12 = function $clinit_Style$Cursor$12(){
   cggdc.$clinit_Style$Cursor$12 = emptyMethod;
 }
 ;
-defineClass(586, 546, $intern_9);
+defineClass(595, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$13 = function $clinit_Style$Cursor$13(){
   cggdc.$clinit_Style$Cursor$13 = emptyMethod;
 }
 ;
-defineClass(587, 546, $intern_9);
+defineClass(596, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$14 = function $clinit_Style$Cursor$14(){
   cggdc.$clinit_Style$Cursor$14 = emptyMethod;
 }
 ;
-defineClass(588, 546, $intern_9);
+defineClass(597, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$15 = function $clinit_Style$Cursor$15(){
   cggdc.$clinit_Style$Cursor$15 = emptyMethod;
 }
 ;
-defineClass(589, 546, $intern_9);
+defineClass(598, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$16 = function $clinit_Style$Cursor$16(){
   cggdc.$clinit_Style$Cursor$16 = emptyMethod;
 }
 ;
-defineClass(590, 546, $intern_9);
+defineClass(599, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$17 = function $clinit_Style$Cursor$17(){
   cggdc.$clinit_Style$Cursor$17 = emptyMethod;
 }
 ;
-defineClass(591, 546, $intern_9);
+defineClass(600, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$18 = function $clinit_Style$Cursor$18(){
   cggdc.$clinit_Style$Cursor$18 = emptyMethod;
 }
 ;
-defineClass(592, 546, $intern_9);
+defineClass(601, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$2 = function $clinit_Style$Cursor$2(){
   cggdc.$clinit_Style$Cursor$2 = emptyMethod;
 }
 ;
-defineClass(576, 546, $intern_9);
+defineClass(585, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$3 = function $clinit_Style$Cursor$3(){
   cggdc.$clinit_Style$Cursor$3 = emptyMethod;
 }
 ;
-defineClass(577, 546, $intern_9);
+defineClass(586, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$4 = function $clinit_Style$Cursor$4(){
   cggdc.$clinit_Style$Cursor$4 = emptyMethod;
 }
 ;
-defineClass(578, 546, $intern_9);
+defineClass(587, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$5 = function $clinit_Style$Cursor$5(){
   cggdc.$clinit_Style$Cursor$5 = emptyMethod;
 }
 ;
-defineClass(579, 546, $intern_9);
+defineClass(588, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$6 = function $clinit_Style$Cursor$6(){
   cggdc.$clinit_Style$Cursor$6 = emptyMethod;
 }
 ;
-defineClass(580, 546, $intern_9);
+defineClass(589, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$7 = function $clinit_Style$Cursor$7(){
   cggdc.$clinit_Style$Cursor$7 = emptyMethod;
 }
 ;
-defineClass(581, 546, $intern_9);
+defineClass(590, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$8 = function $clinit_Style$Cursor$8(){
   cggdc.$clinit_Style$Cursor$8 = emptyMethod;
 }
 ;
-defineClass(582, 546, $intern_9);
+defineClass(591, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$9 = function $clinit_Style$Cursor$9(){
   cggdc.$clinit_Style$Cursor$9 = emptyMethod;
 }
 ;
-defineClass(583, 546, $intern_9);
+defineClass(592, 555, $intern_9);
 cggdc.$clinit_Style$Cursor$Map = function $clinit_Style$Cursor$Map(){
   cggdc.$clinit_Style$Cursor$Map = emptyMethod;
 }
 ;
-defineClass(593, 1, $intern_0);
+defineClass(602, 1, $intern_0);
 cggdc.$clinit_Style$Display = function $clinit_Style$Display(){
   cggdc.$clinit_Style$Display = emptyMethod;
   jl.$clinit_Enum();
@@ -6432,14 +6454,14 @@ cggdc.valueOf_1 = function valueOf_1(name_0){
 ;
 cggdc.values_1 = function values_1(){
   cggdc.$clinit_Style$Display();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, 1), $intern_6, 15, 0, [cggdc.NONE, cggdc.BLOCK, cggdc.INLINE, cggdc.INLINE_BLOCK, cggdc.INLINE_TABLE, cggdc.LIST_ITEM, cggdc.RUN_IN, cggdc.TABLE, cggdc.TABLE_CAPTION, cggdc.TABLE_COLUMN_GROUP, cggdc.TABLE_HEADER_GROUP, cggdc.TABLE_FOOTER_GROUP, cggdc.TABLE_ROW_GROUP, cggdc.TABLE_CELL, cggdc.TABLE_COLUMN, cggdc.TABLE_ROW, cggdc.INITIAL]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, 1), $intern_6, 14, 0, [cggdc.NONE, cggdc.BLOCK, cggdc.INLINE, cggdc.INLINE_BLOCK, cggdc.INLINE_TABLE, cggdc.LIST_ITEM, cggdc.RUN_IN, cggdc.TABLE, cggdc.TABLE_CAPTION, cggdc.TABLE_COLUMN_GROUP, cggdc.TABLE_HEADER_GROUP, cggdc.TABLE_FOOTER_GROUP, cggdc.TABLE_ROW_GROUP, cggdc.TABLE_CELL, cggdc.TABLE_COLUMN, cggdc.TABLE_ROW, cggdc.INITIAL]);
 }
 ;
-defineClass(15, 5, $intern_16);
+defineClass(14, 5, $intern_15);
 _.$init_53 = function $init_53(){
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display', 15, cggl.Ljava_lang_Enum_2_classLit, cggdc.values_1, cggdc.valueOf_1);
+cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display', 14, cggl.Ljava_lang_Enum_2_classLit, cggdc.values_1, cggdc.valueOf_1);
 cggdc.$clinit_Style$Display$1 = function $clinit_Style$Display$1(){
   cggdc.$clinit_Style$Display$1 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6451,7 +6473,7 @@ cggdc.Style$Display$1 = function Style$Display$1(enum$name, enum$ordinal){
   this.$init_54();
 }
 ;
-defineClass(252, 15, $intern_16, cggdc.Style$Display$1);
+defineClass(261, 14, $intern_15, cggdc.Style$Display$1);
 _.$init_54 = function $init_54(){
 }
 ;
@@ -6459,7 +6481,7 @@ _.getCssName = function getCssName(){
   return 'none';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/1', 252, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/1', 261, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$10 = function $clinit_Style$Display$10(){
   cggdc.$clinit_Style$Display$10 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6471,7 +6493,7 @@ cggdc.Style$Display$10 = function Style$Display$10(enum$name, enum$ordinal){
   this.$init_55();
 }
 ;
-defineClass(261, 15, $intern_16, cggdc.Style$Display$10);
+defineClass(270, 14, $intern_15, cggdc.Style$Display$10);
 _.$init_55 = function $init_55(){
 }
 ;
@@ -6479,7 +6501,7 @@ _.getCssName = function getCssName_0(){
   return 'table-column-group';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$10_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/10', 261, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$10_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/10', 270, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$11 = function $clinit_Style$Display$11(){
   cggdc.$clinit_Style$Display$11 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6491,7 +6513,7 @@ cggdc.Style$Display$11 = function Style$Display$11(enum$name, enum$ordinal){
   this.$init_56();
 }
 ;
-defineClass(262, 15, $intern_16, cggdc.Style$Display$11);
+defineClass(271, 14, $intern_15, cggdc.Style$Display$11);
 _.$init_56 = function $init_56(){
 }
 ;
@@ -6499,7 +6521,7 @@ _.getCssName = function getCssName_1(){
   return 'table-header-group';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$11_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/11', 262, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$11_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/11', 271, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$12 = function $clinit_Style$Display$12(){
   cggdc.$clinit_Style$Display$12 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6511,7 +6533,7 @@ cggdc.Style$Display$12 = function Style$Display$12(enum$name, enum$ordinal){
   this.$init_57();
 }
 ;
-defineClass(263, 15, $intern_16, cggdc.Style$Display$12);
+defineClass(272, 14, $intern_15, cggdc.Style$Display$12);
 _.$init_57 = function $init_57(){
 }
 ;
@@ -6519,7 +6541,7 @@ _.getCssName = function getCssName_2(){
   return 'table-footer-group';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$12_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/12', 263, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$12_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/12', 272, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$13 = function $clinit_Style$Display$13(){
   cggdc.$clinit_Style$Display$13 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6531,7 +6553,7 @@ cggdc.Style$Display$13 = function Style$Display$13(enum$name, enum$ordinal){
   this.$init_58();
 }
 ;
-defineClass(264, 15, $intern_16, cggdc.Style$Display$13);
+defineClass(273, 14, $intern_15, cggdc.Style$Display$13);
 _.$init_58 = function $init_58(){
 }
 ;
@@ -6539,7 +6561,7 @@ _.getCssName = function getCssName_3(){
   return 'table-row-group';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$13_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/13', 264, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$13_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/13', 273, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$14 = function $clinit_Style$Display$14(){
   cggdc.$clinit_Style$Display$14 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6551,7 +6573,7 @@ cggdc.Style$Display$14 = function Style$Display$14(enum$name, enum$ordinal){
   this.$init_59();
 }
 ;
-defineClass(265, 15, $intern_16, cggdc.Style$Display$14);
+defineClass(274, 14, $intern_15, cggdc.Style$Display$14);
 _.$init_59 = function $init_59(){
 }
 ;
@@ -6559,7 +6581,7 @@ _.getCssName = function getCssName_4(){
   return 'table-cell';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$14_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/14', 265, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$14_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/14', 274, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$15 = function $clinit_Style$Display$15(){
   cggdc.$clinit_Style$Display$15 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6571,7 +6593,7 @@ cggdc.Style$Display$15 = function Style$Display$15(enum$name, enum$ordinal){
   this.$init_60();
 }
 ;
-defineClass(266, 15, $intern_16, cggdc.Style$Display$15);
+defineClass(275, 14, $intern_15, cggdc.Style$Display$15);
 _.$init_60 = function $init_60(){
 }
 ;
@@ -6579,7 +6601,7 @@ _.getCssName = function getCssName_5(){
   return 'table-column';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$15_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/15', 266, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$15_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/15', 275, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$16 = function $clinit_Style$Display$16(){
   cggdc.$clinit_Style$Display$16 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6591,7 +6613,7 @@ cggdc.Style$Display$16 = function Style$Display$16(enum$name, enum$ordinal){
   this.$init_61();
 }
 ;
-defineClass(267, 15, $intern_16, cggdc.Style$Display$16);
+defineClass(276, 14, $intern_15, cggdc.Style$Display$16);
 _.$init_61 = function $init_61(){
 }
 ;
@@ -6599,7 +6621,7 @@ _.getCssName = function getCssName_6(){
   return 'table-row';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$16_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/16', 267, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$16_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/16', 276, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$17 = function $clinit_Style$Display$17(){
   cggdc.$clinit_Style$Display$17 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6611,7 +6633,7 @@ cggdc.Style$Display$17 = function Style$Display$17(enum$name, enum$ordinal){
   this.$init_62();
 }
 ;
-defineClass(268, 15, $intern_16, cggdc.Style$Display$17);
+defineClass(277, 14, $intern_15, cggdc.Style$Display$17);
 _.$init_62 = function $init_62(){
 }
 ;
@@ -6619,7 +6641,7 @@ _.getCssName = function getCssName_7(){
   return 'initial';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$17_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/17', 268, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$17_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/17', 277, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$2 = function $clinit_Style$Display$2(){
   cggdc.$clinit_Style$Display$2 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6631,7 +6653,7 @@ cggdc.Style$Display$2 = function Style$Display$2(enum$name, enum$ordinal){
   this.$init_63();
 }
 ;
-defineClass(253, 15, $intern_16, cggdc.Style$Display$2);
+defineClass(262, 14, $intern_15, cggdc.Style$Display$2);
 _.$init_63 = function $init_63(){
 }
 ;
@@ -6639,7 +6661,7 @@ _.getCssName = function getCssName_8(){
   return 'block';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/2', 253, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/2', 262, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$3 = function $clinit_Style$Display$3(){
   cggdc.$clinit_Style$Display$3 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6651,7 +6673,7 @@ cggdc.Style$Display$3 = function Style$Display$3(enum$name, enum$ordinal){
   this.$init_64();
 }
 ;
-defineClass(254, 15, $intern_16, cggdc.Style$Display$3);
+defineClass(263, 14, $intern_15, cggdc.Style$Display$3);
 _.$init_64 = function $init_64(){
 }
 ;
@@ -6659,7 +6681,7 @@ _.getCssName = function getCssName_9(){
   return 'inline';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/3', 254, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/3', 263, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$4 = function $clinit_Style$Display$4(){
   cggdc.$clinit_Style$Display$4 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6671,7 +6693,7 @@ cggdc.Style$Display$4 = function Style$Display$4(enum$name, enum$ordinal){
   this.$init_65();
 }
 ;
-defineClass(255, 15, $intern_16, cggdc.Style$Display$4);
+defineClass(264, 14, $intern_15, cggdc.Style$Display$4);
 _.$init_65 = function $init_65(){
 }
 ;
@@ -6679,7 +6701,7 @@ _.getCssName = function getCssName_10(){
   return 'inline-block';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/4', 255, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/4', 264, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$5 = function $clinit_Style$Display$5(){
   cggdc.$clinit_Style$Display$5 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6691,7 +6713,7 @@ cggdc.Style$Display$5 = function Style$Display$5(enum$name, enum$ordinal){
   this.$init_66();
 }
 ;
-defineClass(256, 15, $intern_16, cggdc.Style$Display$5);
+defineClass(265, 14, $intern_15, cggdc.Style$Display$5);
 _.$init_66 = function $init_66(){
 }
 ;
@@ -6699,7 +6721,7 @@ _.getCssName = function getCssName_11(){
   return 'inline-table';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/5', 256, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/5', 265, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$6 = function $clinit_Style$Display$6(){
   cggdc.$clinit_Style$Display$6 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6711,7 +6733,7 @@ cggdc.Style$Display$6 = function Style$Display$6(enum$name, enum$ordinal){
   this.$init_67();
 }
 ;
-defineClass(257, 15, $intern_16, cggdc.Style$Display$6);
+defineClass(266, 14, $intern_15, cggdc.Style$Display$6);
 _.$init_67 = function $init_67(){
 }
 ;
@@ -6719,7 +6741,7 @@ _.getCssName = function getCssName_12(){
   return 'list-item';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/6', 257, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/6', 266, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$7 = function $clinit_Style$Display$7(){
   cggdc.$clinit_Style$Display$7 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6731,7 +6753,7 @@ cggdc.Style$Display$7 = function Style$Display$7(enum$name, enum$ordinal){
   this.$init_68();
 }
 ;
-defineClass(258, 15, $intern_16, cggdc.Style$Display$7);
+defineClass(267, 14, $intern_15, cggdc.Style$Display$7);
 _.$init_68 = function $init_68(){
 }
 ;
@@ -6739,7 +6761,7 @@ _.getCssName = function getCssName_13(){
   return 'run-in';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/7', 258, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/7', 267, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$8 = function $clinit_Style$Display$8(){
   cggdc.$clinit_Style$Display$8 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6751,7 +6773,7 @@ cggdc.Style$Display$8 = function Style$Display$8(enum$name, enum$ordinal){
   this.$init_69();
 }
 ;
-defineClass(259, 15, $intern_16, cggdc.Style$Display$8);
+defineClass(268, 14, $intern_15, cggdc.Style$Display$8);
 _.$init_69 = function $init_69(){
 }
 ;
@@ -6759,7 +6781,7 @@ _.getCssName = function getCssName_14(){
   return 'table';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/8', 259, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/8', 268, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$9 = function $clinit_Style$Display$9(){
   cggdc.$clinit_Style$Display$9 = emptyMethod;
   cggdc.$clinit_Style$Display();
@@ -6771,7 +6793,7 @@ cggdc.Style$Display$9 = function Style$Display$9(enum$name, enum$ordinal){
   this.$init_70();
 }
 ;
-defineClass(260, 15, $intern_16, cggdc.Style$Display$9);
+defineClass(269, 14, $intern_15, cggdc.Style$Display$9);
 _.$init_70 = function $init_70(){
 }
 ;
@@ -6779,93 +6801,93 @@ _.getCssName = function getCssName_15(){
   return 'table-caption';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Display$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/9', 260, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Display$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/9', 269, cggl.Lcom_google_gwt_dom_client_Style$Display_2_classLit, null, null);
 cggdc.$clinit_Style$Display$Map = function $clinit_Style$Display$Map(){
   cggdc.$clinit_Style$Display$Map = emptyMethod;
   cggdc.$MAP_0 = createValueOfMap(cggdc.values_1());
 }
 ;
-defineClass(594, 1, $intern_0);
+defineClass(603, 1, $intern_0);
 cggdc.$clinit_Style$Float = function $clinit_Style$Float(){
   cggdc.$clinit_Style$Float = emptyMethod;
 }
 ;
-defineClass(547, 5, $intern_9);
+defineClass(556, 5, $intern_9);
 cggdc.$clinit_Style$Float$1 = function $clinit_Style$Float$1(){
   cggdc.$clinit_Style$Float$1 = emptyMethod;
 }
 ;
-defineClass(595, 547, $intern_9);
+defineClass(604, 556, $intern_9);
 cggdc.$clinit_Style$Float$2 = function $clinit_Style$Float$2(){
   cggdc.$clinit_Style$Float$2 = emptyMethod;
 }
 ;
-defineClass(596, 547, $intern_9);
+defineClass(605, 556, $intern_9);
 cggdc.$clinit_Style$Float$3 = function $clinit_Style$Float$3(){
   cggdc.$clinit_Style$Float$3 = emptyMethod;
 }
 ;
-defineClass(597, 547, $intern_9);
+defineClass(606, 556, $intern_9);
 cggdc.$clinit_Style$Float$Map = function $clinit_Style$Float$Map(){
   cggdc.$clinit_Style$Float$Map = emptyMethod;
 }
 ;
-defineClass(598, 1, $intern_0);
+defineClass(607, 1, $intern_0);
 cggdc.$clinit_Style$FontStyle = function $clinit_Style$FontStyle(){
   cggdc.$clinit_Style$FontStyle = emptyMethod;
 }
 ;
-defineClass(548, 5, $intern_9);
+defineClass(557, 5, $intern_9);
 cggdc.$clinit_Style$FontStyle$1 = function $clinit_Style$FontStyle$1(){
   cggdc.$clinit_Style$FontStyle$1 = emptyMethod;
 }
 ;
-defineClass(599, 548, $intern_9);
+defineClass(608, 557, $intern_9);
 cggdc.$clinit_Style$FontStyle$2 = function $clinit_Style$FontStyle$2(){
   cggdc.$clinit_Style$FontStyle$2 = emptyMethod;
 }
 ;
-defineClass(600, 548, $intern_9);
+defineClass(609, 557, $intern_9);
 cggdc.$clinit_Style$FontStyle$3 = function $clinit_Style$FontStyle$3(){
   cggdc.$clinit_Style$FontStyle$3 = emptyMethod;
 }
 ;
-defineClass(601, 548, $intern_9);
+defineClass(610, 557, $intern_9);
 cggdc.$clinit_Style$FontStyle$Map = function $clinit_Style$FontStyle$Map(){
   cggdc.$clinit_Style$FontStyle$Map = emptyMethod;
 }
 ;
-defineClass(602, 1, $intern_0);
+defineClass(611, 1, $intern_0);
 cggdc.$clinit_Style$FontWeight = function $clinit_Style$FontWeight(){
   cggdc.$clinit_Style$FontWeight = emptyMethod;
 }
 ;
-defineClass(549, 5, $intern_9);
+defineClass(558, 5, $intern_9);
 cggdc.$clinit_Style$FontWeight$1 = function $clinit_Style$FontWeight$1(){
   cggdc.$clinit_Style$FontWeight$1 = emptyMethod;
 }
 ;
-defineClass(603, 549, $intern_9);
+defineClass(612, 558, $intern_9);
 cggdc.$clinit_Style$FontWeight$2 = function $clinit_Style$FontWeight$2(){
   cggdc.$clinit_Style$FontWeight$2 = emptyMethod;
 }
 ;
-defineClass(604, 549, $intern_9);
+defineClass(613, 558, $intern_9);
 cggdc.$clinit_Style$FontWeight$3 = function $clinit_Style$FontWeight$3(){
   cggdc.$clinit_Style$FontWeight$3 = emptyMethod;
 }
 ;
-defineClass(605, 549, $intern_9);
+defineClass(614, 558, $intern_9);
 cggdc.$clinit_Style$FontWeight$4 = function $clinit_Style$FontWeight$4(){
   cggdc.$clinit_Style$FontWeight$4 = emptyMethod;
 }
 ;
-defineClass(606, 549, $intern_9);
+defineClass(615, 558, $intern_9);
 cggdc.$clinit_Style$FontWeight$Map = function $clinit_Style$FontWeight$Map(){
   cggdc.$clinit_Style$FontWeight$Map = emptyMethod;
 }
 ;
-defineClass(607, 1, $intern_0);
+defineClass(616, 1, $intern_0);
 cggdc.$clinit_Style$HasCssName = function $clinit_Style$HasCssName(){
   cggdc.$clinit_Style$HasCssName = emptyMethod;
 }
@@ -6874,352 +6896,352 @@ cggdc.$clinit_Style$ListStyleType = function $clinit_Style$ListStyleType(){
   cggdc.$clinit_Style$ListStyleType = emptyMethod;
 }
 ;
-defineClass(550, 5, $intern_9);
+defineClass(559, 5, $intern_9);
 cggdc.$clinit_Style$ListStyleType$1 = function $clinit_Style$ListStyleType$1(){
   cggdc.$clinit_Style$ListStyleType$1 = emptyMethod;
 }
 ;
-defineClass(608, 550, $intern_9);
+defineClass(617, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$2 = function $clinit_Style$ListStyleType$2(){
   cggdc.$clinit_Style$ListStyleType$2 = emptyMethod;
 }
 ;
-defineClass(609, 550, $intern_9);
+defineClass(618, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$3 = function $clinit_Style$ListStyleType$3(){
   cggdc.$clinit_Style$ListStyleType$3 = emptyMethod;
 }
 ;
-defineClass(610, 550, $intern_9);
+defineClass(619, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$4 = function $clinit_Style$ListStyleType$4(){
   cggdc.$clinit_Style$ListStyleType$4 = emptyMethod;
 }
 ;
-defineClass(611, 550, $intern_9);
+defineClass(620, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$5 = function $clinit_Style$ListStyleType$5(){
   cggdc.$clinit_Style$ListStyleType$5 = emptyMethod;
 }
 ;
-defineClass(612, 550, $intern_9);
+defineClass(621, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$6 = function $clinit_Style$ListStyleType$6(){
   cggdc.$clinit_Style$ListStyleType$6 = emptyMethod;
 }
 ;
-defineClass(613, 550, $intern_9);
+defineClass(622, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$7 = function $clinit_Style$ListStyleType$7(){
   cggdc.$clinit_Style$ListStyleType$7 = emptyMethod;
 }
 ;
-defineClass(614, 550, $intern_9);
+defineClass(623, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$8 = function $clinit_Style$ListStyleType$8(){
   cggdc.$clinit_Style$ListStyleType$8 = emptyMethod;
 }
 ;
-defineClass(615, 550, $intern_9);
+defineClass(624, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$9 = function $clinit_Style$ListStyleType$9(){
   cggdc.$clinit_Style$ListStyleType$9 = emptyMethod;
 }
 ;
-defineClass(616, 550, $intern_9);
+defineClass(625, 559, $intern_9);
 cggdc.$clinit_Style$ListStyleType$Map = function $clinit_Style$ListStyleType$Map(){
   cggdc.$clinit_Style$ListStyleType$Map = emptyMethod;
 }
 ;
-defineClass(617, 1, $intern_0);
+defineClass(626, 1, $intern_0);
 cggdc.$clinit_Style$OutlineStyle = function $clinit_Style$OutlineStyle(){
   cggdc.$clinit_Style$OutlineStyle = emptyMethod;
 }
 ;
-defineClass(551, 5, $intern_9);
+defineClass(560, 5, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$1 = function $clinit_Style$OutlineStyle$1(){
   cggdc.$clinit_Style$OutlineStyle$1 = emptyMethod;
 }
 ;
-defineClass(618, 551, $intern_9);
+defineClass(627, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$2 = function $clinit_Style$OutlineStyle$2(){
   cggdc.$clinit_Style$OutlineStyle$2 = emptyMethod;
 }
 ;
-defineClass(619, 551, $intern_9);
+defineClass(628, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$3 = function $clinit_Style$OutlineStyle$3(){
   cggdc.$clinit_Style$OutlineStyle$3 = emptyMethod;
 }
 ;
-defineClass(620, 551, $intern_9);
+defineClass(629, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$4 = function $clinit_Style$OutlineStyle$4(){
   cggdc.$clinit_Style$OutlineStyle$4 = emptyMethod;
 }
 ;
-defineClass(621, 551, $intern_9);
+defineClass(630, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$5 = function $clinit_Style$OutlineStyle$5(){
   cggdc.$clinit_Style$OutlineStyle$5 = emptyMethod;
 }
 ;
-defineClass(622, 551, $intern_9);
+defineClass(631, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$6 = function $clinit_Style$OutlineStyle$6(){
   cggdc.$clinit_Style$OutlineStyle$6 = emptyMethod;
 }
 ;
-defineClass(623, 551, $intern_9);
+defineClass(632, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$7 = function $clinit_Style$OutlineStyle$7(){
   cggdc.$clinit_Style$OutlineStyle$7 = emptyMethod;
 }
 ;
-defineClass(624, 551, $intern_9);
+defineClass(633, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$8 = function $clinit_Style$OutlineStyle$8(){
   cggdc.$clinit_Style$OutlineStyle$8 = emptyMethod;
 }
 ;
-defineClass(625, 551, $intern_9);
+defineClass(634, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$9 = function $clinit_Style$OutlineStyle$9(){
   cggdc.$clinit_Style$OutlineStyle$9 = emptyMethod;
 }
 ;
-defineClass(626, 551, $intern_9);
+defineClass(635, 560, $intern_9);
 cggdc.$clinit_Style$OutlineStyle$Map = function $clinit_Style$OutlineStyle$Map(){
   cggdc.$clinit_Style$OutlineStyle$Map = emptyMethod;
 }
 ;
-defineClass(627, 1, $intern_0);
+defineClass(636, 1, $intern_0);
 cggdc.$clinit_Style$Overflow = function $clinit_Style$Overflow(){
   cggdc.$clinit_Style$Overflow = emptyMethod;
 }
 ;
-defineClass(552, 5, $intern_9);
+defineClass(561, 5, $intern_9);
 cggdc.$clinit_Style$Overflow$1 = function $clinit_Style$Overflow$1(){
   cggdc.$clinit_Style$Overflow$1 = emptyMethod;
 }
 ;
-defineClass(628, 552, $intern_9);
+defineClass(637, 561, $intern_9);
 cggdc.$clinit_Style$Overflow$2 = function $clinit_Style$Overflow$2(){
   cggdc.$clinit_Style$Overflow$2 = emptyMethod;
 }
 ;
-defineClass(629, 552, $intern_9);
+defineClass(638, 561, $intern_9);
 cggdc.$clinit_Style$Overflow$3 = function $clinit_Style$Overflow$3(){
   cggdc.$clinit_Style$Overflow$3 = emptyMethod;
 }
 ;
-defineClass(630, 552, $intern_9);
+defineClass(639, 561, $intern_9);
 cggdc.$clinit_Style$Overflow$4 = function $clinit_Style$Overflow$4(){
   cggdc.$clinit_Style$Overflow$4 = emptyMethod;
 }
 ;
-defineClass(631, 552, $intern_9);
+defineClass(640, 561, $intern_9);
 cggdc.$clinit_Style$Overflow$Map = function $clinit_Style$Overflow$Map(){
   cggdc.$clinit_Style$Overflow$Map = emptyMethod;
 }
 ;
-defineClass(632, 1, $intern_0);
+defineClass(641, 1, $intern_0);
 cggdc.$clinit_Style$Position = function $clinit_Style$Position(){
   cggdc.$clinit_Style$Position = emptyMethod;
 }
 ;
-defineClass(553, 5, $intern_9);
+defineClass(562, 5, $intern_9);
 cggdc.$clinit_Style$Position$1 = function $clinit_Style$Position$1(){
   cggdc.$clinit_Style$Position$1 = emptyMethod;
 }
 ;
-defineClass(633, 553, $intern_9);
+defineClass(642, 562, $intern_9);
 cggdc.$clinit_Style$Position$2 = function $clinit_Style$Position$2(){
   cggdc.$clinit_Style$Position$2 = emptyMethod;
 }
 ;
-defineClass(634, 553, $intern_9);
+defineClass(643, 562, $intern_9);
 cggdc.$clinit_Style$Position$3 = function $clinit_Style$Position$3(){
   cggdc.$clinit_Style$Position$3 = emptyMethod;
 }
 ;
-defineClass(635, 553, $intern_9);
+defineClass(644, 562, $intern_9);
 cggdc.$clinit_Style$Position$4 = function $clinit_Style$Position$4(){
   cggdc.$clinit_Style$Position$4 = emptyMethod;
 }
 ;
-defineClass(636, 553, $intern_9);
+defineClass(645, 562, $intern_9);
 cggdc.$clinit_Style$Position$Map = function $clinit_Style$Position$Map(){
   cggdc.$clinit_Style$Position$Map = emptyMethod;
 }
 ;
-defineClass(637, 1, $intern_0);
+defineClass(646, 1, $intern_0);
 cggdc.$clinit_Style$TableLayout = function $clinit_Style$TableLayout(){
   cggdc.$clinit_Style$TableLayout = emptyMethod;
 }
 ;
-defineClass(554, 5, $intern_9);
+defineClass(563, 5, $intern_9);
 cggdc.$clinit_Style$TableLayout$1 = function $clinit_Style$TableLayout$1(){
   cggdc.$clinit_Style$TableLayout$1 = emptyMethod;
 }
 ;
-defineClass(638, 554, $intern_9);
+defineClass(647, 563, $intern_9);
 cggdc.$clinit_Style$TableLayout$2 = function $clinit_Style$TableLayout$2(){
   cggdc.$clinit_Style$TableLayout$2 = emptyMethod;
 }
 ;
-defineClass(639, 554, $intern_9);
+defineClass(648, 563, $intern_9);
 cggdc.$clinit_Style$TableLayout$Map = function $clinit_Style$TableLayout$Map(){
   cggdc.$clinit_Style$TableLayout$Map = emptyMethod;
 }
 ;
-defineClass(640, 1, $intern_0);
+defineClass(649, 1, $intern_0);
 cggdc.$clinit_Style$TextAlign = function $clinit_Style$TextAlign(){
   cggdc.$clinit_Style$TextAlign = emptyMethod;
 }
 ;
-defineClass(555, 5, $intern_9);
+defineClass(564, 5, $intern_9);
 cggdc.$clinit_Style$TextAlign$1 = function $clinit_Style$TextAlign$1(){
   cggdc.$clinit_Style$TextAlign$1 = emptyMethod;
 }
 ;
-defineClass(641, 555, $intern_9);
+defineClass(650, 564, $intern_9);
 cggdc.$clinit_Style$TextAlign$2 = function $clinit_Style$TextAlign$2(){
   cggdc.$clinit_Style$TextAlign$2 = emptyMethod;
 }
 ;
-defineClass(642, 555, $intern_9);
+defineClass(651, 564, $intern_9);
 cggdc.$clinit_Style$TextAlign$3 = function $clinit_Style$TextAlign$3(){
   cggdc.$clinit_Style$TextAlign$3 = emptyMethod;
 }
 ;
-defineClass(643, 555, $intern_9);
+defineClass(652, 564, $intern_9);
 cggdc.$clinit_Style$TextAlign$4 = function $clinit_Style$TextAlign$4(){
   cggdc.$clinit_Style$TextAlign$4 = emptyMethod;
 }
 ;
-defineClass(644, 555, $intern_9);
+defineClass(653, 564, $intern_9);
 cggdc.$clinit_Style$TextAlign$Map = function $clinit_Style$TextAlign$Map(){
   cggdc.$clinit_Style$TextAlign$Map = emptyMethod;
 }
 ;
-defineClass(645, 1, $intern_0);
+defineClass(654, 1, $intern_0);
 cggdc.$clinit_Style$TextDecoration = function $clinit_Style$TextDecoration(){
   cggdc.$clinit_Style$TextDecoration = emptyMethod;
 }
 ;
-defineClass(556, 5, $intern_9);
+defineClass(565, 5, $intern_9);
 cggdc.$clinit_Style$TextDecoration$1 = function $clinit_Style$TextDecoration$1(){
   cggdc.$clinit_Style$TextDecoration$1 = emptyMethod;
 }
 ;
-defineClass(646, 556, $intern_9);
+defineClass(655, 565, $intern_9);
 cggdc.$clinit_Style$TextDecoration$2 = function $clinit_Style$TextDecoration$2(){
   cggdc.$clinit_Style$TextDecoration$2 = emptyMethod;
 }
 ;
-defineClass(647, 556, $intern_9);
+defineClass(656, 565, $intern_9);
 cggdc.$clinit_Style$TextDecoration$3 = function $clinit_Style$TextDecoration$3(){
   cggdc.$clinit_Style$TextDecoration$3 = emptyMethod;
 }
 ;
-defineClass(648, 556, $intern_9);
+defineClass(657, 565, $intern_9);
 cggdc.$clinit_Style$TextDecoration$4 = function $clinit_Style$TextDecoration$4(){
   cggdc.$clinit_Style$TextDecoration$4 = emptyMethod;
 }
 ;
-defineClass(649, 556, $intern_9);
+defineClass(658, 565, $intern_9);
 cggdc.$clinit_Style$TextDecoration$5 = function $clinit_Style$TextDecoration$5(){
   cggdc.$clinit_Style$TextDecoration$5 = emptyMethod;
 }
 ;
-defineClass(650, 556, $intern_9);
+defineClass(659, 565, $intern_9);
 cggdc.$clinit_Style$TextDecoration$Map = function $clinit_Style$TextDecoration$Map(){
   cggdc.$clinit_Style$TextDecoration$Map = emptyMethod;
 }
 ;
-defineClass(651, 1, $intern_0);
+defineClass(660, 1, $intern_0);
 cggdc.$clinit_Style$TextJustify = function $clinit_Style$TextJustify(){
   cggdc.$clinit_Style$TextJustify = emptyMethod;
 }
 ;
-defineClass(557, 5, $intern_9);
+defineClass(566, 5, $intern_9);
 cggdc.$clinit_Style$TextJustify$1 = function $clinit_Style$TextJustify$1(){
   cggdc.$clinit_Style$TextJustify$1 = emptyMethod;
 }
 ;
-defineClass(652, 557, $intern_9);
+defineClass(661, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$2 = function $clinit_Style$TextJustify$2(){
   cggdc.$clinit_Style$TextJustify$2 = emptyMethod;
 }
 ;
-defineClass(653, 557, $intern_9);
+defineClass(662, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$3 = function $clinit_Style$TextJustify$3(){
   cggdc.$clinit_Style$TextJustify$3 = emptyMethod;
 }
 ;
-defineClass(654, 557, $intern_9);
+defineClass(663, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$4 = function $clinit_Style$TextJustify$4(){
   cggdc.$clinit_Style$TextJustify$4 = emptyMethod;
 }
 ;
-defineClass(655, 557, $intern_9);
+defineClass(664, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$5 = function $clinit_Style$TextJustify$5(){
   cggdc.$clinit_Style$TextJustify$5 = emptyMethod;
 }
 ;
-defineClass(656, 557, $intern_9);
+defineClass(665, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$6 = function $clinit_Style$TextJustify$6(){
   cggdc.$clinit_Style$TextJustify$6 = emptyMethod;
 }
 ;
-defineClass(657, 557, $intern_9);
+defineClass(666, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$7 = function $clinit_Style$TextJustify$7(){
   cggdc.$clinit_Style$TextJustify$7 = emptyMethod;
 }
 ;
-defineClass(658, 557, $intern_9);
+defineClass(667, 566, $intern_9);
 cggdc.$clinit_Style$TextJustify$Map = function $clinit_Style$TextJustify$Map(){
   cggdc.$clinit_Style$TextJustify$Map = emptyMethod;
 }
 ;
-defineClass(659, 1, $intern_0);
+defineClass(668, 1, $intern_0);
 cggdc.$clinit_Style$TextOverflow = function $clinit_Style$TextOverflow(){
   cggdc.$clinit_Style$TextOverflow = emptyMethod;
 }
 ;
-defineClass(558, 5, $intern_9);
+defineClass(567, 5, $intern_9);
 cggdc.$clinit_Style$TextOverflow$1 = function $clinit_Style$TextOverflow$1(){
   cggdc.$clinit_Style$TextOverflow$1 = emptyMethod;
 }
 ;
-defineClass(660, 558, $intern_9);
+defineClass(669, 567, $intern_9);
 cggdc.$clinit_Style$TextOverflow$2 = function $clinit_Style$TextOverflow$2(){
   cggdc.$clinit_Style$TextOverflow$2 = emptyMethod;
 }
 ;
-defineClass(661, 558, $intern_9);
+defineClass(670, 567, $intern_9);
 cggdc.$clinit_Style$TextOverflow$Map = function $clinit_Style$TextOverflow$Map(){
   cggdc.$clinit_Style$TextOverflow$Map = emptyMethod;
 }
 ;
-defineClass(662, 1, $intern_0);
+defineClass(671, 1, $intern_0);
 cggdc.$clinit_Style$TextTransform = function $clinit_Style$TextTransform(){
   cggdc.$clinit_Style$TextTransform = emptyMethod;
 }
 ;
-defineClass(559, 5, $intern_9);
+defineClass(568, 5, $intern_9);
 cggdc.$clinit_Style$TextTransform$1 = function $clinit_Style$TextTransform$1(){
   cggdc.$clinit_Style$TextTransform$1 = emptyMethod;
 }
 ;
-defineClass(663, 559, $intern_9);
+defineClass(672, 568, $intern_9);
 cggdc.$clinit_Style$TextTransform$2 = function $clinit_Style$TextTransform$2(){
   cggdc.$clinit_Style$TextTransform$2 = emptyMethod;
 }
 ;
-defineClass(664, 559, $intern_9);
+defineClass(673, 568, $intern_9);
 cggdc.$clinit_Style$TextTransform$3 = function $clinit_Style$TextTransform$3(){
   cggdc.$clinit_Style$TextTransform$3 = emptyMethod;
 }
 ;
-defineClass(665, 559, $intern_9);
+defineClass(674, 568, $intern_9);
 cggdc.$clinit_Style$TextTransform$4 = function $clinit_Style$TextTransform$4(){
   cggdc.$clinit_Style$TextTransform$4 = emptyMethod;
 }
 ;
-defineClass(666, 559, $intern_9);
+defineClass(675, 568, $intern_9);
 cggdc.$clinit_Style$TextTransform$Map = function $clinit_Style$TextTransform$Map(){
   cggdc.$clinit_Style$TextTransform$Map = emptyMethod;
 }
 ;
-defineClass(667, 1, $intern_0);
+defineClass(676, 1, $intern_0);
 cggdc.$clinit_Style$Unit = function $clinit_Style$Unit(){
   cggdc.$clinit_Style$Unit = emptyMethod;
   jl.$clinit_Enum();
@@ -7250,7 +7272,7 @@ cggdc.values_2 = function values_2(){
   return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, 1), $intern_6, 18, 0, [cggdc.PX, cggdc.PCT, cggdc.EM, cggdc.EX, cggdc.PT, cggdc.PC, cggdc.IN, cggdc.CM, cggdc.MM]);
 }
 ;
-defineClass(18, 5, $intern_17);
+defineClass(18, 5, $intern_16);
 _.$init_71 = function $init_71(){
 }
 ;
@@ -7266,7 +7288,7 @@ cggdc.Style$Unit$1 = function Style$Unit$1(enum$name, enum$ordinal){
   this.$init_72();
 }
 ;
-defineClass(243, 18, $intern_17, cggdc.Style$Unit$1);
+defineClass(252, 18, $intern_16, cggdc.Style$Unit$1);
 _.$init_72 = function $init_72(){
 }
 ;
@@ -7274,7 +7296,7 @@ _.getType = function getType(){
   return 'px';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/1', 243, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/1', 252, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$2 = function $clinit_Style$Unit$2(){
   cggdc.$clinit_Style$Unit$2 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7286,7 +7308,7 @@ cggdc.Style$Unit$2 = function Style$Unit$2(enum$name, enum$ordinal){
   this.$init_73();
 }
 ;
-defineClass(244, 18, $intern_17, cggdc.Style$Unit$2);
+defineClass(253, 18, $intern_16, cggdc.Style$Unit$2);
 _.$init_73 = function $init_73(){
 }
 ;
@@ -7294,7 +7316,7 @@ _.getType = function getType_0(){
   return '%';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/2', 244, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/2', 253, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$3 = function $clinit_Style$Unit$3(){
   cggdc.$clinit_Style$Unit$3 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7306,7 +7328,7 @@ cggdc.Style$Unit$3 = function Style$Unit$3(enum$name, enum$ordinal){
   this.$init_74();
 }
 ;
-defineClass(245, 18, $intern_17, cggdc.Style$Unit$3);
+defineClass(254, 18, $intern_16, cggdc.Style$Unit$3);
 _.$init_74 = function $init_74(){
 }
 ;
@@ -7314,7 +7336,7 @@ _.getType = function getType_1(){
   return 'em';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/3', 245, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/3', 254, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$4 = function $clinit_Style$Unit$4(){
   cggdc.$clinit_Style$Unit$4 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7326,7 +7348,7 @@ cggdc.Style$Unit$4 = function Style$Unit$4(enum$name, enum$ordinal){
   this.$init_75();
 }
 ;
-defineClass(246, 18, $intern_17, cggdc.Style$Unit$4);
+defineClass(255, 18, $intern_16, cggdc.Style$Unit$4);
 _.$init_75 = function $init_75(){
 }
 ;
@@ -7334,7 +7356,7 @@ _.getType = function getType_2(){
   return 'ex';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/4', 246, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/4', 255, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$5 = function $clinit_Style$Unit$5(){
   cggdc.$clinit_Style$Unit$5 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7346,7 +7368,7 @@ cggdc.Style$Unit$5 = function Style$Unit$5(enum$name, enum$ordinal){
   this.$init_76();
 }
 ;
-defineClass(247, 18, $intern_17, cggdc.Style$Unit$5);
+defineClass(256, 18, $intern_16, cggdc.Style$Unit$5);
 _.$init_76 = function $init_76(){
 }
 ;
@@ -7354,7 +7376,7 @@ _.getType = function getType_3(){
   return 'pt';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/5', 247, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/5', 256, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$6 = function $clinit_Style$Unit$6(){
   cggdc.$clinit_Style$Unit$6 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7366,7 +7388,7 @@ cggdc.Style$Unit$6 = function Style$Unit$6(enum$name, enum$ordinal){
   this.$init_77();
 }
 ;
-defineClass(248, 18, $intern_17, cggdc.Style$Unit$6);
+defineClass(257, 18, $intern_16, cggdc.Style$Unit$6);
 _.$init_77 = function $init_77(){
 }
 ;
@@ -7374,7 +7396,7 @@ _.getType = function getType_4(){
   return 'pc';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/6', 248, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/6', 257, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$7 = function $clinit_Style$Unit$7(){
   cggdc.$clinit_Style$Unit$7 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7386,7 +7408,7 @@ cggdc.Style$Unit$7 = function Style$Unit$7(enum$name, enum$ordinal){
   this.$init_78();
 }
 ;
-defineClass(249, 18, $intern_17, cggdc.Style$Unit$7);
+defineClass(258, 18, $intern_16, cggdc.Style$Unit$7);
 _.$init_78 = function $init_78(){
 }
 ;
@@ -7394,7 +7416,7 @@ _.getType = function getType_5(){
   return 'in';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/7', 249, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/7', 258, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$8 = function $clinit_Style$Unit$8(){
   cggdc.$clinit_Style$Unit$8 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7406,7 +7428,7 @@ cggdc.Style$Unit$8 = function Style$Unit$8(enum$name, enum$ordinal){
   this.$init_79();
 }
 ;
-defineClass(250, 18, $intern_17, cggdc.Style$Unit$8);
+defineClass(259, 18, $intern_16, cggdc.Style$Unit$8);
 _.$init_79 = function $init_79(){
 }
 ;
@@ -7414,7 +7436,7 @@ _.getType = function getType_6(){
   return 'cm';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/8', 250, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/8', 259, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$9 = function $clinit_Style$Unit$9(){
   cggdc.$clinit_Style$Unit$9 = emptyMethod;
   cggdc.$clinit_Style$Unit();
@@ -7426,7 +7448,7 @@ cggdc.Style$Unit$9 = function Style$Unit$9(enum$name, enum$ordinal){
   this.$init_80();
 }
 ;
-defineClass(251, 18, $intern_17, cggdc.Style$Unit$9);
+defineClass(260, 18, $intern_16, cggdc.Style$Unit$9);
 _.$init_80 = function $init_80(){
 }
 ;
@@ -7434,118 +7456,118 @@ _.getType = function getType_7(){
   return 'mm';
 }
 ;
-cggl.Lcom_google_gwt_dom_client_Style$Unit$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/9', 251, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
+cggl.Lcom_google_gwt_dom_client_Style$Unit$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/9', 260, cggl.Lcom_google_gwt_dom_client_Style$Unit_2_classLit, null, null);
 cggdc.$clinit_Style$Unit$Map = function $clinit_Style$Unit$Map(){
   cggdc.$clinit_Style$Unit$Map = emptyMethod;
   cggdc.$MAP_1 = createValueOfMap(cggdc.values_2());
 }
 ;
-defineClass(563, 1, $intern_0);
+defineClass(572, 1, $intern_0);
 cggdc.$clinit_Style$VerticalAlign = function $clinit_Style$VerticalAlign(){
   cggdc.$clinit_Style$VerticalAlign = emptyMethod;
 }
 ;
-defineClass(560, 5, $intern_9);
+defineClass(569, 5, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$1 = function $clinit_Style$VerticalAlign$1(){
   cggdc.$clinit_Style$VerticalAlign$1 = emptyMethod;
 }
 ;
-defineClass(668, 560, $intern_9);
+defineClass(677, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$2 = function $clinit_Style$VerticalAlign$2(){
   cggdc.$clinit_Style$VerticalAlign$2 = emptyMethod;
 }
 ;
-defineClass(669, 560, $intern_9);
+defineClass(678, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$3 = function $clinit_Style$VerticalAlign$3(){
   cggdc.$clinit_Style$VerticalAlign$3 = emptyMethod;
 }
 ;
-defineClass(670, 560, $intern_9);
+defineClass(679, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$4 = function $clinit_Style$VerticalAlign$4(){
   cggdc.$clinit_Style$VerticalAlign$4 = emptyMethod;
 }
 ;
-defineClass(671, 560, $intern_9);
+defineClass(680, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$5 = function $clinit_Style$VerticalAlign$5(){
   cggdc.$clinit_Style$VerticalAlign$5 = emptyMethod;
 }
 ;
-defineClass(672, 560, $intern_9);
+defineClass(681, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$6 = function $clinit_Style$VerticalAlign$6(){
   cggdc.$clinit_Style$VerticalAlign$6 = emptyMethod;
 }
 ;
-defineClass(673, 560, $intern_9);
+defineClass(682, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$7 = function $clinit_Style$VerticalAlign$7(){
   cggdc.$clinit_Style$VerticalAlign$7 = emptyMethod;
 }
 ;
-defineClass(674, 560, $intern_9);
+defineClass(683, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$8 = function $clinit_Style$VerticalAlign$8(){
   cggdc.$clinit_Style$VerticalAlign$8 = emptyMethod;
 }
 ;
-defineClass(675, 560, $intern_9);
+defineClass(684, 569, $intern_9);
 cggdc.$clinit_Style$VerticalAlign$Map = function $clinit_Style$VerticalAlign$Map(){
   cggdc.$clinit_Style$VerticalAlign$Map = emptyMethod;
 }
 ;
-defineClass(676, 1, $intern_0);
+defineClass(685, 1, $intern_0);
 cggdc.$clinit_Style$Visibility = function $clinit_Style$Visibility(){
   cggdc.$clinit_Style$Visibility = emptyMethod;
 }
 ;
-defineClass(561, 5, $intern_9);
+defineClass(570, 5, $intern_9);
 cggdc.$clinit_Style$Visibility$1 = function $clinit_Style$Visibility$1(){
   cggdc.$clinit_Style$Visibility$1 = emptyMethod;
 }
 ;
-defineClass(677, 561, $intern_9);
+defineClass(686, 570, $intern_9);
 cggdc.$clinit_Style$Visibility$2 = function $clinit_Style$Visibility$2(){
   cggdc.$clinit_Style$Visibility$2 = emptyMethod;
 }
 ;
-defineClass(678, 561, $intern_9);
+defineClass(687, 570, $intern_9);
 cggdc.$clinit_Style$Visibility$Map = function $clinit_Style$Visibility$Map(){
   cggdc.$clinit_Style$Visibility$Map = emptyMethod;
 }
 ;
-defineClass(679, 1, $intern_0);
+defineClass(688, 1, $intern_0);
 cggdc.$clinit_Style$WhiteSpace = function $clinit_Style$WhiteSpace(){
   cggdc.$clinit_Style$WhiteSpace = emptyMethod;
 }
 ;
-defineClass(562, 5, $intern_9);
+defineClass(571, 5, $intern_9);
 cggdc.$clinit_Style$WhiteSpace$1 = function $clinit_Style$WhiteSpace$1(){
   cggdc.$clinit_Style$WhiteSpace$1 = emptyMethod;
 }
 ;
-defineClass(680, 562, $intern_9);
+defineClass(689, 571, $intern_9);
 cggdc.$clinit_Style$WhiteSpace$2 = function $clinit_Style$WhiteSpace$2(){
   cggdc.$clinit_Style$WhiteSpace$2 = emptyMethod;
 }
 ;
-defineClass(681, 562, $intern_9);
+defineClass(690, 571, $intern_9);
 cggdc.$clinit_Style$WhiteSpace$3 = function $clinit_Style$WhiteSpace$3(){
   cggdc.$clinit_Style$WhiteSpace$3 = emptyMethod;
 }
 ;
-defineClass(682, 562, $intern_9);
+defineClass(691, 571, $intern_9);
 cggdc.$clinit_Style$WhiteSpace$4 = function $clinit_Style$WhiteSpace$4(){
   cggdc.$clinit_Style$WhiteSpace$4 = emptyMethod;
 }
 ;
-defineClass(683, 562, $intern_9);
+defineClass(692, 571, $intern_9);
 cggdc.$clinit_Style$WhiteSpace$5 = function $clinit_Style$WhiteSpace$5(){
   cggdc.$clinit_Style$WhiteSpace$5 = emptyMethod;
 }
 ;
-defineClass(684, 562, $intern_9);
+defineClass(693, 571, $intern_9);
 cggdc.$clinit_Style$WhiteSpace$Map = function $clinit_Style$WhiteSpace$Map(){
   cggdc.$clinit_Style$WhiteSpace$Map = emptyMethod;
 }
 ;
-defineClass(685, 1, $intern_0);
+defineClass(694, 1, $intern_0);
 cggdc.$clinit_Text = function $clinit_Text(){
   cggdc.$clinit_Text = emptyMethod;
   cggdc.$clinit_Node();
@@ -7570,7 +7592,7 @@ cgwbes.Event_0 = function Event_0(){
   this.$init_81();
 }
 ;
-defineClass(108, 1, $intern_0);
+defineClass(114, 1, $intern_0);
 _.$init_81 = function $init_81(){
 }
 ;
@@ -7586,7 +7608,7 @@ _.toString$ = function toString_6(){
   return 'An event type';
 }
 ;
-cggl.Lcom_google_web_bindery_event_shared_Event_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event', 108, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_Event_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event', 114, cggl.Ljava_lang_Object_2_classLit);
 cgges.$clinit_GwtEvent = function $clinit_GwtEvent(){
   cgges.$clinit_GwtEvent = emptyMethod;
   cgwbes.$clinit_Event();
@@ -7598,7 +7620,7 @@ cgges.GwtEvent = function GwtEvent(){
   this.$init_82();
 }
 ;
-defineClass(75, 108, $intern_0);
+defineClass(76, 114, $intern_0);
 _.$init_82 = function $init_82(){
 }
 ;
@@ -7606,7 +7628,7 @@ _.assertLive = function assertLive(){
 }
 ;
 _.dispatch = function dispatch(handler){
-  this.dispatch_0(dynamicCast(handler, 65));
+  this.dispatch_0(dynamicCast(handler, 69));
 }
 ;
 _.getAssociatedType = function getAssociatedType(){
@@ -7615,7 +7637,7 @@ _.getAssociatedType = function getAssociatedType(){
 ;
 _.getSource = function getSource_0(){
   this.assertLive();
-  return getClassPrototype(108).getSource.call(this);
+  return getClassPrototype(114).getSource.call(this);
 }
 ;
 _.isLive = function isLive(){
@@ -7628,7 +7650,7 @@ _.kill = function kill(){
 }
 ;
 _.overrideSource = function overrideSource(source){
-  getClassPrototype(108).setSource.call(this, source);
+  getClassPrototype(114).setSource.call(this, source);
 }
 ;
 _.revive = function revive(){
@@ -7637,7 +7659,7 @@ _.revive = function revive(){
 }
 ;
 _.dead = false;
-cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit = createForClass('com.google.gwt.event.shared', 'GwtEvent', 75, cggl.Lcom_google_web_bindery_event_shared_Event_2_classLit);
+cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit = createForClass('com.google.gwt.event.shared', 'GwtEvent', 76, cggl.Lcom_google_web_bindery_event_shared_Event_2_classLit);
 cggels.$clinit_AttachEvent = function $clinit_AttachEvent(){
   cggels.$clinit_AttachEvent = emptyMethod;
   cgges.$clinit_GwtEvent();
@@ -7658,7 +7680,7 @@ cggels.fire_0 = function fire_0(source, attached){
   }
 }
 ;
-defineClass(352, 75, $intern_0, cggels.AttachEvent);
+defineClass(352, 76, $intern_0, cggels.AttachEvent);
 _.$init_83 = function $init_83(){
 }
 ;
@@ -7709,7 +7731,7 @@ cggels.fire_2 = function fire_2(source, target, autoClosed){
   }
 }
 ;
-defineClass(347, 75, $intern_0, cggels.CloseEvent_0);
+defineClass(346, 76, $intern_0, cggels.CloseEvent_0);
 _.$init_84 = function $init_84(){
 }
 ;
@@ -7718,15 +7740,15 @@ _.dispatch_2 = function dispatch_2(handler){
 }
 ;
 _.dispatch_0 = function dispatch_3(handler){
-  this.dispatch_2(dynamicCast(handler, 370));
+  this.dispatch_2(dynamicCast(handler, 371));
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_1(){
-  return dynamicCast(cggels.TYPE_0, 95);
+  return dynamicCast(cggels.TYPE_0, 98);
 }
 ;
 _.autoClosed = false;
-cggl.Lcom_google_gwt_event_logical_shared_CloseEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'CloseEvent', 347, cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit);
+cggl.Lcom_google_gwt_event_logical_shared_CloseEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'CloseEvent', 346, cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit);
 cggels.$clinit_CloseHandler = function $clinit_CloseHandler(){
   cggels.$clinit_CloseHandler = emptyMethod;
 }
@@ -7772,7 +7794,7 @@ cggels.getType_8 = function getType_8(){
   return cggels.TYPE_1;
 }
 ;
-defineClass(296, 75, $intern_0, cggels.ResizeEvent);
+defineClass(309, 76, $intern_0, cggels.ResizeEvent);
 _.$init_85 = function $init_85(){
 }
 ;
@@ -7781,7 +7803,7 @@ _.dispatch_3 = function dispatch_4(handler){
 }
 ;
 _.dispatch_0 = function dispatch_5(handler){
-  this.dispatch_3(dynamicCast(handler, 365));
+  this.dispatch_3(dynamicCast(handler, 366));
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_2(){
@@ -7790,7 +7812,7 @@ _.getAssociatedType_0 = function getAssociatedType_2(){
 ;
 _.height = 0;
 _.width_0 = 0;
-cggl.Lcom_google_gwt_event_logical_shared_ResizeEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'ResizeEvent', 296, cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit);
+cggl.Lcom_google_gwt_event_logical_shared_ResizeEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'ResizeEvent', 309, cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit);
 cggels.$clinit_ResizeHandler = function $clinit_ResizeHandler(){
   cggels.$clinit_ResizeHandler = emptyMethod;
 }
@@ -7811,7 +7833,7 @@ cgwbes.Event$Type = function Event$Type(){
   this.index_0 = ++cgwbes.nextHashCode;
 }
 ;
-defineClass(210, 1, $intern_0);
+defineClass(219, 1, $intern_0);
 _.$init_86 = function $init_86(){
 }
 ;
@@ -7825,7 +7847,7 @@ _.toString$ = function toString_7(){
 ;
 _.index_0 = 0;
 cgwbes.nextHashCode = 0;
-cggl.Lcom_google_web_bindery_event_shared_Event$Type_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event/Type', 210, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_Event$Type_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event/Type', 219, cggl.Ljava_lang_Object_2_classLit);
 cgges.$clinit_GwtEvent$Type = function $clinit_GwtEvent$Type(){
   cgges.$clinit_GwtEvent$Type = emptyMethod;
   cgwbes.$clinit_Event$Type();
@@ -7837,11 +7859,11 @@ cgges.GwtEvent$Type = function GwtEvent$Type(){
   this.$init_87();
 }
 ;
-defineClass(95, 210, {95:1, 1:1}, cgges.GwtEvent$Type);
+defineClass(98, 219, {98:1, 1:1}, cgges.GwtEvent$Type);
 _.$init_87 = function $init_87(){
 }
 ;
-cggl.Lcom_google_gwt_event_shared_GwtEvent$Type_2_classLit = createForClass('com.google.gwt.event.shared', 'GwtEvent/Type', 95, cggl.Lcom_google_web_bindery_event_shared_Event$Type_2_classLit);
+cggl.Lcom_google_gwt_event_shared_GwtEvent$Type_2_classLit = createForClass('com.google.gwt.event.shared', 'GwtEvent/Type', 98, cggl.Lcom_google_web_bindery_event_shared_Event$Type_2_classLit);
 cgges.$clinit_HandlerManager = function $clinit_HandlerManager(){
   cgges.$clinit_HandlerManager = emptyMethod;
   jl.$clinit_Object();
@@ -7859,7 +7881,7 @@ cgges.HandlerManager_0 = function HandlerManager_0(source, fireInReverseOrder){
   this.source_0 = source;
 }
 ;
-defineClass(136, 1, $intern_0);
+defineClass(139, 1, $intern_0);
 _.$init_88 = function $init_88(){
 }
 ;
@@ -7879,7 +7901,7 @@ _.fireEvent_0 = function fireEvent(event_0){
   }
    catch ($e0) {
     $e0 = wrap($e0);
-    if (instanceOf($e0, 62)) {
+    if (instanceOf($e0, 66)) {
       e = $e0;
       throw new cgges.UmbrellaException_0(e.getCauses());
     }
@@ -7900,7 +7922,7 @@ _.isEventHandled = function isEventHandled(e){
   return this.eventBus.isEventHandled_0(e);
 }
 ;
-cggl.Lcom_google_gwt_event_shared_HandlerManager_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager', 136, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_event_shared_HandlerManager_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager', 139, cggl.Ljava_lang_Object_2_classLit);
 cgwbes.$clinit_EventBus = function $clinit_EventBus(){
   cgwbes.$clinit_EventBus = emptyMethod;
   jl.$clinit_Object();
@@ -7922,11 +7944,11 @@ cgwbes.setSourceOfEvent = function setSourceOfEvent(event_0, source){
   event_0.setSource(source);
 }
 ;
-defineClass(211, 1, $intern_0);
+defineClass(220, 1, $intern_0);
 _.$init_89 = function $init_89(){
 }
 ;
-cggl.Lcom_google_web_bindery_event_shared_EventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'EventBus', 211, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_EventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'EventBus', 220, cggl.Ljava_lang_Object_2_classLit);
 cgwbes.$clinit_SimpleEventBus = function $clinit_SimpleEventBus(){
   cgwbes.$clinit_SimpleEventBus = emptyMethod;
   cgwbes.$clinit_EventBus();
@@ -7939,7 +7961,7 @@ cgwbes.SimpleEventBus = function SimpleEventBus(fireInReverseOrder){
   this.isReverseOrder = fireInReverseOrder;
 }
 ;
-defineClass(109, 211, $intern_0);
+defineClass(115, 220, $intern_0);
 _.$init_90 = function $init_90(){
   this.firingDepth = 0;
   this.map_0 = new ju.HashMap;
@@ -7953,7 +7975,7 @@ _.defer_0 = function defer_0(command){
   if (isNull(this.deferredDeltas)) {
     this.deferredDeltas = new ju.ArrayList;
   }
-  this.deferredDeltas.add_3(command);
+  this.deferredDeltas.add_4(command);
 }
 ;
 _.doAdd = function doAdd(type_0, source, handler){
@@ -7976,7 +7998,7 @@ _.doAddNow = function doAddNow(type_0, source, handler){
   cgwbes.$clinit_SimpleEventBus();
   var l;
   l = this.ensureHandlerList(type_0, source);
-  l.add_3(handler);
+  l.add_4(handler);
 }
 ;
 _.doFire = function doFire(event_0, source){
@@ -8004,7 +8026,7 @@ _.doFire = function doFire(event_0, source){
           if (isNull(causes)) {
             causes = new ju.HashSet;
           }
-          causes.add_3(e);
+          causes.add_4(e);
         }
          else 
           throw unwrap($e0);
@@ -8035,7 +8057,7 @@ _.doRemoveNow = function doRemoveNow(type_0, source, handler){
   cgwbes.$clinit_SimpleEventBus();
   var l, removed;
   l = this.getHandlerList(type_0, source);
-  removed = l.remove_5(handler);
+  removed = l.remove_6(handler);
   if (removed && l.isEmpty_0()) {
     this.prune(type_0, source);
   }
@@ -8051,12 +8073,12 @@ _.enqueueRemove = function enqueueRemove(type_0, source, handler){
 ;
 _.ensureHandlerList = function ensureHandlerList(type_0, source){
   var handlers, sourceMap;
-  sourceMap = dynamicCast(this.map_0.get_1(type_0), 36);
+  sourceMap = dynamicCast(this.map_0.get_1(type_0), 34);
   if (isNull(sourceMap)) {
     sourceMap = new ju.HashMap;
     this.map_0.put(type_0, sourceMap);
   }
-  handlers = dynamicCast(dynamicCast(sourceMap.get_1(source), 17), 17);
+  handlers = dynamicCast(dynamicCast(sourceMap.get_1(source), 19), 19);
   if (isNull(handlers)) {
     handlers = new ju.ArrayList;
     sourceMap.put(source, handlers);
@@ -8082,11 +8104,11 @@ _.getDispatchList = function getDispatchList(type_0, source){
 ;
 _.getHandlerList = function getHandlerList(type_0, source){
   var handlers, sourceMap;
-  sourceMap = dynamicCast(this.map_0.get_1(type_0), 36);
+  sourceMap = dynamicCast(this.map_0.get_1(type_0), 34);
   if (isNull(sourceMap)) {
     return ju.emptyList();
   }
-  handlers = dynamicCast(dynamicCast(sourceMap.get_1(source), 17), 17);
+  handlers = dynamicCast(dynamicCast(sourceMap.get_1(source), 19), 19);
   if (isNull(handlers)) {
     return ju.emptyList();
   }
@@ -8098,7 +8120,7 @@ _.handleQueuedAddsAndRemoves = function handleQueuedAddsAndRemoves(){
   if (isNotNull(this.deferredDeltas)) {
     try {
       for (c$iterator = this.deferredDeltas.iterator(); c$iterator.hasNext();) {
-        c = dynamicCast(c$iterator.next_0(), 369);
+        c = dynamicCast(c$iterator.next_0(), 370);
         c.execute_2();
       }
     }
@@ -8114,8 +8136,8 @@ _.isEventHandled_0 = function isEventHandled_0(eventKey){
 ;
 _.prune = function prune_0(type_0, source){
   var pruned, sourceMap;
-  sourceMap = dynamicCast(this.map_0.get_1(type_0), 36);
-  pruned = dynamicCast(sourceMap.remove_3(source), 17);
+  sourceMap = dynamicCast(this.map_0.get_1(type_0), 34);
+  pruned = dynamicCast(sourceMap.remove_3(source), 19);
   if (sourceMap.isEmpty_0()) {
     this.map_0.remove_3(type_0);
   }
@@ -8123,7 +8145,7 @@ _.prune = function prune_0(type_0, source){
 ;
 _.firingDepth = 0;
 _.isReverseOrder = false;
-cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus', 109, cggl.Lcom_google_web_bindery_event_shared_EventBus_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus', 115, cggl.Lcom_google_web_bindery_event_shared_EventBus_2_classLit);
 cgges.$clinit_HandlerManager$Bus = function $clinit_HandlerManager$Bus(){
   cgges.$clinit_HandlerManager$Bus = emptyMethod;
   cgwbes.$clinit_SimpleEventBus();
@@ -8135,19 +8157,19 @@ cgges.HandlerManager$Bus = function HandlerManager$Bus(fireInReverseOrder){
   this.$init_91();
 }
 ;
-defineClass(212, 109, $intern_0, cgges.HandlerManager$Bus);
+defineClass(221, 115, $intern_0, cgges.HandlerManager$Bus);
 _.$init_91 = function $init_91(){
 }
 ;
 _.doRemove = function doRemove_0(type_0, source, handler){
-  getClassPrototype(109).doRemove.call(this, type_0, source, handler);
+  getClassPrototype(115).doRemove.call(this, type_0, source, handler);
 }
 ;
 _.isEventHandled_0 = function isEventHandled_1(eventKey){
-  return getClassPrototype(109).isEventHandled_0.call(this, eventKey);
+  return getClassPrototype(115).isEventHandled_0.call(this, eventKey);
 }
 ;
-cggl.Lcom_google_gwt_event_shared_HandlerManager$Bus_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager/Bus', 212, cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus_2_classLit);
+cggl.Lcom_google_gwt_event_shared_HandlerManager$Bus_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager/Bus', 221, cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus_2_classLit);
 cgges.$clinit_HandlerRegistration = function $clinit_HandlerRegistration(){
   cgges.$clinit_HandlerRegistration = emptyMethod;
 }
@@ -8168,7 +8190,7 @@ cgges.LegacyHandlerWrapper = function LegacyHandlerWrapper(real){
   this.real = real;
 }
 ;
-defineClass(320, 1, $intern_0, cgges.LegacyHandlerWrapper);
+defineClass(328, 1, $intern_0, cgges.LegacyHandlerWrapper);
 _.$init_92 = function $init_92(){
 }
 ;
@@ -8176,7 +8198,7 @@ _.removeHandler = function removeHandler(){
   this.real.removeHandler();
 }
 ;
-cggl.Lcom_google_gwt_event_shared_LegacyHandlerWrapper_2_classLit = createForClass('com.google.gwt.event.shared', 'LegacyHandlerWrapper', 320, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_event_shared_LegacyHandlerWrapper_2_classLit = createForClass('com.google.gwt.event.shared', 'LegacyHandlerWrapper', 328, cggl.Ljava_lang_Object_2_classLit);
 cgwbes.$clinit_UmbrellaException = function $clinit_UmbrellaException(){
   cgwbes.$clinit_UmbrellaException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -8219,7 +8241,7 @@ cgwbes.makeMessage = function makeMessage(causes){
   return b.toString$();
 }
 ;
-defineClass(62, 11, $intern_18, cgwbes.UmbrellaException);
+defineClass(66, 11, $intern_17, cgwbes.UmbrellaException);
 _.$init_93 = function $init_93(){
 }
 ;
@@ -8229,7 +8251,7 @@ _.getCauses = function getCauses(){
 ;
 cgwbes.MULTIPLE = ' exceptions caught: ';
 cgwbes.ONE = 'Exception caught: ';
-cggl.Lcom_google_web_bindery_event_shared_UmbrellaException_2_classLit = createForClass('com.google.web.bindery.event.shared', 'UmbrellaException', 62, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_UmbrellaException_2_classLit = createForClass('com.google.web.bindery.event.shared', 'UmbrellaException', 66, cggl.Ljava_lang_RuntimeException_2_classLit);
 cgges.$clinit_UmbrellaException_0 = function $clinit_UmbrellaException_0(){
   cgges.$clinit_UmbrellaException_0 = emptyMethod;
   cgwbes.$clinit_UmbrellaException();
@@ -8241,11 +8263,11 @@ cgges.UmbrellaException_0 = function UmbrellaException_0(causes){
   this.$init_94();
 }
 ;
-defineClass(322, 62, $intern_18, cgges.UmbrellaException_0);
+defineClass(330, 66, $intern_17, cgges.UmbrellaException_0);
 _.$init_94 = function $init_94(){
 }
 ;
-cggl.Lcom_google_gwt_event_shared_UmbrellaException_2_classLit = createForClass('com.google.gwt.event.shared', 'UmbrellaException', 322, cggl.Lcom_google_web_bindery_event_shared_UmbrellaException_2_classLit);
+cggl.Lcom_google_gwt_event_shared_UmbrellaException_2_classLit = createForClass('com.google.gwt.event.shared', 'UmbrellaException', 330, cggl.Lcom_google_web_bindery_event_shared_UmbrellaException_2_classLit);
 cgggc.$clinit_Position = function $clinit_Position(){
   cgggc.$clinit_Position = emptyMethod;
 }
@@ -8268,7 +8290,7 @@ cgghc.$clinit_Header = function $clinit_Header(){
   cgghc.$clinit_Header = emptyMethod;
 }
 ;
-defineClass(767, 1, $intern_0);
+defineClass(749, 1, $intern_0);
 cgghc.$clinit_Request = function $clinit_Request(){
   cgghc.$clinit_Request = emptyMethod;
   jl.$clinit_Object();
@@ -8299,7 +8321,7 @@ cgghc.createResponse = function createResponse(xmlHttpRequest){
   return cgghc.get_3().createResponse(xmlHttpRequest);
 }
 ;
-defineClass(115, 1, {115:1, 1:1}, cgghc.Request);
+defineClass(120, 1, {120:1, 1:1}, cgghc.Request);
 _.$init_95 = function $init_95(){
   this.timer = new cgghc.Request$1(this);
 }
@@ -8338,7 +8360,7 @@ _.fireOnTimeout = function fireOnTimeout(){
 }
 ;
 _.timeoutMillis = 0;
-cggl.Lcom_google_gwt_http_client_Request_2_classLit = createForClass('com.google.gwt.http.client', 'Request', 115, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_http_client_Request_2_classLit = createForClass('com.google.gwt.http.client', 'Request', 120, cggl.Ljava_lang_Object_2_classLit);
 cgghc.$clinit_Request$1 = function $clinit_Request$1(){
   cgghc.$clinit_Request$1 = emptyMethod;
   cgguc.$clinit_Timer();
@@ -8351,7 +8373,7 @@ cgghc.Request$1 = function Request$1(this$0){
   this.$init_96();
 }
 ;
-defineClass(335, 78, $intern_0, cgghc.Request$1);
+defineClass(327, 80, $intern_0, cgghc.Request$1);
 _.$init_96 = function $init_96(){
 }
 ;
@@ -8359,11 +8381,11 @@ _.run_2 = function run_3(){
   this.this$01.fireOnTimeout();
 }
 ;
-cggl.Lcom_google_gwt_http_client_Request$1_2_classLit = createForClass('com.google.gwt.http.client', 'Request/1', 335, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
+cggl.Lcom_google_gwt_http_client_Request$1_2_classLit = createForClass('com.google.gwt.http.client', 'Request/1', 327, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
 cgghc.$clinit_Request$ImplHolder = function $clinit_Request$ImplHolder(){
   cgghc.$clinit_Request$ImplHolder = emptyMethod;
   jl.$clinit_Object();
-  cgghc.impl_1 = dynamicCast(new cgghc.Request$RequestImpl, 85);
+  cgghc.impl_1 = dynamicCast(new cgghc.Request$RequestImpl, 83);
 }
 ;
 cgghc.get_3 = function get_3(){
@@ -8371,7 +8393,7 @@ cgghc.get_3 = function get_3(){
   return cgghc.impl_1;
 }
 ;
-defineClass(765, 1, $intern_0);
+defineClass(747, 1, $intern_0);
 cgghc.$clinit_Request$RequestImpl = function $clinit_Request$RequestImpl(){
   cgghc.$clinit_Request$RequestImpl = emptyMethod;
   jl.$clinit_Object();
@@ -8383,7 +8405,7 @@ cgghc.Request$RequestImpl = function Request$RequestImpl(){
   this.$init_97();
 }
 ;
-defineClass(85, 1, {85:1, 1:1}, cgghc.Request$RequestImpl);
+defineClass(83, 1, {83:1, 1:1}, cgghc.Request$RequestImpl);
 _.$init_97 = function $init_97(){
 }
 ;
@@ -8391,7 +8413,7 @@ _.createResponse = function createResponse_0(xmlHttpRequest){
   return new cgghc.ResponseImpl(xmlHttpRequest);
 }
 ;
-cggl.Lcom_google_gwt_http_client_Request$RequestImpl_2_classLit = createForClass('com.google.gwt.http.client', 'Request/RequestImpl', 85, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_http_client_Request$RequestImpl_2_classLit = createForClass('com.google.gwt.http.client', 'Request/RequestImpl', 83, cggl.Ljava_lang_Object_2_classLit);
 cgghc.$clinit_Request$RequestImplIE8And9 = function $clinit_Request$RequestImplIE8And9(){
   cgghc.$clinit_Request$RequestImplIE8And9 = emptyMethod;
   cgghc.$clinit_Request$RequestImpl();
@@ -8402,7 +8424,7 @@ cgghc.Request$RequestImplIE8And9 = function Request$RequestImplIE8And9(){
   this.$init_98();
 }
 ;
-defineClass(402, 85, {85:1, 1:1});
+defineClass(400, 83, {83:1, 1:1});
 _.$init_98 = function $init_98(){
 }
 ;
@@ -8410,7 +8432,7 @@ _.createResponse = function createResponse_1(xmlHttpRequest){
   return new cgghc.Request$RequestImplIE8And9$1(this, xmlHttpRequest);
 }
 ;
-cggl.Lcom_google_gwt_http_client_Request$RequestImplIE8And9_2_classLit = createForClass('com.google.gwt.http.client', 'Request/RequestImplIE8And9', 402, cggl.Lcom_google_gwt_http_client_Request$RequestImpl_2_classLit);
+cggl.Lcom_google_gwt_http_client_Request$RequestImplIE8And9_2_classLit = createForClass('com.google.gwt.http.client', 'Request/RequestImplIE8And9', 400, cggl.Lcom_google_gwt_http_client_Request$RequestImpl_2_classLit);
 cgghc.$clinit_Response = function $clinit_Response(){
   cgghc.$clinit_Response = emptyMethod;
   jl.$clinit_Object();
@@ -8422,7 +8444,7 @@ cgghc.Response = function Response(){
   this.$init_99();
 }
 ;
-defineClass(84, 1, $intern_19);
+defineClass(82, 1, $intern_18);
 _.$init_99 = function $init_99(){
 }
 ;
@@ -8464,7 +8486,7 @@ cgghc.SC_TEMPORARY_REDIRECT = 307;
 cgghc.SC_UNAUTHORIZED = 401;
 cgghc.SC_UNSUPPORTED_MEDIA_TYPE = 415;
 cgghc.SC_USE_PROXY = 305;
-cggl.Lcom_google_gwt_http_client_Response_2_classLit = createForClass('com.google.gwt.http.client', 'Response', 84, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_http_client_Response_2_classLit = createForClass('com.google.gwt.http.client', 'Response', 82, cggl.Ljava_lang_Object_2_classLit);
 cgghc.$clinit_ResponseImpl = function $clinit_ResponseImpl(){
   cgghc.$clinit_ResponseImpl = emptyMethod;
   cgghc.$clinit_Response();
@@ -8477,7 +8499,7 @@ cgghc.ResponseImpl = function ResponseImpl(xmlHttpRequest){
   this.xmlHttpRequest = xmlHttpRequest;
 }
 ;
-defineClass(122, 84, $intern_19, cgghc.ResponseImpl);
+defineClass(123, 82, $intern_18, cgghc.ResponseImpl);
 _.$init_100 = function $init_100(){
 }
 ;
@@ -8497,7 +8519,7 @@ _.isResponseReady = function isResponseReady(){
   return cggxc.$getReadyState(this.xmlHttpRequest) == 4;
 }
 ;
-cggl.Lcom_google_gwt_http_client_ResponseImpl_2_classLit = createForClass('com.google.gwt.http.client', 'ResponseImpl', 122, cggl.Lcom_google_gwt_http_client_Response_2_classLit);
+cggl.Lcom_google_gwt_http_client_ResponseImpl_2_classLit = createForClass('com.google.gwt.http.client', 'ResponseImpl', 123, cggl.Lcom_google_gwt_http_client_Response_2_classLit);
 cgghc.$clinit_Request$RequestImplIE8And9$1 = function $clinit_Request$RequestImplIE8And9$1(){
   cgghc.$clinit_Request$RequestImplIE8And9$1 = emptyMethod;
   cgghc.$clinit_ResponseImpl();
@@ -8510,17 +8532,17 @@ cgghc.Request$RequestImplIE8And9$1 = function Request$RequestImplIE8And9$1(this$
   this.$init_101();
 }
 ;
-defineClass(334, 122, $intern_19, cgghc.Request$RequestImplIE8And9$1);
+defineClass(326, 123, $intern_18, cgghc.Request$RequestImplIE8And9$1);
 _.$init_101 = function $init_101(){
 }
 ;
 _.getStatusCode = function getStatusCode_1(){
   var statusCode;
-  statusCode = getClassPrototype(122).getStatusCode.call(this);
+  statusCode = getClassPrototype(123).getStatusCode.call(this);
   return statusCode == 1223?204:statusCode;
 }
 ;
-cggl.Lcom_google_gwt_http_client_Request$RequestImplIE8And9$1_2_classLit = createForClass('com.google.gwt.http.client', 'Request/RequestImplIE8And9/1', 334, cggl.Lcom_google_gwt_http_client_ResponseImpl_2_classLit);
+cggl.Lcom_google_gwt_http_client_Request$RequestImplIE8And9$1_2_classLit = createForClass('com.google.gwt.http.client', 'Request/RequestImplIE8And9/1', 326, cggl.Lcom_google_gwt_http_client_ResponseImpl_2_classLit);
 cgghc.$clinit_RequestCallback = function $clinit_RequestCallback(){
   cgghc.$clinit_RequestCallback = emptyMethod;
 }
@@ -8536,11 +8558,11 @@ cgghc.RequestException = function RequestException(message){
   this.$init_102();
 }
 ;
-defineClass(103, 9, $intern_7, cgghc.RequestException);
+defineClass(106, 9, $intern_7, cgghc.RequestException);
 _.$init_102 = function $init_102(){
 }
 ;
-cggl.Lcom_google_gwt_http_client_RequestException_2_classLit = createForClass('com.google.gwt.http.client', 'RequestException', 103, cggl.Ljava_lang_Exception_2_classLit);
+cggl.Lcom_google_gwt_http_client_RequestException_2_classLit = createForClass('com.google.gwt.http.client', 'RequestException', 106, cggl.Ljava_lang_Exception_2_classLit);
 cgghc.$clinit_RequestPermissionException = function $clinit_RequestPermissionException(){
   cgghc.$clinit_RequestPermissionException = emptyMethod;
   cgghc.$clinit_RequestException();
@@ -8553,7 +8575,7 @@ cgghc.RequestPermissionException = function RequestPermissionException(url_0){
   this.url_0 = url_0;
 }
 ;
-defineClass(351, 103, $intern_7, cgghc.RequestPermissionException);
+defineClass(351, 106, $intern_7, cgghc.RequestPermissionException);
 _.$init_103 = function $init_103(){
 }
 ;
@@ -8575,17 +8597,17 @@ cgghc.formatMessage = function formatMessage(timeoutMillis){
   return 'A request timeout has expired after ' + timeoutMillis + ' ms';
 }
 ;
-defineClass(364, 103, $intern_7, cgghc.RequestTimeoutException);
+defineClass(365, 106, $intern_7, cgghc.RequestTimeoutException);
 _.$init_104 = function $init_104(){
 }
 ;
 _.timeoutMillis = 0;
-cggl.Lcom_google_gwt_http_client_RequestTimeoutException_2_classLit = createForClass('com.google.gwt.http.client', 'RequestTimeoutException', 364, cggl.Lcom_google_gwt_http_client_RequestException_2_classLit);
+cggl.Lcom_google_gwt_http_client_RequestTimeoutException_2_classLit = createForClass('com.google.gwt.http.client', 'RequestTimeoutException', 365, cggl.Lcom_google_gwt_http_client_RequestException_2_classLit);
 cgghc.$clinit_ResponseImpl$1 = function $clinit_ResponseImpl$1(){
   cgghc.$clinit_ResponseImpl$1 = emptyMethod;
 }
 ;
-defineClass(766, 767, $intern_0);
+defineClass(748, 749, $intern_0);
 cggic.$clinit_CurrencyData = function $clinit_CurrencyData(){
   cggic.$clinit_CurrencyData = emptyMethod;
 }
@@ -8655,7 +8677,7 @@ cggjc.nextCallbackId = function nextCallbackId(){
   return 'P' + cggjc.getAndIncrementCallbackCounter();
 }
 ;
-defineClass(155, 1, $intern_0, cggjc.JsonpRequest, cggjc.JsonpRequest_0);
+defineClass(156, 1, $intern_0, cggjc.JsonpRequest, cggjc.JsonpRequest_0);
 _.$init_105 = function $init_105(){
 }
 ;
@@ -8787,7 +8809,7 @@ cggjc.CALLBACKS_COUNTER_NAME = '__gwt_jsonp_counter__';
 cggjc.CALLBACKS_NAME = '__gwt_jsonp__';
 cggjc.INCREMENTAL_ID_PREFIX = 'P';
 cggjc.PREDETERMINED_ID_PREFIX = 'P';
-cggl.Lcom_google_gwt_jsonp_client_JsonpRequest_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequest', 155, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_jsonp_client_JsonpRequest_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequest', 156, cggl.Ljava_lang_Object_2_classLit);
 cggjc.$clinit_JsonpRequest$1 = function $clinit_JsonpRequest$1(){
   cggjc.$clinit_JsonpRequest$1 = emptyMethod;
   cgguc.$clinit_Timer();
@@ -8801,7 +8823,7 @@ cggjc.JsonpRequest$1 = function JsonpRequest$1(this$0, val$baseUri){
   this.$init_106();
 }
 ;
-defineClass(356, 78, $intern_0, cggjc.JsonpRequest$1);
+defineClass(357, 80, $intern_0, cggjc.JsonpRequest$1);
 _.$init_106 = function $init_106(){
 }
 ;
@@ -8809,7 +8831,7 @@ _.run_2 = function run_4(){
   this.this$01.onFailure_4(new cggjc.TimeoutException('Timeout while calling ' + this.val$baseUri2));
 }
 ;
-cggl.Lcom_google_gwt_jsonp_client_JsonpRequest$1_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequest/1', 356, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
+cggl.Lcom_google_gwt_jsonp_client_JsonpRequest$1_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequest/1', 357, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
 cggjc.$clinit_JsonpRequest$2 = function $clinit_JsonpRequest$2(){
   cggjc.$clinit_JsonpRequest$2 = emptyMethod;
   jl.$clinit_Object();
@@ -8822,7 +8844,7 @@ cggjc.JsonpRequest$2 = function JsonpRequest$2(this$0){
   this.$init_107();
 }
 ;
-defineClass(357, 1, $intern_0, cggjc.JsonpRequest$2);
+defineClass(358, 1, $intern_0, cggjc.JsonpRequest$2);
 _.$init_107 = function $init_107(){
 }
 ;
@@ -8837,7 +8859,7 @@ _.execute_2 = function execute_5(){
   }
 }
 ;
-cggl.Lcom_google_gwt_jsonp_client_JsonpRequest$2_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequest/2', 357, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_jsonp_client_JsonpRequest$2_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequest/2', 358, cggl.Ljava_lang_Object_2_classLit);
 cggjc.$clinit_JsonpRequestBuilder = function $clinit_JsonpRequestBuilder(){
   cggjc.$clinit_JsonpRequestBuilder = emptyMethod;
   jl.$clinit_Object();
@@ -8849,7 +8871,7 @@ cggjc.JsonpRequestBuilder = function JsonpRequestBuilder(){
   this.$init_108();
 }
 ;
-defineClass(355, 1, $intern_0, cggjc.JsonpRequestBuilder);
+defineClass(356, 1, $intern_0, cggjc.JsonpRequestBuilder);
 _.$init_108 = function $init_108(){
   this.timeout = 10000;
   this.callbackParam = 'callback';
@@ -8887,7 +8909,7 @@ _.setTimeout_0 = function setTimeout_1(timeout){
 }
 ;
 _.timeout = 0;
-cggl.Lcom_google_gwt_jsonp_client_JsonpRequestBuilder_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequestBuilder', 355, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_jsonp_client_JsonpRequestBuilder_2_classLit = createForClass('com.google.gwt.jsonp.client', 'JsonpRequestBuilder', 356, cggl.Ljava_lang_Object_2_classLit);
 cggjc.$clinit_TimeoutException = function $clinit_TimeoutException(){
   cggjc.$clinit_TimeoutException = emptyMethod;
   jl.$clinit_Exception();
@@ -9205,8 +9227,8 @@ function safeClose(resource, mainException){
 function unwrap(e){
   cggl.$clinit_Exceptions();
   var jse;
-  if (instanceOf(e, 34)) {
-    jse = dynamicCast(e, 34);
+  if (instanceOf(e, 32)) {
+    jse = dynamicCast(e, 32);
     if (jse.isThrownSet()) {
       return jse.getThrown();
     }
@@ -9244,10 +9266,10 @@ cggl.$clinit_LongLibBase = function $clinit_LongLibBase(){
   cggl.MASK_2 = (1 << 20) - 1;
   cggl.SIGN_BIT = 20 - 1;
   cggl.SIGN_BIT_VALUE = 1 << 19;
-  cggl.TWO_PWR_31_DBL = $intern_3 * $intern_20;
+  cggl.TWO_PWR_31_DBL = $intern_3 * $intern_19;
   cggl.TWO_PWR_32_DBL = $intern_3 * $intern_3;
-  cggl.TWO_PWR_44_DBL = $intern_21 * $intern_21;
-  cggl.TWO_PWR_63_DBL = $intern_22 * 2147483648;
+  cggl.TWO_PWR_44_DBL = $intern_20 * $intern_20;
+  cggl.TWO_PWR_63_DBL = $intern_21 * 2147483648;
 }
 ;
 cggl.LongLibBase = function LongLibBase(){
@@ -9266,9 +9288,9 @@ cggl.create_2 = function create_2(){
 cggl.create_3 = function create_3(value_0){
   cggl.$clinit_LongLibBase();
   var a, a0, a1, a2;
-  a0 = value_0 & $intern_23;
-  a1 = value_0 >> 22 & $intern_23;
-  a2 = value_0 < 0?$intern_24:0;
+  a0 = value_0 & $intern_22;
+  a1 = value_0 >> 22 & $intern_22;
+  a2 = value_0 < 0?$intern_23:0;
   if (cggl.RUN_IN_JVM) {
     a = new cggl.LongLibBase$LongEmul;
     a.l_0 = a0;
@@ -9476,7 +9498,7 @@ cggl.getMNative = function getMNative(a){
 ;
 cggl.isMinValue = function isMinValue(a){
   cggl.$clinit_LongLibBase();
-  return cggl.getH(a) == $intern_25 && cggl.getM(a) == 0 && cggl.getL(a) == 0;
+  return cggl.getH(a) == $intern_24 && cggl.getM(a) == 0 && cggl.getL(a) == 0;
 }
 ;
 cggl.isNegative = function isNegative(a){
@@ -9511,9 +9533,9 @@ cggl.maskRight = function maskRight(a, bits){
 cggl.negate = function negate(a){
   cggl.$clinit_LongLibBase();
   var neg0, neg1, neg2;
-  neg0 = ~cggl.getL(a) + 1 & $intern_23;
-  neg1 = ~cggl.getM(a) + (neg0 == 0?1:0) & $intern_23;
-  neg2 = ~cggl.getH(a) + (neg0 == 0 && neg1 == 0?1:0) & $intern_24;
+  neg0 = ~cggl.getL(a) + 1 & $intern_22;
+  neg1 = ~cggl.getM(a) + (neg0 == 0?1:0) & $intern_22;
+  neg2 = ~cggl.getH(a) + (neg0 == 0 && neg1 == 0?1:0) & $intern_23;
   if (cggl.RUN_IN_JVM) {
     a.l_0 = neg0;
     a.m_0 = neg1;
@@ -9628,7 +9650,7 @@ cggl.sign = function sign(a){
 ;
 cggl.toDoubleHelper = function toDoubleHelper(a){
   cggl.$clinit_LongLibBase();
-  return cggl.getL(a) + cggl.getM(a) * $intern_21 + cggl.getH(a) * $intern_26;
+  return cggl.getL(a) + cggl.getM(a) * $intern_20 + cggl.getH(a) * $intern_25;
 }
 ;
 cggl.toShru1 = function toShru1(a){
@@ -9661,19 +9683,19 @@ cggl.trialSubtract = function trialSubtract(a, b){
     return false;
   }
   if (cggl.RUN_IN_JVM) {
-    a.l_0 = sum0 & $intern_23;
-    a.m_0 = sum1 & $intern_23;
-    a.h_0 = sum2 & $intern_24;
+    a.l_0 = sum0 & $intern_22;
+    a.m_0 = sum1 & $intern_22;
+    a.h_0 = sum2 & $intern_23;
   }
    else {
-    cggl.setL(a, sum0 & $intern_23);
-    cggl.setM(a, sum1 & $intern_23);
-    cggl.setH(a, sum2 & $intern_24);
+    cggl.setL(a, sum0 & $intern_22);
+    cggl.setM(a, sum1 & $intern_22);
+    cggl.setH(a, sum2 & $intern_23);
   }
   return true;
 }
 ;
-defineClass(167, 1, $intern_0);
+defineClass(168, 1, $intern_0);
 _.$init_113 = function $init_113(){
 }
 ;
@@ -9685,14 +9707,14 @@ cggl.MASK_2 = 0;
 cggl.RUN_IN_JVM = false;
 cggl.SIGN_BIT = 0;
 cggl.SIGN_BIT_VALUE = 0;
-cggl.TWO_PWR_15_DBL = $intern_20;
+cggl.TWO_PWR_15_DBL = $intern_19;
 cggl.TWO_PWR_16_DBL = $intern_3;
-cggl.TWO_PWR_22_DBL = $intern_21;
+cggl.TWO_PWR_22_DBL = $intern_20;
 cggl.TWO_PWR_31_DBL = 0;
 cggl.TWO_PWR_32_DBL = 0;
 cggl.TWO_PWR_44_DBL = 0;
 cggl.TWO_PWR_63_DBL = 0;
-cggl.Lcom_google_gwt_lang_LongLibBase_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase', 167, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_lang_LongLibBase_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase', 168, cggl.Ljava_lang_Object_2_classLit);
 cggl.$clinit_LongLib = function $clinit_LongLib(){
   cggl.$clinit_LongLib = emptyMethod;
   cggl.$clinit_LongLibBase();
@@ -9708,7 +9730,7 @@ function add_1(a, b){
   sum0 = cggl.getL(a) + cggl.getL(b);
   sum1 = cggl.getM(a) + cggl.getM(b) + (sum0 >> 22);
   sum2 = cggl.getH(a) + cggl.getH(b) + (sum1 >> 22);
-  return cggl.create_4(sum0 & $intern_23, sum1 & $intern_23, sum2 & $intern_24);
+  return cggl.create_4(sum0 & $intern_22, sum1 & $intern_22, sum2 & $intern_23);
 }
 
 function and(a, b){
@@ -9806,14 +9828,14 @@ function fromDouble(value_0){
     value_0 = -value_0;
   }
   a2 = 0;
-  if (value_0 >= $intern_26) {
-    a2 = round_int(value_0 / $intern_26);
-    value_0 -= a2 * $intern_26;
+  if (value_0 >= $intern_25) {
+    a2 = round_int(value_0 / $intern_25);
+    value_0 -= a2 * $intern_25;
   }
   a1 = 0;
-  if (value_0 >= $intern_21) {
-    a1 = round_int(value_0 / $intern_21);
-    value_0 -= a1 * $intern_21;
+  if (value_0 >= $intern_20) {
+    a1 = round_int(value_0 / $intern_20);
+    value_0 -= a1 * $intern_20;
   }
   a0 = round_int(value_0);
   result = cggl.create_4(a0, a1, a2);
@@ -9829,7 +9851,7 @@ function fromInt(value_0){
   if (value_0 > -129 && value_0 < 128) {
     rebase = value_0 + 128;
     if (jsEquals(cggl.boxedValues, null)) {
-      cggl.boxedValues = initDim(cggl.Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit, $intern_6, 42, 256, 0, 1);
+      cggl.boxedValues = initDim(cggl.Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit, $intern_6, 45, 256, 0, 1);
     }
     result = cggl.boxedValues[rebase];
     if (isNull(result)) {
@@ -9843,9 +9865,9 @@ function fromInt(value_0){
 function getAsIntArray(l){
   var a;
   a = initDim(cggl.I_classLit, $intern_10, 0, 3, 7, 1);
-  a[0] = toInt(and(l, {l:$intern_23, m:0, h:0}));
-  a[1] = toInt(and(shr(l, 22), {l:$intern_23, m:0, h:0}));
-  a[2] = toInt(and(shr(l, 44), {l:$intern_24, m:0, h:0}));
+  a[0] = toInt(and(l, {l:$intern_22, m:0, h:0}));
+  a[1] = toInt(and(shr(l, 22), {l:$intern_22, m:0, h:0}));
+  a[2] = toInt(and(shr(l, 44), {l:$intern_23, m:0, h:0}));
   return a;
 }
 
@@ -9955,7 +9977,7 @@ function mul(a, b){
   if (b4 != 0) {
     p4 += a0 * b4;
   }
-  c00 = p0 & $intern_23;
+  c00 = p0 & $intern_22;
   c01 = (p1 & 511) << 13;
   c0 = c00 + c01;
   c10 = p0 >> 22;
@@ -9968,19 +9990,19 @@ function mul(a, b){
   c24 = (p4 & 4095) << 8;
   c2 = c22 + c23 + c24;
   c1 += c0 >> 22;
-  c0 &= $intern_23;
+  c0 &= $intern_22;
   c2 += c1 >> 22;
-  c1 &= $intern_23;
-  c2 &= $intern_24;
+  c1 &= $intern_22;
+  c2 &= $intern_23;
   return cggl.create_4(c0, c1, c2);
 }
 
 function neg(a){
   cggl.$clinit_LongLib();
   var neg0, neg1, neg2;
-  neg0 = ~cggl.getL(a) + 1 & $intern_23;
-  neg1 = ~cggl.getM(a) + (neg0 == 0?1:0) & $intern_23;
-  neg2 = ~cggl.getH(a) + (neg0 == 0 && neg1 == 0?1:0) & $intern_24;
+  neg0 = ~cggl.getL(a) + 1 & $intern_22;
+  neg1 = ~cggl.getM(a) + (neg0 == 0?1:0) & $intern_22;
+  neg2 = ~cggl.getH(a) + (neg0 == 0 && neg1 == 0?1:0) & $intern_23;
   return cggl.create_4(neg0, neg1, neg2);
 }
 
@@ -9989,7 +10011,7 @@ function neq(a, b){
 }
 
 function not_0(a){
-  return cggl.create_4(~cggl.getL(a) & $intern_23, ~cggl.getM(a) & $intern_23, ~cggl.getH(a) & $intern_24);
+  return cggl.create_4(~cggl.getL(a) & $intern_22, ~cggl.getM(a) & $intern_22, ~cggl.getH(a) & $intern_23);
 }
 
 function or(a, b){
@@ -10015,7 +10037,7 @@ function shl(a, n){
     res1 = 0;
     res2 = cggl.getL(a) << n - 44;
   }
-  return cggl.create_4(res0 & $intern_23, res1 & $intern_23, res2 & $intern_24);
+  return cggl.create_4(res0 & $intern_22, res1 & $intern_22, res2 & $intern_23);
 }
 
 function shr(a, n){
@@ -10023,7 +10045,7 @@ function shr(a, n){
   var a2, negative, res0, res1, res2;
   n &= 63;
   a2 = cggl.getH(a);
-  negative = (a2 & $intern_25) != 0;
+  negative = (a2 & $intern_24) != 0;
   if (negative) {
     a2 |= ~1048575;
   }
@@ -10033,22 +10055,22 @@ function shr(a, n){
     res0 = cggl.getL(a) >> n | cggl.getM(a) << 22 - n;
   }
    else if (n < 44) {
-    res2 = negative?$intern_24:0;
+    res2 = negative?$intern_23:0;
     res1 = a2 >> n - 22;
     res0 = cggl.getM(a) >> n - 22 | a2 << 44 - n;
   }
    else {
-    res2 = negative?$intern_24:0;
-    res1 = negative?$intern_23:0;
+    res2 = negative?$intern_23:0;
+    res1 = negative?$intern_22:0;
     res0 = a2 >> n - 44;
   }
-  return cggl.create_4(res0 & $intern_23, res1 & $intern_23, res2 & $intern_24);
+  return cggl.create_4(res0 & $intern_22, res1 & $intern_22, res2 & $intern_23);
 }
 
 function shru(a, n){
   var a2, res0, res1, res2;
   n &= 63;
-  a2 = cggl.getH(a) & $intern_24;
+  a2 = cggl.getH(a) & $intern_23;
   if (n < 22) {
     res2 = a2 >>> n;
     res1 = cggl.getM(a) >> n | a2 << 22 - n;
@@ -10064,7 +10086,7 @@ function shru(a, n){
     res1 = 0;
     res0 = a2 >>> n - 44;
   }
-  return cggl.create_4(res0 & $intern_23, res1 & $intern_23, res2 & $intern_24);
+  return cggl.create_4(res0 & $intern_22, res1 & $intern_22, res2 & $intern_23);
 }
 
 function sub_0(a, b){
@@ -10073,12 +10095,12 @@ function sub_0(a, b){
   sum0 = cggl.getL(a) - cggl.getL(b);
   sum1 = cggl.getM(a) - cggl.getM(b) + (sum0 >> 22);
   sum2 = cggl.getH(a) - cggl.getH(b) + (sum1 >> 22);
-  return cggl.create_4(sum0 & $intern_23, sum1 & $intern_23, sum2 & $intern_24);
+  return cggl.create_4(sum0 & $intern_22, sum1 & $intern_22, sum2 & $intern_23);
 }
 
 function toBase64(value_0){
   var haveNonZero, high, low, sb, v;
-  low = toInt(and(value_0, {l:$intern_23, m:$intern_23, h:$intern_24}));
+  low = toInt(and(value_0, {l:$intern_22, m:$intern_22, h:$intern_23}));
   high = toInt(shr(value_0, 32));
   sb = new jl.StringBuilder;
   haveNonZero = cggl.base64Append(sb, high >> 28 & 15, false);
@@ -10147,7 +10169,7 @@ function xor(a, b){
   return cggl.create_4(cggl.getL(a) ^ cggl.getL(b), cggl.getM(a) ^ cggl.getM(b), cggl.getH(a) ^ cggl.getH(b));
 }
 
-defineClass(376, 167, $intern_0);
+defineClass(376, 168, $intern_0);
 _.$init_114 = function $init_114(){
 }
 ;
@@ -10155,8 +10177,8 @@ cggl.Lcom_google_gwt_lang_LongLib_2_classLit = createForClass('com.google.gwt.la
 cggl.$clinit_LongLib$Const = function $clinit_LongLib$Const(){
   cggl.$clinit_LongLib$Const = emptyMethod;
   jl.$clinit_Object();
-  cggl.MAX_VALUE = cggl.create_4($intern_23, $intern_23, $intern_24 >> 1);
-  cggl.MIN_VALUE = cggl.create_4(0, 0, $intern_25);
+  cggl.MAX_VALUE = cggl.create_4($intern_22, $intern_22, $intern_23 >> 1);
+  cggl.MIN_VALUE = cggl.create_4(0, 0, $intern_24);
   cggl.ONE_0 = fromInt(1);
   cggl.TWO = fromInt(2);
   cggl.ZERO = fromInt(0);
@@ -10174,14 +10196,14 @@ cggl.LongLibBase$LongEmul = function LongLibBase$LongEmul(){
   this.$init_115();
 }
 ;
-defineClass(42, 1, {42:1, 1:1}, cggl.LongLibBase$LongEmul);
+defineClass(45, 1, {45:1, 1:1}, cggl.LongLibBase$LongEmul);
 _.$init_115 = function $init_115(){
 }
 ;
 _.h_0 = 0;
 _.l_0 = 0;
 _.m_0 = 0;
-cggl.Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase/LongEmul', 42, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase/LongEmul', 45, cggl.Ljava_lang_Object_2_classLit);
 cggl.$clinit_RuntimePropertyRegistry = function $clinit_RuntimePropertyRegistry(){
   cggl.$clinit_RuntimePropertyRegistry = emptyMethod;
   jl.$clinit_Object();
@@ -10200,7 +10222,7 @@ function getPropertyValue(propertyName){
     return dynamicCastToString(cggl.cachedPropertyValuesByName.get_1(propertyName));
   }
   if (cggl.propertyValueProvidersByName.containsKey(propertyName)) {
-    propertyProvider = dynamicCast(cggl.propertyValueProvidersByName.get_1(propertyName), 404);
+    propertyProvider = dynamicCast(cggl.propertyValueProvidersByName.get_1(propertyName), 403);
     propertyValue = propertyProvider.getValue();
     cggl.cachedPropertyValuesByName.put(propertyName, propertyValue);
     return propertyValue;
@@ -10221,7 +10243,7 @@ cggl.$clinit_RuntimePropertyRegistry$PropertyValueProvider = function $clinit_Ru
   cggl.$clinit_RuntimePropertyRegistry$PropertyValueProvider = emptyMethod;
 }
 ;
-defineClass(404, 1, {404:1, 1:1});
+defineClass(403, 1, {403:1, 1:1});
 cggl.$clinit_RuntimeRebinder = function $clinit_RuntimeRebinder(){
   cggl.$clinit_RuntimeRebinder = emptyMethod;
 }
@@ -10257,9 +10279,9 @@ cggl.$clinit_com_00046google_00046gwt_00046site_00046webapp_00046GWTProject__Ent
 ;
 function init(){
   cggl.$clinit_com_00046google_00046gwt_00046site_00046webapp_00046GWTProject__EntryMethodHolder();
-  dynamicCast(new cgguc2.UserAgentAsserter, 104).onModuleLoad();
-  dynamicCast(new cgguc.DocumentModeAsserter, 104).onModuleLoad();
-  dynamicCast(new cggswc.GWTProjectEntryPoint, 104).onModuleLoad();
+  dynamicCast(new cgguc2.UserAgentAsserter, 108).onModuleLoad();
+  dynamicCast(new cgguc.DocumentModeAsserter, 108).onModuleLoad();
+  dynamicCast(new cggswc.GWTProjectEntryPoint, 108).onModuleLoad();
 }
 
 defineClass(437, 1, $intern_0);
@@ -10274,7 +10296,7 @@ cggqc.Browser = function Browser(){
   this.$init_119();
 }
 ;
-defineClass(46, 1, $intern_0);
+defineClass(50, 1, $intern_0);
 _.$init_119 = function $init_119(){
   this.ie6 = this.isIe6();
   this.ie8 = this.isIe8();
@@ -10294,18 +10316,19 @@ _.msie = false;
 _.opera = false;
 _.safari = false;
 _.webkit = false;
-cggl.Lcom_google_gwt_query_client_Browser_2_classLit = createForClass('com.google.gwt.query.client', 'Browser', 46, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_Browser_2_classLit = createForClass('com.google.gwt.query.client', 'Browser', 50, cggl.Ljava_lang_Object_2_classLit);
 cggqc.$clinit_Browser_gecko1_8 = function $clinit_Browser_gecko1_8(){
   cggqc.$clinit_Browser_gecko1_8 = emptyMethod;
   cggqc.$clinit_Browser();
 }
 ;
 cggqc.Browser_gecko1_8 = function Browser_gecko1_8(){
+  cggqc.$clinit_Browser_gecko1_8();
   cggqc.Browser.call(this);
   this.$init_120();
 }
 ;
-defineClass(386, 46, $intern_0);
+defineClass(236, 50, {50:1, 1:1}, cggqc.Browser_gecko1_8);
 _.$init_120 = function $init_120(){
 }
 ;
@@ -10341,7 +10364,7 @@ _.toString$ = function toString_10(){
   return 'Browser: webkit=' + this.webkit + ' mozilla=' + this.mozilla + ' opera=' + this.opera + ' msie=' + this.msie + ' ie6=' + this.ie6 + ' ie8=' + this.ie8 + ' ie9=' + this.ie9;
 }
 ;
-cggl.Lcom_google_gwt_query_client_Browser_1gecko1_18_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_gecko1_8', 386, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
+cggl.Lcom_google_gwt_query_client_Browser_1gecko1_18_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_gecko1_8', 236, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
 cggqc.$clinit_Browser_ie10 = function $clinit_Browser_ie10(){
   cggqc.$clinit_Browser_ie10 = emptyMethod;
   cggqc.$clinit_Browser();
@@ -10352,7 +10375,7 @@ cggqc.Browser_ie10 = function Browser_ie10(){
   this.$init_121();
 }
 ;
-defineClass(384, 46, $intern_0);
+defineClass(385, 50, $intern_0);
 _.$init_121 = function $init_121(){
 }
 ;
@@ -10388,7 +10411,7 @@ _.toString$ = function toString_11(){
   return 'Browser: webkit=' + this.webkit + ' mozilla=' + this.mozilla + ' opera=' + this.opera + ' msie=' + this.msie + ' ie6=' + this.ie6 + ' ie8=' + this.ie8 + ' ie9=' + this.ie9;
 }
 ;
-cggl.Lcom_google_gwt_query_client_Browser_1ie10_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_ie10', 384, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
+cggl.Lcom_google_gwt_query_client_Browser_1ie10_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_ie10', 385, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
 cggqc.$clinit_Browser_ie8 = function $clinit_Browser_ie8(){
   cggqc.$clinit_Browser_ie8 = emptyMethod;
   cggqc.$clinit_Browser();
@@ -10399,7 +10422,7 @@ cggqc.Browser_ie8 = function Browser_ie8(){
   this.$init_122();
 }
 ;
-defineClass(385, 46, $intern_0);
+defineClass(386, 50, $intern_0);
 _.$init_122 = function $init_122(){
 }
 ;
@@ -10435,7 +10458,7 @@ _.toString$ = function toString_12(){
   return 'Browser: webkit=' + this.webkit + ' mozilla=' + this.mozilla + ' opera=' + this.opera + ' msie=' + this.msie + ' ie6=' + this.ie6 + ' ie8=' + this.ie8 + ' ie9=' + this.ie9;
 }
 ;
-cggl.Lcom_google_gwt_query_client_Browser_1ie8_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_ie8', 385, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
+cggl.Lcom_google_gwt_query_client_Browser_1ie8_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_ie8', 386, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
 cggqc.$clinit_Browser_ie9 = function $clinit_Browser_ie9(){
   cggqc.$clinit_Browser_ie9 = emptyMethod;
   cggqc.$clinit_Browser();
@@ -10446,7 +10469,7 @@ cggqc.Browser_ie9 = function Browser_ie9(){
   this.$init_123();
 }
 ;
-defineClass(383, 46, $intern_0);
+defineClass(383, 50, $intern_0);
 _.$init_123 = function $init_123(){
 }
 ;
@@ -10489,12 +10512,11 @@ cggqc.$clinit_Browser_safari = function $clinit_Browser_safari(){
 }
 ;
 cggqc.Browser_safari = function Browser_safari(){
-  cggqc.$clinit_Browser_safari();
   cggqc.Browser.call(this);
   this.$init_124();
 }
 ;
-defineClass(227, 46, {46:1, 1:1}, cggqc.Browser_safari);
+defineClass(384, 50, $intern_0);
 _.$init_124 = function $init_124(){
 }
 ;
@@ -10530,7 +10552,7 @@ _.toString$ = function toString_14(){
   return 'Browser: webkit=' + this.webkit + ' mozilla=' + this.mozilla + ' opera=' + this.opera + ' msie=' + this.msie + ' ie6=' + this.ie6 + ' ie8=' + this.ie8 + ' ie9=' + this.ie9;
 }
 ;
-cggl.Lcom_google_gwt_query_client_Browser_1safari_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_safari', 227, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
+cggl.Lcom_google_gwt_query_client_Browser_1safari_2_classLit = createForClass('com.google.gwt.query.client', 'Browser_safari', 384, cggl.Lcom_google_gwt_query_client_Browser_2_classLit);
 cggqc.$clinit_Console = function $clinit_Console(){
   cggqc.$clinit_Console = emptyMethod;
 }
@@ -10546,7 +10568,7 @@ cggqc.Function_0 = function Function_0(){
   this.$init_125();
 }
 ;
-defineClass(7, 1, $intern_27);
+defineClass(7, 1, $intern_26);
 _.$init_125 = function $init_125(){
   this.element_0 = null;
   this.event_0 = null;
@@ -10559,22 +10581,22 @@ _.arguments_1 = function arguments_1(idx){
   return this.getArgument(idx);
 }
 ;
-_.f = function f_1(){
+_.f = function f_0(){
   throw new jl.RuntimeException_0("You have to override the adequate method to handle this action, or you have to override 'public void f()' to avoid this error");
 }
 ;
-_.f_0 = function f_2(e){
+_.f_0 = function f_1(e){
   this.setElement(e);
   this.f_2(cggcc.$cast(e));
 }
 ;
-_.f_1 = function f_3(e, i_0){
+_.f_1 = function f_2(e, i_0){
   this.setElement(e);
   this.setIndex(i_0);
   return this.f_3(cggcc.$cast(e), i_0);
 }
 ;
-_.f_2 = function f_4(e){
+_.f_2 = function f_3(e){
   var w;
   this.setElement(e);
   w = isNotNull(e)?cggqc.getAssociatedWidget(e):null;
@@ -10587,7 +10609,7 @@ _.f_2 = function f_4(e){
   }
 }
 ;
-_.f_3 = function f_5(e, i_0){
+_.f_3 = function f_4(e, i_0){
   var w;
   this.setElement(e);
   this.setIndex(i_0);
@@ -10601,19 +10623,19 @@ _.f_3 = function f_5(e, i_0){
   return null;
 }
 ;
-_.f_4 = function f_6(e){
+_.f_4 = function f_5(e){
   this.setEvent(e);
   this.f_0(this.element_0);
   return true;
 }
 ;
-_.f_5 = function f_7(e, arg){
+_.f_5 = function f_6(e, arg){
   this.setArguments(arg);
   this.setEvent(e);
   return this.f_4(e);
 }
 ;
-_.f_6 = function f_8(w){
+_.f_6 = function f_7(w){
   this.setElement(w.getElement_1());
   if (this.loop) {
     this.loop = false;
@@ -10624,14 +10646,14 @@ _.f_6 = function f_8(w){
   }
 }
 ;
-_.f_7 = function f_9(w, i_0){
+_.f_7 = function f_8(w, i_0){
   this.setElement(w.getElement_1());
   this.setIndex(i_0);
   this.f_6(w);
   return null;
 }
 ;
-_.f_8 = function f_10(args){
+_.f_8 = function f_9(args){
   this.setArguments(args);
   this.f();
   return jl.valueOf_10(true);
@@ -10801,20 +10823,20 @@ cggqc.getFactory = function getFactory(){
   return cggqc.jsonFactory;
 }
 ;
-defineClass(724, 1, $intern_0);
+defineClass(736, 1, $intern_0);
 cggqc.$clinit_GQuery = function $clinit_GQuery(){
   cggqc.$clinit_GQuery = emptyMethod;
   jl.$clinit_Object();
   cggqc.body_0 = isClient()?cggdc.$getBody(cggdc.get_2()):null;
-  cggqc.browser = isClient()?dynamicCast(new cggqc.Browser_safari, 46):null;
-  cggqc.console_0 = isClient()?dynamicCast(new cggqci.ConsoleBrowser, 408):null;
+  cggqc.browser = isClient()?dynamicCast(new cggqc.Browser_gecko1_8, 50):null;
+  cggqc.console_0 = isClient()?dynamicCast(new cggqci.ConsoleBrowser, 407):null;
   cggqc.document_0 = isClient()?cggdc.get_2():null;
   cggqc.Effects = (cggqcp.$clinit_Effects() , cggqcp.Effects_0);
   cggqc.Events = (cggqcp.$clinit_Events() , cggqcp.Events_0);
   cggqc.GQUERY = cggl.Lcom_google_gwt_query_client_GQuery_2_classLit;
   cggqc.OLD_DISPLAY = 'old-' + 'display';
   cggqc.posRegex = cggrs.compile('^:(nth|eq|gt|lt|first|last|even|odd)(?:\\((\\d*)\\))?(?=[^\\-]|$)$');
-  cggqc.tagNameRegex = cggrs.compile('<([\\w:]+)');
+  cggqc.tagNameRegex = cggrs.compile('<([\\w:-]+)');
   cggqc.Widgets = (cggqcp.$clinit_Widgets() , cggqcp.Widgets_0);
   cggqc.window_1 = isClient()?cggcc.$cast((cggcc.$clinit_ScriptInjector() , cggcc.TOP_WINDOW)):null;
 }
@@ -10834,83 +10856,64 @@ cggqc.$ = function $(){
   return new cggqc.GQuery_3(cggqcj.create_15());
 }
 ;
-cggqc.$_0 = function $_0(jso){
-  var c, elms, i_0, obj;
-  if (isNull(jso)) {
-    return cggqc.$();
-  }
-  if (cggqcj.isFunction(jso)) {
-    (new cggqcj.JsUtils$JsFunction(jso)).fe();
-    return cggqc.$();
-  }
-  if (!cggqcj.isWindow(jso) && !cggqcj.isElement(jso) && cggqcj.isArray(jso)) {
-    c = cggcc.$cast(jso);
-    elms = cggqcj.create_15();
-    for (i_0 = 0; i_0 < cggcc.$length_0(c); i_0++) {
-      obj = cggcc.$getObject(c, i_0);
-      if (instanceOfJso(obj)) {
-        cggqcj.$addNode(elms, dynamicCastJso(obj));
-      }
-    }
-    return cggqc.$_3(elms);
-  }
-  return cggqcj.isWindow(jso)?cggqc.$_1(cggcc.$cast(jso)):cggqcj.isElement(jso)?cggqc.$_1(cggcc.$cast(jso)):cggqcj.isEvent(jso)?cggqc.$_5(cggcc.$cast(jso)):cggqcj.isNodeList(jso)?cggqc.$_3(cggcc.$cast(jso)):cggqc.$_1(cggcc.$cast(jso));
-}
-;
-cggqc.$_1 = function $_1(element){
+cggqc.$_0 = function $_0(o){
   cggqc.$clinit_GQuery();
-  return new cggqc.GQuery_0(element);
-}
-;
-cggqc.$_2 = function $_2(n){
-  return cggqc.$_1(n);
-}
-;
-cggqc.$_3 = function $_3(elms){
-  return new cggqc.GQuery_1(elms);
-}
-;
-cggqc.$_4 = function $_4(f_0){
-  cggqc.$clinit_GQuery();
-  return cggqc.$_1(f_0.getElement_0());
-}
-;
-cggqc.$_5 = function $_5(event_0){
-  cggqc.$clinit_GQuery();
-  return isNull(event_0)?cggqc.$():cggqc.$_1(cggcc.$cast(cggdc.$getCurrentEventTarget(event_0)));
-}
-;
-cggqc.$_6 = function $_6(o){
-  cggqc.$clinit_GQuery();
+  var c, elms, i_0, jso, obj;
   if (jsNotEquals(o, null)) {
     if (isJavaString(o)) {
-      return cggqc.$_7(dynamicCastToString(o));
+      return cggqc.$_1(dynamicCastToString(o));
     }
-    if (instanceOf(o, 14)) {
-      return dynamicCast(o, 14);
+    if (instanceOf(o, 408)) {
+      return cggqc.$_1(dynamicCast(o, 408).asString());
+    }
+    if (instanceOf(o, 15)) {
+      return dynamicCast(o, 15);
     }
     if (instanceOf(o, 7)) {
-      return cggqc.$_4(dynamicCast(o, 7));
+      return new cggqc.GQuery_0(dynamicCast(o, 7).getElement_0());
+    }
+    if (instanceOf(o, 56)) {
+      return new cggqc.GQuery_0(dynamicCastJso(dynamicCast(o, 56).getDataImpl()));
+    }
+    if (instanceOf(o, 57)) {
+      return cggqc.$_3(ju.asList(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [o])));
     }
     if (instanceOfJso(o)) {
-      return cggqc.$_0(dynamicCastJso(o));
+      jso = dynamicCastJso(o);
+      if (cggqcj.isFunction(jso)) {
+        (new cggqcj.JsUtils$JsFunction(jso)).fe();
+        return cggqc.$();
+      }
+      if (!cggqcj.isWindow(jso) && !cggqcj.isElement(jso) && cggqcj.isArray(jso)) {
+        c = cggcc.$cast(jso);
+        elms = cggqcj.create_15();
+        for (i_0 = 0; i_0 < cggcc.$length_0(c); i_0++) {
+          obj = cggcc.$getObject(c, i_0);
+          if (instanceOfJso(obj)) {
+            cggqcj.$addNode(elms, dynamicCastJso(obj));
+          }
+        }
+        return new cggqc.GQuery_3(elms);
+      }
+      if (cggqcj.isNodeList(jso)) {
+        return new cggqc.GQuery_1(cggcc.$cast(jso));
+      }
+      if (cggqcj.isEvent(jso)) {
+        jso = cggdc.$getCurrentEventTarget(cggcc.$cast(jso));
+      }
+      return new cggqc.GQuery_0(cggcc.$cast(jso));
     }
-    if (instanceOf(o, 52)) {
-      return cggqc.$_9(ju.asList(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [o])));
-    }
-    if (!isProdMode()) {
-      (jl.$clinit_System() , jl.err).println_0('GQuery.$(Object o) could not wrap the type : ' + jl.getClass__Ljava_lang_Class___devirtual$(o));
-    }
+    cggqc.console_0.log_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, ['Error: GQuery.$(Object o) could not wrap the type : ', jl.getClass__Ljava_lang_Class___devirtual$(o).getName(), o]));
   }
   return cggqc.$();
 }
 ;
-cggqc.$_7 = function $_7(selectorOrHtml){
+cggqc.$_1 = function $_1(selectorOrHtml){
   cggqc.$clinit_GQuery();
-  return cggqc.$_8(selectorOrHtml, cggqc.document_0);
+  return cggqc.$_2(selectorOrHtml, cggqc.document_0);
 }
 ;
-cggqc.$_8 = function $_8(selectorOrHtml, ctx){
+cggqc.$_2 = function $_2(selectorOrHtml, ctx){
   cggqc.$clinit_GQuery();
   var selector;
   selector = null;
@@ -10923,7 +10926,7 @@ cggqc.$_8 = function $_8(selectorOrHtml, ctx){
   return (new cggqc.GQuery).select(selectorOrHtml, ctx);
 }
 ;
-cggqc.$_9 = function $_9(nodesOrWidgets){
+cggqc.$_3 = function $_3(nodesOrWidgets){
   var elms, o, o$iterator;
   elms = cggqcj.create_15();
   if (isNotNull(nodesOrWidgets)) {
@@ -10932,8 +10935,8 @@ cggqc.$_9 = function $_9(nodesOrWidgets){
       if (instanceOfJso(o)) {
         cggqcj.$addNode(elms, dynamicCastJso(o));
       }
-       else if (instanceOf(o, 52)) {
-        cggqcj.$addNode(elms, dynamicCast(o, 52).asWidget().getElement_1());
+       else if (instanceOf(o, 57)) {
+        cggqcj.$addNode(elms, dynamicCast(o, 57).asWidget().getElement_1());
       }
     }
   }
@@ -10977,15 +10980,16 @@ cggqc.GQuery_3 = function GQuery_3(nodes){
 }
 ;
 cggqc.cleanHtmlString = function cleanHtmlString(elem, doc){
-  var depth, div, n, tag, wrapper;
-  tag = cggrs.$getGroup(cggrs.$exec(cggqc.tagNameRegex, elem), 1);
-  if (jsEquals(tag, null)) {
-    return cggqc.$_2(cggdc.$createTextNode(doc, elem));
+  var depth, div, mResult, n, tag, wrapper;
+  mResult = cggrs.$exec(cggqc.tagNameRegex, elem);
+  if (isNull(mResult)) {
+    return cggqc.$_0(cggdc.$createTextNode(doc, elem));
   }
+  tag = cggrs.$getGroup(mResult, 1);
   if (isNull(cggqc.wrapperMap)) {
     cggqc.initWrapperMap();
   }
-  wrapper = dynamicCast(cggqcj.$get_7(cggqc.wrapperMap, jl.toLowerCase__Ljava_lang_String___devirtual$(tag)), 30);
+  wrapper = dynamicCast(cggqcj.$get_7(cggqc.wrapperMap, jl.toLowerCase__Ljava_lang_String___devirtual$(tag)), 29);
   if (isNull(wrapper)) {
     wrapper = (cggqc.$clinit_GQuery$TagWrapper() , cggqc.DEFAULT);
   }
@@ -11042,13 +11046,13 @@ cggqc.getAssociatedWidget = function getAssociatedWidget(e){
     if (isNull(listener)) {
       return null;
     }
-    if (instanceOf(listener, 41)) {
-      return dynamicCast(listener, 41);
+    if (instanceOf(listener, 43)) {
+      return dynamicCast(listener, 43);
     }
-     else if (instanceOf(listener, 99)) {
-      gQueryListener = dynamicCast(listener, 99);
-      if (isNotNull(gQueryListener.getOriginalEventListener()) && instanceOf(gQueryListener.getOriginalEventListener(), 41)) {
-        return dynamicCast(gQueryListener.getOriginalEventListener(), 41);
+     else if (instanceOf(listener, 103)) {
+      gQueryListener = dynamicCast(listener, 103);
+      if (isNotNull(gQueryListener.getOriginalEventListener()) && instanceOf(gQueryListener.getOriginalEventListener(), 43)) {
+        return dynamicCast(gQueryListener.getOriginalEventListener(), 43);
       }
     }
   }
@@ -11066,14 +11070,15 @@ cggqc.getAssociatedWidget = function getAssociatedWidget(e){
 ;
 cggqc.getAttributeImpl = function getAttributeImpl(){
   if (isNull(cggqc.attributeImpl)) {
-    cggqc.attributeImpl = dynamicCast(new cggqci.AttributeImpl, 121);
+    cggqc.attributeImpl = dynamicCast(new cggqci.AttributeImpl, 124);
   }
   return cggqc.attributeImpl;
 }
 ;
 cggqc.getSelectorEngine = function getSelectorEngine(){
+  cggqc.$clinit_GQuery();
   if (isNull(cggqc.engine)) {
-    cggqc.engine = new cggqci.SelectorEngine;
+    cggqc.engine = dynamicCast(new cggqci.SelectorEngine, 119);
   }
   return cggqc.engine;
 }
@@ -11081,7 +11086,7 @@ cggqc.getSelectorEngine = function getSelectorEngine(){
 cggqc.getStyleImpl = function getStyleImpl(){
   cggqc.$clinit_GQuery();
   if (isNull(cggqc.styleImpl)) {
-    cggqc.styleImpl = dynamicCast(new cggqci.DocumentStyleImpl, 31);
+    cggqc.styleImpl = cggqc.getSelectorEngine().getDocumentStyleImpl();
   }
   return cggqc.styleImpl;
 }
@@ -11131,14 +11136,14 @@ cggqc.scrollIntoViewImpl = function scrollIntoViewImpl(n){
     n.scrollIntoView();
 }
 ;
-defineClass(14, 1, {14:1, 1:1}, cggqc.GQuery, cggqc.GQuery_0, cggqc.GQuery_1, cggqc.GQuery_3);
+defineClass(15, 1, {15:1, 1:1}, cggqc.GQuery, cggqc.GQuery_0, cggqc.GQuery_1, cggqc.GQuery_3);
 _.$init_126 = function $init_126(){
   this.elements = initDim(cggl.Lcom_google_gwt_core_client_JavaScriptObject_2_classLit, $intern_6, 0, 0, 2, 1);
   this.nodeList = cggcc.$cast(cggcc.createArray());
 }
 ;
 _.add_1 = function add_2(elementsToAdd){
-  return this.pushStack(cggcc.$cast(cggqcj.copyNodeList(this.nodeList, elementsToAdd.nodeList, true)), 'add', this.getSelector() + ',' + elementsToAdd.getSelector());
+  return this.pushStack(cggcc.$cast(cggqcj.copyNodeList(this.nodeList, elementsToAdd.nodeList, true)), 'add', this.join_0(',', initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [this.getSelector(), elementsToAdd.getSelector()])));
 }
 ;
 _.addClass = function addClass(classes){
@@ -11160,7 +11165,7 @@ _.allNextSiblingElements = function allNextSiblingElements(firstChildElement, re
     if (isNotNull(until) && until.index_1(firstChildElement) != -1) {
       return;
     }
-    if (jsNotEquals(firstChildElement, elem) && (jsEquals(filterSelector, null) || cggqc.$_1(firstChildElement).is(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [filterSelector])))) {
+    if (jsNotEquals(firstChildElement, elem) && (jsEquals(filterSelector, null) || cggqc.$_0(firstChildElement).is(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [filterSelector])))) {
       cggqcj.$addNode(result, firstChildElement);
     }
     firstChildElement = cggdc.$getNextSiblingElement(firstChildElement);
@@ -11172,19 +11177,19 @@ _.append = function append(query){
 }
 ;
 _.appendTo = function appendTo(html){
-  cggqc.$_7(html).append(this);
+  cggqc.$_1(html).append(this);
   return this;
 }
 ;
 _.as = function as_1(plugin){
   var p;
   if (jsEquals(plugin, cggqc.GQUERY)) {
-    return dynamicCast(this, 14);
+    return dynamicCast(this, 15);
   }
    else if (isNotNull(cggqc.plugins)) {
-    p = dynamicCast(cggqcj.$get_6(cggqc.plugins, plugin), 87);
+    p = dynamicCast(cggqcj.$get_6(cggqc.plugins, plugin), 88);
     if (isNotNull(p)) {
-      return dynamicCast(p.init_0(this), 14);
+      return dynamicCast(p.init_0(this), 15);
     }
   }
   throw new jl.RuntimeException_0('No plugin registered for class ' + plugin.getName());
@@ -11207,15 +11212,15 @@ _.before_0 = function before_0(html){
   return this.domManip_0(html, (cggqc.$clinit_GQuery$DomMan() , cggqc.BEFORE));
 }
 ;
-_.bind_0 = function bind_0(eventbits, data_0, funcs){
+_.bind_0 = function bind_1(eventbits, data_0, funcs){
   return dynamicCast(this.as(cggqc.Events), 27).bind_3(eventbits, data_0, funcs);
 }
 ;
-_.bind_1 = function bind_1(eventType, data_0, funcs){
+_.bind_1 = function bind_2(eventType, data_0, funcs){
   return dynamicCast(this.as(cggqc.Events), 27).bind_4(eventType, data_0, funcs);
 }
 ;
-_.bind_2 = function bind_2(eventType, funcs){
+_.bind_2 = function bind_3(eventType, funcs){
   return dynamicCast(this.as(cggqc.Events), 27).bind_4(eventType, null, funcs);
 }
 ;
@@ -11271,8 +11276,8 @@ _.cleanGQData = function cleanGQData(elements){
   }
 }
 ;
-_.click_0 = function click_0(f_0){
-  return this.bindOrFire(1, null, f_0);
+_.click_0 = function click_0(f){
+  return this.bindOrFire(1, null, f);
 }
 ;
 _.clone = function clone_0(){
@@ -11300,15 +11305,15 @@ _.closest = function closest(selectors, context){
     for (selector$array0 = selectors , selector$index0 = 0 , selector$max0 = selector$array0.length; selector$index0 < selector$max0; ++selector$index0) {
       selector = selector$array0[selector$index0];
       if (!cggqcj.$exists_0(matches, selector)) {
-        cggqcj.$put_2(matches, selector, cggrs.$test(cggqc.posRegex, selector)?cggqc.$_8(selector, context):null);
+        cggqcj.$put_2(matches, selector, cggrs.$test(cggqc.posRegex, selector)?cggqc.$_2(selector, context):null);
       }
     }
     current = first;
     while (isNotNull(current) && isNotNull(cggdc.$getOwnerDocument(current)) && jsNotEquals(current, context)) {
       for (selector$array = cggqcj.$keys_2(matches) , selector$index = 0 , selector$max = selector$array.length; selector$index < selector$max; ++selector$index) {
         selector = selector$array[selector$index];
-        pos = dynamicCast(cggqcj.$get_7(matches, selector), 14);
-        match_0 = isNotNull(pos)?pos.index_1(current) > -1:cggqc.$_1(current).is(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [selector]));
+        pos = dynamicCast(cggqcj.$get_7(matches, selector), 15);
+        match_0 = isNotNull(pos)?pos.index_1(current) > -1:cggqc.$_0(current).is(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [selector]));
         if (match_0) {
           elementsMatchingSelector = cggcc.$cast(dynamicCastJso(cggqcj.$get_7(results, selector)));
           if (isNull(elementsMatchingSelector)) {
@@ -11371,25 +11376,21 @@ _.data_3 = function data_6(name_0, value_0){
   return this;
 }
 ;
-_.delay_0 = function delay_0(milliseconds, f_0){
-  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 25).delay_2(milliseconds, f_0);
+_.delay_0 = function delay_0(milliseconds, f){
+  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 26).delay_2(milliseconds, f);
 }
 ;
 _.delegate = function delegate(selector, eventType, data_0, handlers){
   var e, e$array, e$index, e$max;
   for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
-    cggqc.$_8(selector, e).live(eventType, data_0, handlers);
+    cggqc.$_2(selector, e).live(eventType, data_0, handlers);
   }
   return this;
 }
 ;
 _.delegate_0 = function delegate_0(selector, eventType, handlers){
   return this.delegate(selector, eventType, null, handlers);
-}
-;
-_.dequeue = function dequeue(){
-  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 25).dequeue_0();
 }
 ;
 _.domManip = function domManip(g, type_0, elms){
@@ -11437,7 +11438,7 @@ _.domManip_0 = function domManip_0(htmlString, type_0){
   for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     d = cggqcj.getOwnerDocument(e);
-    g = dynamicCast(cggqcj.$get_6(cache, d), 14);
+    g = dynamicCast(cggqcj.$get_6(cache, d), 15);
     if (isNull(g)) {
       g = cggqc.cleanHtmlString(htmlString, d);
       cggqcj.$put_1(cache, d, g);
@@ -11447,10 +11448,10 @@ _.domManip_0 = function domManip_0(htmlString, type_0){
   return this;
 }
 ;
-_.each = function each(f_0){
+_.each = function each(f){
   var e, e$array, e$index, e$max, f1, f1$array, f1$index, f1$max, i_0;
-  if (jsNotEquals(f_0, null)) {
-    for (f1$array = f_0 , f1$index = 0 , f1$max = f1$array.length; f1$index < f1$max; ++f1$index) {
+  if (jsNotEquals(f, null)) {
+    for (f1$array = f , f1$index = 0 , f1$max = f1$array.length; f1$index < f1$max; ++f1$index) {
       f1 = f1$array[f1$index];
       if (isNotNull(f1)) {
         i_0 = 0;
@@ -11469,53 +11470,20 @@ _.elements_0 = function elements_0(){
 }
 ;
 _.eq = function eq_0(pos){
-  return cggqc.$_1(this.get_0(pos));
+  return cggqc.$_0(this.get_0(pos));
 }
 ;
 _.filter_1 = function filter_0(filterFn){
-  var e, e$array, e$index, e$max, i_0, result;
-  result = cggqcj.create_15();
-  i_0 = 0;
-  for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
-    e = e$array[e$index];
-    if (filterFn.f_9(e, i_0++)) {
-      cggqcj.$addNode(result, e);
-    }
-  }
+  var result;
+  result = cggcc.$cast(cggqc.getSelectorEngine().filter_3(this.nodeList, filterFn));
   return this.pushStack(result, 'filter', this.currentSelector);
 }
 ;
 _.filter_2 = function filter_1(filters){
-  var array, c, c$array, c$index, c$max, e, e$array, e$index, e$max, f_0, f$array, f$index, f$max, ghostParent;
-  if (filters.length == 0 || jsEquals(filters[0], null)) {
-    return this;
-  }
-  array = cggqcj.create_15();
-  for (f$array = filters , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-    f_0 = f$array[f$index];
-    for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
-      e = e$array[e$index];
-      ghostParent = false;
-      if (jsEquals(e, cggqc.window_1) || jsEquals(cggdc.$getNodeName(e), null)) {
-        continue;
-      }
-      if (isNull(cggdc.$getParentNode(e))) {
-        cggdc.$appendChild(cgguc.createDiv(), e);
-        ghostParent = true;
-      }
-      for (c$array = cggqc.$_8(f_0, cggdc.$getParentNode(e)).elements , c$index = 0 , c$max = c$array.length; c$index < c$max; ++c$index) {
-        c = c$array[c$index];
-        if (jsEquals(c, e)) {
-          cggqcj.$addNode(array, c);
-          break;
-        }
-      }
-      if (ghostParent) {
-        cggdc.$removeFromParent(e);
-      }
-    }
-  }
-  return this.pushStack(this.unique(array), 'filter', filters[0]);
+  var result, selector;
+  selector = this.join_0(', ', filters);
+  result = cggcc.$cast(cggqc.getSelectorEngine().filter_4(this.nodeList, selector));
+  return this.pushStack(result, 'filter', selector);
 }
 ;
 _.find_0 = function find_0(filters){
@@ -11525,7 +11493,7 @@ _.find_0 = function find_0(filters){
     selector = selector$array[selector$index];
     for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
       e = e$array[e$index];
-      for (c$array = cggqc.$_8(selector, e).elements , c$index = 0 , c$max = c$array.length; c$index < c$max; ++c$index) {
+      for (c$array = cggqc.$_2(selector, e).elements , c$index = 0 , c$max = c$array.length; c$index < c$max; ++c$index) {
         c = c$array[c$index];
         cggqcj.$addNode(array, c);
       }
@@ -11606,7 +11574,7 @@ _.hide = function hide(){
 }
 ;
 _.hover = function hover(fover, fout){
-  return this.bind_2('mouseenter', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [null, fover])).bind_2('mouseleave', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [null, fout]));
+  return this.bind_2('mouseenter', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [fover])).bind_2('mouseleave', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [fout]));
 }
 ;
 _.index_1 = function index_1(element){
@@ -11634,6 +11602,15 @@ _.isVisible = function isVisible(){
   return this.isEmpty_0()?false:cggqc.getStyleImpl().isVisible_0(this.get_0(0));
 }
 ;
+_.join_0 = function join_0(chr, values){
+  var i_0, value_0;
+  value_0 = '';
+  for (i_0 = 0; i_0 < values.length; i_0++) {
+    value_0 += i_0 > 0?chr + values[i_0]:values[i_0];
+  }
+  return value_0;
+}
+;
 _.last_0 = function last_0(){
   return this.eq(this.size_1() - 1);
 }
@@ -11646,12 +11623,12 @@ _.live = function live(eventName, data_0, funcs){
   return dynamicCast(this.as(cggqc.Events), 27).live(eventName, data_0, funcs);
 }
 ;
-_.mouseenter = function mouseenter(f_0){
-  return dynamicCast(this.as(cggqc.Events), 27).mouseenter(f_0);
+_.mouseenter = function mouseenter(f){
+  return dynamicCast(this.as(cggqc.Events), 27).mouseenter(f);
 }
 ;
-_.mouseleave = function mouseleave(f_0){
-  return dynamicCast(this.as(cggqc.Events), 27).mouseleave(f_0);
+_.mouseleave = function mouseleave(f){
+  return dynamicCast(this.as(cggqc.Events), 27).mouseleave(f);
 }
 ;
 _.not = function not_1(elem){
@@ -11663,7 +11640,7 @@ _.not = function not_1(elem){
       cggqcj.$addNode(array, e);
     }
   }
-  return cggqc.$_3(array);
+  return cggqc.$_0(array);
 }
 ;
 _.not_0 = function not_2(gq){
@@ -11677,11 +11654,11 @@ _.not_0 = function not_2(gq){
 }
 ;
 _.not_1 = function not_3(filters){
-  var f_0, f$array, f$index, f$max, ret;
+  var f, f$array, f$index, f$max, ret;
   ret = this;
   for (f$array = filters , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-    f_0 = f$array[f$index];
-    ret = ret.not_0(cggqc.$_7(f_0));
+    f = f$array[f$index];
+    ret = ret.not_0(cggqc.$_1(f));
   }
   return ret;
 }
@@ -11693,6 +11670,9 @@ _.offset = function offset_0(){
 }
 ;
 _.on = function on(eventName, selector, funcs){
+  if (jsEquals(selector, null) || jl.isEmpty__Z__devirtual$(selector)) {
+    return this.on_0(eventName, funcs);
+  }
   return this.delegate_0(selector, eventName, funcs);
 }
 ;
@@ -11745,29 +11725,35 @@ _.parent_1 = function parent_1(){
   return new cggqc.GQuery_3(this.unique(result));
 }
 ;
-_.parents = function parents(){
-  return this.parentsUntil(null);
+_.parents = function parents_0(){
+  return this.parentsUntil_0(dynamicCastToString(null));
 }
 ;
-_.parents_0 = function parents_0(filters){
+_.parents_0 = function parents_1(filters){
   return this.parents().filter_2(filters);
 }
 ;
-_.parentsUntil = function parentsUntil(selector){
-  var e, e$array, e$index, e$max, par, result;
+_.parentsUntil = function parentsUntil(predicate){
+  var e, e$array, e$index, e$max, i_0, par, result;
   result = cggqcj.create_15();
   for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
+    i_0 = 0;
     par = cggdc.$getParentNode(e);
     while (isNotNull(par) && jsNotEquals(par, cggqc.document_0)) {
-      if (jsNotEquals(selector, null) && cggqc.$_2(par).is(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [selector]))) {
+      if (predicate.f_10(par, i_0)) {
         break;
       }
       cggqcj.$addNode(result, par);
       par = cggdc.$getParentNode(par);
+      i_0++;
     }
   }
   return (new cggqc.GQuery_3(this.unique(result))).setPreviousObject(this);
+}
+;
+_.parentsUntil_0 = function parentsUntil_0(selector){
+  return this.parentsUntil(new cggqc.GQuery$3(this, selector));
 }
 ;
 _.prepend = function prepend(html){
@@ -11788,11 +11774,11 @@ _.prev_0 = function prev_0(){
 }
 ;
 _.promise_0 = function promise(){
-  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 25).promise_0();
+  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 26).promise_0();
 }
 ;
 _.promise_1 = function promise_0(name_0){
-  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 25).promise_1(name_0);
+  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 26).promise_1(name_0);
 }
 ;
 _.prop = function prop_0(key){
@@ -11808,10 +11794,6 @@ _.pushStack = function pushStack(elts, name_0, selector){
   return g;
 }
 ;
-_.queue = function queue_0(f_0){
-  return dynamicCast(this.as((cggqcp.$clinit_QueuePlugin() , cggqcp.Queue)), 25).queue_1(f_0);
-}
-;
 _.remove_0 = function remove_1(){
   return this.remove_1(null, true);
 }
@@ -11820,9 +11802,9 @@ _.remove_1 = function remove_2(filter, clean){
   var e, e$array, e$index, e$max, w;
   for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
-    if (jsEquals(filter, null) || cggqc.$_1(e).filter_2(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [filter])).length_0() == 1) {
+    if (jsEquals(filter, null) || cggqc.$_0(e).filter_2(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [filter])).length_0() == 1) {
       if (clean) {
-        this.cleanGQData(cggqc.$_8('*', e).elements_0());
+        this.cleanGQData(cggqc.$_2('*', e).elements_0());
         this.cleanGQData(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_core_client_JavaScriptObject_2_classLit, 1), $intern_6, 0, 2, [e]));
       }
       w = cggqc.getAssociatedWidget(e);
@@ -11872,9 +11854,9 @@ _.removeData = function removeData(item_0, name_0){
   if (jsNotEquals(name_0, null)) {
     if (cggqcj.$exists(cggqc.dataCache, jl.valueOf_16(id_0))) {
       cggqcj.$delete(cggqcj.$getCache(cggqc.dataCache, id_0), name_0);
-    }
-    if (cggqcj.$isEmpty_0(cggqcj.$getCache(cggqc.dataCache, id_0))) {
-      this.removeData(item_0, null);
+      if (cggqcj.$isEmpty_0(cggqcj.$getCache(cggqc.dataCache, id_0))) {
+        this.removeData(item_0, null);
+      }
     }
   }
    else {
@@ -11897,13 +11879,13 @@ _.replaceWith = function replaceWith(target){
     el = el$array[el$index];
     nextSibling = cggdc.$getNextSiblingElement(el);
     if (isNotNull(nextSibling)) {
-      cggqc.$_1(nextSibling).before(target);
+      cggqc.$_0(nextSibling).before(target);
     }
      else {
       parent_0 = cggdc.$getParentElement(el);
-      cggqc.$_1(parent_0).append(target);
+      cggqc.$_0(parent_0).append(target);
     }
-    cggqc.$_1(el).remove_0();
+    cggqc.$_0(el).remove_0();
   }
   return this;
 }
@@ -11932,13 +11914,14 @@ _.saveCssAttrs = function saveCssAttrs(cssProps){
   }
 }
 ;
-_.scroll_0 = function scroll_0(f_0){
-  return this.bindOrFire($intern_28, null, f_0);
+_.scroll_0 = function scroll_0(f){
+  return this.bindOrFire($intern_27, null, f);
 }
 ;
 _.scrollIntoView_0 = function scrollIntoView(){
-  if (!this.isEmpty_0())
+  if (!this.isEmpty_0()) {
     cggqc.scrollIntoViewImpl(this.get_0(0));
+  }
   return this;
 }
 ;
@@ -11964,7 +11947,7 @@ _.scrollLeft_1 = function scrollLeft_0(left){
   for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     if (jsEquals(e, cggqc.window_1) || jsEquals(cggdc.$getNodeName(e), null) || jsEquals(e, cggqc.document_0)) {
-      cgguc.scrollTo_0(left, cggqc.$_1(e).scrollTop_0());
+      cgguc.scrollTo_0(left, cggqc.$_0(e).scrollTop_0());
     }
      else {
       cggdc.$setPropertyInt(e, 'scrollLeft', left);
@@ -11995,7 +11978,7 @@ _.scrollTop_1 = function scrollTop_1(top_0){
   for (e$array = this.elements , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     if (jsEquals(e, cggqc.window_1) || jsEquals(cggdc.$getNodeName(e), null) || jsEquals(e, cggqc.document_0)) {
-      cgguc.scrollTo_0(cggqc.$_1(e).scrollLeft_0(), top_0);
+      cgguc.scrollTo_0(cggqc.$_0(e).scrollLeft_0(), top_0);
     }
      else {
       cggdc.$setPropertyInt(e, 'scrollTop', top_0);
@@ -12065,16 +12048,16 @@ _.size_1 = function size_2(){
   return this.elements.length;
 }
 ;
-_.slideDown = function slideDown(millisecs, f_0){
-  return dynamicCast(this.as(cggqc.Effects), 47).slideDown(millisecs, f_0);
+_.slideDown = function slideDown(millisecs, f){
+  return dynamicCast(this.as(cggqc.Effects), 40).slideDown(millisecs, f);
 }
 ;
-_.slideToggle = function slideToggle(millisecs, f_0){
-  return dynamicCast(this.as(cggqc.Effects), 47).slideToggle(millisecs, f_0);
+_.slideToggle = function slideToggle(millisecs, f){
+  return dynamicCast(this.as(cggqc.Effects), 40).slideToggle(millisecs, f);
 }
 ;
-_.slideUp = function slideUp(millisecs, f_0){
-  return dynamicCast(this.as(cggqc.Effects), 47).slideUp(millisecs, f_0);
+_.slideUp = function slideUp(millisecs, f){
+  return dynamicCast(this.as(cggqc.Effects), 40).slideUp(millisecs, f);
 }
 ;
 _.submit_0 = function submit(funcs){
@@ -12160,16 +12143,16 @@ _.trigger = function trigger(eventbits, keys_0){
   return dynamicCast(this.as(cggqc.Events), 27).trigger_0(eventbits, keys_0);
 }
 ;
-_.unbind = function unbind(eventbits){
+_.unbind = function unbind_0(eventbits){
   return dynamicCast(this.as(cggqc.Events), 27).unbind_2(eventbits);
 }
 ;
-_.unbind_0 = function unbind_0(eventList){
+_.unbind_0 = function unbind_1(eventList){
   return this.unbind_1(eventList, null);
 }
 ;
-_.unbind_1 = function unbind_1(eventList, f_0){
-  return dynamicCast(this.as(cggqc.Events), 27).unbind_4(eventList, f_0);
+_.unbind_1 = function unbind_2(eventList, f){
+  return dynamicCast(this.as(cggqc.Events), 27).unbind_4(eventList, f);
 }
 ;
 _.unique = function unique(result){
@@ -12192,7 +12175,7 @@ _.width_2 = function width_2(width_0){
 cggqc.OLD_DATA_PREFIX = 'old-';
 cggqc.dataCache = null;
 cggqc.windowData = null;
-cggl.Lcom_google_gwt_query_client_GQuery_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery', 14, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_GQuery_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery', 15, cggl.Ljava_lang_Object_2_classLit);
 cggqc.$clinit_Predicate = function $clinit_Predicate(){
   cggqc.$clinit_Predicate = emptyMethod;
   jl.$clinit_Object();
@@ -12204,24 +12187,24 @@ cggqc.Predicate = function Predicate(){
   this.$init_127();
 }
 ;
-defineClass(19, 1, $intern_29);
+defineClass(16, 1, $intern_28);
 _.$init_127 = function $init_127(){
 }
 ;
-_.f_9 = function f_11(e, index_0){
+_.f_9 = function f_10(e, index_0){
   return this.f_10(dynamicCastAllowJso(e, 1), index_0);
 }
 ;
-_.f_10 = function f_12(e, index_0){
+_.f_10 = function f_11(e, index_0){
   return false;
 }
 ;
-cggl.Lcom_google_gwt_query_client_Predicate_2_classLit = createForClass('com.google.gwt.query.client', 'Predicate', 19, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_Predicate_2_classLit = createForClass('com.google.gwt.query.client', 'Predicate', 16, cggl.Ljava_lang_Object_2_classLit);
 cggqc.$clinit_GQuery$1 = function $clinit_GQuery$1(){
   cggqc.$clinit_GQuery$1 = emptyMethod;
 }
 ;
-defineClass(497, 19, $intern_29);
+defineClass(497, 16, $intern_28);
 cggqc.$clinit_GQuery$2 = function $clinit_GQuery$2(){
   cggqc.$clinit_GQuery$2 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -12235,20 +12218,147 @@ cggqc.GQuery$2 = function GQuery$2(this$0, val$selector){
   this.$init_128();
 }
 ;
-defineClass(207, 19, $intern_29, cggqc.GQuery$2);
+defineClass(208, 16, $intern_28, cggqc.GQuery$2);
 _.$init_128 = function $init_128(){
 }
 ;
-_.f_9 = function f_13(e, index_0){
-  return !cggqc.$_8(this.val$selector2, e).isEmpty_0();
+_.f_9 = function f_12(e, index_0){
+  return !cggqc.$_2(this.val$selector2, e).isEmpty_0();
 }
 ;
-cggl.Lcom_google_gwt_query_client_GQuery$2_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/2', 207, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_query_client_GQuery$2_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/2', 208, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggqc.$clinit_GQuery$3 = function $clinit_GQuery$3(){
   cggqc.$clinit_GQuery$3 = emptyMethod;
+  cggqc.$clinit_Predicate();
 }
 ;
-defineClass(498, 7, $intern_27);
+cggqc.GQuery$3 = function GQuery$3(this$0, val$selector){
+  cggqc.$clinit_GQuery$3();
+  this.this$01 = this$0;
+  this.val$selector2 = val$selector;
+  cggqc.Predicate.call(this);
+  this.$init_129();
+}
+;
+defineClass(209, 16, $intern_28, cggqc.GQuery$3);
+_.$init_129 = function $init_129(){
+}
+;
+_.f_10 = function f_13(e, index_0){
+  return jsNotEquals(this.val$selector2, null) && cggqc.$_0(e).is(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [this.val$selector2]));
+}
+;
+cggl.Lcom_google_gwt_query_client_GQuery$3_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/3', 209, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggqc.$clinit_GQuery$4 = function $clinit_GQuery$4(){
+  cggqc.$clinit_GQuery$4 = emptyMethod;
+}
+;
+defineClass(498, 16, $intern_28);
+cggqcpd.$clinit_Deferred$DeferredPromiseImpl = function $clinit_Deferred$DeferredPromiseImpl(){
+  cggqcpd.$clinit_Deferred$DeferredPromiseImpl = emptyMethod;
+  jl.$clinit_Object();
+}
+;
+cggqcpd.Deferred$DeferredPromiseImpl = function Deferred$DeferredPromiseImpl(){
+  cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
+  Object_0.call(this);
+  this.$init_130();
+  this.dfd = new cggqcpd.Deferred_0;
+}
+;
+cggqcpd.Deferred$DeferredPromiseImpl_0 = function Deferred$DeferredPromiseImpl_0(o){
+  cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
+  Object_0.call(this);
+  this.$init_130();
+  this.dfd = o;
+}
+;
+defineClass(97, 1, $intern_29, cggqcpd.Deferred$DeferredPromiseImpl_0);
+_.$init_130 = function $init_130(){
+  this.resolve = new cggqcpd.Deferred$DeferredPromiseImpl$1(this);
+  this.reject = new cggqcpd.Deferred$DeferredPromiseImpl$2(this);
+}
+;
+_.always = function always(f){
+  return this.done_0(f).fail(f);
+}
+;
+_.done_0 = function done_0(f){
+  this.dfd.resolve.add_2(f);
+  return this;
+}
+;
+_.fail = function fail(f){
+  this.dfd.reject.add_2(f);
+  return this;
+}
+;
+_.isResolved = function isResolved(){
+  return jl.equals_Ljava_lang_Object__Z__devirtual$_0('resolved', this.state_0());
+}
+;
+_.progress = function progress_0(f){
+  this.dfd.notify.add_2(f);
+  return this;
+}
+;
+_.state_0 = function state(){
+  return this.dfd.state;
+}
+;
+_.then = function then(continueFlow, f){
+  var newDfd;
+  newDfd = new cggqcpd.Deferred_0;
+  this.done_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction(newDfd, f, 0, continueFlow)]));
+  this.fail(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction(newDfd, f, 1, continueFlow)]));
+  this.progress(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction(newDfd, f, 2, continueFlow)]));
+  return newDfd.promise_0();
+}
+;
+_.then_0 = function then_0(f){
+  return this.then(false, f);
+}
+;
+_.toString$ = function toString_17(){
+  return 'Promise this=' + this.hashCode$() + ' ' + this.dfd;
+}
+;
+cggqcpd.DONE = 0;
+cggqcpd.FAIL = 1;
+cggqcpd.PROGRESS = 2;
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl', 97, cggl.Ljava_lang_Object_2_classLit);
+cggqcpd.$clinit_PromiseFunction = function $clinit_PromiseFunction(){
+  cggqcpd.$clinit_PromiseFunction = emptyMethod;
+  cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
+}
+;
+cggqcpd.PromiseFunction = function PromiseFunction(){
+  cggqcpd.$clinit_PromiseFunction();
+  cggqcpd.Deferred$DeferredPromiseImpl.call(this);
+  this.$init_131();
+  this.f_11(this.dfd);
+}
+;
+defineClass(210, 97, $intern_29);
+_.$init_131 = function $init_131(){
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseFunction', 210, cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit);
+cggqc.$clinit_GQuery$5 = function $clinit_GQuery$5(){
+  cggqc.$clinit_GQuery$5 = emptyMethod;
+}
+;
+defineClass(499, 210, $intern_29);
+cggqc.$clinit_GQuery$5$1 = function $clinit_GQuery$5$1(){
+  cggqc.$clinit_GQuery$5$1 = emptyMethod;
+}
+;
+defineClass(500, 7, $intern_26);
+cggqc.$clinit_GQuery$6 = function $clinit_GQuery$6(){
+  cggqc.$clinit_GQuery$6 = emptyMethod;
+}
+;
+defineClass(501, 7, $intern_26);
 cggqc.$clinit_GQuery$DomMan = function $clinit_GQuery$DomMan(){
   cggqc.$clinit_GQuery$DomMan = emptyMethod;
   jl.$clinit_Enum();
@@ -12260,7 +12370,7 @@ cggqc.$clinit_GQuery$DomMan = function $clinit_GQuery$DomMan(){
 ;
 cggqc.GQuery$DomMan = function GQuery$DomMan(enum$name, enum$ordinal){
   Enum.call(this, enum$name, enum$ordinal);
-  this.$init_129();
+  this.$init_132();
 }
 ;
 cggqc.valueOf_3 = function valueOf_3(name_0){
@@ -12270,14 +12380,14 @@ cggqc.valueOf_3 = function valueOf_3(name_0){
 ;
 cggqc.values_3 = function values_3(){
   cggqc.$clinit_GQuery$DomMan();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_GQuery$DomMan_2_classLit, 1), $intern_6, 58, 0, [cggqc.AFTER, cggqc.APPEND, cggqc.BEFORE, cggqc.PREPEND]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_GQuery$DomMan_2_classLit, 1), $intern_6, 63, 0, [cggqc.AFTER, cggqc.APPEND, cggqc.BEFORE, cggqc.PREPEND]);
 }
 ;
-defineClass(58, 5, {58:1, 3:1, 6:1, 5:1, 1:1}, cggqc.GQuery$DomMan);
-_.$init_129 = function $init_129(){
+defineClass(63, 5, {63:1, 3:1, 6:1, 5:1, 1:1}, cggqc.GQuery$DomMan);
+_.$init_132 = function $init_132(){
 }
 ;
-cggl.Lcom_google_gwt_query_client_GQuery$DomMan_2_classLit = createForEnum('com.google.gwt.query.client', 'GQuery/DomMan', 58, cggl.Ljava_lang_Enum_2_classLit, cggqc.values_3, cggqc.valueOf_3);
+cggl.Lcom_google_gwt_query_client_GQuery$DomMan_2_classLit = createForEnum('com.google.gwt.query.client', 'GQuery/DomMan', 63, cggl.Ljava_lang_Enum_2_classLit, cggqc.values_3, cggqc.valueOf_3);
 cggqc.$clinit_GQuery$DomMan$Map = function $clinit_GQuery$DomMan$Map(){
   cggqc.$clinit_GQuery$DomMan$Map = emptyMethod;
   cggqc.$MAP_2 = createValueOfMap(cggqc.values_3());
@@ -12292,22 +12402,22 @@ cggqc.$clinit_GQuery$Offset = function $clinit_GQuery$Offset(){
 cggqc.GQuery$Offset = function GQuery$Offset(left, top_0){
   cggqc.$clinit_GQuery$Offset();
   Object_0.call(this);
-  this.$init_130();
+  this.$init_133();
   this.left_0 = left;
   this.top_0 = top_0;
 }
 ;
-defineClass(135, 1, $intern_0, cggqc.GQuery$Offset);
-_.$init_130 = function $init_130(){
+defineClass(138, 1, $intern_0, cggqc.GQuery$Offset);
+_.$init_133 = function $init_133(){
 }
 ;
-_.toString$ = function toString_17(){
+_.toString$ = function toString_18(){
   return this.top_0 + '+' + this.left_0;
 }
 ;
 _.left_0 = 0;
 _.top_0 = 0;
-cggl.Lcom_google_gwt_query_client_GQuery$Offset_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/Offset', 135, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_GQuery$Offset_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/Offset', 138, cggl.Ljava_lang_Object_2_classLit);
 cggqc.$clinit_GQuery$TagWrapper = function $clinit_GQuery$TagWrapper(){
   cggqc.$clinit_GQuery$TagWrapper = emptyMethod;
   jl.$clinit_Object();
@@ -12317,18 +12427,18 @@ cggqc.$clinit_GQuery$TagWrapper = function $clinit_GQuery$TagWrapper(){
 cggqc.GQuery$TagWrapper = function GQuery$TagWrapper(wrapDepth, preWrap, postWrap){
   cggqc.$clinit_GQuery$TagWrapper();
   Object_0.call(this);
-  this.$init_131();
+  this.$init_134();
   this.wrapDepth = wrapDepth;
   this.postWrap = postWrap;
   this.preWrap = preWrap;
 }
 ;
-defineClass(30, 1, {30:1, 1:1}, cggqc.GQuery$TagWrapper);
-_.$init_131 = function $init_131(){
+defineClass(29, 1, {29:1, 1:1}, cggqc.GQuery$TagWrapper);
+_.$init_134 = function $init_134(){
 }
 ;
 _.wrapDepth = 0;
-cggl.Lcom_google_gwt_query_client_GQuery$TagWrapper_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/TagWrapper', 30, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_GQuery$TagWrapper_2_classLit = createForClass('com.google.gwt.query.client', 'GQuery/TagWrapper', 29, cggl.Ljava_lang_Object_2_classLit);
 cggqc.$clinit_IsProperties = function $clinit_IsProperties(){
   cggqc.$clinit_IsProperties = emptyMethod;
 }
@@ -12355,6 +12465,11 @@ cggqc.$clinit_Properties = function $clinit_Properties(){
 ;
 cggqc.$c = function $c(this$static){
   return cggcc.$cast(this$static);
+}
+;
+cggqc.$defined = function $defined(this$static, name_0){
+  cggqc.$clinit_Properties();
+  return cggqcj.$exists(cggqc.$c(this$static), valueOf_24(name_0));
 }
 ;
 cggqc.$get_2 = function $get_2(this$static, name_0){
@@ -12387,16 +12502,16 @@ cggqc.$getFloat = function $getFloat(this$static, name_0){
 ;
 cggqc.$getFunction = function $getFunction(this$static, name_0){
   cggqc.$clinit_Properties();
-  var f_0, o;
+  var f, o;
   o = cggqcj.$get_3(cggqc.$c(this$static), valueOf_24(name_0));
   if (jsNotEquals(o, null)) {
     if (instanceOf(o, 7)) {
       return dynamicCast(o, 7);
     }
      else if (instanceOfJso(o)) {
-      f_0 = cggqc.$getObject_0(cggcc.$cast(dynamicCastJso(o)), '__f');
-      if (jsNotEquals(f_0, null) && instanceOf(f_0, 7)) {
-        return dynamicCast(f_0, 7);
+      f = cggqc.$getObject_0(cggcc.$cast(dynamicCastJso(o)), '__f');
+      if (jsNotEquals(f, null) && instanceOf(f, 7)) {
+        return dynamicCast(f, 7);
       }
       return new cggqcj.JsUtils$JsFunction(dynamicCastJso(o));
     }
@@ -12437,7 +12552,7 @@ cggqc.$load = function $load(this$static, prp){
   if (instanceOfJso(prp)) {
     cggqcj.$copy(cggqc.$c(this$static), dynamicCastJso(prp));
   }
-  return dynamicCastAllowJso(cggqc.$getDataImpl(this$static), 33);
+  return dynamicCastAllowJso(cggqc.$getDataImpl(this$static), 42);
 }
 ;
 cggqc.$parse = function $parse(this$static, json){
@@ -12454,15 +12569,15 @@ cggqc.$set_2 = function $set_2(this$static, name_0, val){
   return this$static;
 }
 ;
-cggqc.$setFunction = function $setFunction(this$static, name_0, f_0){
+cggqc.$setFunction = function $setFunction(this$static, name_0, f){
   cggqc.$clinit_Properties();
-  if (!f_0)
+  if (!f)
     return;
   this$static[name_0] = function(){
-    f_0.fe_2(arguments);
+    f.fe_2(arguments);
   }
   ;
-  this$static[name_0].__f = f_0;
+  this$static[name_0].__f = f;
 }
 ;
 cggqc.$toJson = function $toJson(this$static){
@@ -12560,7 +12675,7 @@ cggqcb.$clinit_JsonBuilder = function $clinit_JsonBuilder(){
   cggqcb.$clinit_JsonBuilder = emptyMethod;
 }
 ;
-cggl.Lcom_google_gwt_query_client_builders_JsonBuilder_2_classLit = createForInterface('com.google.gwt.query.client.builders', 'JsonBuilder', 102, null);
+cggl.Lcom_google_gwt_query_client_builders_JsonBuilder_2_classLit = createForInterface('com.google.gwt.query.client.builders', 'JsonBuilder', 56, null);
 cggqcb.$clinit_JsonBuilderBase = function $clinit_JsonBuilderBase(){
   cggqcb.$clinit_JsonBuilderBase = emptyMethod;
   jl.$clinit_Object();
@@ -12569,12 +12684,13 @@ cggqcb.$clinit_JsonBuilderBase = function $clinit_JsonBuilderBase(){
 cggqcb.JsonBuilderBase = function JsonBuilderBase(){
   cggqcb.$clinit_JsonBuilderBase();
   Object_0.call(this);
-  this.$init_132();
+  this.$init_135();
 }
 ;
-defineClass(64, 1, {33:1, 64:1, 1:1});
-_.$init_132 = function $init_132(){
+defineClass(68, 1, $intern_30);
+_.$init_135 = function $init_135(){
   this.p = cggqc.create_8();
+  this.fieldNames = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, []);
 }
 ;
 _.get_1 = function get_5(key){
@@ -12589,6 +12705,17 @@ _.getDataImpl = function getDataImpl_0(){
   return this.getDataImpl_0();
 }
 ;
+_.getFieldNames = function getFieldNames(){
+  return this.fieldNames;
+}
+;
+_.getPropertiesBase = function getPropertiesBase(n){
+  if (isNull(cggqc.$getJavaScriptObject(this.p, n))) {
+    cggqc.$set_2(this.p, n, cggqc.create_8());
+  }
+  return cggqc.$getJavaScriptObject(this.p, n);
+}
+;
 _.load = function load(prp){
   return this.load_0(prp);
 }
@@ -12600,7 +12727,7 @@ _.load_0 = function load_0(prp){
   if (jsNotEquals(prp, null)) {
     this.p = dynamicCastJso(prp);
   }
-  return dynamicCast(this, 64);
+  return dynamicCast(this, 68);
 }
 ;
 _.parse_1 = function parse_1(json){
@@ -12612,13 +12739,13 @@ _.parse_2 = function parse_2(json){
 }
 ;
 _.set_0 = function set_2(key, val){
-  if (instanceOfOrJso(val, 33)) {
-    cggqc.$set_2(this.p, key, cggqc.getDataImpl__Ljava_lang_Object___devirtual$(dynamicCastAllowJso(val, 33)));
+  if (instanceOfOrJso(val, 42)) {
+    cggqc.$set_2(this.p, key, cggqc.getDataImpl__Ljava_lang_Object___devirtual$(dynamicCastAllowJso(val, 42)));
   }
    else {
     cggqc.$set_2(this.p, key, val);
   }
-  return dynamicCastAllowJso(this, 33);
+  return dynamicCastAllowJso(this, 42);
 }
 ;
 _.toJson = function toJson(){
@@ -12629,11 +12756,11 @@ _.toQueryString = function toQueryString(){
   return cggqc.$toQueryString(this.p);
 }
 ;
-_.toString$ = function toString_18(){
+_.toString$ = function toString_19(){
   return cggqc.$tostring(this.p);
 }
 ;
-cggl.Lcom_google_gwt_query_client_builders_JsonBuilderBase_2_classLit = createForClass('com.google.gwt.query.client.builders', 'JsonBuilderBase', 64, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_builders_JsonBuilderBase_2_classLit = createForClass('com.google.gwt.query.client.builders', 'JsonBuilderBase', 68, cggl.Ljava_lang_Object_2_classLit);
 cggqcb.$clinit_JsonBuilder_JsonBuilder = function $clinit_JsonBuilder_JsonBuilder(){
   cggqcb.$clinit_JsonBuilder_JsonBuilder = emptyMethod;
   cggqcb.$clinit_JsonBuilderBase();
@@ -12642,18 +12769,17 @@ cggqcb.$clinit_JsonBuilder_JsonBuilder = function $clinit_JsonBuilder_JsonBuilde
 cggqcb.JsonBuilder_JsonBuilder = function JsonBuilder_JsonBuilder(){
   cggqcb.$clinit_JsonBuilder_JsonBuilder();
   cggqcb.JsonBuilderBase.call(this);
-  this.$init_133();
+  this.$init_136();
 }
 ;
-defineClass(353, 64, {33:1, 102:1, 64:1, 1:1}, cggqcb.JsonBuilder_JsonBuilder);
-_.$init_133 = function $init_133(){
+defineClass(354, 68, $intern_30, cggqcb.JsonBuilder_JsonBuilder);
+_.$init_136 = function $init_136(){
+  {
+    this.fieldNames = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, []);
+  }
 }
 ;
-_.getFieldNames = function getFieldNames(){
-  return initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, []);
-}
-;
-cggl.Lcom_google_gwt_query_client_builders_JsonBuilder_1JsonBuilder_2_classLit = createForClass('com.google.gwt.query.client.builders', 'JsonBuilder_JsonBuilder', 353, cggl.Lcom_google_gwt_query_client_builders_JsonBuilderBase_2_classLit);
+cggl.Lcom_google_gwt_query_client_builders_JsonBuilder_1JsonBuilder_2_classLit = createForClass('com.google.gwt.query.client.builders', 'JsonBuilder_JsonBuilder', 354, cggl.Lcom_google_gwt_query_client_builders_JsonBuilderBase_2_classLit);
 cggqcb.$clinit_JsonFactory = function $clinit_JsonFactory(){
   cggqcb.$clinit_JsonFactory = emptyMethod;
 }
@@ -12666,26 +12792,27 @@ cggqcb.$clinit_JsonFactory_JsonBuilder = function $clinit_JsonFactory_JsonBuilde
 cggqcb.JsonFactory_JsonBuilder = function JsonFactory_JsonBuilder(){
   cggqcb.$clinit_JsonFactory_JsonBuilder();
   Object_0.call(this);
-  this.$init_134();
+  this.$init_137();
 }
 ;
-defineClass(339, 1, {413:1, 1:1}, cggqcb.JsonFactory_JsonBuilder);
-_.$init_134 = function $init_134(){
+defineClass(338, 1, {413:1, 1:1}, cggqcb.JsonFactory_JsonBuilder);
+_.$init_137 = function $init_137(){
 }
 ;
 _.create_0 = function create_10(clz){
   if (jsEquals(clz, cggl.Lcom_google_gwt_query_client_builders_JsonBuilder_2_classLit))
-    return dynamicCast(new cggqcb.JsonBuilder_JsonBuilder, 102);
+    return dynamicCast(new cggqcb.JsonBuilder_JsonBuilder, 56);
   if (jsEquals(clz, cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit))
-    return dynamicCast(new cggqcpa.Ajax_Settings_JsonBuilder, 102);
+    return dynamicCast(new cggqcpa.Ajax_Settings_JsonBuilder, 56);
+  (cggqc.$clinit_GQuery() , cggqc.console_0).error_0('GQ.create: not registered class :' + clz);
   return null;
 }
 ;
 _.create_1 = function create_11(s){
-  return dynamicCastAllowJso(cggqcj.parseJSON(s), 33);
+  return dynamicCastAllowJso(cggqcj.parseJSON(s), 42);
 }
 ;
-cggl.Lcom_google_gwt_query_client_builders_JsonFactory_1JsonBuilder_2_classLit = createForClass('com.google.gwt.query.client.builders', 'JsonFactory_JsonBuilder', 339, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_builders_JsonFactory_1JsonBuilder_2_classLit = createForClass('com.google.gwt.query.client.builders', 'JsonFactory_JsonBuilder', 338, cggl.Ljava_lang_Object_2_classLit);
 cggqcc.$clinit_RGBColor = function $clinit_RGBColor(){
   cggqcc.$clinit_RGBColor = emptyMethod;
   jl.$clinit_Object();
@@ -12714,7 +12841,7 @@ cggqcc.$clinit_RGBColor = function $clinit_RGBColor(){
 ;
 cggqcc.RGBColor_0 = function RGBColor_0(value_0){
   Object_0.call(this);
-  this.$init_135();
+  this.$init_138();
   this.value_0 = value_0;
 }
 ;
@@ -12731,29 +12858,29 @@ cggqcc.rgb_0 = function rgb_0(hex){
   return new cggqcc.RGBColor_0(hex);
 }
 ;
-defineClass(156, 1, $intern_0, cggqcc.RGBColor_0);
-_.$init_135 = function $init_135(){
+defineClass(157, 1, $intern_0, cggqcc.RGBColor_0);
+_.$init_138 = function $init_138(){
 }
 ;
 _.getCssName = function getCssName_16(){
   return this.value_0;
 }
 ;
-cggl.Lcom_google_gwt_query_client_css_RGBColor_2_classLit = createForClass('com.google.gwt.query.client.css', 'RGBColor', 156, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_css_RGBColor_2_classLit = createForClass('com.google.gwt.query.client.css', 'RGBColor', 157, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_AttributeImpl = function $clinit_AttributeImpl(){
   cggqci.$clinit_AttributeImpl = emptyMethod;
   jl.$clinit_Object();
-  cggqci.BOOLEAN_ATTR_REGEX = new cggqcj.JsRegexp('^(?:autofocus|autoplay|async|checked|controls|defer|disabled|hidden|loop|multiple|open|readonly|required|scoped|selected)$', 'i');
+  cggqci.BOOLEAN_ATTR_REGEX = cggrs.compile_0('^(?:autofocus|autoplay|async|checked|controls|defer|disabled|hidden|loop|multiple|open|readonly|required|scoped|selected)$', 'i');
 }
 ;
 cggqci.AttributeImpl = function AttributeImpl(){
   cggqci.$clinit_AttributeImpl();
   Object_0.call(this);
-  this.$init_136();
+  this.$init_139();
 }
 ;
-defineClass(121, 1, {121:1, 1:1}, cggqci.AttributeImpl);
-_.$init_136 = function $init_136(){
+defineClass(124, 1, {124:1, 1:1}, cggqci.AttributeImpl);
+_.$init_139 = function $init_139(){
 }
 ;
 _.fixValue = function fixValue(key, value_0){
@@ -12770,7 +12897,7 @@ _.getAttributeSetter = function getAttributeSetter(key){
    else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('value', key)) {
     return cggqci.getInstance_3();
   }
-   else if (cggqci.BOOLEAN_ATTR_REGEX.test_0(key)) {
+   else if (cggrs.$test(cggqci.BOOLEAN_ATTR_REGEX, key)) {
     return cggqci.getInstance_0();
   }
   return cggqci.getInstance();
@@ -12784,7 +12911,7 @@ _.removeAttribute_0 = function removeAttribute(gQuery, key){
       continue;
     }
     if (cggqcj.hasProperty(e, key)) {
-      if (cggqci.BOOLEAN_ATTR_REGEX.test_0(key)) {
+      if (cggrs.$test(cggqci.BOOLEAN_ATTR_REGEX, key)) {
         cggdc.$setPropertyBoolean(e, key, false);
       }
        else {
@@ -12813,7 +12940,7 @@ _.setAttribute_0 = function setAttribute(gQuery, key, value_0){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_AttributeImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl', 121, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_AttributeImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl', 124, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_AttributeImpl$AttributeSetter = function $clinit_AttributeImpl$AttributeSetter(){
   cggqci.$clinit_AttributeImpl$AttributeSetter = emptyMethod;
 }
@@ -12826,7 +12953,7 @@ cggqci.$clinit_AttributeImpl$DefaultSetter = function $clinit_AttributeImpl$Defa
 cggqci.AttributeImpl$DefaultSetter = function AttributeImpl$DefaultSetter(){
   cggqci.$clinit_AttributeImpl$DefaultSetter();
   Object_0.call(this);
-  this.$init_137();
+  this.$init_140();
 }
 ;
 cggqci.getInstance = function getInstance(){
@@ -12837,8 +12964,8 @@ cggqci.getInstance = function getInstance(){
   return cggqci.INSTANCE_0;
 }
 ;
-defineClass(29, 1, $intern_0, cggqci.AttributeImpl$DefaultSetter);
-_.$init_137 = function $init_137(){
+defineClass(28, 1, $intern_0, cggqci.AttributeImpl$DefaultSetter);
+_.$init_140 = function $init_140(){
 }
 ;
 _.isRemoval = function isRemoval(value_0){
@@ -12849,7 +12976,7 @@ _.setAttribute_1 = function setAttribute_0(e, key, value_0){
   cggdc.$setAttribute(e, key, valueOf_24(value_0));
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/DefaultSetter', 29, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/DefaultSetter', 28, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_AttributeImpl$BooleanAttrSetter = function $clinit_AttributeImpl$BooleanAttrSetter(){
   cggqci.$clinit_AttributeImpl$BooleanAttrSetter = emptyMethod;
   cggqci.$clinit_AttributeImpl$DefaultSetter();
@@ -12857,7 +12984,7 @@ cggqci.$clinit_AttributeImpl$BooleanAttrSetter = function $clinit_AttributeImpl$
 ;
 cggqci.AttributeImpl$BooleanAttrSetter = function AttributeImpl$BooleanAttrSetter(){
   cggqci.AttributeImpl$DefaultSetter.call(this);
-  this.$init_138();
+  this.$init_141();
 }
 ;
 cggqci.getInstance_0 = function getInstance_0(){
@@ -12868,22 +12995,22 @@ cggqci.getInstance_0 = function getInstance_0(){
   return cggqci.INSTANCE_1;
 }
 ;
-defineClass(331, 29, $intern_0, cggqci.AttributeImpl$BooleanAttrSetter);
-_.$init_138 = function $init_138(){
+defineClass(333, 28, $intern_0, cggqci.AttributeImpl$BooleanAttrSetter);
+_.$init_141 = function $init_141(){
 }
 ;
 _.isRemoval = function isRemoval_0(value_0){
-  return getClassPrototype(29).isRemoval.call(this, value_0) || (jl.$clinit_Boolean() , jl.FALSE).equals$(value_0);
+  return getClassPrototype(28).isRemoval.call(this, value_0) || (jl.$clinit_Boolean() , jl.FALSE).equals$(value_0);
 }
 ;
 _.setAttribute_1 = function setAttribute_1(e, key, value_0){
   if (cggqcj.hasProperty(e, key)) {
     cggdc.$setPropertyBoolean(e, key, true);
   }
-  getClassPrototype(29).setAttribute_1.call(this, e, key, jl.toLowerCase__Ljava_lang_String___devirtual$(key));
+  getClassPrototype(28).setAttribute_1.call(this, e, key, jl.toLowerCase__Ljava_lang_String___devirtual$(key));
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$BooleanAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/BooleanAttrSetter', 331, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$BooleanAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/BooleanAttrSetter', 333, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
 cggqci.$clinit_AttributeImpl$IdAttrSetter = function $clinit_AttributeImpl$IdAttrSetter(){
   cggqci.$clinit_AttributeImpl$IdAttrSetter = emptyMethod;
   cggqci.$clinit_AttributeImpl$DefaultSetter();
@@ -12891,7 +13018,7 @@ cggqci.$clinit_AttributeImpl$IdAttrSetter = function $clinit_AttributeImpl$IdAtt
 ;
 cggqci.AttributeImpl$IdAttrSetter = function AttributeImpl$IdAttrSetter(){
   cggqci.AttributeImpl$DefaultSetter.call(this);
-  this.$init_139();
+  this.$init_142();
 }
 ;
 cggqci.getInstance_1 = function getInstance_1(){
@@ -12902,25 +13029,25 @@ cggqci.getInstance_1 = function getInstance_1(){
   return cggqci.INSTANCE_2;
 }
 ;
-defineClass(332, 29, $intern_0, cggqci.AttributeImpl$IdAttrSetter);
-_.$init_139 = function $init_139(){
+defineClass(334, 28, $intern_0, cggqci.AttributeImpl$IdAttrSetter);
+_.$init_142 = function $init_142(){
 }
 ;
 _.setAttribute_1 = function setAttribute_2(e, key, value_0){
   cggdc.$setId(e, jsEquals(value_0, null)?null:jl.toString__Ljava_lang_String___devirtual$(value_0));
-  getClassPrototype(29).setAttribute_1.call(this, e, key, value_0);
+  getClassPrototype(28).setAttribute_1.call(this, e, key, value_0);
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$IdAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/IdAttrSetter', 332, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$IdAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/IdAttrSetter', 334, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
 cggqci.$clinit_AttributeImpl$TypeAttrSetter = function $clinit_AttributeImpl$TypeAttrSetter(){
   cggqci.$clinit_AttributeImpl$TypeAttrSetter = emptyMethod;
   cggqci.$clinit_AttributeImpl$DefaultSetter();
-  cggqci.NOT_AUTHORIZED_NODE = new cggqcj.JsRegexp('^(?:button|input)$', 'i');
+  cggqci.NOT_AUTHORIZED_NODE = cggrs.compile_0('^(?:button|input)$', 'i');
 }
 ;
 cggqci.AttributeImpl$TypeAttrSetter = function AttributeImpl$TypeAttrSetter(){
   cggqci.AttributeImpl$DefaultSetter.call(this);
-  this.$init_140();
+  this.$init_143();
 }
 ;
 cggqci.getInstance_2 = function getInstance_2(){
@@ -12931,28 +13058,28 @@ cggqci.getInstance_2 = function getInstance_2(){
   return cggqci.INSTANCE_3;
 }
 ;
-defineClass(333, 29, $intern_0, cggqci.AttributeImpl$TypeAttrSetter);
-_.$init_140 = function $init_140(){
+defineClass(335, 28, $intern_0, cggqci.AttributeImpl$TypeAttrSetter);
+_.$init_143 = function $init_143(){
 }
 ;
 _.setAttribute_1 = function setAttribute_3(e, name_0, value_0){
   var ie, keepValue, tag;
   tag = cggdc.$getNodeName(e);
-  if (cggqci.NOT_AUTHORIZED_NODE.test_0(tag) && cggqc.$_1(e).parents_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['body'])).length_0() > 0) {
+  if (cggrs.$test(cggqci.NOT_AUTHORIZED_NODE, tag) && cggqc.$_0(e).parents_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['body'])).length_0() > 0) {
     throw new jl.RuntimeException_0('You cannot change type of button or input element if the element is already attached to the dom');
   }
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('input', jl.toLowerCase__Ljava_lang_String___devirtual$(tag)) && jl.equals_Ljava_lang_Object__Z__devirtual$_0('radio', value_0)) {
     ie = cggdc.as_0(e);
     keepValue = cggdc.$getValue(ie);
-    getClassPrototype(29).setAttribute_1.call(this, ie, 'type', value_0);
+    getClassPrototype(28).setAttribute_1.call(this, ie, 'type', value_0);
     cggdc.$setValue(ie, keepValue);
   }
    else {
-    getClassPrototype(29).setAttribute_1.call(this, e, name_0, value_0);
+    getClassPrototype(28).setAttribute_1.call(this, e, name_0, value_0);
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$TypeAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/TypeAttrSetter', 333, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$TypeAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/TypeAttrSetter', 335, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
 cggqci.$clinit_AttributeImpl$ValueAttrSetter = function $clinit_AttributeImpl$ValueAttrSetter(){
   cggqci.$clinit_AttributeImpl$ValueAttrSetter = emptyMethod;
   cggqci.$clinit_AttributeImpl$DefaultSetter();
@@ -12960,7 +13087,7 @@ cggqci.$clinit_AttributeImpl$ValueAttrSetter = function $clinit_AttributeImpl$Va
 ;
 cggqci.AttributeImpl$ValueAttrSetter = function AttributeImpl$ValueAttrSetter(){
   cggqci.AttributeImpl$DefaultSetter.call(this);
-  this.$init_141();
+  this.$init_144();
 }
 ;
 cggqci.getInstance_3 = function getInstance_3(){
@@ -12971,16 +13098,16 @@ cggqci.getInstance_3 = function getInstance_3(){
   return cggqci.INSTANCE_4;
 }
 ;
-defineClass(330, 29, $intern_0, cggqci.AttributeImpl$ValueAttrSetter);
-_.$init_141 = function $init_141(){
+defineClass(332, 28, $intern_0, cggqci.AttributeImpl$ValueAttrSetter);
+_.$init_144 = function $init_144(){
 }
 ;
 _.setAttribute_1 = function setAttribute_4(e, key, value_0){
   cggdc.$setPropertyObject(e, 'value', valueOf_24(value_0));
-  getClassPrototype(29).setAttribute_1.call(this, e, key, value_0);
+  getClassPrototype(28).setAttribute_1.call(this, e, key, value_0);
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$ValueAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/ValueAttrSetter', 330, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$ValueAttrSetter_2_classLit = createForClass('com.google.gwt.query.client.impl', 'AttributeImpl/ValueAttrSetter', 332, cggl.Lcom_google_gwt_query_client_impl_AttributeImpl$DefaultSetter_2_classLit);
 cggqci.$clinit_ConsoleBrowser = function $clinit_ConsoleBrowser(){
   cggqci.$clinit_ConsoleBrowser = emptyMethod;
   jl.$clinit_Object();
@@ -12989,19 +13116,41 @@ cggqci.$clinit_ConsoleBrowser = function $clinit_ConsoleBrowser(){
 cggqci.ConsoleBrowser = function ConsoleBrowser(){
   cggqci.$clinit_ConsoleBrowser();
   Object_0.call(this);
-  this.$init_142();
+  this.$init_145();
   this.impl = (cggqc.$clinit_GQuery() , cggqc.browser).ie8?new cggqci.ConsoleBrowser$ConsoleIe8:(cggqc.$clinit_GQuery() , cggqc.browser).ie9?new cggqci.ConsoleBrowser$ConsoleIe9:new cggqci.ConsoleBrowser$ConsoleImpl;
 }
 ;
-defineClass(228, 1, {408:1, 1:1}, cggqci.ConsoleBrowser);
-_.$init_142 = function $init_142(){
+defineClass(237, 1, {407:1, 1:1}, cggqci.ConsoleBrowser);
+_.$init_145 = function $init_145(){
 }
 ;
 _.clear_0 = function clear_1(){
   this.impl.clear_0();
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser', 228, cggl.Ljava_lang_Object_2_classLit);
+_.error_0 = function error(arg){
+  this.impl.error_1(this.toJs(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [arg])));
+}
+;
+_.info_0 = function info(arg){
+  this.impl.info_1(this.toJs(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [arg])));
+}
+;
+_.log_1 = function log_4(args){
+  this.impl.log_2(this.toJs(args));
+}
+;
+_.toJs = function toJs(arg){
+  var o, o$array, o$index, o$max, ret;
+  ret = cggcc.$cast(cggcc.createArray());
+  for (o$array = arg , o$index = 0 , o$max = o$array.length; o$index < o$max; ++o$index) {
+    o = o$array[o$index];
+    cggqcj.$add_0(ret, initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [o]));
+  }
+  return ret;
+}
+;
+cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser', 237, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_ConsoleBrowser$ConsoleImpl = function $clinit_ConsoleBrowser$ConsoleImpl(){
   cggqci.$clinit_ConsoleBrowser$ConsoleImpl = emptyMethod;
   jl.$clinit_Object();
@@ -13010,18 +13159,30 @@ cggqci.$clinit_ConsoleBrowser$ConsoleImpl = function $clinit_ConsoleBrowser$Cons
 cggqci.ConsoleBrowser$ConsoleImpl = function ConsoleBrowser$ConsoleImpl(){
   cggqci.$clinit_ConsoleBrowser$ConsoleImpl();
   Object_0.call(this);
-  this.$init_143();
+  this.$init_146();
 }
 ;
-defineClass(110, 1, $intern_0, cggqci.ConsoleBrowser$ConsoleImpl);
-_.$init_143 = function $init_143(){
+defineClass(79, 1, $intern_0, cggqci.ConsoleBrowser$ConsoleImpl);
+_.$init_146 = function $init_146(){
 }
 ;
 _.clear_0 = function clear_2(){
   $wnd.console.clear();
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser/ConsoleImpl', 110, cggl.Ljava_lang_Object_2_classLit);
+_.error_1 = function error_0(arg){
+  $wnd.console.error.apply($wnd.console, arg);
+}
+;
+_.info_1 = function info_0(arg){
+  $wnd.console.info.apply($wnd.console, arg);
+}
+;
+_.log_2 = function log_5(arg){
+  $wnd.console.log.apply($wnd.console, arg);
+}
+;
+cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser/ConsoleImpl', 79, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_ConsoleBrowser$ConsoleIe9 = function $clinit_ConsoleBrowser$ConsoleIe9(){
   cggqci.$clinit_ConsoleBrowser$ConsoleIe9 = emptyMethod;
   cggqci.$clinit_ConsoleBrowser$ConsoleImpl();
@@ -13030,18 +13191,31 @@ cggqci.$clinit_ConsoleBrowser$ConsoleIe9 = function $clinit_ConsoleBrowser$Conso
 cggqci.ConsoleBrowser$ConsoleIe9 = function ConsoleBrowser$ConsoleIe9(){
   cggqci.$clinit_ConsoleBrowser$ConsoleIe9();
   cggqci.ConsoleBrowser$ConsoleImpl.call(this);
-  this.$init_144();
+  this.$init_147();
   this.init();
 }
 ;
-defineClass(138, 110, $intern_0, cggqci.ConsoleBrowser$ConsoleIe9);
-_.$init_144 = function $init_144(){
+defineClass(141, 79, $intern_0, cggqci.ConsoleBrowser$ConsoleIe9);
+_.$init_147 = function $init_147(){
   this.initialized = false;
 }
 ;
 _.clear_0 = function clear_3(){
-  if (this.initialized)
-    getClassPrototype(110).clear_0.call(this);
+  if (this.initialized) {
+    getClassPrototype(79).clear_0.call(this);
+  }
+}
+;
+_.error_1 = function error_1(arg){
+  if (this.initialized) {
+    getClassPrototype(79).error_1.call(this, arg);
+  }
+}
+;
+_.info_1 = function info_1(arg){
+  if (this.initialized) {
+    getClassPrototype(79).info_1.call(this, arg);
+  }
 }
 ;
 _.init = function init_0(){
@@ -13057,7 +13231,7 @@ _.init = function init_0(){
 }
 ;
 _.initialized = false;
-cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleIe9_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser/ConsoleIe9', 138, cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleIe9_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser/ConsoleIe9', 141, cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleImpl_2_classLit);
 cggqci.$clinit_ConsoleBrowser$ConsoleIe8 = function $clinit_ConsoleBrowser$ConsoleIe8(){
   cggqci.$clinit_ConsoleBrowser$ConsoleIe8 = emptyMethod;
   cggqci.$clinit_ConsoleBrowser$ConsoleIe9();
@@ -13066,11 +13240,11 @@ cggqci.$clinit_ConsoleBrowser$ConsoleIe8 = function $clinit_ConsoleBrowser$Conso
 cggqci.ConsoleBrowser$ConsoleIe8 = function ConsoleBrowser$ConsoleIe8(){
   cggqci.$clinit_ConsoleBrowser$ConsoleIe8();
   cggqci.ConsoleBrowser$ConsoleIe9.call(this);
-  this.$init_145();
+  this.$init_148();
 }
 ;
-defineClass(229, 138, $intern_0, cggqci.ConsoleBrowser$ConsoleIe8);
-_.$init_145 = function $init_145(){
+defineClass(238, 141, $intern_0, cggqci.ConsoleBrowser$ConsoleIe8);
+_.$init_148 = function $init_148(){
 }
 ;
 _.init = function init_1(){
@@ -13082,28 +13256,28 @@ _.init = function init_1(){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleIe8_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser/ConsoleIe8', 229, cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleIe9_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleIe8_2_classLit = createForClass('com.google.gwt.query.client.impl', 'ConsoleBrowser/ConsoleIe8', 238, cggl.Lcom_google_gwt_query_client_impl_ConsoleBrowser$ConsoleIe9_2_classLit);
 cggqci.$clinit_DocumentStyleImpl = function $clinit_DocumentStyleImpl(){
   cggqci.$clinit_DocumentStyleImpl = emptyMethod;
   jl.$clinit_Object();
-  cggqci.cssNumberRegex = new cggqcj.JsRegexp('^(fillOpacity|fontWeight|lineHeight|opacity|orphans|widows|zIndex|zoom)$', 'i');
-  cggqci.sizeRegex = new cggqcj.JsRegexp('^(client|offset|)(width|height)$', 'i');
+  cggqci.cssNumberRegex = cggrs.compile_0('^(fillOpacity|fontWeight|lineHeight|opacity|orphans|widows|zIndex|zoom)$', 'i');
+  cggqci.sizeRegex = cggrs.compile_0('^(client|offset|)(width|height)$', 'i');
   cggqci.elemdisplay = cggqcj.create_14();
 }
 ;
 cggqci.DocumentStyleImpl = function DocumentStyleImpl(){
   cggqci.$clinit_DocumentStyleImpl();
   Object_0.call(this);
-  this.$init_146();
+  this.$init_149();
 }
 ;
-defineClass(31, 1, {31:1, 1:1}, cggqci.DocumentStyleImpl);
-_.$init_146 = function $init_146(){
+defineClass(41, 1, {41:1, 1:1}, cggqci.DocumentStyleImpl);
+_.$init_149 = function $init_149(){
 }
 ;
 _.attachTemporary = function attachTemporary(elem){
   var lastParent;
-  lastParent = cggqc.$_1(elem).parents().last_0().get_0(0);
+  lastParent = cggqc.$_0(elem).parents().last_0().get_0(0);
   if (isNull(lastParent)) {
     lastParent = elem;
   }
@@ -13122,7 +13296,7 @@ _.cur_0 = function cur_1(elem, prop, force){
     }
     elem = (cggqc.$clinit_GQuery() , cggqc.body_0);
   }
-  if (force && cggqci.sizeRegex.test_0(prop)) {
+  if (force && cggrs.$test(cggqci.sizeRegex, prop)) {
   }
    else if (jsNotEquals(cggdc.$getPropertyString(elem, prop), null) && (isNull(cggdc.$getStyle(elem)) || jsEquals(cggdc.$getProperty(cggdc.$getStyle(elem), prop), null))) {
     return cggdc.$getPropertyDouble(elem, prop);
@@ -13156,7 +13330,7 @@ _.curCSS = function curCSS(elem, name_0, force){
     if (cggqcj.isDetached(elem)) {
       toDetach = this.attachTemporary(elem);
     }
-    if (cggqci.sizeRegex.test_0(name_0)) {
+    if (cggrs.$test(cggqci.sizeRegex, name_0)) {
       ret = this.getVisibleSize(elem, name_0) + 'px';
     }
      else if (jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('opacity', name_0)) {
@@ -13290,7 +13464,7 @@ _.getWidth = function getWidth(e){
 }
 ;
 _.isVisible_0 = function isVisible_0(e){
-  return !jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('none', this.curCSS(e, 'display', true));
+  return dynamicCast(cggqcj.$get_6((cggqci.$clinit_SelectorEngine() , cggqci.filters_0), 'visible'), 16).f_9(e, 0);
 }
 ;
 _.num = function num_0(val){
@@ -13315,14 +13489,14 @@ _.setStyleProperty = function setStyleProperty(e, prop, val){
     this.removeStyleProperty(e, prop);
   }
    else {
-    if (jl.matches_Ljava_lang_String__Z__devirtual$(val, '-?[\\d\\.]+') && !cggqci.cssNumberRegex.test_0(prop)) {
+    if (jl.matches_Ljava_lang_String__Z__devirtual$(val, '-?[\\d\\.]+') && !cggrs.$test(cggqci.cssNumberRegex, prop)) {
       val += 'px';
     }
     cggdc.$setProperty_0(cggdc.$getStyle(e), prop, val);
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_DocumentStyleImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'DocumentStyleImpl', 31, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_DocumentStyleImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'DocumentStyleImpl', 41, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_DocumentStyleImplIE = function $clinit_DocumentStyleImplIE(){
   cggqci.$clinit_DocumentStyleImplIE = emptyMethod;
   cggqci.$clinit_DocumentStyleImpl();
@@ -13330,15 +13504,15 @@ cggqci.$clinit_DocumentStyleImplIE = function $clinit_DocumentStyleImplIE(){
 ;
 cggqci.DocumentStyleImplIE = function DocumentStyleImplIE(){
   cggqci.DocumentStyleImpl.call(this);
-  this.$init_147();
+  this.$init_150();
 }
 ;
-defineClass(391, 31, {31:1, 1:1});
-_.$init_147 = function $init_147(){
+defineClass(399, 41, {41:1, 1:1});
+_.$init_150 = function $init_150(){
 }
 ;
 _.fixPropertyName = function fixPropertyName_0(name_0){
-  name_0 = getClassPrototype(31).fixPropertyName.call(this, name_0);
+  name_0 = getClassPrototype(41).fixPropertyName.call(this, name_0);
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('cssFloat', name_0)) {
     return 'styleFloat';
   }
@@ -13375,7 +13549,7 @@ _.getOpacity = function getOpacity_0(e){
   if (jsNotEquals(o, null)) {
     return !jl.matches_Ljava_lang_String__Z__devirtual$(o, '.*opacity=.*')?1:valueOf_14(jl.replaceAll_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(o, '[^\\d]', '')).doubleValue() / 100;
   }
-  return getClassPrototype(31).getOpacity.call(this, e);
+  return getClassPrototype(41).getOpacity.call(this, e);
 }
 ;
 _.getWidth = function getWidth_0(e){
@@ -13400,11 +13574,11 @@ _.setStyleProperty = function setStyleProperty_0(e, prop, val){
     this.setOpacity(e, val);
   }
    else {
-    getClassPrototype(31).setStyleProperty.call(this, e, prop, val);
+    getClassPrototype(41).setStyleProperty.call(this, e, prop, val);
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_DocumentStyleImplIE_2_classLit = createForClass('com.google.gwt.query.client.impl', 'DocumentStyleImplIE', 391, cggl.Lcom_google_gwt_query_client_impl_DocumentStyleImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_DocumentStyleImplIE_2_classLit = createForClass('com.google.gwt.query.client.impl', 'DocumentStyleImplIE', 399, cggl.Lcom_google_gwt_query_client_impl_DocumentStyleImpl_2_classLit);
 cggqci.$clinit_HasSelector = function $clinit_HasSelector(){
   cggqci.$clinit_HasSelector = emptyMethod;
 }
@@ -13426,20 +13600,20 @@ cggqci.$clinit_SelectorEngine = function $clinit_SelectorEngine(){
 cggqci.SelectorEngine = function SelectorEngine(){
   cggqci.$clinit_SelectorEngine();
   Object_0.call(this);
-  this.$init_148();
-  this.impl = dynamicCast(dynamicCast(new cggqci.SelectorEngineNative, 28), 28);
+  this.$init_151();
+  this.impl = dynamicCast(dynamicCast(new cggqci.SelectorEngineNative, 31), 31);
   cggcc.log_0('GQuery - Created SelectorEngineImpl: ' + this.impl.___clazz$.getName());
-  cggqci.styleImpl_0 = dynamicCast(new cggqci.DocumentStyleImpl, 31);
+  cggqci.styleImpl_0 = dynamicCast(new cggqci.DocumentStyleImpl, 41);
   cggcc.log_0('GQuery - Created DocumentStyleImpl: ' + cggqci.styleImpl_0.___clazz$.getName());
 }
 ;
 cggqci.hasQuerySelectorAll = function hasQuerySelectorAll(){
-  return $doc.location.href.indexOf('_force_no_native') < 0 && ($doc.querySelectorAll && /native/.test(String($doc.querySelectorAll)))?true:false;
+  return $doc.location.href.indexOf('_force_no_native') < 0 && typeof $doc.querySelectorAll == 'function';
 }
 ;
 cggqci.hasXpathEvaluate = function hasXpathEvaluate(){
   cggqci.$clinit_SelectorEngine();
-  return $doc.evaluate?true:false;
+  return !!$doc.evaluate;
 }
 ;
 cggqci.querySelectorAllImpl = function querySelectorAllImpl(selector, ctx){
@@ -13459,8 +13633,9 @@ cggqci.xpathEvaluate = function xpathEvaluate(selector, ctx, r){
   return r;
 }
 ;
-defineClass(287, 1, $intern_0, cggqci.SelectorEngine);
-_.$init_148 = function $init_148(){
+defineClass(119, 1, {119:1, 1:1}, cggqci.SelectorEngine);
+_.$init_151 = function $init_151(){
+  this.filterDetached = true;
   this.root = cggdc.get_2();
   this.gQueryPseudo = cggrs.compile_0('(.*):((visible|hidden|selected|input|header)|((button|checkbox|file|hidden|image|password|radio|reset|submit|text)\\s*(,|$)))(.*)', 'i');
   this.nativePseudo = cggrs.compile_0('(.*):([\\w]+):(disabled|checked|enabled|empty|focus)\\s*([:,].*|$)', 'i');
@@ -13480,6 +13655,63 @@ _.filter_3 = function filter_2(nodes, p){
     }
   }
   return res;
+}
+;
+_.filter_4 = function filter_3(nodes, selector){
+  return this.filter_5(nodes, selector, this.filterDetached);
+}
+;
+_.filter_5 = function filter_4(nodes, selector, filterDetached){
+  var e, e$iterator, el, elmList, ghostParent, i_0, i0, l, l0, n, p, parents, res;
+  res = cggqcj.create_15();
+  if (jl.isEmpty__Z__devirtual$(selector)) {
+    return res;
+  }
+  ghostParent = null;
+  parents = new ju.HashSet;
+  elmList = new ju.HashSet;
+  for (i0 = 0 , l0 = cggdc.$getLength(nodes); i0 < l0; i0++) {
+    e = cggdc.$getItem(nodes, i0);
+    if (jsEquals(e, (cggqc.$clinit_GQuery() , cggqc.window_1)) || jsEquals(e, (cggqc.$clinit_GQuery() , cggqc.document_0)) || jsEquals(cggdc.$getNodeName(e), null) || jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('html', cggdc.$getNodeName(e))) {
+      continue;
+    }
+    elmList.add_4(e);
+    if (filterDetached) {
+      p = cggdc.$getParentElement(e);
+      if (isNull(p)) {
+        if (isNull(ghostParent)) {
+          ghostParent = cggdc.$createDivElement(cggdc.get_2());
+          parents.add_4(ghostParent);
+        }
+        p = ghostParent;
+        cggdc.$appendChild(p, e);
+      }
+       else if (!parents.contains_1(p)) {
+        parents.add_4(p);
+      }
+    }
+     else if (parents.isEmpty_0()) {
+      parents.add_4((cggqc.$clinit_GQuery() , cggqc.document_0));
+    }
+  }
+  for (e$iterator = parents.iterator(); e$iterator.hasNext();) {
+    e = dynamicCastJso(e$iterator.next_0());
+    n = this.select_0(selector, e);
+    for (i_0 = 0 , l = cggdc.$getLength(n); i_0 < l; i_0++) {
+      el = cggdc.$getItem(n, i_0);
+      if (elmList.remove_6(el)) {
+        cggqcj.$addNode(res, el);
+      }
+    }
+  }
+  if (isNotNull(ghostParent)) {
+    cggdc.$setInnerHTML(ghostParent, null);
+  }
+  return res;
+}
+;
+_.getDocumentStyleImpl = function getDocumentStyleImpl(){
+  return cggqci.styleImpl_0;
 }
 ;
 _.getName = function getName_0(){
@@ -13505,7 +13737,7 @@ _.select_0 = function select_1(selector, ctx){
       if (isNotNull(a)) {
         select = jl.isEmpty__Z__devirtual$(cggrs.$getGroup(a, 1))?'*':cggrs.$getGroup(a, 1);
         pseudo = cggrs.$getGroup(a, 2);
-        pred = dynamicCast(cggqcj.$get_6(cggqci.filters_0, jl.toLowerCase__Ljava_lang_String___devirtual$(pseudo)), 19);
+        pred = dynamicCast(cggqcj.$get_6(cggqci.filters_0, jl.toLowerCase__Ljava_lang_String___devirtual$(pseudo)), 16);
         if (isNotNull(pred)) {
           nodes = this.filter_3(this.select_0(select, ctx), pred);
         }
@@ -13528,8 +13760,9 @@ _.select_0 = function select_1(selector, ctx){
   }
 }
 ;
+_.filterDetached = false;
 cggqci.hasQuerySelector = false;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngine_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine', 287, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngine_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine', 119, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngine$1 = function $clinit_SelectorEngine$1(){
   cggqci.$clinit_SelectorEngine$1 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -13538,18 +13771,18 @@ cggqci.$clinit_SelectorEngine$1 = function $clinit_SelectorEngine$1(){
 cggqci.SelectorEngine$1 = function SelectorEngine$1(){
   cggqci.$clinit_SelectorEngine$1();
   cggqc.Predicate.call(this);
-  this.$init_149();
+  this.$init_152();
 }
 ;
-defineClass(288, 19, $intern_29, cggqci.SelectorEngine$1);
-_.$init_149 = function $init_149(){
+defineClass(290, 16, $intern_28, cggqci.SelectorEngine$1);
+_.$init_152 = function $init_152(){
 }
 ;
 _.f_9 = function f_14(e, index_0){
-  return cggdc.$getOffsetWidth(e) + cggdc.$getOffsetHeight(e) > 0 && (cggqci.$clinit_SelectorEngine() , cggqci.styleImpl_0).isVisible_0(e);
+  return cggdc.$getOffsetWidth(e) + cggdc.$getOffsetHeight(e) > 0 && !jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('none', (cggqci.$clinit_SelectorEngine() , cggqci.styleImpl_0).curCSS(e, 'display', true));
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$1_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/1', 288, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$1_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/1', 290, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggqci.$clinit_SelectorEngine$2 = function $clinit_SelectorEngine$2(){
   cggqci.$clinit_SelectorEngine$2 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -13558,18 +13791,18 @@ cggqci.$clinit_SelectorEngine$2 = function $clinit_SelectorEngine$2(){
 cggqci.SelectorEngine$2 = function SelectorEngine$2(){
   cggqci.$clinit_SelectorEngine$2();
   cggqc.Predicate.call(this);
-  this.$init_150();
+  this.$init_153();
 }
 ;
-defineClass(289, 19, $intern_29, cggqci.SelectorEngine$2);
-_.$init_150 = function $init_150(){
+defineClass(291, 16, $intern_28, cggqci.SelectorEngine$2);
+_.$init_153 = function $init_153(){
 }
 ;
 _.f_9 = function f_15(e, index_0){
-  return !dynamicCast(cggqcj.$get_6((cggqci.$clinit_SelectorEngine() , cggqci.filters_0), 'visible'), 19).f_9(e, index_0);
+  return !dynamicCast(cggqcj.$get_6((cggqci.$clinit_SelectorEngine() , cggqci.filters_0), 'visible'), 16).f_9(e, index_0);
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$2_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/2', 289, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$2_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/2', 291, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggqci.$clinit_SelectorEngine$3 = function $clinit_SelectorEngine$3(){
   cggqci.$clinit_SelectorEngine$3 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -13578,18 +13811,18 @@ cggqci.$clinit_SelectorEngine$3 = function $clinit_SelectorEngine$3(){
 cggqci.SelectorEngine$3 = function SelectorEngine$3(){
   cggqci.$clinit_SelectorEngine$3();
   cggqc.Predicate.call(this);
-  this.$init_151();
+  this.$init_154();
 }
 ;
-defineClass(290, 19, $intern_29, cggqci.SelectorEngine$3);
-_.$init_151 = function $init_151(){
+defineClass(292, 16, $intern_28, cggqci.SelectorEngine$3);
+_.$init_154 = function $init_154(){
 }
 ;
 _.f_9 = function f_16(e, index_0){
   return cggdc.$getPropertyBoolean(e, 'selected');
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$3_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/3', 290, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$3_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/3', 292, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggqci.$clinit_SelectorEngine$4 = function $clinit_SelectorEngine$4(){
   cggqci.$clinit_SelectorEngine$4 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -13598,18 +13831,18 @@ cggqci.$clinit_SelectorEngine$4 = function $clinit_SelectorEngine$4(){
 cggqci.SelectorEngine$4 = function SelectorEngine$4(){
   cggqci.$clinit_SelectorEngine$4();
   cggqc.Predicate.call(this);
-  this.$init_152();
+  this.$init_155();
 }
 ;
-defineClass(291, 19, $intern_29, cggqci.SelectorEngine$4);
-_.$init_152 = function $init_152(){
+defineClass(293, 16, $intern_28, cggqci.SelectorEngine$4);
+_.$init_155 = function $init_155(){
 }
 ;
 _.f_9 = function f_17(e, index_0){
   return jl.matches_Ljava_lang_String__Z__devirtual$(jl.toLowerCase__Ljava_lang_String___devirtual$(cggdc.$getNodeName(e)), 'input|select|textarea|button');
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$4_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/4', 291, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$4_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/4', 293, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggqci.$clinit_SelectorEngine$5 = function $clinit_SelectorEngine$5(){
   cggqci.$clinit_SelectorEngine$5 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -13618,18 +13851,18 @@ cggqci.$clinit_SelectorEngine$5 = function $clinit_SelectorEngine$5(){
 cggqci.SelectorEngine$5 = function SelectorEngine$5(){
   cggqci.$clinit_SelectorEngine$5();
   cggqc.Predicate.call(this);
-  this.$init_153();
+  this.$init_156();
 }
 ;
-defineClass(292, 19, $intern_29, cggqci.SelectorEngine$5);
-_.$init_153 = function $init_153(){
+defineClass(294, 16, $intern_28, cggqci.SelectorEngine$5);
+_.$init_156 = function $init_156(){
 }
 ;
 _.f_9 = function f_18(e, index_0){
   return jl.matches_Ljava_lang_String__Z__devirtual$(jl.toLowerCase__Ljava_lang_String___devirtual$(cggdc.$getNodeName(e)), 'h\\d');
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$5_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/5', 292, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngine$5_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngine/5', 294, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggqci.$clinit_SelectorEngineImpl = function $clinit_SelectorEngineImpl(){
   cggqci.$clinit_SelectorEngineImpl = emptyMethod;
   jl.$clinit_Object();
@@ -13638,14 +13871,14 @@ cggqci.$clinit_SelectorEngineImpl = function $clinit_SelectorEngineImpl(){
 cggqci.SelectorEngineImpl = function SelectorEngineImpl(){
   cggqci.$clinit_SelectorEngineImpl();
   Object_0.call(this);
-  this.$init_154();
+  this.$init_157();
 }
 ;
-defineClass(28, 1, $intern_30);
-_.$init_154 = function $init_154(){
+defineClass(31, 1, $intern_31);
+_.$init_157 = function $init_157(){
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineImpl', 28, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineImpl', 31, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath = function $clinit_SelectorEngineCssToXPath(){
   cggqci.$clinit_SelectorEngineCssToXPath = emptyMethod;
   cggqci.$clinit_SelectorEngineImpl();
@@ -13660,7 +13893,7 @@ cggqci.$clinit_SelectorEngineCssToXPath = function $clinit_SelectorEngineCssToXP
 cggqci.SelectorEngineCssToXPath = function SelectorEngineCssToXPath(){
   cggqci.$clinit_SelectorEngineCssToXPath();
   cggqci.SelectorEngineImpl.call(this);
-  this.$init_155();
+  this.$init_158();
   cggqci.instance_2 = this;
 }
 ;
@@ -13672,8 +13905,8 @@ cggqci.getInstance_4 = function getInstance_4(){
   return cggqci.instance_2;
 }
 ;
-defineClass(150, 28, {412:1, 28:1, 1:1}, cggqci.SelectorEngineCssToXPath);
-_.$init_155 = function $init_155(){
+defineClass(152, 31, {411:1, 31:1, 1:1}, cggqci.SelectorEngineCssToXPath);
+_.$init_158 = function $init_158(){
   this.replacer = new cggqci.SelectorEngineCssToXPath$5(this);
 }
 ;
@@ -13709,8 +13942,7 @@ _.select_0 = function select_2(sel, ctx){
         if (!cggqci.hasXpathEvaluate()) {
           throw new jl.RuntimeException_1('This Browser does not support Xpath selectors.', e);
         }
-        (jl.$clinit_System() , jl.err).println_0('ERROR: xpathEvaluate invalid xpath expression:' + xsel + ' css-selector:' + sel + '\n');
-        e.printStackTrace();
+        (cggqc.$clinit_GQuery() , cggqc.console_0).error_0('ERROR: xpathEvaluate invalid xpath expression: ' + xsel + ' css-selector: ' + sel + ' ' + e.getMessage() + '\n');
       }
       return elm;
     }
@@ -13719,7 +13951,7 @@ _.select_0 = function select_2(sel, ctx){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath', 150, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath', 152, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$1 = function $clinit_SelectorEngineCssToXPath$1(){
   cggqci.$clinit_SelectorEngineCssToXPath$1 = emptyMethod;
   jl.$clinit_Object();
@@ -13728,18 +13960,18 @@ cggqci.$clinit_SelectorEngineCssToXPath$1 = function $clinit_SelectorEngineCssTo
 cggqci.SelectorEngineCssToXPath$1 = function SelectorEngineCssToXPath$1(){
   cggqci.$clinit_SelectorEngineCssToXPath$1();
   Object_0.call(this);
-  this.$init_156();
+  this.$init_159();
 }
 ;
-defineClass(323, 1, $intern_31, cggqci.SelectorEngineCssToXPath$1);
-_.$init_156 = function $init_156(){
+defineClass(320, 1, $intern_32, cggqci.SelectorEngineCssToXPath$1);
+_.$init_159 = function $init_159(){
 }
 ;
 _.foundMatch = function foundMatch(s){
   return dynamicCastToString(s.get_2(1)) + dynamicCastToString(s.get_2(2)) + (jl.startsWith_Ljava_lang_String__Z__devirtual$(dynamicCastToString(s.get_2(3)), ' ')?'%S%':jl.startsWith_Ljava_lang_String__Z__devirtual$(dynamicCastToString(s.get_2(3)), '#')?'%H%':'%P%') + dynamicCastToString(s.get_2(4)) + dynamicCastToString(s.get_2(5));
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$1_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/1', 323, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$1_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/1', 320, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$2 = function $clinit_SelectorEngineCssToXPath$2(){
   cggqci.$clinit_SelectorEngineCssToXPath$2 = emptyMethod;
   jl.$clinit_Object();
@@ -13748,18 +13980,18 @@ cggqci.$clinit_SelectorEngineCssToXPath$2 = function $clinit_SelectorEngineCssTo
 cggqci.SelectorEngineCssToXPath$2 = function SelectorEngineCssToXPath$2(){
   cggqci.$clinit_SelectorEngineCssToXPath$2();
   Object_0.call(this);
-  this.$init_157();
+  this.$init_160();
 }
 ;
-defineClass(324, 1, $intern_31, cggqci.SelectorEngineCssToXPath$2);
-_.$init_157 = function $init_157(){
+defineClass(321, 1, $intern_32, cggqci.SelectorEngineCssToXPath$2);
+_.$init_160 = function $init_160(){
 }
 ;
 _.foundMatch = function foundMatch_0(s){
   return '[substring(@' + dynamicCastToString(s.get_2(1)) + ',string-length(@' + dynamicCastToString(s.get_2(1)) + ')-' + (jl.length__I__devirtual$_0(jl.replaceAll_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(dynamicCastToString(s.get_2(2)), "'", '')) - 1) + ')=' + dynamicCastToString(s.get_2(2)) + ']';
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$2_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/2', 324, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$2_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/2', 321, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$3 = function $clinit_SelectorEngineCssToXPath$3(){
   cggqci.$clinit_SelectorEngineCssToXPath$3 = emptyMethod;
   jl.$clinit_Object();
@@ -13768,18 +14000,18 @@ cggqci.$clinit_SelectorEngineCssToXPath$3 = function $clinit_SelectorEngineCssTo
 cggqci.SelectorEngineCssToXPath$3 = function SelectorEngineCssToXPath$3(){
   cggqci.$clinit_SelectorEngineCssToXPath$3();
   Object_0.call(this);
-  this.$init_158();
+  this.$init_161();
 }
 ;
-defineClass(325, 1, $intern_31, cggqci.SelectorEngineCssToXPath$3);
-_.$init_158 = function $init_158(){
+defineClass(322, 1, $intern_32, cggqci.SelectorEngineCssToXPath$3);
+_.$init_161 = function $init_161(){
 }
 ;
 _.foundMatch = function foundMatch_1(s){
   return dynamicCastToString(s.get_2(1)) + '[not(' + jl.replaceAll_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(cggqci.getInstance_4().css2Xpath(dynamicCastToString(s.get_2(2))), '^[^\\[]+\\[([^\\]]*)\\].*$', '$1)]');
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$3_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/3', 325, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$3_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/3', 322, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$4 = function $clinit_SelectorEngineCssToXPath$4(){
   cggqci.$clinit_SelectorEngineCssToXPath$4 = emptyMethod;
   jl.$clinit_Object();
@@ -13788,11 +14020,11 @@ cggqci.$clinit_SelectorEngineCssToXPath$4 = function $clinit_SelectorEngineCssTo
 cggqci.SelectorEngineCssToXPath$4 = function SelectorEngineCssToXPath$4(){
   cggqci.$clinit_SelectorEngineCssToXPath$4();
   Object_0.call(this);
-  this.$init_159();
+  this.$init_162();
 }
 ;
-defineClass(326, 1, $intern_31, cggqci.SelectorEngineCssToXPath$4);
-_.$init_159 = function $init_159(){
+defineClass(323, 1, $intern_32, cggqci.SelectorEngineCssToXPath$4);
+_.$init_162 = function $init_162(){
 }
 ;
 _.foundMatch = function foundMatch_2(s){
@@ -13821,7 +14053,7 @@ _.foundMatch = function foundMatch_2(s){
   return prefix + '[(position()-' + t1 + ') mod ' + t0 + '=0 and position()>=' + t1 + ']' + (noPrefix?'':'/self::' + s1);
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$4_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/4', 326, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$4_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/4', 323, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$5 = function $clinit_SelectorEngineCssToXPath$5(){
   cggqci.$clinit_SelectorEngineCssToXPath$5 = emptyMethod;
   jl.$clinit_Object();
@@ -13831,26 +14063,26 @@ cggqci.SelectorEngineCssToXPath$5 = function SelectorEngineCssToXPath$5(this$0){
   cggqci.$clinit_SelectorEngineCssToXPath$5();
   this.this$01 = this$0;
   Object_0.call(this);
-  this.$init_160();
+  this.$init_163();
 }
 ;
-defineClass(327, 1, $intern_0, cggqci.SelectorEngineCssToXPath$5);
-_.$init_160 = function $init_160(){
+defineClass(324, 1, $intern_0, cggqci.SelectorEngineCssToXPath$5);
+_.$init_163 = function $init_163(){
 }
 ;
 _.replaceAll = function replaceAll(s, r, o){
-  var a, args, callback, f_0, i_0, p;
+  var a, args, callback, f, i_0, p;
   p = cggrs.compile(r);
-  if (instanceOf(o, 68)) {
-    callback = dynamicCast(o, 68);
+  if (instanceOf(o, 71)) {
+    callback = dynamicCast(o, 71);
     while (cggrs.$test(p, s)) {
       a = cggrs.$exec(p, s);
       args = new ju.ArrayList;
       for (i_0 = 0; isNotNull(a) && i_0 < cggrs.$getGroupCount(a); i_0++) {
-        args.add_3(cggrs.$getGroup(a, i_0));
+        args.add_4(cggrs.$getGroup(a, i_0));
       }
-      f_0 = callback.foundMatch(args);
-      s = jl.replaceFirst_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(s, r, f_0);
+      f = callback.foundMatch(args);
+      s = jl.replaceFirst_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(s, r, f);
     }
     return s;
   }
@@ -13859,7 +14091,7 @@ _.replaceAll = function replaceAll(s, r, o){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$5_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/5', 327, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$5_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/5', 324, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$6 = function $clinit_SelectorEngineCssToXPath$6(){
   cggqci.$clinit_SelectorEngineCssToXPath$6 = emptyMethod;
   jl.$clinit_Object();
@@ -13868,26 +14100,26 @@ cggqci.$clinit_SelectorEngineCssToXPath$6 = function $clinit_SelectorEngineCssTo
 cggqci.SelectorEngineCssToXPath$6 = function SelectorEngineCssToXPath$6(){
   cggqci.$clinit_SelectorEngineCssToXPath$6();
   Object_0.call(this);
-  this.$init_161();
+  this.$init_164();
 }
 ;
-defineClass(328, 1, $intern_0, cggqci.SelectorEngineCssToXPath$6);
-_.$init_161 = function $init_161(){
+defineClass(325, 1, $intern_0, cggqci.SelectorEngineCssToXPath$6);
+_.$init_164 = function $init_164(){
 }
 ;
 _.replaceAll = function replaceAll_0(s, r, o){
-  var a, args, callback, f_0, i_0, p;
+  var a, args, callback, f, i_0, p;
   p = cggrs.compile_0(r, 'g');
-  if (instanceOf(o, 68)) {
-    callback = dynamicCast(o, 68);
+  if (instanceOf(o, 71)) {
+    callback = dynamicCast(o, 71);
     a = null;
     while (isNotNull(a = cggrs.$exec(p, s))) {
       args = new ju.ArrayList;
       for (i_0 = 0; i_0 < cggrs.$getGroupCount(a); i_0++) {
-        args.add_3(cggrs.$getGroup(a, i_0));
+        args.add_4(cggrs.$getGroup(a, i_0));
       }
-      f_0 = callback.foundMatch(args);
-      s = jl.replace_Ljava_lang_CharSequence_Ljava_lang_CharSequence__Ljava_lang_String___devirtual$(s, cggrs.$getGroup(a, 0), f_0);
+      f = callback.foundMatch(args);
+      s = jl.replace_Ljava_lang_CharSequence_Ljava_lang_CharSequence__Ljava_lang_String___devirtual$(s, cggrs.$getGroup(a, 0), f);
       p = cggrs.compile_0(r, 'g');
     }
     return s;
@@ -13897,7 +14129,7 @@ _.replaceAll = function replaceAll_0(s, r, o){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$6_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/6', 328, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineCssToXPath$6_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineCssToXPath/6', 325, cggl.Ljava_lang_Object_2_classLit);
 cggqci.$clinit_SelectorEngineCssToXPath$ReplaceCallback = function $clinit_SelectorEngineCssToXPath$ReplaceCallback(){
   cggqci.$clinit_SelectorEngineCssToXPath$ReplaceCallback = emptyMethod;
 }
@@ -13914,15 +14146,15 @@ cggqci.$clinit_SelectorEngineNative = function $clinit_SelectorEngineNative(){
 cggqci.SelectorEngineNative = function SelectorEngineNative(){
   cggqci.$clinit_SelectorEngineNative();
   cggqci.SelectorEngineImpl.call(this);
-  this.$init_162();
+  this.$init_165();
   if (isNull(cggqci.impl_2)) {
-    cggqci.impl_2 = dynamicCast(new cggqci.SelectorEngineCssToXPath, 412);
+    cggqci.impl_2 = dynamicCast(new cggqci.SelectorEngineCssToXPath, 411);
     cggcc.log_0('GQuery - Created HasSelector: ' + cggqci.impl_2.___clazz$.getName());
   }
 }
 ;
-defineClass(315, 28, $intern_30, cggqci.SelectorEngineNative);
-_.$init_162 = function $init_162(){
+defineClass(310, 31, $intern_31, cggqci.SelectorEngineNative);
+_.$init_165 = function $init_165(){
 }
 ;
 _.select_0 = function select_3(selector, ctx){
@@ -13949,7 +14181,7 @@ _.select_0 = function select_3(selector, ctx){
       $e0 = wrap($e0);
       if (instanceOf($e0, 9)) {
         e = $e0;
-        (jl.$clinit_System() , jl.err).println_0('ERROR SelectorEngineNative ' + e.getMessage() + ' ' + selector + ', falling back to ' + jl.replaceAll_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(cggqci.impl_2.___clazz$.getName(), '.*\\.', ''));
+        (cggqc.$clinit_GQuery() , cggqc.console_0).info_0('ERROR SelectorEngineNative ' + e.getMessage() + ' ' + selector + ', falling back to ' + jl.replaceAll_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(cggqci.impl_2.___clazz$.getName(), '.*\\.', ''));
         return cggqci.impl_2.select_0(selector, ctx);
       }
        else 
@@ -13959,7 +14191,7 @@ _.select_0 = function select_3(selector, ctx){
 }
 ;
 cggqci.NATIVE_EXCEPTIONS_REGEXP = '(^[\\./]/.*)|(.*(:contains|:first([^-]|$)|:last([^-]|$)|:even|:odd)).*';
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineNative_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineNative', 315, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineNative_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineNative', 310, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
 cggqci.$clinit_SelectorEngineSizzleIE = function $clinit_SelectorEngineSizzleIE(){
   cggqci.$clinit_SelectorEngineSizzleIE = emptyMethod;
   cggqci.$clinit_SelectorEngineImpl();
@@ -13968,7 +14200,7 @@ cggqci.$clinit_SelectorEngineSizzleIE = function $clinit_SelectorEngineSizzleIE(
 cggqci.SelectorEngineSizzleIE = function SelectorEngineSizzleIE(){
   cggqci.$clinit_SelectorEngineSizzleIE();
   cggqci.SelectorEngineImpl.call(this);
-  this.$init_163();
+  this.$init_166();
   if (!cggqci.initialized) {
     cggqci.initialize();
   }
@@ -14692,8 +14924,8 @@ cggqci.select_5 = function select_5(selector, context, results, seed){
   return $wnd.IES(selector, context, results, seed);
 }
 ;
-defineClass(119, 28, $intern_30);
-_.$init_163 = function $init_163(){
+defineClass(121, 31, $intern_31);
+_.$init_166 = function $init_166(){
 }
 ;
 _.select_0 = function select_4(selector, context){
@@ -14703,7 +14935,7 @@ _.select_0 = function select_4(selector, context){
 }
 ;
 cggqci.initialized = false;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineSizzleIE_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineSizzleIE', 119, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineSizzleIE_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineSizzleIE', 121, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
 cggqci.$clinit_SelectorEngineNativeIE8 = function $clinit_SelectorEngineNativeIE8(){
   cggqci.$clinit_SelectorEngineNativeIE8 = emptyMethod;
   cggqci.$clinit_SelectorEngineSizzleIE();
@@ -14711,17 +14943,17 @@ cggqci.$clinit_SelectorEngineNativeIE8 = function $clinit_SelectorEngineNativeIE
 ;
 cggqci.SelectorEngineNativeIE8 = function SelectorEngineNativeIE8(){
   cggqci.SelectorEngineSizzleIE.call(this);
-  this.$init_164();
+  this.$init_167();
 }
 ;
-defineClass(401, 119, $intern_30);
-_.$init_164 = function $init_164(){
+defineClass(398, 121, $intern_31);
+_.$init_167 = function $init_167(){
 }
 ;
 _.select_0 = function select_6(selector, ctx){
   var e;
   if (!(cggqci.$clinit_SelectorEngine() , cggqci.hasQuerySelector) || jl.matches_Ljava_lang_String__Z__devirtual$(selector, cggqci.NATIVE_EXCEPTIONS_REGEXP_0)) {
-    return getClassPrototype(119).select_0.call(this, selector, ctx);
+    return getClassPrototype(121).select_0.call(this, selector, ctx);
   }
    else {
     try {
@@ -14731,7 +14963,7 @@ _.select_0 = function select_6(selector, ctx){
       $e0 = wrap($e0);
       if (instanceOf($e0, 9)) {
         e = $e0;
-        return getClassPrototype(119).select_0.call(this, selector, ctx);
+        return getClassPrototype(121).select_0.call(this, selector, ctx);
       }
        else 
         throw unwrap($e0);
@@ -14740,859 +14972,7 @@ _.select_0 = function select_6(selector, ctx){
 }
 ;
 cggqci.NATIVE_EXCEPTIONS_REGEXP_0 = '.*(:contains|!=|:not|:nth-|:only-|:first|:last|:even|:odd).*';
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineNativeIE8_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineNativeIE8', 401, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineSizzleIE_2_classLit);
-cggqci.$clinit_SelectorEngineSizzle = function $clinit_SelectorEngineSizzle(){
-  cggqci.$clinit_SelectorEngineSizzle = emptyMethod;
-  cggqci.$clinit_SelectorEngineImpl();
-}
-;
-cggqci.SelectorEngineSizzle = function SelectorEngineSizzle(){
-  cggqci.SelectorEngineImpl.call(this);
-  this.$init_165();
-  if (!cggqci.initialized_0) {
-    cggqci.initialize_0();
-  }
-}
-;
-cggqci.initialize_0 = function initialize_0(){
-  (function(){
-    var chunker = /((?:\((?:\([^()]+\)|[^()]+)+\)|\[(?:\[[^\[\]]*\]|['"][^'"]*['"]|[^\[\]'"]+)+\]|\\.|[^ >+~,(\[\\]+)+|[>+~])(\s*,\s*)?((?:.|\r|\n)*)/g, done = 0, toString_0 = Object.prototype.toString, hasDuplicate = false, baseHasDuplicate = true;
-    [0, 0].sort(function(){
-      baseHasDuplicate = false;
-      return 0;
-    }
-    );
-    var GQS = function(selector, context, results, seed){
-      results = results || [];
-      context = context || document;
-      var origContext = context;
-      if (context.nodeType !== 1 && context.nodeType !== 9) {
-        return [];
-      }
-      if (!selector || typeof selector !== 'string') {
-        return results;
-      }
-      var parts = [], m, set_0, checkSet, extra, prune = true, contextXML = GQS.isXML(context), soFar = selector, ret, cur, pop_0, i_0;
-      do {
-        chunker.exec('');
-        m = chunker.exec(soFar);
-        if (m) {
-          soFar = m[3];
-          parts.push(m[1]);
-          if (m[2]) {
-            extra = m[3];
-            break;
-          }
-        }
-      }
-       while (m);
-      if (parts.length > 1 && origPOS.exec(selector)) {
-        if (parts.length === 2 && Expr.relative[parts[0]]) {
-          set_0 = posProcess(parts[0] + parts[1], context);
-        }
-         else {
-          set_0 = Expr.relative[parts[0]]?[context]:GQS(parts.shift(), context);
-          while (parts.length) {
-            selector = parts.shift();
-            if (Expr.relative[selector]) {
-              selector += parts.shift();
-            }
-            set_0 = posProcess(selector, set_0);
-          }
-        }
-      }
-       else {
-        if (!seed && (parts.length > 1 && (context.nodeType === 9 && (!contextXML && (Expr.match.ID.test(parts[0]) && !Expr.match.ID.test(parts[parts.length - 1])))))) {
-          ret = GQS.find(parts.shift(), context, contextXML);
-          context = ret.expr?GQS.filter(ret.expr, ret.set)[0]:ret.set[0];
-        }
-        if (context) {
-          ret = seed?{expr:parts.pop(), set:makeArray(seed)}:GQS.find(parts.pop(), parts.length === 1 && ((parts[0] === '~' || parts[0] === '+') && context.parentNode)?context.parentNode:context, contextXML);
-          set_0 = ret.expr?GQS.filter(ret.expr, ret.set):ret.set;
-          if (parts.length > 0) {
-            checkSet = makeArray(set_0);
-          }
-           else {
-            prune = false;
-          }
-          while (parts.length) {
-            cur = parts.pop();
-            pop_0 = cur;
-            if (!Expr.relative[cur]) {
-              cur = '';
-            }
-             else {
-              pop_0 = parts.pop();
-            }
-            if (pop_0 == null) {
-              pop_0 = context;
-            }
-            Expr.relative[cur](checkSet, pop_0, contextXML);
-          }
-        }
-         else {
-          checkSet = parts = [];
-        }
-      }
-      if (!checkSet) {
-        checkSet = set_0;
-      }
-      if (!checkSet) {
-        GQS.error(cur || selector);
-      }
-      if (toString_0.call(checkSet) === '[object Array]') {
-        if (!prune) {
-          results.push.apply(results, checkSet);
-        }
-         else if (context && context.nodeType === 1) {
-          for (i_0 = 0; checkSet[i_0] != null; i_0++) {
-            if (checkSet[i_0] && (checkSet[i_0] === true || checkSet[i_0].nodeType === 1 && GQS.contains(context, checkSet[i_0]))) {
-              results.push(set_0[i_0]);
-            }
-          }
-        }
-         else {
-          for (i_0 = 0; checkSet[i_0] != null; i_0++) {
-            if (checkSet[i_0] && checkSet[i_0].nodeType === 1) {
-              results.push(set_0[i_0]);
-            }
-          }
-        }
-      }
-       else {
-        makeArray(checkSet, results);
-      }
-      if (extra) {
-        GQS(extra, origContext, results, seed);
-        GQS.uniqueSort(results);
-      }
-      return results;
-    }
-    ;
-    GQS.uniqueSort = function(results){
-      if (sortOrder) {
-        hasDuplicate = baseHasDuplicate;
-        results.sort(sortOrder);
-        if (hasDuplicate) {
-          for (var i_0 = 1; i_0 < results.length; i_0++) {
-            if (results[i_0] === results[i_0 - 1]) {
-              results.splice(i_0--, 1);
-            }
-          }
-        }
-      }
-      return results;
-    }
-    ;
-    GQS.matches = function(expr, set_0){
-      return GQS(expr, null, null, set_0);
-    }
-    ;
-    GQS.find = function(expr, context, isXML){
-      var set_0;
-      if (!expr) {
-        return [];
-      }
-      for (var i_0 = 0, l = Expr.order.length; i_0 < l; i_0++) {
-        var type_0 = Expr.order[i_0], match_0;
-        if (match_0 = Expr.leftMatch[type_0].exec(expr)) {
-          var left = match_0[1];
-          match_0.splice(1, 1);
-          if (left.substr(left.length - 1) !== '\\') {
-            match_0[1] = (match_0[1] || '').replace(/\\/g, '');
-            set_0 = Expr.find[type_0](match_0, context, isXML);
-            if (set_0 != null) {
-              expr = expr.replace(Expr.match[type_0], '');
-              break;
-            }
-          }
-        }
-      }
-      if (!set_0) {
-        set_0 = context.getElementsByTagName('*');
-      }
-      return {set:set_0, expr:expr};
-    }
-    ;
-    GQS.filter = function(expr, set_0, inplace, not){
-      var old = expr, result = [], curLoop = set_0, match_0, anyFound, isXMLFilter = set_0 && (set_0[0] && GQS.isXML(set_0[0]));
-      while (expr && set_0.length) {
-        for (var type_0 in Expr.filter) {
-          if ((match_0 = Expr.leftMatch[type_0].exec(expr)) != null && match_0[2]) {
-            var filter = Expr.filter[type_0], found, item_0, left = match_0[1];
-            anyFound = false;
-            match_0.splice(1, 1);
-            if (left.substr(left.length - 1) === '\\') {
-              continue;
-            }
-            if (curLoop === result) {
-              result = [];
-            }
-            if (Expr.preFilter[type_0]) {
-              match_0 = Expr.preFilter[type_0](match_0, curLoop, inplace, result, not, isXMLFilter);
-              if (!match_0) {
-                anyFound = found = true;
-              }
-               else if (match_0 === true) {
-                continue;
-              }
-            }
-            if (match_0) {
-              for (var i_0 = 0; (item_0 = curLoop[i_0]) != null; i_0++) {
-                if (item_0) {
-                  found = filter(item_0, match_0, i_0, curLoop);
-                  var pass = not ^ !!found;
-                  if (inplace && found != null) {
-                    if (pass) {
-                      anyFound = true;
-                    }
-                     else {
-                      curLoop[i_0] = false;
-                    }
-                  }
-                   else if (pass) {
-                    result.push(item_0);
-                    anyFound = true;
-                  }
-                }
-              }
-            }
-            if (found !== undefined) {
-              if (!inplace) {
-                curLoop = result;
-              }
-              expr = expr.replace(Expr.match[type_0], '');
-              if (!anyFound) {
-                return [];
-              }
-              break;
-            }
-          }
-        }
-        if (expr === old) {
-          if (anyFound == null) {
-            GQS.error(expr);
-          }
-           else {
-            break;
-          }
-        }
-        old = expr;
-      }
-      return curLoop;
-    }
-    ;
-    GQS.error = function(msg){
-      throw 'Syntax error, unrecognized expression: ' + msg;
-    }
-    ;
-    var Expr = GQS.selectors = {order:['ID', 'NAME', 'TAG'], match:{ID:/#((?:[\w\u00c0-\uFFFF\-]|\\.)+)/, CLASS:/\.((?:[\w\u00c0-\uFFFF\-]|\\.)+)/, NAME:/\[name=['"]*((?:[\w\u00c0-\uFFFF\-]|\\.)+)['"]*\]/, ATTR:/\[\s*((?:[\w\u00c0-\uFFFF\-]|\\.)+)\s*(?:(\S?=)\s*(['"]*)(.*?)\3|)\s*\]/, TAG:/^((?:[\w\u00c0-\uFFFF\*\-]|\\.)+)/, CHILD:/:(only|nth|last|first)-child(?:\((even|odd|[\dn+\-]*)\))?/, POS:/:(nth|eq|gt|lt|first|last|even|odd)(?:\((\d*)\))?(?=[^\-]|$)/, PSEUDO:/:((?:[\w\u00c0-\uFFFF\-]|\\.)+)(?:\((['"]?)((?:\([^\)]+\)|[^\(\)]*)+)\2\))?/}, leftMatch:{}, attrMap:{'class':'className', 'for':'htmlFor'}, attrHandle:{href:function(elem){
-      return elem.getAttribute('href');
-    }
-    }, relative:{'+':function(checkSet, part){
-      var isPartStr = typeof part === 'string', isTag = isPartStr && !/\W/.test(part), isPartStrNotTag = isPartStr && !isTag;
-      if (isTag) {
-        part = part.toLowerCase();
-      }
-      for (var i_0 = 0, l = checkSet.length, elem; i_0 < l; i_0++) {
-        if (elem = checkSet[i_0]) {
-          while ((elem = elem.previousSibling) && elem.nodeType !== 1) {
-          }
-          checkSet[i_0] = isPartStrNotTag || elem && elem.nodeName.toLowerCase() === part?elem || false:elem === part;
-        }
-      }
-      if (isPartStrNotTag) {
-        GQS.filter(part, checkSet, true);
-      }
-    }
-    , '>':function(checkSet, part){
-      var isPartStr = typeof part === 'string', elem, i_0 = 0, l = checkSet.length;
-      if (isPartStr && !/\W/.test(part)) {
-        part = part.toLowerCase();
-        for (; i_0 < l; i_0++) {
-          elem = checkSet[i_0];
-          if (elem) {
-            var parent_0 = elem.parentNode;
-            checkSet[i_0] = parent_0.nodeName.toLowerCase() === part?parent_0:false;
-          }
-        }
-      }
-       else {
-        for (; i_0 < l; i_0++) {
-          elem = checkSet[i_0];
-          if (elem) {
-            checkSet[i_0] = isPartStr?elem.parentNode:elem.parentNode === part;
-          }
-        }
-        if (isPartStr) {
-          GQS.filter(part, checkSet, true);
-        }
-      }
-    }
-    , '-':function(checkSet, part, isXML){
-      var doneName = done++, checkFn = dirCheck, nodeCheck;
-      if (typeof part === 'string' && !/\W/.test(part)) {
-        part = part.toLowerCase();
-        nodeCheck = part;
-        checkFn = dirNodeCheck;
-      }
-      checkFn('parentNode', part, doneName, checkSet, nodeCheck, isXML);
-    }
-    , '~':function(checkSet, part, isXML){
-      var doneName = done++, checkFn = dirCheck, nodeCheck;
-      if (typeof part === 'string' && !/\W/.test(part)) {
-        part = part.toLowerCase();
-        nodeCheck = part;
-        checkFn = dirNodeCheck;
-      }
-      checkFn('previousSibling', part, doneName, checkSet, nodeCheck, isXML);
-    }
-    }, find:{ID:function(match_0, context, isXML){
-      if (typeof context.getElementById !== 'undefined' && !isXML) {
-        var m = context.getElementById(match_0[1]);
-        return m?[m]:[];
-      }
-    }
-    , NAME:function(match_0, context){
-      if (typeof context.getElementsByName !== 'undefined') {
-        var ret = [], results = context.getElementsByName(match_0[1]);
-        for (var i_0 = 0, l = results.length; i_0 < l; i_0++) {
-          if (results[i_0].getAttribute('name') === match_0[1]) {
-            ret.push(results[i_0]);
-          }
-        }
-        return ret.length === 0?null:ret;
-      }
-    }
-    , TAG:function(match_0, context){
-      return context.getElementsByTagName(match_0[1]);
-    }
-    }, preFilter:{CLASS:function(match_0, curLoop, inplace, result, not, isXML){
-      match_0 = ' ' + match_0[1].replace(/\\/g, '') + ' ';
-      if (isXML) {
-        return match_0;
-      }
-      for (var i_0 = 0, elem; (elem = curLoop[i_0]) != null; i_0++) {
-        if (elem) {
-          if (not ^ (elem.className && (' ' + elem.className + ' ').replace(/[\t\n]/g, ' ').indexOf(match_0) >= 0)) {
-            if (!inplace) {
-              result.push(elem);
-            }
-          }
-           else if (inplace) {
-            curLoop[i_0] = false;
-          }
-        }
-      }
-      return false;
-    }
-    , ID:function(match_0){
-      return match_0[1].replace(/\\/g, '');
-    }
-    , TAG:function(match_0, curLoop){
-      return match_0[1].toLowerCase();
-    }
-    , CHILD:function(match_0){
-      if (match_0[1] === 'nth') {
-        var test_0 = /(-?)(\d*)n((?:\+|-)?\d*)/.exec(match_0[2] === 'even' && '2n' || (match_0[2] === 'odd' && '2n+1' || (!/\D/.test(match_0[2]) && '0n+' + match_0[2] || match_0[2])));
-        match_0[2] = test_0[1] + (test_0[2] || 1) - 0;
-        match_0[3] = test_0[3] - 0;
-      }
-      match_0[0] = done++;
-      return match_0;
-    }
-    , ATTR:function(match_0, curLoop, inplace, result, not, isXML){
-      var name_0 = match_0[1].replace(/\\/g, '');
-      if (!isXML && Expr.attrMap[name_0]) {
-        match_0[1] = Expr.attrMap[name_0];
-      }
-      if (match_0[2] === '~=') {
-        match_0[4] = ' ' + match_0[4] + ' ';
-      }
-      return match_0;
-    }
-    , PSEUDO:function(match_0, curLoop, inplace, result, not){
-      if (match_0[1] === 'not') {
-        if ((chunker.exec(match_0[3]) || '').length > 1 || /^\w/.test(match_0[3])) {
-          match_0[3] = GQS(match_0[3], null, null, curLoop);
-        }
-         else {
-          var ret = GQS.filter(match_0[3], curLoop, inplace, true ^ not);
-          if (!inplace) {
-            result.push.apply(result, ret);
-          }
-          return false;
-        }
-      }
-       else if (Expr.match.POS.test(match_0[0]) || Expr.match.CHILD.test(match_0[0])) {
-        return true;
-      }
-      return match_0;
-    }
-    , POS:function(match_0){
-      match_0.unshift(true);
-      return match_0;
-    }
-    }, filters:{enabled:function(elem){
-      return elem.disabled === false && elem.type !== 'hidden';
-    }
-    , disabled:function(elem){
-      return elem.disabled === true;
-    }
-    , checked:function(elem){
-      return elem.checked === true;
-    }
-    , selected:function(elem){
-      elem.parentNode.selectedIndex;
-      return elem.selected === true;
-    }
-    , parent:function(elem){
-      return !!elem.firstChild;
-    }
-    , empty:function(elem){
-      return !elem.firstChild;
-    }
-    , has:function(elem, i_0, match_0){
-      return !!GQS(match_0[3], elem).length;
-    }
-    , header:function(elem){
-      return /h\d/i.test(elem.nodeName);
-    }
-    , text:function(elem){
-      return 'text' === elem.type;
-    }
-    , radio:function(elem){
-      return 'radio' === elem.type;
-    }
-    , checkbox:function(elem){
-      return 'checkbox' === elem.type;
-    }
-    , file:function(elem){
-      return 'file' === elem.type;
-    }
-    , password:function(elem){
-      return 'password' === elem.type;
-    }
-    , submit:function(elem){
-      return 'submit' === elem.type;
-    }
-    , image:function(elem){
-      return 'image' === elem.type;
-    }
-    , reset:function(elem){
-      return 'reset' === elem.type;
-    }
-    , button:function(elem){
-      return 'button' === elem.type || elem.nodeName.toLowerCase() === 'button';
-    }
-    , input:function(elem){
-      return /input|select|textarea|button/i.test(elem.nodeName);
-    }
-    }, setFilters:{first:function(elem, i_0){
-      return i_0 === 0;
-    }
-    , last:function(elem, i_0, match_0, array){
-      return i_0 === array.length - 1;
-    }
-    , even:function(elem, i_0){
-      return i_0 % 2 === 0;
-    }
-    , odd:function(elem, i_0){
-      return i_0 % 2 === 1;
-    }
-    , lt:function(elem, i_0, match_0){
-      return i_0 < match_0[3] - 0;
-    }
-    , gt:function(elem, i_0, match_0){
-      return i_0 > match_0[3] - 0;
-    }
-    , nth:function(elem, i_0, match_0){
-      return match_0[3] - 0 === i_0;
-    }
-    , eq:function(elem, i_0, match_0){
-      return match_0[3] - 0 === i_0;
-    }
-    }, filter:{PSEUDO:function(elem, match_0, i_0, array){
-      var name_0 = match_0[1], filter = Expr.filters[name_0];
-      if (filter) {
-        return filter(elem, i_0, match_0, array);
-      }
-       else if (name_0 === 'contains') {
-        return (elem.textContent || (elem.innerText || (GQS.getText([elem]) || ''))).indexOf(match_0[3]) >= 0;
-      }
-       else if (name_0 === 'not') {
-        var not = match_0[3];
-        for (var j = 0, l = not.length; j < l; j++) {
-          if (not[j] === elem) {
-            return false;
-          }
-        }
-        return true;
-      }
-       else {
-        GQS.error('Syntax error, unrecognized expression: ' + name_0);
-      }
-    }
-    , CHILD:function(elem, match_0){
-      var type_0 = match_0[1], node = elem;
-      switch (type_0) {
-        case 'only':
-        case 'first':
-          while (node = node.previousSibling) {
-            if (node.nodeType === 1) {
-              return false;
-            }
-          }
-
-          if (type_0 === 'first') {
-            return true;
-          }
-
-          node = elem;
-        case 'last':
-          while (node = node.nextSibling) {
-            if (node.nodeType === 1) {
-              return false;
-            }
-          }
-
-          return true;
-        case 'nth':
-          var first = match_0[2], last = match_0[3];
-          if (first === 1 && last === 0) {
-            return true;
-          }
-
-          var doneName = match_0[0], parent_0 = elem.parentNode;
-          if (parent_0 && (parent_0.sizcache !== doneName || !elem.nodeIndex)) {
-            var count = 0;
-            for (node = parent_0.firstChild; node; node = node.nextSibling) {
-              if (node.nodeType === 1) {
-                node.nodeIndex = ++count;
-              }
-            }
-            parent_0.sizcache = doneName;
-          }
-
-          var diff = elem.nodeIndex - last;
-          if (first === 0) {
-            return diff === 0;
-          }
-           else {
-            return diff % first === 0 && diff / first >= 0;
-          }
-
-      }
-    }
-    , ID:function(elem, match_0){
-      return elem.nodeType === 1 && elem.getAttribute('id') === match_0;
-    }
-    , TAG:function(elem, match_0){
-      return match_0 === '*' && elem.nodeType === 1 || elem.nodeName.toLowerCase() === match_0;
-    }
-    , CLASS:function(elem, match_0){
-      return (' ' + (elem.className || elem.getAttribute('class')) + ' ').indexOf(match_0) > -1;
-    }
-    , ATTR:function(elem, match_0){
-      var name_0 = match_0[1], result = Expr.attrHandle[name_0]?Expr.attrHandle[name_0](elem):elem[name_0] != null?elem[name_0]:elem.getAttribute(name_0), value_0 = result + '', type_0 = match_0[2], check = match_0[4];
-      return result == null?type_0 === '!=':type_0 === '='?value_0 === check:type_0 === '*='?value_0.indexOf(check) >= 0:type_0 === '~='?(' ' + value_0 + ' ').indexOf(check) >= 0:!check?value_0 && result !== false:type_0 === '!='?value_0 !== check:type_0 === '^='?value_0.indexOf(check) === 0:type_0 === '$='?value_0.substr(value_0.length - check.length) === check:type_0 === '|='?value_0 === check || value_0.substr(0, check.length + 1) === check + '-':false;
-    }
-    , POS:function(elem, match_0, i_0, array){
-      var name_0 = match_0[2], filter = Expr.setFilters[name_0];
-      if (filter) {
-        return filter(elem, i_0, match_0, array);
-      }
-    }
-    }};
-    var origPOS = Expr.match.POS, fescape = function(all, num){
-      return '\\' + (num - 0 + 1);
-    }
-    ;
-    for (var type_1 in Expr.match) {
-      Expr.match[type_1] = new RegExp(Expr.match[type_1].source + /(?![^\[]*\])(?![^\(]*\))/.source);
-      Expr.leftMatch[type_1] = new RegExp(/(^(?:.|\r|\n)*?)/.source + Expr.match[type_1].source.replace(/\\(\d+)/g, fescape));
-    }
-    var makeArray = function(array, results){
-      array = Array.prototype.slice.call(array, 0);
-      if (results) {
-        results.push.apply(results, array);
-        return results;
-      }
-      return array;
-    }
-    ;
-    try {
-      Array.prototype.slice.call(document.documentElement.childNodes, 0)[0].nodeType;
-    }
-     catch (e) {
-      makeArray = function(array, results){
-        var ret = results || [], i_0 = 0;
-        if (toString_0.call(array) === '[object Array]') {
-          Array.prototype.push.apply(ret, array);
-        }
-         else {
-          if (typeof array.length === 'number') {
-            for (var l = array.length; i_0 < l; i_0++) {
-              ret.push(array[i_0]);
-            }
-          }
-           else {
-            for (; array[i_0]; i_0++) {
-              ret.push(array[i_0]);
-            }
-          }
-        }
-        return ret;
-      }
-      ;
-    }
-    var sortOrder;
-    if (document.documentElement.compareDocumentPosition) {
-      sortOrder = function(a, b){
-        if (!a.compareDocumentPosition || !b.compareDocumentPosition) {
-          if (a == b) {
-            hasDuplicate = true;
-          }
-          return a.compareDocumentPosition?-1:1;
-        }
-        var ret = a.compareDocumentPosition(b) & 4?-1:a === b?0:1;
-        if (ret === 0) {
-          hasDuplicate = true;
-        }
-        return ret;
-      }
-      ;
-    }
-     else if ('sourceIndex' in document.documentElement) {
-      sortOrder = function(a, b){
-        if (!a.sourceIndex || !b.sourceIndex) {
-          if (a == b) {
-            hasDuplicate = true;
-          }
-          return a.sourceIndex?-1:1;
-        }
-        var ret = a.sourceIndex - b.sourceIndex;
-        if (ret === 0) {
-          hasDuplicate = true;
-        }
-        return ret;
-      }
-      ;
-    }
-     else if (document.createRange) {
-      sortOrder = function(a, b){
-        if (!a.ownerDocument || !b.ownerDocument) {
-          if (a == b) {
-            hasDuplicate = true;
-          }
-          return a.ownerDocument?-1:1;
-        }
-        var aRange = a.ownerDocument.createRange(), bRange = b.ownerDocument.createRange();
-        aRange.setStart(a, 0);
-        aRange.setEnd(a, 0);
-        bRange.setStart(b, 0);
-        bRange.setEnd(b, 0);
-        var ret = aRange.compareBoundaryPoints(Range.START_TO_END, bRange);
-        if (ret === 0) {
-          hasDuplicate = true;
-        }
-        return ret;
-      }
-      ;
-    }
-    GQS.getText = function(elems){
-      var ret = '', elem;
-      for (var i_0 = 0; elems[i_0]; i_0++) {
-        elem = elems[i_0];
-        if (elem.nodeType === 3 || elem.nodeType === 4) {
-          ret += elem.nodeValue;
-        }
-         else if (elem.nodeType !== 8) {
-          ret += GQS.getText(elem.childNodes);
-        }
-      }
-      return ret;
-    }
-    ;
-    (function(){
-      var form_0 = document.createElement('div'), id_0 = 'script' + (new Date).getTime();
-      form_0.innerHTML = "<a name='" + id_0 + "'/>";
-      var root = document.documentElement;
-      root.insertBefore(form_0, root.firstChild);
-      if (document.getElementById(id_0)) {
-        Expr.find.ID = function(match_0, context, isXML){
-          if (typeof context.getElementById !== 'undefined' && !isXML) {
-            var m = context.getElementById(match_0[1]);
-            return m?m.id === match_0[1] || typeof m.getAttributeNode !== 'undefined' && m.getAttributeNode('id').nodeValue === match_0[1]?[m]:undefined:[];
-          }
-        }
-        ;
-        Expr.filter.ID = function(elem, match_0){
-          var node = typeof elem.getAttributeNode !== 'undefined' && elem.getAttributeNode('id');
-          return elem.nodeType === 1 && (node && node.nodeValue === match_0);
-        }
-        ;
-      }
-      root.removeChild(form_0);
-      root = form_0 = null;
-    }
-    ());
-    (function(){
-      var div = document.createElement('div');
-      div.appendChild(document.createComment(''));
-      if (div.getElementsByTagName('*').length > 0) {
-        Expr.find.TAG = function(match_0, context){
-          var results = context.getElementsByTagName(match_0[1]);
-          if (match_0[1] === '*') {
-            var tmp = [];
-            for (var i_0 = 0; results[i_0]; i_0++) {
-              if (results[i_0].nodeType === 1) {
-                tmp.push(results[i_0]);
-              }
-            }
-            results = tmp;
-          }
-          return results;
-        }
-        ;
-      }
-      div.innerHTML = "<a href='#'><\/a>";
-      if (div.firstChild && (typeof div.firstChild.getAttribute !== 'undefined' && div.firstChild.getAttribute('href') !== '#')) {
-        Expr.attrHandle.href = function(elem){
-          return elem.getAttribute('href', 2);
-        }
-        ;
-      }
-      div = null;
-    }
-    ());
-    (function(){
-      var div = document.createElement('div');
-      div.innerHTML = "<div class='test e'><\/div><div class='test'><\/div>";
-      if (!div.getElementsByClassName || div.getElementsByClassName('e').length === 0) {
-        return;
-      }
-      div.lastChild.className = 'e';
-      if (div.getElementsByClassName('e').length === 1) {
-        return;
-      }
-      Expr.order.splice(1, 0, 'CLASS');
-      Expr.find.CLASS = function(match_0, context, isXML){
-        if (typeof context.getElementsByClassName !== 'undefined' && !isXML) {
-          return context.getElementsByClassName(match_0[1]);
-        }
-      }
-      ;
-      div = null;
-    }
-    ());
-    function dirNodeCheck(dir_0, cur, doneName, checkSet, nodeCheck, isXML){
-      for (var i_0 = 0, l = checkSet.length; i_0 < l; i_0++) {
-        var elem = checkSet[i_0];
-        if (elem) {
-          elem = elem[dir_0];
-          var match_0 = false;
-          while (elem) {
-            if (elem.sizcache === doneName) {
-              match_0 = checkSet[elem.sizset];
-              break;
-            }
-            if (elem.nodeType === 1 && !isXML) {
-              elem.sizcache = doneName;
-              elem.sizset = i_0;
-            }
-            if (elem.nodeName.toLowerCase() === cur) {
-              match_0 = elem;
-              break;
-            }
-            elem = elem[dir_0];
-          }
-          checkSet[i_0] = match_0;
-        }
-      }
-    }
-
-    function dirCheck(dir_0, cur, doneName, checkSet, nodeCheck, isXML){
-      for (var i_0 = 0, l = checkSet.length; i_0 < l; i_0++) {
-        var elem = checkSet[i_0];
-        if (elem) {
-          elem = elem[dir_0];
-          var match_0 = false;
-          while (elem) {
-            if (elem.sizcache === doneName) {
-              match_0 = checkSet[elem.sizset];
-              break;
-            }
-            if (elem.nodeType === 1) {
-              if (!isXML) {
-                elem.sizcache = doneName;
-                elem.sizset = i_0;
-              }
-              if (typeof cur !== 'string') {
-                if (elem === cur) {
-                  match_0 = true;
-                  break;
-                }
-              }
-               else if (GQS.filter(cur, [elem]).length > 0) {
-                match_0 = elem;
-                break;
-              }
-            }
-            elem = elem[dir_0];
-          }
-          checkSet[i_0] = match_0;
-        }
-      }
-    }
-
-    GQS.contains = document.compareDocumentPosition?function(a, b){
-      return !!(a.compareDocumentPosition(b) & 16);
-    }
-    :function(a, b){
-      return a !== b && (a.contains?a.contains(b):true);
-    }
-    ;
-    GQS.isXML = function(elem){
-      var documentElement = (elem?elem.ownerDocument || elem:0).documentElement;
-      return documentElement?documentElement.nodeName !== 'HTML':false;
-    }
-    ;
-    var posProcess = function(selector, context){
-      var tmpSet = [], later = '', match_0, root = context.nodeType?[context]:context;
-      while (match_0 = Expr.match.PSEUDO.exec(selector)) {
-        later += match_0[0];
-        selector = selector.replace(Expr.match.PSEUDO, '');
-      }
-      selector = Expr.relative[selector]?selector + '*':selector;
-      for (var i_0 = 0, l = root.length; i_0 < l; i_0++) {
-        GQS(selector, root[i_0], tmpSet);
-      }
-      return GQS.filter(later, tmpSet);
-    }
-    ;
-    window.GQS = GQS;
-    $wnd.GQS = GQS;
-  }
-  ());
-}
-;
-cggqci.select_8 = function select_8(selector, context, results, seed){
-  return $wnd.GQS(selector, context, results, seed);
-}
-;
-defineClass(400, 28, $intern_30);
-_.$init_165 = function $init_165(){
-}
-;
-_.select_0 = function select_7(selector, context){
-  var results;
-  results = cggcc.$cast(cggcc.createArray());
-  return cggcc.$cast(cggqci.select_8(selector, context, results, null));
-}
-;
-cggqci.initialized_0 = false;
-cggl.Lcom_google_gwt_query_client_impl_SelectorEngineSizzle_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineSizzle', 400, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_impl_SelectorEngineNativeIE8_2_classLit = createForClass('com.google.gwt.query.client.impl', 'SelectorEngineNativeIE8', 398, cggl.Lcom_google_gwt_query_client_impl_SelectorEngineSizzleIE_2_classLit);
 cggqcj.$clinit_JsCache = function $clinit_JsCache(){
   cggqcj.$clinit_JsCache = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -15644,9 +15024,9 @@ cggqcj.$get_4 = function $get_4(this$static, id_0, clz){
   cggqcj.$clinit_JsCache();
   var d, o;
   o = cggqcj.$get_3(this$static, id_0);
-  if (isNotNull(clz)) {
-    if (instanceOf(o, 38)) {
-      d = dynamicCast(o, 38);
+  if (jsNotEquals(o, null) && isNotNull(clz)) {
+    if (instanceOf(o, 36)) {
+      d = dynamicCast(o, 36);
       if (jsEquals(clz, cggl.Ljava_lang_Float_2_classLit))
         o = jl.valueOf_15(d.floatValue());
       else if (jsEquals(clz, cggl.Ljava_lang_Integer_2_classLit))
@@ -15658,7 +15038,7 @@ cggqcj.$get_4 = function $get_4(this$static, id_0, clz){
       else if (jsEquals(clz, cggl.Ljava_lang_Byte_2_classLit))
         o = jl.valueOf_11(d.byteValue());
     }
-     else if (jsEquals(clz, cggl.Ljava_lang_Boolean_2_classLit) && !instanceOf(o, 23)) {
+     else if (jsEquals(clz, cggl.Ljava_lang_Boolean_2_classLit) && !instanceOf(o, 24)) {
       o = valueOf_9(valueOf_24(o));
     }
      else if (jsEquals(clz, cggl.Ljava_lang_String_2_classLit) && !isJavaString(o)) {
@@ -15680,7 +15060,7 @@ cggqcj.$getArray_0 = function $getArray_0(this$static, id_0){
 cggqcj.$getBoolean_0 = function $getBoolean_0(this$static, id_0){
   cggqcj.$clinit_JsCache();
   var r;
-  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Boolean_2_classLit), 23);
+  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Boolean_2_classLit), 24);
   return isNull(r)?false:r.booleanValue();
 }
 ;
@@ -15692,21 +15072,21 @@ cggqcj.$getCache = function $getCache(this$static, id_0){
 cggqcj.$getDouble = function $getDouble(this$static, id_0){
   cggqcj.$clinit_JsCache();
   var r;
-  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Double_2_classLit), 38);
+  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Double_2_classLit), 36);
   return isNull(r)?0:r.doubleValue();
 }
 ;
 cggqcj.$getFloat_0 = function $getFloat_0(this$static, id_0){
   cggqcj.$clinit_JsCache();
   var r;
-  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Float_2_classLit), 72);
+  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Float_2_classLit), 75);
   return isNull(r)?0:r.floatValue();
 }
 ;
 cggqcj.$getInt_0 = function $getInt_0(this$static, id_0){
   cggqcj.$clinit_JsCache();
   var r;
-  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Integer_2_classLit), 43);
+  r = dynamicCast(cggqcj.$get_4(this$static, id_0, cggl.Ljava_lang_Integer_2_classLit), 46);
   return isNull(r)?0:r.intValue();
 }
 ;
@@ -15728,8 +15108,10 @@ cggqcj.$indexOf = function $indexOf(this$static, o){
 ;
 cggqcj.$isEmpty_0 = function $isEmpty_0(this$static){
   cggqcj.$clinit_JsCache();
-  for (k in this$static)
-    return false;
+  for (k in this$static) {
+    if (this$static.hasOwnProperty(k))
+      return false;
+  }
   return true;
 }
 ;
@@ -15747,9 +15129,10 @@ cggqcj.$keys_0 = function $keys_0(this$static){
 ;
 cggqcj.$keysImpl = function $keysImpl(this$static){
   var key, keys_0 = [];
-  for (key in this$static)
-    if (key != '__gwt_ObjectId' && key != '$H')
+  for (key in this$static) {
+    if (this$static.hasOwnProperty(key) && (key != '__gwt_ObjectId' && key != '$H'))
       keys_0.push(String(key));
+  }
   return keys_0;
 }
 ;
@@ -15758,16 +15141,17 @@ cggqcj.$length_2 = function $length_2(this$static){
   if (typeof this$static.length == 'number')
     return this$static.length;
   var key, ret = 0;
-  for (key in this$static)
+  for (key in this$static) {
     if (key != '__gwt_ObjectId')
       ret++;
+  }
   return ret;
 }
 ;
 cggqcj.$put_0 = function $put_0(this$static, id_0, obj){
   cggqcj.$clinit_JsCache();
-  if (instanceOf(obj, 23)) {
-    cggqcj.$putBoolean(this$static, id_0, dynamicCast(obj, 23).booleanValue());
+  if (instanceOf(obj, 24)) {
+    cggqcj.$putBoolean(this$static, id_0, dynamicCast(obj, 24).booleanValue());
   }
    else if (instanceOf(obj, 20)) {
     cggqcj.$putNumber(this$static, id_0, dynamicCast(obj, 20).doubleValue());
@@ -15988,8 +15372,8 @@ cggqcj.$add_0 = function $add_0(this$static, vals){
     if (instanceOf(t, 20)) {
       cggqcj.$putNumber(cggqcj.$c_3(this$static), jl.valueOf_16(cggqcj.$length_4(this$static)), dynamicCast(t, 20).doubleValue());
     }
-     else if (instanceOf(t, 23)) {
-      cggqcj.$putBoolean(cggqcj.$c_3(this$static), jl.valueOf_16(cggqcj.$length_4(this$static)), dynamicCast(t, 23).booleanValue());
+     else if (instanceOf(t, 24)) {
+      cggqcj.$putBoolean(cggqcj.$c_3(this$static), jl.valueOf_16(cggqcj.$length_4(this$static)), dynamicCast(t, 24).booleanValue());
     }
      else {
       cggqcj.$put_0(cggqcj.$c_3(this$static), jl.valueOf_16(cggqcj.$length_4(this$static)), t);
@@ -16021,39 +15405,10 @@ cggqcj.create_17 = function create_17(){
   return cggcc.$cast(cggcc.createArray());
 }
 ;
-cggqcj.$clinit_JsRegexp = function $clinit_JsRegexp(){
-  cggqcj.$clinit_JsRegexp = emptyMethod;
-  jl.$clinit_Object();
-}
-;
-cggqcj.JsRegexp = function JsRegexp(pat, flags){
-  cggqcj.$clinit_JsRegexp();
-  Object_0.call(this);
-  this.$init_166();
-  this.regexp = cggqcj.compileFlags(pat, flags);
-}
-;
-cggqcj.compileFlags = function compileFlags(pat, flags){
-  return new RegExp(pat, flags);
-}
-;
-defineClass(96, 1, $intern_0, cggqcj.JsRegexp);
-_.$init_166 = function $init_166(){
-}
-;
-_.test_0 = function test_1(rule){
-  return this.test0(this.regexp, rule);
-}
-;
-_.test0 = function test0(regexp, rule){
-  return regexp.test(rule);
-}
-;
-cggl.Lcom_google_gwt_query_client_js_JsRegexp_2_classLit = createForClass('com.google.gwt.query.client.js', 'JsRegexp', 96, cggl.Ljava_lang_Object_2_classLit);
 cggqcj.$clinit_JsUtils = function $clinit_JsUtils(){
   cggqcj.$clinit_JsUtils = emptyMethod;
   jl.$clinit_Object();
-  cggqcj.utilsImpl = dynamicCast(new cggqcj.JsUtils$JsUtilsImpl, 94);
+  cggqcj.utilsImpl = dynamicCast(new cggqcj.JsUtils$JsUtilsImpl, 96);
 }
 ;
 cggqcj.JSON2String = function JSON2String(js){
@@ -16102,7 +15457,13 @@ cggqcj.getOwnerDocument = function getOwnerDocument(n){
 ;
 cggqcj.hasProperty = function hasProperty(o, name_0){
   cggqcj.$clinit_JsUtils();
-  return o && name_0 in o;
+  var p = name_0.split('.');
+  for (var i_0 in p) {
+    if (!(o && p[i_0] in o))
+      return false;
+    o = o[p[i_0]];
+  }
+  return true;
 }
 ;
 cggqcj.hyphenize = function hyphenize(name_0){
@@ -16130,7 +15491,7 @@ cggqcj.isDetached = function isDetached(n){
 ;
 cggqcj.isElement = function isElement(o){
   cggqcj.$clinit_JsUtils();
-  return cggqcj.hasProperty(o, 'nodeType') && cggqcj.hasProperty(o, 'nodeName');
+  return !!o && ('nodeType' in o && 'nodeName' in o);
 }
 ;
 cggqcj.isEvent = function isEvent(o){
@@ -16151,7 +15512,7 @@ cggqcj.isFunction = function isFunction(o){
 cggqcj.isNodeList = function isNodeList(o){
   cggqcj.$clinit_JsUtils();
   var r = Object.prototype.toString.call(o);
-  return r == '[object HTMLCollection]' || (r == '[object NodeList]' || typeof o == 'object' && (o.length && o[0].tagName))?true:false;
+  return r == '[object HTMLCollection]' || (r == '[object NodeList]' || typeof o == 'object' && (o.length && (o[0] && o[0].tagName)))?true:false;
 }
 ;
 cggqcj.isWindow = function isWindow(o){
@@ -16249,7 +15610,14 @@ cggqcj.runJavascriptFunction = function runJavascriptFunction(o, meth, args){
 }
 ;
 cggqcj.runJavascriptFunctionImpl = function runJavascriptFunctionImpl(o, meth, args){
-  return (f = o && o[meth]) && (cggqcj.isFunction(f) && cggqcj.gwtBox([f.apply(o, args)]));
+  var f = o || $wnd, p = meth.split('.');
+  for (var i_0 in p) {
+    o = f;
+    f = f[p[i_0]];
+    if (!f)
+      return null;
+  }
+  return cggqcj.isFunction(f) && cggqcj.gwtBox([f.apply(o, args)]);
 }
 ;
 cggqcj.text_3 = function text_3(e){
@@ -16267,17 +15635,17 @@ cggqcj.unique_0 = function unique_0(a){
   return cggqcj.utilsImpl.unique_0(a);
 }
 ;
-cggqcj.wrapFunction = function wrapFunction(f_0){
+cggqcj.wrapFunction = function wrapFunction(f){
   cggqcj.$clinit_JsUtils();
   return function(r){
     var o = new ju.ArrayList;
     for (i in arguments) {
       r = cggqcj.gwtBox([arguments[i]]);
-      o.add_3(r);
+      o.add_4(r);
     }
     o = o.toArray();
-    f_0.setArguments(o);
-    return f_0.fe_3(o);
+    f.setArguments(o);
+    return f.fe_3(o);
   }
   ;
 }
@@ -16288,17 +15656,17 @@ cggqcj.$clinit_JsUtils$JsFunction = function $clinit_JsUtils$JsFunction(){
   cggqc.$clinit_Function();
 }
 ;
-cggqcj.JsUtils$JsFunction = function JsUtils$JsFunction(f_0){
+cggqcj.JsUtils$JsFunction = function JsUtils$JsFunction(f){
   cggqcj.$clinit_JsUtils$JsFunction();
   cggqc.Function_0.call(this);
-  this.$init_167();
-  if (cggqcj.isFunction(f_0)) {
-    this.jso = f_0;
+  this.$init_168();
+  if (cggqcj.isFunction(f)) {
+    this.jso = f;
   }
 }
 ;
-defineClass(134, 7, $intern_27, cggqcj.JsUtils$JsFunction);
-_.$init_167 = function $init_167(){
+defineClass(137, 7, $intern_26, cggqcj.JsUtils$JsFunction);
+_.$init_168 = function $init_168(){
   this.jso = null;
 }
 ;
@@ -16306,8 +15674,8 @@ _.equals$ = function equals_1(obj){
   return cggcc.$equals_0(this.jso, obj);
 }
 ;
-_.exec_0 = function exec_0(f_0, data_0){
-  return cggqcj.gwtBox([f_0(data_0)]);
+_.exec_0 = function exec_0(f, data_0){
+  return cggqcj.gwtBox([f(data_0)]);
 }
 ;
 _.execute_2 = function execute_6(){
@@ -16320,7 +15688,11 @@ _.f = function f_19(){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_js_JsUtils$JsFunction_2_classLit = createForClass('com.google.gwt.query.client.js', 'JsUtils/JsFunction', 134, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+_.hashCode$ = function hashCode_3(){
+  return cggcc.$hashCode_0(this.jso);
+}
+;
+cggl.Lcom_google_gwt_query_client_js_JsUtils$JsFunction_2_classLit = createForClass('com.google.gwt.query.client.js', 'JsUtils/JsFunction', 137, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcj.$clinit_JsUtils$JsUtilsImpl = function $clinit_JsUtils$JsUtilsImpl(){
   cggqcj.$clinit_JsUtils$JsUtilsImpl = emptyMethod;
   jl.$clinit_Object();
@@ -16329,11 +15701,11 @@ cggqcj.$clinit_JsUtils$JsUtilsImpl = function $clinit_JsUtils$JsUtilsImpl(){
 cggqcj.JsUtils$JsUtilsImpl = function JsUtils$JsUtilsImpl(){
   cggqcj.$clinit_JsUtils$JsUtilsImpl();
   Object_0.call(this);
-  this.$init_168();
+  this.$init_169();
 }
 ;
-defineClass(94, 1, {94:1, 1:1}, cggqcj.JsUtils$JsUtilsImpl);
-_.$init_168 = function $init_168(){
+defineClass(96, 1, {96:1, 1:1}, cggqcj.JsUtils$JsUtilsImpl);
+_.$init_169 = function $init_169(){
 }
 ;
 _.JSON2String = function JSON2String_0(o){
@@ -16345,7 +15717,7 @@ _.XML2String = function XML2String_0(o){
 }
 ;
 _.parseJSON = function parseJSON_0(json){
-  return $wnd.JSON.parse(json);
+  return cggcc.safeEval(json);
 }
 ;
 _.parseXML = function parseXML_0(xml){
@@ -16371,12 +15743,12 @@ _.unique_0 = function unique_1(a){
   return ret;
 }
 ;
-cggl.Lcom_google_gwt_query_client_js_JsUtils$JsUtilsImpl_2_classLit = createForClass('com.google.gwt.query.client.js', 'JsUtils/JsUtilsImpl', 94, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_js_JsUtils$JsUtilsImpl_2_classLit = createForClass('com.google.gwt.query.client.js', 'JsUtils/JsUtilsImpl', 96, cggl.Ljava_lang_Object_2_classLit);
 cggqcj.$clinit_JsUtils$JsUtilsImplIE6 = function $clinit_JsUtils$JsUtilsImplIE6(){
   cggqcj.$clinit_JsUtils$JsUtilsImplIE6 = emptyMethod;
 }
 ;
-defineClass(494, 94, {94:1, 1:1});
+defineClass(494, 96, {96:1, 1:1});
 cggqcp.$clinit_QueuePlugin = function $clinit_QueuePlugin(){
   cggqcp.$clinit_QueuePlugin = emptyMethod;
   cggqc.$clinit_GQuery();
@@ -16389,50 +15761,46 @@ cggqcp.$clinit_QueuePlugin = function $clinit_QueuePlugin(){
 cggqcp.QueuePlugin = function QueuePlugin(gq){
   cggqcp.$clinit_QueuePlugin();
   cggqc.GQuery_2.call(this, gq);
-  this.$init_169();
+  this.$init_170();
 }
 ;
-defineClass(25, 14, $intern_32, cggqcp.QueuePlugin);
-_.$init_169 = function $init_169(){
+defineClass(26, 15, $intern_33, cggqcp.QueuePlugin);
+_.$init_170 = function $init_170(){
 }
 ;
 _.delay_1 = function delay_1(milliseconds, name_0, funcs){
   var e, e$array, e$index, e$max;
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
-    this.queue_0(e, name_0, new cggqcp.QueuePlugin$DelayFunction(this, e, name_0, milliseconds, funcs));
+    this.queue(e, name_0, new cggqcp.QueuePlugin$DelayFunction(this, e, name_0, milliseconds, funcs));
   }
-  return dynamicCast(this, 25);
+  return dynamicCast(this, 26);
 }
 ;
-_.delay_0 = function delay_2(milliseconds, f_0){
-  return this.delay_2(milliseconds, f_0);
+_.delay_0 = function delay_2(milliseconds, f){
+  return this.delay_2(milliseconds, f);
 }
 ;
-_.delay_2 = function delay_3(milliseconds, f_0){
-  return this.delay_1(milliseconds, cggqcp.DEFAULT_NAME, f_0);
+_.delay_2 = function delay_3(milliseconds, f){
+  return this.delay_1(milliseconds, cggqcp.DEFAULT_NAME, f);
 }
 ;
-_.dequeue = function dequeue_0(){
-  return this.dequeue_0();
+_.dequeue = function dequeue(){
+  return this.dequeue_0(cggqcp.DEFAULT_NAME);
 }
 ;
-_.dequeue_0 = function dequeue_1(){
-  return this.dequeue_1(cggqcp.DEFAULT_NAME);
-}
-;
-_.dequeue_1 = function dequeue_2(name_0){
+_.dequeue_0 = function dequeue_0(name_0){
   var e, e$array, e$index, e$max;
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     this.dequeueCurrentAndRunNext(e, name_0);
   }
-  return dynamicCast(this, 25);
+  return dynamicCast(this, 26);
 }
 ;
 _.dequeueCurrentAndRunNext = function dequeueCurrentAndRunNext(elem, name_0){
   var q;
-  q = this.queue_0(elem, name_0, null);
+  q = this.queue(elem, name_0, null);
   if (isNotNull(q)) {
     q.poll();
     this.runNext(elem, name_0, q);
@@ -16441,7 +15809,7 @@ _.dequeueCurrentAndRunNext = function dequeueCurrentAndRunNext(elem, name_0){
 ;
 _.dequeueIfNotDoneYet = function dequeueIfNotDoneYet(elem, name_0, object){
   var queue;
-  queue = this.queue_0(elem, name_0, null);
+  queue = this.queue(elem, name_0, null);
   if (isNotNull(queue) && jl.equals_Ljava_lang_Object__Z__devirtual$(object, queue.peek_0())) {
     this.dequeueCurrentAndRunNext(elem, name_0);
   }
@@ -16451,9 +15819,9 @@ _.emptyHooks = function emptyHooks(elem, name_0){
   cggqcp.$clinit_QueuePlugin();
   var c, key;
   key = name_0 + '.Empty';
-  c = dynamicCast(dynamicCast(cggqc.data_2(elem, key, null), 35), 35);
+  c = dynamicCast(dynamicCast(cggqc.data_2(elem, key, null), 33), 33);
   if (isNull(c)) {
-    c = dynamicCast(dynamicCast(cggqc.data_2(elem, key, new cggqcpd.Callbacks('once memory')), 35), 35);
+    c = dynamicCast(dynamicCast(cggqc.data_2(elem, key, new cggqcpd.Callbacks('once memory')), 33), 33);
   }
   return c;
 }
@@ -16470,15 +15838,15 @@ _.promise_1 = function promise_2(name_0){
   return dfd.promise_0();
 }
 ;
-_.queue_0 = function queue_1(elem, name_0, func){
+_.queue = function queue_0(elem, name_0, func){
   var q;
   if (isNotNull(elem)) {
-    q = dynamicCast(dynamicCast(cggqc.data_2(elem, name_0, null), 88), 88);
+    q = dynamicCast(dynamicCast(cggqc.data_2(elem, name_0, null), 89), 89);
     if (isNotNull(func)) {
       if (isNull(q)) {
-        q = dynamicCast(dynamicCast(cggqc.data_2(elem, name_0, new ju.LinkedList), 88), 88);
+        q = dynamicCast(dynamicCast(cggqc.data_2(elem, name_0, new ju.LinkedList), 89), 89);
       }
-      q.add_3(func);
+      q.add_4(func);
       if (q.size_1() == 1) {
         this.runNext(elem, name_0, q);
       }
@@ -16488,27 +15856,11 @@ _.queue_0 = function queue_1(elem, name_0, func){
   return null;
 }
 ;
-_.queue = function queue_2(funcs){
-  return this.queue_1(funcs);
-}
-;
-_.queue_1 = function queue_3(funcs){
-  var e, e$array, e$index, e$max, f_0, f$array, f$index, f$max;
-  for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
-    e = e$array[e$index];
-    for (f$array = funcs , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-      f_0 = f$array[f$index];
-      this.queue_0(e, cggqcp.DEFAULT_NAME, f_0);
-    }
-  }
-  return dynamicCast(this, 25);
-}
-;
 _.runNext = function runNext(elem, name_0, q){
-  var f_0;
-  f_0 = dynamicCast(q.peek_0(), 7);
-  if (isNotNull(f_0)) {
-    f_0.fe_0(elem);
+  var f;
+  f = dynamicCast(q.peek_0(), 7);
+  if (isNotNull(f)) {
+    f.fe_0(elem);
   }
    else {
     this.emptyHooks(elem, name_0).fire_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, []));
@@ -16518,25 +15870,36 @@ _.runNext = function runNext(elem, name_0, q){
 }
 ;
 cggqcp.EMPTY_HOOKS = '.Empty';
-cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin', 25, cggl.Lcom_google_gwt_query_client_GQuery_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin', 26, cggl.Lcom_google_gwt_query_client_GQuery_2_classLit);
 cggqcp.$clinit_Effects = function $clinit_Effects(){
   cggqcp.$clinit_Effects = emptyMethod;
   cggqcp.$clinit_QueuePlugin();
   cggqcp.Effects_0 = cggqc.registerPlugin(cggl.Lcom_google_gwt_query_client_plugins_Effects_2_classLit, new cggqcp.Effects$1);
+  {
+    if (isClient()) {
+      cggqcp.vendorPropNames = cggqcj.create_13();
+      cggqcp.prefix_0 = (cggqc.$clinit_GQuery() , cggqc.browser).msie?'ms':(cggqc.$clinit_GQuery() , cggqc.browser).opera?'o':(cggqc.$clinit_GQuery() , cggqc.browser).mozilla?'moz':(cggqc.$clinit_GQuery() , cggqc.browser).webkit?'webkit':'';
+    }
+  }
 }
 ;
 cggqcp.Effects_1 = function Effects_1(gq){
   cggqcp.$clinit_Effects();
   cggqcp.QueuePlugin.call(this, gq);
-  this.$init_170();
+  this.$init_171();
 }
 ;
-defineClass(47, 25, {14:1, 47:1, 25:1, 1:1}, cggqcp.Effects_1);
-_.$init_170 = function $init_170(){
+cggqcp.vendorProperty = function vendorProperty(prop){
+  cggqcp.$clinit_Effects();
+  return jsNotEquals(cggqcj.$get_6(cggqcp.vendorPropNames, prop), null)?dynamicCastToString(cggqcj.$get_6(cggqcp.vendorPropNames, prop)):prop;
+}
+;
+defineClass(40, 26, {15:1, 40:1, 26:1, 1:1}, cggqcp.Effects_1);
+_.$init_171 = function $init_171(){
 }
 ;
 _.animate = function animate(stringOrProperties, duration, easing, funcs){
-  var e, e$array, e$index, e$max, p;
+  var a, e, e$array, e$index, e$max, p;
   p = isJavaString(stringOrProperties)?cggqc.$$_0(dynamicCastToString(stringOrProperties)):dynamicCastJso(stringOrProperties);
   if (jsNotEquals(cggqc.$getStr(p, 'duration'), null)) {
     duration = cggqc.$getInt(p, 'duration');
@@ -16544,12 +15907,9 @@ _.animate = function animate(stringOrProperties, duration, easing, funcs){
   duration = jl.abs_0(duration);
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
-    if (cggqcpe.$clinit_Fx() , cggqcpe.css3) {
-      (new cggqcpe.TransitionsAnimation$TransitionsClipAnimation(easing, e, p, funcs)).run(duration);
-    }
-     else {
-      this.queueAnimation(e, new cggqcpe.ClipAnimation(easing, e, p, funcs), duration);
-    }
+    a = this.createAnimation();
+    a.setEasing(easing).setProperties(p).setElement_0(e).setCallback_0(funcs);
+    this.queueAnimation(a, duration);
   }
   return this;
 }
@@ -16558,33 +15918,37 @@ _.animate_0 = function animate_0(stringOrProperties, duration, funcs){
   return this.animate(stringOrProperties, duration, (cggqcpe.$clinit_PropertiesAnimation$EasingCurve() , cggqcpe.linear), funcs);
 }
 ;
+_.createAnimation = function createAnimation(){
+  return dynamicCast(new cggqcpe.TransitionsAnimation$TransitionsClipAnimation, 52);
+}
+;
 _.isOff = function isOff(){
   return cggqcpe.$clinit_Fx() , cggqcpe.off;
 }
 ;
-_.queueAnimation = function queueAnimation(e, anim, duration){
+_.queueAnimation = function queueAnimation(anim, duration){
   if (this.isOff()) {
     anim.onStart();
     anim.onComplete();
   }
    else {
-    this.queue_0(e, (cggqcp.$clinit_QueuePlugin() , cggqcp.DEFAULT_NAME), new cggqcp.Effects$2(this, anim, duration));
+    this.queue(anim.e, (cggqcp.$clinit_QueuePlugin() , cggqcp.DEFAULT_NAME), new cggqcp.Effects$2(this, anim, duration));
   }
 }
 ;
-_.slideDown = function slideDown_0(millisecs, f_0){
-  return this.animate_0("height: 'show'", millisecs, f_0);
+_.slideDown = function slideDown_0(millisecs, f){
+  return this.animate_0("height: 'show'", millisecs, f);
 }
 ;
-_.slideToggle = function slideToggle_0(millisecs, f_0){
-  return this.animate_0("height: 'toggle'", millisecs, f_0);
+_.slideToggle = function slideToggle_0(millisecs, f){
+  return this.animate_0("height: 'toggle'", millisecs, f);
 }
 ;
-_.slideUp = function slideUp_0(millisecs, f_0){
-  return this.animate_0("height: 'hide'", millisecs, f_0);
+_.slideUp = function slideUp_0(millisecs, f){
+  return this.animate_0("height: 'hide'", millisecs, f);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_Effects_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects', 47, cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Effects_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects', 40, cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin_2_classLit);
 cggqcp.$clinit_Effects$1 = function $clinit_Effects$1(){
   cggqcp.$clinit_Effects$1 = emptyMethod;
   jl.$clinit_Object();
@@ -16593,11 +15957,11 @@ cggqcp.$clinit_Effects$1 = function $clinit_Effects$1(){
 cggqcp.Effects$1 = function Effects$1(){
   cggqcp.$clinit_Effects$1();
   Object_0.call(this);
-  this.$init_171();
+  this.$init_172();
 }
 ;
-defineClass(230, 1, $intern_33, cggqcp.Effects$1);
-_.$init_171 = function $init_171(){
+defineClass(239, 1, $intern_34, cggqcp.Effects$1);
+_.$init_172 = function $init_172(){
 }
 ;
 _.init_0 = function init_2(gq){
@@ -16608,7 +15972,7 @@ _.init_1 = function init_3(gq){
   return new cggqcp.Effects_1(gq);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_Effects$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects/1', 230, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Effects$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects/1', 239, cggl.Ljava_lang_Object_2_classLit);
 cggqcp.$clinit_Effects$2 = function $clinit_Effects$2(){
   cggqcp.$clinit_Effects$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -16620,11 +15984,11 @@ cggqcp.Effects$2 = function Effects$2(this$0, val$anim, val$duration){
   this.val$anim2 = val$anim;
   this.val$duration3 = val$duration;
   cggqc.Function_0.call(this);
-  this.$init_172();
+  this.$init_173();
 }
 ;
-defineClass(231, 7, $intern_27, cggqcp.Effects$2);
-_.$init_172 = function $init_172(){
+defineClass(240, 7, $intern_26, cggqcp.Effects$2);
+_.$init_173 = function $init_173(){
 }
 ;
 _.f_0 = function f_20(e){
@@ -16632,7 +15996,7 @@ _.f_0 = function f_20(e){
 }
 ;
 _.val$duration3 = 0;
-cggl.Lcom_google_gwt_query_client_plugins_Effects$2_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects/2', 231, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Effects$2_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects/2', 240, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcp.$clinit_Effects$GQAnimation = function $clinit_Effects$GQAnimation(){
   cggqcp.$clinit_Effects$GQAnimation = emptyMethod;
   cggac.$clinit_Animation();
@@ -16641,45 +16005,70 @@ cggqcp.$clinit_Effects$GQAnimation = function $clinit_Effects$GQAnimation(){
 cggqcp.Effects$GQAnimation = function Effects$GQAnimation(){
   cggqcp.$clinit_Effects$GQAnimation();
   cggac.Animation.call(this);
-  this.$init_173();
+  this.$init_174();
 }
 ;
-defineClass(111, 48, $intern_0);
-_.$init_173 = function $init_173(){
+defineClass(52, 51, $intern_0);
+_.$init_174 = function $init_174(){
 }
 ;
 _.cancel = function cancel_5(){
-  cggqc.$_1(this.e).removeData_0('EffectsRunnning');
-  getClassPrototype(48).cancel.call(this);
+  cggqc.$_0(this.e).removeData_0('EffectsRunnning');
+  getClassPrototype(51).cancel.call(this);
 }
 ;
 _.onComplete = function onComplete_0(){
-  cggqc.$_1(this.e).removeData_0('EffectsRunnning');
-  getClassPrototype(48).onComplete.call(this);
+  cggqc.$_0(this.e).removeData_0('EffectsRunnning');
+  getClassPrototype(51).onComplete.call(this);
 }
 ;
 _.onStart = function onStart_0(){
-  cggqc.$_1(this.e).data_3('EffectsRunnning', this);
-  getClassPrototype(48).onStart.call(this);
+  cggqc.$_0(this.e).data_3('EffectsRunnning', this);
+  getClassPrototype(51).onStart.call(this);
+}
+;
+_.setCallback_0 = function setCallback_0(f){
+  this.funcs = f;
+  return this;
+}
+;
+_.setEasing = function setEasing(ease){
+  this.easing = isNotNull(ease)?ease:(cggqcpe.$clinit_PropertiesAnimation$EasingCurve() , cggqcpe.swing);
+  return this;
 }
 ;
 _.setElement_0 = function setElement_0(element){
   this.e = element;
+  this.g = dynamicCast(cggqc.$_0(this.e).as((cggqcp.$clinit_Effects() , cggqcp.Effects_0)), 40);
   return this;
 }
 ;
 _.setProperties = function setProperties(properties){
+  var ignore;
   this.prps = isNull(properties)?cggqc.create_8():properties;
+  if (cggqc.$defined(this.prps, 'easing')) {
+    try {
+      this.easing = cggqcpe.valueOf_7(cggqc.$getStr(this.prps, 'easing'));
+    }
+     catch ($e0) {
+      $e0 = wrap($e0);
+      if (instanceOf($e0, 9)) {
+        ignore = $e0;
+      }
+       else 
+        throw unwrap($e0);
+    }
+  }
   return this;
 }
 ;
 cggqcp.ACTUAL_ANIMATION = 'EffectsRunnning';
-cggl.Lcom_google_gwt_query_client_plugins_Effects$GQAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects/GQAnimation', 111, cggl.Lcom_google_gwt_animation_client_Animation_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Effects$GQAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Effects/GQAnimation', 52, cggl.Lcom_google_gwt_animation_client_Animation_2_classLit);
 cggqcp.$clinit_Effects$Speed = function $clinit_Effects$Speed(){
   cggqcp.$clinit_Effects$Speed = emptyMethod;
 }
 ;
-defineClass(539, 1, $intern_0);
+defineClass(548, 1, $intern_0);
 cggqcp.$clinit_Events = function $clinit_Events(){
   cggqcp.$clinit_Events = emptyMethod;
   cggqc.$clinit_GQuery();
@@ -16689,42 +16078,42 @@ cggqcp.$clinit_Events = function $clinit_Events(){
 cggqcp.Events_1 = function Events_1(gq){
   cggqcp.$clinit_Events();
   cggqc.GQuery_2.call(this, gq);
-  this.$init_174();
+  this.$init_175();
 }
 ;
 cggqcp.isEventCapable = function isEventCapable(n){
   return cggqcj.isWindow(n) || cggqcj.isElement(n) && cggdc.$getNodeType(n) != 3 && cggdc.$getNodeType(n) != 8;
 }
 ;
-defineClass(27, 14, {14:1, 27:1, 1:1}, cggqcp.Events_1);
-_.$init_174 = function $init_174(){
+defineClass(27, 15, {15:1, 27:1, 1:1}, cggqcp.Events_1);
+_.$init_175 = function $init_175(){
 }
 ;
-_.bind_0 = function bind_3(eventbits, data_0, funcs){
+_.bind_0 = function bind_4(eventbits, data_0, funcs){
   return this.bind_3(eventbits, data_0, funcs);
 }
 ;
-_.bind_3 = function bind_4(eventbits, data_0, funcs){
+_.bind_3 = function bind_5(eventbits, data_0, funcs){
   var e, e$array, e$index, e$max;
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     if (cggqcp.isEventCapable(e)) {
-      cggqcpe2.getInstance_5(e).bind_5(eventbits, data_0, funcs);
+      cggqcpe2.getInstance_6(e).bind_5(eventbits, data_0, funcs);
     }
   }
   return this;
 }
 ;
-_.bind_1 = function bind_5(event_0, data_0, funcs){
+_.bind_1 = function bind_6(event_0, data_0, funcs){
   return this.bind_4(event_0, data_0, funcs);
 }
 ;
-_.bind_4 = function bind_6(event_0, data_0, funcs){
+_.bind_4 = function bind_7(event_0, data_0, funcs){
   var e, e$array, e$index, e$max;
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     if (cggqcp.isEventCapable(e)) {
-      cggqcpe2.getInstance_5(e).bind_9(event_0, data_0, funcs);
+      cggqcpe2.getInstance_6(e).bind_8(event_0, data_0, funcs);
     }
   }
   return this;
@@ -16734,17 +16123,17 @@ _.bubbleEventForIE = function bubbleEventForIE(e, event_0){
   if (isNull(e) || jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('html', cggdc.$getTagName(e)) || this.isEventPropagationStopped(event_0)) {
     return;
   }
-  cggqcpe2.getInstance_5(e).dispatchEvent_3(event_0);
+  cggqcpe2.getInstance_6(e).dispatchEvent_3(event_0);
   this.bubbleEventForIE(cggdc.$getParentElement(e), event_0);
 }
 ;
 _.callHandlers = function callHandlers(e, evt, functions){
   cggqcp.$clinit_Events();
-  var f_0, f$array, f$index, f$max;
+  var f, f$array, f$index, f$max;
   for (f$array = functions , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-    f_0 = f$array[f$index];
-    f_0.setEvent(cgguc.as_2(evt));
-    f_0.f_0(e);
+    f = f$array[f$index];
+    f.setEvent(cgguc.as_2(evt));
+    f.f_0(e);
   }
 }
 ;
@@ -16757,7 +16146,7 @@ _.dispatchEvent_2 = function dispatchEvent_5(evt, datas, funcs){
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     if (cggqcp.isEventCapable(e)) {
-      cggqc.$_1(e).data_3('___event_datas', datas);
+      cggqc.$_0(e).data_3('___event_datas', datas);
       if (((cggqc.$clinit_GQuery() , cggqc.browser).ie6 || (cggqc.$clinit_GQuery() , cggqc.browser).ie8) && cgguc.getTypeInt(cggdc.$getType_0(evt)) == -1) {
         this.bubbleEventForIE(e, cggcc.$cast(evt));
       }
@@ -16767,7 +16156,7 @@ _.dispatchEvent_2 = function dispatchEvent_5(evt, datas, funcs){
       if (!cggqcj.isDefaultPrevented(evt)) {
         this.callHandlers(e, evt, funcs);
       }
-      cggqc.$_1(e).removeData_0('___event_datas');
+      cggqc.$_0(e).removeData_0('___event_datas');
     }
   }
 }
@@ -16777,15 +16166,15 @@ _.isEventPropagationStopped = function isEventPropagationStopped(event_0){
 }
 ;
 _.live = function live_0(eventName, data_0, funcs){
-  cggqcpe2.getInstance_5(cggdc.is_1(this.currentContext)?this.currentContext:(cggqc.$clinit_GQuery() , cggqc.body_0)).live_1(eventName, this.currentSelector, data_0, funcs);
+  cggqcpe2.getInstance_6(cggdc.is_1(this.currentContext)?this.currentContext:(cggqc.$clinit_GQuery() , cggqc.body_0)).live_1(eventName, this.currentSelector, data_0, funcs);
   return this;
 }
 ;
-_.mouseenter = function mouseenter_0(f_0){
-  if (jsEquals(f_0, null) || f_0.length == 0) {
+_.mouseenter = function mouseenter_0(f){
+  if (jsEquals(f, null) || f.length == 0) {
     return this.triggerHtmlEvent('mouseenter', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
   }
-  return this.bind_4('mouseenter', null, f_0);
+  return this.bind_4('mouseenter', null, f);
 }
 ;
 _.mouseleave = function mouseleave_0(fs){
@@ -16800,7 +16189,7 @@ _.trigger = function trigger_0(eventbits, keys_0){
 }
 ;
 _.trigger_0 = function trigger_1(eventbits, keys_0){
-  if ((eventbits | $intern_34) == $intern_34)
+  if ((eventbits | $intern_35) == $intern_35)
     this.dispatchEvent_1(cggdc.$createBlurEvent((cggqc.$clinit_GQuery() , cggqc.document_0)), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
   if ((eventbits | 1024) == 1024)
     this.dispatchEvent_1(cggdc.$createChangeEvent((cggqc.$clinit_GQuery() , cggqc.document_0)), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
@@ -16828,11 +16217,11 @@ _.trigger_0 = function trigger_1(eventbits, keys_0){
     this.dispatchEvent_1(cggdc.$createMouseOverEvent((cggqc.$clinit_GQuery() , cggqc.document_0), 0, 0, 0, 0, 0, false, false, false, false, 1, null), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
   if ((eventbits | 8) == 8)
     this.dispatchEvent_1(cggdc.$createMouseUpEvent((cggqc.$clinit_GQuery() , cggqc.document_0), 0, 0, 0, 0, 0, false, false, false, false, 1), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
-  if ((eventbits | $intern_28) == $intern_28)
+  if ((eventbits | $intern_27) == $intern_27)
     this.dispatchEvent_1(cggdc.$createScrollEvent((cggqc.$clinit_GQuery() , cggqc.document_0)), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
   if ((eventbits | $intern_3) == $intern_3)
     this.dispatchEvent_1(cggdc.$createErrorEvent((cggqc.$clinit_GQuery() , cggqc.document_0)), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
-  if ((eventbits | $intern_35) == $intern_35)
+  if ((eventbits | $intern_36) == $intern_36)
     this.dispatchEvent_1(cggdc.$createMouseEvent((cggqc.$clinit_GQuery() , cggqc.document_0), 'mousewheel', true, true, 0, 0, 0, 0, 0, false, false, false, false, 1, null), initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
   return this;
 }
@@ -16842,58 +16231,55 @@ _.triggerHtmlEvent = function triggerHtmlEvent(htmlEvent, functions){
 }
 ;
 _.triggerHtmlEvent_0 = function triggerHtmlEvent_0(htmlEvent, datas, functions){
-  var delegateEventName, e, isSpecialEvent, originalEventName, specialEvent, submitFunction;
-  specialEvent = dynamicCast(cggqcj.$get_6((cggqcpe2.$clinit_EventsListener() , cggqcpe2.special), htmlEvent), 127);
-  isSpecialEvent = isNotNull(specialEvent);
-  originalEventName = htmlEvent;
-  delegateEventName = isSpecialEvent?specialEvent.getDelegateType():htmlEvent;
-  e = cggdc.$createHtmlEvent((cggqc.$clinit_GQuery() , cggqc.document_0), delegateEventName, true, true);
-  if (isSpecialEvent) {
-    cggqcpe2.setOriginalEventType(e, originalEventName);
-  }
-  if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('submit', htmlEvent)) {
-    submitFunction = new cggqcp.Events$2(this, functions);
-    this.dispatchEvent_2(e, datas, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [submitFunction]));
-  }
-   else {
-    this.dispatchEvent_2(e, datas, functions);
-  }
-  return this;
-}
-;
-_.unbind = function unbind_2(eventbits){
-  return this.unbind_2(eventbits);
-}
-;
-_.unbind_2 = function unbind_3(eventbits){
-  var e, e$array, e$index, e$max;
-  for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
-    e = e$array[e$index];
-    if (cggqcp.isEventCapable(e)) {
-      cggqcpe2.getInstance_5(e).unbind_5(eventbits);
+  var e, part, part$iterator, submitFunction;
+  for (part$iterator = cggqcpe2.split_1(htmlEvent).iterator(); part$iterator.hasNext();) {
+    part = dynamicCast(part$iterator.next_0(), 65);
+    e = cggdc.$createHtmlEvent((cggqc.$clinit_GQuery() , cggqc.document_0), part.eventName, true, true);
+    cggqcj.prop_2(e, 'namespace', part.nameSpace);
+    if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('submit', part.eventName)) {
+      submitFunction = new cggqcp.Events$2(this, functions);
+      this.dispatchEvent_2(e, datas, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [submitFunction]));
+    }
+     else {
+      this.dispatchEvent_2(e, datas, functions);
     }
   }
   return this;
 }
 ;
-_.unbind_0 = function unbind_4(name_0){
-  return this.unbind_3(name_0);
+_.unbind = function unbind_3(eventbits){
+  return this.unbind_2(eventbits);
 }
 ;
-_.unbind_3 = function unbind_5(name_0){
-  return this.unbind_4(name_0, null);
-}
-;
-_.unbind_1 = function unbind_6(name_0, f_0){
-  return this.unbind_4(name_0, f_0);
-}
-;
-_.unbind_4 = function unbind_7(name_0, f_0){
+_.unbind_2 = function unbind_4(eventbits){
   var e, e$array, e$index, e$max;
   for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
     if (cggqcp.isEventCapable(e)) {
-      cggqcpe2.getInstance_5(e).unbind_7(name_0, f_0);
+      cggqcpe2.getInstance_6(e).unbind_5(eventbits);
+    }
+  }
+  return this;
+}
+;
+_.unbind_0 = function unbind_5(name_0){
+  return this.unbind_3(name_0);
+}
+;
+_.unbind_3 = function unbind_6(name_0){
+  return this.unbind_4(name_0, null);
+}
+;
+_.unbind_1 = function unbind_7(name_0, f){
+  return this.unbind_4(name_0, f);
+}
+;
+_.unbind_4 = function unbind_8(name_0, f){
+  var e, e$array, e$index, e$max;
+  for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
+    e = e$array[e$index];
+    if (cggqcp.isEventCapable(e)) {
+      cggqcpe2.getInstance_6(e).unbind_7(name_0, f);
     }
   }
   return this;
@@ -16908,11 +16294,11 @@ cggqcp.$clinit_Events$1 = function $clinit_Events$1(){
 cggqcp.Events$1 = function Events$1(){
   cggqcp.$clinit_Events$1();
   Object_0.call(this);
-  this.$init_175();
+  this.$init_176();
 }
 ;
-defineClass(237, 1, $intern_33, cggqcp.Events$1);
-_.$init_175 = function $init_175(){
+defineClass(246, 1, $intern_34, cggqcp.Events$1);
+_.$init_176 = function $init_176(){
 }
 ;
 _.init_0 = function init_4(gq){
@@ -16923,7 +16309,7 @@ _.init_2 = function init_5(gq){
   return new cggqcp.Events_1(gq);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_Events$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Events/1', 237, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Events$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Events/1', 246, cggl.Ljava_lang_Object_2_classLit);
 cggqcp.$clinit_Events$2 = function $clinit_Events$2(){
   cggqcp.$clinit_Events$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -16934,11 +16320,11 @@ cggqcp.Events$2 = function Events$2(this$0, val$functions){
   this.this$01 = this$0;
   this.val$functions2 = val$functions;
   cggqc.Function_0.call(this);
-  this.$init_176();
+  this.$init_177();
 }
 ;
-defineClass(238, 7, $intern_27, cggqcp.Events$2);
-_.$init_176 = function $init_176(){
+defineClass(247, 7, $intern_26, cggqcp.Events$2);
+_.$init_177 = function $init_177(){
 }
 ;
 _.f_0 = function f_21(e){
@@ -16948,7 +16334,7 @@ _.f_0 = function f_21(e){
   this.this$01.callHandlers(e, this.getEvent(), this.val$functions2);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_Events$2_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Events/2', 238, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Events$2_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Events/2', 247, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcp.$clinit_Plugin = function $clinit_Plugin(){
   cggqcp.$clinit_Plugin = emptyMethod;
 }
@@ -16961,11 +16347,11 @@ cggqcp.$clinit_QueuePlugin$1 = function $clinit_QueuePlugin$1(){
 cggqcp.QueuePlugin$1 = function QueuePlugin$1(){
   cggqcp.$clinit_QueuePlugin$1();
   Object_0.call(this);
-  this.$init_177();
+  this.$init_178();
 }
 ;
-defineClass(234, 1, $intern_33, cggqcp.QueuePlugin$1);
-_.$init_177 = function $init_177(){
+defineClass(243, 1, $intern_34, cggqcp.QueuePlugin$1);
+_.$init_178 = function $init_178(){
 }
 ;
 _.init_0 = function init_6(gq){
@@ -16976,7 +16362,7 @@ _.init_3 = function init_7(gq){
   return new cggqcp.QueuePlugin(gq);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/1', 234, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/1', 243, cggl.Ljava_lang_Object_2_classLit);
 cggqcp.$clinit_QueuePlugin$2 = function $clinit_QueuePlugin$2(){
   cggqcp.$clinit_QueuePlugin$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -16988,17 +16374,17 @@ cggqcp.QueuePlugin$2 = function QueuePlugin$2(this$0, val$name, val$dfd){
   this.val$name2 = val$name;
   this.val$dfd3 = val$dfd;
   cggqc.Function_0.call(this);
-  this.$init_178();
+  this.$init_179();
 }
 ;
-defineClass(235, 7, $intern_27, cggqcp.QueuePlugin$2);
-_.$init_178 = function $init_178(){
+defineClass(244, 7, $intern_26, cggqcp.QueuePlugin$2);
+_.$init_179 = function $init_179(){
   var elem, elem$array, elem$index, elem$max;
   this.count = 1;
   {
     for (elem$array = this.this$01.elements_0() , elem$index = 0 , elem$max = elem$array.length; elem$index < elem$max; ++elem$index) {
       elem = elem$array[elem$index];
-      if (isNotNull(this.this$01.queue_0(elem, this.val$name2, null))) {
+      if (isNotNull(this.this$01.queue(elem, this.val$name2, null))) {
         this.this$01.emptyHooks(elem, this.val$name2).add_2(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [this]));
         this.count++;
       }
@@ -17013,25 +16399,25 @@ _.f = function f_22(){
 }
 ;
 _.count = 0;
-cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$2_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/2', 235, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$2_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/2', 244, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcp.$clinit_QueuePlugin$DelayFunction = function $clinit_QueuePlugin$DelayFunction(){
   cggqcp.$clinit_QueuePlugin$DelayFunction = emptyMethod;
   cggqc.$clinit_Function();
 }
 ;
-cggqcp.QueuePlugin$DelayFunction = function QueuePlugin$DelayFunction(this$0, elem, name_0, delay, f_0){
+cggqcp.QueuePlugin$DelayFunction = function QueuePlugin$DelayFunction(this$0, elem, name_0, delay, f){
   cggqcp.$clinit_QueuePlugin$DelayFunction();
   this.this$01 = this$0;
   cggqc.Function_0.call(this);
-  this.$init_179();
+  this.$init_180();
   this.elem = elem;
   this.delay = delay;
-  this.funcs = f_0;
+  this.funcs = f;
   this.name_0 = name_0;
 }
 ;
-defineClass(232, 7, $intern_27, cggqcp.QueuePlugin$DelayFunction);
-_.$init_179 = function $init_179(){
+defineClass(241, 7, $intern_26, cggqcp.QueuePlugin$DelayFunction);
+_.$init_180 = function $init_180(){
 }
 ;
 _.f = function f_23(){
@@ -17039,7 +16425,7 @@ _.f = function f_23(){
 }
 ;
 _.delay = 0;
-cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$DelayFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/DelayFunction', 232, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$DelayFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/DelayFunction', 241, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcp.$clinit_QueuePlugin$DelayFunction$SimpleTimer = function $clinit_QueuePlugin$DelayFunction$SimpleTimer(){
   cggqcp.$clinit_QueuePlugin$DelayFunction$SimpleTimer = emptyMethod;
   cgguc.$clinit_Timer();
@@ -17049,23 +16435,23 @@ cggqcp.QueuePlugin$DelayFunction$SimpleTimer = function QueuePlugin$DelayFunctio
   cggqcp.$clinit_QueuePlugin$DelayFunction$SimpleTimer();
   this.this$11 = this$1;
   cgguc.Timer.call(this);
-  this.$init_180();
+  this.$init_181();
 }
 ;
-defineClass(233, 78, $intern_0, cggqcp.QueuePlugin$DelayFunction$SimpleTimer);
-_.$init_180 = function $init_180(){
+defineClass(242, 80, $intern_0, cggqcp.QueuePlugin$DelayFunction$SimpleTimer);
+_.$init_181 = function $init_181(){
 }
 ;
 _.run_2 = function run_5(){
-  var f_0, f$array, f$index, f$max;
+  var f, f$array, f$index, f$max;
   for (f$array = this.this$11.funcs , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-    f_0 = f$array[f$index];
-    f_0.fe_0(this.this$11.elem);
+    f = f$array[f$index];
+    f.fe_0(this.this$11.elem);
   }
   this.this$11.this$01.dequeueIfNotDoneYet(this.this$11.elem, this.this$11.name_0, this.this$11);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$DelayFunction$SimpleTimer_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/DelayFunction/SimpleTimer', 233, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin$DelayFunction$SimpleTimer_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'QueuePlugin/DelayFunction/SimpleTimer', 242, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
 cggqcp.$clinit_Widgets = function $clinit_Widgets(){
   cggqcp.$clinit_Widgets = emptyMethod;
   cggqcp.$clinit_QueuePlugin();
@@ -17079,14 +16465,14 @@ cggqcp.$clinit_Widgets = function $clinit_Widgets(){
 cggqcp.Widgets_1 = function Widgets_1(gq){
   cggqcp.$clinit_Widgets();
   cggqcp.QueuePlugin.call(this, gq);
-  this.$init_181();
+  this.$init_182();
 }
 ;
-defineClass(239, 25, $intern_32, cggqcp.Widgets_1);
-_.$init_181 = function $init_181(){
+defineClass(248, 26, $intern_33, cggqcp.Widgets_1);
+_.$init_182 = function $init_182(){
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_Widgets_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Widgets', 239, cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Widgets_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Widgets', 248, cggl.Lcom_google_gwt_query_client_plugins_QueuePlugin_2_classLit);
 cggqcp.$clinit_Widgets$1 = function $clinit_Widgets$1(){
   cggqcp.$clinit_Widgets$1 = emptyMethod;
   jl.$clinit_Object();
@@ -17095,11 +16481,11 @@ cggqcp.$clinit_Widgets$1 = function $clinit_Widgets$1(){
 cggqcp.Widgets$1 = function Widgets$1(){
   cggqcp.$clinit_Widgets$1();
   Object_0.call(this);
-  this.$init_182();
+  this.$init_183();
 }
 ;
-defineClass(240, 1, $intern_33, cggqcp.Widgets$1);
-_.$init_182 = function $init_182(){
+defineClass(249, 1, $intern_34, cggqcp.Widgets$1);
+_.$init_183 = function $init_183(){
 }
 ;
 _.init_0 = function init_8(gq){
@@ -17110,7 +16496,7 @@ _.init_4 = function init_9(gq){
   return new cggqcp.Widgets_1(gq);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_Widgets$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Widgets/1', 240, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_Widgets$1_2_classLit = createForClass('com.google.gwt.query.client.plugins', 'Widgets/1', 249, cggl.Ljava_lang_Object_2_classLit);
 cggqcpa.$clinit_Ajax = function $clinit_Ajax(){
   cggqcpa.$clinit_Ajax = emptyMethod;
   cggqc.$clinit_GQuery();
@@ -17121,7 +16507,7 @@ cggqcpa.$clinit_Ajax = function $clinit_Ajax(){
 cggqcpa.Ajax_0 = function Ajax_0(gq){
   cggqcpa.$clinit_Ajax();
   cggqc.GQuery_2.call(this, gq);
-  this.$init_183();
+  this.$init_184();
 }
 ;
 cggqcpa.ajax = function ajax(settings){
@@ -17145,7 +16531,7 @@ cggqcpa.ajax = function ajax(settings){
     ret = cggqc.getAjaxTransport().getLoadScript(settings);
   }
    else {
-    ret = cggqc.getAjaxTransport().getXhr(settings).then(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpa.Ajax$2(dataType), new cggqcpa.Ajax$3]));
+    ret = cggqc.getAjaxTransport().getXhr(settings).then_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpa.Ajax$2(dataType), new cggqcpa.Ajax$3]));
   }
   if (isNotNull(onSuccess)) {
     ret.done_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [onSuccess]));
@@ -17163,7 +16549,7 @@ cggqcpa.createSettings = function createSettings(){
 ;
 cggqcpa.createSettings_0 = function createSettings_0(prop){
   var s;
-  s = dynamicCast(cggqc.create_6(cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit), 144);
+  s = dynamicCast(cggqc.create_6(cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit), 147);
   if (jsNotEquals(prop, null) && !jl.isEmpty__Z__devirtual$(prop))
     s.parse_1(prop);
   return s;
@@ -17205,12 +16591,12 @@ cggqcpa.resolveSettings = function resolveSettings(settings){
   }
 }
 ;
-defineClass(281, 14, {14:1, 1:1}, cggqcpa.Ajax_0);
-_.$init_183 = function $init_183(){
+defineClass(295, 15, {15:1, 1:1}, cggqcpa.Ajax_0);
+_.$init_184 = function $init_184(){
 }
 ;
 cggqcpa.JSON_CONTENT_TYPE = 'application/json';
-cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax', 281, cggl.Lcom_google_gwt_query_client_GQuery_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax', 295, cggl.Lcom_google_gwt_query_client_GQuery_2_classLit);
 cggqcpa.$clinit_Ajax$1 = function $clinit_Ajax$1(){
   cggqcpa.$clinit_Ajax$1 = emptyMethod;
   jl.$clinit_Object();
@@ -17219,11 +16605,11 @@ cggqcpa.$clinit_Ajax$1 = function $clinit_Ajax$1(){
 cggqcpa.Ajax$1 = function Ajax$1(){
   cggqcpa.$clinit_Ajax$1();
   Object_0.call(this);
-  this.$init_184();
+  this.$init_185();
 }
 ;
-defineClass(282, 1, $intern_33, cggqcpa.Ajax$1);
-_.$init_184 = function $init_184(){
+defineClass(296, 1, $intern_34, cggqcpa.Ajax$1);
+_.$init_185 = function $init_185(){
 }
 ;
 _.init_0 = function init_10(gq){
@@ -17234,7 +16620,7 @@ _.init_5 = function init_11(gq){
   return new cggqcpa.Ajax_0(gq);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax/1', 282, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax/1', 296, cggl.Ljava_lang_Object_2_classLit);
 cggqcpa.$clinit_Ajax$2 = function $clinit_Ajax$2(){
   cggqcpa.$clinit_Ajax$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17244,17 +16630,17 @@ cggqcpa.Ajax$2 = function Ajax$2(val$dataType){
   cggqcpa.$clinit_Ajax$2();
   this.val$dataType1 = val$dataType;
   cggqc.Function_0.call(this);
-  this.$init_185();
+  this.$init_186();
 }
 ;
-defineClass(283, 7, $intern_27, cggqcpa.Ajax$2);
-_.$init_185 = function $init_185(){
+defineClass(297, 7, $intern_26, cggqcpa.Ajax$2);
+_.$init_186 = function $init_186(){
 }
 ;
 _.f_8 = function f_24(args){
   var e, request, response, retData;
-  response = dynamicCast(this.arguments_1(0), 84);
-  request = dynamicCast(this.arguments_1(1), 115);
+  response = dynamicCast(this.arguments_1(0), 82);
+  request = dynamicCast(this.arguments_1(1), 120);
   retData = response.getText_0();
   if (jsNotEquals(retData, null) && !jl.equals_Ljava_lang_Object__Z__devirtual$_0('', retData)) {
     try {
@@ -17289,7 +16675,7 @@ _.f_8 = function f_24(args){
   return initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [retData, 'success', request, response]);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax/2', 283, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax/2', 297, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpa.$clinit_Ajax$3 = function $clinit_Ajax$3(){
   cggqcpa.$clinit_Ajax$3 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17298,27 +16684,42 @@ cggqcpa.$clinit_Ajax$3 = function $clinit_Ajax$3(){
 cggqcpa.Ajax$3 = function Ajax$3(){
   cggqcpa.$clinit_Ajax$3();
   cggqc.Function_0.call(this);
-  this.$init_186();
+  this.$init_187();
 }
 ;
-defineClass(284, 7, $intern_27, cggqcpa.Ajax$3);
-_.$init_186 = function $init_186(){
+defineClass(298, 7, $intern_26, cggqcpa.Ajax$3);
+_.$init_187 = function $init_187(){
 }
 ;
 _.f_8 = function f_25(args){
   var exception, msg, request;
   exception = dynamicCast(this.arguments_1(0), 12);
-  request = dynamicCast(this.getArgument_1(1, cggl.Lcom_google_gwt_http_client_Request_2_classLit), 115);
+  request = dynamicCast(this.getArgument_1(1, cggl.Lcom_google_gwt_http_client_Request_2_classLit), 120);
   msg = valueOf_24(exception);
   return initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [null, msg, request, null, exception]);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$3_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax/3', 284, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$3_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax/3', 298, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpa.$clinit_Ajax$4 = function $clinit_Ajax$4(){
   cggqcpa.$clinit_Ajax$4 = emptyMethod;
 }
 ;
-defineClass(709, 7, $intern_27);
+defineClass(721, 7, $intern_26);
+cggqcpa.$clinit_Ajax$5 = function $clinit_Ajax$5(){
+  cggqcpa.$clinit_Ajax$5 = emptyMethod;
+}
+;
+defineClass(722, 210, $intern_29);
+cggqcpa.$clinit_Ajax$5$1 = function $clinit_Ajax$5$1(){
+  cggqcpa.$clinit_Ajax$5$1 = emptyMethod;
+}
+;
+defineClass(723, 7, $intern_26);
+cggqcpa.$clinit_Ajax$5$1$1 = function $clinit_Ajax$5$1$1(){
+  cggqcpa.$clinit_Ajax$5$1$1 = emptyMethod;
+}
+;
+defineClass(724, 80, $intern_0);
 cggqcpa.$clinit_Ajax$AjaxTransport = function $clinit_Ajax$AjaxTransport(){
   cggqcpa.$clinit_Ajax$AjaxTransport = emptyMethod;
 }
@@ -17327,7 +16728,7 @@ cggqcpa.$clinit_Ajax$Settings = function $clinit_Ajax$Settings(){
   cggqcpa.$clinit_Ajax$Settings = emptyMethod;
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit = createForInterface('com.google.gwt.query.client.plugins.ajax', 'Ajax/Settings', 144, null);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit = createForInterface('com.google.gwt.query.client.plugins.ajax', 'Ajax/Settings', 147, null);
 cggqcpa.$clinit_AjaxTransportJs = function $clinit_AjaxTransportJs(){
   cggqcpa.$clinit_AjaxTransportJs = emptyMethod;
   jl.$clinit_Object();
@@ -17336,11 +16737,11 @@ cggqcpa.$clinit_AjaxTransportJs = function $clinit_AjaxTransportJs(){
 cggqcpa.AjaxTransportJs = function AjaxTransportJs(){
   cggqcpa.$clinit_AjaxTransportJs();
   Object_0.call(this);
-  this.$init_187();
+  this.$init_188();
 }
 ;
-defineClass(302, 1, $intern_0, cggqcpa.AjaxTransportJs);
-_.$init_187 = function $init_187(){
+defineClass(316, 1, $intern_0, cggqcpa.AjaxTransportJs);
+_.$init_188 = function $init_188(){
 }
 ;
 _.getJsonP = function getJsonP(settings){
@@ -17355,97 +16756,7 @@ _.getXhr = function getXhr(settings){
   return new cggqcpd.PromiseReqBuilder(settings);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs', 302, cggl.Ljava_lang_Object_2_classLit);
-cggqcpd.$clinit_Deferred$DeferredPromiseImpl = function $clinit_Deferred$DeferredPromiseImpl(){
-  cggqcpd.$clinit_Deferred$DeferredPromiseImpl = emptyMethod;
-  jl.$clinit_Object();
-}
-;
-cggqcpd.Deferred$DeferredPromiseImpl = function Deferred$DeferredPromiseImpl(){
-  cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
-  Object_0.call(this);
-  this.$init_188();
-  this.dfd = new cggqcpd.Deferred_0;
-}
-;
-cggqcpd.Deferred$DeferredPromiseImpl_0 = function Deferred$DeferredPromiseImpl_0(o){
-  cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
-  Object_0.call(this);
-  this.$init_188();
-  this.dfd = o;
-}
-;
-defineClass(101, 1, $intern_36, cggqcpd.Deferred$DeferredPromiseImpl_0);
-_.$init_188 = function $init_188(){
-  this.resolve = new cggqcpd.Deferred$DeferredPromiseImpl$1(this);
-  this.reject = new cggqcpd.Deferred$DeferredPromiseImpl$2(this);
-}
-;
-_.always = function always(f_0){
-  return this.done_0(f_0).fail(f_0);
-}
-;
-_.done_0 = function done_0(f_0){
-  this.dfd.resolve.add_2(f_0);
-  return this;
-}
-;
-_.fail = function fail(f_0){
-  this.dfd.reject.add_2(f_0);
-  return this;
-}
-;
-_.isResolved = function isResolved(){
-  return jl.equals_Ljava_lang_Object__Z__devirtual$_0('resolved', this.state_0());
-}
-;
-_.progress = function progress_0(f_0){
-  this.dfd.notify.add_2(f_0);
-  return this;
-}
-;
-_.state_0 = function state(){
-  return this.dfd.state;
-}
-;
-_.then_0 = function then(continueFlow, f_0){
-  var newDfd;
-  newDfd = new cggqcpd.Deferred_0;
-  this.done_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction(newDfd, f_0, 0, continueFlow)]));
-  this.fail(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction(newDfd, f_0, 1, continueFlow)]));
-  this.progress(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction(newDfd, f_0, 2, continueFlow)]));
-  return newDfd.promise_0();
-}
-;
-_.then = function then_0(f_0){
-  return this.then_0(false, f_0);
-}
-;
-_.toString$ = function toString_19(){
-  return 'Promise this=' + this.hashCode$() + ' ' + this.dfd;
-}
-;
-cggqcpd.DONE = 0;
-cggqcpd.FAIL = 1;
-cggqcpd.PROGRESS = 2;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl', 101, cggl.Ljava_lang_Object_2_classLit);
-cggqcpd.$clinit_PromiseFunction = function $clinit_PromiseFunction(){
-  cggqcpd.$clinit_PromiseFunction = emptyMethod;
-  cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
-}
-;
-cggqcpd.PromiseFunction = function PromiseFunction(){
-  cggqcpd.$clinit_PromiseFunction();
-  cggqcpd.Deferred$DeferredPromiseImpl.call(this);
-  this.$init_189();
-  this.f_11(this.dfd);
-}
-;
-defineClass(303, 101, $intern_36);
-_.$init_189 = function $init_189(){
-}
-;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseFunction', 303, cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs', 316, cggl.Ljava_lang_Object_2_classLit);
 cggqcpa.$clinit_AjaxTransportJs$1 = function $clinit_AjaxTransportJs$1(){
   cggqcpa.$clinit_AjaxTransportJs$1 = emptyMethod;
   cggqcpd.$clinit_PromiseFunction();
@@ -17456,18 +16767,18 @@ cggqcpa.AjaxTransportJs$1 = function AjaxTransportJs$1(this$0, val$settings){
   this.this$01 = this$0;
   this.val$settings2 = val$settings;
   cggqcpd.PromiseFunction.call(this);
-  this.$init_190();
+  this.$init_189();
 }
 ;
-defineClass(304, 303, $intern_36, cggqcpa.AjaxTransportJs$1);
-_.$init_190 = function $init_190(){
+defineClass(317, 210, $intern_29, cggqcpa.AjaxTransportJs$1);
+_.$init_189 = function $init_189(){
 }
 ;
 _.f_11 = function f_26(dfd){
   this.scriptElement = cggcc.$cast(cggcc.fromUrl(this.val$settings2.getUrl()).setWindow_0((cggqc.$clinit_GQuery() , cggqc.window_1)).setCallback(new cggqcpa.AjaxTransportJs$1$1(this, dfd)).inject());
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs/1', 304, cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseFunction_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs/1', 317, cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseFunction_2_classLit);
 cggqcpa.$clinit_AjaxTransportJs$1$1 = function $clinit_AjaxTransportJs$1$1(){
   cggqcpa.$clinit_AjaxTransportJs$1$1 = emptyMethod;
   jl.$clinit_Object();
@@ -17478,11 +16789,11 @@ cggqcpa.AjaxTransportJs$1$1 = function AjaxTransportJs$1$1(this$1, val$dfd){
   this.this$11 = this$1;
   this.val$dfd2 = val$dfd;
   Object_0.call(this);
-  this.$init_191();
+  this.$init_190();
 }
 ;
-defineClass(305, 1, $intern_13, cggqcpa.AjaxTransportJs$1$1);
-_.$init_191 = function $init_191(){
+defineClass(318, 1, $intern_13, cggqcpa.AjaxTransportJs$1$1);
+_.$init_190 = function $init_190(){
 }
 ;
 _.onFailure_2 = function onFailure_3(reason){
@@ -17494,14 +16805,14 @@ _.onFailure_0 = function onFailure_4(reason){
 }
 ;
 _.onSuccess_0 = function onSuccess_3(result){
-  this.onSuccess_2(dynamicCast(result, 368));
+  this.onSuccess_2(dynamicCast(result, 369));
 }
 ;
 _.onSuccess_2 = function onSuccess_4(result){
-  cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).delay_0(0, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpa.AjaxTransportJs$1$1$1(this, this.val$dfd2)]));
+  cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).delay_0(0, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpa.AjaxTransportJs$1$1$1(this, this.val$dfd2)]));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs$1$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs/1/1', 305, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs$1$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs/1/1', 318, cggl.Ljava_lang_Object_2_classLit);
 cggqcpa.$clinit_AjaxTransportJs$1$1$1 = function $clinit_AjaxTransportJs$1$1$1(){
   cggqcpa.$clinit_AjaxTransportJs$1$1$1 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17512,18 +16823,18 @@ cggqcpa.AjaxTransportJs$1$1$1 = function AjaxTransportJs$1$1$1(this$2, val$dfd){
   this.this$21 = this$2;
   this.val$dfd2 = val$dfd;
   cggqc.Function_0.call(this);
-  this.$init_192();
+  this.$init_191();
 }
 ;
-defineClass(306, 7, $intern_27, cggqcpa.AjaxTransportJs$1$1$1);
-_.$init_192 = function $init_192(){
+defineClass(319, 7, $intern_26, cggqcpa.AjaxTransportJs$1$1$1);
+_.$init_191 = function $init_191(){
 }
 ;
 _.f = function f_27(){
   this.val$dfd2.resolve_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [this.this$21.this$11.scriptElement]));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs$1$1$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs/1/1/1', 306, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_AjaxTransportJs$1$1$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'AjaxTransportJs/1/1/1', 319, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpa.$clinit_Ajax_Settings_JsonBuilder = function $clinit_Ajax_Settings_JsonBuilder(){
   cggqcpa.$clinit_Ajax_Settings_JsonBuilder = emptyMethod;
   cggqcb.$clinit_JsonBuilderBase();
@@ -17532,11 +16843,14 @@ cggqcpa.$clinit_Ajax_Settings_JsonBuilder = function $clinit_Ajax_Settings_JsonB
 cggqcpa.Ajax_Settings_JsonBuilder = function Ajax_Settings_JsonBuilder(){
   cggqcpa.$clinit_Ajax_Settings_JsonBuilder();
   cggqcb.JsonBuilderBase.call(this);
-  this.$init_193();
+  this.$init_192();
 }
 ;
-defineClass(354, 64, {33:1, 102:1, 64:1, 144:1, 1:1}, cggqcpa.Ajax_Settings_JsonBuilder);
-_.$init_193 = function $init_193(){
+defineClass(355, 68, {42:1, 56:1, 68:1, 147:1, 1:1}, cggqcpa.Ajax_Settings_JsonBuilder);
+_.$init_192 = function $init_192(){
+  {
+    this.fieldNames = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['headers', 'data', 'dataString', 'dataType', 'error', 'type', 'timeout', 'url', 'password', 'withCredentials', 'success', 'context', 'contentType', 'username']);
+  }
 }
 ;
 _.getContentType = function getContentType(){
@@ -17548,7 +16862,7 @@ _.getContext = function getContext(){
 }
 ;
 _.getData = function getData(){
-  return dynamicCastAllowJso(dynamicCastAllowJso(cggqc.$getJavaScriptObject(this.p, 'data'), 33), 33);
+  return dynamicCastAllowJso(this.getPropertiesBase('data'), 42);
 }
 ;
 _.getDataString = function getDataString(){
@@ -17563,12 +16877,8 @@ _.getError = function getError(){
   return cggqc.$getFunction(this.p, 'error');
 }
 ;
-_.getFieldNames = function getFieldNames_0(){
-  return initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['headers', 'data', 'dataString', 'dataType', 'error', 'type', 'timeout', 'url', 'password', 'withCredentials', 'success', 'context', 'contentType', 'username']);
-}
-;
 _.getHeaders = function getHeaders(){
-  return dynamicCastAllowJso(dynamicCastAllowJso(cggqc.$getJavaScriptObject(this.p, 'headers'), 33), 33);
+  return dynamicCastAllowJso(this.getPropertiesBase('headers'), 42);
 }
 ;
 _.getPassword = function getPassword(){
@@ -17629,7 +16939,7 @@ _.setUrl = function setUrl(a){
   return this;
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax_1Settings_1JsonBuilder_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax_Settings_JsonBuilder', 354, cggl.Lcom_google_gwt_query_client_builders_JsonBuilderBase_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_ajax_Ajax_1Settings_1JsonBuilder_2_classLit = createForClass('com.google.gwt.query.client.plugins.ajax', 'Ajax_Settings_JsonBuilder', 355, cggl.Lcom_google_gwt_query_client_builders_JsonBuilderBase_2_classLit);
 cggqcpd.$clinit_Callbacks = function $clinit_Callbacks(){
   cggqcpd.$clinit_Callbacks = emptyMethod;
   jl.$clinit_Object();
@@ -17638,22 +16948,22 @@ cggqcpd.$clinit_Callbacks = function $clinit_Callbacks(){
 cggqcpd.Callbacks = function Callbacks(options){
   cggqcpd.$clinit_Callbacks();
   Object_0.call(this);
-  this.$init_194();
+  this.$init_193();
   this.isOnce = jl.contains_Ljava_lang_CharSequence__Z__devirtual$(options, 'once');
   this.isMemory = jl.contains_Ljava_lang_CharSequence__Z__devirtual$(options, 'memory');
   this.isUnique = jl.contains_Ljava_lang_CharSequence__Z__devirtual$(options, 'unique');
   this.stopOnFalse = jl.contains_Ljava_lang_CharSequence__Z__devirtual$(options, 'stopOnFalse');
 }
 ;
-defineClass(35, 1, {35:1, 1:1}, cggqcpd.Callbacks);
-_.$init_194 = function $init_194(){
+defineClass(33, 1, {33:1, 1:1}, cggqcpd.Callbacks);
+_.$init_193 = function $init_193(){
   this.stack_0 = new ju.ArrayList;
   this.done = false;
   this.memory = null;
 }
 ;
-_.add_2 = function add_3(f_0){
-  this.addAll(dynamicCast(f_0, 4));
+_.add_2 = function add_3(f){
+  this.addAll(dynamicCast(f, 4));
   return this;
 }
 ;
@@ -17662,7 +16972,7 @@ _.addAll = function addAll(o){
   for (c$array = o , c$index = 0 , c$max = c$array.length; c$index < c$max; ++c$index) {
     c = c$array[c$index];
     if (!this.done && isNotNull(this.stack_0) && jsNotEquals(c, null) && (!this.isUnique || !this.stack_0.contains_1(c))) {
-      this.stack_0.add_3(c);
+      this.stack_0.add_4(c);
     }
     if (this.isMemory && isNotNull(this.memory)) {
       this.run_3(c, this.memory.toArray());
@@ -17712,10 +17022,10 @@ _.run_3 = function run_6(c, o){
   }
    else if (instanceOf(c, 7)) {
     r = dynamicCast(c, 7).f_8(o);
-    return instanceOf(r, 23)?dynamicCast(r, 23).booleanValue():true;
+    return instanceOf(r, 24)?dynamicCast(r, 24).booleanValue():true;
   }
-   else if (instanceOf(c, 157)) {
-    dynamicCast(c, 157).onSuccess_0(o);
+   else if (instanceOf(c, 158)) {
+    dynamicCast(c, 158).onSuccess_0(o);
   }
   return true;
 }
@@ -17729,7 +17039,7 @@ _.isMemory = false;
 _.isOnce = false;
 _.isUnique = false;
 _.stopOnFalse = false;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Callbacks_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Callbacks', 35, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Callbacks_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Callbacks', 33, cggl.Ljava_lang_Object_2_classLit);
 cggqcpd.$clinit_Callbacks$Callback = function $clinit_Callbacks$Callback(){
   cggqcpd.$clinit_Callbacks$Callback = emptyMethod;
 }
@@ -17742,13 +17052,13 @@ cggqcpd.$clinit_Deferred = function $clinit_Deferred(){
 cggqcpd.Deferred_0 = function Deferred_0(){
   cggqcpd.$clinit_Deferred();
   Object_0.call(this);
-  this.$init_195();
+  this.$init_194();
   this.resolve.add_2(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$2(this)]));
   this.reject.add_2(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$3(this)]));
 }
 ;
-defineClass(117, 1, $intern_0, cggqcpd.Deferred_0);
-_.$init_195 = function $init_195(){
+defineClass(112, 1, $intern_0, cggqcpd.Deferred_0);
+_.$init_194 = function $init_194(){
   this.notify = new cggqcpd.Callbacks('memory');
   this.promise = null;
   this.reject = new cggqcpd.Callbacks('once memory');
@@ -17797,12 +17107,12 @@ _.toString$ = function toString_20(){
   return 'Deferred this=' + this.hashCode$() + ' promise=' + this.promise_0().hashCode$() + ' state=' + this.promise.state_0() + ' restatus=' + this.resolve.status_0();
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred', 117, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred', 112, cggl.Ljava_lang_Object_2_classLit);
 cggqcpd.$clinit_Deferred$1 = function $clinit_Deferred$1(){
   cggqcpd.$clinit_Deferred$1 = emptyMethod;
 }
 ;
-defineClass(736, 303, $intern_36);
+defineClass(507, 210, $intern_29);
 cggqcpd.$clinit_Deferred$2 = function $clinit_Deferred$2(){
   cggqcpd.$clinit_Deferred$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17812,11 +17122,11 @@ cggqcpd.Deferred$2 = function Deferred$2(this$0){
   cggqcpd.$clinit_Deferred$2();
   this.this$01 = this$0;
   cggqc.Function_0.call(this);
-  this.$init_196();
+  this.$init_195();
 }
 ;
-defineClass(311, 7, $intern_27, cggqcpd.Deferred$2);
-_.$init_196 = function $init_196(){
+defineClass(215, 7, $intern_26, cggqcpd.Deferred$2);
+_.$init_195 = function $init_195(){
 }
 ;
 _.f = function f_28(){
@@ -17825,7 +17135,7 @@ _.f = function f_28(){
   this.this$01.notify.lock();
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/2', 311, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/2', 215, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$3 = function $clinit_Deferred$3(){
   cggqcpd.$clinit_Deferred$3 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17835,11 +17145,11 @@ cggqcpd.Deferred$3 = function Deferred$3(this$0){
   cggqcpd.$clinit_Deferred$3();
   this.this$01 = this$0;
   cggqc.Function_0.call(this);
-  this.$init_197();
+  this.$init_196();
 }
 ;
-defineClass(312, 7, $intern_27, cggqcpd.Deferred$3);
-_.$init_197 = function $init_197(){
+defineClass(216, 7, $intern_26, cggqcpd.Deferred$3);
+_.$init_196 = function $init_196(){
 }
 ;
 _.f = function f_29(){
@@ -17848,7 +17158,7 @@ _.f = function f_29(){
   this.this$01.notify.lock();
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$3_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/3', 312, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$3_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/3', 216, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$DeferredPromiseImpl$1 = function $clinit_Deferred$DeferredPromiseImpl$1(){
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$1 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17858,18 +17168,18 @@ cggqcpd.Deferred$DeferredPromiseImpl$1 = function Deferred$DeferredPromiseImpl$1
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$1();
   this.this$11 = this$1;
   cggqc.Function_0.call(this);
-  this.$init_198();
+  this.$init_197();
 }
 ;
-defineClass(309, 7, $intern_27, cggqcpd.Deferred$DeferredPromiseImpl$1);
-_.$init_198 = function $init_198(){
+defineClass(213, 7, $intern_26, cggqcpd.Deferred$DeferredPromiseImpl$1);
+_.$init_197 = function $init_197(){
 }
 ;
 _.f = function f_30(){
   this.this$11.dfd.resolve_1(this.arguments_0);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/1', 309, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/1', 213, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$DeferredPromiseImpl$2 = function $clinit_Deferred$DeferredPromiseImpl$2(){
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17879,18 +17189,18 @@ cggqcpd.Deferred$DeferredPromiseImpl$2 = function Deferred$DeferredPromiseImpl$2
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$2();
   this.this$11 = this$1;
   cggqc.Function_0.call(this);
-  this.$init_199();
+  this.$init_198();
 }
 ;
-defineClass(310, 7, $intern_27, cggqcpd.Deferred$DeferredPromiseImpl$2);
-_.$init_199 = function $init_199(){
+defineClass(214, 7, $intern_26, cggqcpd.Deferred$DeferredPromiseImpl$2);
+_.$init_198 = function $init_198(){
 }
 ;
 _.f = function f_31(){
   this.this$11.dfd.reject_1(this.arguments_0);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/2', 310, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/2', 214, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction = function $clinit_Deferred$DeferredPromiseImpl$ThenFunction(){
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction = emptyMethod;
   cggqc.$clinit_Function();
@@ -17899,15 +17209,15 @@ cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction = function $clinit_Def
 cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction = function Deferred$DeferredPromiseImpl$ThenFunction(newDfd, subordinates, funcType, continueFlow){
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction();
   cggqc.Function_0.call(this);
-  this.$init_200();
+  this.$init_199();
   this.type_0 = funcType;
   this.filter_0 = subordinates.length > this.type_0?subordinates[this.type_0]:null;
   this.dfd = newDfd;
   this.cont = continueFlow;
 }
 ;
-defineClass(118, 7, $intern_27, cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction);
-_.$init_200 = function $init_200(){
+defineClass(113, 7, $intern_26, cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction);
+_.$init_199 = function $init_199(){
   this.cont = false;
 }
 ;
@@ -17916,8 +17226,8 @@ _.f = function f_32(){
   oldArgs = this.getArguments();
   if (isNotNull(this.filter_0)) {
     newArgs = this.filter_0.setArguments(oldArgs).f_8(oldArgs);
-    if (instanceOf(newArgs, 66)) {
-      p = dynamicCast(newArgs, 66);
+    if (instanceOf(newArgs, 44)) {
+      p = dynamicCast(newArgs, 44);
       if (this.type_0 == 2) {
         p.progress(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$1(this)]));
       }
@@ -17947,7 +17257,7 @@ _.settle = function settle(action, args){
 ;
 _.cont = false;
 _.type_0 = 0;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$ThenFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/ThenFunction', 118, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$ThenFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/ThenFunction', 113, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction$1 = function $clinit_Deferred$DeferredPromiseImpl$ThenFunction$1(){
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction$1 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17957,18 +17267,18 @@ cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$1 = function Deferred$Deferred
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction$1();
   this.this$21 = this$2;
   cggqc.Function_0.call(this);
-  this.$init_201();
+  this.$init_200();
 }
 ;
-defineClass(307, 7, $intern_27, cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$1);
-_.$init_201 = function $init_201(){
+defineClass(211, 7, $intern_26, cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$1);
+_.$init_200 = function $init_200(){
 }
 ;
 _.f = function f_33(){
   this.this$21.settle(2, this.getArguments());
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$ThenFunction$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/ThenFunction/1', 307, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$ThenFunction$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/ThenFunction/1', 211, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction$2 = function $clinit_Deferred$DeferredPromiseImpl$ThenFunction$2(){
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl$ThenFunction$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -17979,38 +17289,38 @@ cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$2 = function Deferred$Deferred
   this.this$21 = this$2;
   this.val$p2 = val$p;
   cggqc.Function_0.call(this);
-  this.$init_202();
+  this.$init_201();
 }
 ;
-defineClass(308, 7, $intern_27, cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$2);
-_.$init_202 = function $init_202(){
+defineClass(212, 7, $intern_26, cggqcpd.Deferred$DeferredPromiseImpl$ThenFunction$2);
+_.$init_201 = function $init_201(){
 }
 ;
 _.f = function f_34(){
   this.this$21.settle((this.this$21.type_0 == 0 || this.this$21.type_0 == 1 && this.this$21.cont) && this.val$p2.isResolved()?0:1, this.getArguments());
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$ThenFunction$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/ThenFunction/2', 308, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl$ThenFunction$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'Deferred/DeferredPromiseImpl/ThenFunction/2', 212, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_Deferred$WhenDeferredImpl = function $clinit_Deferred$WhenDeferredImpl(){
   cggqcpd.$clinit_Deferred$WhenDeferredImpl = emptyMethod;
 }
 ;
-defineClass(732, 117, $intern_0);
+defineClass(503, 112, $intern_0);
 cggqcpd.$clinit_Deferred$WhenDeferredImpl$1 = function $clinit_Deferred$WhenDeferredImpl$1(){
   cggqcpd.$clinit_Deferred$WhenDeferredImpl$1 = emptyMethod;
 }
 ;
-defineClass(734, 7, $intern_27);
+defineClass(505, 7, $intern_26);
 cggqcpd.$clinit_Deferred$WhenDeferredImpl$2 = function $clinit_Deferred$WhenDeferredImpl$2(){
   cggqcpd.$clinit_Deferred$WhenDeferredImpl$2 = emptyMethod;
 }
 ;
-defineClass(735, 7, $intern_27);
+defineClass(506, 7, $intern_26);
 cggqcpd.$clinit_Deferred$WhenDeferredImpl$DoneFnc = function $clinit_Deferred$WhenDeferredImpl$DoneFnc(){
   cggqcpd.$clinit_Deferred$WhenDeferredImpl$DoneFnc = emptyMethod;
 }
 ;
-defineClass(733, 7, $intern_27);
+defineClass(504, 7, $intern_26);
 cggqcpd.$clinit_PromiseReqBuilder = function $clinit_PromiseReqBuilder(){
   cggqcpd.$clinit_PromiseReqBuilder = emptyMethod;
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
@@ -18020,7 +17330,7 @@ cggqcpd.PromiseReqBuilder = function PromiseReqBuilder(settings){
   cggqcpd.$clinit_PromiseReqBuilder();
   var ctype, data_0, e, headerKey, headerKey$array, headerKey$index, headerKey$max, headers, httpMethod, isFormData, request, requestPermissionException, upload, url_0, xmlHttpRequest;
   cggqcpd.Deferred$DeferredPromiseImpl.call(this);
-  this.$init_203();
+  this.$init_202();
   httpMethod = settings.getType();
   url_0 = settings.getUrl();
   data_0 = settings.getData();
@@ -18040,7 +17350,7 @@ cggqcpd.PromiseReqBuilder = function PromiseReqBuilder(settings){
   }
    catch ($e0) {
     $e0 = wrap($e0);
-    if (instanceOf($e0, 34)) {
+    if (instanceOf($e0, 32)) {
       e = $e0;
       requestPermissionException = new cgghc.RequestPermissionException(url_0);
       requestPermissionException.initCause(new cgghc.RequestException(e.getMessage()));
@@ -18071,7 +17381,7 @@ cggqcpd.PromiseReqBuilder = function PromiseReqBuilder(settings){
   }
    catch ($e1) {
     $e1 = wrap($e1);
-    if (instanceOf($e1, 34)) {
+    if (instanceOf($e1, 32)) {
       e = $e1;
       this.onError(null, e);
     }
@@ -18080,8 +17390,8 @@ cggqcpd.PromiseReqBuilder = function PromiseReqBuilder(settings){
   }
 }
 ;
-defineClass(341, 101, $intern_36, cggqcpd.PromiseReqBuilder);
-_.$init_203 = function $init_203(){
+defineClass(340, 97, $intern_29, cggqcpd.PromiseReqBuilder);
+_.$init_202 = function $init_202(){
 }
 ;
 _.createRequestVltr = function createRequestVltr(rq, ms, cb){
@@ -18109,7 +17419,7 @@ _.onResponseReceived = function onResponseReceived(request, response){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder', 341, cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder', 340, cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit);
 cggqcpd.$clinit_PromiseReqBuilder$1 = function $clinit_PromiseReqBuilder$1(){
   cggqcpd.$clinit_PromiseReqBuilder$1 = emptyMethod;
   cggqc.$clinit_Function();
@@ -18119,11 +17429,11 @@ cggqcpd.PromiseReqBuilder$1 = function PromiseReqBuilder$1(this$0){
   cggqcpd.$clinit_PromiseReqBuilder$1();
   this.this$01 = this$0;
   cggqc.Function_0.call(this);
-  this.$init_204();
+  this.$init_203();
 }
 ;
-defineClass(342, 7, $intern_27, cggqcpd.PromiseReqBuilder$1);
-_.$init_204 = function $init_204(){
+defineClass(341, 7, $intern_26, cggqcpd.PromiseReqBuilder$1);
+_.$init_203 = function $init_203(){
 }
 ;
 _.f = function f_35(){
@@ -18135,7 +17445,7 @@ _.f = function f_35(){
   this.this$01.dfd.notify_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [jl.valueOf_13(total), jl.valueOf_13(loaded), jl.valueOf_13(percent), 'download']));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder/1', 342, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder/1', 341, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_PromiseReqBuilder$2 = function $clinit_PromiseReqBuilder$2(){
   cggqcpd.$clinit_PromiseReqBuilder$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -18145,11 +17455,11 @@ cggqcpd.PromiseReqBuilder$2 = function PromiseReqBuilder$2(this$0){
   cggqcpd.$clinit_PromiseReqBuilder$2();
   this.this$01 = this$0;
   cggqc.Function_0.call(this);
-  this.$init_205();
+  this.$init_204();
 }
 ;
-defineClass(343, 7, $intern_27, cggqcpd.PromiseReqBuilder$2);
-_.$init_205 = function $init_205(){
+defineClass(342, 7, $intern_26, cggqcpd.PromiseReqBuilder$2);
+_.$init_204 = function $init_204(){
 }
 ;
 _.f = function f_36(){
@@ -18161,7 +17471,7 @@ _.f = function f_36(){
   this.this$01.dfd.notify_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [jl.valueOf_13(total), jl.valueOf_13(loaded), jl.valueOf_13(percent), 'upload']));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder/2', 343, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder/2', 342, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggqcpd.$clinit_PromiseReqBuilder$3 = function $clinit_PromiseReqBuilder$3(){
   cggqcpd.$clinit_PromiseReqBuilder$3 = emptyMethod;
   jl.$clinit_Object();
@@ -18172,11 +17482,11 @@ cggqcpd.PromiseReqBuilder$3 = function PromiseReqBuilder$3(this$0, val$request){
   this.this$01 = this$0;
   this.val$request2 = val$request;
   Object_0.call(this);
-  this.$init_206();
+  this.$init_205();
 }
 ;
-defineClass(344, 1, $intern_0, cggqcpd.PromiseReqBuilder$3);
-_.$init_206 = function $init_206(){
+defineClass(343, 1, $intern_0, cggqcpd.PromiseReqBuilder$3);
+_.$init_205 = function $init_205(){
 }
 ;
 _.onReadyStateChange = function onReadyStateChange(xhr){
@@ -18186,7 +17496,7 @@ _.onReadyStateChange = function onReadyStateChange(xhr){
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder$3_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder/3', 344, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilder$3_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilder/3', 343, cggl.Ljava_lang_Object_2_classLit);
 cggqcpd.$clinit_PromiseReqBuilderJSONP = function $clinit_PromiseReqBuilderJSONP(){
   cggqcpd.$clinit_PromiseReqBuilderJSONP = emptyMethod;
   cggqcpd.$clinit_Deferred$DeferredPromiseImpl();
@@ -18201,7 +17511,7 @@ cggqcpd.PromiseReqBuilderJSONP = function PromiseReqBuilderJSONP(url_0, timeout)
 cggqcpd.PromiseReqBuilderJSONP_0 = function PromiseReqBuilderJSONP_0(url_0, callbackParam, timeout){
   var builder, tmp;
   cggqcpd.Deferred$DeferredPromiseImpl.call(this);
-  this.$init_207();
+  this.$init_206();
   builder = new cggjc.JsonpRequestBuilder;
   if (timeout > 0) {
     builder.setTimeout_0(timeout);
@@ -18219,15 +17529,15 @@ cggqcpd.PromiseReqBuilderJSONP_0 = function PromiseReqBuilderJSONP_0(url_0, call
   this.send_3(builder, url_0, new cggqcpd.PromiseReqBuilderJSONP$1(this));
 }
 ;
-defineClass(151, 101, $intern_36, cggqcpd.PromiseReqBuilderJSONP);
-_.$init_207 = function $init_207(){
+defineClass(153, 97, $intern_29, cggqcpd.PromiseReqBuilderJSONP);
+_.$init_206 = function $init_206(){
 }
 ;
 _.send_3 = function send_2(bld, url_0, cb){
   bld.send_2(url_0, cb, false);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilderJSONP_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilderJSONP', 151, cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilderJSONP_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilderJSONP', 153, cggl.Lcom_google_gwt_query_client_plugins_deferred_Deferred$DeferredPromiseImpl_2_classLit);
 cggqcpd.$clinit_PromiseReqBuilderJSONP$1 = function $clinit_PromiseReqBuilderJSONP$1(){
   cggqcpd.$clinit_PromiseReqBuilderJSONP$1 = emptyMethod;
   jl.$clinit_Object();
@@ -18237,11 +17547,11 @@ cggqcpd.PromiseReqBuilderJSONP$1 = function PromiseReqBuilderJSONP$1(this$0){
   cggqcpd.$clinit_PromiseReqBuilderJSONP$1();
   this.this$01 = this$0;
   Object_0.call(this);
-  this.$init_208();
+  this.$init_207();
 }
 ;
-defineClass(340, 1, $intern_0, cggqcpd.PromiseReqBuilderJSONP$1);
-_.$init_208 = function $init_208(){
+defineClass(339, 1, $intern_0, cggqcpd.PromiseReqBuilderJSONP$1);
+_.$init_207 = function $init_207(){
 }
 ;
 _.onFailure_1 = function onFailure_5(caught){
@@ -18252,7 +17562,7 @@ _.onSuccess_0 = function onSuccess_5(result){
   this.this$01.dfd.resolve_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [result]));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilderJSONP$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilderJSONP/1', 340, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_deferred_PromiseReqBuilderJSONP$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.deferred', 'PromiseReqBuilderJSONP/1', 339, cggl.Ljava_lang_Object_2_classLit);
 cggqcpe.$clinit_Bezier = function $clinit_Bezier(){
   cggqcpe.$clinit_Bezier = emptyMethod;
   jl.$clinit_Object();
@@ -18261,15 +17571,15 @@ cggqcpe.$clinit_Bezier = function $clinit_Bezier(){
 cggqcpe.Bezier = function Bezier(x1, y1, x2, y2){
   cggqcpe.$clinit_Bezier();
   Object_0.call(this);
-  this.$init_209();
+  this.$init_208();
   this.x1 = x1;
   this.y1 = y1;
   this.x2 = x2;
   this.y2 = y2;
 }
 ;
-defineClass(154, 1, $intern_0, cggqcpe.Bezier);
-_.$init_209 = function $init_209(){
+defineClass(155, 1, $intern_0, cggqcpe.Bezier);
+_.$init_208 = function $init_208(){
 }
 ;
 _.a = function a_0(a1, a2){
@@ -18317,45 +17627,24 @@ _.x1 = 0;
 _.x2 = 0;
 _.y1 = 0;
 _.y2 = 0;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Bezier_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Bezier', 154, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_Bezier_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Bezier', 155, cggl.Ljava_lang_Object_2_classLit);
 cggqcpe.$clinit_PropertiesAnimation = function $clinit_PropertiesAnimation(){
   cggqcpe.$clinit_PropertiesAnimation = emptyMethod;
   cggqcp.$clinit_Effects$GQAnimation();
   cggqcpe.ATTRS_TO_SAVE = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['overflow']);
-  cggqcpe.REGEX_NUMBER_UNIT = cggrs.compile('^([0-9+-.]+)(.*)?$');
-  cggqcpe.REGEX_SYMBOL_NUMBER_UNIT = cggrs.compile('^([+-]=)?([0-9+-.]+)(.*)?$');
-  cggqcpe.REGEX_NON_PIXEL_ATTRS = cggrs.compile_0('z-?index|font-?weight|opacity|zoom|line-?height|scale|rotation|^\\$', 'i');
+  cggqcpe.REGEX_NUMBER_UNIT = cggrs.compile('^(' + '[\\d+-.]+' + ')(.*)?$');
+  cggqcpe.REGEX_SYMBOL_NUMBER_UNIT = cggrs.compile('^([+-]=)?(' + '[\\d+-.]+' + ')(' + '[a-z%]+' + ')?$');
+  cggqcpe.REGEX_SCALE_ATTRS = cggrs.compile('scale|opacity');
+  cggqcpe.REGEX_NON_PIXEL_ATTRS = cggrs.compile_0('scale|opacity|z-?index|font-?weight|zoom|line-?height|rotat|skew|perspect|^\\$', 'i');
   cggqcpe.REGEX_COLOR_ATTR = cggrs.compile_0('.*color$', 'i');
   cggqcpe.REGEX_BORDERCOLOR = cggrs.compile_0('^bordercolor$', 'i');
   cggqcpe.REGEX_BACKGROUNDCOLOR = cggrs.compile_0('^backgroundcolor$', 'i');
 }
 ;
-cggqcpe.PropertiesAnimation = function PropertiesAnimation(ease, elem, p, funcs){
+cggqcpe.PropertiesAnimation = function PropertiesAnimation(){
   cggqcpe.$clinit_PropertiesAnimation();
-  var e;
   cggqcp.Effects$GQAnimation.call(this);
-  this.$init_210();
-  try {
-    this.easing = cggqcpe.valueOf_7(cggqc.$getStr(p, 'easing'));
-  }
-   catch ($e0) {
-    $e0 = wrap($e0);
-    if (instanceOf($e0, 9)) {
-      e = $e0;
-    }
-     else 
-      throw unwrap($e0);
-  }
-  if (isNull(this.easing)) {
-    this.easing = ease;
-  }
-  if (isNull(this.easing)) {
-    this.easing = (cggqcpe.$clinit_PropertiesAnimation$EasingCurve() , cggqcpe.swing);
-  }
-  this.funcs = funcs;
-  this.setProperties(p);
-  this.setElement_0(elem);
-  this.g_0 = dynamicCast(cggqc.$_1(this.e).as((cggqcp.$clinit_Effects() , cggqcp.Effects_0)), 47);
+  this.$init_209();
 }
 ;
 cggqcpe.computeFxColorProp = function computeFxColorProp(e, key, val){
@@ -18367,7 +17656,7 @@ cggqcpe.computeFxColorProp = function computeFxColorProp(e, key, val){
   if (cggrs.$test(cggqcpe.REGEX_BACKGROUNDCOLOR, key)) {
     current = e;
     while ((jsEquals(initialColor, null) || jl.length__I__devirtual$_0(initialColor) == 0 || jl.equals_Ljava_lang_Object__Z__devirtual$_0(initialColor, 'transparent')) && isNotNull(current)) {
-      initialColor = cggqc.$_1(current).css_2(key, false);
+      initialColor = cggqc.$_0(current).css_2(key, false);
       current = !jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('body', cggdc.$getTagName(current))?cggdc.$getParentElement(current):null;
     }
     if (jsEquals(initialColor, null) || jl.length__I__devirtual$_0(initialColor) == 0 || jl.equals_Ljava_lang_Object__Z__devirtual$_0(initialColor, 'transparent')) {
@@ -18375,14 +17664,14 @@ cggqcpe.computeFxColorProp = function computeFxColorProp(e, key, val){
     }
   }
    else {
-    initialColor = cggqc.$_1(e).css_2(key, true);
+    initialColor = cggqc.$_0(e).css_2(key, true);
   }
   return new cggqcpe.Fx$ColorFx_0(key, initialColor, val);
 }
 ;
 cggqcpe.computeFxNumericProp = function computeFxNumericProp(e, key, val, hidden){
-  var $1, $2, $3, attr, cur, end, g, parts, rkey, start_0, to, unit;
-  g = cggqc.$_1(e);
+  var attr, cur, end, g, p1, p2, p3, parts, rkey, start_0, to, unit;
+  g = cggqc.$_0(e);
   unit = '';
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('toggle', val)) {
     val = hidden?'show':'hide';
@@ -18399,10 +17688,10 @@ cggqcpe.computeFxNumericProp = function computeFxNumericProp(e, key, val, hidden
     attr = g.attr(rkey);
     parts = cggrs.$exec(cggqcpe.REGEX_NUMBER_UNIT, attr);
     if (isNotNull(parts)) {
-      $1 = cggrs.$getGroup(parts, 1);
-      $2 = cggrs.$getGroup(parts, 2);
-      cur = parseDouble($1);
-      unit = jsEquals($2, null)?'':$2;
+      p1 = cggrs.$getGroup(parts, 1);
+      p2 = cggrs.$getGroup(parts, 2);
+      cur = parseDouble(p1);
+      unit = jsEquals(p2, null)?'':p2;
     }
      else {
       cur = g.cur(key, true);
@@ -18420,9 +17709,6 @@ cggqcpe.computeFxNumericProp = function computeFxNumericProp(e, key, val, hidden
     unit = cggrs.$test(cggqcpe.REGEX_NON_PIXEL_ATTRS, key)?'':'px';
   }
    else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('hide', val)) {
-    if (hidden) {
-      return null;
-    }
     g.saveCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [key]));
     end = 0;
     unit = cggrs.$test(cggqcpe.REGEX_NON_PIXEL_ATTRS, key)?'':'px';
@@ -18430,12 +17716,12 @@ cggqcpe.computeFxNumericProp = function computeFxNumericProp(e, key, val, hidden
    else {
     parts = cggrs.$exec(cggqcpe.REGEX_SYMBOL_NUMBER_UNIT, val);
     if (isNotNull(parts)) {
-      $1 = cggrs.$getGroup(parts, 1);
-      $2 = cggrs.$getGroup(parts, 2);
-      $3 = cggrs.$getGroup(parts, 3);
-      end = parseDouble($2);
+      p1 = cggrs.$getGroup(parts, 1);
+      p2 = cggrs.$getGroup(parts, 2);
+      p3 = cggrs.$getGroup(parts, 3);
+      end = parseDouble(p2);
       if (jsEquals(rkey, null)) {
-        unit = cggrs.$test(cggqcpe.REGEX_NON_PIXEL_ATTRS, key)?'':jsEquals($3, null) || jl.isEmpty__Z__devirtual$($3)?'px':$3;
+        unit = cggrs.$test(cggqcpe.REGEX_NON_PIXEL_ATTRS, key)?'':jsEquals(p3, null) || jl.isEmpty__Z__devirtual$(p3)?'px':p3;
         if (!jl.equals_Ljava_lang_Object__Z__devirtual$_0('px', unit)) {
           to = end == 0?1:end;
           g.css_1(key, to + unit);
@@ -18443,11 +17729,11 @@ cggqcpe.computeFxNumericProp = function computeFxNumericProp(e, key, val, hidden
           g.css_1(key, start_0 + unit);
         }
       }
-       else if (jsNotEquals($3, null) && !jl.isEmpty__Z__devirtual$($3)) {
-        unit = $3;
+       else if (jsNotEquals(p3, null) && !jl.isEmpty__Z__devirtual$(p3)) {
+        unit = p3;
       }
-      if (jsNotEquals($1, null) && !jl.isEmpty__Z__devirtual$($1)) {
-        end = (jl.equals_Ljava_lang_Object__Z__devirtual$_0('-=', $1)?-1:1) * end + start_0;
+      if (jsNotEquals(p1, null) && !jl.isEmpty__Z__devirtual$(p1)) {
+        end = (jl.equals_Ljava_lang_Object__Z__devirtual$_0('-=', p1)?-1:1) * end + start_0;
       }
     }
   }
@@ -18461,8 +17747,12 @@ cggqcpe.computeFxProp = function computeFxProp(e, key, val, hidden){
   return cggqcpe.computeFxNumericProp(e, key, val, hidden);
 }
 ;
-defineClass(61, 111, $intern_0);
-_.$init_210 = function $init_210(){
+defineClass(54, 52, $intern_0);
+_.$init_209 = function $init_209(){
+}
+;
+_.getFx = function getFx(e, key, val, hidden){
+  return cggqcpe.computeFxProp(e, key, val, hidden);
 }
 ;
 _.interpolate = function interpolate_0(progress){
@@ -18471,33 +17761,33 @@ _.interpolate = function interpolate_0(progress){
 ;
 _.onCancel = function onCancel_0(){
   var jumpToEnd;
-  jumpToEnd = dynamicCast(cggqc.$_1(this.e).data_2((cggqcp.$clinit_QueuePlugin() , cggqcp.JUMP_TO_END), cggl.Ljava_lang_Boolean_2_classLit), 23);
+  jumpToEnd = dynamicCast(cggqc.$_0(this.e).data_2((cggqcp.$clinit_QueuePlugin() , cggqcp.JUMP_TO_END), cggl.Ljava_lang_Boolean_2_classLit), 24);
   if (isNotNull(jumpToEnd) && jumpToEnd.booleanValue()) {
     this.onComplete();
   }
    else {
-    this.g_0.dequeue_0();
-    this.g_0.restoreCssAttrs(cggqcpe.ATTRS_TO_SAVE);
+    this.g.dequeue();
+    this.g.restoreCssAttrs(cggqcpe.ATTRS_TO_SAVE);
   }
 }
 ;
 _.onComplete = function onComplete_1(){
   var fx, i_0;
-  getClassPrototype(111).onComplete.call(this);
-  for (i_0 = 0; i_0 < cggqcj.$length_4(this.effects); i_0++) {
-    fx = dynamicCast(cggqcj.$get_9(this.effects, i_0), 26);
+  getClassPrototype(52).onComplete.call(this);
+  for (i_0 = 0; isNotNull(this.effects) && i_0 < cggqcj.$length_4(this.effects); i_0++) {
+    fx = dynamicCast(cggqcj.$get_9(this.effects, i_0), 25);
     if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('hide', fx.value_0)) {
-      this.g_0.hide();
-      this.g_0.restoreCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [fx.cssprop]));
+      this.g.hide();
+      this.g.restoreCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [fx.cssprop]));
     }
      else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('show', fx.value_0)) {
-      this.g_0.show();
-      this.g_0.restoreCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [fx.cssprop]));
+      this.g.show();
+      this.g.restoreCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [fx.cssprop]));
     }
   }
-  this.g_0.restoreCssAttrs(cggqcpe.ATTRS_TO_SAVE);
-  this.g_0.each(this.funcs);
-  this.g_0.dequeue_0();
+  this.g.restoreCssAttrs(cggqcpe.ATTRS_TO_SAVE);
+  this.g.each(this.funcs);
+  this.g.dequeue();
 }
 ;
 _.onStart = function onStart_1(){
@@ -18505,45 +17795,134 @@ _.onStart = function onStart_1(){
   this.effects = cggqcj.create_17();
   resize = false;
   move = false;
-  hidden = !this.g_0.isVisible();
+  hidden = !this.g.isVisible();
   for (key$array = cggqc.$keys(this.prps) , key$index = 0 , key$max = key$array.length; key$index < key$max; ++key$index) {
     key = key$array[key$index];
     val = cggqc.$getStr(this.prps, key);
-    if (isNotNull(fx = cggqcpe.computeFxProp(this.e, key, val, hidden))) {
-      cggqcj.$add_0(this.effects, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit, 1), $intern_6, 26, 0, [fx]));
+    if (isNotNull(fx = this.getFx(this.e, key, val, hidden))) {
+      cggqcj.$add_0(this.effects, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit, 1), $intern_6, 25, 0, [fx]));
       resize = resize || jl.equals_Ljava_lang_Object__Z__devirtual$_0('height', key) || jl.equals_Ljava_lang_Object__Z__devirtual$_0('width', key);
       move = move || jl.equals_Ljava_lang_Object__Z__devirtual$_0('top', key) || jl.equals_Ljava_lang_Object__Z__devirtual$_0('left', key);
     }
   }
-  this.g_0.saveCssAttrs(cggqcpe.ATTRS_TO_SAVE);
+  this.g.saveCssAttrs(cggqcpe.ATTRS_TO_SAVE);
   if (resize) {
-    this.g_0.css_1('overflow', 'hidden');
+    this.g.css_1('overflow', 'hidden');
   }
-  if (move && !jl.matches_Ljava_lang_String__Z__devirtual$(this.g_0.css_2('position', true), 'absolute|relative|fixed')) {
-    this.g_0.css_1('position', 'relative');
+  if (move && !jl.matches_Ljava_lang_String__Z__devirtual$(this.g.css_2('position', true), 'absolute|relative|fixed')) {
+    this.g.css_1('position', 'relative');
   }
-  getClassPrototype(111).onStart.call(this);
+  getClassPrototype(52).onStart.call(this);
 }
 ;
 _.onUpdate = function onUpdate(progress){
   var i_0;
   for (i_0 = 0; i_0 < cggqcj.$length_4(this.effects); i_0++) {
-    dynamicCast(cggqcj.$get_9(this.effects, i_0), 26).applyValue(this.g_0, progress);
+    dynamicCast(cggqcj.$get_9(this.effects, i_0), 25).applyValue(this.g, progress);
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation', 61, cggl.Lcom_google_gwt_query_client_plugins_Effects$GQAnimation_2_classLit);
+cggqcpe.NUMBER = '[\\d+-.]+';
+cggqcpe.UNIT = '[a-z%]+';
+cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation', 54, cggl.Lcom_google_gwt_query_client_plugins_Effects$GQAnimation_2_classLit);
 cggqcpe.$clinit_ClipAnimation = function $clinit_ClipAnimation(){
   cggqcpe.$clinit_ClipAnimation = emptyMethod;
   cggqcpe.$clinit_PropertiesAnimation();
   cggqcpe.attrsToSave = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['position', 'overflow', 'visibility', 'white-space', 'top', 'left', 'width', 'height']);
 }
 ;
-cggqcpe.ClipAnimation = function ClipAnimation(easing, elem, p, funcs){
+cggqcpe.ClipAnimation = function ClipAnimation(){
+  cggqcpe.PropertiesAnimation.call(this);
+  this.$init_210();
+}
+;
+cggqcpe.getNormalizedValue = function getNormalizedValue(value_0, p){
   cggqcpe.$clinit_ClipAnimation();
+  return jl.toUpperCase__Ljava_lang_String___devirtual$(jl.replace_Ljava_lang_CharSequence_Ljava_lang_CharSequence__Ljava_lang_String___devirtual$(cggqcj.hyphenize(cggqc.$getStr(p, value_0)), '-', '_'));
+}
+;
+defineClass(401, 54, $intern_0);
+_.$init_210 = function $init_210(){
+  this.back_0 = cggqc.$();
+}
+;
+_.onComplete = function onComplete_2(){
+  getClassPrototype(54).onComplete.call(this);
+  if (isNull(this.action)) {
+    return;
+  }
+  if (jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))) {
+    this.g.hide();
+  }
+  this.g.restoreCssAttrs(cggqcpe.attrsToSave);
+  this.back_0.remove_0();
+  this.back_0 = cggqc.$();
+  this.g.css_1('clip', '');
+}
+;
+_.onStart = function onStart_2(){
+  var hidden;
+  hidden = !this.g.isVisible();
+  getClassPrototype(54).onStart.call(this);
+  if (isNull(this.action)) {
+    return;
+  }
+  this.currentAction = jsNotEquals(this.action, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.TOGGLE))?this.action:hidden?(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.SHOW):(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE);
+  this.g.saveCssAttrs(cggqcpe.attrsToSave);
+  if (!jl.matches_Ljava_lang_String__Z__devirtual$(this.g.css_2('position', true), 'absolute|fixed')) {
+    this.back_0 = this.back_0.add_1(this.g.before_0('<div><\/div>')).prev_0();
+    this.back_0.height_1(this.g.height_0());
+    this.back_0.width_2(this.g.width_1());
+    this.g.css_1('top', this.g.offset().top_0 + 'px');
+    this.g.css_1('left', this.g.offset().left_0 + 'px');
+    this.g.css_1('width', this.g.width_1() + 'px');
+    this.g.css_1('height', this.g.height_0() + 'px');
+    this.g.css_1('position', 'absolute');
+  }
+  this.g.css_1('overflow', 'hidden');
+  this.g.css_1('visivility', 'visible');
+  this.onUpdate(0);
+  this.g.show();
+}
+;
+_.onUpdate = function onUpdate_0(progress){
+  var bottom, h, left, right, top_0, w;
+  getClassPrototype(54).onUpdate.call(this, progress);
+  if (isNull(this.action)) {
+    return;
+  }
+  if (jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))) {
+    progress = 1 - progress;
+  }
+  w = this.g.outerWidth_0();
+  h = this.g.outerHeight_0();
+  top_0 = 0;
+  left = 0;
+  right = w;
+  bottom = h;
+  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.VERTICAL)) || jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.BIDIRECTIONAL))) {
+    bottom = round_int(h * progress);
+  }
+  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.HORIZONTAL)) || jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.BIDIRECTIONAL))) {
+    right = round_int(w * progress);
+  }
+  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.CENTER))) {
+    top_0 = narrow_int((h - bottom) / 2);
+    left = narrow_int((w - right) / 2);
+  }
+  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.TOP_RIGHT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
+    left = w - right;
+    right = w;
+  }
+  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_LEFT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
+    top_0 = h - bottom;
+    bottom = h;
+  }
+  this.g.css_1('clip', 'rect(' + top_0 + 'px ' + right + 'px ' + bottom + 'px  ' + left + 'px)');
+}
+;
+_.setProperties = function setProperties_0(p){
   var e;
-  cggqcpe.PropertiesAnimation.call(this, easing, elem, p, funcs);
-  this.$init_211();
   this.corner = (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.CENTER);
   try {
     this.corner = cggqcpe.valueOf_5(cggqcpe.getNormalizedValue('clip-origin', p));
@@ -18579,95 +17958,10 @@ cggqcpe.ClipAnimation = function ClipAnimation(easing, elem, p, funcs){
      else 
       throw unwrap($e2);
   }
-  this.g = dynamicCast(cggqc.$_1(this.e).as((cggqcp.$clinit_Effects() , cggqcp.Effects_0)), 47);
+  return getClassPrototype(52).setProperties.call(this, p);
 }
 ;
-cggqcpe.getNormalizedValue = function getNormalizedValue(value_0, p){
-  cggqcpe.$clinit_ClipAnimation();
-  return jl.toUpperCase__Ljava_lang_String___devirtual$(jl.replace_Ljava_lang_CharSequence_Ljava_lang_CharSequence__Ljava_lang_String___devirtual$(cggqcj.hyphenize(cggqc.$getStr(p, value_0)), '-', '_'));
-}
-;
-defineClass(319, 61, $intern_0, cggqcpe.ClipAnimation);
-_.$init_211 = function $init_211(){
-  this.back_0 = cggqc.$();
-}
-;
-_.onComplete = function onComplete_2(){
-  getClassPrototype(61).onComplete.call(this);
-  if (isNull(this.action)) {
-    return;
-  }
-  if (jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))) {
-    this.g.hide();
-  }
-  this.g.restoreCssAttrs(cggqcpe.attrsToSave);
-  this.back_0.remove_0();
-  this.back_0 = cggqc.$();
-  this.g.css_1('clip', '');
-}
-;
-_.onStart = function onStart_2(){
-  var hidden;
-  hidden = !this.g.isVisible();
-  getClassPrototype(61).onStart.call(this);
-  if (isNull(this.action)) {
-    return;
-  }
-  this.currentAction = jsNotEquals(this.action, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.TOGGLE))?this.action:hidden?(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.SHOW):(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE);
-  this.g.saveCssAttrs(cggqcpe.attrsToSave);
-  if (!jl.matches_Ljava_lang_String__Z__devirtual$(this.g.css_2('position', true), 'absolute|fixed')) {
-    this.back_0 = this.back_0.add_1(this.g.before_0('<div><\/div>')).prev_0();
-    this.back_0.height_1(this.g.height_0());
-    this.back_0.width_2(this.g.width_1());
-    this.g.css_1('top', this.g.offset().top_0 + 'px');
-    this.g.css_1('left', this.g.offset().left_0 + 'px');
-    this.g.css_1('width', this.g.width_1() + 'px');
-    this.g.css_1('height', this.g.height_0() + 'px');
-    this.g.css_1('position', 'absolute');
-  }
-  this.g.css_1('overflow', 'hidden');
-  this.g.css_1('visivility', 'visible');
-  this.onUpdate(0);
-  this.g.show();
-}
-;
-_.onUpdate = function onUpdate_0(progress){
-  var bottom, h, left, right, top_0, w;
-  getClassPrototype(61).onUpdate.call(this, progress);
-  if (isNull(this.action)) {
-    return;
-  }
-  if (jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))) {
-    progress = 1 - progress;
-  }
-  w = this.g.outerWidth_0();
-  h = this.g.outerHeight_0();
-  top_0 = 0;
-  left = 0;
-  right = w;
-  bottom = h;
-  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.VERTICAL)) || jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.BIDIRECTIONAL))) {
-    bottom = round_int(h * progress);
-  }
-  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.HORIZONTAL)) || jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.BIDIRECTIONAL))) {
-    right = round_int(w * progress);
-  }
-  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.CENTER))) {
-    top_0 = narrow_int((h - bottom) / 2);
-    left = narrow_int((w - right) / 2);
-  }
-  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.TOP_RIGHT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
-    left = w - right;
-    right = w;
-  }
-  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_LEFT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
-    top_0 = h - bottom;
-    bottom = h;
-  }
-  this.g.css_1('clip', 'rect(' + top_0 + 'px ' + right + 'px ' + bottom + 'px  ' + left + 'px)');
-}
-;
-cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'ClipAnimation', 319, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'ClipAnimation', 401, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation_2_classLit);
 cggqcpe.$clinit_ClipAnimation$Action = function $clinit_ClipAnimation$Action(){
   cggqcpe.$clinit_ClipAnimation$Action = emptyMethod;
   jl.$clinit_Enum();
@@ -18678,7 +17972,7 @@ cggqcpe.$clinit_ClipAnimation$Action = function $clinit_ClipAnimation$Action(){
 ;
 cggqcpe.ClipAnimation$Action = function ClipAnimation$Action(enum$name, enum$ordinal){
   Enum.call(this, enum$name, enum$ordinal);
-  this.$init_212();
+  this.$init_211();
 }
 ;
 cggqcpe.valueOf_4 = function valueOf_4(name_0){
@@ -18688,20 +17982,20 @@ cggqcpe.valueOf_4 = function valueOf_4(name_0){
 ;
 cggqcpe.values_4 = function values_4(){
   cggqcpe.$clinit_ClipAnimation$Action();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Action_2_classLit, 1), $intern_6, 81, 0, [cggqcpe.HIDE, cggqcpe.SHOW, cggqcpe.TOGGLE]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Action_2_classLit, 1), $intern_6, 85, 0, [cggqcpe.HIDE, cggqcpe.SHOW, cggqcpe.TOGGLE]);
 }
 ;
-defineClass(81, 5, {81:1, 3:1, 6:1, 5:1, 1:1}, cggqcpe.ClipAnimation$Action);
-_.$init_212 = function $init_212(){
+defineClass(85, 5, {85:1, 3:1, 6:1, 5:1, 1:1}, cggqcpe.ClipAnimation$Action);
+_.$init_211 = function $init_211(){
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Action_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'ClipAnimation/Action', 81, cggl.Ljava_lang_Enum_2_classLit, cggqcpe.values_4, cggqcpe.valueOf_4);
+cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Action_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'ClipAnimation/Action', 85, cggl.Ljava_lang_Enum_2_classLit, cggqcpe.values_4, cggqcpe.valueOf_4);
 cggqcpe.$clinit_ClipAnimation$Action$Map = function $clinit_ClipAnimation$Action$Map(){
   cggqcpe.$clinit_ClipAnimation$Action$Map = emptyMethod;
   cggqcpe.$MAP_3 = createValueOfMap(cggqcpe.values_4());
 }
 ;
-defineClass(741, 1, $intern_0);
+defineClass(770, 1, $intern_0);
 cggqcpe.$clinit_ClipAnimation$Corner = function $clinit_ClipAnimation$Corner(){
   cggqcpe.$clinit_ClipAnimation$Corner = emptyMethod;
   jl.$clinit_Enum();
@@ -18714,7 +18008,7 @@ cggqcpe.$clinit_ClipAnimation$Corner = function $clinit_ClipAnimation$Corner(){
 ;
 cggqcpe.ClipAnimation$Corner = function ClipAnimation$Corner(enum$name, enum$ordinal){
   Enum.call(this, enum$name, enum$ordinal);
-  this.$init_213();
+  this.$init_212();
 }
 ;
 cggqcpe.valueOf_5 = function valueOf_5(name_0){
@@ -18724,20 +18018,20 @@ cggqcpe.valueOf_5 = function valueOf_5(name_0){
 ;
 cggqcpe.values_5 = function values_5(){
   cggqcpe.$clinit_ClipAnimation$Corner();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Corner_2_classLit, 1), $intern_6, 51, 0, [cggqcpe.BOTTOM_LEFT, cggqcpe.BOTTOM_RIGHT, cggqcpe.CENTER, cggqcpe.TOP_LEFT, cggqcpe.TOP_RIGHT]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Corner_2_classLit, 1), $intern_6, 55, 0, [cggqcpe.BOTTOM_LEFT, cggqcpe.BOTTOM_RIGHT, cggqcpe.CENTER, cggqcpe.TOP_LEFT, cggqcpe.TOP_RIGHT]);
 }
 ;
-defineClass(51, 5, {51:1, 3:1, 6:1, 5:1, 1:1}, cggqcpe.ClipAnimation$Corner);
-_.$init_213 = function $init_213(){
+defineClass(55, 5, {55:1, 3:1, 6:1, 5:1, 1:1}, cggqcpe.ClipAnimation$Corner);
+_.$init_212 = function $init_212(){
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Corner_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'ClipAnimation/Corner', 51, cggl.Ljava_lang_Enum_2_classLit, cggqcpe.values_5, cggqcpe.valueOf_5);
+cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Corner_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'ClipAnimation/Corner', 55, cggl.Ljava_lang_Enum_2_classLit, cggqcpe.values_5, cggqcpe.valueOf_5);
 cggqcpe.$clinit_ClipAnimation$Corner$Map = function $clinit_ClipAnimation$Corner$Map(){
   cggqcpe.$clinit_ClipAnimation$Corner$Map = emptyMethod;
   cggqcpe.$MAP_4 = createValueOfMap(cggqcpe.values_5());
 }
 ;
-defineClass(742, 1, $intern_0);
+defineClass(771, 1, $intern_0);
 cggqcpe.$clinit_ClipAnimation$Direction = function $clinit_ClipAnimation$Direction(){
   cggqcpe.$clinit_ClipAnimation$Direction = emptyMethod;
   jl.$clinit_Enum();
@@ -18748,7 +18042,7 @@ cggqcpe.$clinit_ClipAnimation$Direction = function $clinit_ClipAnimation$Directi
 ;
 cggqcpe.ClipAnimation$Direction = function ClipAnimation$Direction(enum$name, enum$ordinal){
   Enum.call(this, enum$name, enum$ordinal);
-  this.$init_214();
+  this.$init_213();
 }
 ;
 cggqcpe.valueOf_6 = function valueOf_6(name_0){
@@ -18758,37 +18052,36 @@ cggqcpe.valueOf_6 = function valueOf_6(name_0){
 ;
 cggqcpe.values_6 = function values_6(){
   cggqcpe.$clinit_ClipAnimation$Direction();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Direction_2_classLit, 1), $intern_6, 82, 0, [cggqcpe.BIDIRECTIONAL, cggqcpe.HORIZONTAL, cggqcpe.VERTICAL]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Direction_2_classLit, 1), $intern_6, 86, 0, [cggqcpe.BIDIRECTIONAL, cggqcpe.HORIZONTAL, cggqcpe.VERTICAL]);
 }
 ;
-defineClass(82, 5, {82:1, 3:1, 6:1, 5:1, 1:1}, cggqcpe.ClipAnimation$Direction);
-_.$init_214 = function $init_214(){
+defineClass(86, 5, {86:1, 3:1, 6:1, 5:1, 1:1}, cggqcpe.ClipAnimation$Direction);
+_.$init_213 = function $init_213(){
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Direction_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'ClipAnimation/Direction', 82, cggl.Ljava_lang_Enum_2_classLit, cggqcpe.values_6, cggqcpe.valueOf_6);
+cggl.Lcom_google_gwt_query_client_plugins_effects_ClipAnimation$Direction_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'ClipAnimation/Direction', 86, cggl.Ljava_lang_Enum_2_classLit, cggqcpe.values_6, cggqcpe.valueOf_6);
 cggqcpe.$clinit_ClipAnimation$Direction$Map = function $clinit_ClipAnimation$Direction$Map(){
   cggqcpe.$clinit_ClipAnimation$Direction$Map = emptyMethod;
   cggqcpe.$MAP_5 = createValueOfMap(cggqcpe.values_6());
 }
 ;
-defineClass(743, 1, $intern_0);
+defineClass(772, 1, $intern_0);
 cggqcpe.$clinit_Fx = function $clinit_Fx(){
   cggqcpe.$clinit_Fx = emptyMethod;
   jl.$clinit_Object();
-  cggqcpe.css3 = jsNotEquals((cggqcpe.$clinit_Transitions() , cggqcpe.transition), null);
 }
 ;
 cggqcpe.Fx = function Fx(){
   cggqcpe.$clinit_Fx();
   Object_0.call(this);
-  this.$init_215();
+  this.$init_214();
   this.end = this.start_0 = -1;
 }
 ;
 cggqcpe.Fx_0 = function Fx_0(attr, value_0, start_0, end, unit, rkey){
   cggqcpe.$clinit_Fx();
   Object_0.call(this);
-  this.$init_215();
+  this.$init_214();
   this.cssprop = attr;
   this.value_0 = value_0;
   this.start_0 = start_0;
@@ -18797,14 +18090,14 @@ cggqcpe.Fx_0 = function Fx_0(attr, value_0, start_0, end, unit, rkey){
   this.attribute = rkey;
 }
 ;
-defineClass(26, 1, $intern_37, cggqcpe.Fx_0);
-_.$init_215 = function $init_215(){
+defineClass(25, 1, $intern_37, cggqcpe.Fx_0);
+_.$init_214 = function $init_214(){
 }
 ;
 _.applyValue = function applyValue(g, progress){
-  var ret, value_0;
+  var ret, val;
   ret = this.start_0 + (this.end - this.start_0) * progress;
-  value_0 = (jl.equals_Ljava_lang_Object__Z__devirtual$_0('px', this.unit)?round_int(ret):ret) + this.unit;
+  val = (jl.equals_Ljava_lang_Object__Z__devirtual$_0('px', this.unit)?round_int(ret):ret) + this.unit;
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('scrollTop', this.cssprop)) {
     g.scrollTop_1(round_int(ret));
   }
@@ -18812,10 +18105,10 @@ _.applyValue = function applyValue(g, progress){
     g.scrollLeft_1(round_int(ret));
   }
    else if (jsNotEquals(this.attribute, null)) {
-    g.attr_0(this.attribute, value_0);
+    g.attr_0(this.attribute, val);
   }
    else {
-    g.css_1(this.cssprop, value_0);
+    g.css_1(this.cssprop, val);
   }
 }
 ;
@@ -18825,9 +18118,8 @@ _.toString$ = function toString_22(){
 ;
 _.end = 0;
 _.start_0 = 0;
-cggqcpe.css3 = false;
 cggqcpe.off = false;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx', 26, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx', 25, cggl.Ljava_lang_Object_2_classLit);
 cggqcpe.$clinit_Fx$ColorFx = function $clinit_Fx$ColorFx(){
   cggqcpe.$clinit_Fx$ColorFx = emptyMethod;
   cggqcpe.$clinit_Fx();
@@ -18885,20 +18177,20 @@ cggqcpe.$clinit_Fx$ColorFx = function $clinit_Fx$ColorFx(){
 cggqcpe.Fx$ColorFx = function Fx$ColorFx(){
   cggqcpe.$clinit_Fx$ColorFx();
   cggqcpe.Fx.call(this);
-  this.$init_216();
+  this.$init_215();
 }
 ;
 cggqcpe.Fx$ColorFx_0 = function Fx$ColorFx_0(attr, startColorString, endColorString){
   cggqcpe.$clinit_Fx$ColorFx();
   cggqcpe.Fx.call(this);
-  this.$init_216();
+  this.$init_215();
   this.cssprop = attr;
   this.startColor = this.parseColor(startColorString);
   this.endColor = this.parseColor(endColorString);
 }
 ;
-defineClass(120, 26, $intern_37, cggqcpe.Fx$ColorFx_0);
-_.$init_216 = function $init_216(){
+defineClass(126, 25, $intern_37, cggqcpe.Fx$ColorFx_0);
+_.$init_215 = function $init_215(){
 }
 ;
 _.applyValue = function applyValue_0(g, progress){
@@ -18962,7 +18254,7 @@ _.parseRGBColor = function parseRGBColor(matches){
   return result;
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$ColorFx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx/ColorFx', 120, cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$ColorFx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx/ColorFx', 126, cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit);
 cggqcpe.$clinit_Fx$ColorFx$BorderColorFx = function $clinit_Fx$ColorFx$BorderColorFx(){
   cggqcpe.$clinit_Fx$ColorFx$BorderColorFx = emptyMethod;
   cggqcpe.$clinit_Fx$ColorFx();
@@ -18971,21 +18263,21 @@ cggqcpe.$clinit_Fx$ColorFx$BorderColorFx = function $clinit_Fx$ColorFx$BorderCol
 ;
 cggqcpe.Fx$ColorFx$BorderColorFx = function Fx$ColorFx$BorderColorFx(e, endColorString){
   cggqcpe.$clinit_Fx$ColorFx$BorderColorFx();
-  var $e, border, border$array, border$index, border$max, startColor;
+  var border, border$array, border$index, border$max, g, startColor;
   cggqcpe.Fx$ColorFx.call(this);
-  this.$init_217();
+  this.$init_216();
   this.endColor = this.parseColor(endColorString);
   this.startColors = cggqcj.create_14();
-  $e = cggqc.$_1(e);
+  g = cggqc.$_0(e);
   for (border$array = cggqcpe.borderColorProperties , border$index = 0 , border$max = border$array.length; border$index < border$max; ++border$index) {
     border = border$array[border$index];
-    startColor = this.parseColor($e.css_2(border, true));
+    startColor = this.parseColor(g.css_2(border, true));
     cggqcj.$put_2(this.startColors, border, startColor);
   }
 }
 ;
-defineClass(316, 120, $intern_37, cggqcpe.Fx$ColorFx$BorderColorFx);
-_.$init_217 = function $init_217(){
+defineClass(347, 126, $intern_37, cggqcpe.Fx$ColorFx$BorderColorFx);
+_.$init_216 = function $init_216(){
 }
 ;
 _.applyValue = function applyValue_1(g, progress){
@@ -18994,11 +18286,11 @@ _.applyValue = function applyValue_1(g, progress){
     border = border$array[border$index];
     this.startColor = dynamicCast(cggqcj.$get_7(this.startColors, border), 10);
     this.cssprop = border;
-    getClassPrototype(120).applyValue.call(this, g, progress);
+    getClassPrototype(126).applyValue.call(this, g, progress);
   }
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$ColorFx$BorderColorFx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx/ColorFx/BorderColorFx', 316, cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$ColorFx_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$ColorFx$BorderColorFx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx/ColorFx/BorderColorFx', 347, cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$ColorFx_2_classLit);
 cggqcpe.$clinit_Fx$TransitFx = function $clinit_Fx$TransitFx(){
   cggqcpe.$clinit_Fx$TransitFx = emptyMethod;
   cggqcpe.$clinit_Fx();
@@ -19007,7 +18299,7 @@ cggqcpe.$clinit_Fx$TransitFx = function $clinit_Fx$TransitFx(){
 cggqcpe.Fx$TransitFx = function Fx$TransitFx(attr, value_0, start_0, end, unit){
   cggqcpe.$clinit_Fx$TransitFx();
   cggqcpe.Fx.call(this);
-  this.$init_218();
+  this.$init_217();
   this.cssprop = attr;
   this.value_0 = value_0;
   this.transitStart = start_0;
@@ -19015,15 +18307,15 @@ cggqcpe.Fx$TransitFx = function Fx$TransitFx(attr, value_0, start_0, end, unit){
   this.unit = unit;
 }
 ;
-defineClass(80, 26, {26:1, 80:1, 1:1}, cggqcpe.Fx$TransitFx);
-_.$init_218 = function $init_218(){
+defineClass(87, 25, {25:1, 87:1, 1:1}, cggqcpe.Fx$TransitFx);
+_.$init_217 = function $init_217(){
 }
 ;
 _.toString$ = function toString_23(){
-  return getClassPrototype(26).toString$.call(this) + ' transitStart=' + this.transitStart + ' transitEnd=' + this.transitEnd;
+  return getClassPrototype(25).toString$.call(this) + ' transitStart=' + this.transitStart + ' transitEnd=' + this.transitEnd;
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$TransitFx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx/TransitFx', 80, cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_Fx$TransitFx_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Fx/TransitFx', 87, cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit);
 cggqcpe.$clinit_PropertiesAnimation$Easing = function $clinit_PropertiesAnimation$Easing(){
   cggqcpe.$clinit_PropertiesAnimation$Easing = emptyMethod;
   cggqcpe.LINEAR = (cggqcpe.$clinit_PropertiesAnimation$EasingCurve() , cggqcpe.linear);
@@ -19070,7 +18362,7 @@ cggqcpe.$clinit_PropertiesAnimation$EasingCurve = function $clinit_PropertiesAni
 cggqcpe.PropertiesAnimation$EasingCurve = function PropertiesAnimation$EasingCurve(enum$name, enum$ordinal, x1, y1, x2, y2){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve();
   Enum.call(this, enum$name, enum$ordinal);
-  this.$init_219();
+  this.$init_218();
   this.with_$(x1, y1, x2, y2);
 }
 ;
@@ -19085,7 +18377,7 @@ cggqcpe.values_7 = function values_7(){
 }
 ;
 defineClass(13, 5, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve);
-_.$init_219 = function $init_219(){
+_.$init_218 = function $init_218(){
   this.c = new cggqcpe.Bezier(0, 0, 1, 1);
 }
 ;
@@ -19111,11 +18403,11 @@ cggqcpe.$clinit_PropertiesAnimation$EasingCurve$1 = function $clinit_PropertiesA
 cggqcpe.PropertiesAnimation$EasingCurve$1 = function PropertiesAnimation$EasingCurve$1(enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$1();
   cggqcpe.PropertiesAnimation$EasingCurve.call(this, enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3);
-  this.$init_220();
+  this.$init_219();
 }
 ;
-defineClass(297, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$1);
-_.$init_220 = function $init_220(){
+defineClass(311, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$1);
+_.$init_219 = function $init_219(){
 }
 ;
 _.interpolate = function interpolate_2(p){
@@ -19126,7 +18418,7 @@ _.toString$ = function toString_25(){
   return 'linear';
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$1_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/1', 297, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
+cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$1_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/1', 311, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
 cggqcpe.$clinit_PropertiesAnimation$EasingCurve$2 = function $clinit_PropertiesAnimation$EasingCurve$2(){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$2 = emptyMethod;
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve();
@@ -19135,18 +18427,18 @@ cggqcpe.$clinit_PropertiesAnimation$EasingCurve$2 = function $clinit_PropertiesA
 cggqcpe.PropertiesAnimation$EasingCurve$2 = function PropertiesAnimation$EasingCurve$2(enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$2();
   cggqcpe.PropertiesAnimation$EasingCurve.call(this, enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3);
-  this.$init_221();
+  this.$init_220();
 }
 ;
-defineClass(298, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$2);
-_.$init_221 = function $init_221(){
+defineClass(312, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$2);
+_.$init_220 = function $init_220(){
 }
 ;
 _.toString$ = function toString_26(){
   return 'ease';
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$2_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/2', 298, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
+cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$2_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/2', 312, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
 cggqcpe.$clinit_PropertiesAnimation$EasingCurve$3 = function $clinit_PropertiesAnimation$EasingCurve$3(){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$3 = emptyMethod;
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve();
@@ -19155,18 +18447,18 @@ cggqcpe.$clinit_PropertiesAnimation$EasingCurve$3 = function $clinit_PropertiesA
 cggqcpe.PropertiesAnimation$EasingCurve$3 = function PropertiesAnimation$EasingCurve$3(enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$3();
   cggqcpe.PropertiesAnimation$EasingCurve.call(this, enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3);
-  this.$init_222();
+  this.$init_221();
 }
 ;
-defineClass(299, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$3);
-_.$init_222 = function $init_222(){
+defineClass(313, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$3);
+_.$init_221 = function $init_221(){
 }
 ;
 _.toString$ = function toString_27(){
   return 'ease-in';
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$3_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/3', 299, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
+cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$3_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/3', 313, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
 cggqcpe.$clinit_PropertiesAnimation$EasingCurve$4 = function $clinit_PropertiesAnimation$EasingCurve$4(){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$4 = emptyMethod;
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve();
@@ -19175,18 +18467,18 @@ cggqcpe.$clinit_PropertiesAnimation$EasingCurve$4 = function $clinit_PropertiesA
 cggqcpe.PropertiesAnimation$EasingCurve$4 = function PropertiesAnimation$EasingCurve$4(enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$4();
   cggqcpe.PropertiesAnimation$EasingCurve.call(this, enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3);
-  this.$init_223();
+  this.$init_222();
 }
 ;
-defineClass(300, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$4);
-_.$init_223 = function $init_223(){
+defineClass(314, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$4);
+_.$init_222 = function $init_222(){
 }
 ;
 _.toString$ = function toString_28(){
   return 'ease-out';
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$4_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/4', 300, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
+cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$4_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/4', 314, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
 cggqcpe.$clinit_PropertiesAnimation$EasingCurve$5 = function $clinit_PropertiesAnimation$EasingCurve$5(){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$5 = emptyMethod;
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve();
@@ -19195,49 +18487,72 @@ cggqcpe.$clinit_PropertiesAnimation$EasingCurve$5 = function $clinit_PropertiesA
 cggqcpe.PropertiesAnimation$EasingCurve$5 = function PropertiesAnimation$EasingCurve$5(enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$5();
   cggqcpe.PropertiesAnimation$EasingCurve.call(this, enum$name, enum$ordinal, $anonymous0, $anonymous1, $anonymous2, $anonymous3);
-  this.$init_224();
+  this.$init_223();
 }
 ;
-defineClass(301, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$5);
-_.$init_224 = function $init_224(){
+defineClass(315, 13, $intern_38, cggqcpe.PropertiesAnimation$EasingCurve$5);
+_.$init_223 = function $init_223(){
 }
 ;
 _.toString$ = function toString_29(){
   return 'ease-in-out';
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$5_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/5', 301, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
+cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve$5_2_classLit = createForEnum('com.google.gwt.query.client.plugins.effects', 'PropertiesAnimation/EasingCurve/5', 315, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation$EasingCurve_2_classLit, null, null);
 cggqcpe.$clinit_PropertiesAnimation$EasingCurve$Map = function $clinit_PropertiesAnimation$EasingCurve$Map(){
   cggqcpe.$clinit_PropertiesAnimation$EasingCurve$Map = emptyMethod;
   cggqcpe.$MAP_6 = createValueOfMap(cggqcpe.values_7());
 }
 ;
-defineClass(731, 1, $intern_0);
-cggqcpe.$clinit_Transitions = function $clinit_Transitions(){
-  cggqcpe.$clinit_Transitions = emptyMethod;
-  cggqc.$clinit_GQuery();
-  cggqcpe.divStyle = cggdc.$getStyle(cgguc.createDiv());
-  cggqcpe.prefix_0 = (cggqc.$clinit_GQuery() , cggqc.browser).msie?'ms':(cggqc.$clinit_GQuery() , cggqc.browser).opera?'o':(cggqc.$clinit_GQuery() , cggqc.browser).mozilla?'moz':(cggqc.$clinit_GQuery() , cggqc.browser).webkit?'webkit':'';
-  cggqcpe.transform = cggqcpe.getVendorPropertyName('transform');
-  cggqcpe.transformOrigin = cggqcpe.getVendorPropertyName('transformOrigin');
-  cggqcpe.transformRegex = cggrs.compile('^(scale|translate|rotate([XY]|3d)?|perspective|skew[XY]|x|y)$');
-  cggqcpe.transition = cggqcpe.getVendorPropertyName('transition');
-  cggqcpe.invalidTransitionNamesRegex = cggrs.compile('^(.*transform.*|duration|easing|delay|clip-.*)$');
-  cggqcpe.transitionDelay = cggqcpe.getVendorPropertyName('transitionDelay');
-  cggqcpe.transitionEnd = (cggqc.$clinit_GQuery() , cggqc.browser).mozilla || (cggqc.$clinit_GQuery() , cggqc.browser).msie?'transitionend':cggqcpe.prefix_0 + 'transitionEnd';
+defineClass(742, 1, $intern_0);
+cggqcpe.$clinit_Transform = function $clinit_Transform(){
+  cggqcpe.$clinit_Transform = emptyMethod;
+  var s, s$array, s$array0, s$index, s$index0, s$max, s$max0;
+  jl.$clinit_Object();
+  cggqcpe.divStyle = cggdc.$getStyle(cggdc.$createDivElement(cggdc.get_2()));
+  {
+    for (s$array0 = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['transition', 'transitionDelay', 'transform', 'transformOrigin']) , s$index0 = 0 , s$max0 = s$array0.length; s$index0 < s$max0; ++s$index0) {
+      s = s$array0[s$index0];
+      cggqcj.$put_1((cggqcp.$clinit_Effects() , cggqcp.vendorPropNames), s, cggqcpe.getVendorPropertyName(s));
+    }
+    for (s$array = initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['x', 'y', 'z']) , s$index = 0 , s$max = s$array.length; s$index < s$max; ++s$index) {
+      s = s$array[s$index];
+      cggqcj.$put_1((cggqcp.$clinit_Effects() , cggqcp.vendorPropNames), s, 'translate' + jl.toUpperCase__Ljava_lang_String___devirtual$(s));
+    }
+  }
+  cggqcpe.transform = cggqcp.vendorProperty('transform');
+  cggqcpe.transformOrigin = cggqcp.vendorProperty('transformOrigin');
   cggqcpe.has3d = cggqcpe.supportsTransform3d();
-  cggqcpe.Transitions = cggqc.registerPlugin(cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions_2_classLit, new cggqcpe.Transitions$1);
+  cggqcpe.transformRegex = cggrs.compile('^(matrix(3d)?|(translate|scale|rotate)([XYZ]|3d)?|skew([XY])?|perspective|x|y|z)$');
+  cggqcpe.transform3dRegex = cggrs.compile('^(rotate[XY]|\\w+(Z|3d)|perspective)$');
+  cggqcpe.transformParseRegex = cggrs.compile_0('(\\w+)\\((.*?)\\)', 'g');
+  cggqcpe.anglePropRegex = cggrs.compile('(rotate[XYZ]?|skew[XY]?)');
+  cggqcpe.translatePropRegex = cggrs.compile('translate[XYZ]');
 }
 ;
-cggqcpe.Transitions_0 = function Transitions_0(gq){
-  cggqcpe.$clinit_Transitions();
-  cggqc.GQuery_2.call(this, gq);
-  this.$init_225();
+cggqcpe.Transform = function Transform(s){
+  Object_0.call(this);
+  this.$init_224();
+  this.parse_3(s);
+}
+;
+cggqcpe.getInstance_5 = function getInstance_5(e, initial){
+  cggqcpe.$clinit_Transform();
+  var t;
+  t = dynamicCast(cggqc.data_1(e, '_t_'), 128);
+  if (isNull(t) || jsNotEquals(initial, null)) {
+    if (jsEquals(initial, null)) {
+      initial = cggqc.getSelectorEngine().getDocumentStyleImpl().curCSS(e, cggqcpe.transform, false);
+    }
+    t = new cggqcpe.Transform(initial);
+    cggqc.data_2(e, '_t_', t);
+  }
+  return t;
 }
 ;
 cggqcpe.getVendorPropertyName = function getVendorPropertyName(prop){
   var camelProp, vendorProp;
-  vendorProp = cggqcj.camelize('-' + cggqcpe.prefix_0 + '-' + prop);
+  vendorProp = cggqcj.camelize('-' + (cggqcp.$clinit_Effects() , cggqcp.prefix_0) + '-' + prop);
   if (cggqcj.hasProperty(cggqcpe.divStyle, vendorProp)) {
     return vendorProp;
   }
@@ -19251,11 +18566,9 @@ cggqcpe.getVendorPropertyName = function getVendorPropertyName(prop){
   return null;
 }
 ;
-cggqcpe.property_0 = function property_0(prop){
-  if (cggrs.$test(cggqcpe.transformRegex, prop)) {
-    return cggqcpe.transform;
-  }
-  return jl.replaceFirst_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(prop, '^(margin|padding).+$', '$1');
+cggqcpe.isTransform = function isTransform(propName){
+  cggqcpe.$clinit_Transform();
+  return cggrs.$test(cggqcpe.transformRegex, propName);
 }
 ;
 cggqcpe.supportsTransform3d = function supportsTransform3d(){
@@ -19269,221 +18582,13 @@ cggqcpe.supportsTransform3d = function supportsTransform3d(){
   return jsNotEquals(rotate, null) && !jl.isEmpty__Z__devirtual$(rotate);
 }
 ;
-defineClass(86, 14, {14:1, 86:1, 1:1}, cggqcpe.Transitions_0);
-_.$init_225 = function $init_225(){
-}
-;
-_.css_1 = function css_3(prop, value_0){
-  return this.css_3(prop, value_0);
-}
-;
-_.css_3 = function css_4(prop, value_0){
-  var e, e$array, e$index, e$max, t;
-  if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('transform', prop)) {
-    for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
-      e = e$array[e$index];
-      t = this.getTransform(e, value_0);
-      cggqc.getStyleImpl().setStyleProperty(e, cggqcpe.transform, t.toString$());
-    }
-  }
-   else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('transformOrigin', prop)) {
-    getClassPrototype(14).css_1.call(this, cggqcpe.transformOrigin, value_0);
-  }
-   else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('transition', prop)) {
-    getClassPrototype(14).css_1.call(this, cggqcpe.transition, value_0);
-  }
-   else if (cggrs.$test(cggqcpe.transformRegex, prop)) {
-    for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
-      e = e$array[e$index];
-      t = this.getTransform(e, null);
-      t.setFromString(prop, initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [value_0]));
-      cggqc.getStyleImpl().setStyleProperty(e, cggqcpe.transform, t.toString$());
-    }
-  }
-   else if (!cggrs.$test(cggqcpe.invalidTransitionNamesRegex, prop)) {
-    getClassPrototype(14).css_1.call(this, prop, value_0);
-  }
-  return this;
-}
-;
-_.css_2 = function css_5(prop, force){
-  var ret;
-  if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('transform', prop)) {
-    return this.isEmpty_0()?'':this.getTransform(this.get_0(0), null).toString$();
-  }
-   else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('transformOrigin', prop)) {
-    return getClassPrototype(14).css_2.call(this, cggqcpe.transformOrigin, force);
-  }
-   else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('transition', prop)) {
-    return getClassPrototype(14).css_2.call(this, cggqcpe.transition, force);
-  }
-   else if (cggrs.$test(cggqcpe.transformRegex, prop)) {
-    return this.isEmpty_0()?'':this.getTransform(this.get_0(0), null).get_4(prop);
-  }
-   else {
-    ret = getClassPrototype(14).css_2.call(this, prop, force);
-    return ret;
-  }
-}
-;
-_.filterTransitionPropertyNames = function filterTransitionPropertyNames(p){
-  var c, m, ret, s, s$array, s$index, s$max;
-  ret = new ju.ArrayList;
-  for (s$array = cggqc.$keys(p) , s$index = 0 , s$max = s$array.length; s$index < s$max; ++s$index) {
-    s = s$array[s$index];
-    if (cggrs.$test(cggqcpe.invalidTransitionNamesRegex, s)) {
-      continue;
-    }
-    c = cggqcj.camelize(s);
-    m = cggqcpe.property_0(c);
-    if (jsNotEquals(m, null)) {
-      c = m;
-    }
-    c = cggqcj.hyphenize(c);
-    if (!ret.contains_1(c)) {
-      ret.add_3(c);
-    }
-  }
-  return ret;
-}
-;
-_.getTransform = function getTransform(e, initial){
-  var t;
-  t = dynamicCast(cggqc.data_1(e, '_t_'), 123);
-  if (isNull(t) || jsNotEquals(initial, null) && !jl.isEmpty__Z__devirtual$(initial)) {
-    t = new cggqcpe.Transitions$Transform(initial);
-    cggqc.data_2(e, '_t_', t);
-  }
-  return t;
-}
-;
-_.transition = function transition_0(stringOrProperties, duration, easing, delay, funcs){
-  var cssProps, ease, queuedAt, transProps;
-  if (this.isEmpty_0()) {
-    return this;
-  }
-  cssProps = isJavaString(stringOrProperties)?cggqc.$$_0(dynamicCastToString(stringOrProperties)):dynamicCastJso(stringOrProperties);
-  ease = isNull(easing)?'ease':easing.toString$();
-  transProps = this.filterTransitionPropertyNames(cssProps);
-  queuedAt = delay > 0?cggcc.currentTimeMillis():0;
-  this.queue(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpe.Transitions$2(this, delay, queuedAt, duration, ease, transProps, cssProps, funcs)]));
-  return this;
-}
-;
-cggqcpe.TRANSFORM = '_t_';
-cggqcpe.has3d = false;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions', 86, cggl.Lcom_google_gwt_query_client_GQuery_2_classLit);
-cggqcpe.$clinit_Transitions$1 = function $clinit_Transitions$1(){
-  cggqcpe.$clinit_Transitions$1 = emptyMethod;
-  jl.$clinit_Object();
-}
-;
-cggqcpe.Transitions$1 = function Transitions$1(){
-  cggqcpe.$clinit_Transitions$1();
-  Object_0.call(this);
-  this.$init_226();
-}
-;
-defineClass(336, 1, $intern_33, cggqcpe.Transitions$1);
-_.$init_226 = function $init_226(){
-}
-;
-_.init_0 = function init_12(gq){
-  return this.init_6(gq);
-}
-;
-_.init_6 = function init_13(gq){
-  return new cggqcpe.Transitions_0(gq);
-}
-;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions/1', 336, cggl.Ljava_lang_Object_2_classLit);
-cggqcpe.$clinit_Transitions$2 = function $clinit_Transitions$2(){
-  cggqcpe.$clinit_Transitions$2 = emptyMethod;
-  cggqc.$clinit_Function();
-}
-;
-cggqcpe.Transitions$2 = function Transitions$2(this$0, val$delay, val$queuedAt, val$duration, val$ease, val$transProps, val$cssProps, val$funcs){
-  cggqcpe.$clinit_Transitions$2();
-  this.this$01 = this$0;
-  this.val$delay2 = val$delay;
-  this.val$queuedAt3 = val$queuedAt;
-  this.val$duration5 = val$duration;
-  this.val$ease6 = val$ease;
-  this.val$transProps7 = val$transProps;
-  this.val$cssProps8 = val$cssProps;
-  this.val$funcs9 = val$funcs;
-  cggqc.Function_0.call(this);
-  this.$init_227();
-}
-;
-defineClass(337, 7, $intern_27, cggqcpe.Transitions$2);
-_.$init_227 = function $init_227(){
-}
-;
-_.f = function f_38(){
-  var attribs, d, newTransitionValue, oldTransitionValue, s, s$iterator, thisTrans;
-  oldTransitionValue = cggqc.$_4(this).css_0((cggqcpe.$clinit_Transitions() , cggqcpe.transition));
-  d = jl.max_0(0, this.val$delay2 - round_int(cggcc.currentTimeMillis() - this.val$queuedAt3));
-  attribs = this.val$duration5 + 'ms' + ' ' + this.val$ease6 + ' ' + d + 'ms';
-  newTransitionValue = '';
-  for (s$iterator = this.val$transProps7.iterator(); s$iterator.hasNext();) {
-    s = dynamicCastToString(s$iterator.next_0());
-    newTransitionValue += (jl.isEmpty__Z__devirtual$(newTransitionValue)?'':', ') + s + ' ' + attribs;
-  }
-  thisTrans = dynamicCast(cggqc.$_4(this).as((cggqcpe.$clinit_Transitions() , cggqcpe.Transitions)), 86);
-  thisTrans.css_3((cggqcpe.$clinit_Transitions() , cggqcpe.transition), newTransitionValue);
-  thisTrans.css(this.val$cssProps8);
-  (new cggqcpe.Transitions$2$1(this, thisTrans, oldTransitionValue, this.val$funcs9)).schedule(d + this.val$duration5);
-}
-;
-_.val$delay2 = 0;
-_.val$duration5 = 0;
-_.val$queuedAt3 = 0;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions$2_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions/2', 337, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
-cggqcpe.$clinit_Transitions$2$1 = function $clinit_Transitions$2$1(){
-  cggqcpe.$clinit_Transitions$2$1 = emptyMethod;
-  cgguc.$clinit_Timer();
-}
-;
-cggqcpe.Transitions$2$1 = function Transitions$2$1(this$1, val$thisTrans, val$oldTransitionValue, val$funcs){
-  cggqcpe.$clinit_Transitions$2$1();
-  this.this$11 = this$1;
-  this.val$thisTrans2 = val$thisTrans;
-  this.val$oldTransitionValue3 = val$oldTransitionValue;
-  this.val$funcs4 = val$funcs;
-  cgguc.Timer.call(this);
-  this.$init_228();
-}
-;
-defineClass(338, 78, $intern_0, cggqcpe.Transitions$2$1);
-_.$init_228 = function $init_228(){
-}
-;
-_.run_2 = function run_7(){
-  this.val$thisTrans2.css_3((cggqcpe.$clinit_Transitions() , cggqcpe.transition), this.val$oldTransitionValue3).each(this.val$funcs4).dequeue();
-}
-;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions$2$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions/2/1', 338, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
-cggqcpe.$clinit_Transitions$Transform = function $clinit_Transitions$Transform(){
-  cggqcpe.$clinit_Transitions$Transform = emptyMethod;
-  jl.$clinit_Object();
-  cggqcpe.transform3dRegex = cggrs.compile('^(rotate([XY]|3d)|perspective)$');
-}
-;
-cggqcpe.Transitions$Transform = function Transitions$Transform(s){
-  cggqcpe.$clinit_Transitions$Transform();
-  Object_0.call(this);
-  this.$init_229();
-  this.parse_3(s);
-}
-;
-defineClass(123, 1, {123:1, 1:1}, cggqcpe.Transitions$Transform);
-_.$init_229 = function $init_229(){
+defineClass(128, 1, {128:1, 1:1}, cggqcpe.Transform);
+_.$init_224 = function $init_224(){
   this.map_0 = new ju.HashMap;
 }
 ;
 _.get_4 = function get_6(prop){
-  return this.listToStr(dynamicCast(this.map_0.get_1(prop), 17), ',');
+  return this.listToStr(dynamicCast(this.map_0.get_1(prop), 19), ',');
 }
 ;
 _.listToStr = function listToStr(l, sep){
@@ -19499,11 +18604,10 @@ _.listToStr = function listToStr(l, sep){
 }
 ;
 _.parse_3 = function parse_3(s){
-  var r, re;
+  var r;
   if (jsNotEquals(s, null)) {
-    re = cggrs.compile_0('([a-zA-Z0-9]+)\\((.*?)\\)', 'g');
-    for (r = cggrs.$exec(re, s); isNotNull(r); r = cggrs.$exec(re, s)) {
-      this.setFromString(cggrs.$getGroup(r, 1), initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [cggrs.$getGroup(r, 2)]));
+    for (r = cggrs.$exec(cggqcpe.transformParseRegex, s); isNotNull(r); r = cggrs.$exec(cggqcpe.transformParseRegex, s)) {
+      this.setFromString(cggqcp.vendorProperty(cggrs.$getGroup(r, 1)), initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [cggrs.$getGroup(r, 2)]));
     }
   }
 }
@@ -19515,7 +18619,7 @@ _.set_1 = function set_3(prop, val){
 _.setFromString = function setFromString(prop, val){
   var vals;
   if (val.length == 1) {
-    vals = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(val[0], '[\\s*,\\s*]');
+    vals = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(val[0], '[\\s,]+');
     this.set_1(prop, vals);
   }
    else {
@@ -19525,7 +18629,7 @@ _.setFromString = function setFromString(prop, val){
 ;
 _.setter = function setter_0(prop, val){
   var x_0, y_0;
-  if (jl.matches_Ljava_lang_String__Z__devirtual$(prop, '(rotate[XY]?|skew[XY])')) {
+  if (cggrs.$test(cggqcpe.anglePropRegex, prop)) {
     this.map_0.put(prop, this.unit_0(val[0], 'deg'));
   }
    else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('scale', prop)) {
@@ -19536,26 +18640,22 @@ _.setter = function setter_0(prop, val){
    else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('perspective', prop)) {
     this.map_0.put(prop, this.unit_0(val[0], 'px'));
   }
-   else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('x', prop)) {
-    this.setter('translate', initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [val[0], null]));
-  }
-   else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('y', prop)) {
-    this.setter('translate', initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [null, val[0]]));
+   else if (cggrs.$test(cggqcpe.translatePropRegex, prop)) {
+    this.map_0.put(prop, this.unit_0(val[0], 'px'));
   }
    else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('translate', prop)) {
-    if (jsEquals(this.map_0.get_1('translateX'), null)) {
-      this.map_0.put('translateX', this.unit_0('0', 'px'));
-    }
     if (jsNotEquals(val[0], null)) {
       this.map_0.put('translateX', this.unit_0(val[0], 'px'));
     }
-    if (jsEquals(this.map_0.get_1('translateY'), null)) {
-      this.map_0.put('translateY', this.unit_0('0', 'px'));
-    }
-    if (jsNotEquals(val[1], null)) {
+    if (val.length > 1 && jsNotEquals(val[1], null)) {
       this.map_0.put('translateY', this.unit_0(val[1], 'px'));
     }
-    this.map_0.put('translate', ju.asList(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [dynamicCastToString(dynamicCast(this.map_0.get_1('translateX'), 17).get_2(0)), dynamicCastToString(dynamicCast(this.map_0.get_1('translateY'), 17).get_2(0))])));
+    if (cggqcpe.has3d && val.length > 2 && jsNotEquals(val[2], null)) {
+      this.map_0.put('translateZ', this.unit_0(val[2], 'px'));
+    }
+  }
+   else {
+    this.map_0.put(prop, ju.asList(val));
   }
 }
 ;
@@ -19563,9 +18663,9 @@ _.toString$ = function toString_30(){
   var e, e$iterator, ret, v;
   ret = '';
   for (e$iterator = this.map_0.entrySet().iterator(); e$iterator.hasNext();) {
-    e = dynamicCast(e$iterator.next_0(), 16);
-    if ((cggqcpe.$clinit_Transitions() , cggqcpe.has3d) || !cggrs.$test(cggqcpe.transform3dRegex, dynamicCastToString(e.getKey()))) {
-      v = this.listToStr(dynamicCast(e.getValue_0(), 17), ',');
+    e = dynamicCast(e$iterator.next_0(), 17);
+    if (cggqcpe.has3d || !cggrs.$test(cggqcpe.transform3dRegex, dynamicCastToString(e.getKey()))) {
+      v = this.listToStr(dynamicCast(e.getValue_0(), 19), ',');
       ret += (jl.isEmpty__Z__devirtual$(ret)?'':' ') + dynamicCastToString(e.getKey()) + '(' + v + ')';
     }
   }
@@ -19576,24 +18676,157 @@ _.unit_0 = function unit_0(val, unit){
   return ju.asList(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [val + (jl.endsWith_Ljava_lang_String__Z__devirtual$(val, unit)?'':unit)]));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions$Transform_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions/Transform', 123, cggl.Ljava_lang_Object_2_classLit);
+cggqcpe.TRANSFORM = '_t_';
+cggqcpe.has3d = false;
+cggl.Lcom_google_gwt_query_client_plugins_effects_Transform_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transform', 128, cggl.Ljava_lang_Object_2_classLit);
+cggqcpe.$clinit_Transitions = function $clinit_Transitions(){
+  cggqcpe.$clinit_Transitions = emptyMethod;
+  cggqcp.$clinit_Effects();
+  cggqcpe.invalidTransitionNamesRegex = cggrs.compile('^(.*transform.*|duration|function|easing|delay|clip-.*)$');
+  cggqcpe.transitionEnd = (cggqc.$clinit_GQuery() , cggqc.browser).mozilla || (cggqc.$clinit_GQuery() , cggqc.browser).msie?'transitionend':(cggqcp.$clinit_Effects() , cggqcp.prefix_0) + 'TransitionEnd';
+  cggqcpe.transition = cggqcp.vendorProperty('transition');
+  cggqcpe.Transitions = cggqc.registerPlugin(cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions_2_classLit, new cggqcpe.Transitions$1);
+}
+;
+cggqcpe.Transitions_0 = function Transitions_0(gq){
+  cggqcpe.$clinit_Transitions();
+  cggqcp.Effects_1.call(this, gq);
+  this.$init_225();
+}
+;
+cggqcpe.filterTransitionPropertyNames = function filterTransitionPropertyNames(p){
+  cggqcpe.$clinit_Transitions();
+  var c, m, ret, s, s$array, s$index, s$max;
+  ret = new ju.ArrayList;
+  for (s$array = cggqc.$keys(p) , s$index = 0 , s$max = s$array.length; s$index < s$max; ++s$index) {
+    s = s$array[s$index];
+    if (cggrs.$test(cggqcpe.invalidTransitionNamesRegex, s)) {
+      continue;
+    }
+    c = cggqcj.camelize(s);
+    m = cggqcpe.property_0(c);
+    if (jsNotEquals(m, null)) {
+      c = m;
+    }
+    c = cggqcj.hyphenize(c);
+    if (!ret.contains_1(c)) {
+      ret.add_4(c);
+    }
+  }
+  return ret;
+}
+;
+cggqcpe.property_0 = function property_0(prop){
+  if (cggqcpe.isTransform(prop)) {
+    return cggqcpe.$clinit_Transform() , cggqcpe.transform;
+  }
+  return jl.replaceFirst_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(prop, '^(margin|padding).+$', '$1');
+}
+;
+defineClass(107, 40, {15:1, 40:1, 26:1, 107:1, 1:1}, cggqcpe.Transitions_0);
+_.$init_225 = function $init_225(){
+}
+;
+_.createAnimation = function createAnimation_0(){
+  return new cggqcpe.TransitionsAnimation;
+}
+;
+_.css_1 = function css_3(prop, value_0){
+  return this.css_3(prop, value_0);
+}
+;
+_.css_3 = function css_4(prop, value_0){
+  var e, e$array, e$index, e$max, t;
+  prop = cggqcp.vendorProperty(prop);
+  if (jl.equals_Ljava_lang_Object__Z__devirtual$_0((cggqcpe.$clinit_Transform() , cggqcpe.transform), prop)) {
+    for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
+      e = e$array[e$index];
+      t = cggqcpe.getInstance_5(e, jsNotEquals(value_0, null)?value_0:'');
+      cggqc.getStyleImpl().setStyleProperty(e, (cggqcpe.$clinit_Transform() , cggqcpe.transform), t.toString$());
+    }
+  }
+   else if (cggqcpe.isTransform(prop)) {
+    for (e$array = this.elements_0() , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
+      e = e$array[e$index];
+      t = cggqcpe.getInstance_5(e, null);
+      t.setFromString(prop, initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [value_0]));
+      cggqc.getStyleImpl().setStyleProperty(e, (cggqcpe.$clinit_Transform() , cggqcpe.transform), t.toString$());
+    }
+  }
+   else {
+    getClassPrototype(15).css_1.call(this, prop, value_0);
+  }
+  return this;
+}
+;
+_.css_2 = function css_5(prop, force){
+  prop = cggqcp.vendorProperty(prop);
+  if (jl.equals_Ljava_lang_Object__Z__devirtual$_0((cggqcpe.$clinit_Transform() , cggqcpe.transform), prop)) {
+    return this.isEmpty_0()?'':cggqcpe.getInstance_5(this.get_0(0), null).toString$();
+  }
+   else if (cggqcpe.isTransform(prop)) {
+    return this.isEmpty_0()?'':cggqcpe.getInstance_5(this.get_0(0), null).get_4(prop);
+  }
+   else {
+    return getClassPrototype(15).css_2.call(this, prop, force);
+  }
+}
+;
+_.isVisible = function isVisible_1(){
+  var p, p$array, p$index, p$max, parts, s, s$iterator;
+  for (s$iterator = ju.asList(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['opacity', 'scale', 'scaleX', 'scaleY', 'scale3d', 'width', 'height'])).iterator(); s$iterator.hasNext();) {
+    s = dynamicCastToString(s$iterator.next_0());
+    parts = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(this.css_0(s), '\\s*,\\s*');
+    for (p$array = parts , p$index = 0 , p$max = p$array.length; p$index < p$max; ++p$index) {
+      p = p$array[p$index];
+      if (jl.matches_Ljava_lang_String__Z__devirtual$(p, '^0[a-z%]*')) {
+        return false;
+      }
+    }
+  }
+  return getClassPrototype(15).isVisible.call(this);
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions', 107, cggl.Lcom_google_gwt_query_client_plugins_Effects_2_classLit);
+cggqcpe.$clinit_Transitions$1 = function $clinit_Transitions$1(){
+  cggqcpe.$clinit_Transitions$1 = emptyMethod;
+  jl.$clinit_Object();
+}
+;
+cggqcpe.Transitions$1 = function Transitions$1(){
+  cggqcpe.$clinit_Transitions$1();
+  Object_0.call(this);
+  this.$init_226();
+}
+;
+defineClass(353, 1, $intern_34, cggqcpe.Transitions$1);
+_.$init_226 = function $init_226(){
+}
+;
+_.init_0 = function init_12(gq){
+  return this.init_6(gq);
+}
+;
+_.init_6 = function init_13(gq){
+  return new cggqcpe.Transitions_0(gq);
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_effects_Transitions$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'Transitions/1', 353, cggl.Ljava_lang_Object_2_classLit);
 cggqcpe.$clinit_TransitionsAnimation = function $clinit_TransitionsAnimation(){
   cggqcpe.$clinit_TransitionsAnimation = emptyMethod;
   cggqcpe.$clinit_PropertiesAnimation();
 }
 ;
-cggqcpe.TransitionsAnimation = function TransitionsAnimation(easing, elem, p, funcs){
+cggqcpe.TransitionsAnimation = function TransitionsAnimation(){
   cggqcpe.$clinit_TransitionsAnimation();
-  cggqcpe.PropertiesAnimation.call(this, easing, elem, p, funcs);
-  this.$init_230();
-  this.delay = cggqc.$getInt(p, 'delay');
-  this.g = dynamicCast(cggqc.$_1(this.e).as((cggqcpe.$clinit_Transitions() , cggqcpe.Transitions)), 86);
+  cggqcpe.PropertiesAnimation.call(this);
+  this.$init_227();
 }
 ;
 cggqcpe.computeFxProp_0 = function computeFxProp_0(e, key, val, hidden){
   var cur, en, g, n, part1, part2, part3, parts, sparts, st, start_0, to, trsEnd, trsStart, unit;
-  g = dynamicCast(cggqc.$_1(e).as((cggqcpe.$clinit_Transitions() , cggqcpe.Transitions)), 86);
-  unit = '';
+  g = dynamicCast(cggqc.$_0(e).as((cggqcpe.$clinit_Transitions() , cggqcpe.Transitions)), 107);
+  unit = cggrs.$test((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_NON_PIXEL_ATTRS), key)?'':'px';
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('toggle', val)) {
     val = hidden?'show':'hide';
   }
@@ -19604,14 +18837,22 @@ cggqcpe.computeFxProp_0 = function computeFxProp_0(e, key, val, hidden){
     g.show();
   }
   cur = g.css_2(key, true);
-  trsStart = cur;
+  trsStart = jl.matches_Ljava_lang_String__Z__devirtual$(cur, 'auto|initial')?'':cur;
   trsEnd = trsStart;
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('show', val)) {
     g.saveCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [key]));
-    trsStart = '0';
+    if (jl.isEmpty__Z__devirtual$(trsStart)) {
+      trsStart = '0';
+    }
+    if (cggrs.$test((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_SCALE_ATTRS), key)) {
+      trsEnd = '1';
+    }
   }
    else if (jl.equals_Ljava_lang_Object__Z__devirtual$_0('hide', val)) {
     g.saveCssAttrs(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, [key]));
+    if (jl.isEmpty__Z__devirtual$(trsStart) && cggrs.$test((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_SCALE_ATTRS), key)) {
+      trsStart = '1';
+    }
     trsEnd = '0';
   }
    else {
@@ -19621,9 +18862,11 @@ cggqcpe.computeFxProp_0 = function computeFxProp_0(e, key, val, hidden){
       part2 = cggrs.$getGroup(parts, 2);
       part3 = cggrs.$getGroup(parts, 3);
       trsEnd = '' + parseDouble(part2);
-      unit = cggrs.$test((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_NON_PIXEL_ATTRS), key)?'':jsEquals(part3, null) || jl.isEmpty__Z__devirtual$(part3)?'px':part3;
+      if (jsNotEquals(part3, null) && !jl.isEmpty__Z__devirtual$(part3)) {
+        unit = part3;
+      }
       if (jl.isEmpty__Z__devirtual$(trsStart)) {
-        trsStart = jl.matches_Ljava_lang_String__Z__devirtual$(key, 'scale')?'1':'0';
+        trsStart = cggrs.$test((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_SCALE_ATTRS), key)?'1':'0';
       }
       if (jsNotEquals(part1, null) && !jl.isEmpty__Z__devirtual$(part1)) {
         n = jl.equals_Ljava_lang_Object__Z__devirtual$_0('-=', part1)?-1:1;
@@ -19631,116 +18874,187 @@ cggqcpe.computeFxProp_0 = function computeFxProp_0(e, key, val, hidden){
         sparts = cggrs.$exec((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_SYMBOL_NUMBER_UNIT), trsStart);
         if (isNotNull(sparts)) {
           st = parseDouble(cggrs.$getGroup(sparts, 2));
-          unit = jl.isEmpty__Z__devirtual$(cggrs.$getGroup(sparts, 3))?unit:cggrs.$getGroup(sparts, 3);
+          unit = jsEquals(cggrs.$getGroup(sparts, 3), null) || jl.isEmpty__Z__devirtual$(cggrs.$getGroup(sparts, 3))?unit:cggrs.$getGroup(sparts, 3);
         }
-        trsStart = '' + st + unit;
+        trsStart = '' + st;
         en = parseDouble(trsEnd);
-        trsEnd = '' + (st + n * en) + unit;
+        trsEnd = '' + (st + n * en);
       }
-      if (!jl.isEmpty__Z__devirtual$(unit) && !jl.equals_Ljava_lang_Object__Z__devirtual$_0('px', unit) && jl.matches_Ljava_lang_String__Z__devirtual$(trsStart, '\\d+')) {
+      if (!jl.isEmpty__Z__devirtual$(unit) && !jl.equals_Ljava_lang_Object__Z__devirtual$_0('px', unit) && jl.matches_Ljava_lang_String__Z__devirtual$(trsStart, '[\\d+-.]+')) {
         start_0 = parseDouble(trsStart);
-        to = parseDouble(trsEnd);
-        g.css_3(key, to + unit);
-        start_0 = to * start_0 / g.cur(key, true);
-        trsStart = start_0 + unit;
-        g.css_3(key, start_0 + unit);
+        if (start_0 != 0) {
+          to = parseDouble(trsEnd);
+          g.css_3(key, to + unit);
+          start_0 = to * start_0 / g.cur(key, true);
+          trsStart = '' + start_0;
+          g.css_3(key, start_0 + unit);
+        }
       }
     }
      else {
       trsStart = '';
       trsEnd = val;
+      if (jl.isEmpty__Z__devirtual$(trsStart)) {
+        trsStart = cggrs.$test((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.REGEX_SCALE_ATTRS), key)?'1':'0';
+      }
     }
+  }
+  if (jl.matches_Ljava_lang_String__Z__devirtual$(trsStart, '[\\d+-.]+')) {
+    trsStart += unit;
+  }
+  if (jl.matches_Ljava_lang_String__Z__devirtual$(trsEnd, '[\\d+-.]+')) {
+    trsEnd += unit;
   }
   return new cggqcpe.Fx$TransitFx(key, val, trsStart, trsEnd, unit);
 }
 ;
-defineClass(149, 61, $intern_0);
-_.$init_230 = function $init_230(){
+defineClass(105, 54, $intern_0, cggqcpe.TransitionsAnimation);
+_.$init_227 = function $init_227(){
   this.delay = 0;
+}
+;
+_.getFx = function getFx_0(e, key, val, hidden){
+  return cggrs.$test((cggqcpe.$clinit_Transitions() , cggqcpe.invalidTransitionNamesRegex), key)?null:cggqcpe.computeFxProp_0(e, key, val, hidden);
 }
 ;
 _.getFxProperties = function getFxProperties(isStart){
   var fx, i_0, p, val;
   p = cggqc.$$();
   for (i_0 = 0; i_0 < cggqcj.$length_4(this.effects); i_0++) {
-    fx = dynamicCast(dynamicCast(cggqcj.$get_9(this.effects, i_0), 80), 80);
+    fx = dynamicCast(dynamicCast(cggqcj.$get_9(this.effects, i_0), 87), 87);
     val = isStart?fx.transitStart:fx.transitEnd;
     if (!jl.isEmpty__Z__devirtual$(val)) {
-      cggqc.$set_2(p, fx.cssprop, val + fx.unit);
+      cggqc.$set_2(p, fx.cssprop, val);
     }
   }
   return p;
 }
 ;
-_.onStart = function onStart_3(){
-  var fx, hidden, key, key$array, key$index, key$max, move, resize, val;
-  this.effects = cggqcj.create_17();
-  resize = false;
-  move = false;
-  hidden = !this.g.isVisible();
-  for (key$array = cggqc.$keys(this.prps) , key$index = 0 , key$max = key$array.length; key$index < key$max; ++key$index) {
-    key = key$array[key$index];
-    val = cggqc.$getStr(this.prps, key);
-    if (isNotNull(fx = cggqcpe.computeFxProp_0(this.e, key, val, hidden))) {
-      cggqcj.$add_0(this.effects, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit, 1), $intern_6, 26, 0, [fx]));
-      resize = resize || jl.equals_Ljava_lang_Object__Z__devirtual$_0('height', key) || jl.equals_Ljava_lang_Object__Z__devirtual$_0('width', key);
-      move = move || jl.equals_Ljava_lang_Object__Z__devirtual$_0('top', key) || jl.equals_Ljava_lang_Object__Z__devirtual$_0('left', key);
-    }
-  }
-  this.g.saveCssAttrs((cggqcpe.$clinit_PropertiesAnimation() , cggqcpe.ATTRS_TO_SAVE));
-  if (resize) {
-    this.g.css_3('overflow', 'hidden');
-  }
-  if (move && !jl.matches_Ljava_lang_String__Z__devirtual$(this.g.css_2('position', true), 'absolute|relative|fixed')) {
-    this.g.css_3('position', 'relative');
-  }
+_.onComplete = function onComplete_3(){
+  this.t.css_3((cggqcpe.$clinit_Transitions() , cggqcpe.transition), this.oldTransitionValue);
+  getClassPrototype(54).onComplete.call(this);
 }
 ;
 _.onUpdate = function onUpdate_1(progress){
 }
 ;
-_.run = function run_8(duration){
-  var p;
+_.run = function run_7(duration){
+  var attribs, newTransitionValue, p, s, s$iterator, transProps;
   this.onStart();
   p = this.getFxProperties(true);
-  this.g.css(p).offset();
+  this.t.css(p);
+  this.t.offset();
   p = this.getFxProperties(false);
-  this.g.transition(p, duration, this.easing, this.delay, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggqcpe.TransitionsAnimation$1(this)]));
+  this.oldTransitionValue = this.t.css_0((cggqcpe.$clinit_Transitions() , cggqcpe.transition));
+  newTransitionValue = '';
+  transProps = cggqcpe.filterTransitionPropertyNames(p);
+  attribs = duration + 'ms' + ' ' + this.easing + ' ' + this.delay + 'ms';
+  for (s$iterator = transProps.iterator(); s$iterator.hasNext();) {
+    s = dynamicCastToString(s$iterator.next_0());
+    newTransitionValue += (jl.isEmpty__Z__devirtual$(newTransitionValue)?'':', ') + s + ' ' + attribs;
+  }
+  this.t.css_3((cggqcpe.$clinit_Transitions() , cggqcpe.transition), newTransitionValue);
+  this.t.css(p);
+  (new cggqcpe.TransitionsAnimation$1(this)).schedule(this.delay + duration);
+}
+;
+_.setElement_0 = function setElement_1(elem){
+  this.e = elem;
+  this.g = this.t = dynamicCast(cggqc.$_0(elem).as((cggqcpe.$clinit_Transitions() , cggqcpe.Transitions)), 107);
+  return this;
+}
+;
+_.setProperties = function setProperties_1(p){
+  this.delay = cggqc.$getInt(p, 'delay');
+  return getClassPrototype(52).setProperties.call(this, p);
 }
 ;
 _.delay = 0;
-cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'TransitionsAnimation', 149, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'TransitionsAnimation', 105, cggl.Lcom_google_gwt_query_client_plugins_effects_PropertiesAnimation_2_classLit);
 cggqcpe.$clinit_TransitionsAnimation$1 = function $clinit_TransitionsAnimation$1(){
   cggqcpe.$clinit_TransitionsAnimation$1 = emptyMethod;
-  cggqc.$clinit_Function();
+  cgguc.$clinit_Timer();
 }
 ;
 cggqcpe.TransitionsAnimation$1 = function TransitionsAnimation$1(this$0){
   cggqcpe.$clinit_TransitionsAnimation$1();
   this.this$01 = this$0;
-  cggqc.Function_0.call(this);
-  this.$init_231();
+  cgguc.Timer.call(this);
+  this.$init_228();
 }
 ;
-defineClass(318, 7, $intern_27, cggqcpe.TransitionsAnimation$1);
-_.$init_231 = function $init_231(){
+defineClass(337, 80, $intern_0, cggqcpe.TransitionsAnimation$1);
+_.$init_228 = function $init_228(){
 }
 ;
-_.f = function f_39(){
+_.run_2 = function run_8(){
   this.this$01.onComplete();
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'TransitionsAnimation/1', 318, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'TransitionsAnimation/1', 337, cggl.Lcom_google_gwt_user_client_Timer_2_classLit);
 cggqcpe.$clinit_TransitionsAnimation$TransitionsClipAnimation = function $clinit_TransitionsAnimation$TransitionsClipAnimation(){
   cggqcpe.$clinit_TransitionsAnimation$TransitionsClipAnimation = emptyMethod;
   cggqcpe.$clinit_TransitionsAnimation();
 }
 ;
-cggqcpe.TransitionsAnimation$TransitionsClipAnimation = function TransitionsAnimation$TransitionsClipAnimation(easing, elem, p, funcs){
+cggqcpe.TransitionsAnimation$TransitionsClipAnimation = function TransitionsAnimation$TransitionsClipAnimation(){
   cggqcpe.$clinit_TransitionsAnimation$TransitionsClipAnimation();
+  cggqcpe.TransitionsAnimation.call(this);
+  this.$init_229();
+}
+;
+defineClass(336, 105, {52:1, 1:1}, cggqcpe.TransitionsAnimation$TransitionsClipAnimation);
+_.$init_229 = function $init_229(){
+}
+;
+_.onComplete = function onComplete_4(){
+  getClassPrototype(105).onComplete.call(this);
+  if (isNull(this.action)) {
+    return;
+  }
+  if (jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))) {
+    this.t.hide();
+  }
+  this.t.css_3('transformOrigin', '');
+  this.t.css_3('transform', '');
+}
+;
+_.onStart = function onStart_3(){
+  var bit, hidden, originX, originY, scaleXend, scaleXini, scaleYend, scaleYini;
+  hidden = !this.t.isVisible();
+  getClassPrototype(54).onStart.call(this);
+  if (isNull(this.action)) {
+    return;
+  }
+  this.currentAction = jsNotEquals(this.action, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.TOGGLE))?this.action:hidden?(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.SHOW):(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE);
+  bit = jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))?1:0;
+  originX = 'left';
+  originY = 'top';
+  scaleXini = 0 ^ bit;
+  scaleYini = scaleXini;
+  scaleXend = 1 ^ bit;
+  scaleYend = scaleXend;
+  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.VERTICAL))) {
+    scaleXini = scaleXend = 1;
+  }
+  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.HORIZONTAL))) {
+    scaleYini = scaleYend = 1;
+  }
+  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.CENTER))) {
+    originX = originY = 'center';
+  }
+  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.TOP_RIGHT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
+    originX = 'right';
+  }
+  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_LEFT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
+    originY = 'bottom';
+  }
+  this.t.show().css_1('transformOrigin', originX + ' ' + originY);
+  cggqcj.$add_0(this.effects, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit, 1), $intern_6, 25, 0, [new cggqcpe.Fx$TransitFx('scale', '', scaleXini + ' ' + scaleYini, scaleXend + ' ' + scaleYend, '')]));
+}
+;
+_.setProperties = function setProperties_2(p){
   var e;
-  cggqcpe.TransitionsAnimation.call(this, easing, elem, p, funcs);
-  this.$init_232();
   this.corner = (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.CENTER);
   try {
     this.corner = cggqcpe.valueOf_5(cggqcpe.getNormalizedValue('clip-origin', p));
@@ -19776,73 +19090,24 @@ cggqcpe.TransitionsAnimation$TransitionsClipAnimation = function TransitionsAnim
      else 
       throw unwrap($e2);
   }
+  return getClassPrototype(105).setProperties.call(this, p);
 }
 ;
-defineClass(317, 149, $intern_0, cggqcpe.TransitionsAnimation$TransitionsClipAnimation);
-_.$init_232 = function $init_232(){
-}
-;
-_.onComplete = function onComplete_3(){
-  getClassPrototype(61).onComplete.call(this);
-  if (isNull(this.action)) {
-    return;
-  }
-  if (jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))) {
-    this.g.hide();
-  }
-  this.g.css_3('transformOrigin', '');
-  this.g.css_3('transform', 'scale(1 1)');
-}
-;
-_.onStart = function onStart_4(){
-  var bit, hidden, originX, originY, scaleXend, scaleXini, scaleYend, scaleYini;
-  hidden = !this.g.isVisible();
-  getClassPrototype(149).onStart.call(this);
-  if (isNull(this.action)) {
-    return;
-  }
-  this.currentAction = jsNotEquals(this.action, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.TOGGLE))?this.action:hidden?(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.SHOW):(cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE);
-  bit = jsEquals(this.currentAction, (cggqcpe.$clinit_ClipAnimation$Action() , cggqcpe.HIDE))?1:0;
-  originX = 'left';
-  originY = 'top';
-  scaleXini = 0 ^ bit;
-  scaleYini = scaleXini;
-  scaleXend = 1 ^ bit;
-  scaleYend = scaleXend;
-  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.VERTICAL))) {
-    scaleXini = scaleXend = 1;
-  }
-  if (jsEquals(this.direction_0, (cggqcpe.$clinit_ClipAnimation$Direction() , cggqcpe.HORIZONTAL))) {
-    scaleYini = scaleYend = 1;
-  }
-  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.CENTER))) {
-    originX = originY = 'center';
-  }
-  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.TOP_RIGHT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
-    originX = 'right';
-  }
-  if (jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_LEFT)) || jsEquals(this.corner, (cggqcpe.$clinit_ClipAnimation$Corner() , cggqcpe.BOTTOM_RIGHT))) {
-    originY = 'bottom';
-  }
-  this.g.show().css_1('transformOrigin', originX + ' ' + originY);
-  cggqcj.$add_0(this.effects, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_effects_Fx_2_classLit, 1), $intern_6, 26, 0, [new cggqcpe.Fx$TransitFx('scale', '', scaleXini + ' ' + scaleYini, scaleXend + ' ' + scaleYend, '')]));
-}
-;
-cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation$TransitionsClipAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'TransitionsAnimation/TransitionsClipAnimation', 317, cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation$TransitionsClipAnimation_2_classLit = createForClass('com.google.gwt.query.client.plugins.effects', 'TransitionsAnimation/TransitionsClipAnimation', 336, cggl.Lcom_google_gwt_query_client_plugins_effects_TransitionsAnimation_2_classLit);
 cggqcpe2.$clinit_EventsListener = function $clinit_EventsListener(){
   cggqcpe2.$clinit_EventsListener = emptyMethod;
   jl.$clinit_Object();
   cggqcpe2.BITLESS = -1;
   {
-    cggqcpe2.special = cggqcj.create_13();
-    cggqcj.$put_1(cggqcpe2.special, cggqcpe2.MOUSEENTER, new cggqcpe2.EventsListener$MouseSpecialEvent(cggqcpe2.MOUSEENTER, 'mouseover'));
-    cggqcj.$put_1(cggqcpe2.special, cggqcpe2.MOUSELEAVE, new cggqcpe2.EventsListener$MouseSpecialEvent(cggqcpe2.MOUSELEAVE, 'mouseout'));
+    cggqcpe2.special = new ju.HashMap;
+    cggqcpe2.special.put(cggqcpe2.MOUSEENTER, new cggqcpe2.EventsListener$MouseSpecialEvent(cggqcpe2.MOUSEENTER, 'mouseover'));
+    cggqcpe2.special.put(cggqcpe2.MOUSELEAVE, new cggqcpe2.EventsListener$MouseSpecialEvent(cggqcpe2.MOUSELEAVE, 'mouseout'));
   }
 }
 ;
 cggqcpe2.EventsListener = function EventsListener(element){
   Object_0.call(this);
-  this.$init_233();
+  this.$init_230();
   this.element_0 = element;
   cggqcpe2.init_14(element, this);
 }
@@ -19871,7 +19136,7 @@ cggqcpe2.getGwtEventListener = function getGwtEventListener(elem){
   return elem.__gwtlistener;
 }
 ;
-cggqcpe2.getInstance_5 = function getInstance_5(e){
+cggqcpe2.getInstance_6 = function getInstance_6(e){
   cggqcpe2.$clinit_EventsListener();
   var ret;
   ret = cggqcpe2.getGQueryEventListener(e);
@@ -19883,6 +19148,10 @@ cggqcpe2.init_14 = function init_14(elem, gqevent){
   elem.__gqueryevent = gqevent;
   if (elem.__gwtlistener == gqevent)
     elem.__gwtlistener = null;
+}
+;
+cggqcpe2.isNullOrEmpty = function isNullOrEmpty(s){
+  return jsEquals(s, null) || jl.isEmpty__Z__devirtual$(s);
 }
 ;
 cggqcpe2.rebind = function rebind(e){
@@ -19910,8 +19179,8 @@ cggqcpe2.sinkBitlessEvent = function sinkBitlessEvent(elem, name_0){
     elem.attachEvent('on' + name_0, handle);
 }
 ;
-defineClass(99, 1, {99:1, 67:1, 1:1}, cggqcpe2.EventsListener);
-_.$init_233 = function $init_233(){
+defineClass(103, 1, {103:1, 70:1, 1:1}, cggqcpe2.EventsListener);
+_.$init_230 = function $init_230(){
   this.eventBits = 0;
   this.lastEvnt = 0;
   this.lastType = '';
@@ -19920,11 +19189,11 @@ _.$init_233 = function $init_233(){
   this.liveBindFunctionByEventName = cggqcj.create_13();
 }
 ;
-_.bind_5 = function bind_7(eventbits, data_0, funcs){
+_.bind_5 = function bind_8(eventbits, data_0, funcs){
   this.bind_6(eventbits, null, data_0, funcs);
 }
 ;
-_.bind_6 = function bind_8(eventbits, name_0, data_0, funcs){
+_.bind_6 = function bind_9(eventbits, name_0, data_0, funcs){
   var function_$, function$array, function$index, function$max;
   for (function$array = funcs , function$index = 0 , function$max = function$array.length; function$index < function$max; ++function$index) {
     function_$ = function$array[function$index];
@@ -19932,39 +19201,29 @@ _.bind_6 = function bind_8(eventbits, name_0, data_0, funcs){
   }
 }
 ;
-_.bind_7 = function bind_9(eventbits, namespace, originalEventType, data_0, function_$, times){
-  this.bind_8(eventbits, namespace, null, originalEventType, data_0, function_$, times);
-}
-;
-_.bind_8 = function bind_10(eventbits, namespace, eventName, originalEventType, data_0, function_$, times){
-  if (isNull(function_$)) {
-    this.unbind_6(eventbits, namespace, eventName, originalEventType, null);
-    return;
-  }
+_.bind_7 = function bind_10(eventbits, namespace, eventName, data_0, function_$, times){
   this.sink(eventbits, eventName);
-  cggqcj.$add_0(this.elementEvents, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit, 1), $intern_6, 21, 0, [new cggqcpe2.EventsListener$BindFunction(eventbits, eventName, namespace, originalEventType, function_$, data_0, times)]));
+  cggqcj.$add_0(this.elementEvents, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit, 1), $intern_6, 21, 0, [new cggqcpe2.EventsListener$BindFunction(eventbits, eventName, namespace, function_$, data_0, times)]));
 }
 ;
-_.bind_9 = function bind_11(events, data_0, funcs){
-  var b, event_0, event$array, event$index, event$max, eventName, function_$, function$array, function$index, function$max, handler, hook, nameSpace, originalEventName, parts, subparts;
-  parts = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(events, '[\\s,]+');
-  for (event$array = parts , event$index = 0 , event$max = event$array.length; event$index < event$max; ++event$index) {
-    event_0 = event$array[event$index];
-    nameSpace = null;
-    eventName = event_0;
-    subparts = jl.split_Ljava_lang_String_I__Ljava_lang_String___devirtual$(event_0, '\\.', 2);
-    if (subparts.length == 2) {
-      nameSpace = subparts[1];
-      eventName = subparts[0];
-    }
-    hook = dynamicCast(cggqcj.$get_6(cggqcpe2.special, eventName), 127);
-    eventName = isNotNull(hook)?hook.getDelegateType():eventName;
-    originalEventName = isNotNull(hook)?hook.getOriginalType():null;
-    b = cgguc.getTypeInt(eventName);
+_.bind_8 = function bind_11(events, data_0, funcs){
+  var b, bind_0, ev, ev$iterator, function_$, function$array, function$index, function$max, hook;
+  if (funcs.length == 0 || isNull(funcs[0])) {
+    this.unbind_7(events, null);
+  }
+  for (ev$iterator = cggqcpe2.split_1(events).iterator(); ev$iterator.hasNext();) {
+    ev = dynamicCast(ev$iterator.next_0(), 65);
+    hook = dynamicCast(cggqcpe2.special.get_1(ev.eventName), 130);
+    bind_0 = isNull(hook) || hook.setup(this.element_0) == false;
     for (function$array = funcs , function$index = 0 , function$max = function$array.length; function$index < function$max; ++function$index) {
       function_$ = function$array[function$index];
-      handler = isNotNull(hook)?hook.createDelegateHandler(function_$):function_$;
-      this.bind_8(b, nameSpace, eventName, originalEventName, data_0, handler, -1);
+      b = cgguc.getTypeInt(ev.eventName);
+      if (bind_0) {
+        this.bind_7(b, ev.nameSpace, ev.eventName, data_0, function_$, -1);
+      }
+      if (isNotNull(hook)) {
+        hook.add_3(this.element_0, ev.eventName, ev.nameSpace, data_0, function_$);
+      }
     }
   }
 }
@@ -19977,15 +19236,20 @@ _.clean = function clean_0(){
 }
 ;
 _.dispatchEvent_3 = function dispatchEvent_6(event_0){
-  var ename, etype, handlerData, i_0, l, listener, originalEventType;
-  ename = cggdc.$getType_0(event_0);
-  etype = cgguc.getTypeInt(ename);
-  originalEventType = cggqcpe2.getOriginalEventType_0(event_0);
-  handlerData = dynamicCast(cggqc.$_1(this.element_0).data_1('___event_datas'), 4);
+  this.dispatchEvent_4(event_0, cggdc.$getType_0(event_0));
+}
+;
+_.dispatchEvent_4 = function dispatchEvent_7(event_0, eventName){
+  var handlerData, i_0, l, listener, matchEV, matchNS, namespace, typeInt;
+  typeInt = cgguc.getTypeInt(eventName);
+  handlerData = dynamicCast(cggqc.$_0(this.element_0).data_1('___event_datas'), 4);
   for (i_0 = 0 , l = cggqcj.$length_4(this.elementEvents); i_0 < l; i_0++) {
     listener = dynamicCast(cggqcj.$get_9(this.elementEvents, i_0), 21);
-    if (isNotNull(listener) && (listener.hasEventType(etype) || listener.isTypeOf(ename)) && (jsEquals(originalEventType, null) || jl.equals_Ljava_lang_Object__Z__devirtual$_0(originalEventType, listener.getOriginalEventType()))) {
-      if (!listener.fire_1(event_0, handlerData)) {
+    namespace = dynamicCastToString(cggqcj.prop_1(event_0, 'namespace'));
+    matchEV = isNotNull(listener) && (listener.hasEventType(typeInt) || listener.isTypeOf(eventName));
+    matchNS = matchEV && (cggqcpe2.isNullOrEmpty(namespace) || jl.equals_Ljava_lang_Object__Z__devirtual$_0(listener.nameSpace, namespace));
+    if (matchEV && matchNS) {
+      if (!listener.fire_1(event_0, typeInt, eventName, handlerData)) {
         cggdc.$stopPropagation(event_0);
         cggdc.$preventDefault(event_0);
       }
@@ -19997,49 +19261,51 @@ _.getOriginalEventListener = function getOriginalEventListener(){
   return cggqcpe2.getGwtEventListener(this.element_0);
 }
 ;
-_.isNullOrEmpty = function isNullOrEmpty(s){
-  return jsEquals(s, null) || jl.isEmpty__Z__devirtual$(s);
+_.hasHandlers = function hasHandlers(eventBits, eventName, handler){
+  var function_$, i_0, j;
+  for (i_0 = 0 , j = cggqcj.$length_4(this.elementEvents); i_0 < j; i_0++) {
+    function_$ = dynamicCast(cggqcj.$get_9(this.elementEvents, i_0), 21);
+    if ((function_$.hasEventType(eventBits) || function_$.isTypeOf(eventName)) && (isNull(handler) || function_$.isEquals(handler))) {
+      return true;
+    }
+  }
+  return false;
 }
 ;
-_.live_0 = function live_1(eventbits, nameSpace, eventName, originalEventName, cssSelector, data_0, funcs){
+_.live_0 = function live_1(eventbits, nameSpace, eventName, cssSelector, data_0, funcs){
   if (eventbits != -1) {
-    this.liveBitEvent(eventbits, nameSpace, originalEventName, cssSelector, data_0, funcs);
+    this.liveBitEvent(eventbits, nameSpace, cssSelector, data_0, funcs);
   }
    else {
-    this.liveBitlessEvent(eventName, nameSpace, originalEventName, cssSelector, data_0, funcs);
+    this.liveBitlessEvent(eventName, nameSpace, cssSelector, data_0, funcs);
   }
 }
 ;
 _.live_1 = function live_2(events, cssSelector, data_0, funcs){
-  var b, event_0, event$array, event$index, event$max, eventName, function_$, function$array, function$index, function$max, handler, hook, nameSpace, originalEventName, parts, subparts;
-  parts = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(events, '[\\s,]+');
-  for (event$array = parts , event$index = 0 , event$max = event$array.length; event$index < event$max; ++event$index) {
-    event_0 = event$array[event$index];
-    nameSpace = null;
-    eventName = event_0;
-    subparts = jl.split_Ljava_lang_String_I__Ljava_lang_String___devirtual$(event_0, '\\.', 2);
-    if (subparts.length == 2) {
-      nameSpace = subparts[1];
-      eventName = subparts[0];
-    }
-    hook = dynamicCast(cggqcj.$get_6(cggqcpe2.special, eventName), 127);
-    eventName = isNotNull(hook)?hook.getDelegateType():eventName;
-    originalEventName = isNotNull(hook)?hook.getOriginalType():null;
-    b = cgguc.getTypeInt(eventName);
+  var b, bind_0, ev, ev$iterator, function_$, function$array, function$index, function$max, hook;
+  for (ev$iterator = cggqcpe2.split_1(events).iterator(); ev$iterator.hasNext();) {
+    ev = dynamicCast(ev$iterator.next_0(), 65);
+    hook = dynamicCast(cggqcpe2.special.get_1(ev.eventName), 130);
+    bind_0 = isNull(hook) || hook.setup(this.element_0) == false;
     for (function$array = funcs , function$index = 0 , function$max = function$array.length; function$index < function$max; ++function$index) {
       function_$ = function$array[function$index];
-      handler = isNotNull(hook)?hook.createDelegateHandler(function_$):function_$;
-      this.live_0(b, nameSpace, eventName, originalEventName, cssSelector, data_0, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [handler]));
+      b = cgguc.getTypeInt(ev.eventName);
+      if (bind_0) {
+        this.live_0(b, ev.nameSpace, ev.eventName, cssSelector, data_0, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [function_$]));
+      }
+      if (isNotNull(hook)) {
+        hook.add_3(this.element_0, ev.eventName, ev.nameSpace, data_0, function_$);
+      }
     }
   }
 }
 ;
-_.liveBitEvent = function liveBitEvent(eventbits, nameSpace, originalEventName, cssSelector, data_0, funcs){
-  var event_0, f_0, f$array, f$index, f$max, i_0, liveBindFunction;
+_.liveBitEvent = function liveBitEvent(eventbits, nameSpace, cssSelector, data_0, funcs){
+  var event_0, f, f$array, f$index, f$max, i_0, liveBindFunction;
   for (i_0 = 0; i_0 < 28; i_0++) {
     event_0 = round_int(jl.pow_0(2, i_0));
     if ((eventbits & event_0) == event_0) {
-      liveBindFunction = dynamicCast(cggqcj.$get_5(this.liveBindFunctionByEventType, event_0), 79);
+      liveBindFunction = dynamicCast(cggqcj.$get_5(this.liveBindFunctionByEventType, event_0), 81);
       if (isNull(liveBindFunction)) {
         liveBindFunction = new cggqcpe2.EventsListener$LiveBindFunction(event_0, 'live', data_0);
         this.sink(eventbits, null);
@@ -20047,16 +19313,16 @@ _.liveBitEvent = function liveBitEvent(eventbits, nameSpace, originalEventName, 
         cggqcj.$put_1(this.liveBindFunctionByEventType, jl.valueOf_16(event_0), liveBindFunction);
       }
       for (f$array = funcs , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-        f_0 = f$array[f$index];
-        liveBindFunction.addBindFunctionForSelector(cssSelector, new cggqcpe2.EventsListener$BindFunction(event_0, null, nameSpace, originalEventName, f_0, data_0, -1));
+        f = f$array[f$index];
+        liveBindFunction.addBindFunctionForSelector(cssSelector, new cggqcpe2.EventsListener$BindFunction(event_0, null, nameSpace, f, data_0, -1));
       }
     }
   }
 }
 ;
-_.liveBitlessEvent = function liveBitlessEvent(eventName, nameSpace, originalEventName, cssSelector, data_0, funcs){
-  var f_0, f$array, f$index, f$max, liveBindFunction;
-  liveBindFunction = dynamicCast(cggqcj.$get_6(this.liveBindFunctionByEventName, eventName), 79);
+_.liveBitlessEvent = function liveBitlessEvent(eventName, nameSpace, cssSelector, data_0, funcs){
+  var f, f$array, f$index, f$max, liveBindFunction;
+  liveBindFunction = dynamicCast(cggqcj.$get_6(this.liveBindFunctionByEventName, eventName), 81);
   if (isNull(liveBindFunction)) {
     liveBindFunction = new cggqcpe2.EventsListener$LiveBindFunction_0(eventName, 'live', data_0);
     this.sink(-1, eventName);
@@ -20064,13 +19330,16 @@ _.liveBitlessEvent = function liveBitlessEvent(eventName, nameSpace, originalEve
     cggqcj.$put_1(this.liveBindFunctionByEventName, eventName, liveBindFunction);
   }
   for (f$array = funcs , f$index = 0 , f$max = f$array.length; f$index < f$max; ++f$index) {
-    f_0 = f$array[f$index];
-    liveBindFunction.addBindFunctionForSelector(cssSelector, new cggqcpe2.EventsListener$BindFunction(-1, eventName, nameSpace, originalEventName, f_0, data_0, -1));
+    f = f$array[f$index];
+    liveBindFunction.addBindFunctionForSelector(cssSelector, new cggqcpe2.EventsListener$BindFunction(-1, eventName, nameSpace, f, data_0, -1));
   }
 }
 ;
 _.onBrowserEvent = function onBrowserEvent(event_0){
   var now_0;
+  if (cggqcj.isDefaultPrevented(event_0)) {
+    return;
+  }
   now_0 = cggcc.currentTimeMillis();
   if (jl.equals_Ljava_lang_Object__Z__devirtual$_0(this.lastType, cggdc.$getType_0(event_0)) && now_0 - this.lastEvnt < 10 && jl.equalsIgnoreCase_Ljava_lang_String__Z__devirtual$('body', cggdc.$getTagName(this.element_0))) {
     return;
@@ -20097,21 +19366,20 @@ _.sink = function sink(eventbits, eventName){
   }
 }
 ;
-_.unbind_5 = function unbind_8(eventbits){
-  this.unbind_6(eventbits, null, null, null, null);
+_.unbind_5 = function unbind_9(eventbits){
+  this.unbind_6(eventbits, null, null, null);
 }
 ;
-_.unbind_6 = function unbind_9(eventbits, namespace, eventName, originalEventType, f_0){
-  var currentEventbits, i_0, listener, matchEV, matchEVN, matchFC, matchNS, matchOEVT, newList;
+_.unbind_6 = function unbind_10(eventbits, namespace, eventName, f){
+  var currentEventbits, i_0, listener, matchEV, matchEVN, matchFC, matchNS, newList;
   newList = cggcc.$cast(cggcc.createArray());
   for (i_0 = 0; i_0 < cggqcj.$length_4(this.elementEvents); i_0++) {
     listener = dynamicCast(cggqcj.$get_9(this.elementEvents, i_0), 21);
-    matchNS = this.isNullOrEmpty(namespace) || jl.equals_Ljava_lang_Object__Z__devirtual$_0(listener.nameSpace, namespace);
+    matchNS = cggqcpe2.isNullOrEmpty(namespace) || jl.equals_Ljava_lang_Object__Z__devirtual$_0(listener.nameSpace, namespace);
     matchEV = eventbits <= 0 || listener.hasEventType(eventbits);
     matchEVN = matchEV || listener.isTypeOf(eventName);
-    matchOEVT = this.isNullOrEmpty(eventName) && !this.isNullOrEmpty(namespace) && matchNS || jsEquals(originalEventType, null) && jsEquals(listener.getOriginalEventType(), null) || jsNotEquals(originalEventType, null) && jl.equals_Ljava_lang_Object__Z__devirtual$_0(originalEventType, listener.getOriginalEventType());
-    matchFC = isNull(f_0) || listener.isEquals(f_0);
-    if (matchNS && matchEV && matchEVN && matchFC && matchOEVT) {
+    matchFC = isNull(f) || listener.isEquals(f);
+    if (matchNS && matchEV && matchEVN && matchFC) {
       currentEventbits = listener.unsink(eventbits);
       if (currentEventbits == 0) {
         continue;
@@ -20122,23 +19390,18 @@ _.unbind_6 = function unbind_9(eventbits, namespace, eventName, originalEventTyp
   this.elementEvents = newList;
 }
 ;
-_.unbind_7 = function unbind_10(events, f_0){
-  var b, event_0, event$array, event$index, event$max, eventName, hook, nameSpace, originalEventName, parts, subparts;
-  parts = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(events, '[\\s,]+');
-  for (event$array = parts , event$index = 0 , event$max = event$array.length; event$index < event$max; ++event$index) {
-    event_0 = event$array[event$index];
-    nameSpace = null;
-    eventName = event_0;
-    subparts = jl.split_Ljava_lang_String_I__Ljava_lang_String___devirtual$(event_0, '\\.', 2);
-    if (subparts.length == 2) {
-      nameSpace = subparts[1];
-      eventName = subparts[0];
+_.unbind_7 = function unbind_11(events, f){
+  var ev, ev$iterator, hook, unbind;
+  for (ev$iterator = cggqcpe2.split_1(events).iterator(); ev$iterator.hasNext();) {
+    ev = dynamicCast(ev$iterator.next_0(), 65);
+    hook = dynamicCast(cggqcpe2.special.get_1(ev.eventName), 130);
+    unbind = isNull(hook) || hook.tearDown(this.element_0) == false;
+    if (unbind) {
+      this.unbind_6(cgguc.getTypeInt(ev.eventName), ev.nameSpace, ev.eventName, f);
     }
-    hook = dynamicCast(cggqcj.$get_6(cggqcpe2.special, eventName), 127);
-    eventName = isNotNull(hook)?hook.getDelegateType():eventName;
-    originalEventName = isNotNull(hook)?hook.getOriginalType():null;
-    b = cgguc.getTypeInt(eventName);
-    this.unbind_6(b, nameSpace, eventName, originalEventName, f_0);
+    if (isNotNull(hook)) {
+      hook.remove_4(this.element_0, ev.eventName, ev.nameSpace, f);
+    }
   }
 }
 ;
@@ -20148,30 +19411,29 @@ cggqcpe2.BITLESS = 0;
 cggqcpe2.EVENT_DATA = '___event_datas';
 cggqcpe2.MOUSEENTER = 'mouseenter';
 cggqcpe2.MOUSELEAVE = 'mouseleave';
-cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener', 99, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener', 103, cggl.Ljava_lang_Object_2_classLit);
 cggqcpe2.$clinit_EventsListener$BindFunction = function $clinit_EventsListener$BindFunction(){
   cggqcpe2.$clinit_EventsListener$BindFunction = emptyMethod;
   jl.$clinit_Object();
 }
 ;
-cggqcpe2.EventsListener$BindFunction = function EventsListener$BindFunction(type_0, eventName, nameSpace, originalEventType, function_$, data_0, times){
+cggqcpe2.EventsListener$BindFunction = function EventsListener$BindFunction(type_0, eventName, nameSpace, function_$, data_0, times){
   cggqcpe2.$clinit_EventsListener$BindFunction();
   Object_0.call(this);
-  this.$init_234();
+  this.$init_231();
   this.times = times;
   this.eventName = eventName;
   this.type_0 = type_0;
   this.function_$ = function_$;
   this.data_0 = data_0;
-  this.originalEventType = originalEventType;
   this.nameSpace = jsNotEquals(nameSpace, null)?nameSpace:'';
 }
 ;
 defineClass(21, 1, {21:1, 1:1}, cggqcpe2.EventsListener$BindFunction);
-_.$init_234 = function $init_234(){
+_.$init_231 = function $init_231(){
 }
 ;
-_.fire_1 = function fire_5(event_0, eventData){
+_.fire_1 = function fire_5(event_0, typeInt, type_0, eventData){
   var arguments_0, handlerData;
   if (this.times != 0) {
     this.times--;
@@ -20185,23 +19447,23 @@ _.fire_1 = function fire_5(event_0, eventData){
      else {
       arguments_0 = eventData;
     }
-    return this.function_$.fe_1(event_0, arguments_0);
+    if (isNotNull(this.function_$)) {
+      return this.function_$.fe_1(event_0, arguments_0);
+    }
   }
   return true;
 }
 ;
-_.getOriginalEventType = function getOriginalEventType(){
-  return this.originalEventType;
+_.fire_2 = function fire_6(event_0, eventData){
+  return this.fire_1(event_0, cgguc.$getTypeInt(event_0), cggdc.$getType_0(event_0), eventData);
 }
 ;
 _.hasEventType = function hasEventType(etype){
   return this.type_0 != -1 && etype != -1 && (this.type_0 & etype) != 0;
 }
 ;
-_.isEquals = function isEquals(f_0){
-  var functionToCompare;
-  functionToCompare = instanceOf(this.function_$, 371)?dynamicCast(this.function_$, 371).getOriginalHandler():this.function_$;
-  return f_0.equals$(functionToCompare);
+_.isEquals = function isEquals(f){
+  return f.equals$(this.function_$);
 }
 ;
 _.isTypeOf = function isTypeOf(eName){
@@ -20225,10 +19487,38 @@ _.unsink = function unsink(eventBits){
 _.times = 0;
 _.type_0 = 0;
 cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/BindFunction', 21, cggl.Ljava_lang_Object_2_classLit);
-cggqcpe2.$clinit_EventsListener$HandlerWrapper = function $clinit_EventsListener$HandlerWrapper(){
-  cggqcpe2.$clinit_EventsListener$HandlerWrapper = emptyMethod;
+cggqcpe2.$clinit_EventsListener$EventName = function $clinit_EventsListener$EventName(){
+  cggqcpe2.$clinit_EventsListener$EventName = emptyMethod;
+  jl.$clinit_Object();
 }
 ;
+cggqcpe2.EventsListener$EventName = function EventsListener$EventName(n, e){
+  Object_0.call(this);
+  this.$init_232();
+  this.nameSpace = n;
+  this.eventName = e;
+}
+;
+cggqcpe2.split_1 = function split_1(events){
+  cggqcpe2.$clinit_EventsListener$EventName();
+  var event_0, event$array, event$index, event$max, eventName, nameSpace, parts, ret, tmp;
+  ret = new ju.ArrayList;
+  parts = jl.split_Ljava_lang_String___Ljava_lang_String___devirtual$(events, '[\\s,]+');
+  for (event$array = parts , event$index = 0 , event$max = event$array.length; event$index < event$max; ++event$index) {
+    event_0 = event$array[event$index];
+    tmp = jl.split_Ljava_lang_String_I__Ljava_lang_String___devirtual$(event_0, '\\.', 2);
+    eventName = tmp[0];
+    nameSpace = tmp.length > 1?tmp[1]:null;
+    ret.add_4(new cggqcpe2.EventsListener$EventName(nameSpace, eventName));
+  }
+  return ret;
+}
+;
+defineClass(65, 1, {65:1, 1:1}, cggqcpe2.EventsListener$EventName);
+_.$init_232 = function $init_232(){
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$EventName_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/EventName', 65, cggl.Ljava_lang_Object_2_classLit);
 cggqcpe2.$clinit_EventsListener$LiveBindFunction = function $clinit_EventsListener$LiveBindFunction(){
   cggqcpe2.$clinit_EventsListener$LiveBindFunction = emptyMethod;
   cggqcpe2.$clinit_EventsListener$BindFunction();
@@ -20236,38 +19526,38 @@ cggqcpe2.$clinit_EventsListener$LiveBindFunction = function $clinit_EventsListen
 ;
 cggqcpe2.EventsListener$LiveBindFunction = function EventsListener$LiveBindFunction(type_0, namespace, data_0){
   cggqcpe2.$clinit_EventsListener$LiveBindFunction();
-  cggqcpe2.EventsListener$BindFunction.call(this, type_0, null, namespace, null, null, data_0, -1);
-  this.$init_235();
+  cggqcpe2.EventsListener$BindFunction.call(this, type_0, null, namespace, null, data_0, -1);
+  this.$init_233();
   this.clean();
 }
 ;
 cggqcpe2.EventsListener$LiveBindFunction_0 = function EventsListener$LiveBindFunction_0(eventName, namespace, data_0){
   cggqcpe2.$clinit_EventsListener$LiveBindFunction();
-  cggqcpe2.EventsListener$BindFunction.call(this, -1, eventName, namespace, null, null, data_0, -1);
-  this.$init_235();
+  cggqcpe2.EventsListener$BindFunction.call(this, -1, eventName, namespace, null, data_0, -1);
+  this.$init_233();
   this.clean();
 }
 ;
-defineClass(79, 21, {21:1, 79:1, 1:1}, cggqcpe2.EventsListener$LiveBindFunction, cggqcpe2.EventsListener$LiveBindFunction_0);
-_.$init_235 = function $init_235(){
+defineClass(81, 21, {21:1, 81:1, 1:1}, cggqcpe2.EventsListener$LiveBindFunction, cggqcpe2.EventsListener$LiveBindFunction_0);
+_.$init_233 = function $init_233(){
 }
 ;
-_.addBindFunctionForSelector = function addBindFunctionForSelector(cssSelector, f_0){
+_.addBindFunctionForSelector = function addBindFunctionForSelector(cssSelector, f){
   var bindFunctions;
   bindFunctions = dynamicCastJso(cggqcj.$get_7(this.bindFunctionBySelector, cssSelector));
   if (isNull(bindFunctions)) {
     bindFunctions = cggqcj.create_17();
     cggqcj.$put_2(this.bindFunctionBySelector, cssSelector, bindFunctions);
   }
-  cggqcj.$add_0(bindFunctions, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit, 1), $intern_6, 21, 0, [f_0]));
+  cggqcj.$add_0(bindFunctions, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit, 1), $intern_6, 21, 0, [f]));
 }
 ;
 _.clean = function clean_2(){
   this.bindFunctionBySelector = cggqcj.create_14();
 }
 ;
-_.fire_1 = function fire_6(event_0, eventData){
-  var bindFunctions, cssSelector, cssSelector$array, cssSelector$array0, cssSelector$index, cssSelector$index0, cssSelector$max, cssSelector$max0, element, eventTarget, f_0, gqEvent, i_0, j, liveContextElement, n, realCurrentTargetBySelector, stopElement, validSelectors;
+_.fire_1 = function fire_7(event_0, typeInt, type_0, eventData){
+  var bindFunctions, cssSelector, cssSelector$array, cssSelector$array0, cssSelector$index, cssSelector$index0, cssSelector$max, cssSelector$max0, element, eventTarget, f, gqEvent, i_0, j, liveContextElement, n, realCurrentTargetBySelector, stopElement, validSelectors;
   if (this.isEmpty_0()) {
     return true;
   }
@@ -20281,14 +19571,14 @@ _.fire_1 = function fire_6(event_0, eventData){
     cssSelector = cssSelector$array0[cssSelector$index0];
     bindFunctions = dynamicCastJso(cggqcj.$get_7(this.bindFunctionBySelector, cssSelector));
     for (i_0 = 0; isNotNull(bindFunctions) && i_0 < cggqcj.$length_4(bindFunctions); i_0++) {
-      f_0 = dynamicCast(cggqcj.$get_9(bindFunctions, i_0), 21);
-      if (f_0.hasEventType(cgguc.$getTypeInt(event_0)) || f_0.isTypeOf(cggdc.$getType_0(event_0))) {
-        validSelectors.add_3(cssSelector);
+      f = dynamicCast(cggqcj.$get_9(bindFunctions, i_0), 21);
+      if (f.hasEventType(typeInt) || f.isTypeOf(type_0)) {
+        validSelectors.add_4(cssSelector);
         break;
       }
     }
   }
-  realCurrentTargetBySelector = cggqc.$_1(eventTarget).closest(dynamicCast(validSelectors.toArray_0(initDim(cggl.Ljava_lang_String_2_classLit, $intern_2, 2, 0, 4, 1)), 8), liveContextElement);
+  realCurrentTargetBySelector = cggqc.$_0(eventTarget).closest(dynamicCast(validSelectors.toArray_0(initDim(cggl.Ljava_lang_String_2_classLit, $intern_2, 2, 0, 4, 1)), 8), liveContextElement);
   if (cggqcj.$length_3(realCurrentTargetBySelector) == 0) {
     return true;
   }
@@ -20298,15 +19588,15 @@ _.fire_1 = function fire_6(event_0, eventData){
     cssSelector = cssSelector$array[cssSelector$index];
     bindFunctions = dynamicCastJso(cggqcj.$get_7(this.bindFunctionBySelector, cssSelector));
     for (i_0 = 0; isNotNull(bindFunctions) && i_0 < cggqcj.$length_4(bindFunctions); i_0++) {
-      f_0 = dynamicCast(cggqcj.$get_9(bindFunctions, i_0), 21);
-      if (f_0.hasEventType(cgguc.$getTypeInt(event_0)) || f_0.isTypeOf(cggdc.$getType_0(event_0))) {
+      f = dynamicCast(cggqcj.$get_9(bindFunctions, i_0), 21);
+      if (f.hasEventType(typeInt) || f.isTypeOf(type_0)) {
         n = dynamicCastJso(cggqcj.$get_7(realCurrentTargetBySelector, cssSelector));
         for (j = 0; isNotNull(n) && j < cggdc.$getLength(n); j++) {
           element = cggdc.$getItem(n, j);
           if (isNull(stopElement) || cggcc.$equals_0(element, stopElement)) {
             cggqcpe2.$setCurrentElementTarget(gqEvent, element);
-            eventData = dynamicCast(cggqc.$_1(element).data_1('___event_datas'), 4);
-            if (!f_0.fire_1(gqEvent, eventData)) {
+            eventData = dynamicCast(cggqc.$_0(element).data_1('___event_datas'), 4);
+            if (!f.fire_2(gqEvent, eventData)) {
               stopElement = element;
             }
           }
@@ -20344,82 +19634,109 @@ _.toString$ = function toString_32(){
   return 'live bind function for selector ' + cggqcj.$tostring_0(cggcc.$cast(this.bindFunctionBySelector));
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$LiveBindFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/LiveBindFunction', 79, cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit);
-cggqcpe2.$clinit_EventsListener$MouseSpecialEvent = function $clinit_EventsListener$MouseSpecialEvent(){
-  cggqcpe2.$clinit_EventsListener$MouseSpecialEvent = emptyMethod;
+cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$LiveBindFunction_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/LiveBindFunction', 81, cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$BindFunction_2_classLit);
+cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent = function $clinit_SpecialEvent$DefaultSpecialEvent(){
+  cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent = emptyMethod;
   jl.$clinit_Object();
 }
 ;
-cggqcpe2.EventsListener$MouseSpecialEvent = function EventsListener$MouseSpecialEvent(originalType, delegateType){
-  cggqcpe2.$clinit_EventsListener$MouseSpecialEvent();
+cggqcpe2.SpecialEvent$DefaultSpecialEvent = function SpecialEvent$DefaultSpecialEvent(type_0, delegateType){
+  cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent();
   Object_0.call(this);
-  this.$init_236();
-  this.originalType = originalType;
+  this.$init_234();
+  this.type_0 = type_0;
   this.delegateType = delegateType;
 }
 ;
-defineClass(146, 1, {127:1, 1:1}, cggqcpe2.EventsListener$MouseSpecialEvent);
-_.$init_236 = function $init_236(){
+defineClass(304, 1, $intern_39);
+_.$init_234 = function $init_234(){
+  this.handler = new cggqcpe2.SpecialEvent$DefaultSpecialEvent$1(this);
 }
 ;
-_.createDelegateHandler = function createDelegateHandler(originalHandler){
-  return new cggqcpe2.EventsListener$SpecialMouseEventHandler(originalHandler);
+_.add_3 = function add_4(e, eventType, nameSpace, data_0, f){
 }
 ;
-_.getDelegateType = function getDelegateType(){
-  return this.delegateType;
+_.hasHandlers_0 = function hasHandlers_0(e){
+  return this.listener(e).hasHandlers(cgguc.getTypeInt(this.type_0), this.type_0, this.handler);
 }
 ;
-_.getOriginalType = function getOriginalType(){
-  return this.originalType;
+_.listener = function listener_0(e){
+  return cggqcpe2.getInstance_6(e);
 }
 ;
-cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$MouseSpecialEvent_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/MouseSpecialEvent', 146, cggl.Ljava_lang_Object_2_classLit);
-cggqcpe2.$clinit_EventsListener$SpecialEvent = function $clinit_EventsListener$SpecialEvent(){
-  cggqcpe2.$clinit_EventsListener$SpecialEvent = emptyMethod;
+_.remove_4 = function remove_3(e, eventType, nameSpace, f){
 }
 ;
-cggqcpe2.$clinit_EventsListener$SpecialMouseEventHandler = function $clinit_EventsListener$SpecialMouseEventHandler(){
-  cggqcpe2.$clinit_EventsListener$SpecialMouseEventHandler = emptyMethod;
+_.setup = function setup(e){
+  if (!this.hasHandlers_0(e)) {
+    this.listener(e).bind_8(this.delegateType, null, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [this.handler]));
+  }
+  return false;
+}
+;
+_.tearDown = function tearDown(e){
+  if (!this.hasHandlers_0(e)) {
+    this.listener(e).unbind_7(this.delegateType, this.handler);
+  }
+  return false;
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_events_SpecialEvent$DefaultSpecialEvent_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'SpecialEvent/DefaultSpecialEvent', 304, cggl.Ljava_lang_Object_2_classLit);
+cggqcpe2.$clinit_EventsListener$MouseSpecialEvent = function $clinit_EventsListener$MouseSpecialEvent(){
+  cggqcpe2.$clinit_EventsListener$MouseSpecialEvent = emptyMethod;
+  cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent();
+}
+;
+cggqcpe2.EventsListener$MouseSpecialEvent = function EventsListener$MouseSpecialEvent(type_0, delegateType){
+  cggqcpe2.$clinit_EventsListener$MouseSpecialEvent();
+  cggqcpe2.SpecialEvent$DefaultSpecialEvent.call(this, type_0, delegateType);
+  this.$init_235();
+  this.handler = new cggqcpe2.EventsListener$MouseSpecialEvent$1(this, type_0);
+}
+;
+defineClass(149, 304, $intern_39, cggqcpe2.EventsListener$MouseSpecialEvent);
+_.$init_235 = function $init_235(){
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$MouseSpecialEvent_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/MouseSpecialEvent', 149, cggl.Lcom_google_gwt_query_client_plugins_events_SpecialEvent$DefaultSpecialEvent_2_classLit);
+cggqcpe2.$clinit_EventsListener$MouseSpecialEvent$1 = function $clinit_EventsListener$MouseSpecialEvent$1(){
+  cggqcpe2.$clinit_EventsListener$MouseSpecialEvent$1 = emptyMethod;
   cggqc.$clinit_Function();
 }
 ;
-cggqcpe2.EventsListener$SpecialMouseEventHandler = function EventsListener$SpecialMouseEventHandler(originalHandler){
-  cggqcpe2.$clinit_EventsListener$SpecialMouseEventHandler();
+cggqcpe2.EventsListener$MouseSpecialEvent$1 = function EventsListener$MouseSpecialEvent$1(this$1, val$type){
+  cggqcpe2.$clinit_EventsListener$MouseSpecialEvent$1();
+  this.this$11 = this$1;
+  this.val$type2 = val$type;
   cggqc.Function_0.call(this);
-  this.$init_237();
-  this.delegateHandler = originalHandler;
+  this.$init_236();
 }
 ;
-defineClass(295, 7, {7:1, 371:1, 1:1}, cggqcpe2.EventsListener$SpecialMouseEventHandler);
-_.$init_237 = function $init_237(){
+defineClass(305, 7, $intern_26, cggqcpe2.EventsListener$MouseSpecialEvent$1);
+_.$init_236 = function $init_236(){
 }
 ;
-_.f_5 = function f_40(e, data_0){
+_.f_5 = function f_38(e, arg){
   var eventTarget, related, relatedEventTarget, target;
   eventTarget = cggdc.$getCurrentEventTarget(e);
   target = isNotNull(eventTarget)?cggcc.$cast(eventTarget):null;
   relatedEventTarget = cggdc.$getRelatedEventTarget(e);
   related = isNotNull(relatedEventTarget)?cggcc.$cast(relatedEventTarget):null;
   if (isNull(related) || jsNotEquals(related, target) && !cggqc.contains(target, related)) {
-    return isNotNull(this.delegateHandler)?this.delegateHandler.f_5(e, data_0):false;
+    cggqcpe2.getInstance_6(target).dispatchEvent_4(e, this.val$type2);
   }
-  return false;
+  return true;
 }
 ;
-_.getOriginalHandler = function getOriginalHandler(){
-  return this.delegateHandler;
-}
-;
-cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$SpecialMouseEventHandler_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/SpecialMouseEventHandler', 295, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_query_client_plugins_events_EventsListener$MouseSpecialEvent$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'EventsListener/MouseSpecialEvent/1', 305, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cgguc.$clinit_Event_0 = function $clinit_Event_0(){
   cgguc.$clinit_Event_0 = emptyMethod;
   cggdc.$clinit_NativeEvent();
-  cgguc.FOCUSEVENTS = 2048 | $intern_34;
+  cgguc.FOCUSEVENTS = 2048 | $intern_35;
   cgguc.KEYEVENTS = 128 | 256 | 512;
   cgguc.MOUSEEVENTS = 4 | 8 | 64 | 16 | 32;
-  cgguc.TOUCHEVENTS = $intern_39 | $intern_40 | $intern_21 | $intern_41;
-  cgguc.GESTUREEVENTS = $intern_42 | $intern_43 | $intern_44;
+  cgguc.TOUCHEVENTS = $intern_40 | $intern_41 | $intern_20 | $intern_42;
+  cgguc.GESTUREEVENTS = $intern_43 | $intern_44 | $intern_45;
 }
 ;
 cgguc.$getTypeInt = function $getTypeInt(this$static){
@@ -20434,7 +19751,7 @@ cgguc.as_2 = function as_2(event_0){
 ;
 cgguc.fireNativePreviewEvent = function fireNativePreviewEvent(nativeEvent){
   cgguc.$clinit_Event_0();
-  return cgguc.fire_7(cgguc.handlers_0, nativeEvent);
+  return cgguc.fire_8(cgguc.handlers_0, nativeEvent);
 }
 ;
 cgguc.getTypeInt = function getTypeInt(typeName){
@@ -20446,33 +19763,33 @@ cgguc.FOCUSEVENTS = 0;
 cgguc.GESTUREEVENTS = 0;
 cgguc.KEYEVENTS = 0;
 cgguc.MOUSEEVENTS = 0;
-cgguc.ONBLUR = $intern_34;
+cgguc.ONBLUR = $intern_35;
 cgguc.ONCHANGE = 1024;
 cgguc.ONCLICK = 1;
-cgguc.ONCONTEXTMENU = $intern_45;
+cgguc.ONCONTEXTMENU = $intern_46;
 cgguc.ONDBLCLICK = 2;
 cgguc.ONERROR = $intern_3;
 cgguc.ONFOCUS = 2048;
-cgguc.ONGESTURECHANGE = $intern_43;
-cgguc.ONGESTUREEND = $intern_44;
-cgguc.ONGESTURESTART = $intern_42;
+cgguc.ONGESTURECHANGE = $intern_44;
+cgguc.ONGESTUREEND = $intern_45;
+cgguc.ONGESTURESTART = $intern_43;
 cgguc.ONKEYDOWN = 128;
 cgguc.ONKEYPRESS = 256;
 cgguc.ONKEYUP = 512;
-cgguc.ONLOAD = $intern_20;
+cgguc.ONLOAD = $intern_19;
 cgguc.ONLOSECAPTURE = 8192;
 cgguc.ONMOUSEDOWN = 4;
 cgguc.ONMOUSEMOVE = 64;
 cgguc.ONMOUSEOUT = 32;
 cgguc.ONMOUSEOVER = 16;
 cgguc.ONMOUSEUP = 8;
-cgguc.ONMOUSEWHEEL = $intern_35;
-cgguc.ONPASTE = $intern_25;
-cgguc.ONSCROLL = $intern_28;
-cgguc.ONTOUCHCANCEL = $intern_41;
-cgguc.ONTOUCHEND = $intern_21;
-cgguc.ONTOUCHMOVE = $intern_40;
-cgguc.ONTOUCHSTART = $intern_39;
+cgguc.ONMOUSEWHEEL = $intern_36;
+cgguc.ONPASTE = $intern_24;
+cgguc.ONSCROLL = $intern_27;
+cgguc.ONTOUCHCANCEL = $intern_42;
+cgguc.ONTOUCHEND = $intern_20;
+cgguc.ONTOUCHMOVE = $intern_41;
+cgguc.ONTOUCHSTART = $intern_40;
 cgguc.TOUCHEVENTS = 0;
 cgguc.UNDEFINED = 0;
 cggqcpe2.$clinit_GqEvent = function $clinit_GqEvent(){
@@ -20505,18 +19822,35 @@ cggqcpe2.create_18 = function create_18(originalEvent){
   return gQueryEvent;
 }
 ;
-cggqcpe2.getOriginalEventType_0 = function getOriginalEventType_0(evt){
-  cggqcpe2.$clinit_GqEvent();
-  return evt['__gwtquery_originalEventName'] || null;
-}
-;
-cggqcpe2.setOriginalEventType = function setOriginalEventType(evt, originalEventName){
-  cggqcpe2.$clinit_GqEvent();
-  evt['__gwtquery_originalEventName'] = originalEventName;
-}
-;
 cggqcpe2.ONRESIZE = 134217728;
 cggqcpe2.ONSUBMIT = 268435456;
+cggqcpe2.$clinit_SpecialEvent = function $clinit_SpecialEvent(){
+  cggqcpe2.$clinit_SpecialEvent = emptyMethod;
+}
+;
+cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent$1 = function $clinit_SpecialEvent$DefaultSpecialEvent$1(){
+  cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent$1 = emptyMethod;
+  cggqc.$clinit_Function();
+}
+;
+cggqcpe2.SpecialEvent$DefaultSpecialEvent$1 = function SpecialEvent$DefaultSpecialEvent$1(this$1){
+  cggqcpe2.$clinit_SpecialEvent$DefaultSpecialEvent$1();
+  this.this$11 = this$1;
+  cggqc.Function_0.call(this);
+  this.$init_237();
+}
+;
+defineClass(306, 7, $intern_26, cggqcpe2.SpecialEvent$DefaultSpecialEvent$1);
+_.$init_237 = function $init_237(){
+}
+;
+_.f_5 = function f_39(e, arg){
+  this.setEvent(e);
+  cggqcpe2.getInstance_6(this.getElement_0()).dispatchEvent_4(e, this.this$11.type_0);
+  return true;
+}
+;
+cggl.Lcom_google_gwt_query_client_plugins_events_SpecialEvent$DefaultSpecialEvent$1_2_classLit = createForClass('com.google.gwt.query.client.plugins.events', 'SpecialEvent/DefaultSpecialEvent/1', 306, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggrs.$clinit_MatchResult = function $clinit_MatchResult(){
   cggrs.$clinit_MatchResult = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -20578,10 +19912,14 @@ cggrc.$clinit_TextResource = function $clinit_TextResource(){
   cggrc.$clinit_TextResource = emptyMethod;
 }
 ;
+cggss.$clinit_SafeHtml = function $clinit_SafeHtml(){
+  cggss.$clinit_SafeHtml = emptyMethod;
+}
+;
 cggswc.$clinit_GWTProjectEntryPoint = function $clinit_GWTProjectEntryPoint(){
   cggswc.$clinit_GWTProjectEntryPoint = emptyMethod;
   jl.$clinit_Object();
-  cggswc.clickHelper = dynamicCast(new cggucui.HyperlinkImplSafari, 93);
+  cggswc.clickHelper = dynamicCast(new cggucui.HyperlinkImpl, 47);
   cggswc.history_0 = dynamicCastJso(cggqcj.prop_1((cggqc.$clinit_GQuery() , cggqc.window_1), 'history'));
   cggswc.origin = jl.toLowerCase__Ljava_lang_String___devirtual$(jl.replaceFirst_Ljava_lang_String_Ljava_lang_String__Ljava_lang_String___devirtual$(getModuleBaseForStaticFiles(), '^(\\w+://.+?)/.*', '$1'));
   cggswc.isSameOriginRexp = cggrs.compile_0('^' + cggswc.origin + '|^(?!(#|[a-z#]+:))(?!.*(|/)javadoc/)(?!.*\\.(jpe?g|png|mpe?g|mp[34]|avi)$)', 'i');
@@ -20596,7 +19934,7 @@ cggswc.GWTProjectEntryPoint = function GWTProjectEntryPoint(){
   this.$init_238();
 }
 ;
-defineClass(168, 1, $intern_46, cggswc.GWTProjectEntryPoint);
+defineClass(169, 1, $intern_47, cggswc.GWTProjectEntryPoint);
 _.$init_238 = function $init_238(){
 }
 ;
@@ -20611,7 +19949,7 @@ _.ajaxLoad = function ajaxLoad(pageUrl, shouldReplaceMenu){
 }
 ;
 _.bindSearch = function bindSearch(){
-  cggqc.$_7('#search form').submit_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$1(this)]));
+  cggqc.$_1('#search form').submit_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$1(this)]));
 }
 ;
 _.doSearch = function doSearch(value_0){
@@ -20622,26 +19960,26 @@ _.doSearch = function doSearch(value_0){
 ;
 _.enhanceLinks = function enhanceLinks(){
   var parentItems;
-  cggqc.$_7('a').not_0(cggqc.$_7('#content a')).each(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$9(this)]));
-  parentItems = cggqc.$_7('#submenu ul > li li').has('ul').prepend('<span/>');
-  cggqc.$_7('#submenu').children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['span, a[href="#"]'])).unbind_0('click');
-  cggqc.$_6(parentItems).children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['span, a[href="#"]'])).on_0('click', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$10(this)]));
+  cggqc.$_1('a').not_0(cggqc.$_1('#content a')).each(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$9(this)]));
+  parentItems = cggqc.$_1('#submenu ul > li li').has('ul').prepend('<span/>');
+  cggqc.$_1('#submenu').children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['span, a[href="#"]'])).unbind_0('click');
+  cggqc.$_0(parentItems).children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['span, a[href="#"]'])).on_0('click', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$10(this)]));
   parentItems.addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['folder'])).not_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['.open'])).children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['ul'])).slideUp(0, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
 }
 ;
 _.enhanceMenu = function enhanceMenu(){
-  cggqc.$_7('#nav').not_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['.alwaysOpen'])).hover(new cggswc.GWTProjectEntryPoint$2(this), new cggswc.GWTProjectEntryPoint$3(this));
+  cggqc.$_1('#nav').not_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['.alwaysOpen'])).hover(new cggswc.GWTProjectEntryPoint$2(this), new cggswc.GWTProjectEntryPoint$3(this));
 }
 ;
 _.enhancePage = function enhancePage(){
-  cggqc.$_7('#nav').mouseenter(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$5(this)])).mouseleave(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$6(this)]));
+  cggqc.$_1('#nav').mouseenter(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$5(this)])).mouseleave(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$6(this)]));
   this.enhanceLinks();
   if (!cggswc.ajaxEnabled) {
     this.loadPage(null);
     return;
   }
-  cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.body_0)).on('click', 'a', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$7(this)]));
-  cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).on_0('popstate', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$8(this)]));
+  cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.body_0)).on('click', 'a', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$7(this)]));
+  cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).on_0('popstate', initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$8(this)]));
 }
 ;
 _.getElementOffset = function getElementOffset(element){
@@ -20669,7 +20007,7 @@ _.loadPage = function loadPage(link_0){
     }
     pageUrl = cgguc.getPath();
     if (!jl.equals_Ljava_lang_Object__Z__devirtual$_0(cggswc.currentPage, pageUrl)) {
-      cggqc.$_7('#spinner').show();
+      cggqc.$_1('#spinner').show();
       this.ajaxLoad(pageUrl, shouldReplaceMenu);
     }
      else {
@@ -20680,15 +20018,15 @@ _.loadPage = function loadPage(link_0){
 }
 ;
 _.maybeStyleHomepage = function maybeStyleHomepage(){
-  if (cggqc.$_7('#content').hasClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['home']))) {
+  if (cggqc.$_1('#content').hasClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['home']))) {
     this.styleHomepage();
     this.resizeHandler = cgguc.addResizeHandler(new cggswc.GWTProjectEntryPoint$13(this));
-    cggqc.$_7('.next, .pager a').click_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$14(this)]));
-    cggqc.$_7('.pager a').click_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$15(this)]));
-    cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).scroll_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$16(this)]));
+    cggqc.$_1('.next, .pager a').click_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$14(this)]));
+    cggqc.$_1('.pager a').click_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$15(this)]));
+    cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).scroll_0(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$16(this)]));
   }
    else {
-    cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).unbind($intern_28);
+    cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).unbind($intern_27);
     if (isNotNull(this.resizeHandler)) {
       this.resizeHandler.removeHandler();
       this.resizeHandler = null;
@@ -20701,7 +20039,7 @@ _.onModuleLoad = function onModuleLoad(){
   this.enhancePage();
   this.enhanceMenu();
   this.onPageLoaded(false);
-  cggqc.$_7('.holder').show();
+  cggqc.$_1('.holder').show();
 }
 ;
 _.onPageLoaded = function onPageLoaded(menuReplaced){
@@ -20711,34 +20049,34 @@ _.onPageLoaded = function onPageLoaded(menuReplaced){
   }
   this.openMenu();
   this.scrollToHash();
-  cggqc.$_7('#spinner').hide();
-  cggqc.$_7('#editLink').appendTo('#content h1');
+  cggqc.$_1('#spinner').hide();
+  cggqc.$_1('#editLink').appendTo('#content h1');
 }
 ;
 _.openMenu = function openMenu(){
   var homePage, liParents, mainNavigationHref, overviewPage, path, selectedItem, subMenuItem;
-  cggqc.$_7('#submenu > nav > ul > li').hide().children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['a'])).hide();
+  cggqc.$_1('#submenu > nav > ul > li').hide().children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['a'])).hide();
   path = cgguc.getPath();
-  selectedItem = cggqc.$_7("#submenu a[href='" + path + "']").filter_1(new cggswc.GWTProjectEntryPoint$4(this)).eq(0);
+  selectedItem = cggqc.$_1("#submenu a[href='" + path + "']").filter_1(new cggswc.GWTProjectEntryPoint$4(this)).eq(0);
   this.showBranch(selectedItem);
-  liParents = selectedItem.parentsUntil('#submenu').filter_2(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['li']));
+  liParents = selectedItem.parentsUntil_0('#submenu').filter_2(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['li']));
   subMenuItem = liParents.last_0();
   subMenuItem.show();
   mainNavigationHref = subMenuItem.children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['a'])).attr('href');
-  cggqc.$_7('#nav a.active').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
-  cggqc.$_7("#nav a[href='" + mainNavigationHref + "']").addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
-  cggqc.$_7('#submenu .active').not_0(liParents).removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+  cggqc.$_1('#nav a.active').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+  cggqc.$_1("#nav a[href='" + mainNavigationHref + "']").addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+  cggqc.$_1('#submenu .active').not_0(liParents).removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
   liParents.add_1(selectedItem).not_0(selectedItem.parent_1()).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
-  cggqc.$_7('title').text_1('[GWT] ' + subMenuItem.text_0());
+  cggqc.$_1('title').text_1('[GWT] ' + subMenuItem.text_0());
   homePage = this.isHomePage(path);
   overviewPage = this.isOverviewPage(path);
-  cggqc.$_7('#nav').toggleClass('alwaysOpen', homePage);
-  cggqc.$_7('#content').toggleClass('home', homePage);
+  cggqc.$_1('#nav').toggleClass('alwaysOpen', homePage);
+  cggqc.$_1('#content').toggleClass('home', homePage);
   if (homePage || overviewPage) {
-    cggqc.$_7('#submenu').hide();
+    cggqc.$_1('#submenu').hide();
   }
    else {
-    cggqc.$_7('#submenu').show();
+    cggqc.$_1('#submenu').show();
   }
   this.maybeStyleHomepage();
 }
@@ -20746,7 +20084,7 @@ _.openMenu = function openMenu(){
 _.scrollToHash = function scrollToHash(){
   var anchor, hash;
   hash = cgguc.getHash();
-  anchor = jl.length__I__devirtual$_0(hash) > 1?cggqc.$_7(hash + ", [name='" + jl.substring_I_Ljava_lang_String___devirtual$(hash, 1) + "']"):cggqc.$();
+  anchor = jl.length__I__devirtual$_0(hash) > 1?cggqc.$_1(hash + ", [name='" + jl.substring_I_Ljava_lang_String___devirtual$(hash, 1) + "']"):cggqc.$();
   if (anchor.isEmpty_0()) {
     cgguc.scrollTo_0(0, 0);
   }
@@ -20774,10 +20112,10 @@ _.showBranch = function showBranch(item_0){
 _.styleHomepage = function styleHomepage(){
   cggswc.$clinit_GWTProjectEntryPoint();
   var sectionHeight, windowHeight;
-  windowHeight = cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).height_0();
-  sectionHeight = cggqc.$_7('#letsbegin').height_0();
+  windowHeight = cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).height_0();
+  sectionHeight = cggqc.$_1('#letsbegin').height_0();
   if (windowHeight > sectionHeight) {
-    cggqc.$_7('.home section').each(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$17(this, windowHeight)]));
+    cggqc.$_1('.home section').each(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$17(this, windowHeight)]));
   }
 }
 ;
@@ -20789,7 +20127,7 @@ _.toggleMenu = function toggleMenu(menu){
 cggswc.ANIMATION_TIME = 200;
 cggswc.ajaxEnabled = false;
 cggswc.isPushstateCapable = false;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint', 168, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint', 169, cggl.Ljava_lang_Object_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$1 = function $clinit_GWTProjectEntryPoint$1(){
   cggswc.$clinit_GWTProjectEntryPoint$1 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20802,18 +20140,18 @@ cggswc.GWTProjectEntryPoint$1 = function GWTProjectEntryPoint$1(this$0){
   this.$init_239();
 }
 ;
-defineClass(169, 7, $intern_27, cggswc.GWTProjectEntryPoint$1);
+defineClass(170, 7, $intern_26, cggswc.GWTProjectEntryPoint$1);
 _.$init_239 = function $init_239(){
 }
 ;
-_.f_4 = function f_41(e){
+_.f_4 = function f_40(e){
   var input_0;
-  input_0 = cggcc.$cast(cggqc.$_4(this).children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['input'])).get_0(0));
+  input_0 = cggcc.$cast(cggqc.$_0(this).children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['input'])).get_0(0));
   this.this$01.doSearch(cggdc.$getValue(input_0));
   return false;
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$1_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/1', 169, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$1_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/1', 170, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$10 = function $clinit_GWTProjectEntryPoint$10(){
   cggswc.$clinit_GWTProjectEntryPoint$10 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20826,16 +20164,16 @@ cggswc.GWTProjectEntryPoint$10 = function GWTProjectEntryPoint$10(this$0){
   this.$init_240();
 }
 ;
-defineClass(178, 7, $intern_27, cggswc.GWTProjectEntryPoint$10);
+defineClass(179, 7, $intern_26, cggswc.GWTProjectEntryPoint$10);
 _.$init_240 = function $init_240(){
 }
 ;
-_.f_4 = function f_42(e){
-  this.this$01.toggleMenu(cggqc.$_5(e).parent_1());
+_.f_4 = function f_41(e){
+  this.this$01.toggleMenu(cggqc.$_0(e).parent_1());
   return false;
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$10_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/10', 178, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$10_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/10', 179, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$11 = function $clinit_GWTProjectEntryPoint$11(){
   cggswc.$clinit_GWTProjectEntryPoint$11 = emptyMethod;
   jl.$clinit_Object();
@@ -20849,7 +20187,7 @@ cggswc.GWTProjectEntryPoint$11 = function GWTProjectEntryPoint$11(this$0, val$it
   this.$init_241();
 }
 ;
-defineClass(179, 1, $intern_0, cggswc.GWTProjectEntryPoint$11);
+defineClass(180, 1, $intern_0, cggswc.GWTProjectEntryPoint$11);
 _.$init_241 = function $init_241(){
 }
 ;
@@ -20857,7 +20195,7 @@ _.execute_2 = function execute_7(){
   this.val$item2.parents_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['li'])).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['open'])).children_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['ul'])).slideDown((cggswc.$clinit_GWTProjectEntryPoint() , cggswc.ajaxEnabled)?200:0, initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, []));
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$11_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/11', 179, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$11_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/11', 180, cggl.Ljava_lang_Object_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$12 = function $clinit_GWTProjectEntryPoint$12(){
   cggswc.$clinit_GWTProjectEntryPoint$12 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20871,22 +20209,22 @@ cggswc.GWTProjectEntryPoint$12 = function GWTProjectEntryPoint$12(this$0, val$sh
   this.$init_242();
 }
 ;
-defineClass(180, 7, $intern_27, cggswc.GWTProjectEntryPoint$12);
+defineClass(181, 7, $intern_26, cggswc.GWTProjectEntryPoint$12);
 _.$init_242 = function $init_242(){
 }
 ;
-_.f = function f_43(){
+_.f = function f_42(){
   var content_0;
-  content_0 = cggqc.$_7('<div>' + this.getArgument(0) + '<\/div>');
+  content_0 = cggqc.$_1('<div>' + this.getArgument(0) + '<\/div>');
   if (this.val$shouldReplaceMenu2) {
-    cggqc.$_7('#submenu').replaceWith(content_0.find_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['#submenu'])));
+    cggqc.$_1('#submenu').replaceWith(content_0.find_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['#submenu'])));
   }
-  cggqc.$_7('#content').replaceWith(content_0.find_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['#content'])));
+  cggqc.$_1('#content').replaceWith(content_0.find_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['#content'])));
   this.this$01.onPageLoaded(this.val$shouldReplaceMenu2);
 }
 ;
 _.val$shouldReplaceMenu2 = false;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$12_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/12', 180, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$12_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/12', 181, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$13 = function $clinit_GWTProjectEntryPoint$13(){
   cggswc.$clinit_GWTProjectEntryPoint$13 = emptyMethod;
   jl.$clinit_Object();
@@ -20899,7 +20237,7 @@ cggswc.GWTProjectEntryPoint$13 = function GWTProjectEntryPoint$13(this$0){
   this.$init_243();
 }
 ;
-defineClass(181, 1, $intern_47, cggswc.GWTProjectEntryPoint$13);
+defineClass(182, 1, $intern_48, cggswc.GWTProjectEntryPoint$13);
 _.$init_243 = function $init_243(){
 }
 ;
@@ -20907,7 +20245,7 @@ _.onResize = function onResize(event_0){
   this.this$01.styleHomepage();
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$13_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/13', 181, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$13_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/13', 182, cggl.Ljava_lang_Object_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$14 = function $clinit_GWTProjectEntryPoint$14(){
   cggswc.$clinit_GWTProjectEntryPoint$14 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20920,17 +20258,17 @@ cggswc.GWTProjectEntryPoint$14 = function GWTProjectEntryPoint$14(this$0){
   this.$init_244();
 }
 ;
-defineClass(182, 7, $intern_27, cggswc.GWTProjectEntryPoint$14);
+defineClass(183, 7, $intern_26, cggswc.GWTProjectEntryPoint$14);
 _.$init_244 = function $init_244(){
 }
 ;
-_.f_4 = function f_44(event_0){
+_.f_4 = function f_43(event_0){
   cggdc.$preventDefault(event_0);
-  cggqc.$_7('html, body').each(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$14$1(this, event_0)]));
+  cggqc.$_1('html, body').each(initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_query_client_Function_2_classLit, 1), $intern_6, 7, 0, [new cggswc.GWTProjectEntryPoint$14$1(this, event_0)]));
   return true;
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$14_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/14', 182, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$14_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/14', 183, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$14$1 = function $clinit_GWTProjectEntryPoint$14$1(){
   cggswc.$clinit_GWTProjectEntryPoint$14$1 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20944,15 +20282,15 @@ cggswc.GWTProjectEntryPoint$14$1 = function GWTProjectEntryPoint$14$1(this$1, va
   this.$init_245();
 }
 ;
-defineClass(183, 7, $intern_27, cggswc.GWTProjectEntryPoint$14$1);
+defineClass(184, 7, $intern_26, cggswc.GWTProjectEntryPoint$14$1);
 _.$init_245 = function $init_245(){
 }
 ;
-_.f_0 = function f_45(e){
-  (new cggswc.ScrollTopAnimation(e, this.this$11.this$01.getElementOffset(cggqc.$_7(cggqc.$_5(this.val$event2).attr('href'))))).run(600);
+_.f_0 = function f_44(e){
+  (new cggswc.ScrollTopAnimation(e, this.this$11.this$01.getElementOffset(cggqc.$_1(cggqc.$_0(this.val$event2).attr('href'))))).run(600);
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$14$1_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/14/1', 183, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$14$1_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/14/1', 184, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$15 = function $clinit_GWTProjectEntryPoint$15(){
   cggswc.$clinit_GWTProjectEntryPoint$15 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20965,18 +20303,18 @@ cggswc.GWTProjectEntryPoint$15 = function GWTProjectEntryPoint$15(this$0){
   this.$init_246();
 }
 ;
-defineClass(184, 7, $intern_27, cggswc.GWTProjectEntryPoint$15);
+defineClass(185, 7, $intern_26, cggswc.GWTProjectEntryPoint$15);
 _.$init_246 = function $init_246(){
 }
 ;
-_.f_4 = function f_46(e){
+_.f_4 = function f_45(e){
   cggdc.$preventDefault(e);
-  cggqc.$_7('.pager a').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
-  cggqc.$_4(this).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+  cggqc.$_1('.pager a').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+  cggqc.$_0(this).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
   return true;
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$15_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/15', 184, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$15_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/15', 185, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$16 = function $clinit_GWTProjectEntryPoint$16(){
   cggswc.$clinit_GWTProjectEntryPoint$16 = emptyMethod;
   cggqc.$clinit_Function();
@@ -20989,24 +20327,24 @@ cggswc.GWTProjectEntryPoint$16 = function GWTProjectEntryPoint$16(this$0){
   this.$init_247();
 }
 ;
-defineClass(185, 7, $intern_27, cggswc.GWTProjectEntryPoint$16);
+defineClass(186, 7, $intern_26, cggswc.GWTProjectEntryPoint$16);
 _.$init_247 = function $init_247(){
 }
 ;
-_.f = function f_47(){
-  cggqc.$_7('.pager a').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
-  if (cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).scrollTop_0() + 100 > this.this$01.getElementOffset(cggqc.$_7('#letsbegin'))) {
-    cggqc.$_7('.pager a:nth-child(3)').addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+_.f = function f_46(){
+  cggqc.$_1('.pager a').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+  if (cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).scrollTop_0() + 100 > this.this$01.getElementOffset(cggqc.$_1('#letsbegin'))) {
+    cggqc.$_1('.pager a:nth-child(3)').addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
   }
-   else if (cggqc.$_1((cggqc.$clinit_GQuery() , cggqc.window_1)).scrollTop_0() + 100 > this.this$01.getElementOffset(cggqc.$_7('#gwt'))) {
-    cggqc.$_7('.pager a:nth-child(2)').addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+   else if (cggqc.$_0((cggqc.$clinit_GQuery() , cggqc.window_1)).scrollTop_0() + 100 > this.this$01.getElementOffset(cggqc.$_1('#gwt'))) {
+    cggqc.$_1('.pager a:nth-child(2)').addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
   }
    else {
-    cggqc.$_7('.pager a:nth-child(1)').addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
+    cggqc.$_1('.pager a:nth-child(1)').addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['active']));
   }
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$16_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/16', 185, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$16_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/16', 186, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$17 = function $clinit_GWTProjectEntryPoint$17(){
   cggswc.$clinit_GWTProjectEntryPoint$17 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21020,19 +20358,19 @@ cggswc.GWTProjectEntryPoint$17 = function GWTProjectEntryPoint$17(this$0, val$wi
   this.$init_248();
 }
 ;
-defineClass(186, 7, $intern_27, cggswc.GWTProjectEntryPoint$17);
+defineClass(187, 7, $intern_26, cggswc.GWTProjectEntryPoint$17);
 _.$init_248 = function $init_248(){
 }
 ;
-_.f = function f_48(){
+_.f = function f_47(){
   var container;
-  cggqc.$_4(this).css_1('height', this.val$windowHeight2 + 'px').css_1('padding', '0');
-  container = cggqc.$_4(this).find_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['.container']));
+  cggqc.$_0(this).css_1('height', this.val$windowHeight2 + 'px').css_1('padding', '0');
+  container = cggqc.$_0(this).find_0(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['.container']));
   container.css_1('padding-top', narrow_int((this.val$windowHeight2 - container.height_0()) / 2) + 'px');
 }
 ;
 _.val$windowHeight2 = 0;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$17_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/17', 186, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$17_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/17', 187, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$2 = function $clinit_GWTProjectEntryPoint$2(){
   cggswc.$clinit_GWTProjectEntryPoint$2 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21045,15 +20383,15 @@ cggswc.GWTProjectEntryPoint$2 = function GWTProjectEntryPoint$2(this$0){
   this.$init_249();
 }
 ;
-defineClass(170, 7, $intern_27, cggswc.GWTProjectEntryPoint$2);
+defineClass(171, 7, $intern_26, cggswc.GWTProjectEntryPoint$2);
 _.$init_249 = function $init_249(){
 }
 ;
-_.f_0 = function f_49(e){
-  cggqc.$_1(e).removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
+_.f_0 = function f_48(e){
+  cggqc.$_0(e).removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$2_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/2', 170, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$2_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/2', 171, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$3 = function $clinit_GWTProjectEntryPoint$3(){
   cggswc.$clinit_GWTProjectEntryPoint$3 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21066,15 +20404,15 @@ cggswc.GWTProjectEntryPoint$3 = function GWTProjectEntryPoint$3(this$0){
   this.$init_250();
 }
 ;
-defineClass(171, 7, $intern_27, cggswc.GWTProjectEntryPoint$3);
+defineClass(172, 7, $intern_26, cggswc.GWTProjectEntryPoint$3);
 _.$init_250 = function $init_250(){
 }
 ;
-_.f_0 = function f_50(e){
-  cggqc.$_1(e).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
+_.f_0 = function f_49(e){
+  cggqc.$_0(e).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$3_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/3', 171, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$3_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/3', 172, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$4 = function $clinit_GWTProjectEntryPoint$4(){
   cggswc.$clinit_GWTProjectEntryPoint$4 = emptyMethod;
   cggqc.$clinit_Predicate();
@@ -21087,15 +20425,15 @@ cggswc.GWTProjectEntryPoint$4 = function GWTProjectEntryPoint$4(this$0){
   this.$init_251();
 }
 ;
-defineClass(172, 19, $intern_29, cggswc.GWTProjectEntryPoint$4);
+defineClass(173, 16, $intern_28, cggswc.GWTProjectEntryPoint$4);
 _.$init_251 = function $init_251(){
 }
 ;
-_.f_9 = function f_51(e, index_0){
+_.f_9 = function f_50(e, index_0){
   return !jl.equals_Ljava_lang_Object__Z__devirtual$_0((cggdc.$clinit_Style$Display() , cggdc.NONE).getCssName(), cggdc.$getDisplay(cggdc.$getStyle(e)));
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$4_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/4', 172, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$4_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/4', 173, cggl.Lcom_google_gwt_query_client_Predicate_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$5 = function $clinit_GWTProjectEntryPoint$5(){
   cggswc.$clinit_GWTProjectEntryPoint$5 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21108,15 +20446,15 @@ cggswc.GWTProjectEntryPoint$5 = function GWTProjectEntryPoint$5(this$0){
   this.$init_252();
 }
 ;
-defineClass(173, 7, $intern_27, cggswc.GWTProjectEntryPoint$5);
+defineClass(174, 7, $intern_26, cggswc.GWTProjectEntryPoint$5);
 _.$init_252 = function $init_252(){
 }
 ;
-_.f = function f_52(){
-  cggqc.$_4(this).removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
+_.f = function f_51(){
+  cggqc.$_0(this).removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$5_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/5', 173, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$5_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/5', 174, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$6 = function $clinit_GWTProjectEntryPoint$6(){
   cggswc.$clinit_GWTProjectEntryPoint$6 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21129,17 +20467,17 @@ cggswc.GWTProjectEntryPoint$6 = function GWTProjectEntryPoint$6(this$0){
   this.$init_253();
 }
 ;
-defineClass(174, 7, $intern_27, cggswc.GWTProjectEntryPoint$6);
+defineClass(175, 7, $intern_26, cggswc.GWTProjectEntryPoint$6);
 _.$init_253 = function $init_253(){
 }
 ;
-_.f = function f_53(){
-  if (!cggqc.$_4(this).hasClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['alwaysOpen']))) {
-    cggqc.$_4(this).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
+_.f = function f_52(){
+  if (!cggqc.$_0(this).hasClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['alwaysOpen']))) {
+    cggqc.$_0(this).addClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['closed']));
   }
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$6_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/6', 174, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$6_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/6', 175, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$7 = function $clinit_GWTProjectEntryPoint$7(){
   cggswc.$clinit_GWTProjectEntryPoint$7 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21152,20 +20490,20 @@ cggswc.GWTProjectEntryPoint$7 = function GWTProjectEntryPoint$7(this$0){
   this.$init_254();
 }
 ;
-defineClass(175, 7, $intern_27, cggswc.GWTProjectEntryPoint$7);
+defineClass(176, 7, $intern_26, cggswc.GWTProjectEntryPoint$7);
 _.$init_254 = function $init_254(){
 }
 ;
-_.f_4 = function f_54(e){
-  if (this.this$01.shouldEnhanceLink(cggqc.$_5(e)) && (cggswc.$clinit_GWTProjectEntryPoint() , cggswc.clickHelper).handleAsClick(e)) {
-    cggqc.$_7('#submenu.show').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['show']));
-    this.this$01.loadPage(cggqc.$_5(e));
+_.f_4 = function f_53(e){
+  if (this.this$01.shouldEnhanceLink(cggqc.$_0(e)) && (cggswc.$clinit_GWTProjectEntryPoint() , cggswc.clickHelper).handleAsClick(e)) {
+    cggqc.$_1('#submenu.show').removeClass(initValues(getClassLiteralForArray(cggl.Ljava_lang_String_2_classLit, 1), $intern_2, 2, 4, ['show']));
+    this.this$01.loadPage(cggqc.$_0(e));
     return false;
   }
   return true;
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$7_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/7', 175, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$7_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/7', 176, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$8 = function $clinit_GWTProjectEntryPoint$8(){
   cggswc.$clinit_GWTProjectEntryPoint$8 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21178,15 +20516,15 @@ cggswc.GWTProjectEntryPoint$8 = function GWTProjectEntryPoint$8(this$0){
   this.$init_255();
 }
 ;
-defineClass(176, 7, $intern_27, cggswc.GWTProjectEntryPoint$8);
+defineClass(177, 7, $intern_26, cggswc.GWTProjectEntryPoint$8);
 _.$init_255 = function $init_255(){
 }
 ;
-_.f = function f_55(){
+_.f = function f_54(){
   this.this$01.loadPage(null);
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$8_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/8', 176, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$8_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/8', 177, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_GWTProjectEntryPoint$9 = function $clinit_GWTProjectEntryPoint$9(){
   cggswc.$clinit_GWTProjectEntryPoint$9 = emptyMethod;
   cggqc.$clinit_Function();
@@ -21199,19 +20537,19 @@ cggswc.GWTProjectEntryPoint$9 = function GWTProjectEntryPoint$9(this$0){
   this.$init_256();
 }
 ;
-defineClass(177, 7, $intern_27, cggswc.GWTProjectEntryPoint$9);
+defineClass(178, 7, $intern_26, cggswc.GWTProjectEntryPoint$9);
 _.$init_256 = function $init_256(){
 }
 ;
-_.f_0 = function f_56(e){
+_.f_0 = function f_55(e){
   var link_0;
-  link_0 = cggqc.$_1(e);
+  link_0 = cggqc.$_0(e);
   if (this.this$01.shouldEnhanceLink(link_0)) {
     link_0.attr_0('href', link_0.prop('pathname'));
   }
 }
 ;
-cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$9_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/9', 177, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_GWTProjectEntryPoint$9_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'GWTProjectEntryPoint/9', 178, cggl.Lcom_google_gwt_query_client_Function_2_classLit);
 cggswc.$clinit_ScrollTopAnimation = function $clinit_ScrollTopAnimation(){
   cggswc.$clinit_ScrollTopAnimation = emptyMethod;
   cggac.$clinit_Animation();
@@ -21225,7 +20563,7 @@ cggswc.ScrollTopAnimation = function ScrollTopAnimation(element, end){
   this.end = end;
 }
 ;
-defineClass(362, 48, $intern_0, cggswc.ScrollTopAnimation);
+defineClass(364, 51, $intern_0, cggswc.ScrollTopAnimation);
 _.$init_257 = function $init_257(){
 }
 ;
@@ -21233,9 +20571,9 @@ _.interpolate = function interpolate_3(progress){
   return (cggqcpe.$clinit_PropertiesAnimation$EasingCurve() , cggqcpe.easeInOut).interpolate(progress);
 }
 ;
-_.onStart = function onStart_5(){
+_.onStart = function onStart_4(){
   this.start_0 = cggdc.$getScrollTop(this.element_0);
-  getClassPrototype(48).onStart.call(this);
+  getClassPrototype(51).onStart.call(this);
 }
 ;
 _.onUpdate = function onUpdate_2(progress){
@@ -21246,7 +20584,7 @@ _.onUpdate = function onUpdate_2(progress){
 ;
 _.end = 0;
 _.start_0 = 0;
-cggl.Lcom_google_gwt_site_webapp_client_ScrollTopAnimation_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'ScrollTopAnimation', 362, cggl.Lcom_google_gwt_animation_client_Animation_2_classLit);
+cggl.Lcom_google_gwt_site_webapp_client_ScrollTopAnimation_2_classLit = createForClass('com.google.gwt.site.webapp.client', 'ScrollTopAnimation', 364, cggl.Lcom_google_gwt_animation_client_Animation_2_classLit);
 cggtc.$clinit_ArrayBufferNative = function $clinit_ArrayBufferNative(){
   cggtc.$clinit_ArrayBufferNative = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -21402,22 +20740,22 @@ cgguc.$clinit_BaseListenerWrapper = function $clinit_BaseListenerWrapper(){
   cgguc.$clinit_BaseListenerWrapper = emptyMethod;
 }
 ;
-defineClass(694, 1, $intern_48);
+defineClass(714, 1, $intern_49);
 cgguc.$clinit_BaseListenerWrapper$WrapWindowClose = function $clinit_BaseListenerWrapper$WrapWindowClose(){
   cgguc.$clinit_BaseListenerWrapper$WrapWindowClose = emptyMethod;
 }
 ;
-defineClass(695, 694, {370:1, 65:1, 409:1, 1:1});
+defineClass(715, 714, {371:1, 69:1, 409:1, 1:1});
 cgguc.$clinit_BaseListenerWrapper$WrapWindowResize = function $clinit_BaseListenerWrapper$WrapWindowResize(){
   cgguc.$clinit_BaseListenerWrapper$WrapWindowResize = emptyMethod;
 }
 ;
-defineClass(696, 694, $intern_47);
+defineClass(716, 714, $intern_48);
 cgguc.$clinit_BaseListenerWrapper$WrapWindowScroll = function $clinit_BaseListenerWrapper$WrapWindowScroll(){
   cgguc.$clinit_BaseListenerWrapper$WrapWindowScroll = emptyMethod;
 }
 ;
-defineClass(697, 694, $intern_48);
+defineClass(717, 714, $intern_49);
 cgguc.$clinit_Command = function $clinit_Command(){
   cgguc.$clinit_Command = emptyMethod;
 }
@@ -21425,7 +20763,7 @@ cgguc.$clinit_Command = function $clinit_Command(){
 cgguc.$clinit_DOM = function $clinit_DOM(){
   cgguc.$clinit_DOM = emptyMethod;
   jl.$clinit_Object();
-  cgguc.impl_3 = dynamicCast(new cgguci.DOMImplWebkit_0, 97);
+  cgguc.impl_3 = dynamicCast(new cgguci.DOMImplMozilla_0, 101);
 }
 ;
 cgguc.asOld = function asOld(elem){
@@ -21433,28 +20771,23 @@ cgguc.asOld = function asOld(elem){
   return elem;
 }
 ;
-cgguc.createDiv = function createDiv(){
-  cgguc.$clinit_DOM();
-  return cggcc.$cast(cggdc.$createDivElement(cggdc.get_2()));
-}
-;
 cgguc.createElement_1 = function createElement_1(tagName){
   cgguc.$clinit_DOM();
   return cggcc.$cast(cggdc.$createElement(cggdc.get_2(), tagName));
 }
 ;
-cgguc.dispatchEvent_7 = function dispatchEvent_7(evt, elem){
+cgguc.dispatchEvent_8 = function dispatchEvent_8(evt, elem){
   cgguc.$clinit_DOM();
   var eventListener;
   eventListener = cgguc.getEventListener_0(elem);
   if (isNull(eventListener)) {
     return false;
   }
-  cgguc.dispatchEvent_8(evt, elem, eventListener);
+  cgguc.dispatchEvent_9(evt, elem, eventListener);
   return true;
 }
 ;
-cgguc.dispatchEvent_8 = function dispatchEvent_8(evt, elem, listener){
+cgguc.dispatchEvent_9 = function dispatchEvent_9(evt, elem, listener){
   cgguc.$clinit_DOM();
   var prevCurrentEvent;
   prevCurrentEvent = cgguc.currentEvent;
@@ -21508,13 +20841,13 @@ cgguc.sinkEvents = function sinkEvents(elem, eventBits){
   cgguc.impl_3.sinkEvents(elem, eventBits);
 }
 ;
-defineClass(692, 1, $intern_0);
+defineClass(712, 1, $intern_0);
 cgguc.currentEvent = null;
 cgguc.$clinit_DOM$NativePreview = function $clinit_DOM$NativePreview(){
   cgguc.$clinit_DOM$NativePreview = emptyMethod;
 }
 ;
-defineClass(693, 694, $intern_48);
+defineClass(713, 714, $intern_49);
 cgguc.$clinit_DocumentModeAsserter = function $clinit_DocumentModeAsserter(){
   cgguc.$clinit_DocumentModeAsserter = emptyMethod;
   jl.$clinit_Object();
@@ -21526,13 +20859,13 @@ cgguc.DocumentModeAsserter = function DocumentModeAsserter(){
   this.$init_258();
 }
 ;
-defineClass(187, 1, $intern_46, cgguc.DocumentModeAsserter);
+defineClass(188, 1, $intern_47, cgguc.DocumentModeAsserter);
 _.$init_258 = function $init_258(){
 }
 ;
 _.onModuleLoad = function onModuleLoad_0(){
   var allowedModes, currentMode, i_0, impl, message, severity;
-  impl = dynamicCast(new cgguc.DocumentModeAsserter_DocumentModeProperty, 405);
+  impl = dynamicCast(new cgguc.DocumentModeAsserter_DocumentModeProperty, 404);
   severity = impl.getDocumentModeSeverity();
   if (jsEquals(severity, (cgguc.$clinit_DocumentModeAsserter$Severity() , cgguc.IGNORE))) {
     return;
@@ -21560,7 +20893,7 @@ cgguc.PROPERTY_DOCUMENT_COMPATMODE = 'document.compatMode';
 cgguc.PROPERTY_DOCUMENT_COMPATMODE_SEVERITY = 'document.compatMode.severity';
 cgguc.QUIRKS_MODE_BACK_COMPAT = 'BackCompat';
 cgguc.STANDARDS_MODE_CSS1_COMPAT = 'CSS1Compat';
-cggl.Lcom_google_gwt_user_client_DocumentModeAsserter_2_classLit = createForClass('com.google.gwt.user.client', 'DocumentModeAsserter', 187, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_DocumentModeAsserter_2_classLit = createForClass('com.google.gwt.user.client', 'DocumentModeAsserter', 188, cggl.Ljava_lang_Object_2_classLit);
 cgguc.$clinit_DocumentModeAsserter$DocumentModeProperty = function $clinit_DocumentModeAsserter$DocumentModeProperty(){
   cgguc.$clinit_DocumentModeAsserter$DocumentModeProperty = emptyMethod;
 }
@@ -21585,14 +20918,14 @@ cgguc.valueOf_8 = function valueOf_8(name_0){
 ;
 cgguc.values_8 = function values_8(){
   cgguc.$clinit_DocumentModeAsserter$Severity();
-  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_user_client_DocumentModeAsserter$Severity_2_classLit, 1), $intern_6, 70, 0, [cgguc.ERROR, cgguc.IGNORE, cgguc.WARN]);
+  return initValues(getClassLiteralForArray(cggl.Lcom_google_gwt_user_client_DocumentModeAsserter$Severity_2_classLit, 1), $intern_6, 73, 0, [cgguc.ERROR, cgguc.IGNORE, cgguc.WARN]);
 }
 ;
-defineClass(70, 5, {70:1, 3:1, 6:1, 5:1, 1:1}, cgguc.DocumentModeAsserter$Severity);
+defineClass(73, 5, {73:1, 3:1, 6:1, 5:1, 1:1}, cgguc.DocumentModeAsserter$Severity);
 _.$init_259 = function $init_259(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_DocumentModeAsserter$Severity_2_classLit = createForEnum('com.google.gwt.user.client', 'DocumentModeAsserter/Severity', 70, cggl.Ljava_lang_Enum_2_classLit, cgguc.values_8, cgguc.valueOf_8);
+cggl.Lcom_google_gwt_user_client_DocumentModeAsserter$Severity_2_classLit = createForEnum('com.google.gwt.user.client', 'DocumentModeAsserter/Severity', 73, cggl.Ljava_lang_Enum_2_classLit, cgguc.values_8, cgguc.valueOf_8);
 cgguc.$clinit_DocumentModeAsserter$Severity$Map = function $clinit_DocumentModeAsserter$Severity$Map(){
   cgguc.$clinit_DocumentModeAsserter$Severity$Map = emptyMethod;
   cgguc.$MAP_7 = createValueOfMap(cgguc.values_8());
@@ -21610,7 +20943,7 @@ cgguc.DocumentModeAsserter_DocumentModeProperty = function DocumentModeAsserter_
   this.$init_260();
 }
 ;
-defineClass(205, 1, {405:1, 1:1}, cgguc.DocumentModeAsserter_DocumentModeProperty);
+defineClass(207, 1, {404:1, 1:1}, cgguc.DocumentModeAsserter_DocumentModeProperty);
 _.$init_260 = function $init_260(){
 }
 ;
@@ -21622,7 +20955,7 @@ _.getDocumentModeSeverity = function getDocumentModeSeverity(){
   return cgguc.$clinit_DocumentModeAsserter$Severity() , cgguc.WARN;
 }
 ;
-cggl.Lcom_google_gwt_user_client_DocumentModeAsserter_1DocumentModeProperty_2_classLit = createForClass('com.google.gwt.user.client', 'DocumentModeAsserter_DocumentModeProperty', 205, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_DocumentModeAsserter_1DocumentModeProperty_2_classLit = createForClass('com.google.gwt.user.client', 'DocumentModeAsserter_DocumentModeProperty', 207, cggl.Ljava_lang_Object_2_classLit);
 cgguc.$clinit_Element_0 = function $clinit_Element_0(){
   cgguc.$clinit_Element_0 = emptyMethod;
   cggdc.$clinit_Element();
@@ -21633,7 +20966,7 @@ cgguc.$clinit_Event$NativePreviewEvent = function $clinit_Event$NativePreviewEve
   cgges.$clinit_GwtEvent();
 }
 ;
-cgguc.fire_7 = function fire_7(handlers, nativeEvent){
+cgguc.fire_8 = function fire_8(handlers, nativeEvent){
   cgguc.$clinit_Event$NativePreviewEvent();
   var lastIsCanceled, lastIsConsumed, lastIsFirstHandler, lastNativeEvent, ret;
   if (isNotNull(cgguc.TYPE_2) && isNotNull(handlers) && handlers.isEventHandled(cgguc.TYPE_2)) {
@@ -21654,7 +20987,7 @@ cgguc.fire_7 = function fire_7(handlers, nativeEvent){
   return true;
 }
 ;
-defineClass(699, 75, $intern_0);
+defineClass(707, 76, $intern_0);
 _.isCanceled_0 = function isCanceled(){
   return this.isCanceled;
 }
@@ -21664,7 +20997,7 @@ _.isConsumed_0 = function isConsumed(){
 }
 ;
 _.revive = function revive_0(){
-  getClassPrototype(75).revive.call(this);
+  getClassPrototype(76).revive.call(this);
   this.isCanceled = false;
   this.isConsumed = false;
   this.isFirstHandler = true;
@@ -21689,7 +21022,7 @@ cgguc.$clinit_EventListener = function $clinit_EventListener(){
 cgguc.$clinit_Window = function $clinit_Window(){
   cgguc.$clinit_Window = emptyMethod;
   jl.$clinit_Object();
-  cgguc.impl_4 = dynamicCast(new cgguci.WindowImpl, 49);
+  cgguc.impl_4 = dynamicCast(new cgguci.WindowImplMozilla, 99);
 }
 ;
 cgguc.addHandler_1 = function addHandler_1(type_0, handler){
@@ -21785,7 +21118,7 @@ cgguc.scrollTo_0 = function scrollTo_0(left, top_0){
   $wnd.scrollTo(left, top_0);
 }
 ;
-defineClass(502, 1, $intern_0);
+defineClass(511, 1, $intern_0);
 cgguc.closeHandlersInitialized = false;
 cgguc.lastResizeHeight = 0;
 cgguc.lastResizeWidth = 0;
@@ -21802,7 +21135,7 @@ cgguc.Window$ClosingEvent = function Window$ClosingEvent(){
   this.$init_261();
 }
 ;
-defineClass(208, 75, $intern_0, cgguc.Window$ClosingEvent);
+defineClass(217, 76, $intern_0, cgguc.Window$ClosingEvent);
 _.$init_261 = function $init_261(){
   this.message_0 = null;
 }
@@ -21823,7 +21156,7 @@ _.getMessage = function getMessage_1(){
   return this.message_0;
 }
 ;
-cggl.Lcom_google_gwt_user_client_Window$ClosingEvent_2_classLit = createForClass('com.google.gwt.user.client', 'Window/ClosingEvent', 208, cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit);
+cggl.Lcom_google_gwt_user_client_Window$ClosingEvent_2_classLit = createForClass('com.google.gwt.user.client', 'Window/ClosingEvent', 217, cggl.Lcom_google_gwt_event_shared_GwtEvent_2_classLit);
 cgguc.$clinit_Window$ClosingHandler = function $clinit_Window$ClosingHandler(){
   cgguc.$clinit_Window$ClosingHandler = emptyMethod;
 }
@@ -21848,18 +21181,18 @@ cgguc.getQueryString = function getQueryString(){
   return (cgguc.$clinit_Window() , cgguc.impl_4).getQueryString();
 }
 ;
-defineClass(503, 1, $intern_0);
+defineClass(512, 1, $intern_0);
 cgguc.cachedQueryString = '';
 cgguc.$clinit_Window$Navigator = function $clinit_Window$Navigator(){
   cgguc.$clinit_Window$Navigator = emptyMethod;
 }
 ;
-defineClass(504, 1, $intern_0);
+defineClass(513, 1, $intern_0);
 cgguc.$clinit_Window$ScrollEvent = function $clinit_Window$ScrollEvent(){
   cgguc.$clinit_Window$ScrollEvent = emptyMethod;
 }
 ;
-defineClass(505, 75, $intern_0);
+defineClass(514, 76, $intern_0);
 cgguc.$clinit_Window$ScrollHandler = function $clinit_Window$ScrollHandler(){
   cgguc.$clinit_Window$ScrollHandler = emptyMethod;
 }
@@ -21875,11 +21208,11 @@ cgguc.Window$WindowHandlers = function Window$WindowHandlers(){
   this.$init_262();
 }
 ;
-defineClass(209, 136, $intern_0, cgguc.Window$WindowHandlers);
+defineClass(218, 139, $intern_0, cgguc.Window$WindowHandlers);
 _.$init_262 = function $init_262(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_Window$WindowHandlers_2_classLit = createForClass('com.google.gwt.user.client', 'Window/WindowHandlers', 209, cggl.Lcom_google_gwt_event_shared_HandlerManager_2_classLit);
+cggl.Lcom_google_gwt_user_client_Window$WindowHandlers_2_classLit = createForClass('com.google.gwt.user.client', 'Window/WindowHandlers', 218, cggl.Lcom_google_gwt_event_shared_HandlerManager_2_classLit);
 cgguci.$clinit_DOMImpl_0 = function $clinit_DOMImpl_0(){
   cgguci.$clinit_DOMImpl_0 = emptyMethod;
   jl.$clinit_Object();
@@ -21898,7 +21231,7 @@ cgguci.getEventListener_1 = function getEventListener_1(elem){
 }
 ;
 cgguci.isMyListener = function isMyListener(object){
-  return !instanceOfJso(object) && instanceOf(object, 67);
+  return !instanceOfJso(object) && instanceOf(object, 70);
 }
 ;
 cgguci.setEventListener_0 = function setEventListener_0(elem, listener){
@@ -21906,7 +21239,7 @@ cgguci.setEventListener_0 = function setEventListener_0(elem, listener){
   elem.__listener = listener;
 }
 ;
-defineClass(97, 1, $intern_0);
+defineClass(101, 1, $intern_0);
 _.$init_263 = function $init_263(){
 }
 ;
@@ -21917,7 +21250,7 @@ _.eventGetTypeInt = function eventGetTypeInt(evt){
 _.eventGetTypeInt_0 = function eventGetTypeInt_0(eventType){
   switch (eventType) {
     case 'blur':
-      return $intern_34;
+      return $intern_35;
     case 'change':
       return 1024;
     case 'click':
@@ -21933,7 +21266,7 @@ _.eventGetTypeInt_0 = function eventGetTypeInt_0(eventType){
     case 'keyup':
       return 512;
     case 'load':
-      return $intern_20;
+      return $intern_19;
     case 'losecapture':
       return 8192;
     case 'mousedown':
@@ -21947,31 +21280,31 @@ _.eventGetTypeInt_0 = function eventGetTypeInt_0(eventType){
     case 'mouseup':
       return 8;
     case 'scroll':
-      return $intern_28;
+      return $intern_27;
     case 'error':
       return $intern_3;
     case 'mousewheel':
-      return $intern_35;
+      return $intern_36;
     case 'DOMMouseScroll':
-      return $intern_35;
+      return $intern_36;
     case 'contextmenu':
-      return $intern_45;
+      return $intern_46;
     case 'paste':
-      return $intern_25;
+      return $intern_24;
     case 'touchstart':
-      return $intern_39;
-    case 'touchmove':
       return $intern_40;
-    case 'touchend':
-      return $intern_21;
-    case 'touchcancel':
+    case 'touchmove':
       return $intern_41;
-    case 'gesturestart':
+    case 'touchend':
+      return $intern_20;
+    case 'touchcancel':
       return $intern_42;
-    case 'gesturechange':
+    case 'gesturestart':
       return $intern_43;
-    case 'gestureend':
+    case 'gesturechange':
       return $intern_44;
+    case 'gestureend':
+      return $intern_45;
     default:return -1;
   }
 }
@@ -21988,7 +21321,7 @@ _.maybeInitializeEventSystem = function maybeInitializeEventSystem(){
 }
 ;
 cgguci.eventSystemIsInitialized = false;
-cggl.Lcom_google_gwt_user_client_impl_DOMImpl_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImpl', 97, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImpl_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImpl', 101, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_DOMImplTrident_0 = function $clinit_DOMImplTrident_0(){
   cgguci.$clinit_DOMImplTrident_0 = emptyMethod;
   cgguci.$clinit_DOMImpl_0();
@@ -22010,7 +21343,7 @@ cgguci.previewEventImpl = function previewEventImpl(){
   return !isCancelled;
 }
 ;
-defineClass(293, 97, $intern_0);
+defineClass(302, 101, $intern_0);
 _.$init_264 = function $init_264(){
 }
 ;
@@ -22038,7 +21371,7 @@ _.initEventSystem = function initEventSystem(){
       curElem = curElem.parentElement;
     }
     if (listener) {
-      cgguc.dispatchEvent_8($wnd.event, curElem, listener);
+      cgguc.dispatchEvent_9($wnd.event, curElem, listener);
     }
     cggdc.$clinit_DOMImplTrident() , cggdc.currentEventTarget_0 = oldEventTarget;
   }
@@ -22126,15 +21459,15 @@ _.sinkEventsImpl = function sinkEventsImpl(elem, bits){
     elem.onchange = bits & 1024?cgguci.callDispatchEvent:null;
   if (chMask & 2048)
     elem.onfocus = bits & 2048?cgguci.callDispatchEvent:null;
-  if (chMask & $intern_34)
-    elem.onblur = bits & $intern_34?cgguci.callDispatchEvent:null;
+  if (chMask & $intern_35)
+    elem.onblur = bits & $intern_35?cgguci.callDispatchEvent:null;
   if (chMask & 8192)
     elem.onlosecapture = bits & 8192?cgguci.callDispatchEvent:null;
-  if (chMask & $intern_28)
-    elem.onscroll = bits & $intern_28?cgguci.callDispatchEvent:null;
-  if (chMask & $intern_20) {
+  if (chMask & $intern_27)
+    elem.onscroll = bits & $intern_27?cgguci.callDispatchEvent:null;
+  if (chMask & $intern_19) {
     if (elem.nodeName == 'IFRAME') {
-      if (bits & $intern_20) {
+      if (bits & $intern_19) {
         elem.attachEvent('onload', cgguci.callDispatchOnLoadEvent);
       }
        else {
@@ -22142,20 +21475,20 @@ _.sinkEventsImpl = function sinkEventsImpl(elem, bits){
       }
     }
      else {
-      elem.onload = bits & $intern_20?cgguci.callDispatchUnhandledEvent:null;
+      elem.onload = bits & $intern_19?cgguci.callDispatchUnhandledEvent:null;
     }
   }
   if (chMask & $intern_3)
     elem.onerror = bits & $intern_3?cgguci.callDispatchEvent:null;
-  if (chMask & $intern_35)
-    elem.onmousewheel = bits & $intern_35?cgguci.callDispatchEvent:null;
-  if (chMask & $intern_45)
-    elem.oncontextmenu = bits & $intern_45?cgguci.callDispatchEvent:null;
-  if (chMask & $intern_25)
-    elem.onpaste = bits & $intern_25?cgguci.callDispatchEvent:null;
+  if (chMask & $intern_36)
+    elem.onmousewheel = bits & $intern_36?cgguci.callDispatchEvent:null;
+  if (chMask & $intern_46)
+    elem.oncontextmenu = bits & $intern_46?cgguci.callDispatchEvent:null;
+  if (chMask & $intern_24)
+    elem.onpaste = bits & $intern_24?cgguci.callDispatchEvent:null;
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplTrident_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplTrident', 293, cggl.Lcom_google_gwt_user_client_impl_DOMImpl_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplTrident_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplTrident', 302, cggl.Lcom_google_gwt_user_client_impl_DOMImpl_2_classLit);
 cgguci.$clinit_DOMImplIE8_0 = function $clinit_DOMImplIE8_0(){
   cgguci.$clinit_DOMImplIE8_0 = emptyMethod;
   cgguci.$clinit_DOMImplTrident_0();
@@ -22166,11 +21499,11 @@ cgguci.DOMImplIE8_0 = function DOMImplIE8_0(){
   this.$init_265();
 }
 ;
-defineClass(394, 293, $intern_0);
+defineClass(392, 302, $intern_0);
 _.$init_265 = function $init_265(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplIE8_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplIE8', 394, cggl.Lcom_google_gwt_user_client_impl_DOMImplTrident_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplIE8_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplIE8', 392, cggl.Lcom_google_gwt_user_client_impl_DOMImplTrident_2_classLit);
 cgguci.$clinit_DOMImplStandard_0 = function $clinit_DOMImplStandard_0(){
   cgguci.$clinit_DOMImplStandard_0 = emptyMethod;
   cgguci.$clinit_DOMImpl_0();
@@ -22195,34 +21528,34 @@ cgguci.dispatchCapturedMouseEvent = function dispatchCapturedMouseEvent(evt){
   if (cancelled || isNull(cgguci.captureElem)) {
     return;
   }
-  if (cgguc.dispatchEvent_7(evt, cgguci.captureElem)) {
+  if (cgguc.dispatchEvent_8(evt, cgguci.captureElem)) {
     cggdc.$stopPropagation(evt);
   }
 }
 ;
 cgguci.dispatchDragEvent = function dispatchDragEvent(evt){
   cggdc.$preventDefault(evt);
-  cgguci.dispatchEvent_10(evt);
+  cgguci.dispatchEvent_11(evt);
 }
 ;
-cgguci.dispatchEvent_10 = function dispatchEvent_10(evt){
+cgguci.dispatchEvent_11 = function dispatchEvent_11(evt){
   var element;
   element = cgguci.getFirstAncestorWithListener(evt);
   if (isNull(element)) {
     return;
   }
-  cgguc.dispatchEvent_8(evt, cggdc.$getNodeType(element) != 1?null:element, cgguci.getEventListener_1(element));
+  cgguc.dispatchEvent_9(evt, cggdc.$getNodeType(element) != 1?null:element, cgguci.getEventListener_1(element));
 }
 ;
 cgguci.dispatchUnhandledEvent_1 = function dispatchUnhandledEvent_1(evt){
   var element;
   element = cggcc.$cast(cggdc.$getCurrentEventTarget(evt));
   cggdc.$setPropertyString(element, '__gwtLastUnhandledEvent', cggdc.$getType_0(evt));
-  cgguci.dispatchEvent_10(evt);
+  cgguci.dispatchEvent_11(evt);
 }
 ;
 cgguci.getBitlessEventDispatchers = function getBitlessEventDispatchers(){
-  return {_default_:cgguci.dispatchEvent_10, dragenter:cgguci.dispatchDragEvent, dragover:cgguci.dispatchDragEvent};
+  return {_default_:cgguci.dispatchEvent_11, dragenter:cgguci.dispatchDragEvent, dragover:cgguci.dispatchDragEvent};
 }
 ;
 cgguci.getCaptureEventDispatchers = function getCaptureEventDispatchers(){
@@ -22238,12 +21571,12 @@ cgguci.getFirstAncestorWithListener = function getFirstAncestorWithListener(evt)
   return curElem;
 }
 ;
-defineClass(98, 97, $intern_0);
+defineClass(102, 101, $intern_0);
 _.$init_266 = function $init_266(){
 }
 ;
 _.initEventSystem = function initEventSystem_0(){
-  cgguci.dispatchEvent_9 = $entry(cgguci.dispatchEvent_10);
+  cgguci.dispatchEvent_10 = $entry(cgguci.dispatchEvent_11);
   cgguci.dispatchUnhandledEvent_0 = $entry(cgguci.dispatchUnhandledEvent_1);
   var foreach = cgguci.foreach_0;
   var bitlessEvents = cgguci.bitlessEventDispatchers;
@@ -22273,62 +21606,62 @@ _.sinkEventsImpl_0 = function sinkEventsImpl_0(elem, bits){
   if (!chMask)
     return;
   if (chMask & 1)
-    elem.onclick = bits & 1?cgguci.dispatchEvent_9:null;
+    elem.onclick = bits & 1?cgguci.dispatchEvent_10:null;
   if (chMask & 2)
-    elem.ondblclick = bits & 2?cgguci.dispatchEvent_9:null;
+    elem.ondblclick = bits & 2?cgguci.dispatchEvent_10:null;
   if (chMask & 4)
-    elem.onmousedown = bits & 4?cgguci.dispatchEvent_9:null;
+    elem.onmousedown = bits & 4?cgguci.dispatchEvent_10:null;
   if (chMask & 8)
-    elem.onmouseup = bits & 8?cgguci.dispatchEvent_9:null;
+    elem.onmouseup = bits & 8?cgguci.dispatchEvent_10:null;
   if (chMask & 16)
-    elem.onmouseover = bits & 16?cgguci.dispatchEvent_9:null;
+    elem.onmouseover = bits & 16?cgguci.dispatchEvent_10:null;
   if (chMask & 32)
-    elem.onmouseout = bits & 32?cgguci.dispatchEvent_9:null;
+    elem.onmouseout = bits & 32?cgguci.dispatchEvent_10:null;
   if (chMask & 64)
-    elem.onmousemove = bits & 64?cgguci.dispatchEvent_9:null;
+    elem.onmousemove = bits & 64?cgguci.dispatchEvent_10:null;
   if (chMask & 128)
-    elem.onkeydown = bits & 128?cgguci.dispatchEvent_9:null;
+    elem.onkeydown = bits & 128?cgguci.dispatchEvent_10:null;
   if (chMask & 256)
-    elem.onkeypress = bits & 256?cgguci.dispatchEvent_9:null;
+    elem.onkeypress = bits & 256?cgguci.dispatchEvent_10:null;
   if (chMask & 512)
-    elem.onkeyup = bits & 512?cgguci.dispatchEvent_9:null;
+    elem.onkeyup = bits & 512?cgguci.dispatchEvent_10:null;
   if (chMask & 1024)
-    elem.onchange = bits & 1024?cgguci.dispatchEvent_9:null;
+    elem.onchange = bits & 1024?cgguci.dispatchEvent_10:null;
   if (chMask & 2048)
-    elem.onfocus = bits & 2048?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_34)
-    elem.onblur = bits & $intern_34?cgguci.dispatchEvent_9:null;
-  if (chMask & 8192)
-    elem.onlosecapture = bits & 8192?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_28)
-    elem.onscroll = bits & $intern_28?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_20)
-    elem.onload = bits & $intern_20?cgguci.dispatchUnhandledEvent_0:null;
-  if (chMask & $intern_3)
-    elem.onerror = bits & $intern_3?cgguci.dispatchEvent_9:null;
+    elem.onfocus = bits & 2048?cgguci.dispatchEvent_10:null;
   if (chMask & $intern_35)
-    elem.onmousewheel = bits & $intern_35?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_45)
-    elem.oncontextmenu = bits & $intern_45?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_25)
-    elem.onpaste = bits & $intern_25?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_39)
-    elem.ontouchstart = bits & $intern_39?cgguci.dispatchEvent_9:null;
+    elem.onblur = bits & $intern_35?cgguci.dispatchEvent_10:null;
+  if (chMask & 8192)
+    elem.onlosecapture = bits & 8192?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_27)
+    elem.onscroll = bits & $intern_27?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_19)
+    elem.onload = bits & $intern_19?cgguci.dispatchUnhandledEvent_0:null;
+  if (chMask & $intern_3)
+    elem.onerror = bits & $intern_3?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_36)
+    elem.onmousewheel = bits & $intern_36?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_46)
+    elem.oncontextmenu = bits & $intern_46?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_24)
+    elem.onpaste = bits & $intern_24?cgguci.dispatchEvent_10:null;
   if (chMask & $intern_40)
-    elem.ontouchmove = bits & $intern_40?cgguci.dispatchEvent_9:null;
-  if (chMask & $intern_21)
-    elem.ontouchend = bits & $intern_21?cgguci.dispatchEvent_9:null;
+    elem.ontouchstart = bits & $intern_40?cgguci.dispatchEvent_10:null;
   if (chMask & $intern_41)
-    elem.ontouchcancel = bits & $intern_41?cgguci.dispatchEvent_9:null;
+    elem.ontouchmove = bits & $intern_41?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_20)
+    elem.ontouchend = bits & $intern_20?cgguci.dispatchEvent_10:null;
   if (chMask & $intern_42)
-    elem.ongesturestart = bits & $intern_42?cgguci.dispatchEvent_9:null;
+    elem.ontouchcancel = bits & $intern_42?cgguci.dispatchEvent_10:null;
   if (chMask & $intern_43)
-    elem.ongesturechange = bits & $intern_43?cgguci.dispatchEvent_9:null;
+    elem.ongesturestart = bits & $intern_43?cgguci.dispatchEvent_10:null;
   if (chMask & $intern_44)
-    elem.ongestureend = bits & $intern_44?cgguci.dispatchEvent_9:null;
+    elem.ongesturechange = bits & $intern_44?cgguci.dispatchEvent_10:null;
+  if (chMask & $intern_45)
+    elem.ongestureend = bits & $intern_45?cgguci.dispatchEvent_10:null;
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplStandard_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplStandard', 98, cggl.Lcom_google_gwt_user_client_impl_DOMImpl_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplStandard_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplStandard', 102, cggl.Lcom_google_gwt_user_client_impl_DOMImpl_2_classLit);
 cgguci.$clinit_DOMImplStandardBase_0 = function $clinit_DOMImplStandardBase_0(){
   cgguci.$clinit_DOMImplStandardBase_0 = emptyMethod;
   cgguci.$clinit_DOMImplStandard_0();
@@ -22340,11 +21673,11 @@ cgguci.DOMImplStandardBase_0 = function DOMImplStandardBase_0(){
   this.$init_267();
 }
 ;
-defineClass(145, 98, $intern_0);
+defineClass(148, 102, $intern_0);
 _.$init_267 = function $init_267(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplStandardBase_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplStandardBase', 145, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandard_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplStandardBase_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplStandardBase', 148, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandard_2_classLit);
 cgguci.$clinit_DOMImplIE9_0 = function $clinit_DOMImplIE9_0(){
   cgguci.$clinit_DOMImplIE9_0 = emptyMethod;
   cgguci.$clinit_DOMImplStandardBase_0();
@@ -22355,11 +21688,11 @@ cgguci.DOMImplIE9_0 = function DOMImplIE9_0(){
   this.$init_268();
 }
 ;
-defineClass(396, 145, $intern_0);
+defineClass(393, 148, $intern_0);
 _.$init_268 = function $init_268(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplIE9_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplIE9', 396, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandardBase_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplIE9_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplIE9', 393, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandardBase_2_classLit);
 cgguci.$clinit_DOMImplMozilla_0 = function $clinit_DOMImplMozilla_0(){
   cgguci.$clinit_DOMImplMozilla_0 = emptyMethod;
   cgguci.$clinit_DOMImplStandard_0();
@@ -22369,6 +21702,7 @@ cgguci.$clinit_DOMImplMozilla_0 = function $clinit_DOMImplMozilla_0(){
 }
 ;
 cgguci.DOMImplMozilla_0 = function DOMImplMozilla_0(){
+  cgguci.$clinit_DOMImplMozilla_0();
   cgguci.DOMImplStandard_0.call(this);
   this.$init_269();
 }
@@ -22377,12 +21711,12 @@ cgguci.addMozillaCaptureEventDispatchers = function addMozillaCaptureEventDispat
   (cgguci.$clinit_DOMImplStandard_0() , cgguci.captureEventDispatchers)['DOMMouseScroll'] = cgguci.dispatchCapturedMouseEvent;
 }
 ;
-defineClass(395, 98, $intern_0);
+defineClass(303, 102, {101:1, 1:1}, cgguci.DOMImplMozilla_0);
 _.$init_269 = function $init_269(){
 }
 ;
 _.initEventSystem = function initEventSystem_1(){
-  getClassPrototype(98).initEventSystem.call(this);
+  getClassPrototype(102).initEventSystem.call(this);
   this.initSyntheticMouseUpEvents();
 }
 ;
@@ -22401,33 +21735,32 @@ _.initSyntheticMouseUpEvents = function initSyntheticMouseUpEvents(){
 }
 ;
 _.sinkEvents = function sinkEvents_2(elem, bits){
-  getClassPrototype(98).sinkEvents.call(this, elem, bits);
+  getClassPrototype(102).sinkEvents.call(this, elem, bits);
   this.sinkEventsMozilla(elem, bits);
 }
 ;
 _.sinkEventsMozilla = function sinkEventsMozilla(elem, bits){
-  if (bits & $intern_35) {
-    elem.addEventListener('DOMMouseScroll', (cgguci.$clinit_DOMImplStandard_0() , cgguci.dispatchEvent_9), false);
+  if (bits & $intern_36) {
+    elem.addEventListener('DOMMouseScroll', (cgguci.$clinit_DOMImplStandard_0() , cgguci.dispatchEvent_10), false);
   }
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplMozilla_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplMozilla', 395, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandard_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplMozilla_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplMozilla', 303, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandard_2_classLit);
 cgguci.$clinit_DOMImplWebkit_0 = function $clinit_DOMImplWebkit_0(){
   cgguci.$clinit_DOMImplWebkit_0 = emptyMethod;
   cgguci.$clinit_DOMImplStandardBase_0();
 }
 ;
 cgguci.DOMImplWebkit_0 = function DOMImplWebkit_0(){
-  cgguci.$clinit_DOMImplWebkit_0();
   cgguci.DOMImplStandardBase_0.call(this);
   this.$init_270();
 }
 ;
-defineClass(294, 145, {97:1, 1:1}, cgguci.DOMImplWebkit_0);
+defineClass(394, 148, $intern_0);
 _.$init_270 = function $init_270(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_DOMImplWebkit_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplWebkit', 294, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandardBase_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_DOMImplWebkit_2_classLit = createForClass('com.google.gwt.user.client.impl', 'DOMImplWebkit', 394, cggl.Lcom_google_gwt_user_client_impl_DOMImplStandardBase_2_classLit);
 cgguci.$clinit_EventMap = function $clinit_EventMap(){
   cgguci.$clinit_EventMap = emptyMethod;
   cggcc.$clinit_JavaScriptObject();
@@ -22453,7 +21786,7 @@ cgguci.WindowImpl = function WindowImpl(){
   this.$init_271();
 }
 ;
-defineClass(49, 1, $intern_49, cgguci.WindowImpl);
+defineClass(99, 1, $intern_0);
 _.$init_271 = function $init_271(){
 }
 ;
@@ -22512,7 +21845,7 @@ _.initWindowResizeHandler = function initWindowResizeHandler(){
   );
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImpl_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImpl', 49, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImpl_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImpl', 99, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_WindowImplIE = function $clinit_WindowImplIE(){
   cgguci.$clinit_WindowImplIE = emptyMethod;
   cgguci.$clinit_WindowImpl();
@@ -22523,7 +21856,7 @@ cgguci.WindowImplIE = function WindowImplIE(){
   this.$init_272();
 }
 ;
-defineClass(392, 49, $intern_49);
+defineClass(391, 99, $intern_0);
 _.$init_272 = function $init_272(){
 }
 ;
@@ -22571,7 +21904,7 @@ _.initWindowResizeHandlerImpl = function initWindowResizeHandlerImpl(){
   $wnd.__gwt_initWindowResizeHandler($entry(cgguc.onResize_0));
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE', 392, cggl.Lcom_google_gwt_user_client_impl_WindowImpl_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE', 391, cggl.Lcom_google_gwt_user_client_impl_WindowImpl_2_classLit);
 cgguci.$clinit_WindowImplIE$1 = function $clinit_WindowImplIE$1(){
   cgguci.$clinit_WindowImplIE$1 = emptyMethod;
   jl.$clinit_Object();
@@ -22584,7 +21917,7 @@ cgguci.WindowImplIE$1 = function WindowImplIE$1(this$0){
   this.$init_273();
 }
 ;
-defineClass(285, 1, $intern_0, cgguci.WindowImplIE$1);
+defineClass(299, 1, $intern_0, cgguci.WindowImplIE$1);
 _.$init_273 = function $init_273(){
 }
 ;
@@ -22592,7 +21925,7 @@ _.execute_2 = function execute_8(){
   this.this$01.initWindowCloseHandlerImpl();
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplIE$1_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE/1', 285, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplIE$1_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE/1', 299, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_WindowImplIE$2 = function $clinit_WindowImplIE$2(){
   cgguci.$clinit_WindowImplIE$2 = emptyMethod;
   jl.$clinit_Object();
@@ -22605,7 +21938,7 @@ cgguci.WindowImplIE$2 = function WindowImplIE$2(this$0){
   this.$init_274();
 }
 ;
-defineClass(286, 1, $intern_0, cgguci.WindowImplIE$2);
+defineClass(300, 1, $intern_0, cgguci.WindowImplIE$2);
 _.$init_274 = function $init_274(){
 }
 ;
@@ -22613,15 +21946,15 @@ _.execute_2 = function execute_9(){
   this.this$01.initWindowResizeHandlerImpl();
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplIE$2_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE/2', 286, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplIE$2_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE/2', 300, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_WindowImplIE$3 = function $clinit_WindowImplIE$3(){
   cgguci.$clinit_WindowImplIE$3 = emptyMethod;
 }
 ;
-defineClass(714, 1, $intern_0);
+defineClass(730, 1, $intern_0);
 cgguci.$clinit_WindowImplIE$Resources = function $clinit_WindowImplIE$Resources(){
   cgguci.$clinit_WindowImplIE$Resources = emptyMethod;
-  cgguci.INSTANCE_5 = dynamicCast(new cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator, 411);
+  cgguci.INSTANCE_5 = dynamicCast(new cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator, 412);
 }
 ;
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator(){
@@ -22636,7 +21969,7 @@ cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator = function Win
   this.$init_275();
 }
 ;
-defineClass(152, 1, {411:1, 1:1}, cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator);
+defineClass(154, 1, {412:1, 1:1}, cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator);
 _.$init_275 = function $init_275(){
 }
 ;
@@ -22658,7 +21991,7 @@ _.initWindowResizeHandlerInitializer = function initWindowResizeHandlerInitializ
   cgguci.initWindowResizeHandler_1 = new cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$2(this);
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_1Resources_1default_1InlineClientBundleGenerator_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE_Resources_default_InlineClientBundleGenerator', 152, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_1Resources_1default_1InlineClientBundleGenerator_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE_Resources_default_InlineClientBundleGenerator', 154, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$1 = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$1(){
   cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$1 = emptyMethod;
   jl.$clinit_Object();
@@ -22671,7 +22004,7 @@ cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$1 = function W
   this.$init_276();
 }
 ;
-defineClass(345, 1, $intern_0, cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$1);
+defineClass(344, 1, $intern_0, cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$1);
 _.$init_276 = function $init_276(){
 }
 ;
@@ -22683,7 +22016,7 @@ _.getText_0 = function getText_0(){
   return 'function __gwt_initWindowCloseHandler(beforeunload, unload) {\n  var wnd = window\n  , oldOnBeforeUnload = wnd.onbeforeunload\n  , oldOnUnload = wnd.onunload;\n  \n  wnd.onbeforeunload = function(evt) {\n    var ret, oldRet;\n    try {\n      ret = beforeunload();\n    } finally {\n      oldRet = oldOnBeforeUnload && oldOnBeforeUnload(evt);\n    }\n    // Avoid returning null as IE6 will coerce it into a string.\n    // Ensure that "" gets returned properly.\n    if (ret != null) {\n      return ret;\n    }\n    if (oldRet != null) {\n      return oldRet;\n    }\n    // returns undefined.\n  };\n  \n  wnd.onunload = function(evt) {\n    try {\n      unload();\n    } finally {\n      oldOnUnload && oldOnUnload(evt);\n      wnd.onresize = null;\n      wnd.onscroll = null;\n      wnd.onbeforeunload = null;\n      wnd.onunload = null;\n    }\n  };\n  \n  // Remove the reference once we\'ve initialize the handler\n  wnd.__gwt_initWindowCloseHandler = undefined;\n}\n';
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_1Resources_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE_Resources_default_InlineClientBundleGenerator/1', 345, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_1Resources_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE_Resources_default_InlineClientBundleGenerator/1', 344, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$2 = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$2(){
   cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$2 = emptyMethod;
   jl.$clinit_Object();
@@ -22696,7 +22029,7 @@ cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$2 = function W
   this.$init_277();
 }
 ;
-defineClass(346, 1, $intern_0, cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$2);
+defineClass(345, 1, $intern_0, cgguci.WindowImplIE_Resources_default_InlineClientBundleGenerator$2);
 _.$init_277 = function $init_277(){
 }
 ;
@@ -22708,12 +22041,12 @@ _.getText_0 = function getText_1(){
   return "function __gwt_initWindowResizeHandler(resize) {\n  var wnd = window, oldOnResize = wnd.onresize;\n  \n  wnd.onresize = function(evt) {\n    try {\n      resize();\n    } finally {\n      oldOnResize && oldOnResize(evt);\n    }\n  };\n  \n  // Remove the reference once we've initialize the handler\n  wnd.__gwt_initWindowResizeHandler = undefined;\n}\n";
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_1Resources_1default_1InlineClientBundleGenerator$2_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE_Resources_default_InlineClientBundleGenerator/2', 346, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplIE_1Resources_1default_1InlineClientBundleGenerator$2_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE_Resources_default_InlineClientBundleGenerator/2', 345, cggl.Ljava_lang_Object_2_classLit);
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$3 = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$3(){
   cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$3 = emptyMethod;
 }
 ;
-defineClass(774, 1, $intern_0);
+defineClass(779, 1, $intern_0);
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowCloseHandlerInitializer = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowCloseHandlerInitializer(){
   cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowCloseHandlerInitializer = emptyMethod;
   jl.$clinit_Object();
@@ -22727,7 +22060,7 @@ cgguci.get_7 = function get_7(){
   return cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator() , cgguci.initWindowCloseHandler_1;
 }
 ;
-defineClass(771, 1, $intern_0);
+defineClass(776, 1, $intern_0);
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowResizeHandlerInitializer = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowResizeHandlerInitializer(){
   cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowResizeHandlerInitializer = emptyMethod;
   jl.$clinit_Object();
@@ -22741,23 +22074,24 @@ cgguci.get_8 = function get_8(){
   return cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator() , cgguci.initWindowResizeHandler_1;
 }
 ;
-defineClass(772, 1, $intern_0);
+defineClass(777, 1, $intern_0);
 cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowScrollHandlerInitializer = function $clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowScrollHandlerInitializer(){
   cgguci.$clinit_WindowImplIE_Resources_default_InlineClientBundleGenerator$initWindowScrollHandlerInitializer = emptyMethod;
 }
 ;
-defineClass(773, 1, $intern_0);
+defineClass(778, 1, $intern_0);
 cgguci.$clinit_WindowImplMozilla = function $clinit_WindowImplMozilla(){
   cgguci.$clinit_WindowImplMozilla = emptyMethod;
   cgguci.$clinit_WindowImpl();
 }
 ;
 cgguci.WindowImplMozilla = function WindowImplMozilla(){
+  cgguci.$clinit_WindowImplMozilla();
   cgguci.WindowImpl.call(this);
   this.$init_278();
 }
 ;
-defineClass(393, 49, $intern_49);
+defineClass(301, 99, {99:1, 1:1}, cgguci.WindowImplMozilla);
 _.$init_278 = function $init_278(){
 }
 ;
@@ -22767,7 +22101,7 @@ _.getHash = function getHash_2(){
   return hashLoc > 0?href_0.substring(hashLoc):'';
 }
 ;
-cggl.Lcom_google_gwt_user_client_impl_WindowImplMozilla_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplMozilla', 393, cggl.Lcom_google_gwt_user_client_impl_WindowImpl_2_classLit);
+cggl.Lcom_google_gwt_user_client_impl_WindowImplMozilla_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplMozilla', 301, cggl.Lcom_google_gwt_user_client_impl_WindowImpl_2_classLit);
 cggucr.$clinit_AsyncCallback = function $clinit_AsyncCallback(){
   cggucr.$clinit_AsyncCallback = emptyMethod;
 }
@@ -22778,7 +22112,7 @@ cggucu.$clinit_UIObject = function $clinit_UIObject(){
   cggucu.debugIdImpl = dynamicCast(new cggucu.UIObject$DebugIdImpl, 100);
 }
 ;
-defineClass(720, 1, $intern_0);
+defineClass(725, 1, $intern_0);
 _.getElement_1 = function getElement_0(){
   return cgguc.asOld(this.element_0);
 }
@@ -22793,7 +22127,7 @@ cggucu.$clinit_Widget = function $clinit_Widget(){
   cggucu.$clinit_UIObject();
 }
 ;
-defineClass(41, 720, {67:1, 52:1, 41:1, 1:1});
+defineClass(43, 725, {70:1, 57:1, 43:1, 1:1});
 _.doDetachChildren = function doDetachChildren(){
 }
 ;
@@ -22829,8 +22163,8 @@ _.removeFromParent = function removeFromParent(){
       cggucu.detachNow(this);
     }
   }
-   else if (instanceOf(this.parent_0, 89)) {
-    dynamicCast(this.parent_0, 89).remove_4(this);
+   else if (instanceOf(this.parent_0, 90)) {
+    dynamicCast(this.parent_0, 90).remove_5(this);
   }
    else if (isNotNull(this.parent_0)) {
     throw new jl.IllegalStateException_0("This widget's parent does not implement HasWidgets");
@@ -22843,34 +22177,34 @@ cggucu.$clinit_Panel = function $clinit_Panel(){
   cggucu.$clinit_Widget();
 }
 ;
-defineClass(752, 41, $intern_50);
+defineClass(758, 43, $intern_50);
 cggucu.$clinit_ComplexPanel = function $clinit_ComplexPanel(){
   cggucu.$clinit_ComplexPanel = emptyMethod;
   cggucu.$clinit_Panel();
 }
 ;
-defineClass(750, 752, $intern_50);
+defineClass(756, 758, $intern_50);
 cggucu.$clinit_AbsolutePanel = function $clinit_AbsolutePanel(){
   cggucu.$clinit_AbsolutePanel = emptyMethod;
   cggucu.$clinit_ComplexPanel();
 }
 ;
-defineClass(749, 750, $intern_50);
+defineClass(755, 756, $intern_50);
 cggucu.$clinit_AttachDetachException = function $clinit_AttachDetachException(){
   cggucu.$clinit_AttachDetachException = emptyMethod;
 }
 ;
-defineClass(756, 322, $intern_18);
+defineClass(762, 330, $intern_17);
 cggucu.$clinit_AttachDetachException$1 = function $clinit_AttachDetachException$1(){
   cggucu.$clinit_AttachDetachException$1 = emptyMethod;
 }
 ;
-defineClass(758, 1, $intern_0);
+defineClass(764, 1, $intern_0);
 cggucu.$clinit_AttachDetachException$2 = function $clinit_AttachDetachException$2(){
   cggucu.$clinit_AttachDetachException$2 = emptyMethod;
 }
 ;
-defineClass(759, 1, $intern_0);
+defineClass(765, 1, $intern_0);
 cggucu.$clinit_AttachDetachException$Command = function $clinit_AttachDetachException$Command(){
   cggucu.$clinit_AttachDetachException$Command = emptyMethod;
 }
@@ -22879,7 +22213,7 @@ cggucu.$clinit_ComplexPanel$1 = function $clinit_ComplexPanel$1(){
   cggucu.$clinit_ComplexPanel$1 = emptyMethod;
 }
 ;
-defineClass(751, 1, $intern_0);
+defineClass(757, 1, $intern_0);
 cggucu.$clinit_HasVisibility = function $clinit_HasVisibility(){
   cggucu.$clinit_HasVisibility = emptyMethod;
 }
@@ -22926,7 +22260,7 @@ cggucu.detachNow = function detachNow(widget){
     widget.onDetach();
   }
    finally {
-    cggucu.widgetsToDetach.remove_5(widget);
+    cggucu.widgetsToDetach.remove_6(widget);
   }
 }
 ;
@@ -22935,7 +22269,7 @@ cggucu.isInDetachList = function isInDetachList(widget){
   return cggucu.widgetsToDetach.contains_1(widget);
 }
 ;
-defineClass(746, 749, $intern_50);
+defineClass(752, 755, $intern_50);
 cggucu.$clinit_RootPanel$1 = function $clinit_RootPanel$1(){
   cggucu.$clinit_RootPanel$1 = emptyMethod;
   jl.$clinit_Object();
@@ -22947,21 +22281,21 @@ cggucu.RootPanel$1 = function RootPanel$1(){
   this.$init_279();
 }
 ;
-defineClass(321, 1, $intern_0, cggucu.RootPanel$1);
+defineClass(329, 1, $intern_0, cggucu.RootPanel$1);
 _.$init_279 = function $init_279(){
 }
 ;
-cggl.Lcom_google_gwt_user_client_ui_RootPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/1', 321, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_ui_RootPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/1', 329, cggl.Ljava_lang_Object_2_classLit);
 cggucu.$clinit_RootPanel$2 = function $clinit_RootPanel$2(){
   cggucu.$clinit_RootPanel$2 = emptyMethod;
 }
 ;
-defineClass(748, 1, {370:1, 65:1, 1:1});
+defineClass(754, 1, {371:1, 69:1, 1:1});
 cggucu.$clinit_RootPanel$DefaultRootPanel = function $clinit_RootPanel$DefaultRootPanel(){
   cggucu.$clinit_RootPanel$DefaultRootPanel = emptyMethod;
 }
 ;
-defineClass(747, 746, $intern_50);
+defineClass(753, 752, $intern_50);
 cggucu.$clinit_UIObject$DebugIdImpl = function $clinit_UIObject$DebugIdImpl(){
   cggucu.$clinit_UIObject$DebugIdImpl = emptyMethod;
   jl.$clinit_Object();
@@ -22982,7 +22316,7 @@ cggucu.$clinit_UIObject$DebugIdImplEnabled = function $clinit_UIObject$DebugIdIm
   cggucu.$clinit_UIObject$DebugIdImplEnabled = emptyMethod;
 }
 ;
-defineClass(721, 100, $intern_51);
+defineClass(726, 100, $intern_51);
 cggucui.$clinit_HyperlinkImpl = function $clinit_HyperlinkImpl(){
   cggucui.$clinit_HyperlinkImpl = emptyMethod;
   jl.$clinit_Object();
@@ -22994,7 +22328,7 @@ cggucui.HyperlinkImpl = function HyperlinkImpl(){
   this.$init_281();
 }
 ;
-defineClass(93, 1, $intern_0);
+defineClass(47, 1, $intern_52, cggucui.HyperlinkImpl);
 _.$init_281 = function $init_281(){
 }
 ;
@@ -23011,7 +22345,7 @@ _.handleAsClick = function handleAsClick(event_0){
   return !modifiers && !middle && !right;
 }
 ;
-cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImpl_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'HyperlinkImpl', 93, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImpl_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'HyperlinkImpl', 47, cggl.Ljava_lang_Object_2_classLit);
 cggucui.$clinit_HyperlinkImplIE = function $clinit_HyperlinkImplIE(){
   cggucui.$clinit_HyperlinkImplIE = emptyMethod;
   cggucui.$clinit_HyperlinkImpl();
@@ -23034,7 +22368,7 @@ cggucui.getInternetExplorerVersion = function getInternetExplorerVersion(){
   return rv;
 }
 ;
-defineClass(382, 93, $intern_0);
+defineClass(381, 47, $intern_52);
 _.$init_282 = function $init_282(){
 }
 ;
@@ -23055,7 +22389,7 @@ _.handleAsClick = function handleAsClick_0(event_0){
 }
 ;
 cggucui.ctrlisModifier = false;
-cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImplIE_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'HyperlinkImplIE', 382, cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImpl_2_classLit);
+cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImplIE_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'HyperlinkImplIE', 381, cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImpl_2_classLit);
 cggucui.$clinit_HyperlinkImplSafari = function $clinit_HyperlinkImplSafari(){
   cggucui.$clinit_HyperlinkImplSafari = emptyMethod;
   cggucui.$clinit_HyperlinkImpl();
@@ -23063,7 +22397,6 @@ cggucui.$clinit_HyperlinkImplSafari = function $clinit_HyperlinkImplSafari(){
 }
 ;
 cggucui.HyperlinkImplSafari = function HyperlinkImplSafari(){
-  cggucui.$clinit_HyperlinkImplSafari();
   cggucui.HyperlinkImpl.call(this);
   this.$init_283();
 }
@@ -23072,7 +22405,7 @@ cggucui.onChrome = function onChrome(){
   return navigator.userAgent.indexOf('Chrome') != -1;
 }
 ;
-defineClass(206, 93, {93:1, 1:1}, cggucui.HyperlinkImplSafari);
+defineClass(382, 47, $intern_52);
 _.$init_283 = function $init_283(){
 }
 ;
@@ -23093,7 +22426,7 @@ _.handleAsClick = function handleAsClick_1(event_0){
 }
 ;
 cggucui.shiftIsModifier = false;
-cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImplSafari_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'HyperlinkImplSafari', 206, cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImpl_2_classLit);
+cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImplSafari_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'HyperlinkImplSafari', 382, cggl.Lcom_google_gwt_user_client_ui_impl_HyperlinkImpl_2_classLit);
 cgguc2.$clinit_UserAgent = function $clinit_UserAgent(){
   cgguc2.$clinit_UserAgent = emptyMethod;
 }
@@ -23111,7 +22444,7 @@ cgguc2.UserAgentAsserter = function UserAgentAsserter(){
 ;
 cgguc2.assertCompileTimeUserAgent = function assertCompileTimeUserAgent(){
   var compileTimeValue, impl, runtimeValue;
-  impl = dynamicCast(new cgguc2.UserAgentImplSafari, 406);
+  impl = dynamicCast(new cgguc2.UserAgentImplGecko1_8, 405);
   compileTimeValue = impl.getCompileTimeValue();
   runtimeValue = impl.getRuntimeValue();
   if (!jl.equals_Ljava_lang_Object__Z__devirtual$_0(compileTimeValue, runtimeValue)) {
@@ -23123,7 +22456,7 @@ cgguc2.scheduleUserAgentCheck = function scheduleUserAgentCheck(){
   $wnd.setTimeout($entry(cgguc2.assertCompileTimeUserAgent));
 }
 ;
-defineClass(188, 1, $intern_46, cgguc2.UserAgentAsserter);
+defineClass(189, 1, $intern_47, cgguc2.UserAgentAsserter);
 _.$init_284 = function $init_284(){
 }
 ;
@@ -23131,7 +22464,7 @@ _.onModuleLoad = function onModuleLoad_1(){
   cgguc2.scheduleUserAgentCheck();
 }
 ;
-cggl.Lcom_google_gwt_useragent_client_UserAgentAsserter_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter', 188, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_useragent_client_UserAgentAsserter_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter', 189, cggl.Ljava_lang_Object_2_classLit);
 cgguc2.$clinit_UserAgentAsserter$UserAgentAsserterDisabled = function $clinit_UserAgentAsserter$UserAgentAsserterDisabled(){
   cgguc2.$clinit_UserAgentAsserter$UserAgentAsserterDisabled = emptyMethod;
 }
@@ -23160,11 +22493,11 @@ jl.Error_2 = function Error_2(message, cause){
   this.$init_285();
 }
 ;
-defineClass(106, 12, $intern_5);
+defineClass(110, 12, $intern_5);
 _.$init_285 = function $init_285(){
 }
 ;
-cggl.Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 106, cggl.Ljava_lang_Throwable_2_classLit);
+cggl.Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 110, cggl.Ljava_lang_Throwable_2_classLit);
 jl.$clinit_AssertionError = function $clinit_AssertionError(){
   jl.$clinit_AssertionError = emptyMethod;
   jl.$clinit_Error();
@@ -23217,7 +22550,7 @@ jl.AssertionError_7 = function AssertionError_7(message){
   AssertionError_6.call(this, jl.valueOf_25(message));
 }
 ;
-defineClass(22, 106, $intern_5, jl.AssertionError, jl.AssertionError_0, jl.AssertionError_1, jl.AssertionError_2, jl.AssertionError_3, jl.AssertionError_4, jl.AssertionError_5, jl.AssertionError_7);
+defineClass(22, 110, $intern_5, jl.AssertionError, jl.AssertionError_0, jl.AssertionError_1, jl.AssertionError_2, jl.AssertionError_3, jl.AssertionError_4, jl.AssertionError_5, jl.AssertionError_7);
 _.$init_286 = function $init_286(){
 }
 ;
@@ -23233,22 +22566,23 @@ cgguc2.UserAgentAsserter$UserAgentAssertionError = function UserAgentAsserter$Us
   this.$init_287();
 }
 ;
-defineClass(189, 22, $intern_5, cgguc2.UserAgentAsserter$UserAgentAssertionError);
+defineClass(190, 22, $intern_5, cgguc2.UserAgentAsserter$UserAgentAssertionError);
 _.$init_287 = function $init_287(){
 }
 ;
-cggl.Lcom_google_gwt_useragent_client_UserAgentAsserter$UserAgentAssertionError_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter/UserAgentAssertionError', 189, cggl.Ljava_lang_AssertionError_2_classLit);
+cggl.Lcom_google_gwt_useragent_client_UserAgentAsserter$UserAgentAssertionError_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter/UserAgentAssertionError', 190, cggl.Ljava_lang_AssertionError_2_classLit);
 cgguc2.$clinit_UserAgentImplGecko1_8 = function $clinit_UserAgentImplGecko1_8(){
   cgguc2.$clinit_UserAgentImplGecko1_8 = emptyMethod;
   jl.$clinit_Object();
 }
 ;
 cgguc2.UserAgentImplGecko1_8 = function UserAgentImplGecko1_8(){
+  cgguc2.$clinit_UserAgentImplGecko1_8();
   Object_0.call(this);
   this.$init_288();
 }
 ;
-defineClass(387, 1, $intern_0);
+defineClass(288, 1, {405:1, 1:1}, cgguc2.UserAgentImplGecko1_8);
 _.$init_288 = function $init_288(){
 }
 ;
@@ -23287,7 +22621,7 @@ _.getRuntimeValue = function getRuntimeValue(){
   return 'unknown';
 }
 ;
-cggl.Lcom_google_gwt_useragent_client_UserAgentImplGecko1_18_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplGecko1_8', 387, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_useragent_client_UserAgentImplGecko1_18_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplGecko1_8', 288, cggl.Ljava_lang_Object_2_classLit);
 cgguc2.$clinit_UserAgentImplIe10 = function $clinit_UserAgentImplIe10(){
   cgguc2.$clinit_UserAgentImplIe10 = emptyMethod;
   jl.$clinit_Object();
@@ -23444,12 +22778,11 @@ cgguc2.$clinit_UserAgentImplSafari = function $clinit_UserAgentImplSafari(){
 }
 ;
 cgguc2.UserAgentImplSafari = function UserAgentImplSafari(){
-  cgguc2.$clinit_UserAgentImplSafari();
   Object_0.call(this);
   this.$init_292();
 }
 ;
-defineClass(279, 1, {406:1, 1:1}, cgguc2.UserAgentImplSafari);
+defineClass(387, 1, $intern_0);
 _.$init_292 = function $init_292(){
 }
 ;
@@ -23488,7 +22821,7 @@ _.getRuntimeValue = function getRuntimeValue_3(){
   return 'unknown';
 }
 ;
-cggl.Lcom_google_gwt_useragent_client_UserAgentImplSafari_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplSafari', 279, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_gwt_useragent_client_UserAgentImplSafari_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplSafari', 387, cggl.Ljava_lang_Object_2_classLit);
 cggxc.$clinit_ReadyStateChangeHandler = function $clinit_ReadyStateChangeHandler(){
   cggxc.$clinit_ReadyStateChangeHandler = emptyMethod;
 }
@@ -23577,12 +22910,12 @@ cggxc.$clinit_XMLHttpRequest$ResponseType = function $clinit_XMLHttpRequest$Resp
   cggxc.$clinit_XMLHttpRequest$ResponseType = emptyMethod;
 }
 ;
-defineClass(780, 5, $intern_9);
+defineClass(786, 5, $intern_9);
 cggxc.$clinit_XMLHttpRequest$ResponseType$Map = function $clinit_XMLHttpRequest$ResponseType$Map(){
   cggxc.$clinit_XMLHttpRequest$ResponseType$Map = emptyMethod;
 }
 ;
-defineClass(781, 1, $intern_0);
+defineClass(787, 1, $intern_0);
 cgwbes.$clinit_HandlerRegistration_0 = function $clinit_HandlerRegistration_0(){
   cgwbes.$clinit_HandlerRegistration_0 = emptyMethod;
 }
@@ -23602,7 +22935,7 @@ cgwbes.SimpleEventBus$1 = function SimpleEventBus$1(this$0, val$type, val$source
   this.$init_293();
 }
 ;
-defineClass(213, 1, $intern_0, cgwbes.SimpleEventBus$1);
+defineClass(222, 1, $intern_0, cgwbes.SimpleEventBus$1);
 _.$init_293 = function $init_293(){
 }
 ;
@@ -23610,7 +22943,7 @@ _.removeHandler = function removeHandler_0(){
   this.this$01.doRemove(this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
-cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus$1_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus/1', 213, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus$1_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus/1', 222, cggl.Ljava_lang_Object_2_classLit);
 cgwbes.$clinit_SimpleEventBus$2 = function $clinit_SimpleEventBus$2(){
   cgwbes.$clinit_SimpleEventBus$2 = emptyMethod;
   jl.$clinit_Object();
@@ -23626,7 +22959,7 @@ cgwbes.SimpleEventBus$2 = function SimpleEventBus$2(this$0, val$type, val$source
   this.$init_294();
 }
 ;
-defineClass(214, 1, $intern_52, cgwbes.SimpleEventBus$2);
+defineClass(223, 1, $intern_53, cgwbes.SimpleEventBus$2);
 _.$init_294 = function $init_294(){
 }
 ;
@@ -23634,7 +22967,7 @@ _.execute_2 = function execute_10(){
   this.this$01.doAddNow(this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
-cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus$2_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus/2', 214, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus$2_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus/2', 223, cggl.Ljava_lang_Object_2_classLit);
 cgwbes.$clinit_SimpleEventBus$3 = function $clinit_SimpleEventBus$3(){
   cgwbes.$clinit_SimpleEventBus$3 = emptyMethod;
   jl.$clinit_Object();
@@ -23650,7 +22983,7 @@ cgwbes.SimpleEventBus$3 = function SimpleEventBus$3(this$0, val$type, val$source
   this.$init_295();
 }
 ;
-defineClass(215, 1, $intern_52, cgwbes.SimpleEventBus$3);
+defineClass(224, 1, $intern_53, cgwbes.SimpleEventBus$3);
 _.$init_295 = function $init_295(){
 }
 ;
@@ -23658,7 +22991,7 @@ _.execute_2 = function execute_11(){
   this.this$01.doRemoveNow(this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
-cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus$3_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus/3', 215, cggl.Ljava_lang_Object_2_classLit);
+cggl.Lcom_google_web_bindery_event_shared_SimpleEventBus$3_2_classLit = createForClass('com.google.web.bindery.event.shared', 'SimpleEventBus/3', 224, cggl.Ljava_lang_Object_2_classLit);
 cgwbes.$clinit_SimpleEventBus$Command = function $clinit_SimpleEventBus$Command(){
   cgwbes.$clinit_SimpleEventBus$Command = emptyMethod;
 }
@@ -23674,11 +23007,11 @@ ji.OutputStream = function OutputStream(){
   this.$init_296();
 }
 ;
-defineClass(275, 1, $intern_0);
+defineClass(284, 1, $intern_0);
 _.$init_296 = function $init_296(){
 }
 ;
-cggl.Ljava_io_OutputStream_2_classLit = createForClass('java.io', 'OutputStream', 275, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_io_OutputStream_2_classLit = createForClass('java.io', 'OutputStream', 284, cggl.Ljava_lang_Object_2_classLit);
 ji.$clinit_FilterOutputStream = function $clinit_FilterOutputStream(){
   ji.$clinit_FilterOutputStream = emptyMethod;
   ji.$clinit_OutputStream();
@@ -23690,11 +23023,11 @@ ji.FilterOutputStream = function FilterOutputStream(out){
   this.$init_297();
 }
 ;
-defineClass(276, 275, $intern_0);
+defineClass(285, 284, $intern_0);
 _.$init_297 = function $init_297(){
 }
 ;
-cggl.Ljava_io_FilterOutputStream_2_classLit = createForClass('java.io', 'FilterOutputStream', 276, cggl.Ljava_io_OutputStream_2_classLit);
+cggl.Ljava_io_FilterOutputStream_2_classLit = createForClass('java.io', 'FilterOutputStream', 285, cggl.Ljava_io_OutputStream_2_classLit);
 ji.$clinit_PrintStream = function $clinit_PrintStream(){
   ji.$clinit_PrintStream = emptyMethod;
   ji.$clinit_FilterOutputStream();
@@ -23706,7 +23039,7 @@ ji.PrintStream = function PrintStream(out){
   this.$init_298();
 }
 ;
-defineClass(142, 276, $intern_0, ji.PrintStream);
+defineClass(145, 285, $intern_0, ji.PrintStream);
 _.$init_298 = function $init_298(){
 }
 ;
@@ -23719,7 +23052,7 @@ _.println = function println(x_0){
 _.println_0 = function println_0(s){
 }
 ;
-cggl.Ljava_io_PrintStream_2_classLit = createForClass('java.io', 'PrintStream', 142, cggl.Ljava_io_FilterOutputStream_2_classLit);
+cggl.Ljava_io_PrintStream_2_classLit = createForClass('java.io', 'PrintStream', 145, cggl.Ljava_io_FilterOutputStream_2_classLit);
 jl.$clinit_AbstractStringBuilder = function $clinit_AbstractStringBuilder(){
   jl.$clinit_AbstractStringBuilder = emptyMethod;
   jl.$clinit_Object();
@@ -23732,7 +23065,7 @@ jl.AbstractStringBuilder = function AbstractStringBuilder(string){
   this.string = string;
 }
 ;
-defineClass(107, 1, $intern_0);
+defineClass(111, 1, $intern_0);
 _.$init_299 = function $init_299(){
 }
 ;
@@ -23772,7 +23105,7 @@ _.toString$ = function toString_33(){
   return this.string;
 }
 ;
-cggl.Ljava_lang_AbstractStringBuilder_2_classLit = createForClass('java.lang', 'AbstractStringBuilder', 107, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_lang_AbstractStringBuilder_2_classLit = createForClass('java.lang', 'AbstractStringBuilder', 111, cggl.Ljava_lang_Object_2_classLit);
 jl.$clinit_Appendable = function $clinit_Appendable(){
   jl.$clinit_Appendable = emptyMethod;
 }
@@ -23788,11 +23121,11 @@ jl.ArithmeticException = function ArithmeticException(explanation){
   this.$init_300();
 }
 ;
-defineClass(199, 11, $intern_8, jl.ArithmeticException);
+defineClass(201, 11, $intern_8, jl.ArithmeticException);
 _.$init_300 = function $init_300(){
 }
 ;
-cggl.Ljava_lang_ArithmeticException_2_classLit = createForClass('java.lang', 'ArithmeticException', 199, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_ArithmeticException_2_classLit = createForClass('java.lang', 'ArithmeticException', 201, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_ArrayStoreException = function $clinit_ArrayStoreException(){
   jl.$clinit_ArrayStoreException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -23810,11 +23143,11 @@ jl.ArrayStoreException_0 = function ArrayStoreException_0(message){
   this.$init_301();
 }
 ;
-defineClass(69, 11, $intern_8, jl.ArrayStoreException, jl.ArrayStoreException_0);
+defineClass(72, 11, $intern_8, jl.ArrayStoreException, jl.ArrayStoreException_0);
 _.$init_301 = function $init_301(){
 }
 ;
-cggl.Ljava_lang_ArrayStoreException_2_classLit = createForClass('java.lang', 'ArrayStoreException', 69, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_ArrayStoreException_2_classLit = createForClass('java.lang', 'ArrayStoreException', 72, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_AutoCloseable = function $clinit_AutoCloseable(){
   jl.$clinit_AutoCloseable = emptyMethod;
 }
@@ -23853,7 +23186,7 @@ jl.valueOf_10 = function valueOf_10(b){
   return b?jl.TRUE:jl.FALSE;
 }
 ;
-defineClass(23, 1, {3:1, 23:1, 6:1, 1:1}, jl.Boolean_0);
+defineClass(24, 1, {3:1, 24:1, 6:1, 1:1}, jl.Boolean_0);
 _.$init_302 = function $init_302(){
 }
 ;
@@ -23862,10 +23195,10 @@ _.booleanValue = function booleanValue(){
 }
 ;
 _.equals$ = function equals_2(o){
-  return instanceOf(o, 23) && dynamicCast(o, 23).value_0 == this.value_0;
+  return instanceOf(o, 24) && dynamicCast(o, 24).value_0 == this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_3(){
+_.hashCode$ = function hashCode_4(){
   return this.value_0?1231:1237;
 }
 ;
@@ -23874,7 +23207,7 @@ _.toString$ = function toString_34(){
 }
 ;
 _.value_0 = false;
-cggl.Ljava_lang_Boolean_2_classLit = createForClass('java.lang', 'Boolean', 23, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_lang_Boolean_2_classLit = createForClass('java.lang', 'Boolean', 24, cggl.Ljava_lang_Object_2_classLit);
 jl.$clinit_Number = function $clinit_Number(){
   jl.$clinit_Number = emptyMethod;
   jl.$clinit_Object();
@@ -23968,7 +23301,7 @@ jl.Byte = function Byte(value_0){
   this.value_0 = value_0;
 }
 ;
-jl.hashCode_5 = function hashCode_5(b){
+jl.hashCode_6 = function hashCode_6(b){
   return b;
 }
 ;
@@ -23987,7 +23320,7 @@ jl.valueOf_11 = function valueOf_11(b){
   return result;
 }
 ;
-defineClass(71, 20, {3:1, 71:1, 6:1, 20:1, 1:1}, jl.Byte);
+defineClass(74, 20, {3:1, 74:1, 6:1, 20:1, 1:1}, jl.Byte);
 _.$init_304 = function $init_304(){
 }
 ;
@@ -24000,15 +23333,15 @@ _.doubleValue = function doubleValue(){
 }
 ;
 _.equals$ = function equals_3(o){
-  return instanceOf(o, 71) && dynamicCast(o, 71).value_0 == this.value_0;
+  return instanceOf(o, 74) && dynamicCast(o, 74).value_0 == this.value_0;
 }
 ;
 _.floatValue = function floatValue(){
   return this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_4(){
-  return jl.hashCode_5(this.value_0);
+_.hashCode$ = function hashCode_5(){
+  return jl.hashCode_6(this.value_0);
 }
 ;
 _.intValue = function intValue(){
@@ -24031,11 +23364,11 @@ _.value_0 = 0;
 jl.MAX_VALUE_0 = 0;
 jl.MIN_VALUE_0 = 0;
 jl.SIZE = 8;
-cggl.Ljava_lang_Byte_2_classLit = createForClass('java.lang', 'Byte', 71, cggl.Ljava_lang_Number_2_classLit);
+cggl.Ljava_lang_Byte_2_classLit = createForClass('java.lang', 'Byte', 74, cggl.Ljava_lang_Number_2_classLit);
 jl.$clinit_Byte$BoxedValues = function $clinit_Byte$BoxedValues(){
   jl.$clinit_Byte$BoxedValues = emptyMethod;
   jl.$clinit_Object();
-  jl.boxedValues_0 = initDim(cggl.Ljava_lang_Byte_2_classLit, $intern_6, 71, 256, 0, 1);
+  jl.boxedValues_0 = initDim(cggl.Ljava_lang_Byte_2_classLit, $intern_6, 74, 256, 0, 1);
 }
 ;
 defineClass(464, 1, $intern_0);
@@ -24078,7 +23411,7 @@ function getLowSurrogate(codePoint){
   return narrow_char(56320 + (codePoint - $intern_3 & 1023));
 }
 
-jl.hashCode_7 = function hashCode_7(c){
+jl.hashCode_8 = function hashCode_8(c){
   return c;
 }
 ;
@@ -24094,7 +23427,7 @@ function valueOf_12(c){
   return new Character(c);
 }
 
-defineClass(54, 1, {3:1, 54:1, 6:1, 1:1}, Character);
+defineClass(59, 1, {3:1, 59:1, 6:1, 1:1}, Character);
 _.$init_305 = function $init_305(){
 }
 ;
@@ -24103,11 +23436,11 @@ _.charValue = function charValue(){
 }
 ;
 _.equals$ = function equals_4(o){
-  return instanceOf(o, 54) && dynamicCast(o, 54).value_0 == this.value_0;
+  return instanceOf(o, 59) && dynamicCast(o, 59).value_0 == this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_6(){
-  return jl.hashCode_7(this.value_0);
+_.hashCode$ = function hashCode_7(){
+  return jl.hashCode_8(this.value_0);
 }
 ;
 _.toString$ = function toString_38(){
@@ -24129,11 +23462,11 @@ jl.MIN_SUPPLEMENTARY_CODE_POINT = $intern_3;
 jl.MIN_SURROGATE = 55296;
 jl.MIN_VALUE_1 = 0;
 jl.SIZE_0 = 16;
-cggl.Ljava_lang_Character_2_classLit = createForClass('java.lang', 'Character', 54, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_lang_Character_2_classLit = createForClass('java.lang', 'Character', 59, cggl.Ljava_lang_Object_2_classLit);
 jl.$clinit_Character$BoxedValues = function $clinit_Character$BoxedValues(){
   jl.$clinit_Character$BoxedValues = emptyMethod;
   jl.$clinit_Object();
-  jl.boxedValues_1 = initDim(cggl.Ljava_lang_Character_2_classLit, $intern_6, 54, 128, 0, 1);
+  jl.boxedValues_1 = initDim(cggl.Ljava_lang_Character_2_classLit, $intern_6, 59, 128, 0, 1);
 }
 ;
 defineClass(468, 1, $intern_0);
@@ -24141,7 +23474,7 @@ jl.$clinit_Character$CharSequenceAdapter = function $clinit_Character$CharSequen
   jl.$clinit_Character$CharSequenceAdapter = emptyMethod;
 }
 ;
-defineClass(467, 1, $intern_53);
+defineClass(467, 1, $intern_54);
 jl.$clinit_ClassCastException = function $clinit_ClassCastException(){
   jl.$clinit_ClassCastException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -24153,11 +23486,11 @@ jl.ClassCastException = function ClassCastException(){
   this.$init_307();
 }
 ;
-defineClass(53, 11, $intern_8, jl.ClassCastException);
+defineClass(58, 11, $intern_8, jl.ClassCastException);
 _.$init_307 = function $init_307(){
 }
 ;
-cggl.Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 53, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 58, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_Cloneable = function $clinit_Cloneable(){
   jl.$clinit_Cloneable = emptyMethod;
 }
@@ -24170,8 +23503,8 @@ jl.$clinit_Double = function $clinit_Double(){
   jl.NEGATIVE_INFINITY = -1 / 0;
   jl.POSITIVE_INFINITY = 1 / 0;
   jl.TYPE_7 = cggl.D_classLit;
-  jl.powers = initValues(getClassLiteralForArray(cggl.D_classLit, 1), $intern_11, 0, 7, [$intern_54, $intern_55, $intern_56, $intern_57, $intern_22, $intern_3, 256, 16, 4, 2]);
-  jl.invPowers = initValues(getClassLiteralForArray(cggl.D_classLit, 1), $intern_11, 0, 7, [$intern_58, $intern_59, $intern_60, $intern_61, $intern_62, $intern_63, 0.00390625, 0.0625, 0.25, 0.5]);
+  jl.powers = initValues(getClassLiteralForArray(cggl.D_classLit, 1), $intern_11, 0, 7, [$intern_55, $intern_56, $intern_57, $intern_58, $intern_21, $intern_3, 256, 16, 4, 2]);
+  jl.invPowers = initValues(getClassLiteralForArray(cggl.D_classLit, 1), $intern_11, 0, 7, [$intern_59, $intern_60, $intern_61, $intern_62, $intern_63, $intern_64, 0.00390625, 0.0625, 0.25, 0.5]);
 }
 ;
 jl.Double = function Double(value_0){
@@ -24187,7 +23520,7 @@ function Double_0(s){
   this.value_0 = parseDouble(s);
 }
 
-jl.hashCode_9 = function hashCode_9(d){
+jl.hashCode_10 = function hashCode_10(d){
   return round_int(d);
 }
 ;
@@ -24215,7 +23548,7 @@ function valueOf_14(s){
   return new Double_0(s);
 }
 
-defineClass(38, 20, {3:1, 6:1, 38:1, 20:1, 1:1}, jl.Double, Double_0);
+defineClass(36, 20, {3:1, 6:1, 36:1, 20:1, 1:1}, jl.Double, Double_0);
 _.$init_308 = function $init_308(){
 }
 ;
@@ -24228,15 +23561,15 @@ _.doubleValue = function doubleValue_0(){
 }
 ;
 _.equals$ = function equals_5(o){
-  return instanceOf(o, 38) && dynamicCast(o, 38).value_0 == this.value_0;
+  return instanceOf(o, 36) && dynamicCast(o, 36).value_0 == this.value_0;
 }
 ;
 _.floatValue = function floatValue_0(){
   return this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_8(){
-  return jl.hashCode_9(this.value_0);
+_.hashCode$ = function hashCode_9(){
+  return jl.hashCode_10(this.value_0);
 }
 ;
 _.intValue = function intValue_0(){
@@ -24259,39 +23592,39 @@ _.value_0 = 0;
 jl.MAX_EXPONENT = 1023;
 jl.MAX_VALUE_2 = 1.7976931348623157E308;
 jl.MIN_EXPONENT = 0;
-jl.MIN_NORMAL = $intern_64;
+jl.MIN_NORMAL = $intern_65;
 jl.MIN_VALUE_2 = 4.9E-324;
 jl.NEGATIVE_INFINITY = 0;
 jl.NaN_0 = 0;
 jl.POSITIVE_INFINITY = 0;
 jl.POWER_1 = 2;
-jl.POWER_128 = $intern_56;
+jl.POWER_128 = $intern_57;
 jl.POWER_16 = $intern_3;
 jl.POWER_2 = 4;
-jl.POWER_20 = $intern_39;
-jl.POWER_256 = $intern_55;
+jl.POWER_20 = $intern_40;
+jl.POWER_256 = $intern_56;
 jl.POWER_31 = 2147483648;
-jl.POWER_32 = $intern_22;
+jl.POWER_32 = $intern_21;
 jl.POWER_4 = 16;
-jl.POWER_512 = $intern_54;
+jl.POWER_512 = $intern_55;
 jl.POWER_52 = 4503599627370496;
-jl.POWER_64 = $intern_57;
+jl.POWER_64 = $intern_58;
 jl.POWER_8 = 256;
 jl.POWER_MINUS_1 = 0.5;
-jl.POWER_MINUS_1022 = $intern_64;
-jl.POWER_MINUS_128 = $intern_60;
-jl.POWER_MINUS_16 = $intern_63;
+jl.POWER_MINUS_1022 = $intern_65;
+jl.POWER_MINUS_128 = $intern_61;
+jl.POWER_MINUS_16 = $intern_64;
 jl.POWER_MINUS_2 = 0.25;
 jl.POWER_MINUS_20 = 9.5367431640625E-7;
-jl.POWER_MINUS_256 = $intern_59;
-jl.POWER_MINUS_32 = $intern_62;
+jl.POWER_MINUS_256 = $intern_60;
+jl.POWER_MINUS_32 = $intern_63;
 jl.POWER_MINUS_4 = 0.0625;
-jl.POWER_MINUS_512 = $intern_58;
+jl.POWER_MINUS_512 = $intern_59;
 jl.POWER_MINUS_52 = 2.220446049250313E-16;
-jl.POWER_MINUS_64 = $intern_61;
+jl.POWER_MINUS_64 = $intern_62;
 jl.POWER_MINUS_8 = 0.00390625;
 jl.SIZE_1 = 64;
-cggl.Ljava_lang_Double_2_classLit = createForClass('java.lang', 'Double', 38, cggl.Ljava_lang_Number_2_classLit);
+cggl.Ljava_lang_Double_2_classLit = createForClass('java.lang', 'Double', 36, cggl.Ljava_lang_Number_2_classLit);
 jl.$clinit_Float = function $clinit_Float(){
   jl.$clinit_Float = emptyMethod;
   jl.$clinit_Number();
@@ -24308,20 +23641,20 @@ jl.Float = function Float(value_0){
   this.value_0 = value_0;
 }
 ;
-jl.hashCode_11 = function hashCode_11(f_0){
-  return round_int(f_0);
+jl.hashCode_12 = function hashCode_12(f){
+  return round_int(f);
 }
 ;
 jl.toString_43 = function toString_43(b){
   return jl.valueOf_21(b);
 }
 ;
-jl.valueOf_15 = function valueOf_15(f_0){
+jl.valueOf_15 = function valueOf_15(f){
   jl.$clinit_Float();
-  return new jl.Float(f_0);
+  return new jl.Float(f);
 }
 ;
-defineClass(72, 20, {3:1, 6:1, 72:1, 20:1, 1:1}, jl.Float);
+defineClass(75, 20, {3:1, 6:1, 75:1, 20:1, 1:1}, jl.Float);
 _.$init_309 = function $init_309(){
 }
 ;
@@ -24334,15 +23667,15 @@ _.doubleValue = function doubleValue_1(){
 }
 ;
 _.equals$ = function equals_6(o){
-  return instanceOf(o, 72) && dynamicCast(o, 72).value_0 == this.value_0;
+  return instanceOf(o, 75) && dynamicCast(o, 75).value_0 == this.value_0;
 }
 ;
 _.floatValue = function floatValue_1(){
   return this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_10(){
-  return jl.hashCode_11(this.value_0);
+_.hashCode$ = function hashCode_11(){
+  return jl.hashCode_12(this.value_0);
 }
 ;
 _.intValue = function intValue_1(){
@@ -24373,7 +23706,7 @@ jl.POSITIVE_INFINITY_0 = 0;
 jl.POWER_31_INT = {l:0, m:512, h:0};
 jl.POWER_32_INT = {l:0, m:1024, h:0};
 jl.SIZE_2 = 32;
-cggl.Ljava_lang_Float_2_classLit = createForClass('java.lang', 'Float', 72, cggl.Ljava_lang_Number_2_classLit);
+cggl.Ljava_lang_Float_2_classLit = createForClass('java.lang', 'Float', 75, cggl.Ljava_lang_Number_2_classLit);
 jl.$clinit_IllegalArgumentException = function $clinit_IllegalArgumentException(){
   jl.$clinit_IllegalArgumentException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -24391,11 +23724,11 @@ jl.IllegalArgumentException_0 = function IllegalArgumentException_0(message){
   this.$init_310();
 }
 ;
-defineClass(59, 11, $intern_8, jl.IllegalArgumentException, jl.IllegalArgumentException_0);
+defineClass(48, 11, $intern_8, jl.IllegalArgumentException, jl.IllegalArgumentException_0);
 _.$init_310 = function $init_310(){
 }
 ;
-cggl.Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 59, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 48, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_IllegalStateException = function $clinit_IllegalStateException(){
   jl.$clinit_IllegalStateException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -24413,11 +23746,11 @@ jl.IllegalStateException_0 = function IllegalStateException_0(s){
   this.$init_311();
 }
 ;
-defineClass(83, 11, $intern_8, jl.IllegalStateException, jl.IllegalStateException_0);
+defineClass(84, 11, $intern_8, jl.IllegalStateException, jl.IllegalStateException_0);
 _.$init_311 = function $init_311(){
 }
 ;
-cggl.Ljava_lang_IllegalStateException_2_classLit = createForClass('java.lang', 'IllegalStateException', 83, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_IllegalStateException_2_classLit = createForClass('java.lang', 'IllegalStateException', 84, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_IndexOutOfBoundsException = function $clinit_IndexOutOfBoundsException(){
   jl.$clinit_IndexOutOfBoundsException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -24435,11 +23768,11 @@ jl.IndexOutOfBoundsException_0 = function IndexOutOfBoundsException_0(message){
   this.$init_312();
 }
 ;
-defineClass(50, 11, $intern_8, jl.IndexOutOfBoundsException, jl.IndexOutOfBoundsException_0);
+defineClass(53, 11, $intern_8, jl.IndexOutOfBoundsException, jl.IndexOutOfBoundsException_0);
 _.$init_312 = function $init_312(){
 }
 ;
-cggl.Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 50, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 53, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_Integer = function $clinit_Integer(){
   jl.$clinit_Integer = emptyMethod;
   jl.$clinit_Number();
@@ -24453,7 +23786,7 @@ jl.Integer = function Integer(value_0){
   this.value_0 = value_0;
 }
 ;
-jl.hashCode_13 = function hashCode_13(i_0){
+jl.hashCode_14 = function hashCode_14(i_0){
   return i_0;
 }
 ;
@@ -24475,11 +23808,11 @@ function numberOfLeadingZeros_0(i_0){
     m = y_0 >> 16 & 8;
     n += m;
     i_0 <<= m;
-    y_0 = i_0 - $intern_34;
+    y_0 = i_0 - $intern_35;
     m = y_0 >> 16 & 4;
     n += m;
     i_0 <<= m;
-    y_0 = i_0 - $intern_28;
+    y_0 = i_0 - $intern_27;
     m = y_0 >> 16 & 2;
     n += m;
     i_0 <<= m;
@@ -24541,7 +23874,7 @@ jl.valueOf_16 = function valueOf_16(i_0){
   return new jl.Integer(i_0);
 }
 ;
-defineClass(43, 20, {3:1, 6:1, 43:1, 20:1, 1:1}, jl.Integer);
+defineClass(46, 20, {3:1, 6:1, 46:1, 20:1, 1:1}, jl.Integer);
 _.$init_313 = function $init_313(){
 }
 ;
@@ -24554,15 +23887,15 @@ _.doubleValue = function doubleValue_2(){
 }
 ;
 _.equals$ = function equals_7(o){
-  return instanceOf(o, 43) && dynamicCast(o, 43).value_0 == this.value_0;
+  return instanceOf(o, 46) && dynamicCast(o, 46).value_0 == this.value_0;
 }
 ;
 _.floatValue = function floatValue_2(){
   return this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_12(){
-  return jl.hashCode_13(this.value_0);
+_.hashCode$ = function hashCode_13(){
+  return jl.hashCode_14(this.value_0);
 }
 ;
 _.intValue = function intValue_2(){
@@ -24585,11 +23918,11 @@ _.value_0 = 0;
 jl.MAX_VALUE_4 = $intern_1;
 jl.MIN_VALUE_4 = -2147483648;
 jl.SIZE_3 = 32;
-cggl.Ljava_lang_Integer_2_classLit = createForClass('java.lang', 'Integer', 43, cggl.Ljava_lang_Number_2_classLit);
+cggl.Ljava_lang_Integer_2_classLit = createForClass('java.lang', 'Integer', 46, cggl.Ljava_lang_Number_2_classLit);
 jl.$clinit_Integer$BoxedValues = function $clinit_Integer$BoxedValues(){
   jl.$clinit_Integer$BoxedValues = emptyMethod;
   jl.$clinit_Object();
-  jl.boxedValues_2 = initDim(cggl.Ljava_lang_Integer_2_classLit, $intern_6, 43, 256, 0, 1);
+  jl.boxedValues_2 = initDim(cggl.Ljava_lang_Integer_2_classLit, $intern_6, 46, 256, 0, 1);
 }
 ;
 defineClass(471, 1, $intern_0);
@@ -24614,7 +23947,7 @@ jl.Long = function Long(value_0){
   this.value_0 = value_0;
 }
 ;
-jl.hashCode_15 = function hashCode_15(l){
+jl.hashCode_16 = function hashCode_16(l){
   return toInt(l);
 }
 ;
@@ -24636,7 +23969,7 @@ jl.valueOf_17 = function valueOf_17(i_0){
   return new jl.Long(i_0);
 }
 ;
-defineClass(55, 20, {3:1, 6:1, 55:1, 20:1, 1:1}, jl.Long);
+defineClass(60, 20, {3:1, 6:1, 60:1, 20:1, 1:1}, jl.Long);
 _.$init_314 = function $init_314(){
 }
 ;
@@ -24649,15 +23982,15 @@ _.doubleValue = function doubleValue_3(){
 }
 ;
 _.equals$ = function equals_8(o){
-  return instanceOf(o, 55) && eq(dynamicCast(o, 55).value_0, this.value_0);
+  return instanceOf(o, 60) && eq(dynamicCast(o, 60).value_0, this.value_0);
 }
 ;
 _.floatValue = function floatValue_3(){
   return toDouble(this.value_0);
 }
 ;
-_.hashCode$ = function hashCode_14(){
-  return jl.hashCode_15(this.value_0);
+_.hashCode$ = function hashCode_15(){
+  return jl.hashCode_16(this.value_0);
 }
 ;
 _.intValue = function intValue_3(){
@@ -24677,14 +24010,14 @@ _.toString$ = function toString_46(){
 }
 ;
 _.value_0 = {l:0, m:0, h:0};
-jl.MAX_VALUE_5 = {l:$intern_23, m:$intern_23, h:524287};
-jl.MIN_VALUE_5 = {l:0, m:0, h:$intern_25};
+jl.MAX_VALUE_5 = {l:$intern_22, m:$intern_22, h:524287};
+jl.MIN_VALUE_5 = {l:0, m:0, h:$intern_24};
 jl.SIZE_4 = 64;
-cggl.Ljava_lang_Long_2_classLit = createForClass('java.lang', 'Long', 55, cggl.Ljava_lang_Number_2_classLit);
+cggl.Ljava_lang_Long_2_classLit = createForClass('java.lang', 'Long', 60, cggl.Ljava_lang_Number_2_classLit);
 jl.$clinit_Long$BoxedValues = function $clinit_Long$BoxedValues(){
   jl.$clinit_Long$BoxedValues = emptyMethod;
   jl.$clinit_Object();
-  jl.boxedValues_3 = initDim(cggl.Ljava_lang_Long_2_classLit, $intern_6, 55, 256, 0, 1);
+  jl.boxedValues_3 = initDim(cggl.Ljava_lang_Long_2_classLit, $intern_6, 60, 256, 0, 1);
 }
 ;
 defineClass(474, 1, $intern_0);
@@ -24734,7 +24067,7 @@ jl.round0 = function round0(x_0){
   return Math.round(x_0);
 }
 ;
-defineClass(740, 1, $intern_0);
+defineClass(746, 1, $intern_0);
 jl.E_0 = 2.718281828459045;
 jl.PI_0 = $intern_4;
 jl.PI_OVER_180 = 0;
@@ -24756,11 +24089,11 @@ jl.NullPointerException_0 = function NullPointerException_0(message){
   this.$init_315();
 }
 ;
-defineClass(40, 11, $intern_8, jl.NullPointerException, jl.NullPointerException_0);
+defineClass(39, 11, $intern_8, jl.NullPointerException, jl.NullPointerException_0);
 _.$init_315 = function $init_315(){
 }
 ;
-cggl.Ljava_lang_NullPointerException_2_classLit = createForClass('java.lang', 'NullPointerException', 40, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_NullPointerException_2_classLit = createForClass('java.lang', 'NullPointerException', 39, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_Number$__Decode = function $clinit_Number$__Decode(){
   jl.$clinit_Number$__Decode = emptyMethod;
 }
@@ -24796,15 +24129,15 @@ jl.forRadix = function forRadix(radix){
   return new jl.NumberFormatException('radix ' + radix + ' out of range');
 }
 ;
-defineClass(116, 59, $intern_8, jl.NumberFormatException);
+defineClass(122, 48, $intern_8, jl.NumberFormatException);
 _.$init_316 = function $init_316(){
 }
 ;
-cggl.Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 116, cggl.Ljava_lang_IllegalArgumentException_2_classLit);
+cggl.Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 122, cggl.Ljava_lang_IllegalArgumentException_2_classLit);
 jl.$clinit_Short = function $clinit_Short(){
   jl.$clinit_Short = emptyMethod;
   jl.$clinit_Number();
-  jl.MIN_VALUE_6 = narrow_short($intern_20);
+  jl.MIN_VALUE_6 = narrow_short($intern_19);
   jl.MAX_VALUE_6 = narrow_short(32767);
   jl.TYPE_11 = cggl.S_classLit;
 }
@@ -24815,7 +24148,7 @@ jl.Short = function Short(value_0){
   this.value_0 = value_0;
 }
 ;
-jl.hashCode_17 = function hashCode_17(s){
+jl.hashCode_18 = function hashCode_18(s){
   return s;
 }
 ;
@@ -24837,7 +24170,7 @@ jl.valueOf_18 = function valueOf_18(s){
   return new jl.Short(s);
 }
 ;
-defineClass(56, 20, {3:1, 6:1, 20:1, 1:1, 56:1}, jl.Short);
+defineClass(61, 20, {3:1, 6:1, 20:1, 1:1, 61:1}, jl.Short);
 _.$init_317 = function $init_317(){
 }
 ;
@@ -24850,15 +24183,15 @@ _.doubleValue = function doubleValue_4(){
 }
 ;
 _.equals$ = function equals_9(o){
-  return instanceOf(o, 56) && dynamicCast(o, 56).value_0 == this.value_0;
+  return instanceOf(o, 61) && dynamicCast(o, 61).value_0 == this.value_0;
 }
 ;
 _.floatValue = function floatValue_4(){
   return this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_16(){
-  return jl.hashCode_17(this.value_0);
+_.hashCode$ = function hashCode_17(){
+  return jl.hashCode_18(this.value_0);
 }
 ;
 _.intValue = function intValue_4(){
@@ -24881,11 +24214,11 @@ _.value_0 = 0;
 jl.MAX_VALUE_6 = 0;
 jl.MIN_VALUE_6 = 0;
 jl.SIZE_5 = 16;
-cggl.Ljava_lang_Short_2_classLit = createForClass('java.lang', 'Short', 56, cggl.Ljava_lang_Number_2_classLit);
+cggl.Ljava_lang_Short_2_classLit = createForClass('java.lang', 'Short', 61, cggl.Ljava_lang_Number_2_classLit);
 jl.$clinit_Short$BoxedValues = function $clinit_Short$BoxedValues(){
   jl.$clinit_Short$BoxedValues = emptyMethod;
   jl.$clinit_Object();
-  jl.boxedValues_4 = initDim(cggl.Ljava_lang_Short_2_classLit, $intern_6, 56, 256, 0, 1);
+  jl.boxedValues_4 = initDim(cggl.Ljava_lang_Short_2_classLit, $intern_6, 61, 256, 0, 1);
 }
 ;
 defineClass(475, 1, $intern_0);
@@ -24904,14 +24237,14 @@ jl.StackTraceElement = function StackTraceElement(className, methodName, fileNam
   this.lineNumber = lineNumber;
 }
 ;
-defineClass(39, 1, {3:1, 1:1, 39:1}, jl.StackTraceElement);
+defineClass(37, 1, {3:1, 1:1, 37:1}, jl.StackTraceElement);
 _.$init_318 = function $init_318(){
 }
 ;
 _.equals$ = function equals_10(other){
   var st;
-  if (instanceOf(other, 39)) {
-    st = dynamicCast(other, 39);
+  if (instanceOf(other, 37)) {
+    st = dynamicCast(other, 37);
     return this.lineNumber == st.lineNumber && ju.equals_17(this.methodName, st.methodName) && ju.equals_17(this.className_0, st.className_0) && ju.equals_17(this.fileName, st.fileName);
   }
   return false;
@@ -24925,7 +24258,7 @@ _.getMethodName = function getMethodName(){
   return this.methodName;
 }
 ;
-_.hashCode$ = function hashCode_18(){
+_.hashCode$ = function hashCode_19(){
   return ju.hash_1(initValues(getClassLiteralForArray(cggl.Ljava_lang_Object_2_classLit, 1), $intern_6, 1, 3, [jl.valueOf_16(this.lineNumber), this.className_0, this.methodName, this.fileName]));
 }
 ;
@@ -24934,7 +24267,7 @@ _.toString$ = function toString_50(){
 }
 ;
 _.lineNumber = 0;
-cggl.Ljava_lang_StackTraceElement_2_classLit = createForClass('java.lang', 'StackTraceElement', 39, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_lang_StackTraceElement_2_classLit = createForClass('java.lang', 'StackTraceElement', 37, cggl.Ljava_lang_Object_2_classLit);
 jl.$clinit_String$HashCache = function $clinit_String$HashCache(){
   jl.$clinit_String$HashCache = emptyMethod;
   jl.$clinit_Object();
@@ -25010,7 +24343,7 @@ jl.StringBuilder_1 = function StringBuilder_1(s){
   this.$init_320();
 }
 ;
-defineClass(57, 107, $intern_53, jl.StringBuilder, jl.StringBuilder_0, jl.StringBuilder_1);
+defineClass(62, 111, $intern_54, jl.StringBuilder, jl.StringBuilder_0, jl.StringBuilder_1);
 _.$init_320 = function $init_320(){
 }
 ;
@@ -25029,7 +24362,7 @@ _.append_2 = function append_2(x_0){
   return this;
 }
 ;
-cggl.Ljava_lang_StringBuilder_2_classLit = createForClass('java.lang', 'StringBuilder', 57, cggl.Ljava_lang_AbstractStringBuilder_2_classLit);
+cggl.Ljava_lang_StringBuilder_2_classLit = createForClass('java.lang', 'StringBuilder', 62, cggl.Ljava_lang_AbstractStringBuilder_2_classLit);
 jl.$clinit_System = function $clinit_System(){
   jl.$clinit_System = emptyMethod;
   jl.$clinit_Object();
@@ -25087,7 +24420,7 @@ jl.getArrayLength = function getArrayLength(array){
   return array.length;
 }
 ;
-defineClass(688, 1, $intern_0);
+defineClass(697, 1, $intern_0);
 jl.$clinit_UnsupportedOperationException = function $clinit_UnsupportedOperationException(){
   jl.$clinit_UnsupportedOperationException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -25105,16 +24438,16 @@ jl.UnsupportedOperationException_0 = function UnsupportedOperationException_0(me
   this.$init_321();
 }
 ;
-defineClass(77, 11, $intern_8, jl.UnsupportedOperationException, jl.UnsupportedOperationException_0);
+defineClass(78, 11, $intern_8, jl.UnsupportedOperationException, jl.UnsupportedOperationException_0);
 _.$init_321 = function $init_321(){
 }
 ;
-cggl.Ljava_lang_UnsupportedOperationException_2_classLit = createForClass('java.lang', 'UnsupportedOperationException', 77, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_lang_UnsupportedOperationException_2_classLit = createForClass('java.lang', 'UnsupportedOperationException', 78, cggl.Ljava_lang_RuntimeException_2_classLit);
 jl.$clinit_Void = function $clinit_Void(){
   jl.$clinit_Void = emptyMethod;
 }
 ;
-defineClass(368, 1, {1:1, 368:1});
+defineClass(369, 1, {1:1, 369:1});
 jla.$clinit_Annotation = function $clinit_Annotation(){
   jla.$clinit_Annotation = emptyMethod;
 }
@@ -25130,11 +24463,11 @@ ju.AbstractCollection = function AbstractCollection(){
   this.$init_322();
 }
 ;
-defineClass(132, 1, $intern_0);
+defineClass(135, 1, $intern_0);
 _.$init_322 = function $init_322(){
 }
 ;
-_.add_3 = function add_4(o){
+_.add_4 = function add_5(o){
   throw new jl.UnsupportedOperationException_0('Add not supported on this collection');
 }
 ;
@@ -25144,7 +24477,7 @@ _.addAll_0 = function addAll_0(c){
   changed = false;
   for (e$iterator = c.iterator(); e$iterator.hasNext();) {
     e = e$iterator.next_0();
-    changed = changed | this.add_3(e);
+    changed = changed | this.add_4(e);
   }
   return changed;
 }
@@ -25155,7 +24488,7 @@ _.advanceToFind = function advanceToFind(o, remove){
     e = iter.next_0();
     if (ju.equals_17(o, e)) {
       if (remove) {
-        iter.remove_6();
+        iter.remove_7();
       }
       return true;
     }
@@ -25167,7 +24500,7 @@ _.clear_0 = function clear_4(){
   var iter;
   for (iter = this.iterator(); iter.hasNext();) {
     iter.next_0();
-    iter.remove_6();
+    iter.remove_7();
   }
 }
 ;
@@ -25191,7 +24524,7 @@ _.isEmpty_0 = function isEmpty_2(){
   return this.size_1() == 0;
 }
 ;
-_.remove_5 = function remove_3(o){
+_.remove_6 = function remove_4(o){
   return this.advanceToFind(o, true);
 }
 ;
@@ -25234,7 +24567,7 @@ _.toString$ = function toString_51(){
   return sb.toString$();
 }
 ;
-cggl.Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 132, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 135, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractMap = function $clinit_AbstractMap(){
   ju.$clinit_AbstractMap = emptyMethod;
   jl.$clinit_Object();
@@ -25251,7 +24584,7 @@ ju.getEntryValueOrNull = function getEntryValueOrNull(entry){
   return isNull(entry)?null:entry.getValue_0();
 }
 ;
-defineClass(131, 1, $intern_65);
+defineClass(134, 1, $intern_66);
 _.$init_323 = function $init_323(){
 }
 ;
@@ -25282,15 +24615,15 @@ _.equals$ = function equals_11(obj){
   if (obj === this) {
     return true;
   }
-  if (!instanceOf(obj, 36)) {
+  if (!instanceOf(obj, 34)) {
     return false;
   }
-  otherMap = dynamicCast(obj, 36);
+  otherMap = dynamicCast(obj, 34);
   if (this.size_1() != otherMap.size_1()) {
     return false;
   }
   for (entry$iterator = otherMap.entrySet().iterator(); entry$iterator.hasNext();) {
-    entry = dynamicCast(entry$iterator.next_0(), 16);
+    entry = dynamicCast(entry$iterator.next_0(), 17);
     if (!this.containsEntry(entry)) {
       return false;
     }
@@ -25302,19 +24635,19 @@ _.get_1 = function get_9(key){
   return ju.getEntryValueOrNull(this.implFindEntry(key, false));
 }
 ;
-_.hashCode$ = function hashCode_19(){
-  return ju.hashCode_25(this.entrySet());
+_.hashCode$ = function hashCode_20(){
+  return ju.hashCode_26(this.entrySet());
 }
 ;
 _.implFindEntry = function implFindEntry(key, remove){
   var entry, iter, k_0;
   for (iter = this.entrySet().iterator(); iter.hasNext();) {
-    entry = dynamicCast(iter.next_0(), 16);
+    entry = dynamicCast(iter.next_0(), 17);
     k_0 = entry.getKey();
     if (ju.equals_17(key, k_0)) {
       if (remove) {
         entry = new ju.AbstractMap$SimpleEntry(entry.getKey(), entry.getValue_0());
-        iter.remove_6();
+        iter.remove_7();
       }
       return entry;
     }
@@ -25334,7 +24667,7 @@ _.put = function put(key, value_0){
   throw new jl.UnsupportedOperationException_0('Put not supported on this map');
 }
 ;
-_.remove_3 = function remove_4(key){
+_.remove_3 = function remove_5(key){
   return ju.getEntryValueOrNull(this.implFindEntry(key, true));
 }
 ;
@@ -25347,7 +24680,7 @@ _.toString$ = function toString_52(){
   sb = new jl.StringBuilder_1('{');
   comma = false;
   for (entry$iterator = this.entrySet().iterator(); entry$iterator.hasNext();) {
-    entry = dynamicCast(entry$iterator.next_0(), 16);
+    entry = dynamicCast(entry$iterator.next_0(), 17);
     if (comma) {
       sb.append_2(', ');
     }
@@ -25366,7 +24699,7 @@ _.toString_2 = function toString_53(o){
   return o === this?'(this Map)':valueOf_24(o);
 }
 ;
-cggl.Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 131, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 134, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractHashMap = function $clinit_AbstractHashMap(){
   ju.$clinit_AbstractHashMap = emptyMethod;
   ju.$clinit_AbstractMap();
@@ -25383,7 +24716,7 @@ ju.unsafeCast = function unsafeCast(string){
   return string;
 }
 ;
-defineClass(193, 131, $intern_65);
+defineClass(195, 134, $intern_66);
 _.$init_324 = function $init_324(){
 }
 ;
@@ -25441,7 +24774,7 @@ _.putStringValue = function putStringValue(key, value_0){
   return jsEquals(key, null)?this.putHashValue(null, value_0):this.stringMap.put_0(key, value_0);
 }
 ;
-_.remove_3 = function remove_5(key){
+_.remove_3 = function remove_6(key){
   return isJavaString(key)?this.removeStringValue(ju.unsafeCast(key)):this.removeHashValue(key);
 }
 ;
@@ -25450,12 +24783,12 @@ _.removeHashValue = function removeHashValue(key){
 }
 ;
 _.removeStringValue = function removeStringValue(key){
-  return jsEquals(key, null)?this.removeHashValue(null):this.stringMap.remove_8(key);
+  return jsEquals(key, null)?this.removeHashValue(null):this.stringMap.remove_9(key);
 }
 ;
 _.reset_0 = function reset_0(){
   var factory;
-  factory = dynamicCast(new ju.InternalJsMapFactory$BackwardCompatibleJsMapFactory, 60);
+  factory = dynamicCast(new ju.InternalJsMapFactory$BackwardCompatibleJsMapFactory, 64);
   this.hashCodeMap = factory.createJsHashCodeMap();
   this.hashCodeMap.host = this;
   this.stringMap = factory.createJsStringMap();
@@ -25469,7 +24802,7 @@ _.size_1 = function size_4(){
 }
 ;
 _.size_0 = 0;
-cggl.Ljava_util_AbstractHashMap_2_classLit = createForClass('java.util', 'AbstractHashMap', 193, cggl.Ljava_util_AbstractMap_2_classLit);
+cggl.Ljava_util_AbstractHashMap_2_classLit = createForClass('java.util', 'AbstractHashMap', 195, cggl.Ljava_util_AbstractMap_2_classLit);
 ju.$clinit_AbstractSet = function $clinit_AbstractSet(){
   ju.$clinit_AbstractSet = emptyMethod;
   ju.$clinit_AbstractCollection();
@@ -25481,7 +24814,7 @@ ju.AbstractSet = function AbstractSet(){
   this.$init_325();
 }
 ;
-defineClass(92, 132, $intern_66);
+defineClass(95, 135, $intern_67);
 _.$init_325 = function $init_325(){
 }
 ;
@@ -25490,21 +24823,21 @@ _.equals$ = function equals_12(o){
   if (o === this) {
     return true;
   }
-  if (!instanceOf(o, 37)) {
+  if (!instanceOf(o, 35)) {
     return false;
   }
-  other = dynamicCast(o, 37);
+  other = dynamicCast(o, 35);
   if (other.size_1() != this.size_1()) {
     return false;
   }
   return this.containsAll(other);
 }
 ;
-_.hashCode$ = function hashCode_20(){
-  return ju.hashCode_25(this);
+_.hashCode$ = function hashCode_21(){
+  return ju.hashCode_26(this);
 }
 ;
-cggl.Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 92, cggl.Ljava_util_AbstractCollection_2_classLit);
+cggl.Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 95, cggl.Ljava_util_AbstractCollection_2_classLit);
 ju.$clinit_AbstractHashMap$EntrySet = function $clinit_AbstractHashMap$EntrySet(){
   ju.$clinit_AbstractHashMap$EntrySet = emptyMethod;
   ju.$clinit_AbstractSet();
@@ -25517,7 +24850,7 @@ ju.AbstractHashMap$EntrySet = function AbstractHashMap$EntrySet(this$0){
   this.$init_326();
 }
 ;
-defineClass(194, 92, $intern_66, ju.AbstractHashMap$EntrySet);
+defineClass(196, 95, $intern_67, ju.AbstractHashMap$EntrySet);
 _.$init_326 = function $init_326(){
 }
 ;
@@ -25526,8 +24859,8 @@ _.clear_0 = function clear_7(){
 }
 ;
 _.contains_1 = function contains_2(o){
-  if (instanceOf(o, 16)) {
-    return this.this$01.containsEntry(dynamicCast(o, 16));
+  if (instanceOf(o, 17)) {
+    return this.this$01.containsEntry(dynamicCast(o, 17));
   }
   return false;
 }
@@ -25536,10 +24869,10 @@ _.iterator = function iterator_0(){
   return new ju.AbstractHashMap$EntrySetIterator(this.this$01);
 }
 ;
-_.remove_5 = function remove_6(entry){
+_.remove_6 = function remove_7(entry){
   var key;
   if (this.contains_1(entry)) {
-    key = dynamicCast(entry, 16).getKey();
+    key = dynamicCast(entry, 17).getKey();
     this.this$01.remove_3(key);
     return true;
   }
@@ -25550,7 +24883,7 @@ _.size_1 = function size_5(){
   return this.this$01.size_1();
 }
 ;
-cggl.Ljava_util_AbstractHashMap$EntrySet_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySet', 194, cggl.Ljava_util_AbstractSet_2_classLit);
+cggl.Ljava_util_AbstractHashMap$EntrySet_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySet', 196, cggl.Ljava_util_AbstractSet_2_classLit);
 ju.$clinit_AbstractHashMap$EntrySetIterator = function $clinit_AbstractHashMap$EntrySetIterator(){
   ju.$clinit_AbstractHashMap$EntrySetIterator = emptyMethod;
   jl.$clinit_Object();
@@ -25564,7 +24897,7 @@ ju.AbstractHashMap$EntrySetIterator = function AbstractHashMap$EntrySetIterator(
   ju.recordLastKnownStructure(this$0, this);
 }
 ;
-defineClass(195, 1, $intern_0, ju.AbstractHashMap$EntrySetIterator);
+defineClass(197, 1, $intern_0, ju.AbstractHashMap$EntrySetIterator);
 _.$init_327 = function $init_327(){
   this.stringMapEntries = this.this$01.stringMap.entries();
   this.current = this.stringMapEntries;
@@ -25589,18 +24922,18 @@ _.next_1 = function next_1(){
   ju.checkStructuralChange(this.this$01, this);
   cggcsi.checkElement(this.hasNext());
   this.last = this.current;
-  return dynamicCast(this.current.next_0(), 16);
+  return dynamicCast(this.current.next_0(), 17);
 }
 ;
-_.remove_6 = function remove_7(){
+_.remove_7 = function remove_8(){
   cggcsi.checkState(isNotNull(this.last));
   ju.checkStructuralChange(this.this$01, this);
-  this.last.remove_6();
+  this.last.remove_7();
   this.last = null;
   ju.recordLastKnownStructure(this.this$01, this);
 }
 ;
-cggl.Ljava_util_AbstractHashMap$EntrySetIterator_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySetIterator', 195, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractHashMap$EntrySetIterator_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySetIterator', 197, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractList = function $clinit_AbstractList(){
   ju.$clinit_AbstractList = emptyMethod;
   ju.$clinit_AbstractCollection();
@@ -25612,16 +24945,16 @@ ju.AbstractList = function AbstractList(){
   this.$init_328();
 }
 ;
-defineClass(76, 132, $intern_67);
+defineClass(77, 135, $intern_68);
 _.$init_328 = function $init_328(){
 }
 ;
-_.add_4 = function add_5(index_0, element){
+_.add_5 = function add_6(index_0, element){
   throw new jl.UnsupportedOperationException_0('Add not supported on this list');
 }
 ;
-_.add_3 = function add_6(obj){
-  this.add_4(this.size_1(), obj);
+_.add_4 = function add_7(obj){
+  this.add_5(this.size_1(), obj);
   return true;
 }
 ;
@@ -25634,10 +24967,10 @@ _.equals$ = function equals_13(o){
   if (o === this) {
     return true;
   }
-  if (!instanceOf(o, 17)) {
+  if (!instanceOf(o, 19)) {
     return false;
   }
-  other = dynamicCast(o, 17);
+  other = dynamicCast(o, 19);
   if (this.size_1() != other.size_1()) {
     return false;
   }
@@ -25652,8 +24985,8 @@ _.equals$ = function equals_13(o){
   return true;
 }
 ;
-_.hashCode$ = function hashCode_21(){
-  return ju.hashCode_26(this);
+_.hashCode$ = function hashCode_22(){
+  return ju.hashCode_27(this);
 }
 ;
 _.indexOf_0 = function indexOf_1(toFind){
@@ -25678,7 +25011,7 @@ _.listIterator_0 = function listIterator_0(from){
   return new ju.AbstractList$ListIteratorImpl(this, from);
 }
 ;
-_.remove_2 = function remove_8(index_0){
+_.remove_2 = function remove_9(index_0){
   throw new jl.UnsupportedOperationException_0('Remove not supported on this list');
 }
 ;
@@ -25687,11 +25020,11 @@ _.removeRange = function removeRange(fromIndex, endIndex){
   iter = this.listIterator_0(fromIndex);
   for (i_0 = fromIndex; i_0 < endIndex; ++i_0) {
     iter.next_0();
-    iter.remove_6();
+    iter.remove_7();
   }
 }
 ;
-cggl.Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', 76, cggl.Ljava_util_AbstractCollection_2_classLit);
+cggl.Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', 77, cggl.Ljava_util_AbstractCollection_2_classLit);
 ju.$clinit_AbstractList$IteratorImpl = function $clinit_AbstractList$IteratorImpl(){
   ju.$clinit_AbstractList$IteratorImpl = emptyMethod;
   jl.$clinit_Object();
@@ -25704,7 +25037,7 @@ ju.AbstractList$IteratorImpl = function AbstractList$IteratorImpl(this$0){
   this.$init_329();
 }
 ;
-defineClass(137, 1, $intern_0, ju.AbstractList$IteratorImpl);
+defineClass(140, 1, $intern_0, ju.AbstractList$IteratorImpl);
 _.$init_329 = function $init_329(){
   this.i = 0;
   this.last = -1;
@@ -25719,7 +25052,7 @@ _.next_0 = function next_2(){
   return this.this$01_0.get_2(this.last = this.i++);
 }
 ;
-_.remove_6 = function remove_9(){
+_.remove_7 = function remove_10(){
   cggcsi.checkState(this.last != -1);
   this.this$01_0.remove_2(this.last);
   this.i = this.last;
@@ -25728,7 +25061,7 @@ _.remove_6 = function remove_9(){
 ;
 _.i = 0;
 _.last = 0;
-cggl.Ljava_util_AbstractList$IteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/IteratorImpl', 137, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractList$IteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/IteratorImpl', 140, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractList$ListIteratorImpl = function $clinit_AbstractList$ListIteratorImpl(){
   ju.$clinit_AbstractList$ListIteratorImpl = emptyMethod;
   ju.$clinit_AbstractList$IteratorImpl();
@@ -25743,12 +25076,12 @@ ju.AbstractList$ListIteratorImpl = function AbstractList$ListIteratorImpl(this$0
   this.i = start_0;
 }
 ;
-defineClass(220, 137, $intern_0, ju.AbstractList$ListIteratorImpl);
+defineClass(229, 140, $intern_0, ju.AbstractList$ListIteratorImpl);
 _.$init_330 = function $init_330(){
 }
 ;
-_.add_5 = function add_7(o){
-  this.this$01.add_4(this.i, o);
+_.add_6 = function add_8(o){
+  this.this$01.add_5(this.i, o);
   this.i++;
   this.last = -1;
 }
@@ -25762,12 +25095,12 @@ _.previous = function previous_0(){
   return this.this$01.get_2(this.last = --this.i);
 }
 ;
-cggl.Ljava_util_AbstractList$ListIteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/ListIteratorImpl', 220, cggl.Ljava_util_AbstractList$IteratorImpl_2_classLit);
+cggl.Ljava_util_AbstractList$ListIteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/ListIteratorImpl', 229, cggl.Ljava_util_AbstractList$IteratorImpl_2_classLit);
 ju.$clinit_AbstractList$SubList = function $clinit_AbstractList$SubList(){
   ju.$clinit_AbstractList$SubList = emptyMethod;
 }
 ;
-defineClass(532, 76, $intern_67);
+defineClass(541, 77, $intern_68);
 ju.$clinit_AbstractMap$1 = function $clinit_AbstractMap$1(){
   ju.$clinit_AbstractMap$1 = emptyMethod;
   ju.$clinit_AbstractSet();
@@ -25780,7 +25113,7 @@ ju.AbstractMap$1 = function AbstractMap$1(this$0){
   this.$init_331();
 }
 ;
-defineClass(197, 92, $intern_66, ju.AbstractMap$1);
+defineClass(199, 95, $intern_67, ju.AbstractMap$1);
 _.$init_331 = function $init_331(){
 }
 ;
@@ -25798,7 +25131,7 @@ _.iterator = function iterator_2(){
   return new ju.AbstractMap$1$1(this, outerIter);
 }
 ;
-_.remove_5 = function remove_10(key){
+_.remove_6 = function remove_11(key){
   if (this.this$01.containsKey(key)) {
     this.this$01.remove_3(key);
     return true;
@@ -25810,7 +25143,7 @@ _.size_1 = function size_6(){
   return this.this$01.size_1();
 }
 ;
-cggl.Ljava_util_AbstractMap$1_2_classLit = createForClass('java.util', 'AbstractMap/1', 197, cggl.Ljava_util_AbstractSet_2_classLit);
+cggl.Ljava_util_AbstractMap$1_2_classLit = createForClass('java.util', 'AbstractMap/1', 199, cggl.Ljava_util_AbstractSet_2_classLit);
 ju.$clinit_AbstractMap$1$1 = function $clinit_AbstractMap$1$1(){
   ju.$clinit_AbstractMap$1$1 = emptyMethod;
   jl.$clinit_Object();
@@ -25824,7 +25157,7 @@ ju.AbstractMap$1$1 = function AbstractMap$1$1(this$1, val$outerIter){
   this.$init_332();
 }
 ;
-defineClass(198, 1, $intern_0, ju.AbstractMap$1$1);
+defineClass(200, 1, $intern_0, ju.AbstractMap$1$1);
 _.$init_332 = function $init_332(){
 }
 ;
@@ -25834,20 +25167,20 @@ _.hasNext = function hasNext_1(){
 ;
 _.next_0 = function next_3(){
   var entry;
-  entry = dynamicCast(this.val$outerIter2.next_0(), 16);
+  entry = dynamicCast(this.val$outerIter2.next_0(), 17);
   return entry.getKey();
 }
 ;
-_.remove_6 = function remove_11(){
-  this.val$outerIter2.remove_6();
+_.remove_7 = function remove_12(){
+  this.val$outerIter2.remove_7();
 }
 ;
-cggl.Ljava_util_AbstractMap$1$1_2_classLit = createForClass('java.util', 'AbstractMap/1/1', 198, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractMap$1$1_2_classLit = createForClass('java.util', 'AbstractMap/1/1', 200, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractMap$2 = function $clinit_AbstractMap$2(){
   ju.$clinit_AbstractMap$2 = emptyMethod;
 }
 ;
-defineClass(484, 132, $intern_0);
+defineClass(484, 135, $intern_0);
 ju.$clinit_AbstractMap$2$1 = function $clinit_AbstractMap$2$1(){
   ju.$clinit_AbstractMap$2$1 = emptyMethod;
 }
@@ -25866,16 +25199,16 @@ ju.AbstractMap$AbstractEntry = function AbstractMap$AbstractEntry(key, value_0){
   this.value_0 = value_0;
 }
 ;
-defineClass(196, 1, $intern_68);
+defineClass(198, 1, $intern_69);
 _.$init_333 = function $init_333(){
 }
 ;
 _.equals$ = function equals_14(other){
   var entry;
-  if (!instanceOf(other, 16)) {
+  if (!instanceOf(other, 17)) {
     return false;
   }
-  entry = dynamicCast(other, 16);
+  entry = dynamicCast(other, 17);
   return ju.equals_17(this.key, entry.getKey()) && ju.equals_17(this.value_0, entry.getValue_0());
 }
 ;
@@ -25887,8 +25220,8 @@ _.getValue_0 = function getValue(){
   return this.value_0;
 }
 ;
-_.hashCode$ = function hashCode_22(){
-  return ju.hashCode_27(this.key) ^ ju.hashCode_27(this.value_0);
+_.hashCode$ = function hashCode_23(){
+  return ju.hashCode_28(this.key) ^ ju.hashCode_28(this.value_0);
 }
 ;
 _.setValue = function setValue(value_0){
@@ -25902,7 +25235,7 @@ _.toString$ = function toString_54(){
   return this.key + '=' + this.value_0;
 }
 ;
-cggl.Ljava_util_AbstractMap$AbstractEntry_2_classLit = createForClass('java.util', 'AbstractMap/AbstractEntry', 196, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractMap$AbstractEntry_2_classLit = createForClass('java.util', 'AbstractMap/AbstractEntry', 198, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractMap$SimpleEntry = function $clinit_AbstractMap$SimpleEntry(){
   ju.$clinit_AbstractMap$SimpleEntry = emptyMethod;
   ju.$clinit_AbstractMap$AbstractEntry();
@@ -25914,16 +25247,16 @@ ju.AbstractMap$SimpleEntry = function AbstractMap$SimpleEntry(key, value_0){
   this.$init_334();
 }
 ;
-defineClass(133, 196, $intern_68, ju.AbstractMap$SimpleEntry);
+defineClass(136, 198, $intern_69, ju.AbstractMap$SimpleEntry);
 _.$init_334 = function $init_334(){
 }
 ;
-cggl.Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 133, cggl.Ljava_util_AbstractMap$AbstractEntry_2_classLit);
+cggl.Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 136, cggl.Ljava_util_AbstractMap$AbstractEntry_2_classLit);
 ju.$clinit_AbstractMap$SimpleImmutableEntry = function $clinit_AbstractMap$SimpleImmutableEntry(){
   ju.$clinit_AbstractMap$SimpleImmutableEntry = emptyMethod;
 }
 ;
-defineClass(483, 196, $intern_68);
+defineClass(483, 198, $intern_69);
 ju.$clinit_AbstractMapEntry = function $clinit_AbstractMapEntry(){
   ju.$clinit_AbstractMapEntry = emptyMethod;
   jl.$clinit_Object();
@@ -25935,33 +25268,33 @@ ju.AbstractMapEntry = function AbstractMapEntry(){
   this.$init_335();
 }
 ;
-defineClass(225, 1, $intern_68);
+defineClass(234, 1, $intern_69);
 _.$init_335 = function $init_335(){
 }
 ;
 _.equals$ = function equals_15(other){
   var entry;
-  if (!instanceOf(other, 16)) {
+  if (!instanceOf(other, 17)) {
     return false;
   }
-  entry = dynamicCast(other, 16);
+  entry = dynamicCast(other, 17);
   return ju.equals_17(this.getKey(), entry.getKey()) && ju.equals_17(this.getValue_0(), entry.getValue_0());
 }
 ;
-_.hashCode$ = function hashCode_23(){
-  return ju.hashCode_27(this.getKey()) ^ ju.hashCode_27(this.getValue_0());
+_.hashCode$ = function hashCode_24(){
+  return ju.hashCode_28(this.getKey()) ^ ju.hashCode_28(this.getValue_0());
 }
 ;
 _.toString$ = function toString_55(){
   return this.getKey() + '=' + this.getValue_0();
 }
 ;
-cggl.Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 225, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 234, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_AbstractQueue = function $clinit_AbstractQueue(){
   ju.$clinit_AbstractQueue = emptyMethod;
 }
 ;
-defineClass(531, 132, {1:1, 88:1});
+defineClass(540, 135, {1:1, 89:1});
 ju.$clinit_AbstractSequentialList = function $clinit_AbstractSequentialList(){
   ju.$clinit_AbstractSequentialList = emptyMethod;
   ju.$clinit_AbstractList();
@@ -25973,14 +25306,14 @@ ju.AbstractSequentialList = function AbstractSequentialList(){
   this.$init_336();
 }
 ;
-defineClass(348, 76, $intern_67);
+defineClass(348, 77, $intern_68);
 _.$init_336 = function $init_336(){
 }
 ;
-_.add_4 = function add_8(index_0, element){
+_.add_5 = function add_9(index_0, element){
   var iter;
   iter = this.listIterator_0(index_0);
-  iter.add_5(element);
+  iter.add_6(element);
 }
 ;
 _.get_2 = function get_11(index_0){
@@ -25991,7 +25324,7 @@ _.get_2 = function get_11(index_0){
   }
    catch ($e0) {
     $e0 = wrap($e0);
-    if (instanceOf($e0, 63)) {
+    if (instanceOf($e0, 67)) {
       e = $e0;
       throw new jl.IndexOutOfBoundsException_0("Can't get element " + index_0);
     }
@@ -26004,17 +25337,17 @@ _.iterator = function iterator_3(){
   return this.listIterator();
 }
 ;
-_.remove_2 = function remove_12(index_0){
+_.remove_2 = function remove_13(index_0){
   var e, iter, old;
   iter = this.listIterator_0(index_0);
   try {
     old = iter.next_0();
-    iter.remove_6();
+    iter.remove_7();
     return old;
   }
    catch ($e0) {
     $e0 = wrap($e0);
-    if (instanceOf($e0, 63)) {
+    if (instanceOf($e0, 67)) {
       e = $e0;
       throw new jl.IndexOutOfBoundsException_0("Can't remove element " + index_0);
     }
@@ -26050,17 +25383,17 @@ ju.splice_1 = function splice_1(array, index_0, deleteCount, value_0){
   array.splice(index_0, deleteCount, value_0);
 }
 ;
-defineClass(24, 76, $intern_69, ju.ArrayList, ju.ArrayList_0);
+defineClass(23, 77, $intern_70, ju.ArrayList, ju.ArrayList_0);
 _.$init_337 = function $init_337(){
   this.array = dynamicCast(initDim(cggl.Ljava_lang_Object_2_classLit, $intern_6, 1, 0, 3, 1), 4);
 }
 ;
-_.add_4 = function add_9(index_0, o){
+_.add_5 = function add_10(index_0, o){
   cggcsi.checkPositionIndex(index_0, this.array.length);
   ju.splice_1(this.array, index_0, 0, o);
 }
 ;
-_.add_3 = function add_10(o){
+_.add_4 = function add_11(o){
   setCheck(this.array, this.array.length, o);
   return true;
 }
@@ -26110,14 +25443,14 @@ _.isEmpty_0 = function isEmpty_4(){
   return this.array.length == 0;
 }
 ;
-_.remove_2 = function remove_13(index_0){
+_.remove_2 = function remove_14(index_0){
   var previous;
   previous = this.get_2(index_0);
   ju.splice_0(this.array, index_0, 1);
   return previous;
 }
 ;
-_.remove_5 = function remove_14(o){
+_.remove_6 = function remove_15(o){
   var i_0;
   i_0 = this.indexOf_0(o);
   if (i_0 == -1) {
@@ -26157,7 +25490,7 @@ _.toArray_0 = function toArray_2(out){
   return out;
 }
 ;
-cggl.Ljava_util_ArrayList_2_classLit = createForClass('java.util', 'ArrayList', 24, cggl.Ljava_util_AbstractList_2_classLit);
+cggl.Ljava_util_ArrayList_2_classLit = createForClass('java.util', 'ArrayList', 23, cggl.Ljava_util_AbstractList_2_classLit);
 ju.$clinit_Arrays = function $clinit_Arrays(){
   ju.$clinit_Arrays = emptyMethod;
   jl.$clinit_Object();
@@ -26168,7 +25501,7 @@ ju.asList = function asList(array){
   return new ju.Arrays$ArrayList(array);
 }
 ;
-ju.hashCode_24 = function hashCode_24(a){
+ju.hashCode_25 = function hashCode_25(a){
   ju.$clinit_Arrays();
   var e, e$array, e$index, e$max, hashCode;
   if (jsEquals(a, null)) {
@@ -26177,13 +25510,13 @@ ju.hashCode_24 = function hashCode_24(a){
   hashCode = 1;
   for (e$array = a , e$index = 0 , e$max = e$array.length; e$index < e$max; ++e$index) {
     e = e$array[e$index];
-    hashCode = 31 * hashCode + ju.hashCode_27(e);
+    hashCode = 31 * hashCode + ju.hashCode_28(e);
     hashCode = cggcci.ensureInt(hashCode);
   }
   return hashCode;
 }
 ;
-defineClass(705, 1, $intern_0);
+defineClass(704, 1, $intern_0);
 ju.$clinit_Arrays$ArrayList = function $clinit_Arrays$ArrayList(){
   ju.$clinit_Arrays$ArrayList = emptyMethod;
   ju.$clinit_AbstractList();
@@ -26196,7 +25529,7 @@ ju.Arrays$ArrayList = function Arrays$ArrayList(array){
   this.array = array;
 }
 ;
-defineClass(280, 76, $intern_69, ju.Arrays$ArrayList);
+defineClass(289, 77, $intern_70, ju.Arrays$ArrayList);
 _.$init_338 = function $init_338(){
 }
 ;
@@ -26232,7 +25565,7 @@ _.toArray_0 = function toArray_4(out){
   return out;
 }
 ;
-cggl.Ljava_util_Arrays$ArrayList_2_classLit = createForClass('java.util', 'Arrays/ArrayList', 280, cggl.Ljava_util_AbstractList_2_classLit);
+cggl.Ljava_util_Arrays$ArrayList_2_classLit = createForClass('java.util', 'Arrays/ArrayList', 289, cggl.Ljava_util_AbstractList_2_classLit);
 ju.$clinit_Collection = function $clinit_Collection(){
   ju.$clinit_Collection = emptyMethod;
 }
@@ -26247,12 +25580,12 @@ ju.$clinit_Collections = function $clinit_Collections(){
 ;
 ju.emptyIterator = function emptyIterator(){
   ju.$clinit_Collections();
-  return dynamicCast((ju.$clinit_Collections$EmptyListIterator() , ju.INSTANCE_6), 407);
+  return dynamicCast((ju.$clinit_Collections$EmptyListIterator() , ju.INSTANCE_6), 406);
 }
 ;
 ju.emptyList = function emptyList(){
   ju.$clinit_Collections();
-  return dynamicCast(ju.EMPTY_LIST, 17);
+  return dynamicCast(ju.EMPTY_LIST, 19);
 }
 ;
 ju.emptyListIterator = function emptyListIterator(){
@@ -26260,41 +25593,41 @@ ju.emptyListIterator = function emptyListIterator(){
   return dynamicCast((ju.$clinit_Collections$EmptyListIterator() , ju.INSTANCE_6), 410);
 }
 ;
-ju.hashCode_25 = function hashCode_25(collection){
+ju.hashCode_26 = function hashCode_26(collection){
   ju.$clinit_Collections();
   var e, e$iterator, hashCode;
   hashCode = 0;
   for (e$iterator = collection.iterator(); e$iterator.hasNext();) {
     e = e$iterator.next_0();
-    hashCode = hashCode + ju.hashCode_27(e);
+    hashCode = hashCode + ju.hashCode_28(e);
     hashCode = cggcci.ensureInt(hashCode);
   }
   return hashCode;
 }
 ;
-ju.hashCode_26 = function hashCode_26(list){
+ju.hashCode_27 = function hashCode_27(list){
   ju.$clinit_Collections();
   var e, e$iterator, hashCode;
   hashCode = 1;
   for (e$iterator = list.iterator(); e$iterator.hasNext();) {
     e = e$iterator.next_0();
-    hashCode = 31 * hashCode + ju.hashCode_27(e);
+    hashCode = 31 * hashCode + ju.hashCode_28(e);
     hashCode = cggcci.ensureInt(hashCode);
   }
   return hashCode;
 }
 ;
-defineClass(512, 1, $intern_0);
+defineClass(521, 1, $intern_0);
 ju.$clinit_Collections$1 = function $clinit_Collections$1(){
   ju.$clinit_Collections$1 = emptyMethod;
 }
 ;
-defineClass(529, 1, $intern_0);
+defineClass(538, 1, $intern_0);
 ju.$clinit_Collections$2 = function $clinit_Collections$2(){
   ju.$clinit_Collections$2 = emptyMethod;
 }
 ;
-defineClass(530, 1, $intern_0);
+defineClass(539, 1, $intern_0);
 ju.$clinit_Collections$EmptyList = function $clinit_Collections$EmptyList(){
   ju.$clinit_Collections$EmptyList = emptyMethod;
   ju.$clinit_AbstractList();
@@ -26306,7 +25639,7 @@ ju.Collections$EmptyList = function Collections$EmptyList(){
   this.$init_339();
 }
 ;
-defineClass(216, 76, $intern_69, ju.Collections$EmptyList);
+defineClass(225, 77, $intern_70, ju.Collections$EmptyList);
 _.$init_339 = function $init_339(){
 }
 ;
@@ -26331,7 +25664,7 @@ _.size_1 = function size_9(){
   return 0;
 }
 ;
-cggl.Ljava_util_Collections$EmptyList_2_classLit = createForClass('java.util', 'Collections/EmptyList', 216, cggl.Ljava_util_AbstractList_2_classLit);
+cggl.Ljava_util_Collections$EmptyList_2_classLit = createForClass('java.util', 'Collections/EmptyList', 225, cggl.Ljava_util_AbstractList_2_classLit);
 ju.$clinit_Collections$EmptyListIterator = function $clinit_Collections$EmptyListIterator(){
   ju.$clinit_Collections$EmptyListIterator = emptyMethod;
   jl.$clinit_Object();
@@ -26343,11 +25676,11 @@ ju.Collections$EmptyListIterator = function Collections$EmptyListIterator(){
   this.$init_340();
 }
 ;
-defineClass(217, 1, {1:1, 407:1, 410:1}, ju.Collections$EmptyListIterator);
+defineClass(226, 1, {1:1, 406:1, 410:1}, ju.Collections$EmptyListIterator);
 _.$init_340 = function $init_340(){
 }
 ;
-_.add_5 = function add_11(o){
+_.add_6 = function add_12(o){
   throw new jl.UnsupportedOperationException;
 }
 ;
@@ -26367,11 +25700,11 @@ _.previous = function previous_1(){
   throw new ju.NoSuchElementException;
 }
 ;
-_.remove_6 = function remove_15(){
+_.remove_7 = function remove_16(){
   throw new jl.IllegalStateException;
 }
 ;
-cggl.Ljava_util_Collections$EmptyListIterator_2_classLit = createForClass('java.util', 'Collections/EmptyListIterator', 217, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_Collections$EmptyListIterator_2_classLit = createForClass('java.util', 'Collections/EmptyListIterator', 226, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_Collections$EmptyMap = function $clinit_Collections$EmptyMap(){
   ju.$clinit_Collections$EmptyMap = emptyMethod;
   ju.$clinit_AbstractMap();
@@ -26383,7 +25716,7 @@ ju.Collections$EmptyMap = function Collections$EmptyMap(){
   this.$init_341();
 }
 ;
-defineClass(219, 131, $intern_70, ju.Collections$EmptyMap);
+defineClass(228, 134, $intern_71, ju.Collections$EmptyMap);
 _.$init_341 = function $init_341(){
 }
 ;
@@ -26407,7 +25740,7 @@ _.size_1 = function size_10(){
   return 0;
 }
 ;
-cggl.Ljava_util_Collections$EmptyMap_2_classLit = createForClass('java.util', 'Collections/EmptyMap', 219, cggl.Ljava_util_AbstractMap_2_classLit);
+cggl.Ljava_util_Collections$EmptyMap_2_classLit = createForClass('java.util', 'Collections/EmptyMap', 228, cggl.Ljava_util_AbstractMap_2_classLit);
 ju.$clinit_Collections$EmptySet = function $clinit_Collections$EmptySet(){
   ju.$clinit_Collections$EmptySet = emptyMethod;
   ju.$clinit_AbstractSet();
@@ -26419,7 +25752,7 @@ ju.Collections$EmptySet = function Collections$EmptySet(){
   this.$init_342();
 }
 ;
-defineClass(218, 92, $intern_71, ju.Collections$EmptySet);
+defineClass(227, 95, $intern_72, ju.Collections$EmptySet);
 _.$init_342 = function $init_342(){
 }
 ;
@@ -26435,87 +25768,87 @@ _.size_1 = function size_11(){
   return 0;
 }
 ;
-cggl.Ljava_util_Collections$EmptySet_2_classLit = createForClass('java.util', 'Collections/EmptySet', 218, cggl.Ljava_util_AbstractSet_2_classLit);
+cggl.Ljava_util_Collections$EmptySet_2_classLit = createForClass('java.util', 'Collections/EmptySet', 227, cggl.Ljava_util_AbstractSet_2_classLit);
 ju.$clinit_Collections$LifoQueue = function $clinit_Collections$LifoQueue(){
   ju.$clinit_Collections$LifoQueue = emptyMethod;
 }
 ;
-defineClass(513, 531, {3:1, 1:1, 88:1});
+defineClass(522, 540, {3:1, 1:1, 89:1});
 ju.$clinit_Collections$ReverseComparator = function $clinit_Collections$ReverseComparator(){
   ju.$clinit_Collections$ReverseComparator = emptyMethod;
 }
 ;
-defineClass(514, 1, $intern_0);
+defineClass(523, 1, $intern_0);
 ju.$clinit_Collections$SetFromMap = function $clinit_Collections$SetFromMap(){
   ju.$clinit_Collections$SetFromMap = emptyMethod;
 }
 ;
-defineClass(515, 92, $intern_71);
+defineClass(524, 95, $intern_72);
 ju.$clinit_Collections$SingletonList = function $clinit_Collections$SingletonList(){
   ju.$clinit_Collections$SingletonList = emptyMethod;
 }
 ;
-defineClass(516, 76, $intern_69);
+defineClass(525, 77, $intern_70);
 ju.$clinit_Collections$UnmodifiableCollection = function $clinit_Collections$UnmodifiableCollection(){
   ju.$clinit_Collections$UnmodifiableCollection = emptyMethod;
 }
 ;
-defineClass(517, 1, $intern_0);
+defineClass(526, 1, $intern_0);
 ju.$clinit_Collections$UnmodifiableCollectionIterator = function $clinit_Collections$UnmodifiableCollectionIterator(){
   ju.$clinit_Collections$UnmodifiableCollectionIterator = emptyMethod;
 }
 ;
-defineClass(526, 1, $intern_0);
+defineClass(535, 1, $intern_0);
 ju.$clinit_Collections$UnmodifiableList = function $clinit_Collections$UnmodifiableList(){
   ju.$clinit_Collections$UnmodifiableList = emptyMethod;
 }
 ;
-defineClass(518, 517, $intern_67);
+defineClass(527, 526, $intern_68);
 ju.$clinit_Collections$UnmodifiableListIterator = function $clinit_Collections$UnmodifiableListIterator(){
   ju.$clinit_Collections$UnmodifiableListIterator = emptyMethod;
 }
 ;
-defineClass(527, 526, $intern_0);
+defineClass(536, 535, $intern_0);
 ju.$clinit_Collections$UnmodifiableMap = function $clinit_Collections$UnmodifiableMap(){
   ju.$clinit_Collections$UnmodifiableMap = emptyMethod;
 }
 ;
-defineClass(519, 1, $intern_65);
+defineClass(528, 1, $intern_66);
 ju.$clinit_Collections$UnmodifiableSet = function $clinit_Collections$UnmodifiableSet(){
   ju.$clinit_Collections$UnmodifiableSet = emptyMethod;
 }
 ;
-defineClass(523, 517, $intern_66);
+defineClass(532, 526, $intern_67);
 ju.$clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet = function $clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet(){
   ju.$clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet = emptyMethod;
 }
 ;
-defineClass(520, 523, $intern_66);
+defineClass(529, 532, $intern_67);
 ju.$clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet$1 = function $clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet$1(){
   ju.$clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet$1 = emptyMethod;
 }
 ;
-defineClass(528, 1, $intern_0);
+defineClass(537, 1, $intern_0);
 ju.$clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry = function $clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(){
   ju.$clinit_Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry = emptyMethod;
 }
 ;
-defineClass(521, 1, $intern_68);
+defineClass(530, 1, $intern_69);
 ju.$clinit_Collections$UnmodifiableRandomAccessList = function $clinit_Collections$UnmodifiableRandomAccessList(){
   ju.$clinit_Collections$UnmodifiableRandomAccessList = emptyMethod;
 }
 ;
-defineClass(522, 518, $intern_67);
+defineClass(531, 527, $intern_68);
 ju.$clinit_Collections$UnmodifiableSortedMap = function $clinit_Collections$UnmodifiableSortedMap(){
   ju.$clinit_Collections$UnmodifiableSortedMap = emptyMethod;
 }
 ;
-defineClass(524, 519, $intern_65);
+defineClass(533, 528, $intern_66);
 ju.$clinit_Collections$UnmodifiableSortedSet = function $clinit_Collections$UnmodifiableSortedSet(){
   ju.$clinit_Collections$UnmodifiableSortedSet = emptyMethod;
 }
 ;
-defineClass(525, 523, $intern_66);
+defineClass(534, 532, $intern_67);
 ju.$clinit_ConcurrentModificationDetector = function $clinit_ConcurrentModificationDetector(){
   ju.$clinit_ConcurrentModificationDetector = emptyMethod;
   jl.$clinit_Object();
@@ -26548,7 +25881,7 @@ ju.structureChanged = function structureChanged(map_0){
   ju.setModCount(map_0, modCount + 1);
 }
 ;
-defineClass(686, 1, $intern_0);
+defineClass(695, 1, $intern_0);
 ju.$clinit_ConcurrentModificationException = function $clinit_ConcurrentModificationException(){
   ju.$clinit_ConcurrentModificationException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -26560,11 +25893,11 @@ ju.ConcurrentModificationException = function ConcurrentModificationException(){
   this.$init_343();
 }
 ;
-defineClass(329, 11, $intern_8, ju.ConcurrentModificationException);
+defineClass(331, 11, $intern_8, ju.ConcurrentModificationException);
 _.$init_343 = function $init_343(){
 }
 ;
-cggl.Ljava_util_ConcurrentModificationException_2_classLit = createForClass('java.util', 'ConcurrentModificationException', 329, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_util_ConcurrentModificationException_2_classLit = createForClass('java.util', 'ConcurrentModificationException', 331, cggl.Ljava_lang_RuntimeException_2_classLit);
 ju.$clinit_Deque = function $clinit_Deque(){
   ju.$clinit_Deque = emptyMethod;
 }
@@ -26584,7 +25917,7 @@ ju.HashMap = function HashMap(){
   this.$init_344();
 }
 ;
-defineClass(44, 193, $intern_70, ju.HashMap);
+defineClass(38, 195, $intern_71, ju.HashMap);
 _.$init_344 = function $init_344(){
 }
 ;
@@ -26598,7 +25931,7 @@ _.getHashCode = function getHashCode_1(key){
   return cggcci.ensureInt(hashCode);
 }
 ;
-cggl.Ljava_util_HashMap_2_classLit = createForClass('java.util', 'HashMap', 44, cggl.Ljava_util_AbstractHashMap_2_classLit);
+cggl.Ljava_util_HashMap_2_classLit = createForClass('java.util', 'HashMap', 38, cggl.Ljava_util_AbstractHashMap_2_classLit);
 ju.$clinit_HashSet = function $clinit_HashSet(){
   ju.$clinit_HashSet = emptyMethod;
   ju.$clinit_AbstractSet();
@@ -26611,11 +25944,11 @@ ju.HashSet = function HashSet(){
   this.map_0 = new ju.HashMap;
 }
 ;
-defineClass(153, 92, $intern_71, ju.HashSet);
+defineClass(104, 95, $intern_72, ju.HashSet);
 _.$init_345 = function $init_345(){
 }
 ;
-_.add_3 = function add_12(o){
+_.add_4 = function add_13(o){
   var old;
   old = this.map_0.put(o, this);
   return jsEquals(old, null);
@@ -26637,7 +25970,7 @@ _.iterator = function iterator_6(){
   return this.map_0.keySet().iterator();
 }
 ;
-_.remove_5 = function remove_16(o){
+_.remove_6 = function remove_17(o){
   return jsNotEquals(this.map_0.remove_3(o), null);
 }
 ;
@@ -26649,7 +25982,7 @@ _.toString$ = function toString_56(){
   return this.map_0.keySet().toString$();
 }
 ;
-cggl.Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 153, cggl.Ljava_util_AbstractSet_2_classLit);
+cggl.Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 104, cggl.Ljava_util_AbstractSet_2_classLit);
 ju.$clinit_InternalJsHashCodeMap = function $clinit_InternalJsHashCodeMap(){
   ju.$clinit_InternalJsHashCodeMap = emptyMethod;
   jl.$clinit_Object();
@@ -26665,7 +25998,7 @@ ju.splice_2 = function splice_2(arr, index_0){
   arr.splice(index_0, 1);
 }
 ;
-defineClass(141, 1, $intern_0, ju.InternalJsHashCodeMap);
+defineClass(144, 1, $intern_0, ju.InternalJsHashCodeMap);
 _.$init_346 = function $init_346(){
   this.backingMap = this.createMap();
 }
@@ -26726,7 +26059,7 @@ _.put = function put_1(key, value_0){
   return null;
 }
 ;
-_.remove_3 = function remove_17(key){
+_.remove_3 = function remove_18(key){
   var chain, entry, hashCode, i_0;
   hashCode = this.hash_0(key);
   chain = this.getChainOrEmpty(hashCode);
@@ -26750,7 +26083,7 @@ _.removeChain = function removeChain(hashCode){
   delete this.backingMap[hashCode];
 }
 ;
-cggl.Ljava_util_InternalJsHashCodeMap_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap', 141, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_InternalJsHashCodeMap_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap', 144, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_InternalJsHashCodeMap$1 = function $clinit_InternalJsHashCodeMap$1(){
   ju.$clinit_InternalJsHashCodeMap$1 = emptyMethod;
   jl.$clinit_Object();
@@ -26763,12 +26096,12 @@ ju.InternalJsHashCodeMap$1 = function InternalJsHashCodeMap$1(this$0){
   this.$init_347();
 }
 ;
-defineClass(274, 1, $intern_0, ju.InternalJsHashCodeMap$1);
+defineClass(283, 1, $intern_0, ju.InternalJsHashCodeMap$1);
 _.$init_347 = function $init_347(){
   this.keys_0 = this.this$01.keys_2();
   this.chainIndex = -1;
   this.itemIndex = 0;
-  this.chain = initDim(cggl.Ljava_util_Map$Entry_2_classLit, $intern_6, 16, 0, 0, 1);
+  this.chain = initDim(cggl.Ljava_util_Map$Entry_2_classLit, $intern_6, 17, 0, 0, 1);
   this.lastChain = null;
   this.lastEntry = null;
 }
@@ -26796,7 +26129,7 @@ _.next_1 = function next_6(){
   return this.lastEntry;
 }
 ;
-_.remove_6 = function remove_18(){
+_.remove_7 = function remove_19(){
   cggcsi.checkState(isNotNull(this.lastEntry));
   this.this$01.remove_3(this.lastEntry.getKey());
   if (maskUndefined(this.chain) === maskUndefined(this.lastChain) && this.chain.length != 1) {
@@ -26807,7 +26140,7 @@ _.remove_6 = function remove_18(){
 ;
 _.chainIndex = 0;
 _.itemIndex = 0;
-cggl.Ljava_util_InternalJsHashCodeMap$1_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/1', 274, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_InternalJsHashCodeMap$1_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/1', 283, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy = function $clinit_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy(){
   ju.$clinit_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy = emptyMethod;
   ju.$clinit_InternalJsHashCodeMap();
@@ -26819,7 +26152,7 @@ ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy = function InternalJsHashCo
   this.$init_348();
 }
 ;
-defineClass(272, 141, $intern_0, ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy);
+defineClass(281, 144, $intern_0, ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy);
 _.$init_348 = function $init_348(){
 }
 ;
@@ -26834,7 +26167,7 @@ _.entries = function entries_0(){
     if (hashCode == parseInt(hashCode, 10)) {
       var array = map_0[hashCode];
       for (var i_0 = 0, c = array.length; i_0 < c; ++i_0) {
-        list.add_3(array[i_0]);
+        list.add_4(array[i_0]);
       }
     }
   }
@@ -26845,7 +26178,7 @@ _.newEntryList = function newEntryList(){
   return new ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1(this);
 }
 ;
-cggl.Ljava_util_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/InternalJsHashCodeMapLegacy', 272, cggl.Ljava_util_InternalJsHashCodeMap_2_classLit);
+cggl.Ljava_util_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/InternalJsHashCodeMapLegacy', 281, cggl.Ljava_util_InternalJsHashCodeMap_2_classLit);
 ju.$clinit_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1 = function $clinit_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1(){
   ju.$clinit_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1 = emptyMethod;
   ju.$clinit_ArrayList();
@@ -26858,22 +26191,22 @@ ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1 = function InternalJsHash
   this.$init_349();
 }
 ;
-defineClass(273, 24, $intern_69, ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
+defineClass(282, 23, $intern_70, ju.InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
 _.$init_349 = function $init_349(){
 }
 ;
-_.remove_2 = function remove_19(index_0){
-  return this.remove_7(index_0);
+_.remove_2 = function remove_20(index_0){
+  return this.remove_8(index_0);
 }
 ;
-_.remove_7 = function remove_20(index_0){
+_.remove_8 = function remove_21(index_0){
   var removed;
-  removed = dynamicCast(getClassPrototype(24).remove_2.call(this, index_0), 16);
+  removed = dynamicCast(getClassPrototype(23).remove_2.call(this, index_0), 17);
   this.this$11.remove_3(removed.getKey());
   return removed;
 }
 ;
-cggl.Ljava_util_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/InternalJsHashCodeMapLegacy/1', 273, cggl.Ljava_util_ArrayList_2_classLit);
+cggl.Ljava_util_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/InternalJsHashCodeMapLegacy/1', 282, cggl.Ljava_util_ArrayList_2_classLit);
 ju.$clinit_InternalJsMapFactory = function $clinit_InternalJsMapFactory(){
   ju.$clinit_InternalJsMapFactory = emptyMethod;
   jl.$clinit_Object();
@@ -26885,7 +26218,7 @@ ju.InternalJsMapFactory = function InternalJsMapFactory(){
   this.$init_350();
 }
 ;
-defineClass(60, 1, $intern_0, ju.InternalJsMapFactory);
+defineClass(64, 1, $intern_0, ju.InternalJsMapFactory);
 _.$init_350 = function $init_350(){
 }
 ;
@@ -26897,7 +26230,7 @@ _.createJsStringMap = function createJsStringMap(){
   return new ju.InternalJsStringMap;
 }
 ;
-cggl.Ljava_util_InternalJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory', 60, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_InternalJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory', 64, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_InternalJsMapFactory$BackwardCompatibleJsMapFactory = function $clinit_InternalJsMapFactory$BackwardCompatibleJsMapFactory(){
   ju.$clinit_InternalJsMapFactory$BackwardCompatibleJsMapFactory = emptyMethod;
   ju.$clinit_InternalJsMapFactory();
@@ -26944,7 +26277,7 @@ ju.needsKeysWorkaround = function needsKeysWorkaround(){
   return Object.getOwnPropertyNames(map_0).length == 0;
 }
 ;
-defineClass(271, 60, {1:1, 60:1}, ju.InternalJsMapFactory$BackwardCompatibleJsMapFactory);
+defineClass(280, 64, {1:1, 64:1}, ju.InternalJsMapFactory$BackwardCompatibleJsMapFactory);
 _.$init_351 = function $init_351(){
 }
 ;
@@ -26956,7 +26289,7 @@ _.createJsStringMap = function createJsStringMap_0(){
   return ju.delegate_1.createJsStringMap();
 }
 ;
-cggl.Ljava_util_InternalJsMapFactory$BackwardCompatibleJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory/BackwardCompatibleJsMapFactory', 271, cggl.Ljava_util_InternalJsMapFactory_2_classLit);
+cggl.Ljava_util_InternalJsMapFactory$BackwardCompatibleJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory/BackwardCompatibleJsMapFactory', 280, cggl.Ljava_util_InternalJsMapFactory_2_classLit);
 ju.$clinit_InternalJsMapFactory$KeysWorkaroundJsMapFactory = function $clinit_InternalJsMapFactory$KeysWorkaroundJsMapFactory(){
   ju.$clinit_InternalJsMapFactory$KeysWorkaroundJsMapFactory = emptyMethod;
   ju.$clinit_InternalJsMapFactory();
@@ -26968,7 +26301,7 @@ ju.InternalJsMapFactory$KeysWorkaroundJsMapFactory = function InternalJsMapFacto
   this.$init_352();
 }
 ;
-defineClass(270, 60, $intern_0, ju.InternalJsMapFactory$KeysWorkaroundJsMapFactory);
+defineClass(279, 64, $intern_0, ju.InternalJsMapFactory$KeysWorkaroundJsMapFactory);
 _.$init_352 = function $init_352(){
 }
 ;
@@ -26976,7 +26309,7 @@ _.createJsStringMap = function createJsStringMap_1(){
   return new ju.InternalJsStringMap$InternalJsStringMapWithKeysWorkaround;
 }
 ;
-cggl.Ljava_util_InternalJsMapFactory$KeysWorkaroundJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory/KeysWorkaroundJsMapFactory', 270, cggl.Ljava_util_InternalJsMapFactory_2_classLit);
+cggl.Ljava_util_InternalJsMapFactory$KeysWorkaroundJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory/KeysWorkaroundJsMapFactory', 279, cggl.Ljava_util_InternalJsMapFactory_2_classLit);
 ju.$clinit_InternalJsMapFactory$LegacyInternalJsMapFactory = function $clinit_InternalJsMapFactory$LegacyInternalJsMapFactory(){
   ju.$clinit_InternalJsMapFactory$LegacyInternalJsMapFactory = emptyMethod;
   ju.$clinit_InternalJsMapFactory();
@@ -26988,7 +26321,7 @@ ju.InternalJsMapFactory$LegacyInternalJsMapFactory = function InternalJsMapFacto
   this.$init_353();
 }
 ;
-defineClass(269, 60, $intern_0, ju.InternalJsMapFactory$LegacyInternalJsMapFactory);
+defineClass(278, 64, $intern_0, ju.InternalJsMapFactory$LegacyInternalJsMapFactory);
 _.$init_353 = function $init_353(){
 }
 ;
@@ -27000,7 +26333,7 @@ _.createJsStringMap = function createJsStringMap_2(){
   return new ju.InternalJsStringMap$InternalJsStringMapLegacy;
 }
 ;
-cggl.Ljava_util_InternalJsMapFactory$LegacyInternalJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory/LegacyInternalJsMapFactory', 269, cggl.Ljava_util_InternalJsMapFactory_2_classLit);
+cggl.Ljava_util_InternalJsMapFactory$LegacyInternalJsMapFactory_2_classLit = createForClass('java.util', 'InternalJsMapFactory/LegacyInternalJsMapFactory', 278, cggl.Ljava_util_InternalJsMapFactory_2_classLit);
 ju.$clinit_InternalJsStringMap = function $clinit_InternalJsStringMap(){
   ju.$clinit_InternalJsStringMap = emptyMethod;
   jl.$clinit_Object();
@@ -27020,7 +26353,7 @@ ju.toNullIfUndefined = function toNullIfUndefined(value_0){
   return ju.isUndefined(value_0)?null:value_0;
 }
 ;
-defineClass(45, 1, $intern_0, ju.InternalJsStringMap);
+defineClass(49, 1, $intern_0, ju.InternalJsStringMap);
 _.$init_354 = function $init_354(){
   this.backingMap = this.createMap_0();
 }
@@ -27069,7 +26402,7 @@ _.put_0 = function put_2(key, value_0){
   return oldValue;
 }
 ;
-_.remove_8 = function remove_21(key){
+_.remove_9 = function remove_22(key){
   var value_0;
   value_0 = this.at(key);
   if (!ju.isUndefined(value_0)) {
@@ -27083,7 +26416,7 @@ _.set_2 = function set_4(key, value_0){
   this.backingMap[key] = value_0;
 }
 ;
-cggl.Ljava_util_InternalJsStringMap_2_classLit = createForClass('java.util', 'InternalJsStringMap', 45, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_InternalJsStringMap_2_classLit = createForClass('java.util', 'InternalJsStringMap', 49, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_InternalJsStringMap$1 = function $clinit_InternalJsStringMap$1(){
   ju.$clinit_InternalJsStringMap$1 = emptyMethod;
   jl.$clinit_Object();
@@ -27097,7 +26430,7 @@ ju.InternalJsStringMap$1 = function InternalJsStringMap$1(this$0, val$keys){
   this.$init_355();
 }
 ;
-defineClass(224, 1, $intern_0, ju.InternalJsStringMap$1);
+defineClass(233, 1, $intern_0, ju.InternalJsStringMap$1);
 _.$init_355 = function $init_355(){
   this.i = 0;
   this.last = -1;
@@ -27116,15 +26449,15 @@ _.next_1 = function next_8(){
   return this.this$01.newMapEntry(this.val$keys2[this.last = this.i++]);
 }
 ;
-_.remove_6 = function remove_22(){
+_.remove_7 = function remove_23(){
   cggcsi.checkState(this.last != -1);
-  this.this$01.remove_8(this.val$keys2[this.last]);
+  this.this$01.remove_9(this.val$keys2[this.last]);
   this.last = -1;
 }
 ;
 _.i = 0;
 _.last = 0;
-cggl.Ljava_util_InternalJsStringMap$1_2_classLit = createForClass('java.util', 'InternalJsStringMap/1', 224, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_InternalJsStringMap$1_2_classLit = createForClass('java.util', 'InternalJsStringMap/1', 233, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_InternalJsStringMap$2 = function $clinit_InternalJsStringMap$2(){
   ju.$clinit_InternalJsStringMap$2 = emptyMethod;
   ju.$clinit_AbstractMapEntry();
@@ -27138,7 +26471,7 @@ ju.InternalJsStringMap$2 = function InternalJsStringMap$2(this$0, val$key){
   this.$init_356();
 }
 ;
-defineClass(226, 225, $intern_68, ju.InternalJsStringMap$2);
+defineClass(235, 234, $intern_69, ju.InternalJsStringMap$2);
 _.$init_356 = function $init_356(){
 }
 ;
@@ -27154,7 +26487,7 @@ _.setValue = function setValue_0(object){
   return this.this$01.put_0(this.val$key2, object);
 }
 ;
-cggl.Ljava_util_InternalJsStringMap$2_2_classLit = createForClass('java.util', 'InternalJsStringMap/2', 226, cggl.Ljava_util_AbstractMapEntry_2_classLit);
+cggl.Ljava_util_InternalJsStringMap$2_2_classLit = createForClass('java.util', 'InternalJsStringMap/2', 235, cggl.Ljava_util_AbstractMapEntry_2_classLit);
 ju.$clinit_InternalJsStringMap$InternalJsStringMapLegacy = function $clinit_InternalJsStringMap$InternalJsStringMapLegacy(){
   ju.$clinit_InternalJsStringMap$InternalJsStringMapLegacy = emptyMethod;
   ju.$clinit_InternalJsStringMap();
@@ -27166,7 +26499,7 @@ ju.InternalJsStringMap$InternalJsStringMapLegacy = function InternalJsStringMap$
   this.$init_357();
 }
 ;
-defineClass(221, 45, $intern_0, ju.InternalJsStringMap$InternalJsStringMapLegacy);
+defineClass(230, 49, $intern_0, ju.InternalJsStringMap$InternalJsStringMapLegacy);
 _.$init_357 = function $init_357(){
 }
 ;
@@ -27179,14 +26512,14 @@ _.entries = function entries_2(){
   for (var key in this.backingMap) {
     if (key.charCodeAt(0) == 58) {
       var entry = this.newMapEntry(key.substring(1));
-      list.add_3(entry);
+      list.add_4(entry);
     }
   }
   return list.iterator();
 }
 ;
 _.get_3 = function get_17(key){
-  return getClassPrototype(45).get_3.call(this, this.normalize(key));
+  return getClassPrototype(49).get_3.call(this, this.normalize(key));
 }
 ;
 _.newEntryList_0 = function newEntryList_0(){
@@ -27198,14 +26531,14 @@ _.normalize = function normalize(key){
 }
 ;
 _.put_0 = function put_3(key, value_0){
-  return getClassPrototype(45).put_0.call(this, this.normalize(key), value_0);
+  return getClassPrototype(49).put_0.call(this, this.normalize(key), value_0);
 }
 ;
-_.remove_8 = function remove_23(key){
-  return getClassPrototype(45).remove_8.call(this, this.normalize(key));
+_.remove_9 = function remove_24(key){
+  return getClassPrototype(49).remove_9.call(this, this.normalize(key));
 }
 ;
-cggl.Ljava_util_InternalJsStringMap$InternalJsStringMapLegacy_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapLegacy', 221, cggl.Ljava_util_InternalJsStringMap_2_classLit);
+cggl.Ljava_util_InternalJsStringMap$InternalJsStringMapLegacy_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapLegacy', 230, cggl.Ljava_util_InternalJsStringMap_2_classLit);
 ju.$clinit_InternalJsStringMap$InternalJsStringMapLegacy$1 = function $clinit_InternalJsStringMap$InternalJsStringMapLegacy$1(){
   ju.$clinit_InternalJsStringMap$InternalJsStringMapLegacy$1 = emptyMethod;
   ju.$clinit_ArrayList();
@@ -27218,22 +26551,22 @@ ju.InternalJsStringMap$InternalJsStringMapLegacy$1 = function InternalJsStringMa
   this.$init_358();
 }
 ;
-defineClass(223, 24, $intern_69, ju.InternalJsStringMap$InternalJsStringMapLegacy$1);
+defineClass(232, 23, $intern_70, ju.InternalJsStringMap$InternalJsStringMapLegacy$1);
 _.$init_358 = function $init_358(){
 }
 ;
-_.remove_2 = function remove_24(index_0){
-  return this.remove_7(index_0);
+_.remove_2 = function remove_25(index_0){
+  return this.remove_8(index_0);
 }
 ;
-_.remove_7 = function remove_25(index_0){
+_.remove_8 = function remove_26(index_0){
   var removed;
-  removed = dynamicCast(getClassPrototype(24).remove_2.call(this, index_0), 16);
-  this.this$11.remove_8(dynamicCastToString(dynamicCastToString(removed.getKey())));
+  removed = dynamicCast(getClassPrototype(23).remove_2.call(this, index_0), 17);
+  this.this$11.remove_9(dynamicCastToString(dynamicCastToString(removed.getKey())));
   return removed;
 }
 ;
-cggl.Ljava_util_InternalJsStringMap$InternalJsStringMapLegacy$1_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapLegacy/1', 223, cggl.Ljava_util_ArrayList_2_classLit);
+cggl.Ljava_util_InternalJsStringMap$InternalJsStringMapLegacy$1_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapLegacy/1', 232, cggl.Ljava_util_ArrayList_2_classLit);
 ju.$clinit_InternalJsStringMap$InternalJsStringMapWithKeysWorkaround = function $clinit_InternalJsStringMap$InternalJsStringMapWithKeysWorkaround(){
   ju.$clinit_InternalJsStringMap$InternalJsStringMapWithKeysWorkaround = emptyMethod;
   ju.$clinit_InternalJsStringMap();
@@ -27245,13 +26578,13 @@ ju.InternalJsStringMap$InternalJsStringMapWithKeysWorkaround = function Internal
   this.$init_359();
 }
 ;
-defineClass(222, 45, $intern_0, ju.InternalJsStringMap$InternalJsStringMapWithKeysWorkaround);
+defineClass(231, 49, $intern_0, ju.InternalJsStringMap$InternalJsStringMapWithKeysWorkaround);
 _.$init_359 = function $init_359(){
 }
 ;
 _.keys_1 = function keys_3(){
   var keys_0;
-  keys_0 = getClassPrototype(45).keys_1.call(this);
+  keys_0 = getClassPrototype(49).keys_1.call(this);
   if (this.contains_2('__proto__')) {
     keys_0[keys_0.length] = '__proto__';
   }
@@ -27259,7 +26592,7 @@ _.keys_1 = function keys_3(){
 }
 ;
 ju.PROTO = '__proto__';
-cggl.Ljava_util_InternalJsStringMap$InternalJsStringMapWithKeysWorkaround_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapWithKeysWorkaround', 222, cggl.Ljava_util_InternalJsStringMap_2_classLit);
+cggl.Ljava_util_InternalJsStringMap$InternalJsStringMapWithKeysWorkaround_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapWithKeysWorkaround', 231, cggl.Ljava_util_InternalJsStringMap_2_classLit);
 ju.$clinit_Iterator = function $clinit_Iterator(){
   ju.$clinit_Iterator = emptyMethod;
 }
@@ -27276,13 +26609,13 @@ ju.LinkedList = function LinkedList(){
   this.reset_1();
 }
 ;
-defineClass(349, 348, {3:1, 1:1, 17:1, 88:1}, ju.LinkedList);
+defineClass(349, 348, {3:1, 1:1, 19:1, 89:1}, ju.LinkedList);
 _.$init_360 = function $init_360(){
   this.header = new ju.LinkedList$Node;
   this.tail = new ju.LinkedList$Node;
 }
 ;
-_.add_3 = function add_13(o){
+_.add_4 = function add_14(o){
   this.addLast(o);
   return true;
 }
@@ -27379,7 +26712,7 @@ ju.$clinit_LinkedList$DescendingIteratorImpl = function $clinit_LinkedList$Desce
   ju.$clinit_LinkedList$DescendingIteratorImpl = emptyMethod;
 }
 ;
-defineClass(777, 1, $intern_0);
+defineClass(782, 1, $intern_0);
 ju.$clinit_LinkedList$ListIteratorImpl = function $clinit_LinkedList$ListIteratorImpl(){
   ju.$clinit_LinkedList$ListIteratorImpl = emptyMethod;
   jl.$clinit_Object();
@@ -27399,7 +26732,7 @@ _.$init_361 = function $init_361(){
   this.lastNode = null;
 }
 ;
-_.add_5 = function add_14(o){
+_.add_6 = function add_15(o){
   this.this$01.addNode(o, this.currentNode.prev, this.currentNode);
   ++this.currentIndex;
   this.lastNode = null;
@@ -27428,7 +26761,7 @@ _.previous = function previous_2(){
   return this.lastNode.value_0;
 }
 ;
-_.remove_6 = function remove_26(){
+_.remove_7 = function remove_27(){
   var nextNode;
   cggcsi.checkState(isNotNull(this.lastNode));
   nextNode = this.lastNode.next;
@@ -27455,11 +26788,11 @@ ju.LinkedList$Node = function LinkedList$Node(){
   this.$init_362();
 }
 ;
-defineClass(125, 1, $intern_0, ju.LinkedList$Node);
+defineClass(127, 1, $intern_0, ju.LinkedList$Node);
 _.$init_362 = function $init_362(){
 }
 ;
-cggl.Ljava_util_LinkedList$Node_2_classLit = createForClass('java.util', 'LinkedList/Node', 125, cggl.Ljava_lang_Object_2_classLit);
+cggl.Ljava_util_LinkedList$Node_2_classLit = createForClass('java.util', 'LinkedList/Node', 127, cggl.Ljava_lang_Object_2_classLit);
 ju.$clinit_List = function $clinit_List(){
   ju.$clinit_List = emptyMethod;
 }
@@ -27476,7 +26809,7 @@ ju.$clinit_Map$Entry = function $clinit_Map$Entry(){
   ju.$clinit_Map$Entry = emptyMethod;
 }
 ;
-cggl.Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry', 16, null);
+cggl.Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry', 17, null);
 ju.$clinit_NoSuchElementException = function $clinit_NoSuchElementException(){
   ju.$clinit_NoSuchElementException = emptyMethod;
   jl.$clinit_RuntimeException();
@@ -27488,11 +26821,11 @@ ju.NoSuchElementException = function NoSuchElementException(){
   this.$init_363();
 }
 ;
-defineClass(63, 11, {3:1, 9:1, 1:1, 11:1, 12:1, 63:1}, ju.NoSuchElementException);
+defineClass(67, 11, {3:1, 9:1, 1:1, 11:1, 12:1, 67:1}, ju.NoSuchElementException);
 _.$init_363 = function $init_363(){
 }
 ;
-cggl.Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 63, cggl.Ljava_lang_RuntimeException_2_classLit);
+cggl.Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 67, cggl.Ljava_lang_RuntimeException_2_classLit);
 ju.$clinit_Objects = function $clinit_Objects(){
   ju.$clinit_Objects = emptyMethod;
   jl.$clinit_Object();
@@ -27505,15 +26838,15 @@ ju.equals_17 = function equals_17(a, b){
 ;
 ju.hash_1 = function hash_1(values){
   ju.$clinit_Objects();
-  return ju.hashCode_24(values);
+  return ju.hashCode_25(values);
 }
 ;
-ju.hashCode_27 = function hashCode_27(o){
+ju.hashCode_28 = function hashCode_28(o){
   ju.$clinit_Objects();
   return jsNotEquals(o, null)?jl.hashCode__I__devirtual$(o):0;
 }
 ;
-defineClass(687, 1, $intern_0);
+defineClass(696, 1, $intern_0);
 ju.$clinit_Queue = function $clinit_Queue(){
   ju.$clinit_Queue = emptyMethod;
 }
@@ -27536,8 +26869,8 @@ ju.$clinit_SortedSet = function $clinit_SortedSet(){
 ;
 cggl.I_classLit = createForPrimitive('int', 'I');
 cggl.Z_classLit = createForPrimitive('boolean', 'Z');
-var Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler', 91, null);
-var Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback', 105, null);
+var Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler', 92, null);
+var Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback', 109, null);
 cggl.Lcom_google_gwt_lang_CollapsedPropertyHolder_2_classLit = createForClass('com.google.gwt.lang', 'CollapsedPropertyHolder', 373, cggl.Ljava_lang_Object_2_classLit);
 cggl.Lcom_google_gwt_lang_JavaClassHierarchySetupUtil_2_classLit = createForClass('com.google.gwt.lang', 'JavaClassHierarchySetupUtil', 375, cggl.Ljava_lang_Object_2_classLit);
 cggl.Lcom_google_gwt_lang_ModuleUtils_2_classLit = createForClass('com.google.gwt.lang', 'ModuleUtils', 377, cggl.Ljava_lang_Object_2_classLit);
@@ -27546,17 +26879,17 @@ cggl.D_classLit = createForPrimitive('double', 'D');
 cggl.F_classLit = createForPrimitive('float', 'F');
 cggl.J_classLit = createForPrimitive('long', 'J');
 cggl.S_classLit = createForPrimitive('short', 'S');
-var Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry', 16, null);
-var Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit = createForInterface('com.google.gwt.query.client.plugins.ajax', 'Ajax/Settings', 144, null);
-var Lcom_google_gwt_query_client_builders_JsonBuilder_2_classLit = createForInterface('com.google.gwt.query.client.builders', 'JsonBuilder', 102, null);
+var Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry', 17, null);
+var Lcom_google_gwt_query_client_plugins_ajax_Ajax$Settings_2_classLit = createForInterface('com.google.gwt.query.client.plugins.ajax', 'Ajax/Settings', 147, null);
+var Lcom_google_gwt_query_client_builders_JsonBuilder_2_classLit = createForInterface('com.google.gwt.query.client.builders', 'JsonBuilder', 56, null);
 var $entry = registerEntry_0();
 var gwtOnLoad = gwtOnLoad = gwtOnLoad_0;
 addInitFunctions(init);
-setGwtProperty('permProps', [[['locale', 'default'], ['user.agent', 'safari']]]);
+setGwtProperty('permProps', [[['locale', 'default'], ['user.agent', 'gecko1_8']]]);
 $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
 $gwt && $gwt.permProps && __gwtModuleFunction.__moduleStartupDone($gwt.permProps);
-//# sourceMappingURL=http://www.gwtproject.org/src/55D4DB1B3E615C503361AD17FDD56DFB_sourceMap0.json 
+//# sourceMappingURL=http://www.gwtproject.org/src/1A99914B21B194E417686087AE6B894F_sourceMap0.json 
 //# sourceURL=gwtproject-0.js
 
