@@ -38,22 +38,22 @@
         <p:PaperHeaderPanel mode="seamed">
           <p:PaperToolbar addStyleNames="{style.toolbar}" />
           <p:PaperIconItem ui:field="menuClearAll">
-            <i:IronIcon icon="delete" />
+            <i:IronIcon icon="delete" item-icon/>
             <div>Clear All</div>
             <p:PaperRipple />
           </p:PaperIconItem>
           <p:PaperIconItem ui:field="menuClearDone">
-            <i:IronIcon icon="clear" />
+            <i:IronIcon icon="clear" item-icon/>
             <div>Clear Done</div>
             <p:PaperRipple />
           </p:PaperIconItem>
           <p:PaperIconItem ui:field="menuSettings">
-            <i:IronIcon icon="settings" />
+            <i:IronIcon icon="settings" item-icon/>
             <div>Settings</div>
             <p:PaperRipple />
           </p:PaperIconItem>
           <p:PaperIconItem ui:field="menuAbout">
-            <i:IronIcon icon="help" />
+            <i:IronIcon icon="help" item-icon/>
             <div>About</div>
             <p:PaperRipple />
           </p:PaperIconItem>
