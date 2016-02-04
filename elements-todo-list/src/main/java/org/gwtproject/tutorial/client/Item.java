@@ -7,7 +7,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.vaadin.polymer.elemental.Event;
 import com.vaadin.polymer.elemental.EventListener;
-import com.vaadin.polymer.paper.element.PaperCheckboxElement;
+import com.vaadin.polymer.paper.PaperCheckboxElement;
 
 public class Item {
 

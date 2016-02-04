@@ -1,12 +1,23 @@
 package org.gwtproject.tutorial.client;
 
+import java.util.Arrays;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Function;
-import com.vaadin.polymer.paper.element.*;
-
-import java.util.Arrays;
+import com.vaadin.polymer.paper.PaperButtonElement;
+import com.vaadin.polymer.paper.PaperCheckboxElement;
+import com.vaadin.polymer.paper.PaperDialogElement;
+import com.vaadin.polymer.paper.PaperDrawerPanelElement;
+import com.vaadin.polymer.paper.PaperFabElement;
+import com.vaadin.polymer.paper.PaperHeaderPanelElement;
+import com.vaadin.polymer.paper.PaperIconButtonElement;
+import com.vaadin.polymer.paper.PaperIconItemElement;
+import com.vaadin.polymer.paper.PaperInputElement;
+import com.vaadin.polymer.paper.PaperRippleElement;
+import com.vaadin.polymer.paper.PaperTextareaElement;
+import com.vaadin.polymer.paper.PaperToolbarElement;
 
 public class TodoList implements EntryPoint {
 

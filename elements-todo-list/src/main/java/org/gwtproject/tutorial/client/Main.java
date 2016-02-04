@@ -13,13 +13,13 @@ import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Event;
 import com.vaadin.polymer.elemental.EventListener;
 import com.vaadin.polymer.elemental.HTMLElement;
-import com.vaadin.polymer.paper.element.PaperButtonElement;
-import com.vaadin.polymer.paper.element.PaperDialogElement;
-import com.vaadin.polymer.paper.element.PaperDrawerPanelElement;
-import com.vaadin.polymer.paper.element.PaperFabElement;
-import com.vaadin.polymer.paper.element.PaperIconItemElement;
-import com.vaadin.polymer.paper.element.PaperInputElement;
-import com.vaadin.polymer.paper.element.PaperTextareaElement;
+import com.vaadin.polymer.paper.PaperButtonElement;
+import com.vaadin.polymer.paper.PaperDialogElement;
+import com.vaadin.polymer.paper.PaperDrawerPanelElement;
+import com.vaadin.polymer.paper.PaperFabElement;
+import com.vaadin.polymer.paper.PaperIconItemElement;
+import com.vaadin.polymer.paper.PaperInputElement;
+import com.vaadin.polymer.paper.PaperTextareaElement;
 
 public class Main extends Composite {
     interface MainUiBinder extends UiBinder<HTMLPanel, Main> {
