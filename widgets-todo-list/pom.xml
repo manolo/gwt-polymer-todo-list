@@ -7,7 +7,7 @@
     <groupId>org.gwtproject.tutorial</groupId>
     <artifactId>gwt-polymer-widgets-todo</artifactId>
     <packaging>war</packaging>
-    <version>1.2.1.0-alpha1-SNAPSHOT</version>
+    <version>1.2.3.0</version>
     <name>GWT Polymer TodoList tutorial App (widgets version).</name>
 
     <properties>
@@ -36,18 +36,26 @@
        </repository>
     </repositories>
 
+    <dependencyManagement>
+      <dependencies>
+         <dependency>
+           <groupId>com.google.gwt</groupId>
+           <artifactId>gwt</artifactId>
+           <version>${gwtVersion}</version>
+           <type>pom</type>
+           <scope>import</scope>
+        </dependency>
+      </dependencies>
+  </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
-            <scope>provided</scope>
-            <version>${gwtVersion}</version>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-codeserver</artifactId>
-            <scope>provided</scope>
-            <version>${gwtVersion}</version>
         </dependency>
         <dependency>
             <groupId>com.vaadin.polymer</groupId>
@@ -79,7 +87,6 @@
                     <runTarget>TodoListWidgets.html</runTarget>
                     <draftCompile>false</draftCompile>
                     <optimizationLevel>9</optimizationLevel>
-                    <jsInteropMode>JS</jsInteropMode>
                     <disableCastChecking>true</disableCastChecking>
                     <disableClassMetadata>true</disableClassMetadata>
                     <enableAssertions>false</enableAssertions>

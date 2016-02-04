@@ -7,28 +7,55 @@
   <groupId>org.gwtproject.tutorial</groupId>
   <artifactId>gwt-polymer-elements-todo</artifactId>
   <packaging>war</packaging>
-  <version>1.0.2.0-alpha3</version>
+  <version>1.2.3.0</version>
   <name>GWT Polymer TodoList tutorial App (elements version).</name>
   
   <properties>
-    <gwtVersion>2.7.0</gwtVersion>
+    <gwtVersion>2.8.0-SNAPSHOT</gwtVersion>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <gwtPolymerVersion>${project.version}</gwtPolymerVersion>
   </properties>
 
+  <repositories>
+     <repository>
+       <id>sonatype-snapshots</id>
+       <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+       <snapshots><enabled>true</enabled></snapshots>
+       <releases><enabled>false</enabled></releases>
+     </repository>
+     <repository>
+       <id>vaadin-snapshots</id>
+       <url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+       <snapshots><enabled>true</enabled></snapshots>
+     </repository>
+     <repository>
+       <id>google-snapshots</id>
+       <url>https://oss.sonatype.org/content/repositories/google-snapshots/</url>
+       <snapshots><enabled>true</enabled></snapshots>
+     </repository>
+  </repositories>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt</artifactId>
+        <version>${gwtVersion}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
-      <version>${gwtVersion}</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-codeserver</artifactId>
-      <version>${gwtVersion}</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.vaadin.polymer</groupId>
@@ -55,7 +82,6 @@
         <configuration>
           <runTarget>TodoListElements.html</runTarget>
           <compileReport>false</compileReport>
-          <jsInteropMode>JS</jsInteropMode>
           <optimizationLevel>9</optimizationLevel>
           <disableCastChecking>true</disableCastChecking>
           <disableClassMetadata>true</disableClassMetadata>
