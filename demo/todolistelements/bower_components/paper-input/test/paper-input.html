@@ -22,6 +22,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="../../test-fixture/test-fixture-mocha.js"></script>
 
   <script src="../../iron-test-helpers/test-helpers.js"></script>
+  <script src="../../iron-test-helpers/mock-interactions.js"></script>
 
   <link rel="import" href="../../test-fixture/test-fixture.html">
   <link rel="import" href="../paper-input.html">
@@ -39,6 +40,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <test-fixture id="label">
     <template>
       <paper-input label="foo"></paper-input>
+    </template>
+  </test-fixture>
+
+  <test-fixture id="label-has-value">
+    <template>
+      <paper-input label="foo" value="bar"></paper-input>
     </template>
   </test-fixture>
 
@@ -169,29 +176,41 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         input = fixture('basic');
       });
 
-      test('focus/blur events fired on host element', function(done) {
+      test('focus/blur events fired on host element', function() {
         var nFocusEvents = 0;
         var nBlurEvents = 0;
-        input.addEventListener('focus', function() {
+        input.addEventListener('focus', function(event) {
           nFocusEvents += 1;
-          // setTimeout to wait for potentially more, erroneous events
-          setTimeout(function() {
-            assert.equal(nFocusEvents, 1, 'one focus event fired');
-            input.inputElement.blur();
-          });
+          assert(input.focused, 'input is focused');
+          MockInteractions.blur(input.inputElement);
         });
         input.addEventListener('blur', function() {
           nBlurEvents += 1;
-          // setTimeout to wait for potentially more, erroneous events
-          setTimeout(function() {
-            assert.equal(nBlurEvents, 1, 'one blur event fired');
-            done();
-          });
+          assert(!input.focused, 'input is blurred');
         });
-        input.inputElement.focus();
+        MockInteractions.focus(input.inputElement);
+        assert.isTrue(nFocusEvents >= 1, 'focus event fired');
+        assert.isTrue(nBlurEvents >= 1, 'blur event fired');
       });
 
     });
+
+    suite('focused styling (integration test)', function() {
+
+      test('underline is colored when input is focused', function(done) {
+        var input = fixture('basic');
+        var container = Polymer.dom(input.root).querySelector('paper-input-container');
+        var line = Polymer.dom(container.root).querySelector('.underline');
+        assert.isFalse(line.classList.contains('is-highlighted'), 'line is not highlighted when input is not focused');
+        MockInteractions.focus(input.inputElement);
+        requestAnimationFrame(function() {
+          assert.isTrue(line.classList.contains('is-highlighted'), 'line is highlighted when input is focused');
+          done();
+        });
+      });
+
+    });
+
 
     suite('validation', function() {
 

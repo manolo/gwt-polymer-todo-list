@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -612,7 +612,7 @@ public interface MyMessages extends Messages {
   })
   String gaveCredits(String name, @Select Gender gender);
 }
-</code></pre><p>The default message is used if no form matches, in this case if <code>gender</code> is <code>null</code> or <code>UNKNOWN</code>. <code>@Select</code> parameters may be integral primitives, Stings, booleans, or enums.</p><h2>SafeHtml Messages<a id="SafeHtmlMessages"></a></h2><p>Sometimes, message formats you create include HTML markup, with the resulting messages intended for use in an HTML context, such as the content of an <code>InlineHTML</code> widget. If the message is parameterized and the value of a <code>String</code>-typed parameter is derived from untrusted input, the application is vulnerable to Cross-Site-Scripting (XSS) attacks.</p><p>To avoid XSS vulnerabilities due to the use of messages in HTML contexts, you can declare methods in your Messages interfaces with a return type of <code>SafeHtml</code>:</p>
+</code></pre><p>The default message is used if no form matches, in this case if <code>gender</code> is <code>null</code> or <code>UNKNOWN</code>. <code>@Select</code> parameters may be integral primitives, Strings, booleans, or enums.</p><h2>SafeHtml Messages<a id="SafeHtmlMessages"></a></h2><p>Sometimes, message formats you create include HTML markup, with the resulting messages intended for use in an HTML context, such as the content of an <code>InlineHTML</code> widget. If the message is parameterized and the value of a <code>String</code>-typed parameter is derived from untrusted input, the application is vulnerable to Cross-Site-Scripting (XSS) attacks.</p><p>To avoid XSS vulnerabilities due to the use of messages in HTML contexts, you can declare methods in your Messages interfaces with a return type of <code>SafeHtml</code>:</p>
 <pre><code>public interface ErrorMessages extends Messages {
    @DefaultMessage(&quot;A &lt;strong&gt;{0} error&lt;/strong&gt; has occurred: {1}.&quot;)
    SafeHtml errorHtml(String error, SafeHtml details);

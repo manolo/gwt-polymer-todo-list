@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -498,7 +498,7 @@
                     <span id="editLink" title="Edit this page on GitHub">
                         <a class="icon_editGithub" href="https://github.com/gwtproject/gwt-site/edit/master/src/main/markdown/articles/superdevmode.md"></a>
                     </span>
-                    <h1>Super Dev Mode</h1><p><em>Revised November 4, 2014 for GWT 2.7</em></p><h2>Introduction <a id="Introduction"></a></h2><p>Super Dev Mode replaces the internals of <a href="../doc/latest/DevGuideCompilingAndDebugging.html#dev_mode">Dev Mode</a> with a different approach that works better in modern browsers. Like its predecessor (which I&rsquo;ll call <i>classic</i> Dev Mode), Super Dev Mode allows GWT developers to quickly recompile their code and see the results in a browser. It also allows developers to use a debugger to inspect a running GWT application. However, it works differently.</p><h2>Prerequisites <a id="Prerequisites"></a></h2><p>Super Dev Mode requires the xsiframe linker.</p><p>To enable Super Dev Mode for your application, you will need to add these settings to your module.xml file:</p>
+                    <h1>Super Dev Mode</h1><p><em>Revised December 17, 2015 for GWT 2.8</em></p><h2>Introduction <a id="Introduction"></a></h2><p>Super Dev Mode replaces the internals of <a href="../doc/latest/DevGuideCompilingAndDebugging.html#dev_mode">Dev Mode</a> with a different approach that works better in modern browsers. Like its predecessor (which I&rsquo;ll call <i>classic</i> Dev Mode), Super Dev Mode allows GWT developers to quickly recompile their code and see the results in a browser. It also allows developers to use a debugger to inspect a running GWT application. However, it works differently.</p><h2>Prerequisites <a id="Prerequisites"></a></h2><p>Super Dev Mode requires the xsiframe linker.</p><p>To enable Super Dev Mode for your application, you will need to add these settings to your module.xml file:</p>
 <ul>
   <li><p>GWT 2.5.1</p>
   <pre><code>&lt;add-linker name=&quot;xsiframe&quot;/&gt;
@@ -508,14 +508,14 @@
   <li><p>GWT 2.6.1</p>
   <pre><code>&lt;add-linker name=&quot;xsiframe&quot;/&gt;
 </code></pre></li>
-  <li><p>GWT 2.7</p><p>In 2.7, the xsiframe linker is the default.</p></li>
+  <li><p>GWT 2.7 and above</p><p>From GWT 2.7, the xsiframe linker is the default.</p></li>
 </ul><h2>Launching Super Dev Mode <a id="Launch"></a></h2><h3>Via Dev Mode <a id="LaunchDevMode"></a></h3><p>Starting with GWT 2.7, Dev Mode launches Super Dev Mode automatically. Just <a href="../doc/latest/DevGuideCompilingAndDebugging.html#launching_in_dev_mode">start Dev Mode</a> and reload the page, and it will recompile automatically when necessary.</p><h4>How it works <a id="HowItWorksWithDevMode"></a></h4><p>At startup, Dev Mode overwrites the GWT application&rsquo;s nocache.js files with stub files that automatically recompile the GWT application if necessary.</p><p>The GWT application itself is loaded from a separate web server running on a different port (9876 by default).</p><h3>Without Dev Mode <a id="Starting"></a></h3><p>You can also run Super Dev Mode without Dev Mode. This is required in older versions of GWT and may also be useful when debugging a GWT application running a different server.</p><p>If you are not using Dev Mode, first you need to compile the GWT application and launch a web server that serves its output files. Then launch the Super Dev Mode code server as a separate process.</p><p>The code server is an ordinary Java program that you can run from the command line. Here are some details you&rsquo;ll need to start it:</p>
 <ul>
   <li><p>The jar file is gwt-codeserver.jar</p></li>
   <li><p>You will also need gwt-dev.jar in your classpath, along with anything else needed to compile your GWT app (most likely gwt-user.jar).</p></li>
   <li><p>The main method is in com.google.gwt.dev.codeserver.CodeServer</p></li>
-</ul><p>If you run CodeServer without any arguments, it will print out its command line arguments. For 2.7, here is the output:</p>
-<pre><code>CodeServer [-[no]allowMissingSrc] [-bindAddress address] [-[no]compileTest] [-compileTestRecompiles count] [-[no]failOnError] [-[no]precompile] [-port port] [-src dir] [-X[no]enforceStrictResources] [-workDir dir] [-launcherDir] [-[no]incremental] [-sourceLevel [auto, 1.6, 1.7]] [-logLevel (ERROR|WARN|INFO|TRACE|DEBUG|SPAM|ALL)] [-XjsInteropMode (NONE|JS|CLOSURE)] [-XmethodNameDisplayMode (NONE|ONLY_METHOD_NAME|ABBREVIATED|FULL)] [module]
+</ul><p>If you run CodeServer without any arguments, it will print out its command line arguments. For 2.8.0-beta1, here is the output:</p>
+<pre><code>CodeServer [-[no]allowMissingSrc] [-bindAddress address] [-[no]compileTest] [-compileTestRecompiles count] [-[no]failOnError] [-[no]precompile] [-port port] [-src dir] [-workDir dir] [-launcherDir] [-style (DETAILED|OBFUSCATED|PRETTY)] [-setProperty name=value,value...] [-[no]incremental] [-sourceLevel [auto, 1.7, 1.8]] [-logLevel (ERROR|WARN|INFO|TRACE|DEBUG|SPAM|ALL)] [-XjsInteropMode (JS|JS_RC)] [-[no]generateJsInteropExports] [-XmethodNameDisplayMode (NONE|ONLY_METHOD_NAME|ABBREVIATED|FULL)] [-X[no]closureFormattedOutput] [module]
 
 where
   -[no]allowMissingSrc          Allows -src flags to reference missing directories. (defaults to OFF)
@@ -526,13 +526,15 @@ where
   -[no]precompile               Precompile modules. (defaults to ON)
   -port                         The port where the code server will run.
   -src                          A directory containing GWT source to be prepended to the classpath for compiling.
-  -X[no]enforceStrictResources  EXPERIMENTAL: Don&#39;t implicitly depend on &quot;client&quot; and &quot;public&quot; when a module doesn&#39;t define any dependencies. (defaults to OFF)
   -workDir                      The root of the directory tree where the code server willwrite compiler output. If not supplied, a temporary directorywill be used.
   -launcherDir                  An output directory where files for launching Super Dev Mode will be written. (Optional.)
+  -style                        Script output style: DETAILED, OBFUSCATED or PRETTY
+  -setProperty                  Set the values of a property in the form of propertyName=value1[,value2...].
   -[no]incremental              Compiles faster by reusing data from the previous compile. (defaults to ON)
-  -sourceLevel                  Specifies Java source level (defaults to auto:1.7)
+  -sourceLevel                  Specifies Java source level (defaults to auto:1.8)
   -logLevel                     The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM or ALL (defaults to INFO)
-  -XjsInteropMode               EXPERIMENTAL: Specifies JsInterop mode: NONE, JS or CLOSURE (defaults to NONE)
+  -XjsInteropMode               EXPERIMENTAL: DEPRECATED: Specifies JsInterop mode: JS or JS_RC
+  -[no]generateJsInteropExports Generate exports for JsInterop purposes (defaults to OFF)
   -XmethodNameDisplayMode       EXPERIMENTAL: Specifies method display name mode for chrome devtools: NONE, ONLY_METHOD_NAME, ABBREVIATED or FULL (defaults to NONE)
 and
   module                        The GWT modules that the code server should compile. (Example: com.example.MyApp)
@@ -558,7 +560,7 @@ Next, visit: http://localhost:9876/
   <li><p>https is not supported. See <a href="https://code.google.com/p/google-web-toolkit/issues/detail?id=7538">issue 7538</a> for updates.</p></li>
   <li><p>Although all modern browser have some support for sourcemaps, sourcemap-based debugging currently works best in Chrome. We hope browser support will improve, but for now you&rsquo;ll have to rely on other debugging tricks for some browsers. For example, you can use <code>GWT.log</code> and <code>java.util.logging</code> to log a message to the browser console add a call in the Java code to <code>GWT.debugger</code> to add a breakpoint.</p></li>
   <li><p>When inspecting variables in the Chrome debugger, the field names and values are JavaScript, not Java.</p></li>
-  <li><p>Super Dev Mode doesn&rsquo;t support running Java web apps (war files) like Dev Mode. In 2.7, you can use Dev Mode and it will automatically start Super Dev Mode, or else you need to run a separate Java servlet engine.</p></li>
+  <li><p>Super Dev Mode doesn&rsquo;t support running Java web apps (war files) like Dev Mode. In 2.7 and above, you can use Dev Mode and it will automatically start Super Dev Mode, or else you need to run a separate Java servlet engine.</p></li>
   <li><p>Since Super Dev Mode doesn&rsquo;t run GWT applications in a JVM, some runtime checks don&rsquo;t happen. For example, there won&rsquo;t be any IndexOutOfBoundsException when an array index is out of range.</p></li>
 </ul><p>Happy hacking!</p>
 

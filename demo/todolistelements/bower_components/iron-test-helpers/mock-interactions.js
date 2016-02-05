@@ -40,7 +40,9 @@
       bubbles: true,
       cancelable: true,
       clientX: xy.x,
-      clientY: xy.y
+      clientY: xy.y,
+      // Make this a primary input.
+      buttons: 1 // http://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/buttons
     };
     var e;
     var mousetype = type === 'tap' ? 'click' : 'mouse' + type;
@@ -48,8 +50,19 @@
       e = new MouseEvent(mousetype, props);
     } else {
       e = document.createEvent('MouseEvent');
-      e.initMouseEvent(mousetype, props.bubbles, props.cancelable, null, null, 0, 0,
-        props.clientX, props.clientY, false, false, false, false, 0, null);
+      e.initMouseEvent(
+        mousetype, props.bubbles, props.cancelable,
+        null, /* view */
+        null, /* detail */
+        0,    /* screenX */
+        0,    /* screenY */
+        props.clientX, props.clientY,
+        false, /*ctrlKey */
+        false, /*altKey */
+        false, /*shiftKey */
+        false, /*metaKey */
+        0,     /*button */
+        null   /*relatedTarget*/);
     }
     node.dispatchEvent(e);
   }
@@ -84,6 +97,9 @@
   }
 
   function tap(node) {
+    // Respect nodes that are disabled in the UI.
+    if (window.getComputedStyle(node)['pointer-events'] === 'none')
+      return;
     var xy = middleOfNode(node);
     down(node, xy);
     up(node, xy);
@@ -91,11 +107,17 @@
   }
 
   function focus(target) {
-    Polymer.Base.fire.call(target, 'focus');
+    Polymer.Base.fire('focus', {}, {
+      bubbles: false,
+      node: target
+    });
   }
 
   function blur(target) {
-    Polymer.Base.fire.call(target, 'blur');
+    Polymer.Base.fire('blur', {}, {
+      bubbles: false,
+      node: target
+    });
   }
 
   function downAndUp(target, callback) {
@@ -123,7 +145,10 @@
   }
 
   function keyboardEventFor(type, keyCode) {
-    var event = new CustomEvent(type);
+    var event = new CustomEvent(type, {
+      bubbles: true,
+      cancelable: true
+    });
 
     event.keyCode = keyCode;
     event.code = keyCode;

@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -636,7 +636,7 @@
     <li>Widget classes available but not required (i.e. use DOM and/or JSNI)</li>
     <li>Application management available but not required (e.g. history support is optional)</li>
     <li>RPC available but not required</li>
-    <li>Java-to-JavaScript compiler is useful without the rest of the user libraries (implies JSNI and debugging aren&rsquo;t tangled with up gwt-user)</li>
+    <li>Java-to-JavaScript compiler is useful without the rest of the user libraries (implies JSNI and debugging aren&rsquo;t tangled up with gwt-user)</li>
   </ul></li>
   <li>Interoperate with existing web pages
   <ul>
@@ -661,7 +661,7 @@
 </ul><h2>The GWT Community<a id="community"></a></h2><p>The GWT community exists primarily through mailing lists, the issue tracker and, to a lesser extent, the source control repository. You are definitely encouraged to contribute to the discussion and you can also help us to keep the effectiveness of the groups high by following and promoting the guidelines listed here.</p><h3>Please Be Friendly<a id="befriendly"></a></h3><p>Showing courtesy and respect to others is a vital part of the Google culture, and we strongly encourage everyone participating in GWT development to join us in accepting nothing less. Of course, being courteous is not the same as failing to constructively disagree with each other, but it does mean that we should be respectful of each other when enumerating the 42 technical reasons that a particular proposal may not be the best choice. There&rsquo;s never a reason to be antagonistic or dismissive toward anyone who is sincerely trying to contribute to a discussion.</p><p>Sure, web development is serious business and all that, but it&rsquo;s also a lot of fun. Let&rsquo;s keep it that way. Let&rsquo;s strive to be one of the friendliest communities in all of open source.</p><h3>Where to Discuss GWT<a id="wheretodiscussgwt"></a></h3><p>As always, discuss <em>using</em> GWT in the <a href="http://groups.google.com/group/Google-Web-Toolkit">official GWT (GWT) developer discussion group</a>. There is an additional group for people to discuss any of the stuff in this document (e.g. how to build, how to submit patches) called <a href="http://groups.google.com/group/Google-Web-Toolkit-Contributors">GWT Contributors</a>. You don&rsquo;t have to actually submit code in order to sign up. Your participation itself is a valuable contribution.</p><h3>How to Report a Bug<a id="issuetracking"></a></h3><p>See <a href="lifeofanissue.html">Issue Tracking</a>.</p><h2>Working with the Code<a id="workingoncode"></a></h2><p>If you want to get your hands dirty with the code inside GWT, this is the section for you.</p><h3>Checking Out the Source<a id="checkingout"></a></h3><p>Checking out the GWT source is most useful if you plan to compile GWT yourself. The pre-built GWT distribution already contains all the Java source, so you don&rsquo;t actually need to check it out from the repository just to debug through it. Just tweak your IDE to read source from the GWT jars.</p><p>GWT is hosted at <a href="https://gwt.googlesource.com/">gwt.googlesource.com</a>, so you check out the source for GWT using a <a href="http://git-scm.com/">Git</a> client as you would for any other Git project:</p><p><code>git clone https://gwt.googlesource.com/gwt trunk</code></p><h3>Compiling from Source<a id="compiling"></a></h3><p>Other than a few native libs, everything is Java source that can be built on any supported platform with the included GWT <a href="http://ant.apache.org">Ant</a> build files. At the moment, you can only build the native code binaries on Linux, and even then with a bit of effort that is currently beyond the scope of this document. To keep things simple, we&rsquo;ve checked in pre-built native binaries. (Yes, we know that&rsquo;s unusual. But the source and makefiles are all there&hellip; it&rsquo;s just a pain to doc all that and make it build in a cross-platform way.)</p>
 <ol>
   <li>Install <a href="http://ant.apache.org/bindownload.cgi">Apache Ant 1.7.0</a> or later. We&rsquo;ll assume that the <code>ant</code> command is in your path.</li>
-  <li>Check out the GWT prerequisite tools and third-party libraries: <code>~/gwt$ svn checkout http://google-web-toolkit.googlecode.com/svn/tools/ tools</code></li>
+  <li>Check out the GWT prerequisite tools and third-party libraries: <code>~/gwt$ git clone https://github.com/gwtproject/tools.git tools</code></li>
   <li>Check out the GWT source: <code>~/gwt$ git clone https://gwt.googlesource.com/gwt trunk</code></li>
   <li>Optionally, set an environment variable that contains the full path to the directory into which you just checked out the tools. (If the <code>tools</code> directory is a sibling of the GWT source directory, you don&rsquo;t have to specify <code>GWT_TOOLS</code>.) In this example, you executed the previous command from the directory <code>~/gwt</code>, so you&rsquo;d type:<code>~/gwt$ export GWT_TOOLS=~/gwt/tools</code></li>
   <li>Switch to the directory into which you checked out the GWT source. Let&rsquo;s assume you checked it out into <code>~/gwt/trunk</code>. Make sure you&rsquo;re in that directory&hellip; <code>~/gwt$ cd ~/gwt/trunk</code> then just invoke Ant <code>ant</code></li>
@@ -816,57 +816,71 @@ public class Foo {
   <li>Exception: If a comment line contains an example command or a literal URL longer than 100 characters, that line may be longer than 100 characters for ease of cut and paste.</li>
   <li>Exception: Import lines can go over the limit because humans rarely see them. This also simplifies tool writing.</li>
 </ul><h4>Acronyms in names</h4><p>Treat acronyms and abbreviations as words. The names are much more readable:</p>
-<table style="margin-left: 2em">
-  <tr>
-    <th style="width: 16em">Good</th>
-    <th>Bad</th>
-  </tr>
-  <tr>
-    <td>`XmlHttpRequest`</td>
-    <td>`XMLHTTPRequest`</td>
-  </tr>
-  <tr>
-    <td>`getCustomerId`</td>
-    <td>`getCustomerID`</td>
-  </tr>
+<table>
+  <thead>
+    <tr>
+      <th>Good </th>
+      <th>Bad </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>XmlHttpRequest</code></td>
+      <td><code>XMLHTTPRequest</code></td>
+    </tr>
+    <tr>
+      <td><code>getCustomerId</code> </td>
+      <td><code>getCustomerID</code> </td>
+    </tr>
+  </tbody>
 </table><p>This style rule also applies when an acronym or abbreviation is the entire name:</p>
-<table style="margin-left: 2em">
-  <tr>
-    <th style="width: 16em">Good</th>
-    <th>Bad</th>
-  </tr>
-  <tr>
-    <td>`class Html`</td>
-    <td>`class HTML`</td>
-  </tr>
-  <tr>
-    <td>`String url;`</td>
-    <td>`String URL;`</td>
-  </tr>
-  <tr>
-    <td>`long id;`</td>
-    <td>`long ID;`</td>
-  </tr>
+<table>
+  <thead>
+    <tr>
+      <th>Good </th>
+      <th>Bad </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>class Html</code> </td>
+      <td><code>class HTML</code> </td>
+    </tr>
+    <tr>
+      <td><code>String url;</code></td>
+      <td><code>String URL;</code></td>
+    </tr>
+    <tr>
+      <td><code>long id;</code> </td>
+      <td><code>long ID;</code> </td>
+    </tr>
+  </tbody>
 </table><p>Note that this is a reversal of an earlier, regretted decision, and much code in GWT violates this rule. While it&rsquo;s not worth breaking existing APIs for stylistic concerns, all new code should treat acronyms as words.</p><p>For further justifications of this style rule, see Effective Java Item 56 (Item 38 in 1st edition) and Java Puzzlers Number 68.</p><h4>Parameterized type names</h4><p>Parameterized type names should be one capital letter. However, if readability demands longer names (particularly due to having multiple parameters), the name should be capitalized and have suffix &ldquo;T&rdquo;. In a nutshell, prefer <code>&lt;T&gt;</code> or <code>&lt;K, V&gt;</code>, and devolve to <code>&lt;KeyT, ValueT&gt;</code> if necessary.</p>
-<table style="margin-left: 2em">
-  <tr>
-    <th style="width: 16em">Good</th>
-    <th>Bad</th>
-    <th>Tolerable</th>
-  </tr>
-  <tr>
-    <td>`Foo<T>`</td>
-    <td>`Foo<FooClientType>`</td>
-  </tr>
-  <tr>
-    <td>`Bar<K, V>`</td>
-    <td>`Bar<KeyType, ValueType>`</td>
-  </tr>
-  <tr>
-    <td>`Baz<V, E, X>`</td>
-    <td>`Baz<EventType, ErrorType, ExpressionType>`</td>
-    <td>`Baz<EventT, ErrorT, ExpressionT>`</td>
-  </tr>
+<table>
+  <thead>
+    <tr>
+      <th>Good </th>
+      <th>Bad </th>
+      <th>Tolerable </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Foo&lt;T&gt;</code> </td>
+      <td><code>Foo&lt;FooClientType&gt;</code> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>Bar&lt;K, V&gt;</code> </td>
+      <td><code>Bar&lt;KeyType, ValueType&gt;</code> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>Baz&lt;V, E, X&gt;</code></td>
+      <td><code>Baz&lt;EventType, ErrorType, ExpressionType&gt;</code></td>
+      <td><code>Baz&lt;EventT, ErrorT, ExpressionT&gt;</code></td>
+    </tr>
+  </tbody>
 </table><h3>Unit Testing<a id="unittesting"></a></h3><p>Unit tests are very important, and we strongly encourage submissions that include them, adding new unit tests for new functionality or updating existing unit tests for bug fixes.</p><p>Tests for Java classes should be placed in a parallel source tree under <code>test</code> and the test class name should be suffixed with <code>Test</code>. For example:</p>
 <pre><code>src/com/google/gwt/core/client/EntryPoint.java
 test/com/google/gwt/core/client/EntryPointTest.java

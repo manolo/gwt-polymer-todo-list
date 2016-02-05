@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -508,13 +508,13 @@
   <li><a href="#Messages_containing_widgets">Messages Containing Widgets (HTMLPanel Only)</a></li>
   <li><a href="#HTML_attributes_that_need_translation">HTML Attributes that Need Translation</a></li>
   <li><a href="#Words_with_Multiple_Meanings">Words with Multiple Meanings</a></li>
-</ol><h2>Background<a id="Background"></a></h2><p>UiBinder templates can be marked up for localization. You use the <code>&lt;ui:msg&gt;</code> and <code>&lt;ui:attribute&gt;</code> elements to indicate which portions of the template should be translated, then provide properties files with localized versions of the messages when building your app.</p><p>As in the main <a href="DevGuideUiBinder.html">UiBinder page</a>, the rest of this page explains how to make your UI templates localizable through a series of typical use cases.</p><p><strong>Note</strong> You will see a lot of parallels to working with the <a href="DevGuideI18nMessages.html">Messages</a> system, and with good reason: UiBinder&rsquo;s I18n features are implemented by generating a hidden <code>[com.google.gwt.i18n.client.Messages](/javadoc/latest/com/google/gwt/i18n/client/Messages.html)</code> interface for each template. Except for plural forms, anything you can do via Messages you should also be able to do in a template.</p><h2>Bonjour, Tout Le Monde<a id="Bonjour"></a></h2><p>Here&rsquo;s how to turn the feature on.</p><p><strong>Original</strong></p>
+</ol><h2>Background<a id="Background"></a></h2><p>UiBinder templates can be marked up for localization. You use the <code>&lt;ui:msg&gt;</code> and <code>&lt;ui:attribute&gt;</code> elements to indicate which portions of the template should be translated, then provide properties files with localized versions of the messages when building your app.</p><p>As in the main <a href="DevGuideUiBinder.html">UiBinder page</a>, the rest of this page explains how to make your UI templates localizable through a series of typical use cases.</p><p><strong>Note</strong> You will see a lot of parallels to working with the <a href="DevGuideI18nMessages.html">Messages</a> system, and with good reason: UiBinder&rsquo;s I18n features are implemented by generating a hidden <a href="/javadoc/latest/com/google/gwt/i18n/client/Messages.html"><code>com.google.gwt.i18n.client.Messages</code></a> interface for each template. Except for plural forms, anything you can do via Messages you should also be able to do in a template.</p><h2>Bonjour, Tout Le Monde<a id="Bonjour"></a></h2><p>Here&rsquo;s how to turn the feature on.</p><p><strong>Original</strong></p>
 <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;&gt;
   &lt;div&gt;Hello, world.&lt;/div&gt;
 &lt;/ui:UiBinder&gt;
 </code></pre><p><strong>Tagged</strong></p>
 <pre><code>&lt;ui:UiBinder xmlns:ui=&#39;urn:ui:com.google.gwt.uibinder&#39;
-    ui:generateFormat=&#39;com.google.gwt.i18n.rebind.format.PropertiesFormat&#39;
+    ui:generateFormat=&#39;com.google.gwt.i18n.server.PropertyCatalogFactory&#39;
     ui:generateKeys=&quot;com.google.gwt.i18n.server.keygen.MD5KeyGenerator&quot;
     ui:generateLocales=&quot;default&quot;&gt;
   &lt;div&gt;&lt;ui:msg description=&quot;Greeting&quot;&gt;Hello, world.&lt;/ui:msg&gt;&lt;/div&gt;
@@ -558,7 +558,7 @@ in [Locales in GWT](DevGuideI18nLocale.html).)
 <dl>
   <dt>`ui:baseMessagesInterface`
   <dd>Sets the base interface to use for generated messages.  The value must
-  be the fully-qualified class name of an interface that extends `[Messages](/javadoc/latest/com/google/gwt/i18n/client/Messages.html)`.
+  be the fully-qualified class name of an interface that extends [`Messages`](/javadoc/latest/com/google/gwt/i18n/client/Messages.html).
   You can then put whatever annotations you want there, making it easy to have
   company or project-wide settings that can be changed in just one place.  You
   can still use the other attributes to override defaults inherited from that

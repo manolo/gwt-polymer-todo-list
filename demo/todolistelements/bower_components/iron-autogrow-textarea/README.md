@@ -1,4 +1,21 @@
-# iron-autogrow-textarea
+
+<!---
+
+This README is automatically generated from the comments in these files:
+iron-autogrow-textarea.html
+
+Edit those files, and our readme bot will duplicate them over here!
+Edit this file, and the bot will squash your changes :)
+
+-->
+
+[![Build Status](https://travis-ci.org/PolymerElements/iron-autogrow-textarea.svg?branch=master)](https://travis-ci.org/PolymerElements/iron-autogrow-textarea)
+
+_[Demo and API Docs](https://elements.polymer-project.org/elements/iron-autogrow-textarea)_
+
+
+##&lt;iron-autogrow-textarea&gt;
+
 
 `iron-autogrow-textarea` is an element containing a textarea that grows in height as more
 lines of input are entered. Unless an explicit height or the `maxRows` property is set, it will
@@ -6,19 +23,17 @@ never scroll.
 
 Example:
 
-    <iron-autogrow-textarea id="a1">
-      <textarea id="t1"></textarea>
-    </iron-autogrow-textarea>
+    <iron-autogrow-textarea></iron-autogrow-textarea>
 
 Because the `textarea`'s `value` property is not observable, you should use
-this element's `bind-value` instead for imperative updates. Alternatively, if
-you do set the `textarea`'s `value` imperatively, you must also call `update`
-to notify this element the value has changed.
+this element's `bind-value` instead for imperative updates.
 
-    Example:
-        /* preferred, using the example HTML above*/
-        a1.bindValue = 'some\ntext';
+### Styling
 
-        /* alternatively, */
-        t1.value = 'some\ntext';
-        a1.update();
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--iron-autogrow-textarea` | Mixin applied to the textarea | `{}`
+
+

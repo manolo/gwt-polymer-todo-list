@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -522,10 +522,7 @@
 <ul>
   <li>ContactsPresenter</li>
   <li>EditContactPresenter</li>
-</ul><p>Just as with the view, the EditContactPresenter adds new contacts as well as edits existing contacts.</p><h2>AppController <a id="app_controller"></a></h2><p>To handle logic that is not specific to any presenter and instead resides at the application layer, we&rsquo;ll introduce the AppController component. This component contains the <a href="#history">history management</a> and view transition logic. View transition is directly tied to the history management and is discussed in greater length below.</p><p>At this point the overall hierarchy of our sample project should look like the following:</p>
-<div class="screenshot">
-  ![screenshot](../images/contacts-project-hierarchy.png)
-</div><p>With our component structure in place, and before we jump into wiring it all up, we&rsquo;ll want to take a look at the process that starts everything up. The general flow, as shown in the following code, is:</p>
+</ul><p>Just as with the view, the EditContactPresenter adds new contacts as well as edits existing contacts.</p><h2>AppController <a id="app_controller"></a></h2><p>To handle logic that is not specific to any presenter and instead resides at the application layer, we&rsquo;ll introduce the AppController component. This component contains the <a href="#history">history management</a> and view transition logic. View transition is directly tied to the history management and is discussed in greater length below.</p><p>At this point the overall hierarchy of our sample project should look like the following:</p><p><img src="../images/contacts-project-hierarchy.png" alt="screenshot""/></p><p>With our component structure in place, and before we jump into wiring it all up, we&rsquo;ll want to take a look at the process that starts everything up. The general flow, as shown in the following code, is:</p>
 <ol>
   <li>GWT&rsquo;s bootstrap process calls onModuleLoad()</li>
   <li>onModuleLoad() creates the RPC service, Event Bus, and the AppController</li>
@@ -541,10 +538,7 @@
     appViewer.go(RootPanel.get());
   }
 }
-</code></pre><h2>Binding presenters and views <a id="binding"></a></h2><p>In order to bind the <a href="#presenter">presenter</a> and associated <a href="#view">view</a> together we&rsquo;ll rely on Display interfaces that are defined within the presenter. Take for example the ContactsView:</p>
-<div class="screenshot">
-  ![screenshot](../images/contact-list-view.png)
-</div><p>This view has 3 widgets: a table and two buttons. In order for the app to do something meaningful, the <a href="#presenter">presenter</a> is going to need to:</p>
+</code></pre><h2>Binding presenters and views <a id="binding"></a></h2><p>In order to bind the <a href="#presenter">presenter</a> and associated <a href="#view">view</a> together we&rsquo;ll rely on Display interfaces that are defined within the presenter. Take for example the ContactsView:</p><p><img src="../images/contact-list-view.png" alt="screenshot""/></p><p>This view has 3 widgets: a table and two buttons. In order for the app to do something meaningful, the <a href="#presenter">presenter</a> is going to need to:</p>
 <ul>
   <li>Respond to button clicks</li>
   <li>Populate the list</li>
@@ -783,10 +777,7 @@
     History.newItem(&quot;add&quot;);
   }
 }
-</code></pre><p>Since the view transition logic is already built into the onValueChange() method, this provides a centralized, reusable way of navigating within the app.</p><h2>Testing <a id="testing"></a></h2><p>The MVP model takes the pain out of unit testing a GWT app. That&rsquo;s not to say that you can&rsquo;t write unit tests without using the MVP model. In fact you can, but they will often times be slower than the average JRE-based JUnit test. Why? Well, in short, applications that don&rsquo;t utilize the MVP model will require test cases that test components that rely on a DOM being present, a Javascript engine, etc&hellip; Essentially these test cases need to run in a browser.</p><p>GWT&rsquo;s <a href="/javadoc/latest/com/google/gwt/junit/client/GWTTestCase.html">GWTTestCase</a> makes this possible, as it will launch a &ldquo;headless&rdquo; browser to run each of the tests. The launching of the browser coupled with the actual execution of the test case is why these tests typically take longer than standard JRE tests. Within the MVP model, we strive to make a view, the component that encompasses the bulk of our code that relies on the DOM and Javascript engine, as small and as simplistic as possible. Less code equals less testing which means less time that it takes to actually run your tests. If the bulk of the code within your app is encompassed within a presenter, and that presenter relies strictly on JRE-based components, you can build the majority of your test cases as efficient, vanilla JUnit tests.</p><p>To demonstrate the benefits of using the MVP model to drive JRE-based unit tests, rather than those based on GWTTestCase, we&rsquo;ve added the following tests to our Contacts app.</p>
-<div class="screenshot">
-  ![screenshot](../images/contacts-project-hierarchy-testing.png)
-</div><p>Each example is set up to test adding a list of ContactDetails, sorting those ContactDetails, and then verifying that the sorted list is correct. Taking a look at the ExampleJRETest, we have the following code.</p>
+</code></pre><p>Since the view transition logic is already built into the onValueChange() method, this provides a centralized, reusable way of navigating within the app.</p><h2>Testing <a id="testing"></a></h2><p>The MVP model takes the pain out of unit testing a GWT app. That&rsquo;s not to say that you can&rsquo;t write unit tests without using the MVP model. In fact you can, but they will often times be slower than the average JRE-based JUnit test. Why? Well, in short, applications that don&rsquo;t utilize the MVP model will require test cases that test components that rely on a DOM being present, a Javascript engine, etc&hellip; Essentially these test cases need to run in a browser.</p><p>GWT&rsquo;s <a href="/javadoc/latest/com/google/gwt/junit/client/GWTTestCase.html">GWTTestCase</a> makes this possible, as it will launch a &ldquo;headless&rdquo; browser to run each of the tests. The launching of the browser coupled with the actual execution of the test case is why these tests typically take longer than standard JRE tests. Within the MVP model, we strive to make a view, the component that encompasses the bulk of our code that relies on the DOM and Javascript engine, as small and as simplistic as possible. Less code equals less testing which means less time that it takes to actually run your tests. If the bulk of the code within your app is encompassed within a presenter, and that presenter relies strictly on JRE-based components, you can build the majority of your test cases as efficient, vanilla JUnit tests.</p><p>To demonstrate the benefits of using the MVP model to drive JRE-based unit tests, rather than those based on GWTTestCase, we&rsquo;ve added the following tests to our Contacts app.</p><p><img src="../images/contacts-project-hierarchy-testing.png" alt="screenshot""/></p><p>Each example is set up to test adding a list of ContactDetails, sorting those ContactDetails, and then verifying that the sorted list is correct. Taking a look at the ExampleJRETest, we have the following code.</p>
 <pre><code><br/>public class ExampleJRETest extends TestCase {
   private ContactsPresenter contactsPresenter;
   private ContactsServiceAsync mockRpcService;

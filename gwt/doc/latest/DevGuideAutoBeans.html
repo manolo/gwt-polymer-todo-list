@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -524,7 +524,9 @@
   <li><a href="#autobeanutils">AutoBeanUtils</a></li>
   <li><a href="#json">JSON structures</a></li>
   <li><a href="#categories">Categories</a></li>
-</ul><h2>Quickstart<a id='quick'></a></h2>
+</ul><h2>Quickstart<a id='quick'></a></h2><p>In your module.xml file, add</p>
+<pre><code>&lt;inherits name=&quot;com.google.web.bindery.autobean.AutoBean&quot;/&gt;
+</code></pre><p>then in your sources:</p>
 <pre><code>// Declare any bean-like interface with matching getters and setters, no base type is necessary
 interface Person {
   Address getAddress();

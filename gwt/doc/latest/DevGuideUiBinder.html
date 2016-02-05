@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -656,7 +656,7 @@ HelloWidgetWorld helloWorld =
     Window.alert(&quot;Hello, AJAX&quot;);
   }
 }
-</code></pre><p>However, there is one limitation (at least for now): you can only use <code>@UiHandler</code> with events thrown by widget objects, not DOM elements. That is, <code>&lt;g:Button&gt;</code>, not <code>&lt;button&gt;</code>.</p><h2>Using a widget that requires constructor args<a id="Using_a_widget"></a></h2><p>Every widget that is declared in a template is created by a call to <code>[GWT.create](/javadoc/latest/com/google/gwt/core/client/GWT.html#create%28java.lang.Class%29)()</code>. In most cases this means that they must be default instantiable; that is, they must provide a zero-argument constructor. However, there are a few ways to get around that. In addition to the <code>@UiFactory</code> and <code>@UiField(provided = true)</code> mechanisms described under <a href="#Share_resource_instances">Shared resource instances</a>, you can mark your own widgets with the <code>@UiConstructor</code> annotation.</p><p>Suppose you have an existing widget that needs constructor arguments:</p>
+</code></pre><p>However, there is one limitation (at least for now): you can only use <code>@UiHandler</code> with events thrown by widget objects, not DOM elements. That is, <code>&lt;g:Button&gt;</code>, not <code>&lt;button&gt;</code>.</p><h2>Using a widget that requires constructor args<a id="Using_a_widget"></a></h2><p>Every widget that is declared in a template is created by a call to <a href="/javadoc/latest/com/google/gwt/core/client/GWT.html#create%28java.lang.Class%29"><code>GWT.create</code></a>(). In most cases this means that they must be default instantiable; that is, they must provide a zero-argument constructor. However, there are a few ways to get around that. In addition to the <code>@UiFactory</code> and <code>@UiField(provided = true)</code> mechanisms described under <a href="#Share_resource_instances">Shared resource instances</a>, you can mark your own widgets with the <code>@UiConstructor</code> annotation.</p><p>Suppose you have an existing widget that needs constructor arguments:</p>
 <pre><code>public CricketScores(String... teamNames) {...}
 </code></pre><p>You use it in a template:</p>
 <pre><code>&lt;!-- UserDashboard.ui.xml --&gt;
@@ -854,7 +854,7 @@ public interface Resources extends ClientBundle {
 ...
 
 res.style().ensureInjected();
-</code></pre><p>The &ldquo;<code>with</code>&rdquo; element declares a field holding a resource object whose methods can be called to fill in attribute values. In this case it will be instantiated via a call to <code>[GWT.create](/javadoc/latest/com/google/gwt/core/client/GWT.html#create%28java.lang.Class%29)(Resources.class)</code>. (Read on to see how pass an instance in instead of having it created for you.)</p><p>Note that there is no requirement that a <code>ui:with</code> resource implement the <a href="/javadoc/latest/com/google/gwt/resources/client/ClientBundle.html">ClientBundle</a> interface; this is just an example.</p><p>If you need more flexibility with a resource, you can set parameters on it with a <code>&lt;ui:attributes&gt;</code> element. Any setters or constructor arguments can be called on the resource object this way, just as for any other object in the template. In the example below, note how the FancyResources object accepts a reference to the Resource declared in the previous example.</p>
+</code></pre><p>The &ldquo;<code>with</code>&rdquo; element declares a field holding a resource object whose methods can be called to fill in attribute values. In this case it will be instantiated via a call to <a href="/javadoc/latest/com/google/gwt/core/client/GWT.html#create%28java.lang.Class%29"><code>GWT.create</code></a>(Resources.class). (Read on to see how pass an instance in instead of having it created for you.)</p><p>Note that there is no requirement that a <code>ui:with</code> resource implement the <a href="/javadoc/latest/com/google/gwt/resources/client/ClientBundle.html"><code>ClientBundle</code></a> interface; this is just an example.</p><p>If you need more flexibility with a resource, you can set parameters on it with a <code>&lt;ui:attributes&gt;</code> element. Any setters or constructor arguments can be called on the resource object this way, just as for any other object in the template. In the example below, note how the FancyResources object accepts a reference to the Resource declared in the previous example.</p>
 <pre><code>public class FancyResources {
   enum Style {
     MOBILE, DESKTOP

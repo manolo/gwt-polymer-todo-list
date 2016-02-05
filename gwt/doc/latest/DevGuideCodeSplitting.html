@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <div class="holder" style="display:none">
+        <div class="holder">
             <aside id="submenu">
                 <nav>
                     <ul>
@@ -511,7 +511,7 @@
   public void onModuleLoad() {
     Button b = new Button(&quot;Click me&quot;, new ClickHandler() {
       public void onClick(ClickEvent event) {
-        &lt;strong&gt;Window.alert(&quot;Hello, AJAX&quot;);&lt;/strong&gt;
+        Window.alert(&quot;Hello, AJAX&quot;);
       }
     });
 
@@ -523,7 +523,7 @@
   public void onModuleLoad() {
     Button b = new Button(&quot;Click me&quot;, new ClickHandler() {
       public void onClick(ClickEvent event) {
-        &lt;strong&gt;GWT.runAsync(new RunAsyncCallback() {
+        GWT.runAsync(new RunAsyncCallback() {
           public void onFailure(Throwable caught) {
             Window.alert(&quot;Code download failed&quot;);
           }
@@ -531,7 +531,7 @@
           public void onSuccess() {
             Window.alert(&quot;Hello, AJAX&quot;);
           }
-        });&lt;/strong&gt;
+        });
       }
     });
 
