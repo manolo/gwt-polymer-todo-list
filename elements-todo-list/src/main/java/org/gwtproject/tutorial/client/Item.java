@@ -5,8 +5,6 @@ import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.vaadin.polymer.elemental.Event;
-import com.vaadin.polymer.elemental.EventListener;
 import com.vaadin.polymer.paper.PaperCheckboxElement;
 
 public class Item {
@@ -25,14 +23,11 @@ public class Item {
     public Item() {
         element = ourUiBinder.createAndBindUi(this);
 
-        done.addEventListener("iron-change", new EventListener() {
-            @Override
-            public void handleEvent(Event event) {
-                if (done.getActive()) {
-                    title.addClassName("done");
-                } else {
-                    title.removeClassName("done");
-                }
+        done.addEventListener("iron-change", e -> {
+            if (done.getActive()) {
+                title.addClassName("done");
+            } else {
+                title.removeClassName("done");
             }
         });
     }

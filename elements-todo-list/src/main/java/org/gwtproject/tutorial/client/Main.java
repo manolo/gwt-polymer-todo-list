@@ -10,8 +10,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.vaadin.polymer.Polymer;
-import com.vaadin.polymer.elemental.Event;
-import com.vaadin.polymer.elemental.EventListener;
 import com.vaadin.polymer.elemental.HTMLElement;
 import com.vaadin.polymer.paper.PaperButtonElement;
 import com.vaadin.polymer.paper.PaperDialogElement;
@@ -47,46 +45,31 @@ public class Main extends Composite {
         initWidget(ourUiBinder.createAndBindUi(this));
         Polymer.endLoading(this.getElement(), (Element)addButton);
 
-        addButton.addEventListener("click", new EventListener() {
-            @Override
-            public void handleEvent(Event event) {
-                addItemDialog.open();
+        addButton.addEventListener("click", e -> addItemDialog.open());
+
+        confirmAddButton.addEventListener("click", e -> {
+            if (!titleInput.getValue().isEmpty()) {
+                addItem(titleInput.getValue(), descriptionInput.getValue());
+                // clear text fields
+                titleInput.setValue("");
+                descriptionInput.setValue("");
             }
         });
 
-        confirmAddButton.addEventListener("click", new EventListener() {
-            @Override
-            public void handleEvent(Event event) {
-                if (!titleInput.getValue().isEmpty()) {
-                    addItem(titleInput.getValue(), descriptionInput.getValue());
-                    // clear text fields
-                    titleInput.setValue("");
-                    descriptionInput.setValue("");
-                }
+        menuClearAll.addEventListener("click", e -> {
+            closeMenu();
+            // remove all child elements
+            while (content.hasChildNodes()) {
+                content.removeChild(content.getFirstChild());
             }
         });
 
-        menuClearAll.addEventListener("click", new EventListener() {
-            @Override
-            public void handleEvent(Event event) {
-                closeMenu();
-                // remove all child elements
-                while (content.hasChildNodes()) {
-                    content.removeChild(content.getFirstChild());
-                }
-            }
-        });
-
-        menuClearDone.addEventListener("click", new EventListener() {
-            @Override
-            public void handleEvent(Event event) {
-                closeMenu();
-
-                for (Item item : items) {
-                    if (item.isDone()) {
-                        content.removeChild(item.getElement());
-                        items.remove(item);
-                    }
+        menuClearDone.addEventListener("click", e -> {
+            closeMenu();
+            for (Item item : items) {
+                if (item.isDone()) {
+                    content.removeChild(item.getElement());
+                    items.remove(item);
                 }
             }
         });
