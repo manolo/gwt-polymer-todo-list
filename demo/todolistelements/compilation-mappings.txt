@@ -1,4 +1,4 @@
-A78D6DE1EBA064278122F94653C34B5C.cache.js
+A9B977E73B3D2698061540F36B2DD95F.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -15,13 +15,14 @@ gwt.logging.simpleConsoleHandler ENABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 history.noDoubleEncoding false
 jre.checkedMode DISABLED
-jre.checks.api ENABLED
-jre.checks.bounds ENABLED
+jre.checks.api AUTO
+jre.checks.bounds AUTO
 jre.checks.checkLevel NORMAL
-jre.checks.critical ENABLED
-jre.checks.jsni DISABLED
-jre.checks.type DISABLED
+jre.checks.numeric AUTO
+jre.checks.type AUTO
 jre.debugMode DISABLED
+jre.logging.logLevel OFF
+jre.logging.simpleConsoleHandler ENABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
@@ -30,7 +31,7 @@ user.agent gecko1_8
 videoElementSupport maybe
 webApiUsage modern
 
-A78D6DE1EBA064278122F94653C34B5C.cache.js
+A9B977E73B3D2698061540F36B2DD95F.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -47,13 +48,14 @@ gwt.logging.simpleConsoleHandler ENABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 history.noDoubleEncoding false
 jre.checkedMode DISABLED
-jre.checks.api ENABLED
-jre.checks.bounds ENABLED
+jre.checks.api AUTO
+jre.checks.bounds AUTO
 jre.checks.checkLevel NORMAL
-jre.checks.critical ENABLED
-jre.checks.jsni DISABLED
-jre.checks.type DISABLED
+jre.checks.numeric AUTO
+jre.checks.type AUTO
 jre.debugMode DISABLED
+jre.logging.logLevel OFF
+jre.logging.simpleConsoleHandler ENABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
@@ -62,7 +64,7 @@ user.agent ie10
 videoElementSupport maybe
 webApiUsage modern
 
-A78D6DE1EBA064278122F94653C34B5C.cache.js
+A9B977E73B3D2698061540F36B2DD95F.cache.js
 ClientBundle.enableInlining true
 audioElementSupport no
 canvasElementSupport no
@@ -79,13 +81,14 @@ gwt.logging.simpleConsoleHandler ENABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 history.noDoubleEncoding false
 jre.checkedMode DISABLED
-jre.checks.api ENABLED
-jre.checks.bounds ENABLED
+jre.checks.api AUTO
+jre.checks.bounds AUTO
 jre.checks.checkLevel NORMAL
-jre.checks.critical ENABLED
-jre.checks.jsni DISABLED
-jre.checks.type DISABLED
+jre.checks.numeric AUTO
+jre.checks.type AUTO
 jre.debugMode DISABLED
+jre.logging.logLevel OFF
+jre.logging.simpleConsoleHandler ENABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
@@ -94,7 +97,7 @@ user.agent ie8
 videoElementSupport no
 webApiUsage modern
 
-A78D6DE1EBA064278122F94653C34B5C.cache.js
+A9B977E73B3D2698061540F36B2DD95F.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -111,13 +114,14 @@ gwt.logging.simpleConsoleHandler ENABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 history.noDoubleEncoding false
 jre.checkedMode DISABLED
-jre.checks.api ENABLED
-jre.checks.bounds ENABLED
+jre.checks.api AUTO
+jre.checks.bounds AUTO
 jre.checks.checkLevel NORMAL
-jre.checks.critical ENABLED
-jre.checks.jsni DISABLED
-jre.checks.type DISABLED
+jre.checks.numeric AUTO
+jre.checks.type AUTO
 jre.debugMode DISABLED
+jre.logging.logLevel OFF
+jre.logging.simpleConsoleHandler ENABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
@@ -126,7 +130,7 @@ user.agent ie9
 videoElementSupport maybe
 webApiUsage modern
 
-A78D6DE1EBA064278122F94653C34B5C.cache.js
+A9B977E73B3D2698061540F36B2DD95F.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -143,13 +147,14 @@ gwt.logging.simpleConsoleHandler ENABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 history.noDoubleEncoding false
 jre.checkedMode DISABLED
-jre.checks.api ENABLED
-jre.checks.bounds ENABLED
+jre.checks.api AUTO
+jre.checks.bounds AUTO
 jre.checks.checkLevel NORMAL
-jre.checks.critical ENABLED
-jre.checks.jsni DISABLED
-jre.checks.type DISABLED
+jre.checks.numeric AUTO
+jre.checks.type AUTO
 jre.debugMode DISABLED
+jre.logging.logLevel OFF
+jre.logging.simpleConsoleHandler ENABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
