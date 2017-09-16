@@ -7,11 +7,11 @@
     <groupId>org.gwtproject.tutorial</groupId>
     <artifactId>gwt-polymer-widgets-todo</artifactId>
     <packaging>war</packaging>
-    <version>1.2.3.0</version>
+    <version>1.9.3.0</version>
     <name>GWT Polymer TodoList tutorial App (widgets version).</name>
 
     <properties>
-      <gwtVersion>2.8.0-SNAPSHOT</gwtVersion>
+      <gwtVersion>2.8.1</gwtVersion>
       <gwtPolymerVersion>${project.version}</gwtPolymerVersion>
       <maven.compiler.target>1.8</maven.compiler.target>
       <maven.compiler.source>1.8</maven.compiler.source>
@@ -90,7 +90,6 @@
                     <disableCastChecking>true</disableCastChecking>
                     <disableClassMetadata>true</disableClassMetadata>
                     <enableAssertions>false</enableAssertions>
-                    <closureCompiler>true</closureCompiler>
                     <bindAddress>0.0.0.0</bindAddress>
                 </configuration>
             </plugin>
