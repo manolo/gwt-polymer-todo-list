@@ -9,7 +9,7 @@
 
 A **TodoList** GWT application for mobile and desktop using [Material Design][2] specification.
 
-It relies the UI part on [Polymer][0], Paper Elements [collectios][5], and a the [gwt-polymer-elements][3] wrapper.
+It relies the UI part on [Polymer][0], Paper Elements [collections][5], and a the [gwt-polymer-elements][3] wrapper.
 
 In this repository, you have two versions of the **TodoList** application, one is built using classic GWT widgets, and another with modern JsInterop Elements.
 
