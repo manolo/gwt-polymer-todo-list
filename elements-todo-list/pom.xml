@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <!-- POM file generated with GWT webAppCreator -->
   <modelVersion>4.0.0</modelVersion>
@@ -9,7 +9,7 @@
   <packaging>war</packaging>
   <version>1.9.3.0</version>
   <name>GWT Polymer TodoList tutorial App (elements version).</name>
-  
+
   <properties>
     <gwtVersion>2.8.1</gwtVersion>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -18,22 +18,30 @@
   </properties>
 
   <repositories>
-     <repository>
-       <id>sonatype-snapshots</id>
-       <url>http://oss.sonatype.org/content/repositories/snapshots</url>
-       <snapshots><enabled>true</enabled></snapshots>
-       <releases><enabled>false</enabled></releases>
-     </repository>
-     <repository>
-       <id>vaadin-snapshots</id>
-       <url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
-       <snapshots><enabled>true</enabled></snapshots>
-     </repository>
-     <repository>
-       <id>google-snapshots</id>
-       <url>https://oss.sonatype.org/content/repositories/google-snapshots/</url>
-       <snapshots><enabled>true</enabled></snapshots>
-     </repository>
+    <repository>
+      <id>sonatype-snapshots</id>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+    <repository>
+      <id>vaadin-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>google-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/google-snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <dependencyManagement>
@@ -52,10 +60,12 @@
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-codeserver</artifactId>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.vaadin.polymer</groupId>
@@ -64,14 +74,13 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-  
+
   <build>
-    
     <plugins>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
+        <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
-        <version>${gwtVersion}</version>
+        <version>1.0-rc-8</version>
         <executions>
           <execution>
             <goals>
@@ -80,13 +89,28 @@
           </execution>
         </executions>
         <configuration>
-          <runTarget>TodoListElements.html</runTarget>
-          <compileReport>false</compileReport>
-          <optimizationLevel>9</optimizationLevel>
-          <disableCastChecking>true</disableCastChecking>
-          <disableClassMetadata>true</disableClassMetadata>
-          <enableAssertions>false</enableAssertions>
-          <bindAddress>0.0.0.0</bindAddress>
+          <moduleName>org.gwtproject.tutorial.TodoList</moduleName>
+          <moduleShortName>todolistelements</moduleShortName>
+          <failOnError>true</failOnError>
+          <compilerArgs>
+            <arg>-compileReport</arg>
+            <arg>-XcompilerMetrics</arg>
+          </compilerArgs>
+          <devmodeArgs>
+            <arg>-bindAddress</arg>
+            <arg>0.0.0.0</arg>
+          </devmodeArgs>
+          <codeserverArgs>
+            <arg>-bindAddress</arg>
+            <arg>0.0.0.0</arg>
+            <arg>-gen</arg>
+            <arg>${project.build.directory}/.generated</arg>
+          </codeserverArgs>
+          <warDir>${project.build.directory}/${project.build.finalName}</warDir>
+          <classpathScope>compile+runtime</classpathScope>
+          <startupUrls>
+            <startupUrl>TodoListElements.html</startupUrl>
+          </startupUrls>
         </configuration>
       </plugin>
       <plugin>
@@ -102,8 +126,8 @@
               <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
               <resources>
                 <resource>
-                 <directory>src/main/webapp</directory>
-                 <filtering>true</filtering>
+                  <directory>src/main/webapp</directory>
+                  <filtering>true</filtering>
                 </resource>
               </resources>
             </configuration>
