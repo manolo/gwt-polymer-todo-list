@@ -15,7 +15,6 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.vaadin.polymer.Polymer;
-import com.vaadin.polymer.elemental.Function;
 import com.vaadin.polymer.paper.widget.PaperButton;
 import com.vaadin.polymer.paper.widget.PaperDialog;
 import com.vaadin.polymer.paper.widget.PaperDrawerPanel;
@@ -73,12 +72,10 @@ public class Main extends Composite {
     protected void menuClearAll(ClickEvent e) {
         closeMenu();
         if (content.getWidgetCount() > 0) {
-            dialogs.confirm("Do you really want to remove all Items in the list?", new Function() {
-                public Object call(Object arg) {
-                    content.clear();
-                    saveItems();
-                    return null;
-                }
+            dialogs.confirm("Do you really want to remove all Items in the list?", arg -> {
+                  content.clear();
+                  saveItems();
+                  return null;
             });
         }
     }
