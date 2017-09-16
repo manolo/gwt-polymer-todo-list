@@ -47,7 +47,7 @@ public class Main extends Composite {
 
         addButton.addEventListener("click", e -> addItemDialog.open());
 
-        confirmAddButton.addEventListener("click", e -> {
+        confirmAddButton.addEventListener("tap", e -> {
             if (!titleInput.getValue().isEmpty()) {
                 addItem(titleInput.getValue(), descriptionInput.getValue());
                 // clear text fields

@@ -5,7 +5,6 @@ import static com.google.gwt.query.client.GQuery.$$;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.shared.GWT;
-import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.query.client.Properties;
 import com.google.gwt.query.client.js.JsUtils;
@@ -13,11 +12,11 @@ import com.google.gwt.storage.client.Storage;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Function;
+import com.vaadin.polymer.paper.widget.PaperButton;
 import com.vaadin.polymer.paper.widget.PaperDialog;
 import com.vaadin.polymer.paper.widget.PaperDrawerPanel;
 import com.vaadin.polymer.paper.widget.PaperFab;
@@ -42,6 +41,8 @@ public class Main extends Composite {
         initWidget(uiBinder.createAndBindUi(this));
         Polymer.endLoading(this.getElement(), addButton.getElement());
         restoreItems();
+        onConfirmAddButtonClick();
+
     }
 
     @UiField PaperFab addButton;
@@ -53,15 +54,18 @@ public class Main extends Composite {
     @UiField PaperDialog addItemDialog;
     @UiField PaperInput titleInput;
     @UiField PaperTextarea descriptionInput;
-    @UiHandler("confirmAddButton")
-    protected void onConfirmAddButtonClick(ClickEvent e) {
-        if (!titleInput.getValue().isEmpty()) {
-            addItem(titleInput.getValue(), descriptionInput.getValue());
-            saveItems();
-            // clear text fields
-            titleInput.setValue("");
-            descriptionInput.setValue("");
-        }
+    @UiField PaperButton confirmAddButton;
+    protected void onConfirmAddButtonClick() {
+        // PaperButton on-click does not work in iOS, using tap instead
+        confirmAddButton.getPolymerElement().addEventListener("tap", e -> {
+            if (!titleInput.getValue().isEmpty()) {
+                addItem(titleInput.getValue(), descriptionInput.getValue());
+                saveItems();
+                // clear text fields
+                titleInput.setValue("");
+                descriptionInput.setValue("");
+            }
+        });
     }
 
     @UiField PaperIconItem menuClearAll;
