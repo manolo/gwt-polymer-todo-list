@@ -54,14 +54,14 @@ public class Dialogs extends Composite {
     @UiHandler("confirmOk")
     protected void confirmOk(ClickEvent e) {
         if (okFunction != null) {
-            okFunction.call(e);
+            okFunction.call(null);
         }
         confirm.close();
     }
     
-    private Function okFunction;
+    private Function<?, ?> okFunction;
     
-    public void confirm(String message, Function fnc) {
+    public void confirm(String message, Function<?, ?> fnc) {
         confirm("Confirm", new Label(message), fnc);
     }
     
@@ -70,12 +70,11 @@ public class Dialogs extends Composite {
         alert.open();
     }
     
-    public void confirm(String header, Widget content, Function fnc) {
+    public void confirm(String header, Widget content, Function<?, ?> fnc) {
         okFunction = fnc;
         confirmCaption.setInnerText(header);
         confirmContent.clear();
         confirmContent.add(content);
         confirm.open();
     }
-    
 }
