@@ -14,6 +14,7 @@
     <gwtPolymerVersion>${project.version}</gwtPolymerVersion>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <repositories>
@@ -72,12 +73,6 @@
       <version>${gwtPolymerVersion}</version>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>com.googlecode.gwtquery</groupId>
-      <artifactId>gwtquery</artifactId>
-      <version>1.4.4-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
   </dependencies>
 
   <build>
@@ -119,16 +114,8 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>
-          <warSourceDirectory>src/main/webapp</warSourceDirectory>
-          <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
-        </configuration>
-      </plugin>
-      <plugin>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.2</version>
         <executions>
           <execution>
             <id>copy-resources</id>
