@@ -1,13 +1,8 @@
 package org.gwtproject.tutorial.client;
 
-import static com.google.gwt.query.client.GQuery.$$;
-
-import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.query.client.Properties;
-import com.google.gwt.query.client.js.JsUtils;
 import com.google.gwt.storage.client.Storage;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -39,9 +34,7 @@ public class Main extends Composite {
     public Main() {
         initWidget(uiBinder.createAndBindUi(this));
         Polymer.endLoading(this.getElement(), addButton.getElement());
-        restoreItems();
         onConfirmAddButtonClick();
-
     }
 
     @UiField PaperFab addButton;
@@ -59,7 +52,6 @@ public class Main extends Composite {
         confirmAddButton.getPolymerElement().addEventListener("tap", e -> {
             if (!titleInput.getValue().isEmpty()) {
                 addItem(titleInput.getValue(), descriptionInput.getValue());
-                saveItems();
                 // clear text fields
                 titleInput.setValue("");
                 descriptionInput.setValue("");
@@ -74,7 +66,6 @@ public class Main extends Composite {
         if (content.getWidgetCount() > 0) {
             dialogs.confirm("Do you really want to remove all Items in the list?", arg -> {
                   content.clear();
-                  saveItems();
                   return null;
             });
         }
@@ -88,7 +79,6 @@ public class Main extends Composite {
             Item item = (Item)content.getWidget(i);
             if (item.getCheck()) {
                 content.remove(item);
-                saveItems();
             }
         }
     }
@@ -112,26 +102,6 @@ public class Main extends Composite {
         i.setTitle(title);
         i.setDescription(description);
         content.add(i);
-    }
-
-    private void saveItems() {
-        JsArray<JavaScriptObject> toSave = JsArray.createArray().cast();
-        for (int i = 0; i < content.getWidgetCount(); i++) {
-            Item item = (Item)content.getWidget(i);
-            toSave.push($$().set("title", item.getTitle()).set("notes", item.getDescription()));
-        }
-        Storage.getLocalStorageIfSupported().setItem("todos", JsUtils.JSON2String(toSave));
-    }
-
-    private void restoreItems() {
-        String json = Storage.getLocalStorageIfSupported().getItem("todos");
-        if (json != null && !json.isEmpty()) {
-            JsArray<JavaScriptObject> restored = JsUtils.parseJSON(json).cast();
-            for (int i = 0; i < restored.length(); i++) {
-                Properties p = restored.get(i).cast();
-                addItem(p.get("title"), p.get("notes"));
-            }
-        }
     }
 
 }
