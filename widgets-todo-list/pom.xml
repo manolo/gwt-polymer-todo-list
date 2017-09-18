@@ -6,7 +6,7 @@
   <groupId>org.gwtproject.tutorial</groupId>
   <artifactId>gwt-polymer-widgets-todo</artifactId>
   <packaging>war</packaging>
-  <version>1.9.3.0</version>
+  <version>1.9.3.1</version>
   <name>GWT Polymer TodoList tutorial App (widgets version).</name>
 
   <properties>

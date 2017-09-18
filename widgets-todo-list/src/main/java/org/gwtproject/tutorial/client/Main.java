@@ -8,6 +8,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.vaadin.polymer.Polymer;
+import com.vaadin.polymer.PolymerWidget.TapEvent;
 import com.vaadin.polymer.paper.widget.PaperButton;
 import com.vaadin.polymer.paper.widget.PaperDialog;
 import com.vaadin.polymer.paper.widget.PaperDrawerPanel;
@@ -32,12 +33,11 @@ public class Main extends Composite {
     public Main() {
         initWidget(uiBinder.createAndBindUi(this));
         Polymer.endLoading(this.getElement(), addButton.getElement());
-        onConfirmAddButtonClick();
     }
 
     @UiField PaperFab addButton;
     @UiHandler("addButton")
-    protected void onAddButtonClick(ClickEvent e) {
+    protected void onAddButtonClick(TapEvent e) {
         addItemDialog.open();
     }
 
@@ -45,21 +45,19 @@ public class Main extends Composite {
     @UiField PaperInput titleInput;
     @UiField PaperTextarea descriptionInput;
     @UiField PaperButton confirmAddButton;
-    protected void onConfirmAddButtonClick() {
-        // PaperButton on-click does not work in iOS, using tap instead
-        confirmAddButton.getPolymerElement().addEventListener("tap", e -> {
-            if (!titleInput.getValue().isEmpty()) {
-                addItem(titleInput.getValue(), descriptionInput.getValue());
-                // clear text fields
-                titleInput.setValue("");
-                descriptionInput.setValue("");
-            }
-        });
+    @UiHandler("confirmAddButton")
+    protected void onConfirmAddButtonTap(TapEvent e) {
+        if (!titleInput.getValue().isEmpty()) {
+            addItem(titleInput.getValue(), descriptionInput.getValue());
+            // clear text fields
+            titleInput.setValue("");
+            descriptionInput.setValue("");
+        }
     }
 
     @UiField PaperIconItem menuClearAll;
     @UiHandler("menuClearAll")
-    protected void menuClearAll(ClickEvent e) {
+    protected void menuClearAll(TapEvent e) {
         closeMenu();
         if (content.getWidgetCount() > 0) {
             dialogs.confirm("Do you really want to remove all Items in the list?", arg -> {
@@ -71,7 +69,7 @@ public class Main extends Composite {
 
     @UiField PaperIconItem menuClearDone;
     @UiHandler("menuClearDone")
-    protected void menuClearDone(ClickEvent e) {
+    protected void menuClearDone(TapEvent e) {
         closeMenu();
         for (int i = content.getWidgetCount() - 1; i > -1; i--) {
             Item item = (Item)content.getWidget(i);

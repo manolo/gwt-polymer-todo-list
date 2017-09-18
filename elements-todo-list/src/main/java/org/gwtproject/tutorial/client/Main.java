@@ -45,7 +45,7 @@ public class Main extends Composite {
         initWidget(ourUiBinder.createAndBindUi(this));
         Polymer.endLoading(this.getElement(), (Element)addButton);
 
-        addButton.addEventListener("click", e -> addItemDialog.open());
+        addButton.addEventListener("tap", e -> addItemDialog.open());
 
         confirmAddButton.addEventListener("tap", e -> {
             if (!titleInput.getValue().isEmpty()) {
@@ -56,7 +56,7 @@ public class Main extends Composite {
             }
         });
 
-        menuClearAll.addEventListener("click", e -> {
+        menuClearAll.addEventListener("tap", e -> {
             closeMenu();
             // remove all child elements
             while (content.hasChildNodes()) {
@@ -64,7 +64,7 @@ public class Main extends Composite {
             }
         });
 
-        menuClearDone.addEventListener("click", e -> {
+        menuClearDone.addEventListener("tap", e -> {
             closeMenu();
             for (Item item : items) {
                 if (item.isDone()) {
